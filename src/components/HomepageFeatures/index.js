@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Learn to integrate with Anthology products!',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/anthologydevdocs-explore.svg').default,
     description: (
       <>
         Explore the latest Anthology developer documentation, including tutorials, sample code, articles, and API reference.
@@ -14,7 +14,7 @@ const FeatureList = [
   },
   {
     title: 'Example driven documentation and code!',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/anthologydevdocs-apis.svg').default,
     description: (
       <>
         Learn with our examples and code available via our GitHub repository.
@@ -23,7 +23,7 @@ const FeatureList = [
   },
   {
     title: 'Sign Up!',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/anthologydevdocs-register.svg').default,
     description: (
       <>
         Don't forget to sign up for a free account on our Developer Portal: https://developer.anthology.com!
