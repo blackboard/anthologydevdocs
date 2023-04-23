@@ -2,6 +2,7 @@
 
 While we will continue to deliver the Anthology Developer Documentation via this GitHub repo, we are dropping the use of Jekykll for generating the static files delivered through GitHub Pages. Instead we will be using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
+With this move to Docusaurus we are adding full site search capability and looking forward to using the rich features of Docusaurus and React to improve our Developer documentation experience.
 ## Getting Started
 
 1. Clone this repo
