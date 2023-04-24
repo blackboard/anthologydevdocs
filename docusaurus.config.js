@@ -147,11 +147,7 @@ const config = {
               },
               {
                 label: 'Anthology Developer Support',
-                href: 'mailto:abc@example.com'
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'mailto:developers@anthology.com'
               },
             ],
           },
