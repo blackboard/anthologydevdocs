@@ -1,4 +1,6 @@
 ---
+title: Intro to Learn APIs
+id: learn-intro
 sidebar_position: 1
 ---
 
