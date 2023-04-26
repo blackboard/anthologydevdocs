@@ -3,7 +3,7 @@ sidebar_position: 1
 displayed_sidebar: documentationSidebar
 ---
 
-# Anthology Developer Portal in a Nutshell!
+# Anthology Developer Portal
 
 ## What is the Developer Portal?
 The Anthology Developer Portal is the go to site for anyone interested in developing integrations with the Anthology product portfolio. At the Portal you will find information about our REST APIs, our Developer facing documentation, and Developer Experience and Portal related announcements. 
@@ -35,4 +35,4 @@ Features:
 
 * **JWT Service Integration**: As part of our Portal simplification work and in support of future LTI and API authorization projects the portal is replacing it's in-application JWT implementation with our platform-based JWT service. This has no impact on existing LTI 1.3 or REST API authorization.
 
-* **Premium Access API Update**: What is this again, who is impacted, and what makes this different than what we experience now?
+* **Premium Access API**: This change provides addition Premium API information to the consuming system - e.g. Learn - and has no external facing impact.
