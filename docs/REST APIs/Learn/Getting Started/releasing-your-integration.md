@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Releasing your integration"
+title: "Releasing your Integration"
 id: rest_apis-learn-getting-started-releasing_integration
 categories: Learn Rest
 author: Mark O'Neil

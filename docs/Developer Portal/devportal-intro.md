@@ -6,17 +6,30 @@ displayed_sidebar: documentationSidebar
 # Anthology Developer Portal
 
 ## What is the Developer Portal?
-The Anthology Developer Portal is the go to site for anyone interested in developing integrations with the Anthology product portfolio. At the Portal you will find information about our REST APIs, our Developer facing documentation, and Developer Experience and Portal related announcements. 
+The [Anthology Developer Portal](https://developer.anthology.com) is for anyone interested in developing integrations with the Anthology product portfolio. At the Portal you will find information about our REST APIs, our Developer facing documentation, and Developer Experience and Portal related announcements. 
 
 When you create an account you will be able to register an application which is a required step for testing and releasing your integration.
 ## Using the Developer Portal
+Instructions for using the Developer Portal are located in our [First Steps](../REST%20APIs/Learn/Getting%20Started/first-steps.md) and [Registry](../REST%20APIs/Learn/Getting%20Started/registry.md) sections of our REST API Learn Getting Started guide.
 
-### Create an account
+In brief there are three primary tasks you complete using the Developer Portal...
+### 1. Review API Documentation
+The great news is that you don't need an account to review our API documentation! We want you to be able to quickly understand what we have for APIs, and enable you to prototype and test with mock objects. 
 
-### Group Management
+In other words dig in and have a good time. 
 
-### Releasing Your Integration
+When you are ready to test in a real environment move on to step two!
+### 2. Create a Developer Account
+To test your prototype against an Anthology instance you need to register your application in the portal to get authentication details. To do this you need to head over to the [Anthology Developer Portal](https://developer.anthology.com) and sign up for a Developer account - don't worry this too is gratis!
+### 3. Group Management
+When you register for a Developer account you are given a group of one - you! In some cases you may want to share your application management with others on or outside of your team. To do this you create additional groups. 
 
+The only time a group is required - beyond you - is for production application release. It is this group that receives production settings and is a requirement for production application release.
+
+A few great articles on Groups and Production releases are our write ups on:
+- [Groups, Site quotas and rate limits](../REST%20APIs/Learn/Admin/groups-quotas-rates.md)
+- [Production Groups](../REST%20APIs/Learn/Admin/production-groups.md)
+- [Releasing your Integration](../REST%20APIs/Learn/Getting%20Started/releasing-your-integration.md)
 ## Developer Portal Maintenance and Releases
 
 ### Maintenance and Update Window
@@ -27,6 +40,7 @@ You may monitor the Portal maintenance/update schedule and progress at [https://
 > NOTE: Should a critical outage\* take place, we will release a detailed post-mortem on Behind the Blackboard as soon as possible - typically within four days post event. Any non-critical outage\*\* will be covered using our in-Portal announcements feature only.
 
 \* critical outage: service is unavailable or operating outside of usable performance or functional parameters.
+
 \*\* non-critical outage: service is available, but operating at degraded performance.
 
 ### Release Notes
