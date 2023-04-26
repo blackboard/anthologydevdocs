@@ -24,7 +24,7 @@ The Developer Portal has an _optional_ maintenance/update window scheduled every
 
 You may monitor the Portal maintenance/update schedule and progress at [https://status.blackboard.com](https://status.blackboard.com) and review any update release notes below.
 
-> NOTE: Should an extended *outage* of more than 5 minutes take place, we will release a post-mortem on Behind the Blackboard as soon as possible - typically within four days post event.
+> NOTE: Should a critical outage\* take place, we will release a detailed post-mortem on Behind the Blackboard as soon as possible - typically within four days post event. Non-critical outages will be covered using our in-Portal announcements feature only.
 
 ### Release Notes
 
