@@ -17,7 +17,7 @@ workflow is more complicated. For more general questions about REST and using
 REST APIs, see any of the numerous tutorials available online. Most commonly
 used resources include:
 
-- Anthology's [developer portal](developer-portal.md)
+- Anthology's [developer portal](../../../Developer%20Portal/devportal-intro.md)
 - Anthology's [Github repos](https://github.com/search?utf8=%E2%9C%93&q=BBDN-REST)
 
 ## Before You Get Started
