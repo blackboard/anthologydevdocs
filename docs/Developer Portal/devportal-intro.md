@@ -31,6 +31,7 @@ A few great articles on Groups and Production releases are our write ups on:
 - [Production Groups](../REST%20APIs/Learn/Admin/production-groups.md)
 - [Releasing your Integration](../REST%20APIs/Learn/Getting%20Started/releasing-your-integration.md)
 ## Developer Portal Maintenance and Releases
+
 ### Maintenance and Update Window
 The Developer Portal has an _optional_ maintenance/update window scheduled every month on the Tuesday of the second week (after SaaS updates).
 
