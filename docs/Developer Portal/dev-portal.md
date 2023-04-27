@@ -4,7 +4,7 @@ title: "Getting started with the Dev Portal"
 id: community-dev_portal
 categories: community
 author: Hernan Ortiz
-sidebar_position: 1
+sidebar_position: 2
 displayed_sidebar: documentationSidebar
 ---
 
