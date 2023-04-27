@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[3043],{382:o=>{o.exports=JSON.parse('{"label":"2022","permalink":"/anthologydevdocs/blog/tags/2022","allTagsPath":"/anthologydevdocs/blog/tags","count":1}')}}]);

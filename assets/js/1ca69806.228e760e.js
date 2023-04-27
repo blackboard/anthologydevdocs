@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[6676],{7804:e=>{e.exports=JSON.parse('{"label":"uef","permalink":"/blog/tags/uef","allTagsPath":"/blog/tags","count":3}')}}]);

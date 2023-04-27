@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[4570],{4231:a=>{a.exports=JSON.parse('{"label":"caliper","permalink":"/anthologydevdocs/blog/tags/caliper","allTagsPath":"/anthologydevdocs/blog/tags","count":1}')}}]);
