@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[5421],{5675:a=>{a.exports=JSON.parse('{"label":"soap","permalink":"/blog/tags/soap","allTagsPath":"/blog/tags","count":1}')}}]);

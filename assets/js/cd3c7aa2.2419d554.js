@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[3214],{4823:a=>{a.exports=JSON.parse('{"label":"ultra","permalink":"/anthologydevdocs/blog/tags/ultra","allTagsPath":"/anthologydevdocs/blog/tags","count":2}')}}]);
