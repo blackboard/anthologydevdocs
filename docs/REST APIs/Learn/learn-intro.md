@@ -6,16 +6,16 @@ sidebar_position: 1
 
 # Welcome to Learn REST APIs!
 
-Blackboard Learn has a long history of integration development support. Over the years since the Learn LMS (Learning Management System) was released in 1997, Blackboard has continued to enhance its integration capabilities. Starting with Java&trade; Building Blocks, SOAP Web Services, Learning Tools Interoperability (LTI), and adding more recently in 2016 RESTful APIs.
+Blackboard Learn has a long history of integration development support. Over the years since the Learn LMS (Learning Management System) was released in 1997, Blackboard has continued to enhance its integration capabilities. Starting with Java&trade; Building Blocks, SOAP Web Services, Learning Tools Interoperability (LTI), and adding RESTful APIs in 2016.
 
 Blackboard Learn integrations are similar to plugins or add-ons in other software platforms, and are designed to extend the core functionality of the Blackboard Learn platform to meet the specific needs of individual institutions.
 
 Overall, Blackboard Learn has a long history of supporting integrations with external tools and content providers, and continues to invest in this area to ensure that its users have access to a wide range of educational resources and tools within the Blackboard environment.
 
-Anthology considers RESTful APIs to be the future of integration development and Blackboard Learn is following this thinking as well, with SOAP Web Services reaching end-of-life (EOL) in 2020, and announcing in 2022 EOL for their Java Building Blocks on January 1st, 2024. 
+Anthology considers RESTful APIs to be the future of integration development and Blackboard Learn is following this thinking as well, having End of Lifed SOAP Web Services in 2020 and announcing EOL for their Java Building Blocks on January 1st, 2024. 
 
 ## RESTful APIs
-Blackboard Learns support of RESTful web services, provides institutions and developers with a broad choice of integration development and architecural options, allowing them to choose the approach that best fits their needs and technical expertise.
+Blackboard Learn's support of RESTful web services, provides institutions and developers with a broad choice of integration development and architecural options, allowing them to choose the approach that best fits their needs and technical expertise.
 
 ## What can be Built with Learn's RESTful APIs?
 Blackboard Learn REST APIs support a wide range of functionality for integrating with the Blackboard Learn environment. REST (Representational State Transfer) is an architectural style that defines a set of constraints for creating web services, and RESTful APIs provide a flexible and lightweight approach to integration that has become increasingly popular in recent years.
