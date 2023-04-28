@@ -14,7 +14,7 @@ With this move to Docusaurus we are adding full site search capability and looki
 7. `$ npm run build` to build the site. The great thing here is *everything* gets tested and if the build fails you will know... if it fails - fix it and rinse/repeat step 7 until it succeeds, then move onto step 8.
 8. `$ npm run serve` to serve the static build of the site - if your changes look good carry on to step 9 otherwise back to step 4 (that is faster than doing a full build for each possible test cycle) and make your changes.
 9. Do a PR with your changes...
-   1.  When you submit your PR an automated test is run. If the test fails it shows as failed on the PR. If it is successful, and we approve the changes requested then we will merge. The test takes about 2.5 minutes.
+   1.  When you submit your PR an automated test is run. If the test fails it shows as failed on the PR. If it is successful, and we approve the changes requested then we will merge. The test takes about 2.5 minutes. If you have merge privileges please wait until a successful test completes before attempting the merge.
    2.  When merged an auto-build takes place generating the static files for the docs.anthology.com pages site. The auto-build takes about 2 minutes.
-   3.  After step 9.ii is complete the pages-build-deploy action is run which copies the static pages file to github pages. The build-deploy takes about 2 minutes.
+   3.  After step 9.ii is complete, the pages-build-deploy action is run which copies the static pages file to github pages. The build-deploy takes about 2 minutes.
    4.  in 1-5 minutes the site is refreshed and delivering your new content!
