@@ -6,7 +6,7 @@ sidebar_position: 1
 
 # Welcome to Learn REST APIs!
 
-Blackboard Learn has a long history of integration development support. Over the years since the Learn LMS (Learning Management System) was released in 1997, Blackboard has continued to enhance its integration capabilities, starting with Java &trade; Building Blocks, SOAP Web Services, Learning Tools Interoperability (LTI), and more recently, since 2016, RESTful APIs.
+Blackboard Learn has a long history of integration development support. Over the years since the Learn LMS (Learning Management System) was released in 1997, Blackboard has continued to enhance its integration capabilities, starting with Java&trade; Building Blocks, SOAP Web Services, Learning Tools Interoperability (LTI), and more recently, since 2016, RESTful APIs.
 
 Blackboard Learn integrations are similar to plugins or add-ons in other software platforms, and are designed to extend the core functionality of the Blackboard Learn platform to meet the specific needs of individual institutions.
 
