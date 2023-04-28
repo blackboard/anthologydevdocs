@@ -4,14 +4,14 @@ sidebar_position: 1
 
 # Welcome!
 
-Many Anthology products offer integration capabilities through the use of REST APIs. These products are listed to the left under **REST APIs**. We expect this list to grow over time so check in frequently!
+Many Anthology products offer integration capabilities through the use of RESTful APIs. These products are listed to the left under **REST APIs**. We expect this list to grow over time so check in frequently!
 
-## What are REST APIs?
-RESTful APIs (REpresentational State Transfer APIs) are a type of web service API that follow a set of architectural principles, known as the REST architecture. These APIs use HTTP verbs - GET, POST, PUT, DELETE - to access and manipulate resources, such as data or files, on a server.
+## What are RESTful APIs?
+RESTful APIs (REpresentational State Transfer Application Programming Interface) are a type of web service API that follow a set of architectural principles, known as the REST architecture. These APIs use HTTP verbs - GET, POST, PUT, DELETE - to access and manipulate resources, such as data or files, on a server.
 
 RESTful APIs have become the most common type of web service API, used by many companies and applications to enable communication between different systems or applications.
 
-## Why are REST APIs important?
+## Why are RESTful APIs important?
 There are several reasons why RESTful APIs are important:
 
 **Interoperability**: RESTful APIs enable interoperability between different systems and programming languages. This means that applications built on different platforms or programming languages can communicate with each other easily using a common protocol.
