@@ -101,7 +101,8 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'We are revamping our docs, please <a href="mailto:developers@anthology.com?subject=New Developer Documentation Site: ">let us know what you think!</a>',
+          // 'We are revamping our docs, please <a href="mailto:developers@anthology.com?subject=New Developer Documentation Site: ">let us know what you think!</a> </br>Note:
+          'The Developer Portal will be updated May 5, 2023 at 1AM EDT. (insert link to docs portal page)',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,
