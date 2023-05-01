@@ -77,7 +77,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Anthology',
+        title: 'anthology',
         logo: {
           alt: 'Anthology Logo',
           src: 'img/ANTHOLOGY-Logo-RGB.svg',
@@ -97,6 +97,14 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'We are revamping our docs, please <a href="mailto:developers@anthology.com?subject=New Developer Documentation Site: ">let us know what you think!</a>',
+        backgroundColor: '#262626',
+        textColor: '#d5d5d5',
+        isCloseable: false,
       },
       sidebar: {
         hideable: true,
