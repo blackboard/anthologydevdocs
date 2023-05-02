@@ -17,9 +17,7 @@ for how they are stored internally. In an assessment, there are questions of
 various types. Each 'question' is a slot for content that may not actually
 contain what you normally think of as a question. For more information about
 assignments and questions and how Learn users experience them, see [Ultra:
-Create an Assignment](https://community.blackboard.com/external-link.jspa?url=
-https%3A//help.blackboard.com/Learn/Instructor/Assignments/Create\_
-and_Edit_Assignments) in Blackboard Help.
+Create an Assignment](https://help.blackboard.com/Learn/Instructor/Ultra/Assignments/Create_and_Edit_Assignments) in Blackboard Help.
 
 An assignment is made up of one or more questions. The following question
 types are available for use with Ultra via REST API.

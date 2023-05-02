@@ -8,7 +8,7 @@ categories: DVBA
 
 # Using the Learn AMI for REST and LTI Development
 
-This document outlines usage of the Learn REST and LTI Developer AMI made available via the Amazon AWS Marketplace.
+This document outlines usage of the [Learn REST and LTI Developer AMI](https://aws.amazon.com/marketplace/pp/prodview-fdbvv2vvikoq4) made available via the Amazon AWS Marketplace.
 
 Please note that AMI licenses are not upgradable. You must subscribe to a newer release and migrate any content or tools prior to license expiration. Please review the **Migration Cookbook - Recreating Data between AMIs** section below.
 
@@ -16,7 +16,7 @@ Please note that AMI licenses are not upgradable. You must subscribe to a newer 
 
 ## Overview
 
-The Learn REST and LTI Developer Amazon Machine Image (“AMI”) is an image of a Learn server available in the Amazon Marketplace. The AMI allows a developer to spin up a copy of Learn for building applications that use the REST APIs and/or Learning Tool Interoperability (“LTI”) to integrate with Learn. This image is a standalone copy of the SaaS deployment of Learn that allows development and testing against the Ultra user experience. Once the developer spins up the copy of Learn, it lives in his or her AWS account and the developer has full control over the instance of Learn. All instances are pre-licensed with a developer license. New developer AMIs will be made available in the same cadence as SaaS releases. Please note that there is often a delay of 5-14 days before the AMI is available due to AMI and AWS processing time.
+The Learn REST and LTI Developer Amazon Machine Image (“AMI”) is an image of a Learn server available in the Amazon Marketplace. The AMI allows a developer to spin up a copy of Learn for building applications that use the REST APIs and/or Learning Tool Interoperability (“LTI”) to integrate with Learn. This image is a standalone copy of the SaaS deployment of Learn that allows development and testing against the Ultra user experience. Once the developer spins up the copy of Learn, it lives in his or her AWS account and the developer has full control over the instance of Learn. All instances are pre-licensed with a developer license. New developer AMIs will be made available in the same cadence as SaaS releases. Please note that there is a potential delay of 1-2 days before the AMI is available due to AMI and AWS processing time.
 
 This program allows a developer to build an integration for Learn without a formal paid partnership. Anyone who wants to test the Ultra experience can create copy. Note that you cannot deploy a custom building block to this AMI. It is meant only for REST and LTI development.
 
@@ -24,9 +24,9 @@ This program allows a developer to build an integration for Learn without a form
 
 ### Get the Blackboard REST and LTI Developer AMI
 
-The easiest way to find the Developer AMI is by searching the Amazon Marketplace for Learn. The results show all of the currently available AMIs. Given the cadence or releases, you should locate the Learn instance you want.
+The easiest way to find the Developer AMI is by using the link above or searching the Amazon Marketplace for Learn. The results show all of the currently available AMIs. Given the cadence or releases, you should locate the Learn instance you want.
 
-Use the Blackboard REST and LTI Developer AMI
+### Use the Blackboard REST and LTI Developer AMI
 Before you begin, you must have an Amazon AWS account. If you do not have an AWS account you will need to create one. The steps to set up an AMI are typically as follows.
 
 - Subscribe to the AMI
@@ -34,11 +34,13 @@ Before you begin, you must have an Amazon AWS account. If you do not have an AWS
 - Spin it up and code!
 - When configuring the instance, it is completely up to you how you set up the server. We do have a few recommendations, however.
 
-1. We recommend using the Large Tier instance type. This gives you enough storage and power to run Learn effectively and build your cool widget.
+> Note: The default SSL cert generated on first startup is *not* a trusted certificate. Please follow the instructions below for full SSL support.
 
-- If you see 502 Gateway errors, you may need to increase the size of your AMI. Additionally, you may periodically see a 502 Gateway error during use - keeping in mind EC2s based on this AMI are NOT intended for use as a Production service, you may simply issue a reboot to restart the server retaining your AWS provisioned public IP and DNS settings.
+1. We recommend using the Large Tier instance type. This gives you enough storage and power to run Learn effectively and build your integration.
 
-2. We recommend you adjust the security settings to allow:
+- If you see 502 Gateway errors, you may need to increase the size of your AMI.
+
+1. We recommend you adjust the security settings to allow:
 
 - SSH from your IP only
 - Enable HTTPS access
@@ -71,7 +73,7 @@ After starting your AMI there are a few steps to installing and using Let’s En
 
 2. Use the EC2 Security controls to open HTTP as an inbound security rule - you should have HTTP, HTTPS, and SSH (from your console IP) enabled at this point.
 
-3. SSH to your EC2 instance and create a file containing your FQDN from freeddns.no-ip.com and your email address and save to /home/ubuntu/my_ssl_config. The format of this file is important and should follow the example below. The file contains only two lines specifying the key and value pairs used to configure the Let’s Encrypt process, e.g.:
+3. SSH to your EC2 instance and create a file containing your FQDN from freeddns.no-ip.com and your email address and save to /home/ubuntu/my_ssl_config. The format of this file is important and should follow the example below. The file contains only two lines specifying the domain and email used to configure the Let’s Encrypt process, e.g.:
 
 ```yaml
 ssldomain: devmen.hopto.org
