@@ -12,7 +12,7 @@ displayed_sidebar: documentationSidebar
 
 ## Why do we use a central service at Anthology?
 
-We believe that having Tool vendors register an LTI Tool _once_ through [the Developer Portal](https://developer.anthology.com/){:target="_blank"} is the best approach. It allows Learn admins to deploy that tool by entering just one piece of information (the Client ID) in the Admin Panel and sharing another piece of information (the Deployment ID) with the Tool vendor.
+We believe that having Tool vendors register an LTI Tool _once_ through [the Developer Portal](https://developer.anthology.com/) is the best approach. It allows Learn admins to deploy that tool by entering just one piece of information (the Client ID) in the Admin Panel and sharing another piece of information (the Deployment ID) with the Tool vendor.
 
 _Tool vendor's clients don't need to register individual applications with the Developer Portal. That defeats the entire purpose of building this centralized service to make everyone's life a little simpler._
 
@@ -84,4 +84,4 @@ Learn has the concept of LTI Placements to support this. Blackboard allows a Too
 
 ![LTI diagram](/assets/img/ltidiagram.png){: .center-image }
 
-If you have any other questions about LTI Registration and Deployment with Learn, [let us know](mailto: developers@anthology.com).
+If you have any other questions about LTI Registration and Deployment with Learn, <a href="mailto:developers@anthology.com?subject=LTI Registration and Deployment with Learn">let us know</a>.
