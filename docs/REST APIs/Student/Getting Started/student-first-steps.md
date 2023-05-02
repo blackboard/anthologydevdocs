@@ -32,5 +32,5 @@ In order to maintain data security, an authorization token is required to make c
 We will continue to add new examples, tutorials, and code samples so make sure to check these links regularly.
 
 - [Student Developer Docs](https://docs.anthology.com) (navigate to REST APIs>Student)
-- [Developer Portal](https://developer.anthology.com/){: target='\_blank'}
-- [REST Documentation](https://developer.anthology.com/portal/displayApi){: target='\_blank'}
+- [Developer Portal](https://developer.anthology.com/)
+- [REST Documentation](https://developer.anthology.com/portal/displayApi)
