@@ -28,14 +28,14 @@ and type `git clone https://github.com/dmitry-viskov/pylti1.3-flask-example.git`
 #### Developer Portal 
 
 Now that we have the project cloned locally, we need to register the application for use with Learn. We do this via the [developer portal](https://developer.anthology.com). 
-For more information on this process, check out this [document](/REST APIs/Learn/Getting Started/registry). Once you have an account set up, you can simply register a new application. 
+For more information on this process, check out this [document](../../REST%20APIs/Learn/Getting%20Started/registry.md). Once you have an account set up, you can simply register a new application. 
 You will be prompted to enter several pieces of information. For this project, here is what we need to enter:
 
 | Field                | Description                                                                                                                                                           | Example                                                                                      |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | Application Name     | You can enter anything you like, but this name will display in Learn                                                                                                  | `Py LTI 1.3 Game`                                                                            |
 | Description          | This is a free-form field. You can enter anything you like.                                                                                                           | `A brick-breaker-style game written by Dmitry Viskov to demonstrate LTI Advantage in Python` |
-| Domain(s)            | This should be the domain you plan to host the tool from. We use heroku, in our example. This requires some additional code changes, documented [here](#using-heroku) | `pylti1p3-game.herokuapp.com`                                                                |
+| Domain(s)            | This should be the domain you plan to host the tool from. We use [Heroku](https://www.heroku.com), in our example. This requires some additional code changes, documented [here](#using-heroku) | `pylti1p3-game.herokuapp.com`                                                                |
 | Login Initiation URL | This is the URL that Learn will use to launch into your application to begin the OIDCLogin process                                                                    | `https:pylti1p3-game.herokuapp.com/login/`                                                   |
 | Tool Redirect URL(s) | The URL to redirect to upon successful completion of the OIDC Login                                                                                                   | `https:pylti1p3-game.herokuapp.com/launch/`                                                  |
 | Tool JWKS URL        | The publicly accessible URL to the tool's public key. We do not use this in this project, so we will leave it blank and let the portal generate our private key        |
