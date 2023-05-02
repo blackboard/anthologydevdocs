@@ -5,7 +5,7 @@ While we will continue to deliver the Anthology Developer Documentation via this
 With this move to Docusaurus we are adding full site search capability and looking forward to using the rich features of Docusaurus and React to improve our Developer documentation experience.
 ## Getting Started
 
-> IMPORTANT: Do not push, pull, fetch, or otherwise "manage" the gh-pages branch. This branch is auto maintained by main PRs and merge actions.
+:warning: Do not push, pull, fetch, or otherwise "manage" the gh-pages branch. This branch is auto maintained by main PRs and merge actions.
 
 1. Clone this repo
 2. `$ cd` to the project directory
