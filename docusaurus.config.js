@@ -173,7 +173,7 @@ const config = {
               },
               {
                 label: 'GitHub - These docs',
-                href: 'https://github.com/blackboard/blackboard.github.io',
+                href: 'https://github.com/blackboard/anthologydevdocs',
               },
               {
                 label: 'GitHub - Example projects',
