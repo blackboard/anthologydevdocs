@@ -56,7 +56,7 @@ There are other LTI resources here: <https://github.com/IMSGlobal/ltibootcamp>
 Please see this guide for a recipe on building an LTI 1.3 application. Note that you can develop an LTI application in any programming language and framework, and deploy it to any cloud service provider.
 We cannot provide guidance on what technologies or hosting platforms to use, but we will cover all the steps required for building an application.
 
-[Tool Implementation Guide](/LTI/Tutorials/LTI 1.3 Tool Implementation Guide)
+[Tool Implementation Guide](./Tutorials/implementation-guide.md)
 
 ### Registering Your Application
 
@@ -88,7 +88,7 @@ The LTI 1.3 spec defines the information you must provide to a Platform (LMS) su
 The LTI spec supports the notion of custom parameters with a launch. These are arbitrary `name=value` tuples that you can provide to uniquely identify the launch, or any other piece of information you need from the platform at launch time. See the following two documents on how to use substitution parameters within custom parameters to receive context-specific data on an LTI launch:
 
 [IMS LTI 1.3 Parameter Substitution](https://www.imsglobal.org/spec/lti/v1p3/#customproperty)  
-[Learn Template Variables](/REST APIs/Learn/advanced/dynamic-rendering-with-template-variables)
+[Learn Template Variables](../REST%20APIs/Learn/Advanced/dynamic-rendering-with-template-variables.md)
 
 #### Information you Receive
 
@@ -113,7 +113,7 @@ In Learn the way an LTI tool is surfaced in the user interface (UI) is through t
 | Course         | Appears in Ultra Books & Tools, Original Tools                                                                 | Allow student access |
 | System         | Appears in Ultra Base Nav Tools, Original Institution module                                                   |                      |
 | Admin          | Appears in Admin Tools module                                                                                  |                      |
-| UEF            | Special type for extending the Ultra UI; see [UEF docs](/REST APIs/Premium APIs/UEF/uef-getting-started) |                      |
+| UEF            | Special type for extending the Ultra UI; see [UEF docs](../../docs/REST%20APIs/Premium%20APIs/UEF/uef_getting_started.md) |                      |
 
 #### Placement properties
 
