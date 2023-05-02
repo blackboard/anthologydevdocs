@@ -20,4 +20,15 @@ With this move to Docusaurus we are adding full site search capability and looki
    2.  When merged an auto-build takes place generating the static files for the docs.anthology.com pages site. The auto-build takes about 2 minutes.
    3.  After step 9.ii is complete, the pages-build-deploy action is run which copies the static pages file to github pages. The build-deploy takes about 2 minutes.
    4.  in 1-5 minutes the site is refreshed and delivering your new content.
+
+## Tips
+### URLs
+Generally markdown links work fine in Docusaurus with the following exceptions:
+
+1. **Blog to Docs or Docs to Blog links**: There is an 'issue' where md is not translated cross plugins (blogs and docs are delivered via plugins)
+2. **Links containing Anchors**:  
+
+For both 1 and 2 use HTML href tags. For 1 use the full URL and add `target="_top"` to open the link in the same browser tab. e.g.: `<a href="https://docs.anthology.com/docs/path-to-file" target="_top">open doc from blog</a>`
+
+Docusaurus provides a complete reference for using [links in markdown](https://docusaurus.io/docs/markdown-features/links) in Docusaurus.
     
