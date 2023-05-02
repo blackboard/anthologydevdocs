@@ -31,4 +31,7 @@ Generally markdown links work fine in Docusaurus with the following exceptions:
 For both 1 and 2 use HTML href tags. For 1 use the full URL and add `target="_top"` to open the link in the same browser tab. e.g.: `<a href="https://docs.anthology.com/docs/path-to-file" target="_top">open doc from blog</a>`
 
 Docusaurus provides a complete reference for using [links in markdown](https://docusaurus.io/docs/markdown-features/links) in Docusaurus.
+
+### Tables
+Docusaurus is not as forgiving re table markdown - fiddle with spacing at the header level or ride the HTML wave.
     
