@@ -34,6 +34,8 @@ In cases where you are using anchor tags with your links - these *will not* rend
 
 Docusaurus provides a complete reference for using [links in markdown](https://docusaurus.io/docs/markdown-features/links) in Docusaurus.
 
+**important**: Please remember to change any http://localhost:3000 local developer/build links to production links https://docs.anthology.com before your PR.
+
 ### Tables
 Docusaurus is not as forgiving re table markdown - fiddle with spacing at the header level or ride the HTML wave.
     
