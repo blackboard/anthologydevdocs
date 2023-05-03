@@ -21,8 +21,7 @@ API requests their applications can make daily.
 
 Contractors are an exception to this policy as they are producing an
 integration on your, the Blackboard client, behalf. Questions regarding the
-policy and whether you are impacted may be asked here, or posted to
-[developers@anthology.com](mailto:developers@anthology.com).
+policy and whether you are impacted may be asked here, or posted to <a href="mailto:developers@anthology.com?subject=Quotas and Rate Limits"> developers&#64;anthology.com</a>.
 
 > Rate Limits: By default you get 10.000 calls every 24 hours per site. If you need more, follow the instructions in last two sections of this page.
 
