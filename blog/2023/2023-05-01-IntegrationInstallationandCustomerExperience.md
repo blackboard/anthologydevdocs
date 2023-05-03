@@ -87,7 +87,7 @@ Instead, develop your integration following the Register once model, and hand of
 
 Well almost... the current exception (see The Future is Bright(er) below) is if your integration uses our REST APIs. Then your integration documentation must  provide Anthology administrators with a list of privileges that need to be added to the user which is associated with your integration. The APIs list entitlements, not privileges, and therein lay a problem for Customers.
 
-As the integration provider you want a great customer experience so you use the <a href="http:localhost:3000/docs/REST%20APIs/Learn/Admin/rest_apis-learn-admin-rest_and_learn#converting-entitlements-to-gui-privileges" target="_top"> bookmarklet tool</a> to determine the privileges you include in your documentation to provide guidance to admins installing your integration.
+As the integration provider you want a great customer experience so you use the <a href="https://musical-adventure-wl1kq5k.pages.github.io/docs/REST%20APIs/Learn/Admin/rest_apis-learn-admin-rest_and_learn#converting-entitlements-to-gui-privileges" target="_top"> bookmarklet tool</a> to determine the privileges you include in your documentation to provide guidance to admins installing your integration.
 
 ## Integration Support
 
