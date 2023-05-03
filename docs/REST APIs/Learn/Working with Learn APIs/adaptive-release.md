@@ -39,7 +39,7 @@ Yes, we need to create a rule that will contain our criteria (We assume the cour
 
 For specific messages that may be returned by the api, please review: https://developer.anthology.com/portal/displayApi
 
-Also, please make sure to always review the entitlements required for each endpoint, you can check this document to get more information about entitlements: https://docs.blackboard.com/REST APIs/Learn/getting-started/bookmarklet
+Also, please make sure to always review the entitlements required for each endpoint, you can check this document [Bookmarklet To Help Map Entitlements To Permissions](../Getting%20Started/rest_apis-learn-getting-started-entitlements) to get more information about entitlements.
 
 For the rules you need course_id and Content_id
 
@@ -482,7 +482,7 @@ Returns:
 }
 ```
 ## Groups
-Since this guide has become a little bit longer than desired, you can check our approach on groups here: https://docs.blackboard.com/REST APIs/Learn/getting-started/groups-and-rest-api
+Since this guide has become a little bit longer than desired, you can check our approach on groups [here](./groups-and-rest-api.md).
 
 Basically, you can create groups and associate them to adaptive release content, please keep in mind you cannot reference a group set, but groups within the set:
 
