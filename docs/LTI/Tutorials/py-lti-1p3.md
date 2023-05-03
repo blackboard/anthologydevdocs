@@ -40,7 +40,7 @@ You will be prompted to enter several pieces of information. For this project, h
 | Tool Redirect URL(s) | The URL to redirect to upon successful completion of the OIDC Login                                                                                                   | `https:pylti1p3-game.herokuapp.com/launch/`                                                  |
 | Tool JWKS URL        | The publicly accessible URL to the tool's public key. We do not use this in this project, so we will leave it blank and let the portal generate our private key        |
 | Signing Algorithm    | The cryptographic algorithm used to sign the JWT. Leave this as RS256                                                                                                 |
-| Group                | The developer group to associate with the integration. Here is more information on [groups](/REST%20APIs/Learn/Admin/groups-quotas-rates)                               |
+| Group                | The developer group to associate with the integration. Here is more information on [groups](/REST APIs/Learn/Admin/groups-quotas-rates)                               |
 
 Once you fill out this form, click the `Register application and generate API key` button, and you will be prompted with several pieces of information. You will only see this once, so make sure you save the data somewhere. 
 Click `Done` to take you back to the applications page.

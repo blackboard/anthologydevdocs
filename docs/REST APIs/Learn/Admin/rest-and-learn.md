@@ -56,10 +56,8 @@ allow the REST Application to function. The vendor or developer of the REST
 application should provide a list of required entitlements.
 
 NEVER configure a REST application to act as a System Admin user. Doing so
-gives the REST application full access to all data and operations of your
-Learn environment possibly resulting in IRREPARABLE harm. If a vendor requests
-a System Admin user for their application, do not allow it. In such a case,
-please provide the vendor's contact and application information to <a href="mailto:developers@anthology.com?subject=Vendor requesting System Admin Privileges">developers&#64;anthology.com</a> so that we can help the vendor correct the situation.
+gives the REST application full access to all data and operations of your Learn environment possibly resulting in IRREPARABLE harm. If a vendor requests a System Admin user for their application, do not allow it. In such a case, please provide the vendor's contact and application information to <a href="mailto:developers@anthology.com?subject=Vendor requesting System Admin Privileges">developers&#64;anthology.com</a> so that we can
+help the vendor correct the situation.
 
 ![Create REST integration](/assets/img/rest-and-learn-3.png)
 
@@ -67,7 +65,8 @@ please provide the vendor's contact and application information to <a href="mail
 
 Contractors are an exception to this policy as they are producing an
 integration on your, the Anthology client, behalf. Questions regarding the
-policy and whether you are impacted may be posted to <a href="mailto:developers@anthology.com?subject=Integration policy question...">developers&#64;anthology.com</a>.
+policy and whether you are impacted may be asked here, or posted to
+[developers@anthology.com](mailto:developers@anthology.com).
 
 ### Managing your REST Integration
 
@@ -108,8 +107,8 @@ actually remote to the Learn environment.
 There are a number of ways to accomplish this. 
 
 * Check out this blog, [Bookmarklet To Help
-Map Entitlements to Permissions](https://community.blackboard.com/blogs/4/18) (note: requires login)
-or on this site [here](../Getting%20Started/bookmarklet.md).
+Map Entitlements to Permissions](https://community.blackboard.com/blogs/4/18)
+* Check out this [JSHack](https://mle.southampton.ac.uk/bb/SHOW-HIDDEN.zip) contributed by Matthew Deeprose.
 * The [EntitlementsToAdminGUI worksheet](/assets/files/EntitlementstoAdminGUI.xlsx) (updated 08/10/2019 9:57 AM)
 helps identify the **entitlements** to a string which may be searched on in
 the role **privilege** selection page when creating the role for your REST
@@ -122,7 +121,7 @@ find these manually: [Dropbox - 2018-10-30_13-39-25.FindingPrivilegeForGivenEnti
 
 ### Delivering your REST Integration
 
-For a more detailed process please see [Releasing your REST Integration](/REST%20APIs/Learn/getting-started/releasing-your-integration)
+For a more detailed process please see [Releasing your REST Integration](/REST APIs/Learn/getting-started/releasing-your-integration)
 
 **Step 1:** NEVER USE OR REQUIRE SYSTEM ADMINISTRATOR as your REST application user.
 

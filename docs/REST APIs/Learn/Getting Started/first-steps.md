@@ -49,7 +49,7 @@ registered Anthology developer. To register as a Anthology developer:
 2. Provide your email address, a password, your first name and last, and select the checkbox to prove you are human.
 3. Select **Create Account** and you're on your way.
 
-For more information about the Developer Portal please see [this document](/REST%20APIs/Learn/Getting Started/registry)
+For more information about the Developer Portal please see [this document](/REST APIs/Learn/Getting Started/registry)
 
 **Note:** If you are an Anthology client, an Anthology Partner / Vendor / Developer of a REST Application should NEVER tell you to go to the developer portal and create an App ID with the associated key/secret to install their application. They should never tell you to apply for a Rate/Site increase for their application.  Anthology DOES NOT support that model. Every REST Application developer should give you an App ID to install their REST App and tell you how to configure a system role for its use. Period. The REST Application developer needs to request the increases they need to run their application themselves. If they ask you to go to developer.anthology.com and get an App ID/Key/Secret, please tell them that is wrong. They should have exactly one App ID for their production REST application that they are asking you to install.
 
@@ -65,7 +65,7 @@ about integrating your project with Anthology products. You will benefit from
 the community most by joining in.To register in the Anthology developer
 community:
 
-1. Go to [Anthology Developer Community](/REST%20APIs/Learn/getting-started/developer-portal) and select **Register**.
+1. Go to [Anthology Developer Community](/REST APIs/Learn/getting-started/developer-portal) and select **Register**.
 2. If your organization is a Blackboard client or partner organization and you have a Behind the Blackboard login, select **Behind the Blackboard Login**. Otherwise, select **Community Site Login**.
 3. Enter your email address to receive a link via email.
 4. In your email's inbox, find the email sent by Blackboard. You might have to check your spam or junk folder. The email's subject is something like _Blackboard Community: Email Validation_. Select the link in your email. You will be taken to a registration page.
@@ -83,12 +83,12 @@ _I want to programmatically..._ _You'll need to..._
 **Add files, text, and the like to Learn**
 
 1. [Authenticate with Learn](basic-authentication.md) via REST API
-2. Check out our [Learn REST API reference](/REST%20APIs/Learn/getting-started/api)
+2. Check out our [Learn REST API reference](/REST APIs/Learn/getting-started/api)
 
 **Bulk add users to Learn**
 
 1. [Authenticate with Learn](basic-authentication.md) via REST API
-2. Check out our [Learn REST API reference](/REST%20APIs/Learn/getting-started/api)
+2. Check out our [Learn REST API reference](/REST APIs/Learn/getting-started/api)
 
 <!-- **Set up video conference sessions**
 
@@ -111,13 +111,13 @@ Anthology makes available instances of Anthology applications that you can
 use to build projects that integrate with Anthology applications. Among
 others, we offer these popular developer instances. 
 
-- [AWS instance of Learn](/REST%20APIs/Learn/sandbox/developer-ami)  
+- [AWS instance of Learn](/REST APIs/Learn/sandbox/developer-ami)  
   While Blackboard does not charge for entry-level use, AWS may charge various
   fees for their services.
 
 <!-- - [Developer access to Blackboard Collaborate](/rest-apis/collaborate/getting-started) -->
 
-<!-- For more information about developer versions of Anthology applications, see [Developer Versions of Anthology Applications](/REST%20APIs/Learn/sandbox/what-is-dvba). -->
+<!-- For more information about developer versions of Anthology applications, see [Developer Versions of Anthology Applications](/REST APIs/Learn/sandbox/what-is-dvba). -->
 
 <!-- ### Developing with Blackboard Collaborate
 
@@ -126,7 +126,7 @@ Things are a little different for developing with Blackboard Collaborate. For mo
 
 ### Developing with Learn
 
-Go to the developer portal and [register as a Developer](/REST%20APIs/Learn/Getting Started/registry) if you haven't already, and then register your
+Go to the developer portal and [register as a Developer](/REST APIs/Learn/Getting Started/registry) if you haven't already, and then register your
 application to get a key and secret. Use your key and secret to [authenticate
 with Learn](basic-authentication.md).
 

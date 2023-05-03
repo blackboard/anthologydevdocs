@@ -112,7 +112,7 @@ The tool then uses a library of their choosing to validate the signature of the 
 There are two optional steps in the sequence diagram above.
 
 ##### Learn REST Token
-If your tool is going to use the Learn public REST API in order to get or set information it can't via LTI then it should retrive a Learn OAuth 2 access token at this time and cache it. There are choices as to what OAuth 2 flow you can use, so please refer to this document on how to [retrieve a Learn OAuth 2 access token](/REST%20APIs/Learn/getting-started/first-steps). In the diagram above we show using the AuthCode flow as its the most common for UI-based work where you want the API call to be done on behalf of the interacting user. See this document on using [three-legged oauth](/REST%20APIs/Learn/getting-started/3lo).
+If your tool is going to use the Learn public REST API in order to get or set information it can't via LTI then it should retrive a Learn OAuth 2 access token at this time and cache it. There are choices as to what OAuth 2 flow you can use, so please refer to this document on how to [retrieve a Learn OAuth 2 access token](/REST APIs/Learn/getting-started/first-steps). In the diagram above we show using the AuthCode flow as its the most common for UI-based work where you want the API call to be done on behalf of the interacting user. See this document on using [three-legged oauth](/REST APIs/Learn/getting-started/3lo).
 
 ##### LTI Rest Token
 If your tool wants to take advantage of the LTI services, such as Assignment & Grades, or Names & Roles, then you'll need to retrieve an LTI access token. This token is of a different format and uses a different security model than the Learn public API.

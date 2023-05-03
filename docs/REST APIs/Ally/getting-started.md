@@ -20,7 +20,7 @@ Click here to learn more about [authorization and authentication](auth.md) for A
 
 There are a number of ways to test out the API. The easiest is to use the [Ally as a Service API documentation](api.md). You can enter your client ID and your secret, and then interact with the available API directly from the documentation.
 
-Click here to learn more about [using the API documentation](/REST%20APIs/Ally/about-api-documentation) in this way.
+Click here to learn more about [using the API documentation](/REST APIs/Ally/about-api-documentation) in this way.
 
 Here are the operations currently available in the API (each page has a sample cURL command at the bottom):
 

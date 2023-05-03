@@ -17,11 +17,11 @@ agnostic, but it has not been tested on Windows.
 In order to begin this tutorial, there are a few pre-requisites that are
 assumed to be in place:
 
-- User has installed and started the latest [Developer AMI](/REST%20APIs/Learn/sandbox/developer-ami).
+- User has installed and started the latest [Developer AMI](/REST APIs/Learn/sandbox/developer-ami).
 - User has installed and configured [GIT](https://git-scm.com/downloads).
 - User has cloned the [repository](https://github.com/blackboard/BBDN-DevCon-REST-Workshop) to their local working directory.
 - User has Java 11 installed and configured to JAVA_HOME.
-- User has registered for an account on the [Developer Portal](https://developer.anthology.com/), [registered an application](/REST%20APIs/Learn/Getting Started/registry), obtained the key and secret, and [configured](/REST%20APIs/Learn/Getting Started/registry) the Developer Virtual Machine to accept it..
+- User has registered for an account on the [Developer Portal](https://developer.anthology.com/), [registered an application](/REST APIs/Learn/Getting Started/registry), obtained the key and secret, and [configured](/REST APIs/Learn/Getting Started/registry) the Developer Virtual Machine to accept it..
 
 To watch a recording of the corresponding Webinar, click
 [here](https://us.bbcollab.com/recording/BBAA710721684484425FA10FBA7A1B93).
@@ -305,7 +305,7 @@ adoption, is Authorization. There are a number of flavors out there, and the
 implementation chosen is often both a personal choice by the developer that
 built the REST API and also a function of the specific requirements and
 infrastructure around it. For more information regarding Learn's
-implementation of OAuth2, read the [Basic Authentication](/REST%20APIs/Learn/Getting Started/basic-authentication) in this section.
+implementation of OAuth2, read the [Basic Authentication](/REST APIs/Learn/Getting Started/basic-authentication) in this section.
 
 In the "1-Implement-OAuth" folder, you will find three files:
 
