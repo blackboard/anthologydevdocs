@@ -36,7 +36,7 @@ GET /api/v2/clients/:clientId/content/:contentHash
 
 ## Expected response
 
-For more information on the contents of this JSON, visit the [feedback definitions page](/REST APIs/Ally/feedback-definitions).
+For more information on the contents of this JSON, visit the [feedback definitions page](/REST%20APIs/Ally/feedback-definitions).
 
 **feedback=true**
 

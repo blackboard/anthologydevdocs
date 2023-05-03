@@ -125,7 +125,7 @@ find these manually: [Dropbox - 2018-10-30_13-39-25.FindingPrivilegeForGivenEnti
 
 ### Delivering your REST Integration
 
-For a more detailed process please see [Releasing your REST Integration](/REST APIs/Learn/getting-started/releasing-your-integration)
+For a more detailed process please see [Releasing your REST Integration](/REST%20APIs/Learn/getting-started/releasing-your-integration)
 
 **Step 1:** NEVER USE OR REQUIRE SYSTEM ADMINISTRATOR as your REST application user.
 

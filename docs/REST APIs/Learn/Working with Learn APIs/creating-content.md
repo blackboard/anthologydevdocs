@@ -179,7 +179,7 @@ And in the body:
 ```json
 {
     "title": "This is a new folder for content created using REST API",
-    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST APIs/Learn/advanced/bbml",
+    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST%20APIs/Learn/advanced/bbml",
     "description": "Content description",
     "position": 1,
     "launchInNewWindow": false,
@@ -204,7 +204,7 @@ It returns when 201:
     "id": "_126266_1",
     "parentId": "_120893_1",
     "title": "This is a new folder for content created using REST API",
-    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST APIs/Learn/advanced/bbml",
+    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST%20APIs/Learn/advanced/bbml",
     "description": "Content description",
     "created": "2022-03-14T21:31:32.552Z",
     "modified": "2022-03-14T21:31:32.611Z",
@@ -243,7 +243,7 @@ You can Learn more about adaptive release [here](./adaptive-release.md).
 ```json
 {
     "title": "This is a new folder for content created using REST API, without adaptive release",
-    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST APIs/Learn/advanced/bbml",
+    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST%20APIs/Learn/advanced/bbml",
     "description": "Content description",
     "position": 1,
     "launchInNewWindow": false,
@@ -318,7 +318,7 @@ Returns when 200:
 ```
 ## Creating Children content
 
-Please review the types of content you can create based on the contentHandler, please review: https://docs.anthology.com/REST APIs/Learn/advanced/contenthandler-datatypes
+Please review the types of content you can create based on the contentHandler, please review: https://docs.anthology.com/REST%20APIs/Learn/advanced/contenthandler-datatypes
 
 ### Creating a folder within a folder
 - POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/children
@@ -328,7 +328,7 @@ And in the body (Please notice the parentId attribute AND contentHandler):
 {
     "title": "This is a child of a folder, a folder within a folder",
     "parentId": "_121047_1",
-    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST APIs/Learn/advanced/bbml",
+    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST%20APIs/Learn/advanced/bbml",
     "description": "Content description",
     "position": 1,
     "launchInNewWindow": false,
@@ -349,7 +349,7 @@ Returns with 201:
     "id": "_127321_1",
     "parentId": "_121047_1",
     "title": "This is a child of a folder, a folder within a folder",
-    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST APIs/Learn/advanced/bbml",
+    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST%20APIs/Learn/advanced/bbml",
     "description": "Content description",
     "created": "2022-03-17T17:03:13.686Z",
     "modified": "2022-03-17T17:03:13.761Z",
@@ -388,7 +388,7 @@ And in the body (Please notice the parentId attribute AND contentHandler):
 {
     "title": "This is a child of a folder, This is content",
     "parentId": "_121047_1",
-    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST APIs/Learn/advanced/bbml",
+    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST%20APIs/Learn/advanced/bbml",
     "description": "Content description",
     "position": 1,
     "launchInNewWindow": false,
@@ -410,7 +410,7 @@ When 201 returns:
     "id": "_127322_1",
     "parentId": "_121047_1",
     "title": "This is a child of a folder, This is content",
-    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST APIs/Learn/advanced/bbml",
+    "body": "Body can be created using BBML, please review developers.blackboard.com for more information and docs.blackboard.com https://docs.anthology.com/REST%20APIs/Learn/advanced/bbml",
     "description": "Content description",
     "created": "2022-03-17T17:28:29.688Z",
     "modified": "2022-03-17T17:28:29.796Z",

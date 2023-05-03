@@ -11,13 +11,13 @@ doctitle: "Demo using Java"
 
 The rest demo script demonstrates authenticating a REST application,
 management and use of the authorization token, and creating, updating,
-discovering, and deleting supported Learn objects. For a more complete tutorial, check out this [page](/REST APIs/Learn/examples/java-command-line) to walkthrough building a Java command-line application.
+discovering, and deleting supported Learn objects. For a more complete tutorial, check out this [page](/REST%20APIs/Learn/examples/java-command-line) to walkthrough building a Java command-line application.
 
 ### Prerequisites
 
-- You must [register a developer account and application](/REST APIs/Learn/Getting Started/registry) in the Developer Portal
+- You must [register a developer account and application](/REST%20APIs/Learn/Getting Started/registry) in the Developer Portal
 - You must
-  [register your application](/REST APIs/Learn/Getting Started/registry) in Learn
+  [register your application](/REST%20APIs/Learn/Getting Started/registry) in Learn
 - You must also configure the script as outlined in the README for the project
 
 This webapp allows you to:
@@ -50,7 +50,7 @@ This help topic assumes the Developer:
 To build an integration with the Learn REST Web Services, regardless of
 the programming language of choice, can really be summed up in two steps:
 
-1. Use the Application Key and Secret to obtain an OAuth 2.0 access token, as described in the [Basic Authentication](/REST APIs/Learn/Getting Started/basic-authentication) document.
+1. Use the Application Key and Secret to obtain an OAuth 2.0 access token, as described in the [Basic Authentication](/REST%20APIs/Learn/Getting Started/basic-authentication) document.
 2. Call the appropriate REST endpoint with the appropriate data to perform the appropriate action.
 
 ### Authorization and Authentication

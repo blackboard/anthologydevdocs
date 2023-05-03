@@ -24,4 +24,4 @@ Reference Documentation:
 - [Three-Legged OAuth](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-3lo)
 - [https://github.com/Kong/mashape-oauth/blob/master/FLOWS.md](https://github.com/Kong/mashape-oauth/blob/master/FLOWS.md)
 - [REST Tutorials](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/Tutorials)
-- [Bookmarklet to help map entitlements to permissions](https://community.blackboard.com/blogs/4/18)
+- [Bookmarklet to help map entitlements to permissions](https://community.blackboard.com/blogs/4/18) (requires login.) or [document on this site](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-entitlements)

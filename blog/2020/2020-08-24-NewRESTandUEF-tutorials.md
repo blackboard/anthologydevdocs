@@ -11,7 +11,7 @@ summary: New!! Visit the REST Tutorials and UEF Tutorials pages for our tutorial
 
 # New!! REST and UEF Tutorials
 
-New!! Visit the [REST Tutorials](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/Tutorials) and [UEF Tutorials](https://docs.anthology.com/docs/REST%20APIs/Premium%20APIs/UEF/Tutorials) pages for our tutorials on these topics!!
+New!! Visit the [REST Tutorials](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-tutorials) and [UEF Tutorials](https://docs.anthology.com/docs/REST%20APIs/Premium%20APIs/UEF/Tutorials) pages for our tutorials on these topics!!
 
 Cheers!
 -markk
