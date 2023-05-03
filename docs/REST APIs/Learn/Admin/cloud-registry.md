@@ -11,9 +11,7 @@ doctitle: "Register Developer Instances to the Cloud"
 # Register Developer Instances to the Cloud 
 
 You must register developer instances of Blackboard Learn to the Blackboard
-cloud. This is true of both developer virtual machines (DVM) that you host
-locally and AWS cloud-based instances created from the Blackboard Learn AMI.
-Use the following steps to register your DVM or AMI.
+cloud. Use the following steps to register your EC2 created from the [Blackboard Learn for REST and LTI Developers AMI](https://aws.amazon.com/marketplace/pp/prodview-fdbvv2vvikoq4).
 
 To register your developer instance to the Blackboard cloud:
 
@@ -27,12 +25,3 @@ so from Blackboard's developer experience team.
 5. Select an **Instance Type**. For most development work, select **Development**.
 6. Select a **Regional Cloud**. This one-time choice indicates the AWS region with which you want to associate your developer instance. Your choice is permanent and irrevocable.
 7. Select **Save and Retry** to save the configuration and connect to the Blackboard cloud. In some cases, the developer instance of Learn throws an error explaining that it could not connect to the Blackboard cloud. This behavior is expected. Ignore it.
-
-If you are working with a developer virtual machine (DVM) rather than an AMI,
-you may need an SSL connection to register successfully. In these cases, you
-receive an error message like the following:
-
-![Screen+Shot+2016-04-24+at+10.50.13.png](/assets/img/cloud-registry-1.png)
-
-If you see this error message, try connecting to the Virtual Machine at
-[https://localhost:9877](https://localhost:9877/)and following the steps above. This should allow you to register to the cloud and then you should be able to use it in non-SSL mode.
