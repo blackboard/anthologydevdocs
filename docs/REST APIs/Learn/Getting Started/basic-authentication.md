@@ -17,12 +17,12 @@ Authentication for REST Integrations follows the [OAuth 2.0 RFC Standard](https:
 **WARNING: Never share or expose an application's key/secret pair. These are used for requesting OAuth tokens, which enable the holder to issue REST requests. Exposing an application key/secret pair or token is a serious security risk. If you think you have exposed a key/secret pair you may request a new pair for the application using the Developer Portal My Applications management page.**
 
 REST calls are subject to quotas and limits. For more information, see
-[Developer Groups, Site Quotas, and Rate Limit](/REST APIs/Learn/Admin/groups-quotas-rates).
+[Developer Groups, Site Quotas, and Rate Limit](../Admin/groups-quotas-rates.md).
 
 ### Before You Start
-
-- Your Learn instance must be registered at [developer.anthology.com](https://developer.anthology.com/).
-- The application ID you receive when registering at developer.anthology.com must then be registered on your Learn instance. Registering your application on a Learn instance provides the application key:secret pair access to the Learn instance.
+- You must have a developer account at [developer.anthology.com](https://developer.anthology.com/).
+- Your application must be registered at [developer.anthology.com](https://developer.anthology.com/).
+- The application ID you receive when registering at developer.anthology.com must then be used to install your integgration on your Learn instance. Installing your application on a Learn instance provides the application key:secret pair access to the Learn instance.
 
 ### To Get a Token Using Basic OAuth 2.0
 
@@ -139,4 +139,4 @@ you.
 - Tokens expire after 1 hour, as per the OAuth RFC examples.
 - Tokens are associated with a specific Learn site.
 - Any application may have only one token per Learn site. Asking for a token returns the existing one with an updated expiry time if it has not expired yet.
-- Check the [REST API Documentation](https://developer.anthology.com/portal/displayApi) for error codes.
+- Check the [Learn REST API Documentation](https://developer.anthology.com/portal/displayApi/Learn) for error codes.

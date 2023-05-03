@@ -17,9 +17,9 @@ These fall into two categories:
 
 ## Developer Portal Settings
 
-Before releasing your integration, please make sure there are sufficient site and rate limits for a smooth operation, you can review our site: https://docs.anthology.com/REST APIs/Learn/Admin/groups-quotas-rates to learn more about rate limits. So, the first steps are:
+Before releasing your integration, please make sure there are sufficient site and rate limits for a smooth operation, you can review our information on [Groups, Quotas, and Rates](../Admin/groups-quotas-rates.md) to learn more. The first steps are:
 
-1. Create a group named after the Company or the institution, keep in mind this group will receive production level settings, also, please make sure to follow our Naming convention https://docs.anthology.com/REST APIs/Learn/Admin/groups-quotas-rates#production-groups
+1. Create a group named after the Company or the institution, keep in mind this group will receive production level settings, also, please make sure to follow our <a href="https://docs.anthology.com/REST APIs/Learn/Admin/groups-quotas-rates#production-groups" target="_top">naming convention</a>
 2. File a Support ticket requestion production settings on your group. (for BbDN-level and above partners and any Bb Client, please file a support ticket to request production settings on your group. If you are a community-level partner, please send us an email to developers@anthology.com)  
 3. We will proceed and update a group to a production group
 4. Now you can associate your application with your production group.

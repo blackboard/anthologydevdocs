@@ -16,18 +16,18 @@ Take advantage of our LMS' capabilities by using the API to create users, pull a
 
 [Explore Learn API](https://developer.anthology.com/portal/displayApi/Learn)
 
-[Getting started](/docs/REST%20APIs/Learn/learn-intro)
+[Getting started](./REST%20APIs/Learn/Getting%20Started/first-steps.md)
 
 ### Student
 Create integrations across different platforms, applications, and systems using Student APIs to increase institution efficiency through automation and optimization.
 
 [Explore Student API](https://developer.anthology.com/portal/displayApi/Student)
 
-[Getting started](/docs/REST%20APIs/Student/Getting%20Started/rest_apis-student-getting-started-first-steps)
+[Getting started](./REST%20APIs/Student/Getting%20Started/student-first-steps.md)
 
 ### Ally
 Create integrations across different platforms, applications, and systems using Student APIs to increase institution efficiency through automation and optimization.
 
 [Explore Ally API](https://developer.anthology.com/portal/displayApi/Ally)
 
-[Getting started](/docs/REST%20APIs/Student/Getting%20Started/rest_apis-student-getting-started-first-steps)
+[Getting started](./REST%20APIs/Ally/getting-started.md)

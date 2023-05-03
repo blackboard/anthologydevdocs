@@ -33,4 +33,4 @@ UEF is a set of Premium APIs that augment the Ultra experience of
 Learn. We designed a robust set of capabilities such as
 telemetry, help provider registration, and UI element rendering to
 enable better integrations and richer user experience.
-Take a look at [First steps with UEF](https://docs.anthology.com/learn/uef/getting-started) to get started.
+Take a look at [First steps with UEF](./UEF/uef_getting_started.md) to get started.

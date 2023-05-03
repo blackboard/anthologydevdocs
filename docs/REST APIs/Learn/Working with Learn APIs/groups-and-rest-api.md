@@ -38,7 +38,7 @@ It is possible to create a new set sending:
 
 - POST {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets
 
-And using body (You can use BBML, more about it [here](../Advanced/bbml.md).
+And using body (You can use BBML, more about it [here](../Advanced/bbml.md):
 
 Returns when 200:
 
