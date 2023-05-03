@@ -11,7 +11,7 @@ summary: New in SaaS and the forthcoming 3900 release an @X@user.student_id@X@ t
 
 # New! Student Id Template Variable
 
-New in SaaS and the forthcoming 3900 release\* [an @X@user.student_id@X@ template variable!](https://anthologydevdocs.ddns.net/docs/REST%20APIs/Learn/Advanced/dynamic-rendering-with-template-variables).
+New in SaaS and the forthcoming 3900 release\* [an @X@user.student_id@X@ template variable!](https://docs.anthology.com/docs/REST%20APIs/Learn/Advanced/dynamic-rendering-with-template-variables).
 
 - Statements regarding our product development initiatives, including new products and future product upgrades, updates or enhancements represent our current intentions, but may be modified, delayed or abandoned without prior notice and there is no assurance that such offering, upgrades, updates or functionality will become available unless and until they have been made generally available to our customers.
 
