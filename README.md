@@ -20,6 +20,7 @@ With this move to Docusaurus we are adding full site search capability and looki
    2.  When merged an auto-build takes place generating the static files for the docs.anthology.com pages site. The auto-build takes about 2 minutes.
    3.  After step 9.ii is complete, the pages-build-deploy action is run which copies the static pages file to github pages. The build-deploy takes about 2 minutes.
    4.  in 1-5 minutes the site is refreshed and delivering your new content.
+10. TEST the site before claiming your ribbon!
 
 ## Tips
 ### URLs
