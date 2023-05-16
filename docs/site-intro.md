@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+hide_table_of_contents: true
 ---
 
 # Welcome to our Developer Documentation!
@@ -8,26 +9,62 @@ Explore the latest Anthology developer documentation, including tutorials, sampl
 
 ## REST APIs
 Use Anthology REST APIs to make calls and get the data you need to integrate your application with our platform.  
-
-
-
-### Learn
-Take advantage of our LMS' capabilities by using the API to create users, pull assessments, grade data, manage calendars, and more. 
-
-[Explore Learn API](https://developer.anthology.com/portal/displayApi/Learn)
-
-[Getting started](./REST%20APIs/Learn/Getting%20Started/first-steps.md)
-
-### Student
-Create integrations across different platforms, applications, and systems using Student APIs to increase institution efficiency through automation and optimization.
-
-[Explore Student API](https://developer.anthology.com/portal/displayApi/Student)
-
-[Getting started](./REST%20APIs/Student/Getting%20Started/student-first-steps.md)
-
-### Ally
-Create integrations across different platforms, applications, and systems using Student APIs to increase institution efficiency through automation and optimization.
-
-[Explore Ally API](https://developer.anthology.com/portal/displayApi/Ally)
-
-[Getting started](./REST%20APIs/Ally/getting-started.md)
+<div>
+    <div>
+         &nbsp;
+    </div>
+    <div class = "row">
+        <div class="col s4">
+            <img class="responsive-img" src="/assets/img/learndevdocs.png" alt="Screenshot for the course content view of the Learn Platform." ></img>
+            <h4><b>Learn</b></h4>
+            <div>
+            Expand on our LMS' capabilities by using the API to create users, pull assessments, grade data, manage calendars, and more. 
+            </div>
+            <div style={{textSize: 5}}>&nbsp;</div>
+            <div style={{textAlign: "center"}}>
+                <a href="https://developer.anthology.com/portal/displayApi/Learn" target=
+            "_blank"><b>Explore Learn API</b></a>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <a href="./REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-first-steps">Getting started</a>
+            </div>
+            <div>
+                &nbsp;
+            </div>
+        </div>
+        <div class="col s4">
+            <img class="responsive-img" src="/assets/img/studentdevdocs.png" alt="The Anthology Student Logo."></img>
+            <h4><b>Student</b> </h4>
+            <div>
+            Use Anthology Student APIs to increase institution efficiency through automation and optimization.
+            </div>
+            <div style={{textSize: 5}}>&nbsp;</div>
+            <div style={{textAlign: "center"}}>
+                <a href="https://developer.anthology.com/portal/displayApi/Student" target="_blank"><b>Explore Student API</b></a>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <a href="./REST%20APIs/Student/Getting%20Started/rest_apis-student-getting-started-first-steps">Getting started</a>
+            </div>
+            <div>
+                &nbsp;
+            </div>
+        </div>
+        <div class="col s4">
+            <img class="responsive-img" src="/assets/img/allydevdocs.png" alt="Screenshot showing an image of the Large Hadron Collider. The image is missing a description which results in a 25% accessibility score."></img>
+            <h4><b>Ally</b></h4>
+            <div>
+            Improve the accessibility of their content by using the API to upload files, check the status, and retrieve reports.
+            </div>
+            <div style={{textSize: 5}}>&nbsp;</div>
+            <div style={{textAlign: "center"}}>
+                <a href="https://developer.anthology.com/portal/displayApi/Student" target="_blank"><b>Explore Ally API</b></a>
+            </div>
+            <div style={{textAlign: "center"}}>
+                <a href="./REST%20APIs/Ally/rest_apis-ally-getting_started">Getting started</a>
+            </div>
+            <div>
+                &nbsp;
+            </div>
+        </div>
+    </div>
+</div>
