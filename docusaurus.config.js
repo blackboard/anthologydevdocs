@@ -14,15 +14,15 @@ const config = {
   url: 'https://blackboard.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
-  // baseUrl: '/anthologydevdocs',
-  projectName: 'blackboard.github.io/anthologydevdocs',
-  organizationName: 'blackboard',
+  // baseUrl: '/',
+  baseUrl: '/anthologydevdocs/',
+  projectName: 'anthologydevdocs',
+  organizationName: 'Anthology',
   trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  //organizationName: 'blackboard', // Usually your GitHub org/user name.
+  // organizationName: 'blackboard', // Usually your GitHub org/user name.
   //projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -102,7 +102,7 @@ const config = {
         id: 'support_us',
         content:
           // 'We are revamping our docs, please <a href="mailto:developers@anthology.com?subject=New Developer Documentation Site: ">let us know what you think!</a> </br>Note:
-          'The Developer Portal will be updated June 6, 2023 at 1AM EDT. See <a href="https://musical-adventure-wl1kq5k.pages.github.io/docs/Developer%20Portal/devportal-intro#release_notes" target="_top"> the Developer Portal release notes</a> for more detail.',
+          'The Developer Portal will be updated June 6, 2023 at 6AM EDT. See <a href="https://musical-adventure-wl1kq5k.pages.github.io/docs/Developer%20Portal/devportal-intro#release_notes" target="_top"> the Developer Portal release notes</a> for more detail.',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,
