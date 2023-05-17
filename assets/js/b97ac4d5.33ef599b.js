@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[8615],{646:o=>{o.exports=JSON.parse('{"permalink":"/anthologydevdocs/blog/tags/best-practices","page":1,"postsPerPage":1,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

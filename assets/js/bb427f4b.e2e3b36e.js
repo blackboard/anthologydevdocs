@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[2622],{5582:a=>{a.exports=JSON.parse('{"label":"Partners","permalink":"/anthologydevdocs/blog/tags/partners","allTagsPath":"/anthologydevdocs/blog/tags","count":1}')}}]);

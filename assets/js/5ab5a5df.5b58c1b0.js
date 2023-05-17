@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[3116],{3226:o=>{o.exports=JSON.parse('{"permalink":"/anthologydevdocs/blog/tags/uef","page":1,"postsPerPage":3,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
