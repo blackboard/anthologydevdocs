@@ -19,7 +19,6 @@ const config = {
   projectName: 'anthologydevdocs',
   organizationName: 'Anthology',
   trailingSlash: false,
-
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   // organizationName: 'blackboard', // Usually your GitHub org/user name.
