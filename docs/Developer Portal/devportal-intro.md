@@ -48,7 +48,3 @@ You may monitor the Portal maintenance schedule and progress at [https://status.
 Release Name: 2023.2
 Features:
 * **Announcement Panel**: The Announcement Panel provides Developer facing Portal, APIs, and Event information. When a new announcement is available it will be indicated via a red dot on the Announcements icon in the Portal task bar. Clicking on the Announcements icon displays released announcements - latest at the top.
-
-* **JWT Service Integration**: As part of our Portal simplification work and in support of future LTI and API authorization projects the portal is replacing it's in-application JWT implementation with our platform-based JWT service. This has no impact on existing LTI 1.3 or REST API authorization.
-
-* **Premium Access API**: This change provides addition Premium API information to the consuming system - e.g. Learn - and has no external facing impact.
