@@ -57,12 +57,12 @@ Additionally, the uef-documentation may require some additional changes in order
          Now all pages will have a link back to the documentation index page.
 ## Tips
 ### 404 after PR
-Problem: For some reason _sometimes_ on a PR build Pages resets the site URL from docs.anthology.com back to blackboard.io/anthologydevdocs - no idea why.
+Problem: For some reason _sometimes_ on a PR build Pages resets the site URL from docs.anthology.com back to `https://blackboard.github.io/anthologydevdocs/` - no idea why at this time.
 Solution: 
 1. Go to settings>pages and unpublish 
-2. then re-run the pages-build-deployment action
+2. Re-run the pages-build-deployment action
 3. Reset custom domain back to docs.anthology.com if necessary.
-4. test by going to https://docs.anthology.com
+4. Wait for DNS check to complete and then test by going to https://docs.anthology.com
 ### URLs
 Generally markdown links work fine in Docusaurus with the following exceptions:
 
