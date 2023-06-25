@@ -22,7 +22,46 @@ With this move to Docusaurus we are adding full site search capability and looki
    4.  in 1-5 minutes the site is refreshed and delivering your new content.
 10. TEST the site before claiming your ribbon!
 
+## UEF Documentation
+Due to the static nature of the UEF Documentation and that Docusaurus cannot display this via the SPA, we must place the UEF Documentation in the static `uef-documentation` directory.
+
+> It will now open in a separate tab.
+
+Additionally, the uef-documentation may require some additional changes in order for Docusaurus to properly display the html.
+1. anchor links
+   1. These are currently `<a href="<filename.html>#<anchor>">` and need to be changed to `<a href="#<anchor>">`
+      1. Fix this using VSCode regular expression search\replace `.*`:
+         1. find:  `"([a-zA-Z\.]*)html#`
+         2. replace: `"#`
+   2. Also there is no back to the Getting Started page (uef-documentation/index.html)
+      1. Fix this using VSCode search\replace:
+         1. find: 
+         ```
+         <nav class="tsd-navigation primary">
+				<ul>
+					<li class="label"><span>Pages</span>
+         ```
+         2. replace:
+         ```
+         <nav class="tsd-navigation primary">
+            <ul>
+					<li class="globals ">
+						   <span><a href="../start.html" >Getting Started</a></span>
+					   </li >
+				   </ul >
+			   </nav >
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="label"><span>Pages</span>
+         ```
+         Now all pages will have a link back to the documentation index page.
 ## Tips
+### 404 after PR
+Problem: For some reason _sometimes_ on a PR build Pages resets the site URL from docs.anthology.com back to blackboard.io/anthologydevdocs - no idea why.
+Solution: 
+1. Go to settings>pages and unpublish 
+2. then re-run the pages-build-deployment action
+3. test by going to https://docs.anthology.com
 ### URLs
 Generally markdown links work fine in Docusaurus with the following exceptions:
 
