@@ -57,10 +57,11 @@ Additionally, the uef-documentation may require some additional changes in order
          Now all pages will have a link back to the documentation index page.
 ## Tips
 ### 404 after PR
-> FIXED by adding `cname: docs.anthology.com` to deploy.yml build script. Leaving below here "just in case".
+> **FIXED** by adding `cname: docs.anthology.com` to deploy.yml build script. Leaving below here "just in case".
 
-Problem: For some reason _sometimes_ on a PR build Pages resets the site URL from docs.anthology.com back to `https://blackboard.github.io/anthologydevdocs/` - no idea why at this time.
-Solution: 
+**Problem**: For some reason _sometimes_ on a PR build Pages resets the site URL from docs.anthology.com back to `https://blackboard.github.io/anthologydevdocs/` - no idea why at this time.
+
+**Solution**: 
 1. Reset custom domain back to docs.anthology.com if necessary. Proceed to step three below.
 2. If that doesn't fix it then:
    1. Go to settings>pages and unpublish 
