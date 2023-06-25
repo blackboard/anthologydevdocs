@@ -61,7 +61,8 @@ Problem: For some reason _sometimes_ on a PR build Pages resets the site URL fro
 Solution: 
 1. Go to settings>pages and unpublish 
 2. then re-run the pages-build-deployment action
-3. test by going to https://docs.anthology.com
+3. Reset custom domain back to docs.anthology.com if necessary.
+4. test by going to https://docs.anthology.com
 ### URLs
 Generally markdown links work fine in Docusaurus with the following exceptions:
 
