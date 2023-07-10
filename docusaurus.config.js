@@ -104,7 +104,7 @@ const config = {
         content:
           // 'We are revamping our docs, please <a href="mailto:developers@anthology.com?subject=New Developer Documentation Site: ">let us know what you think!</a> </br>',
           // ' ',
-          'The Developer Portal was updated June 8, 2023 at 6AM EDT. See <a href="https://docs.anthology.com/docs/Developer%20Portal/devportal-intro#release_notes" target="_top"> the Developer Portal release notes</a> for more detail.',
+          'The Developer Portal will be updated July 11, 2023 from 12:30 AM to 02:30 AM EDT. See <a href="https://docs.anthology.com/docs/Developer%20Portal/devportal-intro#release_notes" target="_top"> the Developer Portal release notes</a> for more detail.',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,
