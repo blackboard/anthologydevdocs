@@ -44,8 +44,17 @@ You may monitor the Portal maintenance schedule and progress at [https://status.
 
 ### Release Notes
 
+#### 07/11/2023
+Release Name: 2023.3
+
+:exclamation: The length of this maintenance window, 12:30 am - 02:30 am EST, is due to the Redis Upgrade, but may complete in ~45 minutes. We apologize in advance for the short notice.
+
+Features:
+* **Redis Upgrade**: For security and performance purposes we are upgrading to the latest version of Redis. This will have no impact on current Developer-facing functionality.
+* **LTI Dynamic Registration**: For performance and forward looking enhancements we are improving the backend which supports the dynamic registration of LTI integrations with Learn. This will have no impact on current Developer-facing functionality.
 #### 06/06/2023
 Release Name: 2023.2
+
 Features:
 * **Announcement Panel**: The Announcement Panel provides Developer facing Portal, APIs, and Event information. When a new announcement is available it will be indicated via a red dot on the Announcements icon in the Portal task bar. Clicking on the Announcements icon displays active announcements - latest at the top.
 
