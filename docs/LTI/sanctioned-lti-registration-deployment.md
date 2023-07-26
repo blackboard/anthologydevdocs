@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Anthology Sacntioned LTI Registration and Deployment with Learn"
+title: "Anthology Sanctioned LTI Registration and Deployment with Learn"
 id: sanctioned-lti-registration-deployment
 categories: Standards
 author: Mark Kauffman
