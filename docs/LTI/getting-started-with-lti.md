@@ -7,6 +7,7 @@ author: Scott Hurrey
 sidebar_position: 2
 displayed_sidebar: documentationSidebar
 ---
+
 # Getting Started With LTI
 
 ### Overview
@@ -21,7 +22,7 @@ Note that Learn supports two versions of LTI:
     1. LTI 1.1
     2. LTI 1.3/Advantage
 
-This getting started guide is focused on LTI 1.3/Advantage. LTI 1.1 has been deprecated by the IMS Global, and it's been around for over 10 years. Learn will continue support of LTI 1.1 tools for the indeterminate future while LTI 1.1 tool developers migrate their tool to LTI 1.3/Advantage. If you are building a new tool, it is ***strongly recommended*** you use LTI 1.3/Advantage.
+This getting started guide is focused on LTI 1.3/Advantage. LTI 1.1 has been deprecated by the IMS Global, and it's been around for over 10 years. Learn will continue support of LTI 1.1 tools for the indeterminate future while LTI 1.1 tool developers migrate their tool to LTI 1.3/Advantage. If you are building a new tool, it is **_strongly recommended_** you use LTI 1.3/Advantage.
 
 ### LTI 1.3/Advantage
 
@@ -56,7 +57,7 @@ There are other LTI resources here: <https://github.com/IMSGlobal/ltibootcamp>
 Please see this guide for a recipe on building an LTI 1.3 application. Note that you can develop an LTI application in any programming language and framework, and deploy it to any cloud service provider.
 We cannot provide guidance on what technologies or hosting platforms to use, but we will cover all the steps required for building an application.
 
-[Tool Implementation Guide](./Tutorials/implementation-guide.md)
+[Tool Implementation Guide](./tutorials/implementation-guide.md)
 
 ### Registering Your Application
 
@@ -88,7 +89,7 @@ The LTI 1.3 spec defines the information you must provide to a Platform (LMS) su
 The LTI spec supports the notion of custom parameters with a launch. These are arbitrary `name=value` tuples that you can provide to uniquely identify the launch, or any other piece of information you need from the platform at launch time. See the following two documents on how to use substitution parameters within custom parameters to receive context-specific data on an LTI launch:
 
 [IMS LTI 1.3 Parameter Substitution](https://www.imsglobal.org/spec/lti/v1p3/#customproperty)  
-[Learn Template Variables](../REST%20APIs/Learn/Advanced/dynamic-rendering-with-template-variables.md)
+[Learn Template Variables](../rest-apis/learn/advanced/dynamic-rendering-with-template-variables.md)
 
 #### Information you Receive
 
@@ -106,14 +107,14 @@ Once you have registered your application with the Blackboard Developer Portal, 
 
 In Learn the way an LTI tool is surfaced in the user interface (UI) is through the definition of one or more `Placements`. An application developer can define these placements so a Learn admin doesn't have to. There are currently six types of placements you can create:
 
-| Type           | Description                                                                                                    | Options              |
-| -------------- | -------------------------------------------------------------------------------------------------------------- | -------------------- |
-| Deep Linking   | Supports [LTI Deep Linking](https://www.imsglobal.org/spec/lti-dl/v2p0) to get content in outline or editor    | Allow student access |
-| Course Content | Can be placed in the course outline or editor                                                                  | Can be graded        |
-| Course         | Appears in Ultra Books & Tools, Original Tools                                                                 | Allow student access |
-| System         | Appears in Ultra Base Nav Tools, Original Institution module                                                   |                      |
-| Admin          | Appears in Admin Tools module                                                                                  |                      |
-| UEF            | Special type for extending the Ultra UI; see [UEF docs](../../docs/REST%20APIs/Premium%20APIs/UEF/uef_getting_started.md) |                      |
+| Type           | Description                                                                                                           | Options              |
+| -------------- | --------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Deep Linking   | Supports [LTI Deep Linking](https://www.imsglobal.org/spec/lti-dl/v2p0) to get content in outline or editor           | Allow student access |
+| Course Content | Can be placed in the course outline or editor                                                                         | Can be graded        |
+| Course         | Appears in Ultra Books & Tools, Original Tools                                                                        | Allow student access |
+| System         | Appears in Ultra Base Nav Tools, Original Institution module                                                          |                      |
+| Admin          | Appears in Admin Tools module                                                                                         |                      |
+| UEF            | Special type for extending the Ultra UI; see [UEF docs](../../docs/rest-apis/premium-apis/uef/uef_getting_started.md) |                      |
 
 #### Placement properties
 
@@ -138,7 +139,7 @@ the developer portal. They will also receive a new piece of information which is
 It is likely that you'll need to use that deployment ID to map which Learn instance a launch is coming from. This is a bit of a chicken and egg problem, in that you have registered your application with the developer portal, but you don't know what Learn instances are using it yet. You can automatically handle that at launch time, e.g., if you haven't seen that deployment ID previously then prompt the user to set it up, or you can do the set up out of band.
 
 For more information about
-registering your application, see [Register Your Application](https://help.blackboard.com/Learn/Administrator/Hosting/System_Integration/LTI).
+registering your application, see [Register Your Application](https://help.blackboard.com/learn/Administrator/Hosting/System_Integration/LTI).
 
 At this point your application is connected to a Learn instance. All that remains is for an instructor or other user to create links in a course or use some of the automatically deployed links, such as a course tool placement.
 

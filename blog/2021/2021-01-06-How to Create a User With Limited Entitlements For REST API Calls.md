@@ -19,9 +19,9 @@ The answer is yes! [Here's a video explaining exactly how to proceed](https://yo
 
 Reference Documentation:
 
-- [Managing REST Integrations in Learn: The REST Integrations Tool for System Administrators](https://docs.anthology.com/docs/REST%20APIs/Learn/Admin/rest_apis-learn-admin-rest_and_learn)
-- [Basic Authentication with REST](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-basic_auth)
-- [Three-Legged OAuth](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-3lo)
+- [Managing REST Integrations in Learn: The REST Integrations Tool for System Administrators](https://docs.anthology.com/docs/rest-apis/learn/admin/rest_apis-learn-admin-rest_and_learn)
+- [Basic Authentication with REST](https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-basic_auth)
+- [Three-Legged OAuth](https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-3lo)
 - [https://github.com/Kong/mashape-oauth/blob/master/FLOWS.md](https://github.com/Kong/mashape-oauth/blob/master/FLOWS.md)
-- [REST Tutorials](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/Tutorials)
-- [Bookmarklet to help map entitlements to permissions](https://community.blackboard.com/blogs/4/18) (requires login.) or [document on this site](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-entitlements)
+- [REST Tutorials](https://docs.anthology.com/docs/rest-apis/learn/getting-started/Tutorials)
+- [Bookmarklet to help map entitlements to permissions](https://community.blackboard.com/blogs/4/18) (requires login.) or [document on this site](https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-entitlements)

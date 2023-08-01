@@ -28,9 +28,9 @@ if ( top != self )
 
 In and of itself there's nothing wrong with it. We, at Anthology, have removed it from the default Ultra login page, but many clients use it in Original login pages, and so it's moved with them into Ultra.
 
-> If you are unsure whether you have a custom login page, visit [help.blackboard.com](https://help.blackboard.com/Learn/Administrator/SaaS/User_Interface_Options/Ultra_Experience/Institution_Branding/Customize_the_Login_Page) for more information.
+> If you are unsure whether you have a custom login page, visit [help.blackboard.com](https://help.blackboard.com/learn/Administrator/SaaS/User_Interface_Options/Ultra_Experience/Institution_Branding/Customize_the_Login_Page) for more information.
 
-Secondly, when a user logged in, Ultra Extensions automatically fired off an LTI launch to UEF-enabled tools. The way UEF works is: after the LTI launch is validated, the tool redirects to the Learn REST endpoint to initiate a UserAuth flow. In our documentation, we call this a Three-Legged OAuth or [3LO](https://docs.anthology.com/docs/REST%20APIs/Learn/Getting%20Started/rest_apis-learn-getting-started-3lo). In most cases, it's a process that relies on a session cookie to hold everything together. This impending release of Chrome (and other browsers) will block this cookie because everything is happening across domains and involves the use of iframes.
+Secondly, when a user logged in, Ultra Extensions automatically fired off an LTI launch to UEF-enabled tools. The way UEF works is: after the LTI launch is validated, the tool redirects to the Learn REST endpoint to initiate a UserAuth flow. In our documentation, we call this a Three-Legged OAuth or [3LO](https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-3lo). In most cases, it's a process that relies on a session cookie to hold everything together. This impending release of Chrome (and other browsers) will block this cookie because everything is happening across domains and involves the use of iframes.
 
 So what happens is that, even though the integration is configured in Learn to not force the end-user to authorize the integration, the lack of the session cookie means that Learn has no idea that this user is logged in, so it pops open the login page.
 
@@ -76,8 +76,6 @@ In LTI 1.3, you will see the value in the `https://blackboard.com/lti/claim/one_
     # Redirect the successful LTI validation to the Authorization Code endpoint
     return(redirect(learn_url + '/learn/api/public/v1/oauth2/authorizationCode?' + encoded_params))
 ```
-
-
 
 ### LTI 1.1
 
