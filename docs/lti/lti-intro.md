@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 displayed_sidebar: documentationSidebar
+id: lti-intro
 ---
 
 # Welcome to LTI 1.3 for Blackboard Learn!

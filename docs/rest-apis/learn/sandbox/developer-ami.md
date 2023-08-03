@@ -2,7 +2,7 @@
 layout: post
 title: "Developer AMI"
 tipue_search_active: true
-id: rest_apis-learn-sandbox-developer_ami
+id: developer-ami
 categories: DVBA
 ---
 
