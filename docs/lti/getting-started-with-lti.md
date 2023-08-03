@@ -57,7 +57,7 @@ There are other LTI resources here: <https://github.com/IMSGlobal/ltibootcamp>
 Please see this guide for a recipe on building an LTI 1.3 application. Note that you can develop an LTI application in any programming language and framework, and deploy it to any cloud service provider.
 We cannot provide guidance on what technologies or hosting platforms to use, but we will cover all the steps required for building an application.
 
-[Tool Implementation Guide](./tutorials/implementation-guide.md)
+[Tool Implementation Guide](./Tutorials/implementation-guide.md)
 
 ### Registering Your Application
 

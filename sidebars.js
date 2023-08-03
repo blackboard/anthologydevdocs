@@ -109,7 +109,7 @@ const sidebars = {
               collapsible: true,
               // collapsed: true,
               items: [
-                "rest-apis/learn/sandbox/rest_apis-learn-sandbox-developer_ami",
+                "rest-apis/learn/sandbox/developer_ami",
               ],
             },
             // Learn App
