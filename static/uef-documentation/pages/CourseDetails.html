@@ -51,10 +51,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../globals.html">Globals</a>
+					<a href="../start.html">Get Started</a>
 				</li>
-				<li>
-					<a href="index.html">Pages</a>
+<li>
+					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
 					<a href="CourseDetails.html"> Course Details</a>
@@ -71,55 +71,63 @@
 				<a href="#extending-course-outline39s-quotdetails-amp-actionsquot" id="extending-course-outline39s-quotdetails-amp-actionsquot" style="color: inherit; text-decoration: none;">
 					<h1>Extending Course Outline&#39;s &quot;Details &amp; Actions&quot;</h1>
 				</a>
-				<p>The Ultra Extension Framework allows an integration to add content
-					into the &quot;Details &amp; Action&quot; section of the course outline panel.  The
-					integration is allowed to render any supported content; however, it
-					is recommended to use the provided style classes to match your content
-				with the existing actions design.</p>
+				<p>The Ultra Extension Framework allows an integration to add content into the &quot;Details &amp; Action&quot;
+					section of the course outline panel. The integration is allowed to render any supported content;
+					however, it is recommended to use the provided style classes to match your content with the existing
+				actions design.</p>
 				<a href="#registration" id="registration" style="color: inherit; text-decoration: none;">
 					<h2>Registration</h2>
 				</a>
-				<p>In order to render a Course Detail portal, you need to register with the
-					Ultra Extension Framework.  This can be accomplished by sending the
-					<code>&#39;course:detail:register&#39;</code> message to the framework.  See
+				<p>In order to render a Course Detail portal, you need to register with the Ultra Extension Framework.
+					This can be accomplished by sending the <code>&#39;course:detail:register&#39;</code> message to the framework. See
 				<a href="../interfaces/icoursedetailsregistrationrequest.html">ICourseDetailsRegistrationRequest</a> for additional information.</p>
-				<p>Once the request has been made, the Ultra Extension Framework will
-					respond with <a href="../interfaces/icoursedetailsregistrationresponse.html">ICourseDetailsRegistrationResponse</a>.  If successful,
-				the provided ID will be used for subsequent portal messages.</p>
+				<p>Once the request has been made, the Ultra Extension Framework will respond with
+					<a href="../interfaces/icoursedetailsregistrationresponse.html">ICourseDetailsRegistrationResponse</a>. If successful, the provided ID will be used for subsequent
+				portal messages.</p>
 				<a href="#registration-id" id="registration-id" style="color: inherit; text-decoration: none;">
 					<h3>Registration ID</h3>
 				</a>
-				<p>Unlike other registrations in Ultra Extension Framework, the course
-					details area allows you to register multiple times.  Therefore, it is
-					important to ensure that you respond only to portal events that have
-					the appropriate <code>selectorData</code>.  The data is required to match your
-				registration id.</p>
+				<p>Unlike other registrations in Ultra Extension Framework, the course details area allows you to
+					register multiple times. Therefore, it is important to ensure that you respond only to portal events
+				that have the appropriate <code>selectorData</code>. The data is required to match your registration id.</p>
 				<a href="#course-detail-class-names" id="course-detail-class-names" style="color: inherit; text-decoration: none;">
 					<h2>Course Detail Class Names</h2>
 				</a>
-				<p>With the course detail&#39;s portal there are additional special class names
-				that will only work when applied to elements rendering in this portal.</p>
-				<a href="#ltdivgt-elements" id="ltdivgt-elements" style="color: inherit; text-decoration: none;">
+				<p>With the course detail&#39;s portal there are additional special class names that will only work when
+				applied to elements rendering in this portal.</p>
+				<a href="#codeltdivgtcode-elements" id="codeltdivgtcode-elements" style="color: inherit; text-decoration: none;">
 					<h3><code>&lt;div&gt;</code> elements</h3>
 				</a>
-				<p>| className | Description |
-					| uef--course-details--element | Groups the name and link text to render vertically. |
-					| uef--course-details--image | Provides a container for an action&#39;s &#39;img&#39; container. |
-					| uef--course-details--name | Styles the name label of the action. |
-					| uef--course-details--content | A container to help format the link area. |
-					| uef--course-details--link | Used to make the bottom detail text look like a link. |
-				| uef--course-details--container | A container which can wrap the button.  Providing a boundary so other content can be added. |</p>
+				<p>| className | Description | | uef--course-details--element | Groups the name and link text to render
+					vertically. | | uef--course-details--image | Provides a container for an action&#39;s &#39;img&#39; container. |
+					| uef--course-details--name | Styles the name label of the action. | | uef--course-details--content
+					| A container to help format the link area. | | uef--course-details--link | Used to make the bottom
+					detail text look like a link. | | uef--course-details--container | A container which can wrap the
+					button. Providing a boundary so other content can be added. | | uef--course-details--element-card |
+					Styles the component to look like the action buttons (Element card style) | |
+				uef--course-details--menu-container | Wraps the component to properly display labeled action menus |</p>
 				<a href="#39button39-elements" id="39button39-elements" style="color: inherit; text-decoration: none;">
 					<h3>&#39;button&#39; elements</h3>
 				</a>
-				<p>| className | Description |
-				| uef--button--course-details | Styles the button to look like the other action buttons. |</p>
+				<p>| className | Description | | uef--button--course-details | Styles the button to look like the other
+				action buttons. |</p>
+				<a href="#39actionmenu39-elements" id="39actionmenu39-elements" style="color: inherit; text-decoration: none;">
+					<h3>&#39;ActionMenu&#39; elements</h3>
+				</a>
+				<p>Action menu items are components that display a menu with one or more options given a callback
+					identifier and a name for each option by pressing a button. A label can be added to give the menu a
+				descriptive text instead of the button. The following class names are supported to do so:</p>
+				<p>| className | Description | | uef--action-menu--labeled | Styles the action menu to replace the
+				default button icon with a text label |</p>
+				<p>Additionally, a property labelClassName is added to apply special classnames to the descriptive text
+				for labeled action menus:</p>
+				<p>| labelClassName | Description | | uef--course-details--menu-label | Styles the provided label into
+				a text resembling a link with a select indicator |</p>
 				<a href="#standard-structure" id="standard-structure" style="color: inherit; text-decoration: none;">
 					<h2>Standard Structure</h2>
 				</a>
-				<p>In addition to the class name properties the integration provides,
-					you will need to match the structure.  The following example shows how
-				to match the existing item&#39;s look and feel.</p>
+				<p>In addition to the class name properties the integration provides, you will need to match the
+				structure. The following example shows how to match the existing item&#39;s look and feel.</p>
 				<pre><code class="language-javascript">{
   <span class="hljs-attr">tag</span>: <span class="hljs-string">'button'</span>,
   <span class="hljs-attr">props</span>: {
@@ -178,25 +186,92 @@
     },
   ]
 }</code></pre>
+				<a href="#action-menu-structure" id="action-menu-structure" style="color: inherit; text-decoration: none;">
+					<h2>Action Menu Structure</h2>
+				</a>
+				<p>In order to create action items with multiple options, it is possible to use an action menu. The
+					following example shows a correct structure to achieve this, with the usage of a descriptive text
+				label for the menu:</p>
+				<pre><code class="language-javascript">{
+  <span class="hljs-attr">tag</span>: <span class="hljs-string">'div'</span>,
+  <span class="hljs-attr">props</span>: {
+    <span class="hljs-attr">className</span>: <span class="hljs-string">'uef--course-details--element-card'</span>
+  },
+  <span class="hljs-attr">children</span>: {
+    <span class="hljs-attr">tag</span>: <span class="hljs-string">'div'</span>,
+    <span class="hljs-attr">props</span>: {
+      <span class="hljs-attr">className</span>: <span class="hljs-string">'uef--course-details--image'</span>
+    },
+    <span class="hljs-attr">children</span>: [
+      {
+        <span class="hljs-attr">tag</span>: <span class="hljs-string">'img'</span>,
+        <span class="hljs-attr">props</span>: {
+          <span class="hljs-attr">alt</span>: <span class="hljs-string">"Integration Action's Image"</span>,
+          <span class="hljs-attr">src</span>: <span class="hljs-string">'https://www.blackboard.com/themes/custom/blackboard/images/Blackboard-Logo.png'</span>,
+          <span class="hljs-attr">height</span>: <span class="hljs-number">24</span>,
+          <span class="hljs-attr">width</span>: <span class="hljs-number">24</span>
+        }
+      }
+    ]
+  },
+  {
+    <span class="hljs-attr">tag</span>: <span class="hljs-string">'div'</span>,
+    <span class="hljs-attr">props</span>: {
+      <span class="hljs-attr">className</span>: <span class="hljs-string">'uef--course-details--element'</span>
+    },
+    <span class="hljs-attr">children</span>: [
+      {
+        <span class="hljs-attr">tag</span>: <span class="hljs-string">'div'</span>,
+        <span class="hljs-attr">props</span>: {
+          <span class="hljs-attr">className</span>: <span class="hljs-string">'uef--course-details--name'</span>
+        },
+        <span class="hljs-attr">children</span>: <span class="hljs-string">"Integration Action's Label"</span>
+      },
+      {
+        <span class="hljs-attr">tag</span>: <span class="hljs-string">'div'</span>,
+        <span class="hljs-attr">children</span>: [
+          {
+            <span class="hljs-attr">tag</span>: <span class="hljs-string">'ActionMenu'</span>,
+            <span class="hljs-attr">props</span>: {
+              <span class="hljs-attr">items</span>: [
+                {
+                  <span class="hljs-attr">name</span>: <span class="hljs-string">'Callback Option #1'</span>,
+                  <span class="hljs-attr">callbackId</span>: <span class="hljs-string">'integration-name-callback-1'</span>
+                },
+                {
+                  <span class="hljs-attr">name</span>: <span class="hljs-string">'Callback Option #2'</span>,
+                  <span class="hljs-attr">callbackId</span>: <span class="hljs-string">'integration-name-callback-2'</span>
+                },
+              ],
+              <span class="hljs-attr">label</span>: <span class="hljs-string">'Action Menu descriptive text'</span>,
+              <span class="hljs-attr">className</span>: <span class="hljs-string">'uef--action-menu--labeled'</span>,
+              <span class="hljs-attr">labelClassName</span>: <span class="hljs-string">'uef--course-details--menu-label'</span>,
+            },
+          },
+        ],
+        <span class="hljs-attr">props</span>: {
+          <span class="hljs-attr">className</span>: <span class="hljs-string">'uef--course-details--menu-container'</span>,
+        }
+      }
+    ]
+  }
+}</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals ">
-						<span> <a href="../start.html">Getting Started</a></span>
+					<li class="label ">
+						<span>Pages</span>
 					</li>
-				</ul>
-			</nav>
-			<nav class="tsd-navigation primary">
-				<ul>
-				<ul>
-					<li class="label "><span>Pages</span>
 					<li class=" ">
-						<a href="../AccessibilityAttributes"> <wbr>Accessibility <wbr>Attributes</a>
+						<a href="AccessibilityAttributes.html"> <wbr>Accessibility <wbr>Attributes</a>
 					</li>
 					<li class="current ">
 						<a href="CourseDetails.html"> <wbr>Course <wbr>Details</a>
+					</li>
+					<li class=" ">
+						<a href="GroupCollaborationTool.html"> <wbr>Group <wbr>Collaboration <wbr>Tool</a>
 					</li>
 					<li class=" ">
 						<a href="HelpProviderScenarios.html"> <wbr>Help <wbr>Provider <wbr>Scenarios</a>
@@ -206,6 +281,9 @@
 					</li>
 					<li class=" ">
 						<a href="OriginalityReporting.html"> <wbr>Originality <wbr>Reporting</a>
+					</li>
+					<li class=" ">
+						<a href="Proctoring.html"> <wbr>Proctoring</a>
 					</li>
 					<li class=" ">
 						<a href="RightToLeft.html"> <wbr>Right <wbr>To <wbr>Left</a>
