@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Pages | Ultra Extension Framework Documentation</title>
+	<title> Proctoring | Ultra Extension Framework Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,8 +56,11 @@
 <li>
 					<a href="../globals.html">Globals</a>
 				</li>
+				<li>
+					<a href="Proctoring.html"> Proctoring</a>
+				</li>
 			</ul>
-			<h1> Pages</h1>
+			<h1> Proctoring</h1>
 		</div>
 	</div>
 </header>
@@ -65,19 +68,84 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#contents" id="contents" style="color: inherit; text-decoration: none;">
-					<h2>Contents</h2>
+				<a href="#proctoring-service" id="proctoring-service" style="color: inherit; text-decoration: none;">
+					<h1>Proctoring Service</h1>
 				</a>
-				<ul>
-					<li><a href="AccessibilityAttributes.html"> Accessibility Attributes</a></li>
-					<li><a href="CourseDetails.html"> Course Details</a></li>
-					<li><a href="GroupCollaborationTool.html"> Group Collaboration Tool</a></li>
-					<li><a href="HelpProviderScenarios.html"> Help Provider Scenarios</a></li>
-					<li><a href="MessagingRecommendations.html"> Messaging Recommendations</a></li>
-					<li><a href="OriginalityReporting.html"> Originality Reporting</a></li>
-					<li><a href="Proctoring.html"> Proctoring</a></li>
-					<li><a href="RightToLeft.html"> Right To Left</a></li>
-				</ul>
+				<p>The Ultra Extension Framework allows an integration to register as a proctoring service for
+				assessments in Learn Ultra in conjunction with Learn&#39;s LTI tool framework.</p>
+				<a href="#learn-proctoring-services" id="learn-proctoring-services" style="color: inherit; text-decoration: none;">
+					<h2>Learn Proctoring Services</h2>
+				</a>
+				<p>Proctoring services are registered in Learn as an LTI tool. Proctoring placements are used to define
+					a launch point to the proctoring tool. Learn follows the
+					<a href="http://www.imsproject.org/spec/proctoring/v1p0">IMS Proctoring Specification</a> to communicate with
+					these tools using LTI. Ultra Extension Framework builds on that with APIs to support UI integration
+					into Learn Ultra providing the ability to enable and configure a proctored assessment directly in
+					Ultra courses. This document will go into detail about how to use the APIs to register as a
+				proctoring service with UEF.</p>
+				<a href="#uef" id="uef" style="color: inherit; text-decoration: none;">
+					<h2>UEF</h2>
+				</a>
+				<p>Each UEF proctoring service is linked to its corresponding LTI proctoring placement in Learn by
+					specifying the same unique handle in both places. All proctoring placements must provide a unique
+					handle, and any UEF proctoring service designed to work with that Learn LTI placement must have the
+				same handle.</p>
+				<pre><code class="language-javascript">sendMessage({
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'proctoring-service:register'</span>,
+  <span class="hljs-attr">proctoringPlacementHandle</span>: <span class="hljs-string">'&lt;your_unique_handle&gt;'</span>,
+});</code></pre>
+				<p>Learn Ultra discovers available proctoring services via its own internal API to Learn, and the
+					unique handles provided by Learn are the source of record. UEF proctoring services will only show up
+					in Ultra UI if Learn reports that a proctoring service with the same unique handle is available for
+				use on the system.</p>
+				<a href="#proctoring-service-configuration" id="proctoring-service-configuration" style="color: inherit; text-decoration: none;">
+					<h3>Proctoring Service Configuration</h3>
+				</a>
+				<p>A UEF portal has been added to the Assessment settings panel. After proctoring is enabled on the
+					assessment by an instructor, the portal allows a proctoring service to render its own settings. The
+					portal&#39;s selector is <code>course.content.assessment.settings.proctoring.panel.settings</code>, and will pass
+				along the <code>courseId</code> and <code>contentId</code> as parameters in the <code>portal:new</code> message:</p>
+				<pre><code class="language-json">{
+  <span class="hljs-attr">"courseId"</span>: <span class="hljs-string">"&lt;course_id&gt;"</span>,
+  <span class="hljs-attr">"contentId"</span>: <span class="hljs-string">"&lt;content_id&gt;"</span>
+}</code></pre>
+				<a href="#saving-configuration" id="saving-configuration" style="color: inherit; text-decoration: none;">
+					<h4>Saving Configuration</h4>
+				</a>
+				<p>When an instructor saves the Assessment settings, a UEF message will be passed to the extension, and
+					Ultra will wait for the response indicating that the save succeeded or failed. When a successful
+					response is received from the integration, the selected proctoring service will be enabled on the
+				assessment.</p>
+				<p>The message from Ultra will provide a <code>correlationId</code> that will need to be provided when responding
+					to the message, as well as the <code>courseId</code>, <code>proctoringPlacementHandle</code> and <code>contentId</code> of the item
+				being saved. It will also include the enabled state of proctoring:</p>
+				<pre><code class="language-json">{
+  <span class="hljs-attr">"data"</span>: {
+    <span class="hljs-attr">"eventType"</span>: <span class="hljs-string">"proctoring-service:settings-saved"</span>,
+    <span class="hljs-attr">"correlationId"</span>: <span class="hljs-string">"&lt;uuid&gt;"</span>,
+    <span class="hljs-attr">"courseId"</span>: <span class="hljs-string">"&lt;course_id&gt;"</span>,
+    <span class="hljs-attr">"contentId"</span>: <span class="hljs-string">"&lt;content_id&gt;"</span>,
+    <span class="hljs-attr">"proctoringPlacementHandle"</span>: <span class="hljs-string">"&lt;unique_placement_handle&gt;"</span>,
+    <span class="hljs-attr">"enabled"</span>: &lt;boolean&gt;
+  }
+}</code></pre>
+				<p>After sending that message to the extension, UEF expects an extension to check its rendered DOM and
+					save off the corresponding settings by whatever mechanism it communicates to its tool implementation
+				(i.e. via a REST call).</p>
+				<p>The UEF extension must respond with a success or failure message within 5 seconds:</p>
+				<pre><code class="language-javascript">sendMessage({
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'proctoring-service:settings-saved:response'</span>,
+  <span class="hljs-attr">correlationId</span>: <span class="hljs-string">'&lt;uuid&gt;'</span>,
+  <span class="hljs-attr">success</span>: <span class="hljs-literal">true</span>,
+});
+
+sendMessage({
+  <span class="hljs-attr">type</span>: <span class="hljs-string">'proctoring-service:settings-saved:response'</span>,
+  <span class="hljs-attr">correlationId</span>: <span class="hljs-string">'&lt;uuid&gt;'</span>,
+  <span class="hljs-attr">success</span>: <span class="hljs-literal">false</span>,
+  <span class="hljs-comment">// you may supply a human readable error message to display to the user</span>
+  <span class="hljs-attr">error</span>: <span class="hljs-string">'There was an error saving the configuration'</span>,
+});</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -104,7 +172,7 @@
 					<li class=" ">
 						<a href="OriginalityReporting.html"> <wbr>Originality <wbr>Reporting</a>
 					</li>
-					<li class=" ">
+					<li class="current ">
 						<a href="Proctoring.html"> <wbr>Proctoring</a>
 					</li>
 					<li class=" ">

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Pages | Ultra Extension Framework Documentation</title>
+	<title> Group Collaboration Tool | Ultra Extension Framework Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,8 +56,11 @@
 <li>
 					<a href="../globals.html">Globals</a>
 				</li>
+				<li>
+					<a href="GroupCollaborationTool.html"> Group Collaboration Tool</a>
+				</li>
 			</ul>
-			<h1> Pages</h1>
+			<h1> Group Collaboration Tool</h1>
 		</div>
 	</div>
 </header>
@@ -65,19 +68,90 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#contents" id="contents" style="color: inherit; text-decoration: none;">
-					<h2>Contents</h2>
+				<a href="#group-collaboration-tools" id="group-collaboration-tools" style="color: inherit; text-decoration: none;">
+					<h1>Group Collaboration Tools</h1>
 				</a>
+				<table>
+					<thead>
+						<tr>
+							<th>BETA API: Group Collaboration Tools is in beta and may change before the official release.</th>
+						</tr>
+					</thead>
+				</table>
+				<p>The Ultra Extension framework allows integrations to add its own collaboration tool to supported
+					Group Tool panels. The panels expose a portal for integrations to add their button to each
+					location’s group collaboration toolbar. The integration is expected to render a button for their
+					tool using the provided style classes to match the design aesthetics used by Anthology’s built-in
+				collaboration tools.</p>
+				<a href="#registration" id="registration" style="color: inherit; text-decoration: none;">
+					<h2>Registration</h2>
+				</a>
+				<p>For an integration to render into the portals, the integration needs to register with the Ultra
+					Extension Framework. This can be accomplished by sending the<code>&#39;group-collaboration-tool:register&#39;</code>
+					message to the framework. See <a href="../interfaces/igroupcollaborationtoolregistrationrequest.html">IGroupCollaborationToolRegistrationRequest</a> for additional
+					information. Once the request has been made, the Ultra Extension Framework will respond with
+					<a href="../interfaces/igroupcollaborationtoolregistrationresponse.html">IGroupCollaborationToolRegistrationResponse</a>. If successful, the provided ID will be used for
+				subsequent portal messages.</p>
+				<a href="#registration-id" id="registration-id" style="color: inherit; text-decoration: none;">
+					<h3>Registration ID</h3>
+				</a>
+				<p>Unlike most Ultra Extension Framework registrations, an integration can register multiple times.
+					Therefore, ensuring the integration responds only to portal events with the appropriate
+				<code>selectorData</code> is important. The data is required to match your registration id.</p>
+				<a href="#group-collaboration-tool-class-names" id="group-collaboration-tool-class-names" style="color: inherit; text-decoration: none;">
+					<h2>Group Collaboration Tool Class Names</h2>
+				</a>
+				<p>With the group collaboration tool&#39;s portals there are additional special class names that will only
+				work when applied to elements rendering in these portals.</p>
+				<a href="#39button39-elements" id="39button39-elements" style="color: inherit; text-decoration: none;">
+					<h3>&#39;button&#39; elements</h3>
+				</a>
+				<p>| className | Description | | group--collaboration--tool--uef--button | Styles the button to look
+				like the other group collaborate tool buttons. |</p>
+				<a href="#supported-portals" id="supported-portals" style="color: inherit; text-decoration: none;">
+					<h3>Supported Portals</h3>
+				</a>
+				<p>Portals are supported in the following locations: (bullets or table with page name breadcrumbs)</p>
 				<ul>
-					<li><a href="AccessibilityAttributes.html"> Accessibility Attributes</a></li>
-					<li><a href="CourseDetails.html"> Course Details</a></li>
-					<li><a href="GroupCollaborationTool.html"> Group Collaboration Tool</a></li>
-					<li><a href="HelpProviderScenarios.html"> Help Provider Scenarios</a></li>
-					<li><a href="MessagingRecommendations.html"> Messaging Recommendations</a></li>
-					<li><a href="OriginalityReporting.html"> Originality Reporting</a></li>
-					<li><a href="Proctoring.html"> Proctoring</a></li>
-					<li><a href="RightToLeft.html"> Right To Left</a></li>
+					<li>Group Assignment Overview</li>
+					<li>Group Assignment External Overview</li>
+					<li>Take Group Assignment</li>
+					<li>Group Assignment &gt; Conversations</li>
 				</ul>
+				<a href="#standard-structure" id="standard-structure" style="color: inherit; text-decoration: none;">
+					<h2>Standard Structure</h2>
+				</a>
+				<p>In addition to the class name properties the integration provides, the integration needs to match
+				the structure. The following example shows how to match the existing item&#39;s look and feel.</p>
+				<pre><code class="language-javascript">{
+  <span class="hljs-attr">tag</span>: <span class="hljs-string">"button"</span>,
+    <span class="hljs-attr">props</span>
+:
+  {
+    <span class="hljs-attr">onClick</span>: {
+      <span class="hljs-attr">callbackId</span>: <span class="hljs-string">'integration-name-callback-1'</span>,
+        <span class="hljs-attr">mode</span>
+    :
+      <span class="hljs-string">'sync'</span>
+    }
+  ,
+    <span class="hljs-attr">className</span>: <span class="hljs-string">'group--collaboration--tool--uef--button'</span>
+
+
+  }
+,
+  <span class="hljs-attr">children</span>: [
+    {
+      <span class="hljs-attr">tag</span>: <span class="hljs-string">"SvgIcon"</span>,
+      <span class="hljs-attr">props</span>: {
+        <span class="hljs-attr">height</span>: <span class="hljs-string">"24px"</span>,
+        <span class="hljs-attr">width</span>: <span class="hljs-string">"24px"</span>,
+        <span class="hljs-attr">url</span>: <span class="hljs-string">'https://www.blackboard.com/themes/custom/blackboard/images/Blackboard-Logo.png'</span>,
+        <span class="hljs-attr">className</span>: <span class="hljs-string">'uef--svg-icon'</span>
+      },
+    },
+  ]
+}</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -92,7 +166,7 @@
 					<li class=" ">
 						<a href="CourseDetails.html"> <wbr>Course <wbr>Details</a>
 					</li>
-					<li class=" ">
+					<li class="current ">
 						<a href="GroupCollaborationTool.html"> <wbr>Group <wbr>Collaboration <wbr>Tool</a>
 					</li>
 					<li class=" ">
