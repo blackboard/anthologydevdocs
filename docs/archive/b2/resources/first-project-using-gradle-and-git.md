@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Project: Gradle, Git and b2-starter-template"
+title: 'First Project: Gradle, Git and b2-starter-template'
 categories: Learn b2
 id: archive-b2-resources-first_project_gradle
 author: Scott Hurrey
@@ -8,6 +8,8 @@ displayed_sidebar: documentationSidebar
 ---
 
 :warning: This document is deprecated!
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # First Project: Gradle, Git and b2-starter-template
 
@@ -291,3 +293,5 @@ While average build-times may not significantly decrease, the significant time
 savings resulting from improved general project management and from the
 deployment feature of the Learn/Gradle dev environment adds up quickly when
 compared to a manual deploy cycle.
+
+<AuthorBox frontMatter={frontMatter}/>

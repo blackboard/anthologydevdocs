@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Configuring Ultra Extension Framework in Learn"
-purple-text-title: "Configuring Ultra Extension Framework in Learn"
+title: 'Configuring Ultra Extension Framework in Learn'
+purple-text-title: 'Configuring Ultra Extension Framework in Learn'
 categories: Learn UEF
 id: rest_apis-learn-uef-configure
 toc: true
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Configuring Ultra Extension Framework in Learn
 
@@ -49,3 +51,5 @@ The Tool Provider Key and Tool Provider Secret would be the ones given by the de
 Cross-Origin Resource Sharing: For UEF-enabled integrations that make direct calls to their Learn instance's REST API will need be be configured via the Cross-Origin Resource Sharing (CORS) tool [Administrator Panel ⇨ Cross-Origin Resource Sharing ⇨ Create Configuration].
 
 <img alt="Cross Origin Resource Sharing Configuration" src="/assets/img/5CORSSharing.png" width="50%" />
+
+<AuthorBox frontMatter={frontMatter}/>

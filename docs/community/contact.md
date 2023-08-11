@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Contact Us"
+title: 'Contact Us'
 id: community-contact_us
 categories: Community
 sidebar_position: 3
 displayed_sidebar: documentationSidebar
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # How to contact us!
 
@@ -17,3 +19,5 @@ There are many ways to get in touch with us:
 - Join the [Anthology Techies Slack channel.](https://join.slack.com/t/blackboardtechies/shared_invite/zt-nheykjth-wLgONrE58MS53H~oySYk1g)
 - Tell us in person at a conference
 - Provide your feedback through one of our many users groups
+
+<AuthorBox frontMatter={frontMatter}/>

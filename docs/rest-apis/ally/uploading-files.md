@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Upload a file to Ally"
+title: 'Upload a file to Ally'
 id: rest_apis-ally-uploading_files
 categories: Ally
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Upload a file to Ally
 
@@ -126,3 +128,5 @@ This section contains answers to many of the common questions we field as develo
   - No, see next answer.
 - **Q: The meta data contains a “name”, “description” and other parameters. But these are not reflections of arguments in the initial POST. Is this just an indication that there’s a richer set of arguments for the submission phase?**
   - These parameters are artifacts from our LMS API. They will be removed shortly as they carry no function in a standalone function.
+
+<AuthorBox frontMatter={frontMatter}/>

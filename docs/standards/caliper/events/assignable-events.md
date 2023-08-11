@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Assignable Events"
+title: 'Assignable Events'
 categories: Standards
 id: caliper-events-assignables
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Assignable Events
 
@@ -161,3 +163,5 @@ lower in group.subOrganizationOf
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

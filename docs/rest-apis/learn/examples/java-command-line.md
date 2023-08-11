@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Command line REST Application"
+title: 'Command line REST Application'
 id: rest_apis-learn-examples-java_command_line
 categories: Learn Rest
 author: Scott Hurrey
-doctitle: "Tutorial - Build a Java Command Line REST Application"
+doctitle: 'Tutorial - Build a Java Command Line REST Application'
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Tutorial - Build a Java Command Line REST Application
 
@@ -778,3 +780,5 @@ users, and memberships. Along the way, we learned how to institute OAuth,
 create HTTP messages and interact with the Learn REST APIs, how to
 use Jackson to serialize and deserialize objects, and how to use Gradle to
 build and run command line Java applications.
+
+<AuthorBox frontMatter={frontMatter}/>

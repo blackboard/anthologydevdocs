@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "LTI or REST?"
+title: 'LTI or REST?'
 id: rest_apis-learn-getting-started-lti-or-rest
 categories: Learn REST
 author: Mark Kauffman
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # LTI or REST?
 
@@ -68,3 +70,5 @@ sure to check these links regularly.
 - [REST Documentation](https://developer.anthology.com/portal/displayApi)
 - [LTI Documentation](https://www.imsglobal.org/activity/learning-tools-interoperability)
 - [Learn & LTI Documentation](/docs/lti/getting-started-with-lti.md)
+
+<AuthorBox frontMatter={frontMatter}/>

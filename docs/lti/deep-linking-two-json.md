@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LTI Advantage - Sample Deep Linking JSON"
+title: 'LTI Advantage - Sample Deep Linking JSON'
 id: lti-deep_linking_two
 categories: Standards
 author: Scott Hurrey
@@ -9,6 +9,8 @@ toc: false
 sidebar_position: 5
 displayed_sidebar: documentationSidebar
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # LTI Advantage - Sample JSON
 
@@ -56,3 +58,5 @@ about is doing video embeds in Learn content. That will be our first, and for no
   }
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

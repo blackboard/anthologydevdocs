@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Rest and Learn"
+title: 'Rest and Learn'
 id: rest_apis-learn-admin-rest_and_learn
 categories: Learn REST
 author: Mark O'Neil
-doctitle: "Managing REST Integrations in Learn: The REST Integrations Tool for System Administrators"
+doctitle: 'Managing REST Integrations in Learn: The REST Integrations Tool for System Administrators'
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Managing REST Integrations in Learn: The REST Integrations Tool for System Administrators
 
@@ -136,3 +138,5 @@ For a more detailed process please see [Releasing your REST Integration](/docs/r
 **Step 7:** Include information from Step 6 in your client facing documentation.
 
 _**Key takeaway:**_ Providing the required Privileges to Learn Admins reduces the risk of a failure in integration installation and operation. Anthology nor you should want to burden clients with figuring out from the API Docs which Entitlements are needed and look up these Privileges on their own so that your application works as expected.
+
+<AuthorBox frontMatter={frontMatter}/>

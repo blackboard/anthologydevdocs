@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Handling OIDC Login"
+title: 'Handling OIDC Login'
 id: lti-core-launch-oidc_login
 categories: Standards
 author: Eric Preston
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Handling OIDC Login
 
@@ -16,7 +18,7 @@ From Learn you will receive a GET request to the URL you registered in the devel
 
 1. You will receive and lti_message_hint as a URL parameter. You must send it back unaltered.
 2. We do send the client_id and lti_deployment_id on the request, but note they are not required by the specification.
-3. We strongly recommend you create a *state* parameter value and send that with your response, and store that locally so it can be verified on the subsequent launch request. This is how you prevent CSRF attacks. Note, that Safari currently doesn't support sending 3rd party cookies back if you are hosted in an iframe.
+3. We strongly recommend you create a _state_ parameter value and send that with your response, and store that locally so it can be verified on the subsequent launch request. This is how you prevent CSRF attacks. Note, that Safari currently doesn't support sending 3rd party cookies back if you are hosted in an iframe.
 
 ### Sample
 
@@ -50,3 +52,5 @@ exports.oidcLogin = function(req, res) {
   res.redirect(url);
 };
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

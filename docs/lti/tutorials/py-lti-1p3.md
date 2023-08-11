@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "pyLTI1p3"
+title: 'pyLTI1p3'
 id: lti-tutorials-pylti1p3
 categories: Standards
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Using the pyLTI1p3 Library with Learn
 
@@ -168,3 +170,5 @@ You should now have a content item called `Breakout <your selected difficulty> m
 
 In the background, the tool uses the Names and Roles Provisioning service to create a leaderboard with the course members.
 Further, it uses the Assignments and Grades Service to store your latest score. Pretty fancy, right?
+
+<AuthorBox frontMatter={frontMatter}/>

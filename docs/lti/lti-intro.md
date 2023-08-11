@@ -4,6 +4,8 @@ displayed_sidebar: documentationSidebar
 id: lti-intro
 ---
 
+<VersioningTracker frontMatter={frontMatter}/>
+
 # Welcome to LTI 1.3 for Blackboard Learn!
 
 Blackboard Learn supports the latest version of the Learning Tools Interoperability (LTI) specification, which is LTI 1.3. This version of LTI provides enhanced security features and improved interoperability between learning management systems (LMSs) and external tools.
@@ -17,6 +19,7 @@ Blackboard's support for LTI allows users to integrate with a wide range of thir
 Overall, Blackboard's support for LTI 1.3 demonstrates its commitment to providing a robust and secure platform for integrating with external tools and content providers, and to improving the overall teaching and learning experience for its users.
 
 ## What Specifically is LTI 1.3?
+
 Learning Tools Interoperability (LTI) 1.3 is the latest version of the LTI specification, which is a set of technical standards that enable learning management systems (LMSs) to integrate with external tools and content providers. LTI 1.3 builds upon the previous versions of LTI, adding new features and enhancements that improve the security, interoperability, and user experience of LTI integrations.
 
 Overall, LTI 1.3 is a significant improvement over previous versions of the specification, providing enhanced security, improved interoperability, a streamlined user experience, and easier implementation for developers. As a result, it has become the preferred version of LTI for many LMSs and external tool providers.
@@ -32,3 +35,5 @@ Here are some of the key features and benefits of LTI 1.3:
 **Streamlined user experience**: LTI 1.3 introduces a new Deep Linking feature, which enables instructors to create links to specific resources within external tools and embed them directly within their course content. This makes it easier for students to access external tools and content without leaving the LMS environment, improving the overall user experience.
 
 **Easier implementation**: LTI 1.3 introduces a new Developer Key and Secret mechanism, which simplifies the process of creating and managing LTI integrations. This makes it easier for developers to implement LTI integrations and reduces the time and effort required to maintain them.
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Migrate an LTI Tool to UEF"
-purple-text-title: "Migrate an LTI Tool to UEF"
+title: 'Migrate an LTI Tool to UEF'
+purple-text-title: 'Migrate an LTI Tool to UEF'
 categories: Learn UEF
 author: Scott Hurrey
 id: rest_apis-learn-uef_tutorial_lti
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Tutorial: Migrate a Python LTI Tool to Ultra Extension
 
@@ -220,3 +222,5 @@ Cool, right? But let's put the finishing touches on this thing. We might need da
 I hope you found that fun and enlightening. As always, if you have questions, comments, or concerns, reach out to us at [developers@anthology.com](mailto:developers@anthology.com) and let us know!
 
 -Happy Coding
+
+<AuthorBox frontMatter={frontMatter}/>

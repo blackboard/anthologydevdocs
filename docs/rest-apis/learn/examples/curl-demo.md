@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "cURL Demo"
+title: 'cURL Demo'
 id: rest_apis-learn-examples-curl_demo
 categories: Learn Rest
-author: Mark Bykerk Kauffman
-doctitle: "cURL Demos"
+author: Mark Kauffman
+doctitle: 'cURL Demos'
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # cURL Demos
 
@@ -921,3 +923,5 @@ We hope that the above demonstration gives you a helpful peek under the hood
 as to what is going on when you make REST calls to a Learn system. You can
 take these cURL commands and use them to make all of the REST calls documented
 here: [Explore APIs](https://developer.anthology.com/portal/displayApi).
+
+<AuthorBox frontMatter={frontMatter}/>

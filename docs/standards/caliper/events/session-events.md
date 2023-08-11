@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Session Events"
+title: 'Session Events'
 categories: Standards
 id: caliper-events-sessions
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Session Events
 
@@ -96,3 +98,5 @@ Here is some of the key data that is associated with these events:
   "extensions": {}
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

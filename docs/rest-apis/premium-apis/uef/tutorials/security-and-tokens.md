@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Security and Tokens"
+title: 'Security and Tokens'
 categories: Learn UEF
-authors: Mark Kauffman, Sarah Lehnert
+authors: Mark Kauffman, Sara Lehnert
 id: rest_apis-learn-uef-security-and-tokens
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Security and Tokens - Authentication
 
@@ -73,7 +75,6 @@ This table lists all of the available scopes and what you might need them for.
 | PORTAL_NOTIFICATION_AUTH_TYPE |  “ultra:notification”   |   portal:notification    |
 |        ROUTE_AUTH_TYPE        |   “ultra:route-event”   |   route,route:changing   |
 
-
 ### Authorizing Your Javascript
 
 Once your javascript is rendered in the UEF, you must connect to a message channel to receive and send events to Ultra.
@@ -81,13 +82,13 @@ Once your javascript is rendered in the UEF, you must connect to a message chann
 The first step is to set up a window.postMessage listener for the integration handshake and send an integration:hello message:
 
 ```javascript
-console.log("addEventListener");
-window.addEventListener("message", onPostMessageReceived, false);
+console.log('addEventListener');
+window.addEventListener('message', onPostMessageReceived, false);
 
-console.log("say hello to " + integrationHost);
+console.log('say hello to ' + integrationHost);
 window.parent.postMessage(
-  { type: "integration:hello" },
-  integrationHost + "/*"
+  { type: 'integration:hello' },
+  integrationHost + '/*'
 );
 ```
 
@@ -109,7 +110,7 @@ function onPostMessageReceived(evt) {
   // Ultra will be over a "secure" MessageChannel.
   // As response to the integration handshake, Learn Ultra will send a
   // MessageChannel port to the integration.
-  if (evt.data.type === "integration:hello") {
+  if (evt.data.type === 'integration:hello') {
     // Store the MessageChannel port for future use
     messageChannel = new LoggedMessageChannel(evt.ports[0]);
     messageChannel.onmessage = onMessageFromUltra;
@@ -117,7 +118,7 @@ function onPostMessageReceived(evt) {
     // (3) Now, we need to authorize with Learn Ultra using the OAuth2 token
     // that the server negotiated for us
     messageChannel.postMessage({
-      type: "authorization:authorize",
+      type: 'authorization:authorize',
 
       // Your OAuth 2.0 REST token
       token: token,
@@ -159,3 +160,5 @@ Assuming the scopes provided allow you access to the events you are subscribing 
 ### Tips and Tricks
 
 The best tip we can give is that all of the communication happens in the browser, so if you are having trouble with the javascript, using console.log() will print messages to the javascript console in the Chrome or Firefox developer tools. In addition, you can click things in the Ultra UI and see interactions in the Network tab of those same developer tools. This helps you identify the routeName for route events or the analyticsId in click events. These are how your application knows where they user is and what they are doing so you can insert your functionality in the right place.
+
+<AuthorBox frontMatter={frontMatter}/>

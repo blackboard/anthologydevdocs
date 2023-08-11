@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Learn Caliper Event Guide"
+title: 'Learn Caliper Event Guide'
 categories: Standards
 id: caliper-events-guide
 author: Scott Hurrey
 sidebar_position: 1
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Learn Caliper Event Guide
 
@@ -162,3 +164,5 @@ For more information, see [Blog Events](./blog-events.md).
 | Post to a Wiki in an Original Experience Course | Student | Immediately |
 
 For more information, see [Wiki Events](./wiki-events.md).
+
+<AuthorBox frontMatter={frontMatter}/>

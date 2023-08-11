@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Using the calendar APIs with Ultra"
+title: 'Using the calendar APIs with Ultra'
 id: rest_apis-learn-working_with_learn_apis-calendar_apis
 categories: Learn REST Working-with APIs Calendar
 date: 03/10/2022 (date in DD/MM/YYYY format)
 Author: Davey Herrera
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Using the calendars APIs with Ultra
 
@@ -444,3 +446,5 @@ With this endpoint you can update a calendar item or series, however, the follow
   }
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Getting Involved"
+title: 'Getting Involved'
 id: community-getting_involved
 categories: Community
 author: Scott Hurrey
 sidebar_position: 2
 displayed_sidebar: documentationSidebar
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Be a part of the Community!
 
@@ -30,3 +32,5 @@ Getting involved in the Developer community is easy and with options to suit you
 ### Tech office hours call
 
 Join our call, every wednesday at 10:00 AM Central on [this link](https://bit.ly/technical-office-hours)
+
+<AuthorBox frontMatter={frontMatter}/>
