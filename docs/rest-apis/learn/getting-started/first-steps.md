@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "First Steps with Learn REST API"
+title: 'First Steps with Learn REST API'
 id: rest_apis-learn-getting-started-first-steps
 categories: Learn REST
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # First Steps with Learn REST API
 
@@ -164,3 +166,5 @@ sure to check these links regularly.
 
 - [Developer Portal](https://developer.anthology.com/)
 - [REST Documentation](https://developer.anthology.com/portal/displayApi)
+
+<AuthorBox frontMatter={frontMatter}/>

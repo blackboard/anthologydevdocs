@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Getting Started"
+title: 'Getting Started'
 id: rest_apis-ally-getting_started
 categories: Ally
 author: Scott Hurrey
 sidebar_position: 1
 displayed_sidebar: documentationSidebar
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Getting Started Developing for Ally as a Service
 
@@ -37,3 +39,5 @@ As we create tutorials and sample code, we will list them here.
 - [Ally as a Service API documentation](https://ally.ac/api/) - Includes sample cURL Commands
 - [Postman Collection](https://github.com/blackboard/BBDN-AaaS-Postman)
 - [Python](https://github.com/blackboard/BBDN-AaaS-Python)
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Groups, Site quotas and rate limits"
+title: 'Groups, Site quotas and rate limits'
 id: rest_apis-learn-admin-group_quotas_rates
 categories: Learn REST
 author: Ryan Haber
-doctitle: "Developer Groups, Site quotas and Rate limits"
+doctitle: 'Developer Groups, Site quotas and Rate limits'
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Developer Groups, Site quotas and Rate limits
 
@@ -104,3 +106,5 @@ ticket on Behind the Blackboard**. Provide the following in your request:
 If you are an open-initiative developer please make your request by email to
 [developers@anthology.com](mailto:developers@anthology.com). In your
 request, provide the same information as indicated above.
+
+<AuthorBox frontMatter={frontMatter}/>

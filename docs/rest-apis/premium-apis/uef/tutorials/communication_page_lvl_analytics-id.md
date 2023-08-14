@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "LTI Launch context added in new Window Launches"
+title: 'LTI Launch context added in new Window Launches'
 categories: Learn UEF
 id: rest_apis-learn-uef-communication_page_lvl_analytics
 author: Gokulakrishnan Raman
 toc: true
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 ## Introduction
 
@@ -112,3 +114,5 @@ IntegrationPageAnalytics
 ### Const:
 
 1. ANALYTICS_VISIBLE_TYPE = 'analytics:visible';
+
+<AuthorBox frontMatter={frontMatter}/>

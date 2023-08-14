@@ -3,6 +3,8 @@ sidebar_position: 1
 displayed_sidebar: documentationSidebar
 ---
 
+<VersioningTracker frontMatter={frontMatter}/>
+
 # Anthology Developer Portal
 
 ## What is the Developer Portal?
@@ -75,3 +77,5 @@ Release Name: 2023.2
 Features:
 
 - **Announcement Panel**: The Announcement Panel provides Developer facing Portal, APIs, and Event information. When a new announcement is available it will be indicated via a red dot on the Announcements icon in the Portal task bar. Clicking on the Announcements icon displays active announcements - latest at the top.
+
+<AuthorBox frontMatter={frontMatter}/>

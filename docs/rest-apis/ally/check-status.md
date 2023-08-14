@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Check the processing status of a file"
+title: 'Check the processing status of a file'
 id: rest_apis-ally-check_status
 categories: Ally
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Check the processing status of a file
 
@@ -63,3 +65,5 @@ curl \
   -H "Authorization: Bearer myJwtToken" \
   https://prod.ally.ac/api/v2/clients/:clientId/content/:contentHash/status
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

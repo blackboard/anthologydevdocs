@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Rest registry"
+title: 'Rest registry'
 id: rest_apis-learn-getting-started-registry
 categories: Learn Rest
-author: Mark O' Neil
+author: Mark O'Neil
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Rest Registry
 
@@ -70,11 +72,10 @@ Otherwise you will see a list of your registered applications. Select the
 
 2. By default, the first available development group is named after the user creating the app. You can change this later. The following fields are required.
 
-
-    * For REST and LTI 1.1 applications, provide:
-      * **Name** and **Description** for your application and select a **Group** to work on the project
-      * a comma-separated white list of one or more **Domain(s)** that can use the app's key/secret to access Anthology applications
-    * For LTI 1.3 tools, complete all fields.
+   - For REST and LTI 1.1 applications, provide:
+     - **Name** and **Description** for your application and select a **Group** to work on the project
+     - a comma-separated white list of one or more **Domain(s)** that can use the app's key/secret to access Anthology applications
+   - For LTI 1.3 tools, complete all fields.
 
 3. Select **Save**. Learn displays your application's name and description to Learn administrators when they connect your application to their system. This helps them make sure they have found the intended application.
 4. Write down or copy-and-paste the **Application Key** and **Secret** and other information that you are provided. Your application needs this key and secret to authenticate with Learn. Anthology does not keep any record of these properties. If you lose them, Anthology cannot help you restore them.
@@ -87,3 +88,5 @@ under My Applications.To delete an application:
 
 1. Mouse over the its record in the **Your Applications** list. A delete icon appears.
 2. Confirm your choice by selecting **Delete Application**. The application is removed from your list of applications and is no longer registered to the Anthology cloud.
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Basic Authentication"
+title: 'Basic Authentication'
 id: rest_apis-learn-getting-started-basic_auth
 categories: Learn REST
 doc_order_id: 0
-doctitle: "Basic Authentication with REST"
+doctitle: 'Basic Authentication with REST'
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Basic Authentication with REST
 
@@ -142,3 +144,5 @@ you.
 - Tokens are associated with a specific Learn site.
 - Any application may have only one token per Learn site. Asking for a token returns the existing one with an updated expiry time if it has not expired yet.
 - Check the [Learn REST API Documentation](https://developer.anthology.com/portal/displayApi/Learn) for error codes.
+
+<AuthorBox frontMatter={frontMatter}/>

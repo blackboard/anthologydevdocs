@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Migrating from LTI 1.0/1.1 to 1.3"
+title: 'Migrating from LTI 1.0/1.1 to 1.3'
 id: lti-migrating-from_11_to_13
 categories: Standards
 author: Eric Preston
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Migrating from LTI 1.0/1.1 to 1.3
 
@@ -28,3 +30,5 @@ tool the admin is prompted to migrate the links. If they choose "yes" then we mi
 new LTI 1.3 application, effectively removing the LTI 1.1 domain configuration. The links remain and should work
 fine if the tool developer has done their job correctly. The target_link_uri for the 1.3 tool is the same
 as the launch URL defined in the LTI 1.1 placement or link.
+
+<AuthorBox frontMatter={frontMatter}/>

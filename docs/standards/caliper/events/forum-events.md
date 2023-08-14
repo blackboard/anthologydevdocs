@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Forum Events"
+title: 'Forum Events'
 categories: Standards
 id: caliper-events-forum
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Forum Events
 
@@ -286,3 +288,5 @@ Here is some of the key data that is associated with these events:
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

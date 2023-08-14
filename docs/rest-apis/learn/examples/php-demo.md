@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "PHP Demo"
+title: 'PHP Demo'
 id: rest_apis-learn-examples-php-demo
 categories: Learn Rest
 author: Scott Hurrey
-doctitle: "Demo using PHP"
+doctitle: 'Demo using PHP'
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Demo using PHP
 
@@ -792,3 +794,5 @@ REST Demo PHP application available on
 There is a README.html included that talks more specifically about building and
 running the code. Feel free to review the code and run it against a test or
 development Learn instance to see how it works.
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Blog Events"
+title: 'Blog Events'
 categories: Standards
 id: caliper-events-blogs
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Blog Events
 
@@ -132,3 +134,5 @@ Here is a sample of what an event payload might look like:
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

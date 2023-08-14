@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blackboard App Catalog - FAQ"
+title: 'Blackboard App Catalog - FAQ'
 id: partners-blackboard_app_catalog_faq
 categories: Learn App-Catalog
 author: Darek Sady
@@ -10,6 +10,8 @@ redirect_from:
 sidebar_position: 2
 displayed_sidebar: documentationSidebar
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Blackboard App Catalog - FAQ
 
@@ -27,7 +29,7 @@ Partner integrations continue to play a critical and vital role within the Learn
 
 Any integration listed as "Ultra Ready" is labeled as such to indicate it was built leveraging only Blackboard integration frameworks specifically supported in Ultra (i.e. Partner Cloud, LTI 1.1+ and/or Learn REST APIs). The term "Ultra Ready" is not equivalent to a Blackboard certification status for the Ultra experience.[††](#ultraready)
 
-![Ultra Ready Badges](/assets/img/ultraready.png "Ultra Ready Badges")
+![Ultra Ready Badges](/assets/img/ultraready.png 'Ultra Ready Badges')
 
 ## What's the difference between the 3 App types (LTI + REST, Building Blocks, & Partner Cloud)?
 
@@ -39,7 +41,7 @@ Any integration listed as "Ultra Ready" is labeled as such to indicate it was bu
 
 It can be a bit tricky, but this Ultra Compatibility Matrix provides a bit of clarity:
 
-![Ultra Compatibility Matrix](/assets/img/compmatrix.png "Ultra Compatibility Matrix")
+![Ultra Compatibility Matrix](/assets/img/compmatrix.png 'Ultra Compatibility Matrix')
 
 ## Why can't I find the App(s) I'm looking for?
 
@@ -72,3 +74,5 @@ Reach out to the [Blackboard App Catalog Team](mailto:appcatalog@blackboard.com?
 ---
 
 > <a name="ultraready"></a>†† The 3<sup>rd</sup> party Ultra Ready integrations available through the Blackboard App Catalog allow you to use the named 3<sup>rd</sup> party service with the Ultra experience in Learn. By enabling any 3<sup>rd</sup> party integrations you agree that any use of the a 3<sup>rd</sup> party service is governed solely by the terms of use by the named 3<sup>rd</sup> party (and you shall comply with all such terms of use). Any contract entered into, services provided, or any transaction completed via the named 3<sup>rd</sup> party is between you and that party, and not Blackboard. Blackboard makes no representation with respect to the named 3<sup>rd</sup> parties and shall have no liability or obligation whatsoever in relation to the content provided to or available at, use of, or correspondence with, the named 3<sup>rd</sup> party or any transactions completed and any contract entered into by you with any named 3<sup>rd</sup> party. Further, by authorizing a 3<sup>rd</sup> party integration, you authorize Blackboard to provide limited personal information required for the named 3<sup>rd</sup> party ("Integration Information"). You agree that Blackboard is not responsible for the data privacy and security practices of named 3<sup>rd</sup> party and Blackboard is not liable for any unauthorized access to the Integration Information. You accept that you are solely responsible for meeting any applicable requirements and the consequences of authorizing named 3<sup>rd</sup> party to access the Integration Information.
+
+<AuthorBox frontMatter={frontMatter}/>

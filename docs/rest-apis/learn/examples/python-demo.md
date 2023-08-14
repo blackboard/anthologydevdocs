@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Python Demo"
+title: 'Python Demo'
 id: rest_apis-learn-examples-python-demo
 categories: Learn Rest
 author: Mark O'Neil
-doctitle: "Demo using Python"
+doctitle: 'Demo using Python'
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Demo using Python
 
@@ -439,3 +441,5 @@ REST Demo Python command line application available on
 There is a README.html included that talks more specifically running the code.
 Feel free to review the code and run it against a test or development Learn
 instance to see how it works.
+
+<AuthorBox frontMatter={frontMatter}/>

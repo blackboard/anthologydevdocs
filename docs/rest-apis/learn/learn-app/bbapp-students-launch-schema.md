@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Bb App students launch schema"
+title: 'Bb App students launch schema'
 id: rest_apis-learn-bbapp-student_launch_schema
 categories: Mobile
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Blackboard App for Students Launch Schema
 
@@ -435,3 +437,5 @@ You can link into the Blackboard app from other applications. With deep linking,
 - [folder_id] is the folder id of the content folder
 
 **Version**: "Blackboard 3.2+"
+
+<AuthorBox frontMatter={frontMatter}/>

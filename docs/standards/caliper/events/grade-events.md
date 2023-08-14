@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Grade Events"
+title: 'Grade Events'
 categories: Standards
 id: caliper-events-grade_events
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Grade Events
 
@@ -176,3 +178,5 @@ Here is a sample of what a workflow might look like:
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

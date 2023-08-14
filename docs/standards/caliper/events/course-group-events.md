@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Course Group Events"
+title: 'Course Group Events'
 categories: Standards
 id: caliper-events-course_group
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Course Group Events
 
@@ -137,3 +139,5 @@ Here is a sample of what a payload might look like:
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>
