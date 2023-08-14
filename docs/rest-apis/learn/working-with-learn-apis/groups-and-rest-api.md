@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Working with groups and the API"
+title: 'Working with groups and the API'
 id: rest_apis-learn-getting_started-groups_and_api
 categories: Learn REST groups
 toc: True
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Groups and REST API
 
@@ -707,3 +709,5 @@ It returns 204:
 ```
 No content
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

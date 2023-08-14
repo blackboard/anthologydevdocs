@@ -1,0 +1,140 @@
+.author_container {
+  display: flex;
+  /* justify-content: flex-end; */
+  width: 100%;
+}
+
+/* Single Author Styles */
+
+.author-card {
+  display: flex;
+  width: 25rem;
+  height: min(5rem);
+  border-radius: 0.5rem;
+  border: 0.5px solid var(--ifm-toc-border-color);
+  position: relative;
+  margin-top: 2rem;
+}
+
+.author-card::after {
+  content: 'Author:';
+  height: 6.7rem;
+  position: absolute;
+  font-style: italic;
+  opacity: 0.6;
+  top: -2rem;
+}
+
+.author_img {
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  height: 5rem;
+  border: 0.5px solid var(--ifm-toc-border-color);
+}
+
+.author_img_default {
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  height: 5rem;
+  padding: 0rem 0.5rem;
+  border: 0.5px solid var(--ifm-toc-border-color);
+}
+
+.author-info {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.author-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-name {
+  font-size: 1rem;
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.author-extra-info {
+  font-size: 0.7rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-weight: bold; */
+}
+.author-bio {
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.social-logo {
+  width: 1.6rem;
+  filter: var(--ifm-menu-link-sublist-icon-filter);
+  margin-right: 1rem;
+}
+
+/* Multiple Authors Styles */
+
+.author-pill-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.author-pill-container:before {
+  content: 'Authors:';
+  height: 6.7rem;
+  position: absolute;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 0.85rem;
+  top: -2rem;
+}
+
+.author-pill {
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 1.6rem;
+  gap: 0.5rem;
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 1rem;
+  justify-content: center;
+}
+
+.author_img_pill {
+  border-radius: 50%;
+  height: 1.4rem;
+}
+
+.author-name-pill {
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 7rem;
+  text-align: center;
+}
+
+.social-logo-pill {
+  height: 1.4rem;
+  filter: var(--ifm-menu-link-sublist-icon-filter);
+}
+
+.pill-link {
+  display: inline-flex;
+}
+
+.pill-link:visited,
+.pill-link:link,
+.pill-link:hover,
+.pill-link:active {
+  text-decoration: none;
+  color: var(--ifm-font-color-base);
+}

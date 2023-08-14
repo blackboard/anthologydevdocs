@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "B2 API Documentation"
+title: 'B2 API Documentation'
 categories: Learn b2
 id: archive-b2-gs-api_docs
 author: Scott Hurrey
@@ -9,6 +9,8 @@ displayed_sidebar: documentationSidebar
 ---
 
 :warning: This document is deprecated!
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # B2 API Documentation
 
@@ -87,3 +89,5 @@ database object inBlackboard Learn. The following information is not included:
 | Q4 2016     | [View API](https://library.blackboard.com/d/%3F78e2d337-a6b3-4483-98b0-ac2a491f1135)           | [View Taglibs](https://library.blackboard.com/d/%3F2af249ea-1073-4c77-97ea-90d14c80f2a5)           | [View Schema](https://library.blackboard.com/d/%3Fb292c30f-4e6d-4211-8a2c-f28a12bfd3fd)           |
 | Q2 2016     | [View API](https://library.blackboard.com/ref/16ce28ed-bbca-4c63-8a85-8427e135a710/index.htm)  | [View Taglibs](https://library.blackboard.com/ref/ece618d2-a7c2-488d-a816-c5a92ff09cd6/index.htm)  | [View Schema](https://library.blackboard.com/ref/a8859dd1-b28a-40e0-9aa4-763cf0d65e04/index.htm)  |
 | Q4 2015     | [View API](https://library.blackboard.com/ref/564b246f-4b44-4e85-881e-3731b8a3fe45/index.html) | [View Taglibs](https://library.blackboard.com/ref/8ff5b468-6512-46a3-bc0b-2309de00b802/index.html) | [View Schema](https://library.blackboard.com/ref/589ebf8f-b007-425d-91ec-27d53e40fde4/index.html) |
+
+<AuthorBox frontMatter={frontMatter}/>

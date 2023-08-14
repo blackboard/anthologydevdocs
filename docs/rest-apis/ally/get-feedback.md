@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Retrieve the feedback for a file"
+title: 'Retrieve the feedback for a file'
 id: rest_apis-ally-getting_feedback
 categories: Ally
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Retrieve the feedback for a file
 
@@ -203,3 +205,5 @@ curl \
   -H "Authorization: Bearer myJwtToken" \
   https://prod.ally.ac/api/v2/clients/:clientId/content/:contentHash
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

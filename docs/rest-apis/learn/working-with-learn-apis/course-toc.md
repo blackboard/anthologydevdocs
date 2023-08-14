@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Using Table of Contents in Original course view"
+title: 'Using Table of Contents in Original course view'
 id: rest_apis-learn-working_with_learn_apis-course_toc
 categories: Learn REST toc
 toc: True
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Using Table of Contents in Original course view
 
@@ -177,3 +179,5 @@ The payload looks like this:
 Also, please keep in mind the following guideline:
 
 "Updates a specific TOC entry. Only allowGuests and allowObservers flags are modifiable, the remaining fields are read-only. User should keep in mind that in order to modify such TOC fields, Course's allowGuest and allowObservers configuration must be enabled. Also, if user wants to update a TOC register's allowGuest flag and TOC is associated to a CONTENT or APPLICATION target type, Course Tool Settings must have allowGuests flag enabled. If user wants to update a TOC register's allowObserver flag and TOC is associated to an APPLICATION target type, Course Tool Settings must have allowObservers flag enabled."
+
+<AuthorBox frontMatter={frontMatter}/>

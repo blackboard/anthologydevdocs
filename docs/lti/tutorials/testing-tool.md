@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "LTI 1.3/Advantage - 4-Part Webinar"
+title: 'LTI 1.3/Advantage - 4-Part Webinar'
 id: lti-migrating-testing_tool
 categories: Standards
-author: Mark Bykerk Kauffman
+author: Mark Kauffman
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # LTI 1.3/Advantage in Learn - 4-Part Webinar
 
@@ -33,3 +35,5 @@ The most important thing you can do to begin is to read, and understand [the spe
 [Video Part IV is a demonstration](https://youtu.be/Xu1vI-wGIhA) of custom parameters from the Deep Link launch request and also a review of Names and Roles in that request.
 
 The purpose of Names and Roles is to let the Tool Provider get all of the memberships in the course, and the role of each member with a call to one endpoint using LTI 1.3 security. Comming soon: A screenshot of how this looks from the BLTPN - showing the first two members and their roles that were retrieved from the course.
+
+<AuthorBox frontMatter={frontMatter}/>

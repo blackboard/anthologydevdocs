@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Content Events"
+title: 'Content Events'
 categories: Standards
 id: caliper-events-content_events
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Content Events
 
@@ -296,3 +298,5 @@ Here is a sample of what a payload might look like:
     ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

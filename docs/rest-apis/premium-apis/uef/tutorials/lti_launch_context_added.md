@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "LTI Launch context added in new Window Launches"
+title: 'LTI Launch context added in new Window Launches'
 categories: Learn UEF
 id: rest_apis-learn-uef-launch_context_added_nwl
 author: Subitha Muniasamy
 toc: true
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # LTI Launch context added in new Window Launches
 
@@ -58,3 +60,5 @@ As expected the LTI launch in a new window will have the new mentioned events an
 ```
 
 ![LTI launch context added](/assets/img/lti_launch_context_added_1.png)
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Working with Adaptive Release"
+title: 'Working with Adaptive Release'
 id: rest_apis-learn-getting_started-adaptive_release
 categories: Learn REST groups
 toc: True
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Adaptive Release
 
@@ -661,3 +663,5 @@ Specifies a content of the same course. The referenced content must be set to a 
   "reviewedContentId": "_2_1"
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

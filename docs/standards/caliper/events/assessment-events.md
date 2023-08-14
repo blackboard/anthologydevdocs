@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Assessment Events"
+title: 'Assessment Events'
 categories: Standards
 id: caliper-events-assesments
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Assessment Events
 
@@ -491,3 +493,5 @@ Here is some of the key data that is associated with these events:
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

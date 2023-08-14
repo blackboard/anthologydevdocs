@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "View Events"
+title: 'View Events'
 categories: Standards
 id: caliper-events-views
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # View Events
 
@@ -118,3 +120,5 @@ Here is some of the key data that is associated with all ViewEvents:
   "extensions": {}
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

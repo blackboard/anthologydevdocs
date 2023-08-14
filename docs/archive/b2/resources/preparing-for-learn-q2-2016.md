@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "Preparing Your B2 for Blackboard Learn 9.1 Q2 2016"
+title: 'Preparing Your B2 for Blackboard Learn 9.1 Q2 2016'
 categories: Learn b2
 id: archive-b2-resources-prep_learn_q2
-author: Mark Bykerk Kauffman
+author: Mark Kauffman
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
 
 :warning: This document is deprecated!
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Preparing Your B2 for Blackboard Learn 9.1 Q2 2016
 
@@ -82,3 +84,5 @@ newer version of Learn. You now must set the max version of Learn in the v2 B2
 so that it can not be installed in this new version of Learn. You create a new
 version of your B2, v3, and set the min version of Learn in the bb-manifest.
 B2 v3 does not yet need to have a max version of Learn set in the manifest.
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Retrieve the feedback for multiple files"
+title: 'Retrieve the feedback for multiple files'
 id: rest_apis-ally-getting_batched_feedback
 categories: Ally
 author: Simon Gaeremynck
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Retrieve the feedback for multiple files
 
@@ -88,3 +90,5 @@ curl \
   -d '{"references": [{"hash": "a1b2c3d..."},{"hash": "QWxseSs..."},{"hash": "e1f2123..."}]}' \
   https://prod.ally.ac/api/v2/clients/:clientId/content/bash
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

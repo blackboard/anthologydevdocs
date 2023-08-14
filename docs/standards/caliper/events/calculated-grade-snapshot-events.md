@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Calculated Grade Snapshot Events"
+title: 'Calculated Grade Snapshot Events'
 categories: Standards
 id: caliper-events-calculated_grade_snapshots
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Calculated Grade Snapshot Events
 
@@ -121,3 +123,5 @@ Here is a sample of what a payload might look like:
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

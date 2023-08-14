@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions"
+title: 'Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions'
 categories: Learn b2
 id: archive-b2-resources-moving_to_saas
 author: Scott Hurrey
@@ -8,6 +8,8 @@ displayed_sidebar: documentationSidebar
 ---
 
 :warning: This document is deprecated!
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions
 
@@ -152,7 +154,7 @@ File myStaticDirectory = new File (myDir, "webapp/myStaticStuff");
 // read from myStaticDirectory - files as originally present in war file
 ```
 
-~~~See the bb-config.properties section in Developer Virtual Machine - DVM for how to configure your DVM to behave like Learn SaaS in regards to the
+````See the bb-config.properties section in Developer Virtual Machine - DVM for how to configure your DVM to behave like Learn SaaS in regards to the
 shared content folder.~~~ Note: we no longer provide a local DVM. You must contact us for a special build of the AWS AMI.
 
 Eventually, all write access to the shared folder will be phased out, and
@@ -657,3 +659,7 @@ Here's a diagram showing the message chain from a mashupsource.com to the B2 on 
 Note the brackets are indicating how the iframes are nested.
 
 Summary - If your B2 provides a mashup for use in an Original Course's TinyMCE editor you will need to re-architect as described above, or mirgrate users to an LTI-based solution.
+
+````
+
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "Wiki Events"
+title: 'Wiki Events'
 categories: Standards
 id: caliper-events-wikis
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Wiki Events
 
@@ -130,3 +132,5 @@ Here is a sample of what an event payload might look like:
   ]
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

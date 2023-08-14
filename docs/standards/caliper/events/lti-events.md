@@ -1,10 +1,12 @@
 ---
 layout: post
-title: "LTI Events"
+title: 'LTI Events'
 id: caliper-events-lti_events
 categories: Standards
 author: Scott Hurrey
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # LTI Events
 
@@ -128,3 +130,5 @@ Here is some of the key data that is associated with these events:
   }
 }
 ```
+
+<AuthorBox frontMatter={frontMatter}/>

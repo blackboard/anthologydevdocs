@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Getting started with the Dev Portal"
+title: 'Getting started with the Dev Portal'
 id: community-dev_portal
 categories: community
 author: Hernan Ortiz
 sidebar_position: 2
 displayed_sidebar: documentationSidebar
 ---
+
+<VersioningTracker frontMatter={frontMatter}/>
 
 # Getting started with the Dev Portal
 
@@ -39,3 +41,5 @@ The [Developer Portal](https://developer.anthology.com/) allows you to register 
 3.  For new groups, select **Create** and name your group. We suggest names based on the name of your organization.
 
 4.  To add developers to your group, select the plus sign at the bottom of the page.
+
+<AuthorBox frontMatter={frontMatter}/>
