@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'B2s and Java Permissions'
+title: "B2s and Java Permissions"
 categories: Learn b2
 id: archive-b2-gs-api_overview
 author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # B2s and Java Permissions
 
@@ -151,5 +150,4 @@ possible with the Snapshot enterprise data integration tool.
 
 Various classes to support functions such as byte->kilobyte conversion and
 localized number representation.
-
 <AuthorBox frontMatter={frontMatter}/>

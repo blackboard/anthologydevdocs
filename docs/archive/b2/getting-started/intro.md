@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'Introduction to Building Blocks'
+title: "Introduction to Building Blocks"
 categories: Learn b2
 id: archive-b2-gs-intro
 author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Introduction to Building Blocks
 
@@ -67,5 +66,4 @@ administrator) or contact your sales representative.
 If you are interested in becoming a Blackboard partner visit the [Blackboard Partnerships](https://www.blackboard.com/partnership/index.aspx)™
 program site. Partnering with Blackboard provides access to design guidance
 and support among other benefits.
-
 <AuthorBox frontMatter={frontMatter}/>

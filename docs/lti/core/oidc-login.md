@@ -1,14 +1,13 @@
 ---
 layout: post
-title: 'Handling OIDC Login'
-id: lti-core-launch-oidc_login
+title: "Handling OIDC Login"
+id: handling-oidc-login
 categories: Standards
+published: ""
+edited: ""
 author: Eric Preston
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Handling OIDC Login
 
 ### Overview
 
@@ -52,5 +51,4 @@ exports.oidcLogin = function(req, res) {
   res.redirect(url);
 };
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Forum Events'
+title: "Forum Events"
 categories: Standards
-id: caliper-events-forum
+id: forum-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Forum Events
 
 Learn's Caliper Analytics stream emits a ForumEvent to cover five
 use cases:
@@ -288,5 +286,4 @@ Here is some of the key data that is associated with these events:
   ]
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

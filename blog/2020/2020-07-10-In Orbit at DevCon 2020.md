@@ -1,15 +1,12 @@
 ---
-layout: post
 title: In Orbit at DevCon 2020
-date: July 10, 2020
+date: 2020/07/10
 author: Scott Hurrey
-post_id: 20200710-inorbitatdevcon2020
+slug: 20200710-inorbitatdevcon2020
 category: blog
 tags: ["devcon", "community", "recap"]
 summary: DevCon 2020 kicked off in full force this week with clients, partners and Blackboarders around the world coming together in Learn Ultra to network, share knowledge, and dig deeper into Blackboard tech.
 ---
-
-# In Orbit at DevCon 2020
 
 DevCon 2020 kicked off in full force this week with clients, partners and Blackboarders around the world coming together in Learn Ultra to network, share knowledge, and dig deeper into Blackboard tech.
 

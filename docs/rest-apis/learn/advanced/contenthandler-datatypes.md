@@ -1,15 +1,12 @@
 ---
-layout: post
-title: 'ContentHandler Data Types '
-id: rest_apis-learn-advanced-content_hndlr
+title: Data types for contentHandler
+id: content-handler
 categories: Learn REST
+published: ""
+edited: ""
 author: Ryan Haber
-doctitle: 'Data types for contentHandler'
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Data types for contentHandler
 
 Learn's `/contents` endpoints accommodate different types of content
 by using different handlers. Use the contentHandler field of requests and
@@ -115,5 +112,4 @@ Representation of a file uploaded to course content.
 - id (string, read-only) of the object in Learn
 - gradeColumnId (string, read only) ID of the associated grade column
 - groupContent (boolean) specifies whether or not the content is group content.
-
 <AuthorBox frontMatter={frontMatter}/>

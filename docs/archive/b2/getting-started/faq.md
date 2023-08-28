@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'B2-FAQs'
+title: "B2-FAQs"
 categories: Learn b2
 id: archive-b2-gs-faqs
 author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # FAQs
 
@@ -60,7 +59,7 @@ with the installation of the Learning System product. For assistance, please
 call our Client Support Team at (888) 788-5264. Have your six-digit company ID
 ready when you call.
 
-All others should read up on the available [DVBA](../../../rest-apis/learn/sandbox/what-is-dvaa.md) or request help on the [Developer forums](https://community.blackboard.com/developers){: target='\_blank'}
+All others should read up on the available [DVBA](#)or request help on the [Developer forums](https://community.blackboard.com/developers){: target='\_blank'}
 
 ## API/known issues
 
@@ -88,5 +87,4 @@ issue:
 2. If the vendor instructs you to submit a help ticket with Blackboard, please work with your Blackboard Administrator to do so on Behind the Blackboard
 3. Our Support team will attempt to collaborate with the vendor to resolve the issue
 4. Issues that cannot be resolved are escalated as appropriate via our support process
-
 <AuthorBox frontMatter={frontMatter}/>

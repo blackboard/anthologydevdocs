@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Retrieve the feedback for multiple files'
-id: rest_apis-ally-getting_batched_feedback
+title: Retrieve the feedback for multiple files
+id: getting-batched-feedback
 categories: Ally
+published: ""
+edited: ""
 author: Simon Gaeremynck
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Retrieve the feedback for multiple files
 
 The batch endpoint allows you to retrieve content for more than one content hash
 
@@ -90,5 +88,4 @@ curl \
   -d '{"references": [{"hash": "a1b2c3d..."},{"hash": "QWxseSs..."},{"hash": "e1f2123..."}]}' \
   https://prod.ally.ac/api/v2/clients/:clientId/content/bash
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

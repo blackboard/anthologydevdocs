@@ -1,10 +1,13 @@
 ---
+title: Welcome to the Anthology Developer Community!
+id: community-intro
 sidebar_position: 1
+published: "2023-05-09"
+edited: "2023-05-09"
+author: Scott Hurrey
 ---
 
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Welcome to the Anthology Developer Community!
 
 Welcome you to Anthology's developer community! As a community of developers, we are committed to working together to build innovative and cutting-edge solutions that push the boundaries of what is possible in education.
 

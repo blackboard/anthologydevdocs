@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'Development Life Cycle'
+title: "Development Life Cycle"
 categories: Learn b2
 id: archive-b2-gs-dev_life_cycle
 author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Development Life Cycle
 
@@ -346,5 +345,4 @@ Block which may be lost should you uninstall a previous version to install the
 new version.
 
 Always thoroughly test any changes you make to your Building Blocks.
-
 <AuthorBox frontMatter={frontMatter}/>

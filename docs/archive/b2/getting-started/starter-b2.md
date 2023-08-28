@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'Starter Building Block Readme'
+title: "Starter Building Block Readme"
 categories: Learn b2
 id: archive-b2-gs-starter_b2
 author: Kelley MacEwen
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Starter Building Block Readme
 
@@ -90,5 +89,4 @@ commented out by default since the task is new to Ant 1.7 and will not work
 unless you have that version of Ant or newer. If its use is necessary for you,
 make sure you have Ant 1.7, uncomment out the task, and then update the
 setting of deploy.url to use warfile.url in place of warfile.
-
 <AuthorBox frontMatter={frontMatter}/>

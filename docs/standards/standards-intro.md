@@ -1,12 +1,12 @@
 ---
+title: Welcome to the World of Standards!
 sidebar_position: 1
 author: Mark O'Neil
 displayed_sidebar: documentationSidebar
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Welcome to the World of Standards!
 
 Anthology believes in that support for standards is a necessary component of our integration strategy and in the delivery of our products.
 
@@ -47,5 +47,4 @@ Anthology supports many standards across our our product portfolio. Some of the 
 **QTI**: Question and Test Interoperability is a standard from [1EduTech](https://www.1edtech.org) for creating and sharing assessment items and tests. Blackboard Learn supports QTI 1.2 and 2.1, which enables users to create and import QTI-compliant assessment content and deliver it within Blackboard Learn.
 
 Anthology also supports other standards related to accessibility, security, data privacy, and other aspects of e-learning and educational technology.
-
 <AuthorBox frontMatter={frontMatter}/>

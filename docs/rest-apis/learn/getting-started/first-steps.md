@@ -1,14 +1,13 @@
 ---
-layout: post
-title: 'First Steps with Learn REST API'
-id: rest_apis-learn-getting-started-first-steps
+title: "First Steps with Learn REST API"
+id: first-steps
 categories: Learn REST
 author: Scott Hurrey
+sidebar_position: 1
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# First Steps with Learn REST API
 
 Anthology offers a suite of education technology tools, both software and
 hardware. REST stands for **Re**presentational **S**tate **T**ransfer. It is a
@@ -19,7 +18,7 @@ workflow is more complicated. For more general questions about REST and using
 REST APIs, see any of the numerous tutorials available online. Most commonly
 used resources include:
 
-- Anthology's [developer portal](/docs/developer-portal/devportal-intro.md)
+- Anthology's [developer portal](/docs/developer-portal/dev-portal-start-here.md)
 - Anthology's [Github repos](https://github.com/search?utf8=%E2%9C%93&q=BBDN-REST)
 
 ## Before You Get Started
@@ -67,7 +66,7 @@ about integrating your project with Anthology products. You will benefit from
 the community most by joining in.To register in the Anthology developer
 community:
 
-1. Go to [Anthology Developer Community](/docs/developer-portal/dev-portal.md) and select **Register**.
+1. Go to [Anthology Developer Community](/docs/developer-portal/dev-portal-start-here.md) and select **Register**.
 2. If your organization is a Blackboard client or partner organization and you have a Behind the Blackboard login, select **Behind the Blackboard Login**. Otherwise, select **Community Site Login**.
 3. Enter your email address to receive a link via email.
 4. In your email's inbox, find the email sent by Blackboard. You might have to check your spam or junk folder. The email's subject is something like _Blackboard Community: Email Validation_. Select the link in your email. You will be taken to a registration page.
@@ -145,7 +144,7 @@ Once your application acquires an access token, it only needs to pass that token
 
 ### Configure an Instance of Learn to Work with Your Application
 
-Once you have registered with the developer portal and built an integration, deploying to a Learn SaaS instance is a simple step. The Learn administrator that wants to use your integration needs the Application ID you got from the developer portal. The administrator will also need to create a Learn user account with sufficient entitlements to associate with your integration. This gives the administrator full control over the entitlements used by your application. For more information on how to configure Learn, please see [Managing REST Integrations in Learn: The REST Integrations Tool for System Administrators](registry.md).
+Once you have registered with the developer portal and built an integration, deploying to a Learn SaaS instance is a simple step. The Learn administrator that wants to use your integration needs the Application ID you got from the developer portal. The administrator will also need to create a Learn user account with sufficient entitlements to associate with your integration. This gives the administrator full control over the entitlements used by your application. For more information on how to configure Learn, please see [Managing REST Integrations in Learn: The REST Integrations Tool for System Administrators](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Compare_Building_Blocks_and_Rest).
 
 ### Glossary
 
@@ -166,5 +165,4 @@ sure to check these links regularly.
 
 - [Developer Portal](https://developer.anthology.com/)
 - [REST Documentation](https://developer.anthology.com/portal/displayApi)
-
 <AuthorBox frontMatter={frontMatter}/>

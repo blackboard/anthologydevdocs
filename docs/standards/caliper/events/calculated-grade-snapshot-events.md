@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Calculated Grade Snapshot Events'
+title: "Calculated Grade Snapshot Events"
 categories: Standards
-id: caliper-events-calculated_grade_snapshots
+id: snapshots-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Calculated Grade Snapshot Events
 
 Learn's Caliper Analytics stream emits a CalculatedGradeSnapshotEvent nightly for any grade that is recalculated.
 
@@ -123,5 +121,4 @@ Here is a sample of what a payload might look like:
   ]
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

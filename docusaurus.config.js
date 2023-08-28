@@ -27,7 +27,7 @@ const config = {
   //projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -97,17 +97,14 @@ const config = {
           },
         ],
       },
-      /*announcementBar: {
-        id: "support_us",
+      announcementBar: {
+        id: 'support_us',
         content:
-          // 'We are revamping our docs, please <a href="mailto:developers@anthology.com?subject=New Developer Documentation Site: ">let us know what you think!</a> </br>',
-          // ' ',
-          // 'The Developer Portal will be updated July 11, 2023 from 12:30 AM to 02:30 AM EDT. See <a href="https://docs.anthology.com/docs/developer-portal/devportal-intro#release_notes" target="_top"> the Developer Portal release notes</a> for more detail.',
-          'Join the Anthology Dev Rel team in Nashville for <a href="https://www2.anthology.com/together">Anthology Together</a>!',
-        backgroundColor: "#262626",
-        textColor: "#d5d5d5",
+          'We have updated all the links from this site and created new documentation!',
+        backgroundColor: '#262626',
+        textColor: '#d5d5d5',
         isCloseable: false,
-      },*/
+      },
       sidebar: {
         hideable: true,
         autoCollapseCategories: true,
@@ -124,11 +121,11 @@ const config = {
               },
               {
                 label: 'REST APIs',
-                to: '/docs/rest-apis/apis-intro',
+                to: '/docs/rest-apis/start-here',
               },
               {
                 label: 'LTI',
-                to: '/docs/lti/lti-intro',
+                to: '/docs/lti/introduction',
               },
               {
                 label: 'Standards',
@@ -136,7 +133,7 @@ const config = {
               },
               {
                 label: 'Developer Portal',
-                to: '/docs/developer-portal/devportal-intro',
+                to: '/docs/developer-portal/start-here',
               },
               {
                 label: 'Partners',

@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'LTI Events'
-id: caliper-events-lti_events
+title: "LTI Events"
+id: lti-events
 categories: Standards
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# LTI Events
 
 Learn's Caliper Analytics stream emits an LTIEvent when any user:
 
@@ -130,5 +128,4 @@ Here is some of the key data that is associated with these events:
   }
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

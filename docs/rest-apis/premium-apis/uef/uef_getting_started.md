@@ -1,16 +1,13 @@
 ---
-layout: post
-title: "Learn's UEF"
+title: "Learn's Ultra Extension Framework"
 categories: Learn UEF
-authors: Mark Kauffman, Sara Lehnert
-id: uef_getting_started
+authors: Mark Kauffman, Sarah Lehnert
+id: getting-started
 sidebar_position: 1
-displayed_sidebar: documentationSidebar
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Learn's Ultra Extension Framework
 
 ## Introducing Learn's Ultra Extension Framework
 
@@ -45,5 +42,4 @@ We gave several partners early access to the UEF. The following videos are examp
 If you are a developer and interested in pursuing use of the UEF Premium APIs in your integration with the Learn Ultra Experience, what are your next steps? Send an email to BbPartnerTeam <bbpartnerteam@blackboard.com> with the subject "Interested in Partnership That Includes Premium API Access." Ask for time to discuss such with a member of our partnership team. Note that if you are a partner with a partnership-level of Bronze or higher, or you are a client, then you can simply file a Behind the Blackbaord ticket requesting UEF access. In the ticket include the email used to register the REST application, and the name of the group where you will place applications that you want UEF enabled.
 
 Check back here often as this page will be updated frequently with more details.
-
 <AuthorBox frontMatter={frontMatter}/>

@@ -1,15 +1,13 @@
 ---
-layout: post
-title: 'Basic Authentication'
-id: rest_apis-learn-getting-started-basic_auth
+title: Basic Authentication with REST
+id: basic-authentication
 categories: Learn REST
-doc_order_id: 0
-doctitle: 'Basic Authentication with REST'
+sidebar_position: 2
+author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Basic Authentication with REST
 
 ### Overview
 
@@ -20,7 +18,7 @@ Authentication for REST Integrations follows the [OAuth 2.0 RFC Standard](https:
 **WARNING: Never share or expose an application's key/secret pair. These are used for requesting OAuth tokens, which enable the holder to issue REST requests. Exposing an application key/secret pair or token is a serious security risk. If you think you have exposed a key/secret pair you may request a new pair for the application using the Developer Portal My Applications management page.**
 
 REST calls are subject to quotas and limits. For more information, see
-[Developer Groups, Site Quotas, and Rate Limit](../admin/groups-quotas-rates.md).
+[Developer Groups, Site Quotas, and Rate Limit](/docs/developer-portal/production-groups-rest-api-and-site-reg-limits.md).
 
 ### Before You Start
 
@@ -144,5 +142,4 @@ you.
 - Tokens are associated with a specific Learn site.
 - Any application may have only one token per Learn site. Asking for a token returns the existing one with an updated expiry time if it has not expired yet.
 - Check the [Learn REST API Documentation](https://developer.anthology.com/portal/displayApi/Learn) for error codes.
-
 <AuthorBox frontMatter={frontMatter}/>

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: '8 Steps to prepare for Java 11'
+title: "8 Steps to prepare for Java 11"
 categories: Learn b2
 id: archive-b2-resources-prepare_for_java_11
 author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # 8 Steps to prepare for Java 11
 
@@ -71,5 +70,4 @@ Deployed in February 2020.
 
   - [Preparing a Building Block for a newer version of Learn and ensuring it works with Learn SaaS](preparing-for-saas-and-new-learn-versions.md)
   - [B2 development frequently asked questions](../getting-started/faq.md)
-
 <AuthorBox frontMatter={frontMatter}/>

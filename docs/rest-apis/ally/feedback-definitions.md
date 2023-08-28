@@ -1,11 +1,11 @@
 ---
-layout: post
-title: 'Feedback parameter definitions'
-id: rest_apis-ally-api_feedback_def
+title: "Feedback parameter definitions"
+id: feedback-parameter-definitions
 categories: Ally
+published: ""
+edited: ""
 author: Scott Hurrey
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
 
 # Feedback parameter definitions
@@ -99,5 +99,4 @@ Here are the feedback parameters returned when the feedback endpoint is called. 
 | metadata.libraryReference                                   | **Deprecated** Not used. This will always be null and will be removed in a future release      | <i class="material-icons">check</i> | <i class="material-icons">check</i> |
 
 For more information about the Ally accessibility tests, visit the [Accessibility Checklist](https://help.blackboard.com/ally/Ally_for_LMS/Administrator/Institution_Report/Accessibility_Checklist) page on help.blackboard.com.
-
 <AuthorBox frontMatter={frontMatter}/>
