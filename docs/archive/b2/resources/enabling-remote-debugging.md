@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'Enabling Remote Debugging'
+title: "Enabling Remote Debugging"
 categories: Learn b2
 id: archive-b2-resources-enable_remote_debug
 author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Enabling Remote Debugging
 
@@ -56,5 +55,4 @@ button “Debug” and Eclipse will connect with the Learn instance of Tomcat
 (Learn must be running). Now when you put the breakpoints inside the Eclipse
 project you may debug as you would normally with a regular project only now it
 is remote code running in the Learn Tomcat container.
-
 <AuthorBox frontMatter={frontMatter}/>

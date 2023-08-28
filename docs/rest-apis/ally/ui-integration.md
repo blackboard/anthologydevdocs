@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Integrate Ally as a Service into your own user interface'
-id: rest_apis-ally-ui_integration
+title: "Integrate Ally as a Service into your own user interface"
+id: ui-integration
 categories: Ally
+published: ""
+edited: ""
 author: Simon Gaeremynck
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Integrate Ally as a Service into your own user interface
 
 The UI API is a specification for HTML attributes that can be used to introduce consistent patterns of Ally functionality.
 
@@ -36,20 +34,20 @@ ally.ready(function () {
       // this to provide a token that is scoped to just that resource ID and/or apply your own rate limit.
       // When API calls are made that aren't specific to a content hash (e.g. determining custom help content),
       // no argument will be provided and a generic token can be returned.
-      auth: (hashId) => Promise.resolve({ bearer: 'eyJhbGciO...' }),
+      auth: (hashId) => Promise.resolve({ bearer: "eyJhbGciO..." }),
 
       // The base URL of your regional Ally API
-      baseUrl: 'https://prod-eu-central-1.ally.ac',
+      baseUrl: "https://prod-eu-central-1.ally.ac",
 
       // Your numerical Ally client identifier
       clientId: 42,
     },
 
     // The locale controls the internationalization and localization of the dialog
-    locale: 'en-US',
+    locale: "en-US",
 
     // The Ally UI API currently requires this to be set to AaaS
-    platformName: 'AaaS',
+    platformName: "AaaS",
   });
 });
 ```
@@ -58,7 +56,7 @@ Once the UI object has been created, you can then use it to bind click handlers 
 
 ```javascript
 // Optional element to scan, defaults to the `body` element.
-const el = document.getElementById('links');
+const el = document.getElementById("links");
 
 // Check all the elements under #links and bind the necessary event listeners.
 window.ui.update(el);
@@ -76,7 +74,7 @@ window.ui.autoUpdate({
 
   // The element whose subtree to scan for relevant data attributes.
   // Optional, defaults to the `body` element
-  el: document.getElementById('links'),
+  el: document.getElementById("links"),
 });
 ```
 
@@ -89,7 +87,8 @@ The Ally UI API works by placing HTML data-\* attributes in the DOM. The followi
   <a
     data-ally-content-id="123"
     data-ally-aaas-content-hash="MIja..."
-    href="/download?id=987">
+    href="/download?id=987"
+  >
     Download the original file
   </a>
   ```
@@ -108,7 +107,8 @@ The Ally UI API works by placing HTML data-\* attributes in the DOM. The followi
   <a
     data-ally-content-ref="123"
     data-ally-show="alternativeformats"
-    data-ally-show-display="inline">
+    data-ally-show-display="inline"
+  >
     This link is only visible when there are alternative formats available for
     this content item
   </a>
@@ -131,7 +131,8 @@ The following example contains two links. The first link is a download link your
   href="/download/12312123"
   data-ally-content-id="myAllyContentId1"
   data-ally-aaas-content-hash="QWxseSstK09uZStQYWdlcistK0hpZ2hlcitFZCstK0dlbmVyYWwucGRmOjM0QURFNDE2NzNDRUJBNUIyRjc2MDI3N0IxOEYwNTdERDY1MDczQzg6YXBwbGljYXRpb24vcGRm"
-  data-ally-download-url="https://ally-public.s3-us-west-2.amazonaws.com/demo/High+Quality+Alternative+Formats/Ally+-+One+Pager+-+Higher+Ed+-+General.pdf">
+  data-ally-download-url="https://ally-public.s3-us-west-2.amazonaws.com/demo/High+Quality+Alternative+Formats/Ally+-+One+Pager+-+Higher+Ed+-+General.pdf"
+>
   Original file
 </a>
 <a
@@ -141,13 +142,14 @@ The following example contains two links. The first link is a download link your
   data-ally-invoke="alternativeformats"
   data-ally-show="alternativeformats"
   data-ally-show-display="inline"
-  data-ally-tooltip>
+  data-ally-tooltip
+>
   <img
     src="/assets/img/ally-logo.svg"
     alt="Alternative Formats"
     width="25"
-    height="20" />
+    height="20"
+  />
 </a>
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Course Group Events'
+title: "Course Group Events"
 categories: Standards
-id: caliper-events-course_group
+id: course-group-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Course Group Events
 
 Learn's Caliper Analytics stream emits a CourseGroupEvent whenever
 an instructor creates, updates, or deletes a group in a course.
@@ -139,5 +137,4 @@ Here is a sample of what a payload might look like:
   ]
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

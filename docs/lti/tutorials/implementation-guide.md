@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'LTI 1.3 Tool Implementation Guide'
-id: lti-lti_impl_guide
+title: "LTI 1.3 Tool Implementation Guide"
+id: lti-implementation-guide
 categories: Standards
+published: ""
+edited: ""
 author: Eric Preston
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# LTI 1.3 Implementation Guide
 
 ### Overview
 
@@ -144,5 +142,4 @@ This claim contains information about what the platform accepts, and a data fiel
 The tool then presents a UI allowing the user to select or create content the tool provides. It can be LTI links, web links, files, images, or html. Learn only supports LTI links and web links at the moment.
 
 You can return one or more content items, and depending on from where the tool was launched the links will appear in the course outline or the rich text editor. If returned to the rich text editor they can be displayed as hyperlinks or embedded in the editor. See [Deep Linking JSON](../deep-linking-two-json.md) for details on how to configure the rendering of LTI links in the rich text editor.
-
 <AuthorBox frontMatter={frontMatter}/>

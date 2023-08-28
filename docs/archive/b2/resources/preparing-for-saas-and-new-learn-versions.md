@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 'Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions'
+title: "Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions"
 categories: Learn b2
 id: archive-b2-resources-moving_to_saas
 author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
 
-:warning: This document is deprecated!
-
 <VersioningTracker frontMatter={frontMatter}/>
+
+:warning: This document is deprecated!
 
 # Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions
 
@@ -154,8 +154,7 @@ File myStaticDirectory = new File (myDir, "webapp/myStaticStuff");
 // read from myStaticDirectory - files as originally present in war file
 ```
 
-````See the bb-config.properties section in Developer Virtual Machine - DVM for how to configure your DVM to behave like Learn SaaS in regards to the
-shared content folder.~~~ Note: we no longer provide a local DVM. You must contact us for a special build of the AWS AMI.
+> See the bb-config.properties section in Developer Virtual Machine - DVM for how to configure your DVM to behave like Learn SaaS in regards to the shared content folder. **Note: we no longer provide a local DVM. You must contact us for a special build of the AWS AMI.**
 
 Eventually, all write access to the shared folder will be phased out, and
 write access for logging will be limited to the log directory returned by
@@ -257,7 +256,7 @@ This simple step will assure that your JSP files render properly in Blackboard
 Learn. All bundled Building Blocks are required to take this step, while
 currently optional, this could become mandatory in the future.
 
-This blog post describes one way to [precompile you Java Server Pages](https://community/blackboard.com/blogs/4/25){: target:\_blank} when using Gradle.
+This blog post describes one way to [precompile your Java Server Pages](https://community.blackboard.com/blogs/4/25){: target:\_blank} when using Gradle.
 
 ### bb-context-config.properties
 
@@ -465,8 +464,8 @@ first access, but that is not always appropriate for every situation. The
 following table illustrates the tags and their meanings. Be sure to select the
 one that is right for your Building Block.
 
-| Tag Value                                | Description                                                            |
-| ---------------------------------------- | ---------------------------------------------------------------------- |
+| Tag Value                                            | Description                                                            |
+| ---------------------------------------------------- | ---------------------------------------------------------------------- |
 | &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;     | Load the servlet during system initialization.                         |
 | &lt;load-on-startup&gt;-1&lt;/load-on-startup&gt;    | Load the servlet the first time it is accessed.                        |
 | &lt;load-on-startup&gt;-9876&lt;/load-on-startup&gt; | Load the servlet immediately following the Learn system initialization |
@@ -660,6 +659,6 @@ Note the brackets are indicating how the iframes are nested.
 
 Summary - If your B2 provides a mashup for use in an Original Course's TinyMCE editor you will need to re-architect as described above, or mirgrate users to an LTI-based solution.
 
-````
-
+```
 <AuthorBox frontMatter={frontMatter}/>
+```

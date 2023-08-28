@@ -1,16 +1,13 @@
 ---
-layout: post
-title: 'LTI Registration and Deployment with Learn'
-id: lti-registration-deployment
+title: "LTI Registration and Deployment with Learn"
+id: registration-deployment
 categories: Standards
+published: ""
+edited: ""
 author: Eric Preston
 sidebar_position: 4
-displayed_sidebar: documentationSidebar
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# LTI Registration and Deployment with Learn
 
 ## Why do we use a central service at Anthology?
 
@@ -87,5 +84,4 @@ Learn has the concept of LTI Placements to support this. Blackboard allows a Too
 ![LTI diagram](/assets/img/ltidiagram.png){: .center-image }
 
 If you have any other questions about LTI Registration and Deployment with Learn, <a href="mailto:developers@anthology.com?subject=LTI Registration and Deployment with Learn">let us know</a>.
-
 <AuthorBox frontMatter={frontMatter}/>

@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'Scan tool for Learn SaaS'
-purple-text-title: ''
+title: "Scan tool for Learn SaaS"
+purple-text-title: ""
 categories: Learn b2
 id: archive-b2-resources-scan_tool
 author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Building Block Scan Tool for Blackboard Learn
 
@@ -68,5 +67,4 @@ https://<your Blackboard domain>/learn/api/v1/healthCheck/deepb2s?handle=myB2&ve
 The result of loading this endpoint is a JSON body containing information
 about the Building Block and any reported discrepancies. Here is an [example](/assets/files/b2-scan-output-example.zip) of the output from running this scanner against the youtube mashup
 Building Block.
-
 <AuthorBox frontMatter={frontMatter}/>

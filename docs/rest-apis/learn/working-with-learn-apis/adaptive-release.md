@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Working with Adaptive Release'
-id: rest_apis-learn-getting_started-adaptive_release
+title: "Working with Adaptive Release"
+id: adaptive-release
 categories: Learn REST groups
-toc: True
+author: Davey Herrera
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Adaptive Release
 
 > Using Bb Learn 3900.34.0-rel.24+41a9160
 
@@ -42,7 +40,7 @@ Yes, we need to create a rule that will contain our criteria (We assume the cour
 
 For specific messages that may be returned by the api, please review: https://developer.anthology.com/portal/displayApi
 
-Also, please make sure to always review the entitlements required for each endpoint, you can check this document [Bookmarklet To Help Map Entitlements To Permissions](../getting-started/rest_apis-learn-getting-started-entitlements) to get more information about entitlements.
+Also, please make sure to always review the entitlements required for each endpoint, you can check this document [How to map entitlements with privileges](/docs/rest-apis/learn/getting-started/%20mapping-entitlements-to-privileges.md) to get more information about entitlements.
 
 For the rules you need course_id and Content_id
 
@@ -663,5 +661,4 @@ Specifies a content of the same course. The referenced content must be set to a 
   "reviewedContentId": "_2_1"
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

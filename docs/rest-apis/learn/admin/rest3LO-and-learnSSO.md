@@ -1,17 +1,14 @@
 ---
-layout: post
-title: 'Rest 3LO and Learn SSO'
-id: rest_apis-learn-admin-rest3LO_and_learnSSO
+title: REST Integrations 3-Legged OAuth and Learn Custom Login Pages For System Administrators
+id: rest-3lo-and-learn-sso
 categories: Learn REST
+published: ""
+edited: ""
 author: Mark Kauffman
-doctitle: 'REST Integrations 3-Legged OAuth and Learn Custom Login Pages For System Administrators'
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
 
-# REST Integrations 3-Legged OAuth and Learn Custom Login Pages For System Administrators
-
-#### Your Custom Login Page and REST 3-Legged OAuth
+## Your Custom Login Page and REST 3-Legged OAuth
 
 This article is to help Learn administrators ensure that a custom SSO login page works with REST 3LO applications. Several clients have reported that when trying to complete the following workflow with a 3rd-party REST Application their users get stuck on the Learn landing page. Expected 3-legged authentication workflow:
 
@@ -37,5 +34,4 @@ Note that you may also need to study how your SSO system needs to be configured 
 _**Key takeaway:**_ A custom login page can work with REST API integrations only if the Learn-provided <loginUI:loginForm/> tag is used to generate the link a user access to sign in. You may customize how that looks with some CSS, but you can never use other HTML to provide the user a login link.
 
 \*Credits to Chris Bray from the University of Arkansas for the UARKexampleCustomLogin.jsp example and Dan Gioia of St. Louis Community College for much of the CSS Chris used in the .jsp. Thank you both!
-
 <AuthorBox frontMatter={frontMatter}/>

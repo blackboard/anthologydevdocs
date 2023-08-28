@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Session Events'
+title: "Session Events"
 categories: Standards
-id: caliper-events-sessions
+id: session-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Session Events
 
 Learn's Caliper Analytics stream emits a SessionEvent to cover
 three use cases:
@@ -98,5 +96,4 @@ Here is some of the key data that is associated with these events:
   "extensions": {}
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

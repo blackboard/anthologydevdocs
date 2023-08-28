@@ -1,13 +1,12 @@
 ---
-layout: post
-title: 'Student REST API: First Steps'
-id: rest_apis-student-getting-started-first-steps
+title: "Student REST API: First Steps"
+id: first-steps
 categories: Student REST
+author: Mark O'Neil
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# First Steps with Student REST API
 
 Anthology offers a suite of education technology tools, both software and hardware. REST stands for Representational State Transfer. It is a lightweight, flexible web service architecture that allows HTTP commands to be sent to Web Applications without unnecessary overhead.
 
@@ -41,5 +40,4 @@ We will continue to add new examples, tutorials, and code samples so make sure t
 - [Student Developer Docs](https://docs.anthology.com) (navigate to REST APIs>Student)
 - [Developer Portal](https://developer.anthology.com/)
 - [REST Documentation](https://developer.anthology.com/portal/displayApi)
-
 <AuthorBox frontMatter={frontMatter}/>

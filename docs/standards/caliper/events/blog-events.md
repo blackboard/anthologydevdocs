@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Blog Events'
+title: "Blog Events"
 categories: Standards
-id: caliper-events-blogs
+id: blog-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Blog Events
 
 Learn's Caliper Analytics stream emits a BlogEvent whenever a
 student submits a blog entry in an original experience course. Here is some of
@@ -134,5 +132,4 @@ Here is a sample of what an event payload might look like:
   ]
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

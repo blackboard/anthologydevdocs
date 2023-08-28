@@ -1,15 +1,13 @@
 ---
-layout: post
-title: 'Getting Started with Caliper'
+title: "Getting Started with Caliper"
 categories: Standards Caliper Getting Started
-id: caliper-getting-started
+id: getting-started
 sidebar_position: 1
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Getting Started With Caliper
 
 Caliper Analytics is an IMS Global standard focused on the delivery of
 consistent event tracking across campus applications.
@@ -33,5 +31,4 @@ to the Learn Activity Stream, and subscribing to the
 Learn Activity Stream as an additional Event Store. This section of the
 Anthology standards Developer Community will dive into both of these options,
 with sample code and supporting documentation.
-
 <AuthorBox frontMatter={frontMatter}/>

@@ -1,15 +1,12 @@
 ---
-layout: post
-title: 'Using the calendar APIs with Ultra'
-id: rest_apis-learn-working_with_learn_apis-calendar_apis
+title: "Using the calendar APIs with Ultra"
+id: calendar-apis
 categories: Learn REST Working-with APIs Calendar
-date: 03/10/2022 (date in DD/MM/YYYY format)
 Author: Davey Herrera
+published: "2022-10-03"
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Using the calendars APIs with Ultra
 
 > Tested with Blackboard Learn version 3900.48.0
 
@@ -78,7 +75,7 @@ This is an example of how a Course schedule item looks like in the GUI and in th
 
 It is not possible to create, update or delete calendars, you can only read them, **this is because**, the calendars are either Personal or Institutional by default, The course calendars are added automatically when the user is enrolled on a course.
 
-There is an important difference that needs to be made and that is Calendar items are part of calendars and calendar items are owned by the persosns who have access to them. The only way calendar items are created, updated or deleted by an application is if it is acting on behalf of the person who owns the calendar.
+There is an important difference that needs to be made and that is Calendar items are part of calendars and calendar items are owned by the people who have access to them. The only way calendar items are created, updated or deleted by an application is if it is acting on behalf of the person who owns the calendar.
 
 #### Payload example
 
@@ -446,5 +443,4 @@ With this endpoint you can update a calendar item or series, however, the follow
   }
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

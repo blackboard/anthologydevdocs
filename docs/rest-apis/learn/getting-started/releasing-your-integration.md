@@ -1,14 +1,13 @@
 ---
-layout: post
-title: 'Releasing your Integration'
-id: rest_apis-learn-getting-started-releasing_integration
+title: "Releasing your Integration"
+id: releasing-your-integration
 categories: Learn Rest
+sidebar_position: 7
 author: Mark O'Neil
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Releasing your integration
 
 You have taken the time to build a great integration now there are a few steps that should be followed to ensure a successful product release.
 
@@ -19,7 +18,7 @@ These fall into two categories:
 
 ## Developer Portal Settings
 
-Before releasing your integration, please make sure there are sufficient site and rate limits for a smooth operation, you can review our information on [Groups, Quotas, and Rates](../admin/groups-quotas-rates.md) to learn more. The first steps are:
+Before releasing your integration, please make sure there are sufficient site and rate limits for a smooth operation, you can review our information on [Groups, Quotas, and Rates](/docs/developer-portal/production-groups-rest-api-and-site-reg-limits.md) to learn more. The first steps are:
 
 1. Create a group named after the Company or the institution, keep in mind this group will receive production level settings, also, please make sure to follow our <a href="https://docs.anthology.com/rest-apis/learn/admin/groups-quotas-rates#production-groups" target="_top">naming convention</a>
 2. File a Support ticket requestion production settings on your group. (for BbDN-level and above partners and any Bb Client, please file a support ticket to request production settings on your group. If you are a community-level partner, please send us an email to developers@anthology.com)
@@ -66,5 +65,4 @@ E.G: You needed to find the entitlements (from the API documentation) and the Pr
 
 - Providing the required Privileges to Learn Admins reduces the risk of a failure in integration installation and operation. Anthology nor you should want to burden clients with figuring out from the API Docs which Entitlements are needed and look up these Privileges on their own so that your application works as expected.
 - Following secure practices around key:secret management create a safer more secure www.
-
 <AuthorBox frontMatter={frontMatter}/>

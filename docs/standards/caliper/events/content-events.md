@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Content Events'
+title: "Content Events"
 categories: Standards
-id: caliper-events-content_events
+id: content-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Content Events
 
 Learn's Caliper Analytics stream emits a ContentEvent to cover a
 plethora of use cases. Here is when a message will be sent:
@@ -298,5 +296,4 @@ Here is a sample of what a payload might look like:
     ]
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

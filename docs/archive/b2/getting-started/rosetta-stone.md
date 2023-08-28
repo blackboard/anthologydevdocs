@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'Rosetta Stone'
+title: "Rosetta Stone"
 categories: Learn
 id: archive-b2-gs-rosetta_stone
 authors: Mark Kauffman
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Learn release names, Versions & Build numbers
 
@@ -74,5 +73,4 @@ You want to know this because this page is infrequently updated. Just log in to 
   - [9.1 Q4 2015 Cumulative Update 2](https://blackboard.secure.force.com/btbb_articleview?id=kA0390000004fs7) (Build: 9.1.201510.1175205)
   - [9.1 Q4 2015 Cumulative Update 1](https://blackboard.secure.force.com/btbb_articleview?id=kA0390000000Djn) (LRNSI-21344)
   - [9.1 Q4 2015](https://blackboard.secure.force.com/btbb_articleview?id=kA47000000002kA) (Build: 9.1.201510.1171621)
-
 <AuthorBox frontMatter={frontMatter}/>

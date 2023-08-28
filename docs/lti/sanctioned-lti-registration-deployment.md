@@ -1,16 +1,13 @@
 ---
-layout: post
-title: 'Anthology Sanctioned LTI Registration and Deployment with Learn'
-id: sanctioned-lti-registration-deployment
+title: Sanctioned LTI Registration and Deployment with Learn
+id: lti-registration-deployment
 categories: Standards
 author: Mark Kauffman
+published: ""
+edited: ""
 sidebar_position: 3
-displayed_sidebar: documentationSidebar
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Sanctioned LTI Registration and Deployment with Learn
 
 ## Motivation
 
@@ -31,5 +28,4 @@ The bottom line is that having the vendor register their Tool(s) to get Client I
 ## tl;dr
 
 For LTI 1.3 only integrations the best client experience is given by a vendor when the vendor registers on the Anthology central registration portal and shares the client_id with the client. There are other processes that involve the vendor asking the client to register the LTI-1.3-only integration. While not ideal, that’s OK, as long as the integration is not using the associated REST API key/secret.
-
 <AuthorBox frontMatter={frontMatter}/>

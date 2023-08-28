@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Upload a file to Ally'
-id: rest_apis-ally-uploading_files
+title: "Upload a file to Ally"
+id: uploading-files
 categories: Ally
+published: ""
+edited: ""
 author: Scott Hurrey
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Upload a file to Ally
 
 Start the process by uploading the file you would like to get feedback for. This is a multipart POST request. The response will contain the statusUrl that you can poll to check whether the file has been processed. If the file was processed previously, a resourceUrl will be provided through which you can fetch the feedback information immediately.
 
@@ -128,5 +126,4 @@ This section contains answers to many of the common questions we field as develo
   - No, see next answer.
 - **Q: The meta data contains a “name”, “description” and other parameters. But these are not reflections of arguments in the initial POST. Is this just an indication that there’s a richer set of arguments for the submission phase?**
   - These parameters are artifacts from our LMS API. They will be removed shortly as they carry no function in a standalone function.
-
 <AuthorBox frontMatter={frontMatter}/>

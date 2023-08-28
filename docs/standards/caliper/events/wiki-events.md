@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Wiki Events'
+title: "Wiki Events"
 categories: Standards
-id: caliper-events-wikis
+id: wikis-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Wiki Events
 
 Learn's Caliper Analytics stream emits a WikiEvent whenever a
 student posts to a wiki in an original experience course. Here is some of the
@@ -132,5 +130,4 @@ Here is a sample of what an event payload might look like:
   ]
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

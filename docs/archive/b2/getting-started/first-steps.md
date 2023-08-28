@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 'First Steps with learn B2s'
+title: "First Steps with learn B2s"
 categories: Learn b2
 id: archive-b2-gs-first_steps
 author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # First Steps Using Building Blocks
 
@@ -69,5 +68,4 @@ Block development:
 - [Building Block Development Life Cycle](./dev-life-cycle.md)
 - [Enabling Debugging](../resources/enabling-remote-debugging.md)
 - [First Project: Gradle, Git, and basic-b2-template](../resources/first-project-using-gradle-and-git.md)
-
 <AuthorBox frontMatter={frontMatter}/>

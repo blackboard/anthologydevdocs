@@ -1,16 +1,13 @@
 ---
-layout: post
-title: 'Are Your Switches ON? (Troubleshooting)'
-id: lti-trouble-turn_on_all_switches
+title: LTI In Learn - Turn On All The Switches
+id: turn-on-all-switches
 categories: Standards
+published: ""
+edited: ""
 author: Scott Hurrey
 sidebar_position: 6
-displayed_sidebar: documentationSidebar
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# LTI In Learn - Turn On All The Switches
 
 ### Overview
 
@@ -29,5 +26,4 @@ We often hear about this message "The Tool Provider has been disabled by the Sys
 (3) Administrator Panel -> Integrations section -> LTI Tool Providers -> Manage Global Properties
 
 ![3-LTIConfigManageGlobal.png](/assets/img/turn-on-all-switches-3.png)
-
 <AuthorBox frontMatter={frontMatter}/>

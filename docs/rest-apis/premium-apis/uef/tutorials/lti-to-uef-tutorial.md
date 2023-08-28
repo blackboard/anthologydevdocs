@@ -1,15 +1,12 @@
 ---
-layout: post
-title: 'Migrate an LTI Tool to UEF'
-purple-text-title: 'Migrate an LTI Tool to UEF'
+title: "Tutorial: Migrate a Python LTI Tool to Ultra Extension"
 categories: Learn UEF
 author: Scott Hurrey
-id: rest_apis-learn-uef_tutorial_lti
+id: tutorial-lti
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Tutorial: Migrate a Python LTI Tool to Ultra Extension
 
 In this tutorial, we will be taking a basic Hello World LTI tool, and through various steps, create an Ultra Extension Framework integration, that opens a panel when a particular content item is clicked, and provides a button that allows the user to communicate back to Ultra to request that the panel be closed.
 
@@ -222,5 +219,4 @@ Cool, right? But let's put the finishing touches on this thing. We might need da
 I hope you found that fun and enlightening. As always, if you have questions, comments, or concerns, reach out to us at [developers@anthology.com](mailto:developers@anthology.com) and let us know!
 
 -Happy Coding
-
 <AuthorBox frontMatter={frontMatter}/>

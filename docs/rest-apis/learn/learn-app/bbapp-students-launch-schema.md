@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Bb App students launch schema'
-id: rest_apis-learn-bbapp-student_launch_schema
+title: Blackboard App for Students Launch Schema
+id: student-launch-schema
 categories: Mobile
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Blackboard App for Students Launch Schema
 
 You can link into the Blackboard app from other applications. With deep linking, a uniform resource identifier (URI) links to a specific location within the mobile app rather than simply launching the app. Use the provided schemas to link to specific features in the Blackboard app.
 
@@ -437,5 +435,4 @@ You can link into the Blackboard app from other applications. With deep linking,
 - [folder_id] is the folder id of the content folder
 
 **Version**: "Blackboard 3.2+"
-
 <AuthorBox frontMatter={frontMatter}/>

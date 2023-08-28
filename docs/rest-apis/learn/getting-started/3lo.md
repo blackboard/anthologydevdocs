@@ -1,12 +1,12 @@
 ---
-layout: post
-title: '3LO'
-purple-text-title: ''
-id: rest_apis-learn-getting-started-3lo
+title: "3LO"
+id: 3lo
 categories: Learn REST
+sidebar_position: 8
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
 
 # Three-Legged OAuth
@@ -151,5 +151,4 @@ client that sent the authorization code request.
 
 - [Three-legged OAuth in Curl](../examples/curl-demo.md)
 - [BBDN-3LO-REST-Swift](https://github.com/blackboard/BBDN-3LO-REST-Swift)
-
 <AuthorBox frontMatter={frontMatter}/>

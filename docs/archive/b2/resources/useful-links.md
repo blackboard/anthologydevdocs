@@ -1,15 +1,14 @@
 ---
 layout: post
-title: 'Useful Links'
+title: "Useful Links"
 categories: Learn b2
 id: archive-b2-resources-useful_links
 author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Useful Links
 
@@ -25,5 +24,4 @@ Building Blocks framework.
 - [Blackboard Github Repository](https://github.com/blackboard){: target='\_blank'}
 - [Java 11](./prepare-for-java11.md)
 - [Java 11 FAQs](./java11-faq.md)
-
 <AuthorBox frontMatter={frontMatter}/>

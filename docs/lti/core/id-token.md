@@ -1,16 +1,13 @@
 ---
 layout: post
-title: 'Handling id_token JWT'
-id: lti-core-launch-id_token
+title: "Handling the Launch with id_token JWT"
+id: id-token
+published: ""
+edited: ""
 categories: Standards
-published: '2023-08-11'
-edited: '2023-08-11'
 author: Eric Preston
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Handling the Launch
 
 ### Overview
 
@@ -22,7 +19,7 @@ Once the OIDC login negotiation has succeeded you will receive a FORM POST from 
 These are the basic steps you should upon receiving the id_token JWT:
 
 1. Verify the token
-   1. Get the header, body, and signature from the JWT (these parts are separated by a period `.`)
+   1. Get the header, body, and signature from the JWT (these parts are separated by a period `.`
    2. Verify the signing algorithm is what you expect
    3. Get the Client ID and its JWKS URL.
    4. Validate the signature, using a JWT library
@@ -147,5 +144,4 @@ exports.handleIdToken = function(id_token) {
   "family_name": "Cool"
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

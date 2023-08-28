@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'Assessment Events'
+title: "Assessment Events"
 categories: Standards
-id: caliper-events-assesments
+id: assesment-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# Assessment Events
 
 Learn's Caliper Analytics stream has two event types dedicated to assessments:
 
@@ -493,5 +491,4 @@ Here is some of the key data that is associated with these events:
   ]
 }
 ```
-
 <AuthorBox frontMatter={frontMatter}/>

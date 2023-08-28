@@ -1,16 +1,15 @@
 ---
-layout: post
-title: 'Blackboard REST API Framework'
-id: rest_apis-learn-getting-started-framework
+title: "Anthology's REST API Framework"
+id: framework
 categories: Learn Rest
+sidebar_position: 3
 author: Mark O'Neil
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
 
-# The Blackboard REST API Framework
-
-Blackboard’s new REST API Framework is a giant step forward for integrating
+Anthology's new REST API Framework is a giant step forward for integrating
 with Learn. By moving the integration from in-process code to a
 separate machine the health of your Learn instance is dramatically
 improved by lowering complexity and reducing the amount of code running in a
@@ -133,5 +132,4 @@ developers suite of applications to individual institution integrations at
 will be collecting data on usage which will be analyzed to determine Customer
 and third party developer production grade rate limits when the Technical
 Preview is lifted.
-
 <AuthorBox frontMatter={frontMatter}/>

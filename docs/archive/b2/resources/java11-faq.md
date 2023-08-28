@@ -1,15 +1,14 @@
 ---
 layout: post
-title: 'Java 11 for Learn: FAQ'
+title: "Java 11 for Learn: FAQ"
 categories: Learn b2
 id: archive-b2-resources-java_11
 author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 # Java 11 for Learn: FAQ
 
@@ -55,5 +54,4 @@ As with prior Java version changes, it is generally expected that Building Block
 8. **How can I avoid having to do frequent testing and recompiling of Building Blocks?**
 
    - As noted above, including copies of dependent libraries in the Building Block rather than referencing them in the Learn application will help. To avoid the overhead of maintaining Building Blocks through these frequent library changes, we encourage you to also consider our ever-expanding support for LTI and REST APIs to determine when it would appropriate for you to transition your solution to these integration frameworks that aren’t impacted by library changes. The LTI/REST framework has the added benefit of being supported across all Learn deployments and UX options enabling your integration to also be Ultra ready.
-
 <AuthorBox frontMatter={frontMatter}/>

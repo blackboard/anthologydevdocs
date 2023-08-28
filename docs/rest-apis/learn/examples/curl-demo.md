@@ -1,15 +1,12 @@
 ---
-layout: post
-title: 'cURL Demo'
-id: rest_apis-learn-examples-curl_demo
+title: "cURL Demo"
+id: curl-demo
 categories: Learn Rest
+published: ""
+edited: ""
 author: Mark Kauffman
-doctitle: 'cURL Demos'
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# cURL Demos
 
 ## Introduction
 
@@ -24,9 +21,9 @@ is the [slide deck](/assets/files/2016.06.22.RestTechnicalDeepDiveForPartners.pp
 
 ### Prerequisites
 
-- You must [register a developer account and application](../getting-started/registry.md) in the Developer Portal
+- You must [register a developer account and application](/docs/developer-portal/dev-portal-start-here.md) in the Developer Portal
 - You must
-  [register your application](../getting-started/registry.md) in Learn
+  [register your application](/docs/developer-portal/creating-rest-or-lti-application.md) in Learn
 - You must also configure the script as outlined in the README for the project
 
 This cURL command-line demonstration shows you how to:
@@ -924,4 +921,5 @@ as to what is going on when you make REST calls to a Learn system. You can
 take these cURL commands and use them to make all of the REST calls documented
 here: [Explore APIs](https://developer.anthology.com/portal/displayApi).
 
+- You must [register a developer account and application](/docs/developer-portal/dev-portal-start-here.md) in the Developer Portal
 <AuthorBox frontMatter={frontMatter}/>

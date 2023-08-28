@@ -1,14 +1,12 @@
 ---
-layout: post
-title: 'UEF Tutorials'
+title: "UEF Tutorials"
 categories: Learn UEF
 author: Mark Kauffman
-id: rest_apis-learn-uef-tutorials
+id: tutorials
+published: ""
+edited: ""
 ---
-
 <VersioningTracker frontMatter={frontMatter}/>
-
-# UEF Tutorials
 
 You will find these tutorials very helpful as you start your Ultra Extension Framework (UEF) developement.
 
@@ -35,5 +33,4 @@ Add a course banner. [See this tutorial/demo video](https://youtu.be/pxddXC-I4UI
 ### Notice
 
 Before releasing a UEF integration, that uses the UEF Premium APIs, to production you will be required to meet a certain level of Blackboard Partnership. See [Become a Blackboard Partner](../../../../partners/become-a-partner.md).
-
 <AuthorBox frontMatter={frontMatter}/>
