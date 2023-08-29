@@ -173,7 +173,7 @@ panel.
 In order to see your B2s logs in Kibana-Elasticsearch, the only SaaS interface
 for log files, your B2 must do the following:
 
-1. Write the log files to the directory returned by **blackboard.platform.plugin.PlugInUtil.getLogDirectory.**[**PlugInUtil** (Building Blocks API 3000.1.0)](https://library.blackboard.com/ref/16ce28ed-bbca-4c63-8a85-8427e135a710/blackboard/platform/plugin/PlugInUtil.html){: target:\_blank}
+1. Write the log files to the directory returned by **blackboard.platform.plugin.PlugInUtil.getLogDirectory.**[**PlugInUtil** (Building Blocks API 3000.1.0)](https://library.blackboard.com/ref/16ce28ed-bbca-4c63-8a85-8427e135a710/blackboard/platform/plugin/PlugInUtil.html)
 
    1. Typically looks like **&lt;blackboard home&gt;/logs/plugins/&lt;vendorId&gt;-&lt;handle%gt;/...**
    2. Read the API documentation on how to get write permission.
@@ -207,7 +207,7 @@ format is:
 </appender>
 ```
 
-**[Sample logging code that works in a SaaS environment.](https://github.com/mark-b-kauffman/bbdn-bblogbackb2){: target:\_blank}**
+**[Sample logging code that works in a SaaS environment.](https://github.com/mark-b-kauffman/bbdn-bblogbackb2)**
 
 ## Statelessness
 
@@ -256,12 +256,12 @@ This simple step will assure that your JSP files render properly in Blackboard
 Learn. All bundled Building Blocks are required to take this step, while
 currently optional, this could become mandatory in the future.
 
-This blog post describes one way to [precompile your Java Server Pages](https://community.blackboard.com/blogs/4/25){: target:\_blank} when using Gradle.
+This blog post describes one way to [precompile your Java Server Pages](https://community.blackboard.com/blogs/4/25) when using Gradle.
 
 ### bb-context-config.properties
 
 Tomcat 8.5 is substantially more configurable in the way that you can
-implement [jar scanning](https://tomcat.apache.org/tomcat-8.5-doc/config/jar-scanner.html){: target:\_blank}. This file lives in the WEB-INF directory of your Building Block
+implement [jar scanning](https://tomcat.apache.org/tomcat-8.5-doc/config/jar-scanner.html). This file lives in the WEB-INF directory of your Building Block
 and provides the following options:
 
 #### com.blackboard.tomcat.servletcontainer.jarscanner.tldJars
@@ -562,7 +562,7 @@ from a Building Block.
 
 #### GOOD
 
-( A couple examples. See [ALL FILES No More](https://community.blackboard.com/blogs/4/26){: target='\_blank'} for a full set.)
+( A couple examples. See [ALL FILES No More](https://community.blackboard.com/blogs/4/26) for a full set.)
 
 ```java
 <permission type="java.io.FilePermission" name="BB_HOME/-" actions="read,write,delete"/>
