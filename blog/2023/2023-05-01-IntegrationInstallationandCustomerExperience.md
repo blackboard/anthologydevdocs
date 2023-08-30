@@ -4,7 +4,7 @@ title: Integration Installation and Customer Experience
 authors:
   - name: Mark O'Neil
     title: Product Manager
-tags: ["Best Practices", "Integrations", "Partners", "Developers"]
+tags: ['Best Practices', 'Integrations', 'Partners', 'Developers']
 hide_table_of_contents: false
 ---
 
