@@ -3,7 +3,7 @@ title: "Pulling Gradebook Data and Assessment Grades"
 id: pulling-gradebook-data-and-assessment-grades
 categories: Learn Rest
 published: "2023-09-11"
-edited: "2023-09-11"
+edited: "2023-09-12"
 author: Mark O'Neil
 ---
 
@@ -263,18 +263,18 @@ Total Requests = 1+(nCourses*3)+(nColumns) or 1=(10*3)+(100) for a total of 231 
 *This would be the largest requests needed, but pulling all the grades all the time is rarely the case – as in many cases columns may not have any grades posted, it may be past due and grades already collected, or it may not have been released or graded at all. In each of these cases the number of requests has dropped. Always try to logically bound your requests – don’t make requests “just because you can”. 
  
 # Best Practices 
+
 ## General Best Practices  
 * Learn System Administrators should be enrolled in courses only using a non-Admin enabled user. 
 	* System Administrator information is generally only available to 3LO Administrator requests. 
  
 * Always monitor your API usage using the x-header information returned on non-oauth requests 
-	* Details are available here:  
-https://docs.anthology.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit 
+	* Details on rate_limits and x-headers are available [here](https://docs.anthology.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit). 
  
 * Not all data operations are best done JIT. 
 Some operations, such as backfilling data warehouses or refreshing caches are best done during off-peak Learn hours. 
-	* JIT calling or repeatedly calling for the same ‘static’ data is inefficient. 
-	* Checking whether a student is still in a course or getting their course grades are reasonable JIT activities as that is data that may change between now and their last access. 
+  * JIT calling or repeatedly calling for the same "static" data is inefficient. 
+  * Checking whether a student is still in a course or getting their course grades are reasonable JIT activities as that is data that may change between now and their last access. 
  
 * Cache infrequently changed or “static” data and refresh periodically. 
 	* This reduces repetitive calls.  
@@ -303,15 +303,28 @@ Reducing the number of targets is important with all API requests, but even more
 * don’t pull data on columns that are not yet due – pull data only on columns that are within a due/gradable window based on your understanding of your use case. 
  
 ### changeIndex and lastChanged as Grade change indicators 
-The `changeIndex` element result on user grades in the result set from: 
+The `changeIndex` element for user grades is contained in the result set from: 
 
 `GET /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}/users` 
 
-Supplies an indicator of whether the grade presented for a specific user has changed. 
+and supplies an indicator of whether the grade presented for a specific user has changed. 
  
 `GET /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}/users/lastChanged `
  
 Supplies the highest index indicator of whether the grades in a column have changed and the information for that grade. Note that you should not assume this is the only grade that changed – only that there has been a change. 
+
+> **Important Note**: Columns of type "Calculated" will always return a changeIndex of zero and an empty lastChanged index. Therefore it is not useful to check for these on a calculated column. 
+> See GET column results for the column type:
+> "Attempt", "Calculated", or "Manual"  
+> 
+> ```json
+> ...
+> "grading": {
+>   "type": "Calculated",
+> ...
+> ```
+> 
+> and when a column is of `"type": "Calculated"` you should process that column's grades as if they had all changed.
  
 If you cache your first `changeIndex` value when requesting column grades, then on future grading cycles, you call `lastChanged` and only pull grades if your cached value is less than the most recent `lastChanged` value you will find you save a substantial number of requests and also reduce system load. 
  
