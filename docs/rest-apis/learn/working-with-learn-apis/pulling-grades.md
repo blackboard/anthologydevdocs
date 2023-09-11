@@ -269,13 +269,12 @@ Total Requests = 1+(nCourses*3)+(nColumns) or 1=(10*3)+(100) for a total of 231 
 	* System Administrator information is generally only available to 3LO Administrator requests. 
  
 * Always monitor your API usage using the x-header information returned on non-oauth requests 
-	* Details are available here:  
-https://docs.anthology.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit 
+	* Details on rate_limits and x-headers are available [here](https://docs.anthology.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit). 
  
 * Not all data operations are best done JIT. 
 Some operations, such as backfilling data warehouses or refreshing caches are best done during off-peak Learn hours. 
-	* JIT calling or repeatedly calling for the same ‘static’ data is inefficient. 
-	* Checking whether a student is still in a course or getting their course grades are reasonable JIT activities as that is data that may change between now and their last access. 
+  * JIT calling or repeatedly calling for the same "static" data is inefficient. 
+  * Checking whether a student is still in a course or getting their course grades are reasonable JIT activities as that is data that may change between now and their last access. 
  
 * Cache infrequently changed or “static” data and refresh periodically. 
 	* This reduces repetitive calls.  
