@@ -3,8 +3,8 @@ title: Using the Learn AMI for REST and LTI Development
 id: developer-ami
 categories: AMI
 author: Mark O'Neil
-published: ""
-edited: ""
+published: "2018-07-04"
+edited: "2023-09-12"
 ---
 <VersioningTracker frontMatter={frontMatter}/>
 
@@ -50,7 +50,63 @@ Before you begin, you must have an Amazon AWS account. If you do not have an AWS
 6. select the VPC connected to your EC2 and
 7. select Actions => Edit DNS Hostnames —> Change DNS hostnames: to YES
 8. Startup time: The startup time for your EC2 will vary and may take as long as 15 minutes before you may access the site via your browser. SSH access may be available in 3 minutes or less.
-9. On initial startup the Original UX login screen appears. Note the messaging on that page as it informs you when the license expires. You will need to subscribe to a new AMI release prior to license expiration if you wish to migrate data from the old EC2 to the new. Licenses on AMIs are not extendible.
+9. On initial startup the Original UX login screen appears. 
+
+> **Note the messaging on the initial startup page**, as it informs you when the license expires. You will need to subscribe to a new AMI release prior to license expiration if you wish to migrate data from the old EC2 to the new. Licenses on AMIs are not extendible.
+
+### Discovering License Expiration Date
+Should you switch to Ultra or have misplaced your license expiration date, you may find it using one of three approaches.
+#### 1. using the EC2 Console
+In your EC2 console select your EC2 and from the `Actions` dropdown select `Monitor and troubleshoot>Get system log`.
+
+In the displayed system log scroll up until you see something similar to the following:
+
+```
+[  152.707540] cloud-init[1070]: ###########################################################################################
+[  152.729516] cloud-init[1070]: #
+[  152.748988] cloud-init[1070]: #     Blackboard Learn administrator login is:
+[  152.760195] cloud-init[1070]: #         Username: administrator
+[  152.780283] cloud-init[1070]: #         Password: i-0c0b00e8b5232274f
+[  152.789873] cloud-init[1070]: #     https://ec2-100-27-14-64.compute-1.amazonaws.com,
+[  152.789873] cloud-init[1070]: #     with an instance-id of i-0c0b00e8b5232274f
+[  152.807936] cloud-init[1070]: #
+[  152.842645] cloud-init[1070]: #     NOTE: this Learn license expires on 2024-01-14 17:18:36 GMT
+[  152.855459] cloud-init[1070]: #
+[  152.858880] cloud-init[1070]: #     It may take as long as 10 minutes from 14:35:31 to start with a new configuration.
+[  152.869085] cloud-init[1070]: #
+[  152.871837] cloud-init[1070]: ###########################################################################################
+```
+
+#### 2. using `tail` in a terminal
+ssh to your instance and 
+
+```
+$ tail -14 start.log
+###########################################################################################
+#
+#     Blackboard Learn administrator login is:
+#         Username: administrator
+#         Password: i-0c0b00e8b5232274f
+#     for https://ec2-100-27-14-64.compute-1.amazonaws.com,
+#     with an instance-id of i-0c0b00e8b5232274f
+#
+#     NOTE: this Learn license expires on 2024-01-14 17:18:36 GMT
+#
+#     It may take as long as 10 minutes from 08:38:16 to start with a new configuration.
+#
+###########################################################################################
+(startup time: 0hrs 3min 53sec)
+```
+#### 3. using `grep` in a terminal
+
+ssh to your instance and 
+
+```
+$ grep "CHECK LICENSE:" start.log
+
+Tue Sep 12 08:34:37 EDT 2023: CHECK LICENSE: License is current
+Tue Sep 12 08:34:37 EDT 2023: CHECK LICENSE: License expires on 2024-01-14 17:18:36 GMT
+```
 
 ### Support for Let’s Encrypt SSL Certificates
 
@@ -113,8 +169,6 @@ The username is administrator. The password is the instance ID, e.g., i-23423423
 
 The first time you go to login, you will see text on the page like the following. NOTE: There is no way to upgrade an AMI. You will need to get the latest AMI, and transfer any necessary data, BEFORE the expiration date shown on the page you see.
 
-<<<<<<<<< IMAGE >>>>>>>>>
-
 Landing page seen the first time you login to the developer AMI
 
 ### Configure Your AMI-based Learn Instance
@@ -123,7 +177,7 @@ When you set up your instance of Learn, you can configure different options. The
 
 #### Triage Your AMI-based Learn Instance
 
-Note that not stopping your EC2 when you encounter an error will continue to incur EC2 charges and we do not issue refunds.Always stop your EC2 if you encounter an error or do not require a 24x7 development instance.
+Note that not stopping your EC2 when you encounter an error will continue to incur EC2 charges and we do not issue refunds. Always stop your EC2 if you encounter an error or do not require a 24x7 development instance.
 
 1. For General Learn System Administration you may visit: [Learn SaaS Deployments](https://help.blackboard.com/learn/Administrator/SaaS)
 2. 504 Gateway Error
