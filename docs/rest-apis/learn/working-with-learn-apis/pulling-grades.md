@@ -53,7 +53,7 @@ You may then programmatically remove courses based on the date created if out of
 To get courses for a specific year you may use  
 `?created=2022-08-07T21:17:40.626Z&createdCompare=greaterOrEqual` which will return all courses created after August 7, 2022 
 OR 
-You may search using a specific d`ataSourceId. ?dataSourceId=_123_4` 
+You may search using a specific `dataSourceId. ?dataSourceId=_123_4` 
 
 Note that the `dataSourceId` may optionally be the data source's externalId using the syntax `externalId:Courses-Year-2023-2024`. E.g.: `?dataSourceId= externalId:Courses-Year-2023-2024` 
  
@@ -215,7 +215,7 @@ Note: By default, membership results *do not include disabled memberships*. If t
  
 Once you have acquired the grades for the column your application may then, based on the results, take appropriate action.   
  
-### (Parent/Child Courses and Grades 
+### Parent/Child Courses and Grades 
 Details on Parent Child course relationships and how they work may be found here:
 
 [https://help.blackboard.com/Learn/Administrator/SaaS/Courses/Manage_Courses/Merge_and_Separate_Courses ](Merge and Separate Courses)
