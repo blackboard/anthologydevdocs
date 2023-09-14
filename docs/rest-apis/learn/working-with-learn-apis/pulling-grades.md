@@ -3,7 +3,7 @@ title: "Pulling Gradebook Data and Assessment Grades"
 id: pulling-gradebook-data-and-assessment-grades
 categories: Learn Rest
 published: "2023-09-11"
-edited: "2023-09-12"
+edited: "2023-09-14"
 author: Mark O'Neil
 ---
 
@@ -28,9 +28,11 @@ Details follow below but in general, the workflow for accessing and processing c
 1. Get a list of courses from which you wish to pull grades. 
 2. Get a list of course memberships. 
 3. Get the gradebook columns of interest. 
-	4. if desired get list of course Gradebook Categories and 
-	5. map column to category. 
-1. Get the column grades 
+   
+	1. if desired get list of course Gradebook Categories and 
+	2. map column to category. 
+   
+4. Get the column grades 
 Process grades taking note of Parent/Child relationships if present. 
  
 The below sections further elaborate on each of the above steps. 
@@ -177,8 +179,8 @@ PLEASE: Read the Best Practices section on Gradebook API Efficiencies, noting sp
  
 Grades are stored at the course level on a per assessment (column basis) so you access them by getting the course columns and then by getting the grades on the column(s) of interest.  
  
-`GET /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}/users 
-` 
+`GET /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}/users` 
+
 This returns all the grades ready on this column for all the users in the course: 
 
 ```json
@@ -216,9 +218,7 @@ Note: By default, membership results *do not include disabled memberships*. If t
 Once you have acquired the grades for the column your application may then, based on the results, take appropriate action.   
  
 ### Parent/Child Courses and Grades 
-Details on Parent Child course relationships and how they work may be found here:
-
-[https://help.blackboard.com/Learn/Administrator/SaaS/Courses/Manage_Courses/Merge_and_Separate_Courses ](Merge and Separate Courses)
+Details on Parent Child course relationships and how they work may be found here: [Merge and Separate Courses](https://help.blackboard.com/Learn/Administrator/SaaS/Courses/Manage_Courses/Merge_and_Separate_Courses)
  
 All grades are presented at the parent course view but are collected on the child course in which the student is enrolled, thus when pulling grades if the course has childred, you likely (based on your use case) must disambiguate the grade from the Parent `courseId` to the Child `courseId` when processing to store it against the correct child course identifier. *Failure to do so may push the grade to the wrong course in your records system.*
  
@@ -299,7 +299,7 @@ Pulling grades as can be seen by the above Calculating API Usage section can be 
  
 Reducing the number of targets is important with all API requests, but even more so with Gradebook requests – this is due to the potential for a large volume of requests. Target reduction may be done by dropping gradebook columns based on due date information:
 
-* don’t pull data on columns that are past the due/graded window, 
+* don’t pull data on columns that are well past the due or graded window, as it is unlikely those grades will have changed.
 * don’t pull data on columns that are not yet due – pull data only on columns that are within a due/gradable window based on your understanding of your use case. 
  
 ### changeIndex and lastChanged as Grade change indicators 
@@ -350,13 +350,12 @@ But, if you get back something similar to this:
 }
 ```
  
-You would cache the changeIndex of `7904733` and process the grades on that column as shown above via:
+You would cache the changeIndex of `7904733` and process the grades on that column using:
 
 `GET /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}/users`
 
-
-Then later when you want to check grades again, first make a `lastChanged` request on the column – if it comes back the same as your cached value then just skip to the next target column. If it is higher, then cache the new value and fetch the column grades. Each grade will have a `changedIndex` – you may further perfect your application to act only on user records which have a differing `changedIndex` value from your cache. 
+Then later when you want to check grades again, first make a `lastChanged` request on the column – if it comes back the same as your cached value then just skip to the next target column. If it is higher, then cache the new value and fetch the column grades. Note that each grade will have a `changedIndex` – you may further perfect your application to act only on user records which have a differing per column per user `changedIndex` value from your cache. 
  
-Note: In the event there is a new `changedIndex` returned by `lastChanged` remember that there may be other grade changes; this result shows the last one changed.
+Remember that in the event there is a new `changedIndex` returned by `lastChanged` remember there may be other grade changes; the `lastChanged` index result reflects the most recent change and you should inspect the whole column as shown above.
 
 <AuthorBox frontMatter={frontMatter}/>
