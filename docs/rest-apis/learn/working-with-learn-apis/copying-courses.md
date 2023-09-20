@@ -4,7 +4,7 @@ id: copying-courses
 categories: Learn Rest
 published: "2023-09-19"
 edited: "2023-09-19"
-author: Mark Kauffman
+author: Mark Kauffman, Mark O'Neil
 ---
 
 <VersioningTracker frontMatter={frontMatter}/>
@@ -88,6 +88,8 @@ You may now proceed to step 2 and query the given tasks endpoint.
 
 ### Best Practices  
 If task is complete this endpoint will return a 303 SEE OTHER with a Location header providing a URI to the GET Course endpoint. Statistical data shows that the average copy task duration is under a second. However, very large courses can take several minutes. Also important to note is that these background tasks can potentially be queued behind other system tasks therefore prolonging the time a task stays in the Queued status. We recommend that this endpoint be polled every 60 seconds while waiting for a Course copy to complete.
+
+Experience is that some operations - such as managing memberships - may be handled before full copy completion… which can dramatically improve integration performance. Typically you can start to work with the copied course around 15% completion… the remaining 85% is around copying content, discussions and so on.
  
 ### Example
 `GET /learn/api/public/v1/courses/_12_1/tasks/_127_1`
