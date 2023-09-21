@@ -356,6 +356,6 @@ You would cache the changeIndex of `7904733` and process the grades on that colu
 
 Then later when you want to check grades again, first make a `lastChanged` request on the column – if it comes back the same as your cached value then just skip to the next target column. If it is higher, then cache the new value and fetch the column grades. Note that each grade will have a `changedIndex` – you may further perfect your application to act only on user records which have a differing per column per user `changedIndex` value from your cache. 
  
-Remember that in the event there is a new `changedIndex` returned by `lastChanged` remember there may be other grade changes; the `lastChanged` index result reflects the most recent change and you should inspect the whole column as shown above.
+Remember, in the event there is a new `changedIndex` returned by `lastChanged` there may be other grade changes; the `lastChanged` index result reflects the most recent change and you should inspect the whole column as shown above.
 
 <AuthorBox frontMatter={frontMatter}/>
