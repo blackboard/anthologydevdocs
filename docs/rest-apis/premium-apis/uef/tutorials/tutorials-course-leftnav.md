@@ -3,8 +3,8 @@ title: "UEF Tutorials - LTI Launch From Ultra Course Leftnav"
 categories: Learn UEF
 author: Mark Kauffman
 id: tutorials-course-leftnav
-published: ""
-edited: ""
+published: "2023-10-10"
+edited: "2023-10-10"
 ---
 <VersioningTracker frontMatter={frontMatter}/>
 
@@ -12,7 +12,7 @@ edited: ""
 We've had a lot of requests asking about how to add an LTI launch to an Ultra course's left navigation (Details & Actions). If you have that question, this page is for you.
 
 ### Prerequisites
-1. The Group your application is in must be UEF enabled. If it's not, file a Behind the Blackboard Support ticket. Provide the developer email address and the Group you UEF application will be in, NOT the application ID. The applicion ID is usless informaiton for this. If you are a vendor, you must have a Partnership level that is Bronze or higher. See See [Become a Blackboard Partner](../../../../partners/become-a-partner.md).
+1. The Group your application is in must be UEF enabled. If it's not, file a Behind the Blackboard Support ticket. Provide the developer email address and the Group your UEF application will be in, NOT the application ID. The application ID is usless informaiton for this. If you are a vendor, you must have a Partnership level that is Bronze or higher. See See [Become a Blackboard Partner](../../../../partners/become-a-partner.md).
 
 2. Complete the [Ultra Extension Framework](/docs/rest-apis/premium-apis/uef/tutorials/tutorials.md) tutorial.
 
