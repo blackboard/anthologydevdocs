@@ -42,6 +42,7 @@ const sidebars = {
       collapsed: true,
       items: [
         "rest-apis/start-here",
+        "rest-apis/rest-api-best-practices",
         // Learn
         {
           type: "category",
