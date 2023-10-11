@@ -3,7 +3,7 @@ title: "Pulling Gradebook Data and Assessment Grades"
 id: pulling-gradebook-data-and-assessment-grades
 categories: Learn Rest
 published: "2023-09-11"
-edited: "2023-09-14"
+edited: "2023-10-13"
 author: Mark O'Neil
 ---
 
@@ -39,14 +39,6 @@ The below sections further elaborate on each of the above steps.
  
 ## 1. Get Target Courses 
 `GET /learn/api/public/v3/courses` 
- 
-### Best Practices
-1. Limit the number of courses in your list of target courses via our search parameters.  
-E.g.: `?created=2023-09-07T21:17:40.626Z&createdCompare=greaterOrEqual` or  
-`?availability.available=Yes` 
-
-2. Use Fields parameter to limit the data per course in your list to that which is needed. E.g.: `?...&fields=”id, created, availability.available, hasChildren”` 
- 
 ### Example
 `GET /learn/api/public/v3/courses?availability.available=Yes&fields=”id, created, availability.available, hasChildren”` will return all ‘active courses’ and the results will have only the `id`, `created date`, `availability.available` (which will always be yes in this case due to the availability search), and whether the course `hasChildren`. 
 
@@ -68,11 +60,6 @@ NOTE: Cache this data because in the queries below you will iterate over the res
 ## 2. Get Target Course Memberships 
 `GET /learn/api/public/v1/courses/{courseId}/users 
 ` 
-
-### Best Practices  
-1. Do not use the above to test for a specific user, use to get an updated list of all users in the course. For the specific user use case use:  
-`GET /learn/api/public/v1/courses/{courseId}/users/{userId}` 
- 
 ### Example
 To optimize the number of requests used we will pull the course memberships along with a limited user data set using the `expand` and `fields` parameters: 
 
@@ -175,7 +162,7 @@ Finally, for the category details, you must map `gradebookCategoryId` back to an
 Now you know to which gradebook category a column is associated and may add this detail to your integration logic. 
  
 ## 5. Get Column (Assessment) Grades 
-PLEASE: Read the Best Practices section on Gradebook API Efficiencies, noting specifically identifying whether a column requires posting of grades or not. 
+PLEASE: Read the Best Practices section below, noting specifically identifying whether a column requires posting of grades or not. 
  
 Grades are stored at the course level on a per assessment (column basis) so you access them by getting the course columns and then by getting the grades on the column(s) of interest.  
  
@@ -262,47 +249,22 @@ Total Requests = 1+(nCourses*3)+(nColumns) or 1=(10*3)+(100) for a total of 231 
  
 *This would be the largest requests needed, but pulling all the grades all the time is rarely the case – as in many cases columns may not have any grades posted, it may be past due and grades already collected, or it may not have been released or graded at all. In each of these cases the number of requests has dropped. Always try to logically bound your requests – don’t make requests “just because you can”. 
  
-# Best Practices 
+## Gradebook API Best Practices 
+### General Best Practices
+1. Limit the number of courses in your list of target courses via our search parameters.  
+E.g.: `?created=2023-09-07T21:17:40.626Z&createdCompare=greaterOrEqual` or  
+`?availability.available=Yes` 
 
-## General Best Practices  
-* Learn System Administrators should be enrolled in courses only using a non-Admin enabled user. 
-	* System Administrator information is generally only available to 3LO Administrator requests. 
- 
-* Always monitor your API usage using the x-header information returned on non-oauth requests 
-	* Details on rate_limits and x-headers are available [here](https://docs.anthology.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit). 
- 
-* Not all data operations are best done JIT. 
-Some operations, such as backfilling data warehouses or refreshing caches are best done during off-peak Learn hours. 
-  * JIT calling or repeatedly calling for the same "static" data is inefficient. 
-  * Checking whether a student is still in a course or getting their course grades are reasonable JIT activities as that is data that may change between now and their last access. 
- 
-* Cache infrequently changed or “static” data and refresh periodically. 
-	* This reduces repetitive calls.  
-	* This reduces integration performance impact. 
-	* Don’t JIT retrieve ALL Courses for example as that data changes infrequently. Instead do this once and then periodically retrieve course data created or modified since you last request. 
- 
-* Always "optimize" your requests.
-	* reduce your “search” criteria to as small a set of data as possible. 
-		* This limits the number of pages of returned data set. 
-		* E.g. use `?dataSourceId=` to reduce your search to objects created using a specific DSK and follow caching practices. 
-	* Use the fields parameter to reduce the returned data set to only data points you require. 
-		* This limits the data transmitted and system load 
- 
-* Always try to logically bound your requests or before acting on request results 
-	* Check if dates are within bounds 
-	* Check if attempts exist of if items are graded 
-	* Check availability 
- 
- 
-## Gradebook API Efficiencies 
+2. Use Fields parameter to limit the data per course in your list to that which is needed. E.g.: `?...&fields=”id, created, availability.available, hasChildren”` 
 Pulling grades as can be seen by the above Calculating API Usage section can be costly from a rate limit perspective. You can limit the number of requests by targeting specific courses and columns, and pulling grades only when there are new grade changes on existing columns. Meeting this efficiency requires caching of previous request results. You will always have to establish a baseline which will require iterating across all courses, after which your total requests for maintaining your data will be less. 
  
+4. Reduce target range.
 Reducing the number of targets is important with all API requests, but even more so with Gradebook requests – this is due to the potential for a large volume of requests. Target reduction may be done by dropping gradebook columns based on due date information:
 
 * don’t pull data on columns that are well past the due or graded window, as it is unlikely those grades will have changed.
 * don’t pull data on columns that are not yet due – pull data only on columns that are within a due/gradable window based on your understanding of your use case. 
  
-### changeIndex and lastChanged as Grade change indicators 
+### Use changeIndex and lastChanged as Grade change indicators 
 The `changeIndex` element for user grades is contained in the result set from: 
 
 `GET /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}/users` 

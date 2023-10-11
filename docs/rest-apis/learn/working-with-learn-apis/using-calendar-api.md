@@ -1,238 +1,123 @@
 ---
-title: "Using the calendar APIs with Ultra"
+title: "Working with Calendar APIs"
 id: calendar-apis
 categories: Learn REST Working-with APIs Calendar
-Author: Davey Herrera
 published: "2022-10-03"
-edited: ""
+edited: "2023-10-13"
+author: Davey Herrera, Mark O'Neil
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 > Tested with Blackboard Learn version 3900.48.0
+>
+> Note: non-3LO capabilities available in  Blackboard Learn version 3900.78.0
 
-You can review the model in our [developer portal](https://developer.anthology.com/portal/displayApi) for details on each attribute on each endpoint:
-![model of each endpoint](/assets/img/calendar_api-model.png)
+## Topic
+Learn provides an internal calendar system for Institutional, Course, and Personal calendar items. Learn Public REST APIs for this calendar system allow external integrations to manage Institutional and Course Calendars. For Personal calendars use of three-legged-oauth (3LO) is required.
 
-## Introduction
+Notes: 
 
-Let's say you are a student and let's say you want to keep track of your day to day, what do you do? Yes, a to-do list... Not quite, You can use the tools that already exist and a Calendar is more than enough to know your due dates, create activites with a deadline or just to know what is today's date.
+* All Learn Calendar APIs work the same for either Original or Ultra course experiences.
 
-This also applies to administrators and instructors, what if you want to create new items for your students based on gradebook columns, or reminders of meetings? What about an integration with third party tools such as Zoom or Collaborate where you can set the link of the meeting, the occurrency and how frequent the event is? Well, this API will help you do that!
+* Learn Public REST APIs are documented at https://developer.anthology.com/portal/displayAPI/Learn
 
-To start, we have five different "types" of calendars (We will reference this types as calendarItemType)
+* All Calendar APIs are accessible based on the integration Privileges whether using 3LO or basic OAuth 2.0.
 
-- Institutional
-- Personal
-- Course/gradebook
-- Office Hours
-- GradebookColumn
+This document covers General API Use and Best Practices to meet use cases for using the Learn REST APIs for the Learn Calendar. 
 
-### Where is the Institutional and Personal Calendar?
+It is strongly recommended to follow the Best Practices outlined below.
 
-The Institutional/Personal calendar is marked as such in the calendar, Where can you see them? Well in Ultra, in the main menu, you may see a Schedule/Calendar on your main menu at login:
+# General API Use
+Details follow below but in general, the workflow for accessing and processing calendar items is best broken down by calendar type and desired action – Create, Read, Update, or Delete calendarItems.
 
-![Calendar api image in learn](/assets/img/calendar-apis-calendar_index.png)
-
-When you click in the gear in the top right of the page it will allow you to filter per calendar, You can select which calendars you want to see, Including Personal and institutional:
-
-![Calendar api image in learn - submenu](/assets/img/calendar-api-personal_calendar.png)
-
-The course calendars show up automatically when you are enrolled in a course, those will show up here as well when enrolled.
-
-> Want to learn even more about calendars? Please visit [Our calendar guide](https://help.blackboard.com/Learn/Administrator/SaaS/User_Interface_Options/Ultra_Experience/Base_Navigation/Calendar) to go above and beyond!
-
-### What about in a course?
-
-**For Students, Instructors and course builders**
-
-All users that are part of a course see the same things, both calendar and the Course schedule.
-
-![Calendar api image in learn in a course](/assets/img/calendar-apis_calendar-instructors.png)
-
-There are clearly several differences between users given each role capabilities:
-
-![Course view for an instructor vs student](/assets/img/calendar-apis-student_view-vs-inst.png)
-
-### Creating a new Item in Learn
-
-As an Instructor, when you want to create a new item for the Course schedule, The UI looks like this:
-
-![Calendar flow in the GUI](/assets/img/calendar-apis_instructor-calendar-schedule.png)
-
-When the item is finally created, it looks then like a small card, you can edit it or delete it:
-
-![Calendar event card](/assets/img/calendar-apis-event-card.png)
-
-### Mapping a calendar Item to the API payload
-
+Mapping a calendar Item to the API payload
 This is an example of how a Course schedule item looks like in the GUI and in the payload when calling it using:
+GET /learn/api/public/v1/calendars/items?courseId=_905_1
+ 
 
-- GET /learn/api/public/v1/calendars/items?courseId=\_905_1
 
-![Mapping between calendar an the API payload](/assets/img/calendar-apis-calendar-mapping.png)
-
-## Calendar C.R.U.D
-
-It is not possible to create, update or delete calendars, you can only read them, **this is because**, the calendars are either Personal or Institutional by default, The course calendars are added automatically when the user is enrolled on a course.
-
-There is an important difference that needs to be made and that is Calendar items are part of calendars and calendar items are owned by the people who have access to them. The only way calendar items are created, updated or deleted by an application is if it is acting on behalf of the person who owns the calendar.
-
-#### Payload example
-
-- **GET /learn/api/public/v1/calendars**
-
-```json
-{
-  "results": [
-    {
-      "id": "string",
-      "name": "string"
-    }
-  ],
-  "paging": {
-    "nextPage": "string"
-  }
-}
-```
-
-A little example of how this looks in real life, when you are enrolled in a course, a calendar is automatically generated, If you only have 1 course, then it will look something like this when you make an API call:
-
-- **GET /learn/api/public/v1/calendars (example)**
-
-```json
-{
-  "results": [
-    {
-      "id": "INSTITUTION",
-      "name": "Institution"
-    },
-    {
-      "id": "PERSONAL",
-      "name": "Personal"
-    },
-    {
-      "id": "_905_1",
-      "name": "CalendarCourseLearning: Calendar Course Learning"
-    }n
-  ]
-}
-```
-
-When looking at this on Learn, Instructors and Students have a pretty much identical view, the only difference is the Calendar capability to manage Course calendar items:
-
-![Difference between instructor view and student view in calendars](/assets/img/calendar-apis-student_view-vs-inst.png)
-
-## Calendar Items C.R.U.D
-
-We are not able to create, update or delete Calendars **BUT** We can create new items on those calendars.
+## General Usage Notes for all endpoints
+We are not able to create, update or delete Calendars BUT We can create new calendarItems on those calendars.
 
 Please keep in mind that:
 
-- All users can view their own institutional items in calendar
-- All users can view their own personal items in calendar
+* All 3LO users can view their own institutional items in calendar.
+* All 3LO users can view their own personal items in calendar.
+* Non-3LO applications can view all calendarTypes and calendarItems except for the Personal Calendar.
+* If SINCE and UNTIL are not provided, the endpoint will default to the upcoming two weeks timeframe from NOW.
+* If only SINCE is provided, this endpoint will default the UNTIL parameter two weeks after SINCE.
+* If only UNTIL is provided the endpoint will default the SINCE parameter two weeks prior to UNTIL.
+* Maximum timespan between SINCE and UNTIL is 16 weeks.
+* The course calendar must be enabled for the course GradebookColumn associate with OfficeHours.
+* If OfficeHours are created for a course calendar (calendarId == a course_id).
+* The course calendar must be enabled for course calendar items associated with GradebookColumn.
+* CalendarItems of type GradebookColumn are a representation of a specific gradable item and there read-only. Modifications to GradebookColumn items performed via the GradebokColumn endpoints will be reflected in the CalentarItems endoints.
+* If you want to use the `columnIds` from Gradebook Column as a calendar Item id, you can get those from `/learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}`
+* *You cannot read/create calendar items when there is no calendar.*
 
-### Pre-requisites
+### Institutional
+####Create
+1.	Call the create endpoint specifying the Institutional Calendar Type.
 
-In order to use calendar items you need the following:
+####Read, Update, Delete
+1.	**Read**: Call the read endpoint specifying the Institutional Calendar Item Type.
+2.	**Update**: Call the patch endpoint specifying the Institutional Calendar Item Type and the calendar item Id you wish to update.
+3.	**Delete**: Call the delete endpoint specifying the Institutional Calendar Item Type and the calendar item Id you wish to delete.
 
-- The user must be enrolled in the course
-- The user must have 'course.calendar-entry.VIEW' entitlement
-- The course calendar must be enabled for course calendar items associated with GradebookColumn
+### Course
+#### Create
+If using 3LO and using calendarItems of type OfficeHours, those will be assigned to the current user. Non-3LO created items may only be managed by the integration.
 
-#### For office-hours
+##### Course Calendar Items
 
-- The course calendar must be enabled for the course GradebookColumn associate with OfficeHours
-- If OfficeHours are created for a course calendar (calendarId = a course_id)
-- if OfficeHours are created for all courses (calendarId = PERSONAL) the user must be enrolled in any course that the user owning the OfficeHours is enrolled in
+* The specified courseId must not be for an organization.
 
-### About GET /calendar/items
+##### GradebookColumn Calendar Items
 
-- If **SINCE** and **UNTIL** are not provided, the endpoint will default to the upcoming two weeks timeframe from **NOW**.
-- If only **SINCE** is provided, this endpoint will default the **UNTIL** parameter two weeks after **SINCE**
-- If only **UNTIL** is provided the endpoint will default the **SINCE** parameter two weeks prior to **UNTIL**
-- Maximum timespan between **SINCE** and **UNTIL** is 16 weeks
-- CalendarItems of type GradebookColumn are a representation of a specific gradable item and there read-only. Modifications to GradebookColumn items performed via the GradebokColumn endpoints will be reflected iun the CalentarItems endoints.
-- If you want to use the columnIds from Gradebook Column as a calendar Item id, you can get those from /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}
-- You cannot read/create calendar items when there is no calendar.
+* GradebookColumn items must be created using the Gradebook API endpoint: `POST /learn/api/public/v2/courses/{courseId}/gradebook/columns`
 
-#### Payload example
+#####OfficeHours Calendar Items
+1.	Get the Id(s) of course(s) for which you need to manage the calendar(s).
+2.	Call the create endpoint specifying the Course Calendar Item Type and the courseId of the course for which you wish to create the calendar item.
 
-- **GET /learn/api/public/v1/calendars/items**
+####Read, Update, Delete
+1.	**Read**: 
+a.	Call the read endpoint specifying the Course Calendar Item Type and the courseId of the course for which you want the calendarItems (returns a collection of calendarItems).
+b.	Call the read {calendarItemId} endpoint specifying the Course Calendar Item Type and the courseId of the course for which you want the calendarItem (returns a single of calendarItem).
+2.	**Update**: Call the patch endpoint specifying the Course Calendar Item Type and the calendar item Id you wish to update.
+3.	**Delete**: Call the delete endpoint specifying the Course Calendar Item Type and the calendar item Id you wish to delete.
 
-```json
-{
-  "results": [
-    {
-      "id": "string",
-      "type": "Course",
-      "calendarId": "string",
-      "calendarName": "string",
-      "title": "string",
-      "description": "string",
-      "location": "string",
-      "start": "2022-09-29T19:14:37.520Z",
-      "end": "2022-09-29T19:14:37.520Z",
-      "modified": "2022-09-29T19:14:37.520Z",
-      "color": "string",
-      "disableResizing": true,
-      "createdByUserId": "string",
-      "dynamicCalendarItemProps": {
-        "attemptable": true,
-        "categoryId": "string",
-        "dateRangeLimited": true,
-        "eventType": "string",
-        "gradable": true
-      },
-      "recurrence": {
-        "count": 0,
-        "frequency": "Monthly",
-        "interval": 0,
-        "monthRepeatDay": 0,
-        "monthPosition": 0,
-        "originalStart": "2022-09-29T19:14:37.520Z",
-        "originalEnd": "2022-09-29T19:14:37.520Z",
-        "repeatBroken": true,
-        "repeatDay": "Sunday",
-        "until": "2022-09-29T19:14:37.520Z",
-        "weekDays": ["Sunday"]
-      }
-    }
-  ],
-  "paging": {
-    "nextPage": "string"
-  }
-}
-```
+###Personal
+***Only 3LO applications may create Personal calendarItems.***
 
-### About POST /calendar/items
+Personal calendars are personal and as such we do not offer Public APIs for external management of Personal calendar Items. If your use case calls for providing individuals with calendar items – e.g. a meeting scheduler – then you should utilize email and the ICS calendar format* for providing individuals with calendar data. The individual may then add the item to their calendar of choice, optionally sharing their external calendar with their Learn calendar.
+  
+* https://www.ietf.org/rfc/rfc2445.txt; https://icalendar.org/RFC-Specifications/iCalendar-RFC-5545/
 
-This endpoint creates a calendar item, items can be single or recurring.
+* iCalendar Libraries
+  * Python: https://pypi.org/project/icalendar/
+  * Javascript: https://www.npmjs.com/package/ical-generator
+  * Java: https://www.ical4j.org
+  * C#: https://www.nuget.org/packages/Ical.Net/
 
-#### Personal and institutional calendars
+The below sections further elaborate on each of the above steps.
 
-- If you are using CalendarItems of type OfficeHours, those will be assigned to the current user.
-- To create a Institutional calendar item you need 'system.calendar-item.EXECUTE' entitlement
-- Any user can create their own Personal calendar items
+## General Use Examples
+The differentiator between using any calendar is to replace the `calendarType` with your target calendar. Supported calendarTypes are:
 
-#### Course calendars
+  * Course
+  * GradebookColumn ***(READ ONLY)***
+  * Institution
+  * OfficeHours  
+  * Personal ***(only available via 3LO)***
 
-- To create a calendar course item the user must be enrolled in the course and in order to do so, must have the 'course.calendar-entry.CREATE' entitlement
-- The specified courseId must not be for an organization
-- Course calendar must be enabled for the specified course
-
-#### GradebookColumn calendar
-
-- GradebookColumns must be created using the Gradebook API endpoint: POST /learn/api/public/v2/courses/{courseId}/gradebook/columns
-
-#### OfficeHours
-
-- The user must have the 'course.calendar-entry.CREATE' entitlement
-- If calendarId == course_id the user must be enrolled in the course and the calendar must be enabled
-- To create for all enrolled courses calendarId must be set to PERSONAL
-
-#### Payload example
-
-- **POST /learn/api/public/v1/calendars/items**
+### CREATE a calendarItem
+```POST /learn/api/public/v1/calendars/items```
+requires a payload with calendarItem settings
+  
+#### *Create Example*
+```POST /learn/api/public/v1/calendars/items```
 
 ```json
 {
@@ -259,168 +144,458 @@ This endpoint creates a calendar item, items can be single or recurring.
   }
 }
 ```
+  
 
-Now we can return specific items per calendar, remove them or update them:
 
-### About GET {calendarItemType}/{calendarItemId}
+#### READ calendarItems
+(For a course with an id of `_12594_1`)
 
-- This endpoint returns a few more attributres such as:
-  - CalendarName
-  - modified
-  - color
-  - createdByUserId
-  - DynamigCalendarItemProps
-    - attemptable
-    - categoryId
-    - dateRangeLimited
-    - eventType
-    - gradable
-- CalendarItems of type gradebook are a representation of a specific gradable items, therefore, read-only. Modifications to GradeBookColumn items performed via the gradebook column endpoints will be reflected in the CalendarItems endpoints.
-- If you want to use the columnIds from Gradebook Column as a calendar Item id, you can get those from /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}
+```GET /learn/api/public/v1/calendars/items```
 
-#### Personal and institutional calendars
+#### *Read Examples*
+**Get all calendarItems for a given course (including Course, OfficeHours, GradebookColumn types):**
 
-- All users can view insitution calendar items
-- Any user may view their own calendar items, not other's calendar items
+```GET /learn/api/public/v1/calendars/items?since=2023-10-15T00:00:00.000Z&until=2023-11-15T00:00:00.000Z&courseId=_12594_1```
 
-#### Course calendars
-
-- To create a calendar course item the user must be enrolled in the course and in order to do so, must have the 'course.calendar-entry.VIEW' entitlement
-- Course calendar must be enabled for the specified course the calendar item is associated with
-
-#### GradebookColumn calendar
-
-- GradebookColumns must be created using the Gradebook API endpoint: POST /learn/api/public/v2/courses/{courseId}/gradebook/columns
-- - Course calendar must be enabled for the specified course the GradebookColumn item is associated with
-
-#### OfficeHours
-
-- If the OfficeHours are created for a course calendar (calendarId = a course id) the user must be enrolled in the course
-- If the OfficeHours are created for a all courses (calendarId = PERSONAL) the user must be enrolled in any course that the user owning the OfficeHours is also enrolled in
-- In either case above the course calendar must be enabled
-
-#### Payload example
-
-- **GET /learn/api/public/v1/calendars/items/{calendarItemType}/{calendarItemId}**
+Results:
 
 ```json
 {
-  "id": "string",
-  "type": "Course",
-  "calendarId": "string",
-  "calendarName": "string",
-  "title": "string",
-  "description": "string",
-  "location": "string",
-  "start": "2022-09-30T15:58:25.082Z",
-  "end": "2022-09-30T15:58:25.082Z",
-  "modified": "2022-09-30T15:58:25.082Z",
-  "color": "string",
-  "disableResizing": true,
-  "createdByUserId": "string",
-  "dynamicCalendarItemProps": {
-    "attemptable": true,
-    "categoryId": "string",
-    "dateRangeLimited": true,
-    "eventType": "string",
-    "gradable": true
-  },
-  "recurrence": {
-    "count": 0,
-    "frequency": "Monthly",
-    "interval": 0,
-    "monthRepeatDay": 0,
-    "monthPosition": 0,
-    "originalStart": "2022-09-30T15:58:25.082Z",
-    "originalEnd": "2022-09-30T15:58:25.082Z",
-    "repeatBroken": true,
-    "repeatDay": "Sunday",
-    "until": "2022-09-30T15:58:25.082Z",
-    "weekDays": ["Sunday"]
-  }
+  "results" : [
+    {
+      "id" : "_91571_1",
+      "type" : "OfficeHours",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Office Hours - Mark O'Neil",
+      "description" : "Use the signup sheet on my door for office hours.",
+      "start" : "2023-10-25T19:00:00.000Z",
+      "end" : "2023-10-25T19:30:00.000Z",
+      "modified" : "2023-10-10T19:07:39.334Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-25T19:00:00.000Z",
+        "originalEnd" : "2023-10-25T19:30:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Wednesday"
+        ]
+      }
+    },
+    {
+      "id" : "_91572_1",
+      "type" : "OfficeHours",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Office Hours - Mark O'Neil",
+      "description" : "Use the signup sheet on my door for office hours.",
+      "start" : "2023-11-01T19:00:00.000Z",
+      "end" : "2023-11-01T19:30:00.000Z",
+      "modified" : "2023-10-10T19:07:39.353Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-25T19:00:00.000Z",
+        "originalEnd" : "2023-10-25T19:30:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Wednesday"
+        ]
+      }
+    },
+    {
+      "id" : "_91573_1",
+      "type" : "OfficeHours",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Office Hours - Mark O'Neil",
+      "description" : "Use the signup sheet on my door for office hours.",
+      "start" : "2023-11-08T20:00:00.000Z",
+      "end" : "2023-11-08T20:30:00.000Z",
+      "modified" : "2023-10-10T19:07:39.382Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-25T19:00:00.000Z",
+        "originalEnd" : "2023-10-25T19:30:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Wednesday"
+        ]
+      }
+    },
+    {
+      "id" : "_91583_1",
+      "type" : "Course",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Calendar Demo: My Calendar Course",
+      "start" : "2023-10-20T20:00:00.000Z",
+      "end" : "2023-10-20T21:00:00.000Z",
+      "modified" : "2023-10-10T19:08:12.224Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-06T20:00:00.000Z",
+        "originalEnd" : "2023-10-06T21:00:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Friday"
+        ]
+      }
+    },
+    {
+      "id" : "_91584_1",
+      "type" : "Course",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Calendar Demo: My Calendar Course",
+      "start" : "2023-10-27T20:00:00.000Z",
+      "end" : "2023-10-27T21:00:00.000Z",
+      "modified" : "2023-10-10T19:08:12.230Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-06T20:00:00.000Z",
+        "originalEnd" : "2023-10-06T21:00:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Friday"
+        ]
+      }
+    },
+    {
+      "id" : "_91585_1",
+      "type" : "Course",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Calendar Demo: My Calendar Course",
+      "start" : "2023-11-03T20:00:00.000Z",
+      "end" : "2023-11-03T21:00:00.000Z",
+      "modified" : "2023-10-10T19:08:12.238Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-06T20:00:00.000Z",
+        "originalEnd" : "2023-10-06T21:00:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Friday"
+        ]
+      }
+    },
+    {
+      "id" : "_91586_1",
+      "type" : "Course",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Calendar Demo: My Calendar Course",
+      "start" : "2023-11-10T21:00:00.000Z",
+      "end" : "2023-11-10T22:00:00.000Z",
+      "modified" : "2023-10-10T19:08:12.247Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-06T20:00:00.000Z",
+        "originalEnd" : "2023-10-06T21:00:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Friday"
+        ]
+      }
+    },
+    {
+      "id" : "_120127_1",
+      "type" : "GradebookColumn",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Sample Assignment [rubric] (Learning Module)",
+      "start" : "2023-10-31T04:00:00.000Z",
+      "end" : "2023-10-31T04:00:00.000Z",
+      "modified" : null,
+      "color" : "#670033",
+      "disableResizing" : true,
+      "createdByUserId" : null,
+      "dynamicCalendarItemProps" : {
+        "attemptable" : true,
+        "categoryId" : "_172683_1",
+        "dateRangeLimited" : false,
+        "eventType" : "Test",
+        "gradable" : true
+      }
+    },
+    {
+      "id" : "_120129_1",
+      "type" : "GradebookColumn",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Test (Learning Module)",
+      "start" : "2023-10-31T04:00:00.000Z",
+      "end" : "2023-10-31T04:00:00.000Z",
+      "modified" : null,
+      "color" : "#670033",
+      "disableResizing" : true,
+      "createdByUserId" : null,
+      "dynamicCalendarItemProps" : {
+        "attemptable" : true,
+        "categoryId" : "_172685_1",
+        "dateRangeLimited" : false,
+        "eventType" : "Test",
+        "gradable" : true
+      }
+    }  ]
 }
 ```
 
-### About DELETE {calendarItemType}/{calendarItemId}
+**Get all OfficeHours calendarItems for a course:**
 
-With this endpoint you can delete a calendar item or series, however, the following must be true in order to delete a calendar item:
+```GET /learn/api/public/v1/calendars/items?since=2023-10-15T00:00:00.000Z&until=2023-11-15T00:00:00.000Z&courseId=_12594_1 &type=OfficeHours```
 
-#### Personal and institutional calendars
-
-- The user must have the 'system.calendar-item.EXECUTE' entitlement
-- Any user may delete their own calendar items
-
-#### Course calendars
-
-- The user must be enrolled in the course
-- The user must have the 'course.calendar-entry.MODIFY' entitlement
-- The course calendar must be enabled for the specified course
-
-#### GradebookColumn calendar
-
-- GradebookColumns must be deleted using the Gradebook API endpoint: DELETE /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}
-
-#### OfficeHours
-
-- The user must have the 'course.calendar-entry.MODIFY' entitlement
-- The user must own the calendarItem
-- The calendar must be enabled if the calendarItem is associated with a course calendar.
-
-#### Payload example
-
-When using DELETE {calendarItemType}/{calendarItemId} the endpoint returns:
-
-- **DELETE {calendarItemType}/{calendarItemId} - Success**
-
-```http
-204 No content
-```
-
-### About PATCH {calendarItemType}/{calendarItemId}
-
-With this endpoint you can update a calendar item or series, however, the following must be true in order to delete a calendar item:
-
-> When updating the series the existing CalendarItems will be removed and a new set of CalendarItems will be created. This is the same behavior as experienced via the UI.
-
-#### Personal and institutional calendars
-
-- The user must have the 'system.calendar-item.EXECUTE' entitlement
-- Any user may update their own calendar items
-
-#### Course calendars
-
-- The user must be enrolled in the course
-- The user must have the 'course.calendar-entry.MODIFY' entitlement
-- The course calendar must be enabled for the specified course
-
-#### GradebookColumn calendar
-
-- GradebookColumns must be updated using the Gradebook API endpoint: PATCH /learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}
-
-#### OfficeHours
-
-- The user must have the 'course.calendar-entry.MODIFY' entitlement
-- If calendarId = a course id the user must be enrolled in the course and the calendar must be enable
-
-#### Payload example
-
-- **PATCH {calendarItemType}/{calendarItemId} - Success**
+Results:
 
 ```json
 {
-  "id": "string",
+  "results" : [
+    {
+      "id" : "_91571_1",
+      "type" : "OfficeHours",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Office Hours - Mark O'Neil",
+      "description" : "Use the signup sheet on my door for office hours.",
+      "start" : "2023-10-25T19:00:00.000Z",
+      "end" : "2023-10-25T19:30:00.000Z",
+      "modified" : "2023-10-10T19:07:39.334Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-25T19:00:00.000Z",
+        "originalEnd" : "2023-10-25T19:30:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Wednesday"
+        ]
+      }
+    },
+    {
+      "id" : "_91572_1",
+      "type" : "OfficeHours",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Office Hours - Mark O'Neil",
+      "description" : "Use the signup sheet on my door for office hours.",
+      "start" : "2023-11-01T19:00:00.000Z",
+      "end" : "2023-11-01T19:30:00.000Z",
+      "modified" : "2023-10-10T19:07:39.353Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-25T19:00:00.000Z",
+        "originalEnd" : "2023-10-25T19:30:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Wednesday"
+        ]
+      }
+    },
+    {
+      "id" : "_91573_1",
+      "type" : "OfficeHours",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Office Hours - Mark O'Neil",
+      "description" : "Use the signup sheet on my door for office hours.",
+      "start" : "2023-11-08T20:00:00.000Z",
+      "end" : "2023-11-08T20:30:00.000Z",
+      "modified" : "2023-10-10T19:07:39.382Z",
+      "color" : "#670033",
+      "disableResizing" : false,
+      "createdByUserId" : "_1354_1",
+      "recurrence" : {
+        "count" : 10,
+        "frequency" : "Weekly",
+        "interval" : 1,
+        "originalStart" : "2023-10-25T19:00:00.000Z",
+        "originalEnd" : "2023-10-25T19:30:00.000Z",
+        "repeatBroken" : false,
+        "weekDays" : [
+          "Wednesday"
+        ]
+      }
+    }
+  ]
+}
+```
+
+**Get all gradebook columns due within the given timeframe:**
+
+```GET /learn/api/public/v1/calendars/items?since=2023-10-15T00:00:00.000Z&until=2023-11-15T00:00:00.000Z&courseId=_12594_1&type=GradebookColumn```
+
+Results:
+
+```json
+{
+  "results" : [
+    {
+      "id" : "_120127_1",
+      "type" : "GradebookColumn",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Sample Assignment [rubric] (Learning Module)",
+      "start" : "2023-10-31T04:00:00.000Z",
+      "end" : "2023-10-31T04:00:00.000Z",
+      "modified" : null,
+      "color" : "#670033",
+      "disableResizing" : true,
+      "createdByUserId" : null,
+      "dynamicCalendarItemProps" : {
+        "attemptable" : true,
+        "categoryId" : "_172683_1",
+        "dateRangeLimited" : false,
+        "eventType" : "Test",
+        "gradable" : true
+      }
+    },
+    {
+      "id" : "_120129_1",
+      "type" : "GradebookColumn",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Test (Learning Module)",
+      "start" : "2023-10-31T04:00:00.000Z",
+      "end" : "2023-10-31T04:00:00.000Z",
+      "modified" : null,
+      "color" : "#670033",
+      "disableResizing" : true,
+      "createdByUserId" : null,
+      "dynamicCalendarItemProps" : {
+        "attemptable" : true,
+        "categoryId" : "_172685_1",
+        "dateRangeLimited" : false,
+        "eventType" : "Test",
+        "gradable" : true
+      }
+    },
+    {
+      "id" : "_120130_1",
+      "type" : "GradebookColumn",
+      "calendarId" : "_12594_1",
+      "calendarName" : "Calendar Demo: My Calendar Course",
+      "title" : "Assignment [rubrics] (Conditional Release)",
+      "start" : "2023-10-31T04:00:00.000Z",
+      "end" : "2023-10-31T04:00:00.000Z",
+      "modified" : null,
+      "color" : "#670033",
+      "disableResizing" : true,
+      "createdByUserId" : null,
+      "dynamicCalendarItemProps" : {
+        "attemptable" : true,
+        "categoryId" : "_172683_1",
+        "dateRangeLimited" : false,
+        "eventType" : "Test",
+        "gradable" : true
+      }
+    }
+  ]
+}
+```
+
+* Note in this demo the gradebook column related grades are due on 2023-10-31 so requesting the range as shown previously will return the data. If we changed the until date to 2023-10-25 the results would be an empty set:
+
+  ```
+  {"results" : []}
+  ```
+
+
+* For the Institution calendarType exclude the courseId and add/change the type to Institution in the request. 
+E.g. Get all Institution calendarItems within the given timeframe:
+
+  ```
+  GET /learn/api/public/v1/calendars/items?since=2023-10-15T00:00:00.000Z&until=2023-11-15T00:00:00.000Z&type=Institution
+  ```
+
+Results:
+
+```json
+{
+  "results" : [
+    {
+      "id" : "_84428_1",
+      "type" : "Institution",
+      "calendarId" : "INSTITUTION",
+      "calendarName" : "Institution",
+      "title" : "Holiday Celebration - Stevens Commons ",
+      "description" : "Come celebrate with your fellow Monument students as we have a holiday celebration. Student groups will be present and will host different fun-filled activities. Food and drink will be provided! Wear your best ugly Christmas sweater and compete for a prize!",
+      "location" : "Stevens Commons",
+      "start" : "2022-12-15T19:00:00.000Z",
+      "end" : "2022-12-15T22:00:00.000Z",
+      "modified" : "2022-12-08T19:12:06.160Z",
+      "color" : "#b65151",
+      "disableResizing" : false,
+      "createdByUserId" : "_30005_1"
+    }
+  ]
+}
+```
+
+
+### UPDATE a calendarItem
+
+To update a calendarItem you must know the calendarItem Id. This may be found by calling the appropriate READ endpoint as outlined above. Once you have a collection of calendarItems you may then update using the Update endpoint:
+
+```PATCH /learn/api/public/v1/calendars/items/{calendarItemType}/{calendarItemId}```
+
+#### Payload example
+
+```json
+{
+  
   "type": "Course",
-  "calendarId": "string",
-  "calendarName": "string",
-  "title": "string",
-  "description": "string",
-  "location": "string",
+  "calendarId": "_12594_1",
+  "title": "Study Group 2 Session",
+  "description": "Meeting for Study Group 3",
+  "location": "Castle Room 2-202",
   "start": "2022-09-30T16:36:40.313Z",
   "end": "2022-09-30T16:36:40.313Z",
   "modified": "2022-09-30T16:36:40.313Z",
-  "color": "string",
   "disableResizing": true,
-  "createdByUserId": "string",
   "dynamicCalendarItemProps": {
     "attemptable": true,
     "categoryId": "string",
@@ -443,4 +618,127 @@ With this endpoint you can update a calendar item or series, however, the follow
   }
 }
 ```
+
+**Success** 200 - results match above payload if calendarType were Course with the additional data of "id": "string", "calendarName": "string", "color": "string", "createdByUserId": "string".
+
+### DELETE a calendarItem
+
+As with Update you must know the calendarItem Id of the calendarItem you wish to delete. This may be found by calling the appropriate READ endpoint as outlined above. Once you have a collection of calendarItems you may then delete one using the delete endpoint:
+
+`DELETE /learn/api/public/v1/calendars/items/{calendarItemType}/{calendarItemId}`
+
+#### *Delete Example*
+
+`DELETE /learn/api/public/v1/calendars/items/{calendarItemType}/{calendarItemId}`
+
+**Success**
+204 No content
+
+## A Sidebar on ISO-8601, UTC, and REST APIs
+Public REST APIs always return ISO 8601 UTC Zulu time zone formatted date/time data. To properly manage conversion to your time zone to display and use dates in your requests it is important to understand the relationship between UTC and the ISO 8601 date-time format and how the REST APIs handle date/times.
+
+###In brief:
+* All Learn instances store date-times in the database as localized server time – which may or may not be the consumers time zone – this is why…
+* All REST APIs return date-times in UTC Zulu format and as such developers need to adjust to the appropriate time zone for their UI.
+* UTC stands for Coordinated Universal Time, a standard used to set all time zones around the world.
+* All REST API requests intake ISO 8601 date-time format allowing for specifying the UTC offset for time zone adjustment (see below).ISO 8601 provides a standardized way of presenting dates and times:
+  * Date
+  * Time of day
+  * Coordinated Universal Time (UTC)
+  * Local time with offset to UTC
+  * Date and time
+  * Time intervals
+  * Recurring time intervals
+* UTC could be considered a subset of the ISO 8601 standard – a date without a specified time zone is referred to as UTC time and may use the optional ‘Z’ (Zulu) time zone indicator. Zulu date-times are what are returned by the REST APIs.
+  * 2023-10-15T13:15:30Z represents 1:15:30 PM in Greenwich England (previously called Greenwich Mean Time)
+* ISO 8601 may be used with an optional offset to designate the time zone. Following the above example:
+  * 2023-10-15T13:15:30Z represents 1:15:30 PM  in Greenwich England 
+  * 2023-10-15T13:15:30Z-05:00 corresponds to October 10, 2023, 8:15:30 am, US Eastern Standard Time.
+
+The ISO 8601 standard provides the following format for a date-time:
+
+`[yyyy-MM-dd|yyyyMMdd][T(hh:mm[:ss[.sss]]|hhmm[ss[.sss]])]?[Z|[+-]hh:mm]]`
+
+Following the above formatting these are all the same date and time (October 10, 2023, 1:15:30 pm):
+
+ * 2023-10-15T13:15:30Z << this is the format returned in REST API results
+ * 20231015T15T13:15:30Z
+ * 20231015T15T131530Z
+ * 2023-10-15T13:15:30 
+ * 20231015T15T13:15:30
+ * 20231015T15T131530
+ * 20231015T15T13:15:30
+ * 2023-10-15T18:15:30-5:00
+ * 20231015T15T18:15:30Z-5:00
+ * 20231015T15T181530Z-5:00
+ * 2023-10-15T18:15:30 -5:00
+ * 20231015T15T18:15:30-5:00
+ * 20231015T15T181530-5:00
+ * 20231015T15T18:15:30-5:00
+
+Some useful URLs to help with better understanding dates:
+
+ * ISO 8601 standard: https://www.rfc-editor.org/rfc/rfc3339,  https://www.w3.org/TR/NOTE-datetime and https://en.wikipedia.org/wiki/ISO_8601
+ * Time zones: 
+  * A useful conversion tool: https://www.calculator.net/time-zone-calculator.html
+
+## Entitlements and System Role Privileges
+### Three-Legged-OAuth (3LO)
+Calling Calendar APIs in a 3LO context enables access based on the privileges of the 3LO authenticated user. You do not need to do anything privileges specific to enable your application when using 3LO.
+
+### Non-3LO
+Calling Calendar APIs when not using 3LO requires that you have a REST Application user configured in Learn with the necessary privileges assigned to that user’s role. These privileges are derived from the entitlements required. For mapping entitlements to privileges see: [How to map entitlements to privileges](../getting-started/getting-started-with-entitlements).
+
+#### Necessary Entitlements 
+Calendar entitlements required per endpoint are listed in the calendar API documentation.
+
+1.	To create a calendar event in Course, 
+ * `course.calendar-entry.CREATE` 
+2.	To edit a calendar event in Course, 
+ * `course.calendar-entry.MODIFY` 
+3.	To delete a calendar event in Course 
+ * `course.calendar-entry.DELETE` 
+4.	To create/edit/delete calendar event in Institution 
+ * `system.calendar-item.EXECUTE` 
+
+#### Necessary System Role Privileges
+1.	To create a calendar event in Course, 
+ * `Course/Organization Control Panel (Tools) > Calendar > Create Entry`
+2.	To edit a calendar event in Course, 
+ * `Course/Organization Control Panel (Tools) > Calendar > Edit Entry`
+3.	To delete a calendar event in Course 
+ * `Course/Organization Control Panel (Tools) > Calendar > Delete Entry`
+4.	To create/edit/delete calendar event in Institution 
+ * `Administrator Panel (Tools and Utilities) > Calendar` 
+
+**Note**: You must share these System Role Privileges with Learn System Admins via documentation for deployment of your application on their Learn server.
+## Calendar API Best Practices
+Note: Please review our General REST API Best Practices which are outlined in our [REST API Best Practices](/docs/rest-apis/rest-api-best-practices) guide.
+
+1. Never, use GET /learn/api/public/v1/calendars/items in a non-3LO capacity!
+ 
+  > 3LO always limits calendar data to what a specific user may view. Non-3LO use of the calendar endpoints are more data inclusive. While safe to use as a 3LO authenticated user, using the /calendars/items endpoint as a non-3LO user will attempt to dump the entire calendar db for the the specified timebox (maximum of 14 week’s worth for every course). THIS WILL IMPAIR SYSTEM PERFORMANCE. DO NOT DO THIS!
+
+2. Target your requests based on calendarType and Ids
+
+  > Always target your requests based on the Id of the target course and use calendarTypes to limit the scope of the request. Failure to do so may have negative performance impact.
+  
+ > Use calendarType, calendarItem, or courseId as required to manage the impacted data set.
+
+3. Timebox your requests
+
+  > Always timebox your requests. Failure to do so may have negative performance impact. By default all requests are timeboxed to 14 weeks ahead of the date/time of the request.
+
+  > Use the since and until parameters to timebox your requests:
+
+  |          | |
+|--------------------|-------------------------------------|
+| **since** | |
+| Query parameter: `string($date-time)` | Specifies only calendar items after the 'since' date (inclusive) are to be returned. Maximum of 16 weeks after the 'since' date will be returned. ISO-8601 date-time format is expected: `[yyyy-MM-dd|yyyyMMdd][T(hh:mm[:ss[.sss]]|hhmm[ss[.sss]])]?[Z|[+-]hh:mm]]` |
+
+  |          | |
+|--------------------|-------------------------------------|
+| **until** | |
+| Query parameter: `string($date-time)` |  Specifies only calendar items before the 'until' date (inclusive) are to be returned. Maximum of 16 weeks prior to the 'until' date will be returned. ISO-8601 date-time format is expected: `[yyyy-MM-dd|yyyyMMdd][T(hh:mm[:ss[.sss]]|hhmm[ss[.sss]])]?[Z|[+-]hh:mm]]`|
+
 <AuthorBox frontMatter={frontMatter}/>
