@@ -731,14 +731,12 @@ Note: Please review our General REST API Best Practices which are outlined in ou
 
   > Use the since and until parameters to timebox your requests:
 
-  |          | |
+| **since**          |                                     |
 |--------------------|-------------------------------------|
-| **since** | |
 | Query parameter: `string($date-time)` | Specifies only calendar items after the 'since' date (inclusive) are to be returned. Maximum of 16 weeks after the 'since' date will be returned. ISO-8601 date-time format is expected: `[yyyy-MM-dd|yyyyMMdd][T(hh:mm[:ss[.sss]]|hhmm[ss[.sss]])]?[Z|[+-]hh:mm]]` |
 
-  |          | |
+| **until**          |                                     |
 |--------------------|-------------------------------------|
-| **until** | |
 | Query parameter: `string($date-time)` |  Specifies only calendar items before the 'until' date (inclusive) are to be returned. Maximum of 16 weeks prior to the 'until' date will be returned. ISO-8601 date-time format is expected: `[yyyy-MM-dd|yyyyMMdd][T(hh:mm[:ss[.sss]]|hhmm[ss[.sss]])]?[Z|[+-]hh:mm]]`|
 
 <AuthorBox frontMatter={frontMatter}/>
