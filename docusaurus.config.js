@@ -100,7 +100,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'We have updated all the links from this site and created new documentation!',
+          'The Developer Portal will undergo maintenance on Oct 17, 2023 at 6:30 am UTC',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,

@@ -24,6 +24,19 @@ You may monitor the Portal maintenance schedule and progress at [https://status.
 
 ### Release Notes
 
+#### 10/17/2023
+Maintenance only.
+
+In order to improve performance during peak usage periods and mitigate the risk of database connection failures due to over utilization we are upgrading our database instance type.
+
+Maintenance Date : 10/17
+
+Maintenance Time : 06:30 am UTC
+
+Maintenance window : 10 Mins
+
+You may follow status and updates at [https://status.blackboard.com](https://status.blackboard.com).
+
 #### 07/11/2023
 
 Release Name: 2023.3
