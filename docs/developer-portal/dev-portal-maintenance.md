@@ -29,9 +29,11 @@ Maintenance only.
 
 In order to improve performance during peak usage periods and mitigate the risk of database connection failures due to over utilization we are upgrading our database instance type.
 
-Maintenance Date : 10/17
+The Developer Portal will remain available during this time. Though some database related features such as creating new accounts or applications will be unavailable during the maintenance period. The *actual expected duration* of the maintenance period is 2 minutes or less.
 
-Maintenance Time : 06:30 am UTC
+Maintenance Date : 10/17/2023
+
+Maintenance Time : 06:30 AM UTC (2023-10-17T06:30:00Z)
 
 Maintenance window : 10 Mins
 
