@@ -1,10 +1,12 @@
 ---
-layout: post
 title: "About the API Documentation"
-id: rest_apis-ally-about_api_doc
+id: about-api-doc
 categories: Ally
+published: ""
+edited: ""
 author: Scott Hurrey
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 # How to use the Ally as a Service API Document to Test API
 
@@ -23,3 +25,4 @@ Finally, at the bottom of the documentation for the `Retrieve the feedback for a
 For a walkthrough, check out this video:
 
 <iframe class="embed-video" src="https://www.youtube.com/embed/mr72Q3eyCwc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<AuthorBox frontMatter={frontMatter}/>

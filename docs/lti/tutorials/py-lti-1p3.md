@@ -1,12 +1,12 @@
 ---
-layout: post
-title: "pyLTI1p3"
-id: lti-tutorials-pylti1p3
+title: Using the pyLTI1p3 Library with Learn
+id: pylti13
 categories: Standards
+published: ""
+edited: ""
 author: Scott Hurrey
 ---
-
-# Using the pyLTI1p3 Library with Learn
+<VersioningTracker frontMatter={frontMatter}/>
 
 LTI 1.3 is a much better, much more secure option for integrating one application with another in a standard way. Python is an industry-standard language and is in use by many Blackboard institutions for building integrations.
 The purpose of this document is to demonstrate how to use the [pyLTI1p3](https://pypi.org/project/PyLTI1p3) library, built by [Dmitry Viskov](https://github.com/dmitry-viskov) to easily integrate a Python
@@ -28,7 +28,7 @@ and type `git clone https://github.com/dmitry-viskov/pylti1.3-flask-example.git`
 #### Developer Portal
 
 Now that we have the project cloned locally, we need to register the application for use with Learn. We do this via the [developer portal](https://developer.anthology.com).
-For more information on this process, check out this [document](../../rest-apis/learn/getting-started/registry.md). Once you have an account set up, you can simply register a new application.
+For more information on this process, check out this [document](/docs/developer-portal/dev-portal-start-here.md). Once you have an account set up, you can simply register a new application.
 You will be prompted to enter several pieces of information. For this project, here is what we need to enter:
 
 | Field                | Description                                                                                                                                                                                     | Example                                                                                      |
@@ -40,7 +40,7 @@ You will be prompted to enter several pieces of information. For this project, h
 | Tool Redirect URL(s) | The URL to redirect to upon successful completion of the OIDC Login                                                                                                                             | `https:pylti1p3-game.herokuapp.com/launch/`                                                  |
 | Tool JWKS URL        | The publicly accessible URL to the tool's public key. We do not use this in this project, so we will leave it blank and let the portal generate our private key                                 |
 | Signing Algorithm    | The cryptographic algorithm used to sign the JWT. Leave this as RS256                                                                                                                           |
-| Group                | The developer group to associate with the integration. Here is more information on [groups](/docs/rest-apis/learn/admin/groups-quotas-rates.md)                                                 |
+| Group                | The developer group to associate with the integration. Here is more information on [groups](/docs/developer-portal/production-groups-rest-api-and-site-reg-limits.md)                           |
 
 Once you fill out this form, click the `Register application and generate API key` button, and you will be prompted with several pieces of information. You will only see this once, so make sure you save the data somewhere.
 Click `Done` to take you back to the applications page.
@@ -168,3 +168,4 @@ You should now have a content item called `Breakout <your selected difficulty> m
 
 In the background, the tool uses the Names and Roles Provisioning service to create a leaderboard with the course members.
 Further, it uses the Assignments and Grades Service to store your latest score. Pretty fancy, right?
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,14 +1,12 @@
 ---
-layout: post
-title: "Merge and Crosslist courses"
-purple-text-title: ""
-id: rest_apis-learn-advanced-crosslist_courses
+title: Use APIs to Merge and Cross-list Courses
+id: crosslist-courses
 categories: Learn Rest
+published: ""
+edited: ""
 author: Ryan Haber
-doctitle: "Use APIs to Merge and Cross-list Courses"
 ---
-
-# Use APIs to Merge and Cross-list Courses 
+<VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
 
@@ -60,3 +58,4 @@ To identify the children courses of a course:
 To get a list of all the courses merged with a particular course, regardless
 of which are children and which is the parent, make a GET request to
 /learn/api/public/v1/courses/{courseId}/crossListSet.
+<AuthorBox frontMatter={frontMatter}/>

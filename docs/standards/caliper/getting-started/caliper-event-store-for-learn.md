@@ -1,12 +1,12 @@
 ---
-layout: post
-title: "Caliper Event Store in Learn"
+title: Configuring Caliper Event Store in Learn
 categories: Standards Caliper Getting Started
-id: caliper-gs-caliper-event_store_in_learn
+id: event-store-in-learn
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
-# Configuring Caliper Event Store in Learn
+<VersioningTracker frontMatter={frontMatter}/>
 
 Learn was the first Learning Management System to be certified for
 Caliper Learning Analytics. Caliper is an IMS Global standard that allows a
@@ -95,3 +95,4 @@ to process all of the incoming messages and have ample space and processing
 power to store the data and run reports against it. If you want more
 information about what types of data is included, check out the rest of this
 space for documents tagged for caliper.</p>
+<AuthorBox frontMatter={frontMatter}/>

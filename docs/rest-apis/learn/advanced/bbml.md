@@ -1,13 +1,12 @@
 ---
-layout: post
 title: "BbML"
-id: rest_apis-learn-advanced-bbml
+id: bbml
 categories: Learn REST
+published: ""
+edited: ""
 author: Scott Hurrey
-doctitle: "BbML: Blackboard Markup Language"
 ---
-
-# BbML: Blackboard Markup Language 
+<VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
 
@@ -275,11 +274,11 @@ attribute as seen above, the anchor tag should look like this:
   href="bbresource://<resourceFileId>"
   data-bbfile='{"render":"inline","linkName":"filename.ext","mimeType":"image/jpeg"}'
 >
-       filename.ext
+  filename.ext
 </a>
 ```
 
-Be careful with the `resourceFileId`, it should match one of the next formats `_1234_1` or 
+Be careful with the `resourceFileId`, it should match one of the next formats `_1234_1` or
 `xid-1234_1` any other format will not be received
 
 ### File Type Documentation
@@ -401,3 +400,4 @@ Notes:
 2. `title` is the description of the video.
 3. `alt` is the alt text of the image.
 4. It is beyond the scope of this document to describe the collab service api.
+<AuthorBox frontMatter={frontMatter}/>

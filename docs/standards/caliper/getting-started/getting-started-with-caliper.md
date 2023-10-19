@@ -1,13 +1,13 @@
 ---
-layout: post
 title: "Getting Started with Caliper"
 categories: Standards Caliper Getting Started
-id: caliper-getting-started
+id: getting-started
 sidebar_position: 1
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
-# Getting Started With Caliper
+<VersioningTracker frontMatter={frontMatter}/>
 
 Caliper Analytics is an IMS Global standard focused on the delivery of
 consistent event tracking across campus applications.
@@ -27,7 +27,8 @@ assignments when using Kaltura’s LTI integration and Learn SaaS.
 For more information on Kaltura integrations, visit the Kaltura web site [here](https://corp.kaltura.com/Video-Solutions/Teaching-and-Learning).
 
 From a Developer standpoint, Caliper is available in two ways: sending events
-to the Learn Activity Stream, and subscribing to the 
+to the Learn Activity Stream, and subscribing to the
 Learn Activity Stream as an additional Event Store. This section of the
 Anthology standards Developer Community will dive into both of these options,
 with sample code and supporting documentation.
+<AuthorBox frontMatter={frontMatter}/>

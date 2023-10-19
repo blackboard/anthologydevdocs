@@ -1,14 +1,12 @@
 ---
-layout: post
-title: "Using Attendance APIs"
-id: rest_apis-learn-working_with_learn_apis-attendance
+title: Using Attendance APIs
+id: attendance
 categories: Learn REST APIS Attendance
 author: Davey Herrera
-date: 21/10/2022
-toc: True
+published: "2022-10-21"
+edited: ""
 ---
-
-# Using Attendance APIs
+<VersioningTracker frontMatter={frontMatter}/>
 
 > Tested Using Blackboard Learn Release 3900.50.0-rel.21+840a19d
 
@@ -468,3 +466,4 @@ This endpoint is very powerful, be careful when using it since it will remove AL
 #### CSV Export endpoint
 
 Unfortunately at the moment of writing, this endpoint is not working properly so, I am unable to tell you how it works, however, once this is fixed I will update this, for now, the GUI is the best place to get the information.
+<AuthorBox frontMatter={frontMatter}/>

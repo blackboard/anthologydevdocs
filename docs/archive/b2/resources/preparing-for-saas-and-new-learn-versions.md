@@ -7,6 +7,8 @@ author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
 
+<VersioningTracker frontMatter={frontMatter}/>
+
 :warning: This document is deprecated!
 
 # Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions
@@ -152,8 +154,7 @@ File myStaticDirectory = new File (myDir, "webapp/myStaticStuff");
 // read from myStaticDirectory - files as originally present in war file
 ```
 
-~~~See the bb-config.properties section in Developer Virtual Machine - DVM for how to configure your DVM to behave like Learn SaaS in regards to the
-shared content folder.~~~ Note: we no longer provide a local DVM. You must contact us for a special build of the AWS AMI.
+> See the bb-config.properties section in Developer Virtual Machine - DVM for how to configure your DVM to behave like Learn SaaS in regards to the shared content folder. **Note: we no longer provide a local DVM. You must contact us for a special build of the AWS AMI.**
 
 Eventually, all write access to the shared folder will be phased out, and
 write access for logging will be limited to the log directory returned by
@@ -172,7 +173,7 @@ panel.
 In order to see your B2s logs in Kibana-Elasticsearch, the only SaaS interface
 for log files, your B2 must do the following:
 
-1. Write the log files to the directory returned by **blackboard.platform.plugin.PlugInUtil.getLogDirectory.**[**PlugInUtil** (Building Blocks API 3000.1.0)](https://library.blackboard.com/ref/16ce28ed-bbca-4c63-8a85-8427e135a710/blackboard/platform/plugin/PlugInUtil.html){: target:\_blank}
+1. Write the log files to the directory returned by **blackboard.platform.plugin.PlugInUtil.getLogDirectory.**[**PlugInUtil** (Building Blocks API 3000.1.0)](https://library.blackboard.com/ref/16ce28ed-bbca-4c63-8a85-8427e135a710/blackboard/platform/plugin/PlugInUtil.html)
 
    1. Typically looks like **&lt;blackboard home&gt;/logs/plugins/&lt;vendorId&gt;-&lt;handle%gt;/...**
    2. Read the API documentation on how to get write permission.
@@ -206,7 +207,7 @@ format is:
 </appender>
 ```
 
-**[Sample logging code that works in a SaaS environment.](https://github.com/mark-b-kauffman/bbdn-bblogbackb2){: target:\_blank}**
+**[Sample logging code that works in a SaaS environment.](https://github.com/mark-b-kauffman/bbdn-bblogbackb2)**
 
 ## Statelessness
 
@@ -255,12 +256,12 @@ This simple step will assure that your JSP files render properly in Blackboard
 Learn. All bundled Building Blocks are required to take this step, while
 currently optional, this could become mandatory in the future.
 
-This blog post describes one way to [precompile you Java Server Pages](https://community/blackboard.com/blogs/4/25){: target:\_blank} when using Gradle.
+This blog post describes one way to [precompile your Java Server Pages](https://community.blackboard.com/blogs/4/25) when using Gradle.
 
 ### bb-context-config.properties
 
 Tomcat 8.5 is substantially more configurable in the way that you can
-implement [jar scanning](https://tomcat.apache.org/tomcat-8.5-doc/config/jar-scanner.html){: target:\_blank}. This file lives in the WEB-INF directory of your Building Block
+implement [jar scanning](https://tomcat.apache.org/tomcat-8.5-doc/config/jar-scanner.html). This file lives in the WEB-INF directory of your Building Block
 and provides the following options:
 
 #### com.blackboard.tomcat.servletcontainer.jarscanner.tldJars
@@ -463,8 +464,8 @@ first access, but that is not always appropriate for every situation. The
 following table illustrates the tags and their meanings. Be sure to select the
 one that is right for your Building Block.
 
-| Tag Value                                | Description                                                            |
-| ---------------------------------------- | ---------------------------------------------------------------------- |
+| Tag Value                                            | Description                                                            |
+| ---------------------------------------------------- | ---------------------------------------------------------------------- |
 | &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;     | Load the servlet during system initialization.                         |
 | &lt;load-on-startup&gt;-1&lt;/load-on-startup&gt;    | Load the servlet the first time it is accessed.                        |
 | &lt;load-on-startup&gt;-9876&lt;/load-on-startup&gt; | Load the servlet immediately following the Learn system initialization |
@@ -561,7 +562,7 @@ from a Building Block.
 
 #### GOOD
 
-( A couple examples. See [ALL FILES No More](https://community.blackboard.com/blogs/4/26){: target='\_blank'} for a full set.)
+( A couple examples. See [ALL FILES No More](https://community.blackboard.com/blogs/4/26) for a full set.)
 
 ```java
 <permission type="java.io.FilePermission" name="BB_HOME/-" actions="read,write,delete"/>
@@ -657,3 +658,7 @@ Here's a diagram showing the message chain from a mashupsource.com to the B2 on 
 Note the brackets are indicating how the iframes are nested.
 
 Summary - If your B2 provides a mashup for use in an Original Course's TinyMCE editor you will need to re-architect as described above, or mirgrate users to an LTI-based solution.
+
+```
+<AuthorBox frontMatter={frontMatter}/>
+```

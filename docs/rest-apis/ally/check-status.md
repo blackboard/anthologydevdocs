@@ -1,12 +1,12 @@
 ---
-layout: post
-title: "Check the processing status of a file"
-id: rest_apis-ally-check_status
+title: Check the processing status of a file
+id: check-status
 categories: Ally
+published: ""
+edited: ""
 author: Scott Hurrey
 ---
-
-# Check the processing status of a file
+<VersioningTracker frontMatter={frontMatter}/>
 
 Ally processes files asynchronously. We aim to process files in near-realtime, but some delays might be present. This endpoint can be used to poll for status updates.
 
@@ -63,3 +63,4 @@ curl \
   -H "Authorization: Bearer myJwtToken" \
   https://prod.ally.ac/api/v2/clients/:clientId/content/:contentHash/status
 ```
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,13 +1,13 @@
 ---
-layout: post
 title: "Learn Caliper Event Guide"
 categories: Standards
 id: caliper-events-guide
 author: Scott Hurrey
 sidebar_position: 1
+published: ""
+edited: ""
 ---
-
-# Learn Caliper Event Guide
+<VersioningTracker frontMatter={frontMatter}/>
 
 This document contains a map of the Caliper events emitted by
 Learn. If you are interested in learning more about Moodle's Caliper
@@ -162,3 +162,4 @@ For more information, see [Blog Events](./blog-events.md).
 | Post to a Wiki in an Original Experience Course | Student | Immediately |
 
 For more information, see [Wiki Events](./wiki-events.md).
+<AuthorBox frontMatter={frontMatter}/>

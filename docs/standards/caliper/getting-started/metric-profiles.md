@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Caliper Metric Profiles"
 categories: Standards
-id: caliper-gs-metric_profiles
+id: metric-profiles
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
-# Caliper Metric Profiles
+<VersioningTracker frontMatter={frontMatter}/>
 
 Caliper Metric Profiles provide a basic, consistent format for emitting and
 consuming learning events regardless of the Learning Management System or
@@ -147,3 +147,4 @@ concept of an event envelope. This envelope contains three entities:
 - sensor - The sensor is the library creating and sending the events.
 - sendTime - This is the ISO-compliant date and time the envelope was sent.
 - data - an array containing one or more Caliper events.
+<AuthorBox frontMatter={frontMatter}/>

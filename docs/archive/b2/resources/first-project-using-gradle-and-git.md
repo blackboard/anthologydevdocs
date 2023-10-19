@@ -6,6 +6,7 @@ id: archive-b2-resources-first_project_gradle
 author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -291,3 +292,4 @@ While average build-times may not significantly decrease, the significant time
 savings resulting from improved general project management and from the
 deployment feature of the Learn/Gradle dev environment adds up quickly when
 compared to a manual deploy cycle.
+<AuthorBox frontMatter={frontMatter}/>

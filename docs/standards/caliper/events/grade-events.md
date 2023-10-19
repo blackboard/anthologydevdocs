@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Grade Events"
 categories: Standards
-id: caliper-events-grade_events
+id: grade-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
-# Grade Events
+<VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits a GradeEvent to cover the
 following use cases:
@@ -176,3 +176,4 @@ Here is a sample of what a workflow might look like:
   ]
 }
 ```
+<AuthorBox frontMatter={frontMatter}/>

@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Working with groups and the API"
-id: rest_apis-learn-getting_started-groups_and_api
+id: groups-in-rest-api
 categories: Learn REST groups
-toc: True
+Author: Davey Herrera
+published: ""
+edited: ""
 ---
-
-# Groups and REST API
+<VersioningTracker frontMatter={frontMatter}/>
 
 Using Learn ULTRA on Ultra Course view on Release 3900.34.0-rel.24+41a9160
 
@@ -707,3 +707,4 @@ It returns 204:
 ```
 No content
 ```
+<AuthorBox frontMatter={frontMatter}/>

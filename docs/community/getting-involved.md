@@ -1,14 +1,14 @@
 ---
-layout: post
-title: "Getting Involved"
-id: community-getting_involved
+title: Be a part of the Community!
+id: getting-involved
 categories: Community
 author: Scott Hurrey
+published: "2023-05-09"
+edited: "2023-05-09"
 sidebar_position: 2
-displayed_sidebar: documentationSidebar
 ---
 
-# Be a part of the Community!
+<VersioningTracker frontMatter={frontMatter}/>
 
 Getting involved in the Developer community is easy and with options to suit your goals…
 
@@ -25,8 +25,10 @@ Getting involved in the Developer community is easy and with options to suit you
 - [Host an event](mailto:bbpartnerteam@anthology.com)
 - E-mail [BbDN](mailto:bbpartnerteam@anthology.com) with your event details so that we can add it to our events calendar.
 - [Give us feedback](mailto:developers@anthology.com)
-- Join the [Anthology Techies Slack channel](https://join.slack.com/t/blackboardtechies/shared_invite/)
+- Join the [Anthology Techies Slack channel](https://join.slack.com/t/blackboardtechies/shared_invite/zt-21ayvh4af-FMtP3g~MTHY0aay6CvcZtw)
 
 ### Tech office hours call
 
-Join our call, every wednesday at 10:00 AM Central on [this link](https://bit.ly/technical-office-hours)
+Join our call, every wednesday at 10:00 AM Central on Microsoft Teams! please follow ->[this link](https://bit.ly/AT-Techies-office-hours-MS-TEAMS)
+
+<AuthorBox frontMatter={frontMatter}/>

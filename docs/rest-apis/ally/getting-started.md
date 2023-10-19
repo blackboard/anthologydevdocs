@@ -1,14 +1,13 @@
 ---
-layout: post
-title: "Getting Started"
-id: rest_apis-ally-getting_started
+title: Getting Started Developing for Ally as a Service
+id: getting-started
 categories: Ally
+published: ""
+edited: ""
 author: Scott Hurrey
 sidebar_position: 1
-displayed_sidebar: documentationSidebar
 ---
-
-# Getting Started Developing for Ally as a Service
+<VersioningTracker frontMatter={frontMatter}/>
 
 Ally as a Service provides separatly licensed, stand-alone API access to allow an application to process files for accessibility. Many of you are using this power in your LMS to help instructors improve the accessibility of their content, and to give students, regardless of ability, access to the content that meets their needs and learning style the best.
 
@@ -37,3 +36,4 @@ As we create tutorials and sample code, we will list them here.
 - [Ally as a Service API documentation](https://ally.ac/api/) - Includes sample cURL Commands
 - [Postman Collection](https://github.com/blackboard/BBDN-AaaS-Postman)
 - [Python](https://github.com/blackboard/BBDN-AaaS-Python)
+<AuthorBox frontMatter={frontMatter}/>

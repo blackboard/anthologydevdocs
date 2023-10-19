@@ -1,9 +1,15 @@
 ---
+title: Welcome to our Developer Documentation!
+id: site-intro
 sidebar_position: 1
 hide_table_of_contents: true
+published: ""
+edited: ""
 ---
 
-# Welcome to our Developer Documentation!
+<VersioningTracker frontMatter={frontMatter}/>
+
+#
 
 Explore the latest Anthology developer documentation, including tutorials, sample code, articles, and API reference.
 
@@ -28,7 +34,7 @@ Use Anthology REST APIs to make calls and get the data you need to integrate you
             "_blank"><b>Explore Learn API</b></a>
             </div>
             <div style={{textAlign: "center"}}>
-                <a href="./rest-apis/learn/getting-started/rest_apis-learn-getting-started-first-steps">Getting started</a>
+                <a href="./rest-apis/learn/getting-started/first-steps">Getting started</a>
             </div>
             <div>
                 &nbsp;
@@ -45,7 +51,7 @@ Use Anthology REST APIs to make calls and get the data you need to integrate you
                 <a href="https://developer.anthology.com/portal/displayApi/Student" target="_blank"><b>Explore Student API</b></a>
             </div>
             <div style={{textAlign: "center"}}>
-                <a href="./rest-apis/Student/getting-started/rest_apis-student-getting-started-first-steps">Getting started</a>
+                <a href="./rest-apis/Student/getting-started/first-steps">Getting started</a>
             </div>
             <div>
                 &nbsp;
@@ -62,7 +68,7 @@ Use Anthology REST APIs to make calls and get the data you need to integrate you
                 <a href="https://developer.anthology.com/portal/displayApi/Student" target="_blank"><b>Explore Ally API</b></a>
             </div>
             <div style={{textAlign: "center"}}>
-                <a href="./rest-apis/ally/rest_apis-ally-getting_started">Getting started</a>
+                <a href="./rest-apis/ally/getting-started">Getting started</a>
             </div>
             <div>
                 &nbsp;
@@ -70,3 +76,4 @@ Use Anthology REST APIs to make calls and get the data you need to integrate you
         </div>
     </div>
 </div>
+<AuthorBox frontMatter={frontMatter}/>

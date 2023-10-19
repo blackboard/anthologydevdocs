@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Handling id_token JWT"
-id: lti-core-launch-id_token
+title: "Handling the Launch with id_token JWT"
+id: id-token
+published: ""
+edited: ""
 categories: Standards
 author: Eric Preston
 ---
-
-# Handling the Launch
+<VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
 
@@ -143,3 +144,4 @@ exports.handleIdToken = function(id_token) {
   "family_name": "Cool"
 }
 ```
+<AuthorBox frontMatter={frontMatter}/>

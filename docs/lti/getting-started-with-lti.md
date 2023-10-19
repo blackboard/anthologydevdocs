@@ -1,14 +1,12 @@
 ---
-layout: post
 title: "Getting Started With LTI"
-id: lti-gs_with_lti
+id: getting-started-with-lti
 categories: Standards
+published: ""
+edited: ""
 author: Scott Hurrey
-sidebar_position: 2
-displayed_sidebar: documentationSidebar
 ---
-
-# Getting Started With LTI
+<VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
 
@@ -67,7 +65,7 @@ In this section we cover how you register your application with Anthology and de
 
 The first thing to understand about registering your application is that Anthology has you register your tool **ONCE** with our developer portal here <https://developer.anthology.com>. This is a central, self-service application, running in AWS where you enter information about your application, and are given the values you need for your application to work with LTI Advantage and Learn. It is also the same place you get the ID, key, and secret if you are going to use our public REST API.
 
-**NOTE:** Do not ask institutions to register your tool with the Anthology Developer Portal. You register it **ONCE** with Anthology and institutions can deploy it with the Client ID you give them. They will receive a Deployment ID which they will exchange with you to set up the account. It is the deployment ID, in conjunction with the client ID and issuer, that uniquely identifies the business agreement between the tool vendor and the institution.
+> **NOTE:** Do not ask institutions to register your tool with the Anthology Developer Portal. You register it **ONCE** with Anthology and institutions can deploy it with the Client ID you give them. They will receive a Deployment ID which they will exchange with you to set up the account. It is the deployment ID, in conjunction with the client ID and issuer, that uniquely identifies the business agreement between the tool vendor and the institution.
 
 #### Information you Provide
 
@@ -75,16 +73,20 @@ The first thing to understand about registering your application is that Antholo
 
 We will use the terms `Application` and `Tool` interchangeably throughout this document. What we refer to as an `Application` may be different than how you see it. For Learn, an `Application` is a web application, accepting GET and POST requests at a URL. That application is defined by its fully-qualified domain name (FQDN). An application can have many FQDNs, but two applications cannot share the same FQDN. The reason has to do with needing to be able to immport course archives, such as from IMS Common Cartridge. If there are LTI links in that archive the only way we have today to map those links to a particular LTI Application is through domain matching. If that seems like a limitation, please read on.
 
-##### LTI 1.3 Fields
+### LTI 1.3 Fields
 
 The LTI 1.3 spec defines the information you must provide to a Platform (LMS) such as Blackbaord Learn. Those values are:
 
-    1. OIDC Login initiation URL - this is the URL that Learn makes a GET request to in order to initiate an LTI launch. Without going into too much detail, the OIDC login establishes the identity of the user launching and you validate that you recognize this person. Due to the way that 3rd-party-initiated logins work in OIDC, you are not given the Client ID, so you must determine that by including a unique registration ID on the OIDC Login URL. What you provide is completely up to you, but it must distinguish a Learn login request from a request from any other LMS.
-    2. Tool Redirect URL(s) - This is the URL to which  the LTI launch is POSTed. An LTI launch is a FORM POST with a form parameter named `id_token`. That `id_token` is a JWT that you then parse, verify, and handle. You can provide as many Tool Redirect URLs as you like, separated by commas in the UI, but we strongly recommend you provide only **ONE**. There is enough information in the id_token JWT for you to determine what to do with the LTI launch. Think of your web application as a router for LTI. You may have one or you may have hundreds of "applications" behind that "router", directing LTI launches to their appropriate places.
-    3. Tool JWKS URL - this is the URL for your public key with which Learn validates that the messages it receives (such as Deep Linking, Names & Roles, Assignment & Grades) are from your application. It must adhere to the JWKS specification.
-    4. Signing Algorithm - Anthology currently supports RS256 and RS512. We can support more as we are requested to do so.
+1. **OIDC Login initiation URL**
+   - This is the URL that Learn makes a GET request to in order to initiate an LTI launch. Without going into too much detail, the OIDC login establishes the identity of the user launching and you validate that you recognize this person. Due to the way that 3rd-party-initiated logins work in OIDC, you are not given the Client ID, so you must determine that by including a unique registration ID on the OIDC Login URL. What you provide is completely up to you, but it must distinguish a Learn login request from a request from any other LMS.
+2. **Tool Redirect URL(s)**
+   - This is the URL to which the LTI launch is POSTed. An LTI launch is a FORM POST with a form parameter named `id_token`. That `id_token` is a JWT that you then parse, verify, and handle. You can provide as many Tool Redirect URLs as you like, separated by commas in the UI, but we strongly recommend you provide only **ONE**. There is enough information in the id_token JWT for you to determine what to do with the LTI launch. Think of your web application as a router for LTI. You may have one or you may have hundreds of "applications" behind that "router", directing LTI launches to their appropriate places.
+3. **Tool JWKS URL**
+   - This is the URL for your public key with which Learn validates that the messages it receives (such as Deep Linking, Names & Roles, Assignment & Grades) are from your application. It must adhere to the JWKS specification.
+4. **Signing Algorithm**
+   - Anthology currently supports RS256 and RS512. We can support more as we are requested to do so.
 
-##### Custom Parameters
+### Custom Parameters
 
 The LTI spec supports the notion of custom parameters with a launch. These are arbitrary `name=value` tuples that you can provide to uniquely identify the launch, or any other piece of information you need from the platform at launch time. See the following two documents on how to use substitution parameters within custom parameters to receive context-specific data on an LTI launch:
 
@@ -101,7 +103,7 @@ Once you have registered your application with the Blackboard Developer Portal, 
 4. Auth token endpoint - the endpoint you use to get an OAuth 2 Bearer Token if you wish to make service calls, such as Assignment & Grades, or Names & Roles back to Learn
 5. OIDC auth request endpoint - the endpoint you respond to after you receive an OIDC login initiation request from Learn.
 
-**NOTE:** You will also receive an application key and secret. These are your credentials for using our public REST API. Be sure to save these off as you won't be able to get back at them later. We do not store the secret on our side.
+> **NOTE:** You will also receive an application key and secret. These are your credentials for using our public REST API. Be sure to save these off as you won't be able to get back at them later. We do not store the secret on our side.
 
 ### LTI Placements
 
@@ -165,3 +167,4 @@ Deleting a registered LTI domain and/or the associated managed placements from t
 If you create an LTI 1.3 Tool that uses the same domain as a currently registered LTI 1.1 tool on a Learn system, there is code in Learn that will prompt you to migrate from LTI 1.1 to LTI 1.3. Generally that's a great option.
 
 Finally, only very brave people make changes on a production system without testing first on a test or staging system. We recommend you be more cautious than brave.
+<AuthorBox frontMatter={frontMatter}/>

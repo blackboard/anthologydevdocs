@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Assignable Events"
 categories: Standards
-id: caliper-events-assignables
+id: assignables-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
-# Assignable Events
+<VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits an AssignableEvent in four
 cases:
@@ -161,3 +161,4 @@ lower in group.subOrganizationOf
   ]
 }
 ```
+<AuthorBox frontMatter={frontMatter}/>

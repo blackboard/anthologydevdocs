@@ -1,12 +1,12 @@
 ---
-layout: post
-title: "Using Table of Contents in Original course view"
-id: rest_apis-learn-working_with_learn_apis-course_toc
+title: Using Table of Contents in Original course view
+id: course-toc
 categories: Learn REST toc
-toc: True
+Author: Davey Herrera
+published: ""
+edited: ""
 ---
-
-# Using Table of Contents in Original course view
+<VersioningTracker frontMatter={frontMatter}/>
 
 This guide is only intended to be used in courses that use the original course view.
 
@@ -162,7 +162,7 @@ Please remember you can always check in our documentation the model to understan
 
 It is very important to remember that this patch method can only update two attributes:
 
-- allowGests -> Defines whether or not Guests can view this TOC
+- allowGuests -> Defines whether or not Guests can view this TOC
 - allowObservers -> Defines whether or not observers can view this TOC
 
 The payload looks like this:
@@ -177,3 +177,4 @@ The payload looks like this:
 Also, please keep in mind the following guideline:
 
 "Updates a specific TOC entry. Only allowGuests and allowObservers flags are modifiable, the remaining fields are read-only. User should keep in mind that in order to modify such TOC fields, Course's allowGuest and allowObservers configuration must be enabled. Also, if user wants to update a TOC register's allowGuest flag and TOC is associated to a CONTENT or APPLICATION target type, Course Tool Settings must have allowGuests flag enabled. If user wants to update a TOC register's allowObserver flag and TOC is associated to an APPLICATION target type, Course Tool Settings must have allowObservers flag enabled."
+<AuthorBox frontMatter={frontMatter}/>

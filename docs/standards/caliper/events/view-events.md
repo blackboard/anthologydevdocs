@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "View Events"
 categories: Standards
-id: caliper-events-views
+id: view-events
 author: Scott Hurrey
+published: ""
+edited: ""
 ---
-
-# View Events
+<VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream sends ViewEvent messages to cover
 four use cases:
@@ -118,3 +118,4 @@ Here is some of the key data that is associated with all ViewEvents:
   "extensions": {}
 }
 ```
+<AuthorBox frontMatter={frontMatter}/>

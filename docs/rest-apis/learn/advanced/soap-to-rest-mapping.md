@@ -1,14 +1,12 @@
 ---
-layout: post
 title: "SOAP-to-REST"
-tipue-search-status: true
-id: rest_apis-learn-advanced-soap_to_rest
+id: soap-to-rest
 categories: Learn soap
+published: ""
+edited: ""
 author: Scott Hurrey
-doctitle: "SOAP to REST"
 ---
-
-# SOAP to REST 
+<VersioningTracker frontMatter={frontMatter}/>
 
 The purpose of this document is to provide a mapping from SOAP Web Service
 calls to REST API Endpoints. This is meant to be a quick-start guide to the
@@ -259,3 +257,4 @@ and check the individual endpoints you need.
 | Load a Setting                      | UtilWS.loadSetting()             | N/A                                  |
 | Update a Setting                    | UtilWS.saveSetting()             | N/A                                  |
 | Delete a Setting                    | UtilWS.deleteSetting()           | N/A                                  |
+<AuthorBox frontMatter={frontMatter}/>

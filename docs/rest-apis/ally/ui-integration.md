@@ -1,12 +1,12 @@
 ---
-layout: post
 title: "Integrate Ally as a Service into your own user interface"
-id: rest_apis-ally-ui_integration
+id: ui-integration
 categories: Ally
+published: ""
+edited: ""
 author: Simon Gaeremynck
 ---
-
-# Integrate Ally as a Service into your own user interface
+<VersioningTracker frontMatter={frontMatter}/>
 
 The UI API is a specification for HTML attributes that can be used to introduce consistent patterns of Ally functionality.
 
@@ -152,3 +152,4 @@ The following example contains two links. The first link is a download link your
   />
 </a>
 ```
+<AuthorBox frontMatter={frontMatter}/>

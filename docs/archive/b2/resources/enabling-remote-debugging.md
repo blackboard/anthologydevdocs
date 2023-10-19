@@ -7,6 +7,7 @@ author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -54,3 +55,4 @@ button “Debug” and Eclipse will connect with the Learn instance of Tomcat
 (Learn must be running). Now when you put the breakpoints inside the Eclipse
 project you may debug as you would normally with a regular project only now it
 is remote code running in the Learn Tomcat container.
+<AuthorBox frontMatter={frontMatter}/>

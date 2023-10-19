@@ -1,13 +1,12 @@
 ---
-layout: post
-title: "Working with Ultra assignments"
-id: rest_apis-learn-advanced-ultra_assignments
+title: Use APIs to Work with Ultra Assignments
+id: ultra-assignments
 categories: Learn Rest
+published: ""
+edited: ""
 author: Ryan Haber
-doctitle: "Use APIs to Work with Ultra Assignments"
 ---
-
-# Use APIs to Work with Ultra Assignments
+<VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
 
@@ -79,3 +78,4 @@ returns the ID and title of questions if the request succeeds because only
 those fields are included in the success response object. The method returns
 status and message if the request fails because only those fields are included
 in the error response object.
+<AuthorBox frontMatter={frontMatter}/>

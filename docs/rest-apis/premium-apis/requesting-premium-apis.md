@@ -1,14 +1,13 @@
 ---
-layout: post
 title: "Requesting Premium APIs"
-id: rest_apis-learn-uef-request_premium_apis
-categories: REST
+id: requesting-premium-apis
+categories: REST UEF
 author: Hernan Ortiz
+published: ""
+edited: ""
 sidebar_position: 1
-displayed_sidebar: documentationSidebar
 ---
-
-# Premium APIs
+<VersioningTracker frontMatter={frontMatter}/>
 
 Premium APIs offer several new capabilities for integrations with
 Learn Ultra experience.
@@ -34,3 +33,4 @@ Learn. We designed a robust set of capabilities such as
 telemetry, help provider registration, and UI element rendering to
 enable better integrations and richer user experience.
 Take a look at [First steps with UEF](./uef/uef_getting_started.md) to get started.
+<AuthorBox frontMatter={frontMatter}/>

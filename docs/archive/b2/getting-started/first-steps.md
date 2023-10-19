@@ -7,6 +7,7 @@ author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
+<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -67,3 +68,4 @@ Block development:
 - [Building Block Development Life Cycle](./dev-life-cycle.md)
 - [Enabling Debugging](../resources/enabling-remote-debugging.md)
 - [First Project: Gradle, Git, and basic-b2-template](../resources/first-project-using-gradle-and-git.md)
+<AuthorBox frontMatter={frontMatter}/>

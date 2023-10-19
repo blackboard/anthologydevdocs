@@ -1,13 +1,12 @@
 ---
-layout: post
-title: "Python Demo"
-id: rest_apis-learn-examples-python-demo
+title: Demo using Python
+id: python-demo
 categories: Learn Rest
+published: ""
+edited: ""
 author: Mark O'Neil
-doctitle: "Demo using Python"
 ---
-
-# Demo using Python
+<VersioningTracker frontMatter={frontMatter}/>
 
 The rest demo script demonstrates authenticating a REST application,
 management and use of the authorization token, and creating, updating,
@@ -439,3 +438,4 @@ REST Demo Python command line application available on
 There is a README.html included that talks more specifically running the code.
 Feel free to review the code and run it against a test or development Learn
 instance to see how it works.
+<AuthorBox frontMatter={frontMatter}/>
