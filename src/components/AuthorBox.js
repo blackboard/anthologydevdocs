@@ -33,6 +33,7 @@ const buildSingleAuthor = (userInfo) => {
               )}
             </div>
             <a
+              className={styles['social-link']}
               href={`https://github.com/${
                 userInfo.username ? userInfo.username : 'blackboard'
               }`}
@@ -62,17 +63,18 @@ const buildPill = (userInfo, index) => {
       target='_blank'>
       <div className={styles['author-pill']}>
         <img
-          className={styles.author_img_pill}
-          src={userInfo.img ? userInfo.img : '/img/ANTHOLOGY-Logo-RGB.svg'}
-          alt='Photo of the author'></img>
-        <p className={styles['author-name-pill']}>
-          {userInfo.name ? userInfo.name.split(' ')[0] : 'Anthology'}
-        </p>
-        <img
           className={styles['social-logo-pill']}
           src='/img/github-logo.svg'
           alt='GitHub logo'
         />
+        <img
+          className={styles.author_img_pill}
+          src={userInfo.img ? userInfo.img : '/img/ANTHOLOGY-Logo-RGB.svg'}
+          alt='Photo of the author'
+        />
+        <p className={styles['author-name-pill']}>
+          {userInfo.name ? userInfo.name.split(' ')[0] : 'Anthology'}
+        </p>
       </div>
     </a>
   );

@@ -1,12 +1,13 @@
 ---
-title: "Start here"
-id: "start-here"
+title: 'Start here'
+id: 'start-here'
 categories: Developer Portal
-published: "2023-05-09"
-edited: "2023-05-09"
+published: '2023-05-09'
+edited: '2023-05-09'
 sidebar_position: 1
 author: Davey Herrera
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ## What is the Anthology Developer Portal?
@@ -80,9 +81,11 @@ This is shown only when the password is not strong enough, please use the follow
 - Use at least 1 number [0, 1, 2, ...9]
 - Use 1 special character (!, $, #, %...)
 
+<PasswordChecker />
+
 Once you have created your account, you will be presented with a page that looks like this:
 
-![Developer portal first page after sign up](/assets/img/dev-portal-start-here-5.png d)
+![Developer portal first page after sign up](/assets/img/dev-portal-start-here-5.png)
 
 ### Log in on your account
 

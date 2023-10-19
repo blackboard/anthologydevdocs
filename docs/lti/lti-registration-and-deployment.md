@@ -1,12 +1,13 @@
 ---
-title: "LTI Registration and Deployment with Learn"
+title: 'LTI Registration and Deployment with Learn'
 id: registration-deployment
 categories: Standards
-published: ""
-edited: ""
+published: ''
+edited: ''
 author: Eric Preston
 sidebar_position: 4
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ## Why do we use a central service at Anthology?
@@ -81,7 +82,8 @@ A tool may want to support Deep Linking so an instructor can select or create co
 
 Learn has the concept of LTI Placements to support this. Blackboard allows a Tool vendor to register those placements with the Developer Portal, so an admin doesn't have to do that work.
 
-![LTI diagram](/assets/img/ltidiagram.png){: .center-image }
+![LTI diagram](/assets/img/ltidiagram.png)
 
 If you have any other questions about LTI Registration and Deployment with Learn, <a href="mailto:developers@anthology.com?subject=LTI Registration and Deployment with Learn">let us know</a>.
+
 <AuthorBox frontMatter={frontMatter}/>
