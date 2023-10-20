@@ -2,8 +2,8 @@
 title: "Working with Rubrics APIs"
 id: rubrics-apis
 categories: Learn REST Working-with APIs Rubrics
-published: "2023-10-17"
-edited: "2023-10-17"
+published: "2023-10-20"
+edited: "2023-10-20"
 author: Mark O'Neil
 ---
 
