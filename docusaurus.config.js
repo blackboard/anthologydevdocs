@@ -100,7 +100,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'We have updated URLs for better readibility, try the Search feature if your bookmarks return 404s.',
+          'We have updated URLs for better readability, try the Search feature if your bookmarks return 404s.',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,
