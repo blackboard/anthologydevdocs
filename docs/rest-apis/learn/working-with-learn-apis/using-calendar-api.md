@@ -3,7 +3,7 @@ title: "Working with Calendar APIs"
 id: calendar-apis
 categories: Learn REST Working-with APIs Calendar
 published: "2022-10-03"
-edited: "2023-10-13"
+edited: "2023-10-20"
 author: Davey Herrera, Mark O'Neil
 ---
 
@@ -57,10 +57,11 @@ Please keep in mind that:
 * *You cannot read/create calendar items when there is no calendar.*
 
 ### Institutional
-####Create
+
+#### Create
 1.	Call the create endpoint specifying the Institutional Calendar Type.
 
-####Read, Update, Delete
+#### Read, Update, Delete
 1.	**Read**: Call the read endpoint specifying the Institutional Calendar Item Type.
 2.	**Update**: Call the patch endpoint specifying the Institutional Calendar Item Type and the calendar item Id you wish to update.
 3.	**Delete**: Call the delete endpoint specifying the Institutional Calendar Item Type and the calendar item Id you wish to delete.
@@ -77,18 +78,18 @@ If using 3LO and using calendarItems of type OfficeHours, those will be assigned
 
 * GradebookColumn items must be created using the Gradebook API endpoint: `POST /learn/api/public/v2/courses/{courseId}/gradebook/columns`
 
-#####OfficeHours Calendar Items
+##### OfficeHours Calendar Items
 1.	Get the Id(s) of course(s) for which you need to manage the calendar(s).
 2.	Call the create endpoint specifying the Course Calendar Item Type and the courseId of the course for which you wish to create the calendar item.
 
-####Read, Update, Delete
+#### Read, Update, Delete
 1.	**Read**: 
 a.	Call the read endpoint specifying the Course Calendar Item Type and the courseId of the course for which you want the calendarItems (returns a collection of calendarItems).
 b.	Call the read {calendarItemId} endpoint specifying the Course Calendar Item Type and the courseId of the course for which you want the calendarItem (returns a single of calendarItem).
 2.	**Update**: Call the patch endpoint specifying the Course Calendar Item Type and the calendar item Id you wish to update.
 3.	**Delete**: Call the delete endpoint specifying the Course Calendar Item Type and the calendar item Id you wish to delete.
 
-###Personal
+### Personal
 ***Only 3LO applications may create Personal calendarItems.***
 
 Personal calendars are personal and as such we do not offer Public APIs for external management of Personal calendar Items. If your use case calls for providing individuals with calendar items – e.g. a meeting scheduler – then you should utilize email and the ICS calendar format* for providing individuals with calendar data. The individual may then add the item to their calendar of choice, optionally sharing their external calendar with their Learn calendar.
@@ -144,8 +145,6 @@ requires a payload with calendarItem settings
   }
 }
 ```
-  
-
 
 #### READ calendarItems
 (For a course with an id of `_12594_1`)
@@ -637,7 +636,7 @@ As with Update you must know the calendarItem Id of the calendarItem you wish to
 ## A Sidebar on ISO-8601, UTC, and REST APIs
 Public REST APIs always return ISO 8601 UTC Zulu time zone formatted date/time data. To properly manage conversion to your time zone to display and use dates in your requests it is important to understand the relationship between UTC and the ISO 8601 date-time format and how the REST APIs handle date/times.
 
-###In brief:
+### In brief:
 * All Learn instances store date-times in the database as localized server time – which may or may not be the consumers time zone – this is why…
 * All REST APIs return date-times in UTC Zulu format and as such developers need to adjust to the appropriate time zone for their UI.
 * UTC stands for Coordinated Universal Time, a standard used to set all time zones around the world.
@@ -693,31 +692,32 @@ Calling Calendar APIs when not using 3LO requires that you have a REST Applicati
 Calendar entitlements required per endpoint are listed in the calendar API documentation.
 
 1.	To create a calendar event in Course, 
- * `course.calendar-entry.CREATE` 
+    * `course.calendar-entry.CREATE` 
 2.	To edit a calendar event in Course, 
- * `course.calendar-entry.MODIFY` 
+    * `course.calendar-entry.MODIFY` 
 3.	To delete a calendar event in Course 
- * `course.calendar-entry.DELETE` 
+    * `course.calendar-entry.DELETE` 
 4.	To create/edit/delete calendar event in Institution 
- * `system.calendar-item.EXECUTE` 
+    * `system.calendar-item.EXECUTE` 
 
 #### Necessary System Role Privileges
-1.	To create a calendar event in Course, 
- * `Course/Organization Control Panel (Tools) > Calendar > Create Entry`
-2.	To edit a calendar event in Course, 
- * `Course/Organization Control Panel (Tools) > Calendar > Edit Entry`
-3.	To delete a calendar event in Course 
- * `Course/Organization Control Panel (Tools) > Calendar > Delete Entry`
-4.	To create/edit/delete calendar event in Institution 
- * `Administrator Panel (Tools and Utilities) > Calendar` 
-
 **Note**: You must share these System Role Privileges with Learn System Admins via documentation for deployment of your application on their Learn server.
+
+1.	To create a calendar event in Course, 
+    * `Course/Organization Control Panel (Tools) > Calendar > Create Entry`
+2.	To edit a calendar event in Course, 
+    * `Course/Organization Control Panel (Tools) > Calendar > Edit Entry`
+3.	To delete a calendar event in Course 
+    * `Course/Organization Control Panel (Tools) > Calendar > Delete Entry`
+4.	To create/edit/delete calendar event in Institution 
+    * `Administrator Panel (Tools and Utilities) > Calendar` 
+
 ## Calendar API Best Practices
 Note: Please review our General REST API Best Practices which are outlined in our [REST API Best Practices](/docs/rest-apis/rest-api-best-practices) guide.
 
 1. Never, use GET /learn/api/public/v1/calendars/items in a non-3LO capacity!
  
-  > 3LO always limits calendar data to what a specific user may view. Non-3LO use of the calendar endpoints are more data inclusive. While safe to use as a 3LO authenticated user, using the /calendars/items endpoint as a non-3LO user will attempt to dump the entire calendar db for the the specified timebox (maximum of 14 week’s worth for every course). THIS WILL IMPAIR SYSTEM PERFORMANCE. DO NOT DO THIS!
+  > 3LO always limits calendar data to what a specific user may view. Non-3LO use of the calendar endpoints is more data inclusive. While safe to use as a 3LO authenticated user, using the /calendars/items endpoint as a non-3LO user will attempt to dump the entire calendar db for the the specified timebox (maximum of 14 week’s worth for every course). THIS WILL POTENTIALLY IMPAIR SYSTEM PERFORMANCE. DO NOT DO THIS!
 
 2. Target your requests based on calendarType and Ids
 
