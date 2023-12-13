@@ -4,14 +4,26 @@
         <title>Anthology Developer Documentation Blog</title>
         <link>https://docs.anthology.com/blog</link>
         <description>Anthology Developer Documentation Blog</description>
-        <lastBuildDate>Wed, 30 Aug 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Dec 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[REST APIs and Developer portal Roadmap]]></title>
-            <link>https://docs.anthology.com/blog/rest-apis-and-developer-portal-roadmap</link>
-            <guid>https://docs.anthology.com/blog/rest-apis-and-developer-portal-roadmap</guid>
+            <title><![CDATA[REST APIs and Developer portal Roadmap DEC 13]]></title>
+            <link>https://docs.anthology.com/blog/rest-apis-and-developer-portal-roadmap-december-13-session</link>
+            <guid>https://docs.anthology.com/blog/rest-apis-and-developer-portal-roadmap-december-13-session</guid>
+            <pubDate>Wed, 13 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Today, we had a really nice session with Mark O'Neil where he explored our roadmap for REST APIs and Developer Portal!]]></description>
+            <content:encoded><![CDATA[<p>Today, we had a really nice session with Mark O'Neil where he explored our roadmap for REST APIs and Developer Portal!</p><p>Have a glimpse of what's to come!</p><blockquote><p>our forward looking statement must be kept in mind in this presentation</p></blockquote><iframe width="100%" height="600" src="https://www.youtube.com/embed/jWmD115FJrs?si=dt5U5hBKJYHyG2oi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe><p>Here is the slide deck!</p><object data="/assets/files/developer_portal_roadmap_dec_23_deck.pdf" width="100%" height="600" type="application/pdf"></object><p>Cheers!</p>]]></content:encoded>
+            <category>roadmap</category>
+            <category>Integrations</category>
+            <category>Partners</category>
+            <category>Developers</category>
+        </item>
+        <item>
+            <title><![CDATA[REST APIs and Developer portal Roadmap August 30th 2023 session]]></title>
+            <link>https://docs.anthology.com/blog/rest-apis-and-developer-portal-roadmap-august-30-2023</link>
+            <guid>https://docs.anthology.com/blog/rest-apis-and-developer-portal-roadmap-august-30-2023</guid>
             <pubDate>Wed, 30 Aug 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Today, we had a really nice session with Mark O'Neil where he explored our roadmap for REST APIs and Developer Portal!]]></description>
             <content:encoded><![CDATA[<p>Today, we had a really nice session with Mark O'Neil where he explored our roadmap for REST APIs and Developer Portal!</p><p>Have a glimpse of what's to come!</p><blockquote><p>our forward looking statement must be kept in mind in this presentation</p></blockquote><iframe width="100%" height="600" src="https://www.youtube.com/embed/ovz03bYIDsc?si=RuzLwSoUHFKl2qLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe><p>Here is the slide deck!</p><object data="/assets/files/2023-08-30-restapi-amd-devportal-roadmap.pdf" width="100%" height="600" type="application/pdf"></object><p>Cheers!</p>]]></content:encoded>
