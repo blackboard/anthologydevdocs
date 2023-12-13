@@ -1,12 +1,14 @@
 ---
-slug: rest-apis-and-developer-portal-roadmap
-title: REST APIs and Developer portal Roadmap
+slug: rest-apis-and-developer-portal-roadmap-august-30-2023
+title: REST APIs and Developer portal Roadmap August 30th 2023 session
 authors:
   - name: Mark O'Neil
     title: Product Manager
 tags: ['roadmap', 'Integrations', 'Partners', 'Developers']
 hide_table_of_contents: false
 ---
+
+# Developer portal and Public REST APIs roadmap August 30th 2023
 
 Today, we had a really nice session with Mark O'Neil where he explored our roadmap for REST APIs and Developer Portal!
 
