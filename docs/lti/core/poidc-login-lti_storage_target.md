@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OIDC Login Without Cookes and Sharing the lti_storage_target Between Platform and Tool"
+title: "OIDC Login Without Cookies and Sharing the lti_storage_target Between Platform and Tool"
 id: poidc-login-lti_storage_target
 categories: Standards
 published: "2024-01-05"
