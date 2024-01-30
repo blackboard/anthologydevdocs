@@ -1,6 +1,6 @@
 ---
 title: Developer Portal Maintenance and Releases
-sidebar_position: 7
+sidebar_position: 8
 displayed_sidebar: documentationSidebar
 id: devportal-maintenance
 published: "2023-05-09"
@@ -25,11 +25,12 @@ You may monitor the Portal maintenance schedule and progress at [https://status.
 ### Release Notes
 
 #### 10/17/2023
+
 Maintenance only.
 
 In order to improve performance during peak usage periods and mitigate the risk of database connection failures due to over utilization we are upgrading our database instance type.
 
-The Developer Portal will remain available during this time. Though some database related features such as creating new accounts or applications will be unavailable during the maintenance period. The *actual expected duration* of the maintenance period is 2 minutes or less.
+The Developer Portal will remain available during this time. Though some database related features such as creating new accounts or applications will be unavailable during the maintenance period. The _actual expected duration_ of the maintenance period is 2 minutes or less.
 
 Maintenance Date : 10/17/2023
 

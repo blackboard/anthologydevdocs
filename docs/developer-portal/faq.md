@@ -2,11 +2,12 @@
 title: "FAQ"
 id: "faq"
 categories: Developer Portal
-sidebar_position: 6
+sidebar_position: 7
 published: "2023-05-09"
 edited: "2023-05-09"
 author: Davey Herrera
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ## How do I change the ownership of my application?

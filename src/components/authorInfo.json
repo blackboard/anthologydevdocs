@@ -103,5 +103,12 @@
     "role": "Sr. Partner Manager",
     "area": "Business Development Team",
     "username": "blackboard"
+  },
+  "daniel nieto": {
+    "img": "https://avatars.githubusercontent.com/u/91549595?v=4",
+    "name": "Daniel Nieto",
+    "role": "Software Engineer in Test",
+    "area": "Developer Relations and Standards/Devportal",
+    "username": "dnietoBlackBoard"
   }
 }
