@@ -12,11 +12,11 @@ author: Daniel Nieto
 
 ## Background
 
-The [Anthology Developer Portal](https://developer.anthology.com) plays a crucial role in the integrations with the Anthology product portfolio, as such it handles thousands of requests each day, making the implementation of a rate limit mechanism essential.
+The [Anthology Developer Portal](https://developer.anthology.com) plays a crucial role in the integrations with the Anthology product portfolio, as such it handles millions of requests each day, making the implementation of a rate limit mechanism essential.
 
 Rate limiting is a mechanism used in the web applications to control the traffic flow and the resources utilization. The limit is set by a default value, which is the number of API requests that can be made each day from applications that are registered to your developer group **by default, this is set to 10.000 calls every 24 hours**.
 
-> If you need a higher rate limit, you can request an increase by becoming a partner.
+> If you need a higher rate limit, please review [our guide](/docs/developer-portal/production-groups-rest-api-and-site-registration-limits).
 
 ### Migration
 
@@ -26,7 +26,7 @@ In our ongoing effort to optimize and enhance our system's performance, we are t
 
 - Is this change going to impact any of my applications?
 
-  No, the refresh frame will remain at 24 hours and the default rate limit will continue to be 10.000 calls. Any modified values for rate limit will also be maintained.
+  No, the refresh frame will remain at 24 hours and the default rate limit will continue to be 10.000 calls. Any existing rate limit variations requested by clients and partners will also be maintained.
 
 - When is this change going to be applied?
 
