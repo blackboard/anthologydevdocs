@@ -3,9 +3,9 @@ title: Developer Portal Maintenance and Releases
 sidebar_position: 7
 displayed_sidebar: documentationSidebar
 id: devportal-maintenance
-published: "2023-05-09"
-edited: "2023-05-09"
-author: Mark O'Neil
+published: '2023-05-09'
+edited: '2024-02-19'
+author: Mark O'Neil, Davey Herrera
 ---
 
 <VersioningTracker frontMatter={frontMatter}/>
@@ -22,14 +22,27 @@ You may monitor the Portal maintenance schedule and progress at [https://status.
 
 \*\* non-critical outage: service is available, but operating at degraded performance.
 
+Usually, when maintenance is executed or we set a release date/time which usually happens on a maintenance window, our production system will not be able to take requests and any calls that rely on developer portal. Those will fail for about 30 minutes.
+
 ### Release Notes
 
+#### February 20th 2024 @ 1:30 am EST
+
+We moved this maintenance and feature release due to questions and requests from different sources to Feb 20th 2024.
+
+**Maintenance Release**
+
+- **Admin to create groups**: Enable Portal Administrators to create/view/edit Portal Account Groups and to manage the created groups.
+
+- **Audit Trail**: Admin to track events and actions done by both the registered developers and admins. This feature also includes downloadable log as a spreadsheet(csv) over a specified timeframe.
+
 #### 10/17/2023
+
 Maintenance only.
 
 In order to improve performance during peak usage periods and mitigate the risk of database connection failures due to over utilization we are upgrading our database instance type.
 
-The Developer Portal will remain available during this time. Though some database related features such as creating new accounts or applications will be unavailable during the maintenance period. The *actual expected duration* of the maintenance period is 2 minutes or less.
+The Developer Portal will remain available during this time. Though some database related features such as creating new accounts or applications will be unavailable during the maintenance period. The _actual expected duration_ of the maintenance period is 2 minutes or less.
 
 Maintenance Date : 10/17/2023
 

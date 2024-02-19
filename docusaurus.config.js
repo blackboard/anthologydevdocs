@@ -100,7 +100,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'We have updated URLs for better readability, try the Search feature if your bookmarks return 404s.',
+          '🚨 Our developer portal will have a maintenance window on Feb 20th 2024 at 1:30 am EST -> more information: https://status.blackboard.com/',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,
