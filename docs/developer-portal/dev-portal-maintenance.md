@@ -26,7 +26,9 @@ Usually, when maintenance is executed or we set a release date/time which usuall
 
 ### Release Notes
 
-#### February 20th 2024 @ 1:30 am EST
+~~February 20th 2024 @ 1:30 am EST~~
+
+#### February 25th 2024 @ 1:30 am EST
 
 We moved this maintenance and feature release due to questions and requests from different sources to Feb 20th 2024.
 

@@ -100,7 +100,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          '🚨 Our developer portal will have a maintenance window on Feb 20th 2024 at 1:30 am EST -> more information: https://status.blackboard.com/',
+          '🚨 Please remember: The Developer Portal has an optional maintenance window scheduled every month on the Tuesday of the second week',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,
