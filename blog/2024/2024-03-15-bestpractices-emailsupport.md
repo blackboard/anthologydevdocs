@@ -7,7 +7,7 @@ author: Vikas Gupta
 tags: ['bestpractices', 'Integrations', 'Partners', 'Developers', 'Community']
 hide_table_of_contents: false
 ---
-
+<VersioningTracker frontMatter={frontMatter}/>
 
 Ensuring prompt email support is crucial for achieving a seamless integration. We prioritize addressing inquiries from developers and the community promptly. However, given the volume of emails we receive daily, ranging from straightforward queries to those requiring in-depth research for the best solution or alternative, our response times may vary. Our approach to supporting email inquiries involves several phases:
 
