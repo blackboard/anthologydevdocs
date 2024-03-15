@@ -1,14 +1,13 @@
 ---
-slug: Best Practices Series - Email Support
+slug: email-support-best-practices
 title: Best Practices Series - Email Support
-authors:
-  - name: Vikas Gupta
-    title: Director of Integration Architecture & Partner Support
+published: "2024-03-15"
+edited: "2024-03-15"
+author: Vikas Gupta
 tags: ['bestpractices', 'Integrations', 'Partners', 'Developers', 'Community']
 hide_table_of_contents: false
 ---
 
-# Best Practices Series - Email Support
 
 Ensuring prompt email support is crucial for achieving a seamless integration. We prioritize addressing inquiries from developers and the community promptly. However, given the volume of emails we receive daily, ranging from straightforward queries to those requiring in-depth research for the best solution or alternative, our response times may vary. Our approach to supporting email inquiries involves several phases:
 
@@ -47,8 +46,8 @@ Below are the recommended best practices to ensure you receive the quickest, mos
 
 ![Email Support Process](/assets/img/emailsupportprocess.png?raw=true)
 
-
 We eagerly anticipate receiving full support and collaborating with your teams to ensure a successful integration.
 
 
 Cheers!
+<AuthorBox frontMatter={frontMatter}/>
