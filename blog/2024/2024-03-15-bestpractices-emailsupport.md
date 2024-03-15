@@ -1,6 +1,6 @@
 ---
 slug: email-support-best-practices
-title: Best Practices Series - Email Support
+title: Best Practices - Requesting Support via email
 published: "2024-03-15"
 edited: "2024-03-15"
 author: Vikas Gupta
