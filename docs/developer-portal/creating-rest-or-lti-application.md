@@ -4,72 +4,49 @@ id: "creating-new-rest-or-lti-application"
 categories: Developer Portal
 sidebar_position: 2
 published: "2023-05-09"
-edited: "2023-05-09"
-author: Davey Herrera
+edited: "2024-03-20"
+author: Davey Herrera, Dan Magers
 ---
 <VersioningTracker frontMatter={frontMatter}/>
 
-> Please note that all urls such as devcon.blackboard.com, trial.blackboard.com or devone.com are examples. Those must be replaced with your current urls. These environments are for Anthology's internal purposes and we do not provide access to them.
+This page explains how to register and manage a REST API or LTI application.
 
-After registering on our Developer Portal or signing up for the first time, you will be received with a page that looks just like this:
+> URLs used in this page such as devcon.blackboard.com, trial.blackboard.com or devone.com are examples. Replace with your own current URLs.
+
+Once you sign into the Developer Portal with a registered account, your applications page says **You don’t have any Applications registered yet**.
 
 ![Developer portal first look after sign up](/assets/img/create-rest-or-lti-app-1.png)
 
-If you notice, there are two buttons that show up in the middle of the page:
+You can take two actions:
 
-![Developer portal first look after sign up centered buttons](/assets/img/create-rest-or-lti-app-2.png)
+1. **Register a REST or LTI application.** Select to register a new REST or LTI application. If you already have an application registered, the button’s text is replaced by a **+** to add another application.
 
-1. **Register a REST or LTI application**
-
-   - This link will take you to register a new REST or LTI application, if you already have an application registered and you want to create a new one, this button will no longer be available, and it will be replaced to a (+) button. We will cover this when Managing our REST or LTI application.
-
-2. **LTI Dynamic Registration**
-   - This is explained at length in this page: [LTI Dynamic Registration](/docs/lti/sanctioned-lti-registration-deployment.md)
+2. **LTI Dynamic Registration.** Read more about this topic in our documentation: [LTI Dynamic Registration](/docs/lti/sanctioned-lti-registration-deployment.md).
 
 ## Register a REST or LTI application
 
-When you click on the button to register a new REST or LTI application, you will be received by this form:
-
-This new application can be only a REST API or LTI, it depends on what you are looking for.
-
-> If you need a REST API only application, the first part of the form is enough, however, if you need an LTI application, you need to toggle the "My integration supports LTI 1.3" button and it will display additional information that needs to be entered.
+Select **Register a REST or LTI application** to manually register a new REST API or LTI application.
 
 ### Manual Registration of a REST API Integration
 
-All fields with a red \* are mandatory. (Yes, all of them)
-
+In the application form, enter your application information. **Fields with a red asterisk (*) are required.**
 ![Registering a REST application](/assets/img/create-rest-or-lti-app-3.png)
 
-1. **Application Name**
+1. **Application Name.** Enter your application's name.
 
-- Here you should enter your application's name.
+2. **Description.** Describe your application. Address who your application is intended for and what its main goal is. For example, "Grade Sync allows students and instructors to sync grades with our system and centralize them in the institution's system." Limit 450 characters.
 
-2. **Description**
+3. **Domain(s).** Enter the domain address(es) you want to use without the http or //. You can enter several domains separated by commas (for example, **devcon.blackboard.com**, **trial.anthology.com**).
 
-- In 450 characters, you need to describe your application. It should answer the questions: {Who is this intended for} {What is the main goal} such as:
-- "First application allows students and instructors to sync grades with our system and centralize them in the institution's system."
+4. **Group.** Add the group that this application is to be part of. A default group is added when you create an application. If you want to add your own group, read more about [Groups](/docs/developer-portal/creating-and-managing-groups).
 
-3. **Domain(s)**
+5. **My integration Supports LTI 1.3.** By default, this option is switched off. Turn on if you need your application to support LTI 1.3. Anthology only supports LTI 1.3.
 
-- The domain you want to use this in without the http or //, you can enter several domains separated by commas such as:
-- devcon.blackboard.com, trial.blackboard.com
-
-4. **Group**
-
-- The group which this application should be a part of, we will talk about groups deeper in this page
-
-5. **My integration Supports LTI 1.3**
-
-- This is a toggle that is, by default, off. You can toggle this if you need your application to support LTI 1.3
-- We only support LTI 1.3
-
-6. **Register Application**
-
-- Once all the information has been entered correctly, you may register your applicaton by clicking on this button.
+6. **Register Application.** Once all information has been entered, select **Register Application**.
 
 ### Manual registration of an LTI integration
 
-First, you need to follow the same steps as (above) [Manual registration of a REST API integration](#manual-registration-of-a-rest-api-integration) and you need to toggle the button that reads "My integration supports LTI 1.3", By doing this, it will enable a second part of the form with the information required for the integration to communicate with your application on your end.
+To register an LTI integration, enter your application's information in the form as described in [Manual registration of a REST API integration](#manual-registration-of-a-rest-api-integration). Switch **My integreaton supports LTI 1.3** to ON. This enables a second part of the form. Enter information required for the integration to communicate with your application on your end. These fields are explained in [LTI 1.3 Fields](/docs/lti/getting-started-with-lti.md#lti-13-fields).
 
 1. **Login Initiation URL**
 2. **Tool Redirect URL(s)**
@@ -77,15 +54,15 @@ First, you need to follow the same steps as (above) [Manual registration of a RE
 4. **Signing Algorithm**
 5. **Custom Parameters**
 
-All of these fields are explained in length, in this page [LTI 1.3 Fields](/docs/lti/getting-started-with-lti.md#lti-13-fields)
+Once complete, select **Register Application**.
 
 ### Register Application
 
-Once the information that is requested in this form is completed, you may Click on the register Application button, the page will then return diferent things depending if you added LTI information or not.
+Once you have filled out and submitted the form, add the following information depending on the type of application you are registering.
 
 #### Register REST API application
 
-When you register a REST API only application, you will see three values that the developer portal returns, **Please keep mind these are shown only once, we are unable to retrieve them in the backend**:
+When you register a REST API application, you see three values that the developer portal returns.  **These are shown only once, and Anthology cannot retrieve them. Make sure to document them for your records**:
 
 1. Application Key
 2. Secret
@@ -93,13 +70,11 @@ When you register a REST API only application, you will see three values that th
 
 ![Registering a REST application](/assets/img/create-rest-or-lti-app-4.png)
 
-> Make sure to grab them and store them in a safe space! If you pass this screen and didn't save the data, we are unable to recover it internally.
-
-Once you have this information stored correctly and verified, click in Done and you will be redirected to our Applications Manager.
+Once you record and verify this information, select **Done** to be redirected to **My Applications**.
 
 #### Register an LTI application
 
-When you register a LTI application, you will see seven values that the developer portal returns, **Please keep mind these are shown only once, we are unable to retrieve them in the backend**:
+When you register a LTI application, you will see seven values that the developer portal returns, **These are shown only once, and Anthology cannot retrieve them. Make sure to document them for your records**:
 
 1. Application Key
 2. Secret
@@ -111,42 +86,59 @@ When you register a LTI application, you will see seven values that the develope
 
 ![Registering an LTI application](/assets/img/create-rest-or-lti-app-5.png)
 
-after you have saved your application and data correctly you will be presented with a page that looks like this:
-
-![My Application](/assets/img/create-rest-or-lti-app-6.png)
+Once you record and verify this information, select **Done** to be redirected to **My Applications**.
 
 ## My Applications
 
-On this page, you will see all of your REST API or LTI applications that have been registered on your account.
+On this application mangagement page, you can view and manage your REST API or LTI applications on your account.
 
 ![My Application parts](/assets/img/create-rest-or-lti-app-7.png)
 
 Here you will be able to:
 
-1. **Register a new application Manually**
-   - See [Manual registration of a REST API application](#manual-registration-of-a-rest-api-integration)
-   - See [Manual registration of a LTI application](#manual-registration-of-an-lti-integration)
-2. **See the name, description, Application ID and group of the application**
-   - This data cannot be edited
-3. **Edit your application (General data including LTI endpoints)**
-   - You will be presented with the same form as the manual registration, here you will be able to edit: Application Name, Description, Domains, Login intiation url, Tool redirect URLs, Tool JWKS URL, Signing Algorithm and custom paramenters. Data as Issuer, Public keyset URL, Auth token endpoint, OIDC auth request endpoit cannot be changed.
-4. **Delete your application**
-   - This removes your application. This is a one way operation and cannot be undone.
-5. **Manage your keys**
-   - You can create new keys (Key, secret) but it will keep the same application ID. This can be used when you want to rotate your keys or make the old key and secret unusuable. You may never need to create additional keys. When you click on the Plus button it will generate new values that will be shown only once, make sure to store them in a safe place, we are unable to retrieve this data.
+1. **Register a new application manually.** For instructions to register a new application, see [Manual registration of a REST API application](#manual-registration-of-a-rest-api-integration) or [Manual registration of a LTI application](#manual-registration-of-an-lti-integration)
+
+2. **See the name, description, Application ID and group of the application.** This data can be edited, except for Application ID.
+
+3. **Edit your application (General data including LTI endpoints).** This returns you to the manual registration form where you can edit:
+
+   - Application Name
+   - Description
+   - Domains
+   - Login initiation URL
+   - Tool redirect URLs
+   - Tool JWKS URL
+   - Signing Algorithm
+   - Custom parameters
+
+- The following data cannot be edited:
+
+   - Data as Issuer
+   - Public keyset URL
+   - Auth token endpoint
+   - OIDC auth request endpoint
+
+4. **Delete your application.** This removes your application. This is a one-way operation and cannot be undone.
+
+5. **Manage your keys.** You can create new keys (keys and secrets), but the application keeps the same application ID. This can be used when you want to rotate your keys or make an old key and secret unusuable. You may never need to create additional keys. When you select **+**, it will generate new values that will be shown only once. Document and store them in a safe place because Anthology is unable to retrieve this data.
+
      ![Manage keys](/assets/img/create-rest-or-lti-app-8.png)
-6. **Manage your application's Placements**
-   - Here you will be able to register a placement (LTI) that will be applied whenever a new client adds this to their own Blackboard Learn instance and click on . This will request the following data: Placement name, Description, Type [Course Tool, Course content tool, deep linking content tool, System tool, administrator, ultra extension], [Allow student access or/and Launch in new window], target link URI, Icon URL, custom parameters
+6. **Manage your application's placements.** Register a placement (LTI) that is applied whenever a new client adds this placement to their own Blackboard Learn instance and switches it ON. Enter the following data: 
+   - Placement name
+   - Description
+   - Type (Course Tool, Course content tool, deep linking content tool, System tool, administrator, ultra extension)
+   - Allow student access and/or Launch in new window target link URI
+   - Icon URL
+   - Custom parameters
      ![registering a new placement](/assets/img/create-rest-or-lti-app-9.png)
-7. **Review the schools that have integrated your application**
-   - This will display (At the top right of the page) a list of sites that are registered and using your application, this is how it looks by default
+7. **Review the schools that have integrated your application.** At the top right of the page, view a list of sites that are registered and using your application. this is how it looks by default:
      ![What schools](/assets/img/create-rest-or-lti-app-10.png)
-   - This is how it looks like when you have already registered an application
+- This is how it looks like when you have already registered an application:
      ![What schools with a registered school](/assets/img/create-rest-or-lti-app-11.png)
 
-## My Registrations
+## My Site Registrations
 
-On this tab you will be able to delete the registrations for sites that are no longer using your application, or you can block the access to a particular site on a specific group, it defaults to All groups. By default you will not see any registration when the application was just registered.
+On this tab, can delete the registrations for sites that are no longer using your application. You can also block access to a particular site on a specific group, which makes it default to All groups. You will not see any registrations for a newly registered application.
 
 When a site is registered it will be displayed here and it will look like this:
 

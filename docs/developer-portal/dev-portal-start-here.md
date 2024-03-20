@@ -5,7 +5,7 @@ categories: Developer Portal
 published: '2023-05-09'
 edited: '2024-03-19'
 sidebar_position: 1
-author: Davey Herrera
+author: Davey Herrera, Dan Magers
 ---
 
 <VersioningTracker frontMatter={frontMatter}/>
