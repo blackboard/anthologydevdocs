@@ -4,8 +4,8 @@ sidebar_position: 7
 displayed_sidebar: documentationSidebar
 id: devportal-maintenance
 published: '2023-05-09'
-edited: '2024-02-19'
-author: Mark O'Neil, Davey Herrera
+edited: '2024-03-20'
+author: Mark O'Neil, Davey Herrera, Dan Magers
 ---
 
 <VersioningTracker frontMatter={frontMatter}/>
@@ -18,9 +18,9 @@ You may monitor the Portal maintenance schedule and progress at [https://status.
 
 > NOTE: Should a critical outage\* take place, we will release a detailed post-mortem on Behind the Blackboard as soon as possible - typically within four days post event. Any non-critical outage\*\* will be covered using our in-Portal announcements feature only.
 
-\* critical outage: service is unavailable or operating outside of usable performance or functional parameters.
+> \* critical outage: service is unavailable or operating outside of usable performance or functional parameters.
 
-\*\* non-critical outage: service is available, but operating at degraded performance.
+> \*\* non-critical outage: service is available, but operating at reduced performance.
 
 Usually, when maintenance is executed or we set a release date/time which usually happens on a maintenance window, our production system will not be able to take requests and any calls that rely on developer portal. Those will fail for about 30 minutes.
 
@@ -28,17 +28,15 @@ Usually, when maintenance is executed or we set a release date/time which usuall
 
 ~~February 20th 2024 @ 1:30 am EST~~
 
-#### February 25th 2024 @ 1:30 am EST
+#### 25 February 2024 @ 1:30 am EST
 
-We moved this maintenance and feature release due to questions and requests from different sources to Feb 20th 2024.
-
-**Maintenance Release**
+We moved this maintenance and feature release due to questions and requests from different sources to Feb 20th 2024. Maintenance release.
 
 - **Admin to create groups**: Enable Portal Administrators to create/view/edit Portal Account Groups and to manage the created groups.
 
 - **Audit Trail**: Admin to track events and actions done by both the registered developers and admins. This feature also includes downloadable log as a spreadsheet(csv) over a specified timeframe.
 
-#### 10/17/2023
+#### 17 October 2023
 
 Maintenance only.
 
@@ -54,7 +52,7 @@ Maintenance window : 10 Mins
 
 You may follow status and updates at [https://status.blackboard.com](https://status.blackboard.com).
 
-#### 07/11/2023
+#### 11 July 2023
 
 Release Name: 2023.3
 
@@ -65,7 +63,7 @@ Features:
 - **Redis Upgrade**: For security and performance purposes we are upgrading to the latest version of Redis. This will have no impact on current Developer-facing functionality.
 - **LTI Dynamic Registration**: For performance and forward looking enhancements we are improving the backend which supports the dynamic registration of LTI integrations with Learn. This will have no impact on current Developer-facing functionality.
 
-#### 06/06/2023
+#### 6 June 2023
 
 Release Name: 2023.2
 
