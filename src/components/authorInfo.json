@@ -4,132 +4,132 @@
     "name": "Anthology Inc",
     "role": "Integrations, Developer Relations and Standards Team",
     "area": "Anthology Inc",
-    "username": "blackboard"
+    "github": "blackboard"
   },
   "eric preston": {
     "img": "https://avatars.githubusercontent.com/u/539286?v=4",
     "name": "Eric Preston",
     "role": "Former Staff Software Engineer",
     "area": "Integrations, Developer Relations and Standards",
-    "username": "ewpreston"
+    "github": "ewpreston"
   },
   "davey herrera": {
     "img": "https://avatars.githubusercontent.com/u/2322778?v=4",
     "name": "Davey Herrera",
     "role": "Software Engineer",
     "area": "Integrations, Developer Relations and Standards",
-    "username": "daveyherrera"
+    "github": "daveyherrera"
   },
   "mark o'neil": {
     "img": "https://avatars.githubusercontent.com/u/5400309?v=4",
     "name": "Mark O'Neil",
     "role": "Former Director",
     "area": "Platform and APIs",
-    "username": "moneil"
+    "github": "moneil"
   },
   "sebastian silva": {
     "img": "https://avatars.githubusercontent.com/u/44152511?v=4",
     "name": "Sebastian Silva",
     "role": "Software Engineer - Partnerships",
     "area": "Integrations, Developer Relations and Standards",
-    "username": "onecomputerguy"
+    "github": "onecomputerguy"
   },
   "scott hurrey": {
     "img": "https://avatars.githubusercontent.com/u/886516?v=4",
     "name": "Scott Hurrey",
     "role": "Former Director",
     "area": "Integrations, Developer Relations and Standards",
-    "username": "shurrey"
+    "github": "shurrey"
   },
   "mark kauffman": {
     "img": "https://avatars.githubusercontent.com/u/10159872?v=4",
     "name": "Mark Kauffman",
     "role": "Sr. Software Engineer",
     "area": "Integrations, Developer Relations and Standards",
-    "username": "mark-b-kauffman"
+    "github": "mark-b-kauffman"
   },
   "kelley macewen": {
     "img": "",
     "name": "Kelley MacEwen",
     "role": "Former Sr. Content Designer",
     "area": "Content Team",
-    "username": "blackboard"
+    "github": "blackboard"
   },
   "hernan ortiz": {
     "img": "https://avatars.githubusercontent.com/u/10201569?v=4",
     "name": "Hernan Ortiz",
     "role": "Former Sr. Content Designer",
     "area": "Integrations, Developer Relations and Standards",
-    "username": "hernanpl"
+    "github": "hernanpl"
   },
   "darek sady": {
     "img": "https://avatars.githubusercontent.com/u/36425568?v=4",
     "name": "Darek Sady",
     "role": "Former Director",
     "area": "Teaching and Learning",
-    "username": "dareksady"
+    "github": "dareksady"
   },
   "simon gaeremynck": {
     "img": "https://avatars.githubusercontent.com/u/63703963?v=4",
     "name": "Simon Gaeremynck",
     "role": "Software Engineer",
     "area": "Blackboard Learn",
-    "username": "bbsimong"
+    "github": "bbsimong"
   },
   "ryan haber": {
     "img": "https://avatars.githubusercontent.com/u/10554169?v=4",
     "name": "Ryan Haber",
     "role": "Sr. Content Designer",
     "area": "Content Team",
-    "username": "ryanhaber"
+    "github": "ryanhaber"
   },
   "gokulakrishnan raman": {
     "img": "",
     "name": "Gokulakrishnan Raman",
     "role": "Software Engineer",
     "area": "Blackboard Learn",
-    "username": "blackboard"
+    "github": "blackboard"
   },
   "subitha muniasamy": {
     "img": "",
     "name": "Subitha Muniasamy",
     "role": "Sr. Software Engineer",
     "area": "Blackboard Learn",
-    "username": "blackboard"
+    "github": "blackboard"
   },
   "sara lehnert": {
     "img": "",
     "name": "Sara Lehnert",
     "role": "Sr. Partner Manager",
     "area": "Business Development Team",
-    "username": "blackboard"
+    "github": "blackboard"
   },
   "vikas gupta": {
     "img": "https://avatars.githubusercontent.com/u/3923532?v=4",
     "name": "Vikas Gupta",
     "role": "Director",
     "area": "Integration Architecture, Developer Relations & Partner Support",
-    "username": "guptavikasgupta"
+    "github": "guptavikasgupta"
   },
   "jim burns": {
     "img": "",
     "name": "Jim Burns",
     "role": "Senior Application Architect",
     "area": "Anthology Student",
-    "username": "jburns54712"
+    "github": "jburns54712"
   },
   "dan magers": {
     "img": "",
     "name": "Daniel Magers",
     "role": "Sr. Technical Writer",
     "area": "Blackboard Learn",
-    "username": "jburns54712"
+    "github": "jburns54712"
   },
   "camilo dominguez": {
     "img": "",
     "name": "Camilo Dominguez",
     "role": "Product Manager",
     "area": "Developer Portal and REST APIs",
-    "username": "blackboard"
+    "github": "blackboard"
   }
 }
