@@ -1,120 +1,78 @@
-import React from 'react';
-import authorData from './authorInfo.json';
+import React from "react";
+import styles from "./AuthorBox.module.css";
+import authors from "./authorInfo.json";
+import { useColorMode } from "@docusaurus/theme-common";
 
-import styles from './AuthorBox.module.css';
+const getAuthorInfo = (authorString) => {
+  const authorArray = [];
+  const authorNames = authorString.split(",");
+  authorNames.forEach((authorName) => {
+    if (authors[`${authorName.trim().toLowerCase()}`] === undefined) {
+      authorArray.push(authors["default"]);
+    } else {
+      authorArray.push(authors[`${authorName.trim().toLowerCase()}`]);
+    }
+  });
 
-const buildSingleAuthor = (userInfo) => {
+  return authorArray;
+};
+
+const AuthorCard = (user, index) => {
+  const { colorMode } = useColorMode();
+
+  const userProfilePic =
+    user.img === undefined || user.img === ""
+      ? "/img/author-card-default-picture.png"
+      : user.img;
+
+  const profileStyles =
+    user.img === undefined || user.img === ""
+      ? `${styles["author-profile-pic"]} ${styles["author-profile-default"]}`
+      : `${styles["author-profile-pic"]}`;
   return (
-    <div className={styles.author_container}>
-      <div className={styles['author-card']}>
-        <img
-          className={
-            userInfo.img.includes('ANTHOLOGY')
-              ? styles.author_img_default
-              : styles.author_img
-          }
-          src={userInfo.img ? userInfo.img : '/img/ANTHOLOGY-Logo-RGB.svg'}
-          alt='Photo of the author'></img>
-        <div className={styles['author-info']}>
-          <div className={styles['author-layout']}>
-            <div>
-              <p className={styles['author-name']}>
-                {userInfo.name ? userInfo.name : 'Anthology Inc.'}
-              </p>
-              <p className={styles['author-extra-info']}>
-                {userInfo.role
-                  ? userInfo.role
-                  : 'Developer Relations and Standards Team'}
-              </p>
-              {userInfo.area ? (
-                <p className={styles['author-extra-info']}>{userInfo.area}</p>
-              ) : (
-                ''
-              )}
-            </div>
-            <a
-              className={styles['social-link']}
-              href={`https://github.com/${
-                userInfo.username ? userInfo.username : 'blackboard'
-              }`}
-              target='_blank'>
-              <img
-                className={styles['social-logo']}
-                src='/img/github-logo.svg'
-                alt='GitHub logo'
-              />
-            </a>
+    <div className={styles["author-outer"]} key={index}>
+      <img
+        className={styles["author-background-pic"]}
+        src={`/img/author-card-background-${colorMode}.png`}
+        alt='Background image of the author card'
+      />
+      <img
+        className={profileStyles}
+        src={userProfilePic}
+        alt='Profile picture of the author'
+      />
+      <div className={styles["author-data"]}>
+        <p className={styles["author-name"]}>{user.name}</p>
+        <p className={styles["author-title"]}>{user.role}</p>
+        <p className={styles["author-area"]}>{user.area}</p>
+      </div>
+      <div className={styles["social-links"]}>
+        <a href={`https://github.com/${user.github}`}>
+          <div className={styles["github-logo"]}>
+            <img src='/img/gh.png' alt='Logo of GitHub' />
           </div>
-        </div>
+        </a>
       </div>
-    </div>
-  );
-};
-
-const buildPill = (userInfo, index) => {
-  return (
-    <a
-      key={index}
-      className={styles['pill-link']}
-      href={`https://github.com/${
-        userInfo.username ? userInfo.username : 'blackboard'
-      }
-      `}
-      target='_blank'>
-      <div className={styles['author-pill']}>
-        <img
-          className={styles['social-logo-pill']}
-          src='/img/github-logo.svg'
-          alt='GitHub logo'
-        />
-        <img
-          className={styles.author_img_pill}
-          src={userInfo.img ? userInfo.img : '/img/ANTHOLOGY-Logo-RGB.svg'}
-          alt='Photo of the author'
-        />
-        <p className={styles['author-name-pill']}>
-          {userInfo.name ? userInfo.name.split(' ')[0] : 'Anthology'}
-        </p>
-      </div>
-    </a>
-  );
-};
-
-const buildMultipleAuthors = (authors) => {
-  return (
-    <div className={styles['author-pill-container']}>
-      {authors.map((name, index) => {
-        const userInfo = authorData[name.trim().toLowerCase()];
-        if (!userInfo) {
-          return buildPill(authorData['default'], index);
-        }
-        return buildPill(authorData[name.trim().toLowerCase()], index);
-      })}
     </div>
   );
 };
 
 const AuthorBox = (props) => {
-  // If there's no author, set a default card
-  if (!props.frontMatter.author) {
-    return buildSingleAuthor(authorData['default']);
-  }
+  let userData;
 
-  const authors = props.frontMatter.author.split(', ');
-  //If there are multiple authors
-  if (authors.length > 1) {
-    return buildMultipleAuthors(authors);
-  } else {
-    //If there's only one author
+  if (props.frontMatter.author === undefined || props.frontMatter.author === "")
+    userData = getAuthorInfo("default");
+  else userData = getAuthorInfo(props.frontMatter.author);
 
-    let userInfo = authorData[authors[0].trim().toLowerCase()];
-
-    if (!userInfo) {
-      return buildSingleAuthor(authorData['default']);
-    } else {
-      return buildSingleAuthor(userInfo);
-    }
-  }
+  userData.map((authorInfo) => AuthorCard(authorInfo));
+  return (
+    <div className={styles["author-container"]}>
+      <h3 className={styles["author-header"]}>Contributors on this article:</h3>
+      <div className={styles["author-cards"]}>
+        {userData.map((authorInfo, index) => AuthorCard(authorInfo, index))}
+      </div>
+    </div>
+  );
 };
 
 export default AuthorBox;

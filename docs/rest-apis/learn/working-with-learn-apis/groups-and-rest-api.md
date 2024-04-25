@@ -6,6 +6,7 @@ Author: Davey Herrera
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Using Learn ULTRA on Ultra Course view on Release 3900.34.0-rel.24+41a9160
@@ -707,4 +708,5 @@ It returns 204:
 ```
 No content
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

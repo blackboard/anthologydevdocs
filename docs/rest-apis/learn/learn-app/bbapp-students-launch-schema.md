@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 You can link into the Blackboard app from other applications. With deep linking, a uniform resource identifier (URI) links to a specific location within the mobile app rather than simply launching the app. Use the provided schemas to link to specific features in the Blackboard app.
@@ -435,4 +436,5 @@ You can link into the Blackboard app from other applications. With deep linking,
 - [folder_id] is the folder id of the content folder
 
 **Version**: "Blackboard 3.2+"
+
 <AuthorBox frontMatter={frontMatter}/>

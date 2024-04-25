@@ -6,6 +6,7 @@ author: Mark Kauffman
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Blackboard Learn has a long history of integration development support. Over the years since the Learn LMS (Learning Management System) was released in 1997, Blackboard has continued to enhance its integration capabilities. Starting with Java&trade; Building Blocks, SOAP Web Services, Learning Tools Interoperability (LTI), and adding RESTful APIs in 2016.
@@ -37,4 +38,5 @@ Blackboard Learn REST APIs support a wide range of functionality for integrating
 Anthology provides comprehensive [REST API documentation](https://developer.anthology.com/portal/displayApi/Learn) that describes the various endpoints, request and response formats, and authentication methods that are available. The documentation on this site includes examples and code snippets to help you get started with using the REST APIs in your integrations.
 
 Also provided is a [github repo](https://github.com/search?q=org%3Ablackboard+blackboard%2FBBDN-) containing useful application code for getting started.
+
 <AuthorBox frontMatter={frontMatter}/>

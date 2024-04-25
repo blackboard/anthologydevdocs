@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits an AssignableEvent in four
@@ -161,4 +162,5 @@ lower in group.subOrganizationOf
   ]
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

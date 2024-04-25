@@ -777,4 +777,5 @@ users, and memberships. Along the way, we learned how to institute OAuth,
 create HTTP messages and interact with the Learn REST APIs, how to
 use Jackson to serialize and deserialize objects, and how to use Gradle to
 build and run command line Java applications.
+
 <AuthorBox frontMatter={frontMatter}/>

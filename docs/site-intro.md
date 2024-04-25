@@ -76,4 +76,5 @@ Use Anthology REST APIs to make calls and get the data you need to integrate you
         </div>
     </div>
 </div>
+
 <AuthorBox frontMatter={frontMatter}/>

@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits a GradeEvent to cover the
@@ -176,4 +177,5 @@ Here is a sample of what a workflow might look like:
   ]
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

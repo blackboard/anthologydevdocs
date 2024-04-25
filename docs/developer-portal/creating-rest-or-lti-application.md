@@ -143,4 +143,5 @@ On this tab, can delete the registrations for sites that are no longer using you
 When a site is registered it will be displayed here and it will look like this:
 
 ![Registrations](/assets/img/create-rest-or-lti-app-12.png)
+
 <AuthorBox frontMatter={frontMatter}/>

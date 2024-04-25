@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Scott Hurrey
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 The purpose of this document is to provide a mapping from SOAP Web Service
@@ -257,4 +258,5 @@ and check the individual endpoints you need.
 | Load a Setting                      | UtilWS.loadSetting()             | N/A                                  |
 | Update a Setting                    | UtilWS.saveSetting()             | N/A                                  |
 | Delete a Setting                    | UtilWS.deleteSetting()           | N/A                                  |
+
 <AuthorBox frontMatter={frontMatter}/>

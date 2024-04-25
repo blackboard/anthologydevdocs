@@ -6,6 +6,7 @@ author: Davey Herrera
 published: "2022-10-21"
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 > Tested Using Blackboard Learn Release 3900.50.0-rel.21+840a19d
@@ -466,4 +467,5 @@ This endpoint is very powerful, be careful when using it since it will remove AL
 #### CSV Export endpoint
 
 Unfortunately at the moment of writing, this endpoint is not working properly so, I am unable to tell you how it works, however, once this is fixed I will update this, for now, the GUI is the best place to get the information.
+
 <AuthorBox frontMatter={frontMatter}/>

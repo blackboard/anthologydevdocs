@@ -7,6 +7,7 @@ sidebar_position: 1
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 This document contains a map of the Caliper events emitted by
@@ -162,4 +163,5 @@ For more information, see [Blog Events](./blog-events.md).
 | Post to a Wiki in an Original Experience Course | Student | Immediately |
 
 For more information, see [Wiki Events](./wiki-events.md).
+
 <AuthorBox frontMatter={frontMatter}/>

@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits a SessionEvent to cover
@@ -96,4 +97,5 @@ Here is some of the key data that is associated with these events:
   "extensions": {}
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>
