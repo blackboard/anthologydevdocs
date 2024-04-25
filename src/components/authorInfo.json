@@ -1,29 +1,29 @@
 {
   "default": {
-    "img": "/img/ANTHOLOGY-Logo-RGB.svg",
+    "img": "",
     "name": "Anthology Inc",
-    "role": "Developer Relations and Standards Team",
-    "area": "",
+    "role": "Integrations, Developer Relations and Standards Team",
+    "area": "Anthology Inc",
     "username": "blackboard"
   },
   "eric preston": {
     "img": "https://avatars.githubusercontent.com/u/539286?v=4",
     "name": "Eric Preston",
     "role": "Former Staff Software Engineer",
-    "area": "Developer Relations and Standards",
+    "area": "Integrations, Developer Relations and Standards",
     "username": "ewpreston"
   },
   "davey herrera": {
     "img": "https://avatars.githubusercontent.com/u/2322778?v=4",
     "name": "Davey Herrera",
     "role": "Software Engineer",
-    "area": "Developer Relations and Standards",
+    "area": "Integrations, Developer Relations and Standards",
     "username": "daveyherrera"
   },
   "mark o'neil": {
     "img": "https://avatars.githubusercontent.com/u/5400309?v=4",
     "name": "Mark O'Neil",
-    "role": "Director",
+    "role": "Former Director",
     "area": "Platform and APIs",
     "username": "moneil"
   },
@@ -31,25 +31,25 @@
     "img": "https://avatars.githubusercontent.com/u/44152511?v=4",
     "name": "Sebastian Silva",
     "role": "Software Engineer - Partnerships",
-    "area": "Developer Relations and Standards",
+    "area": "Integrations, Developer Relations and Standards",
     "username": "onecomputerguy"
   },
   "scott hurrey": {
     "img": "https://avatars.githubusercontent.com/u/886516?v=4",
     "name": "Scott Hurrey",
     "role": "Former Director",
-    "area": "Developer Relations and Standards",
+    "area": "Integrations, Developer Relations and Standards",
     "username": "shurrey"
   },
   "mark kauffman": {
     "img": "https://avatars.githubusercontent.com/u/10159872?v=4",
     "name": "Mark Kauffman",
     "role": "Sr. Software Engineer",
-    "area": "Developer Relations and Standards",
+    "area": "Integrations, Developer Relations and Standards",
     "username": "mark-b-kauffman"
   },
   "kelley macewen": {
-    "img": "/img/ANTHOLOGY-Logo-RGB.svg",
+    "img": "",
     "name": "Kelley MacEwen",
     "role": "Former Sr. Content Designer",
     "area": "Content Team",
@@ -59,7 +59,7 @@
     "img": "https://avatars.githubusercontent.com/u/10201569?v=4",
     "name": "Hernan Ortiz",
     "role": "Former Sr. Content Designer",
-    "area": "Developer Relations and Standards",
+    "area": "Integrations, Developer Relations and Standards",
     "username": "hernanpl"
   },
   "darek sady": {
@@ -84,21 +84,21 @@
     "username": "ryanhaber"
   },
   "gokulakrishnan raman": {
-    "img": "/img/ANTHOLOGY-Logo-RGB.svg",
+    "img": "",
     "name": "Gokulakrishnan Raman",
     "role": "Software Engineer",
     "area": "Product Development Team",
     "username": "blackboard"
   },
   "subitha muniasamy": {
-    "img": "/img/ANTHOLOGY-Logo-RGB.svg",
+    "img": "",
     "name": "Subitha Muniasamy",
     "role": "Sr. Software Engineer",
     "area": "Product Development Team",
     "username": "blackboard"
   },
   "sara lehnert": {
-    "img": "/img/ANTHOLOGY-Logo-RGB.svg",
+    "img": "",
     "name": "Sara Lehnert",
     "role": "Sr. Partner Manager",
     "area": "Business Development Team",
@@ -107,8 +107,15 @@
   "vikas gupta": {
     "img": "https://avatars.githubusercontent.com/u/3923532?v=4",
     "name": "Vikas Gupta",
-    "role": "Director Integration Architecture, Developer Relations & Partner Support",
-    "area": "Product Development Team",
+    "role": "Director",
+    "area": "Integration Architecture, Developer Relations & Partner Support",
     "username": "guptavikasgupta"
+  },
+  "jim burns": {
+    "img": "",
+    "name": "Jim Burns",
+    "role": "Senior Application Architect",
+    "area": "Anthology Student",
+    "username": "jburns54712"
   }
 }
