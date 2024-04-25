@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Simon Gaeremynck
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 The UI API is a specification for HTML attributes that can be used to introduce consistent patterns of Ally functionality.
@@ -87,8 +88,7 @@ The Ally UI API works by placing HTML data-\* attributes in the DOM. The followi
   <a
     data-ally-content-id="123"
     data-ally-aaas-content-hash="MIja..."
-    href="/download?id=987"
-  >
+    href="/download?id=987">
     Download the original file
   </a>
   ```
@@ -107,8 +107,7 @@ The Ally UI API works by placing HTML data-\* attributes in the DOM. The followi
   <a
     data-ally-content-ref="123"
     data-ally-show="alternativeformats"
-    data-ally-show-display="inline"
-  >
+    data-ally-show-display="inline">
     This link is only visible when there are alternative formats available for
     this content item
   </a>
@@ -131,8 +130,7 @@ The following example contains two links. The first link is a download link your
   href="/download/12312123"
   data-ally-content-id="myAllyContentId1"
   data-ally-aaas-content-hash="QWxseSstK09uZStQYWdlcistK0hpZ2hlcitFZCstK0dlbmVyYWwucGRmOjM0QURFNDE2NzNDRUJBNUIyRjc2MDI3N0IxOEYwNTdERDY1MDczQzg6YXBwbGljYXRpb24vcGRm"
-  data-ally-download-url="https://ally-public.s3-us-west-2.amazonaws.com/demo/High+Quality+Alternative+Formats/Ally+-+One+Pager+-+Higher+Ed+-+General.pdf"
->
+  data-ally-download-url="https://ally-public.s3-us-west-2.amazonaws.com/demo/High+Quality+Alternative+Formats/Ally+-+One+Pager+-+Higher+Ed+-+General.pdf">
   Original file
 </a>
 <a
@@ -142,14 +140,13 @@ The following example contains two links. The first link is a download link your
   data-ally-invoke="alternativeformats"
   data-ally-show="alternativeformats"
   data-ally-show-display="inline"
-  data-ally-tooltip
->
+  data-ally-tooltip>
   <img
     src="/assets/img/ally-logo.svg"
     alt="Alternative Formats"
     width="25"
-    height="20"
-  />
+    height="20" />
 </a>
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

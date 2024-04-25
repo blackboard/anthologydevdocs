@@ -5,6 +5,7 @@ published: ""
 edited: ""
 author: Eric Preston
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 # Welcome to LTI 1.3 for Blackboard Learn!
@@ -36,4 +37,5 @@ Here are some of the key features and benefits of LTI 1.3:
 **Streamlined user experience**: LTI 1.3 introduces a new Deep Linking feature, which enables instructors to create links to specific resources within external tools and embed them directly within their course content. This makes it easier for students to access external tools and content without leaving the LMS environment, improving the overall user experience.
 
 **Easier implementation**: LTI 1.3 introduces a new Developer Key and Secret mechanism, which simplifies the process of creating and managing LTI integrations. This makes it easier for developers to implement LTI integrations and reduces the time and effort required to maintain them.
+
 <AuthorBox frontMatter={frontMatter}/>

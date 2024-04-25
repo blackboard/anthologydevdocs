@@ -73,7 +73,7 @@
     "img": "https://avatars.githubusercontent.com/u/63703963?v=4",
     "name": "Simon Gaeremynck",
     "role": "Software Engineer",
-    "area": "Product Development Team",
+    "area": "Blackboard Learn",
     "username": "bbsimong"
   },
   "ryan haber": {
@@ -87,14 +87,14 @@
     "img": "",
     "name": "Gokulakrishnan Raman",
     "role": "Software Engineer",
-    "area": "Product Development Team",
+    "area": "Blackboard Learn",
     "username": "blackboard"
   },
   "subitha muniasamy": {
     "img": "",
     "name": "Subitha Muniasamy",
     "role": "Sr. Software Engineer",
-    "area": "Product Development Team",
+    "area": "Blackboard Learn",
     "username": "blackboard"
   },
   "sara lehnert": {
@@ -117,5 +117,19 @@
     "role": "Senior Application Architect",
     "area": "Anthology Student",
     "username": "jburns54712"
+  },
+  "dan magers": {
+    "img": "",
+    "name": "Daniel Magers",
+    "role": "Sr. Technical Writer",
+    "area": "Blackboard Learn",
+    "username": "jburns54712"
+  },
+  "camilo dominguez": {
+    "img": "",
+    "name": "Camilo Dominguez",
+    "role": "Product Manager",
+    "area": "Developer Portal and REST APIs",
+    "username": "blackboard"
   }
 }

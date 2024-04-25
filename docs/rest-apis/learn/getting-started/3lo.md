@@ -7,6 +7,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 # Three-Legged OAuth
@@ -151,4 +152,5 @@ client that sent the authorization code request.
 
 - [Three-legged OAuth in Curl](../examples/curl-demo.md)
 - [BBDN-3LO-REST-Swift](https://github.com/blackboard/BBDN-3LO-REST-Swift)
+
 <AuthorBox frontMatter={frontMatter}/>

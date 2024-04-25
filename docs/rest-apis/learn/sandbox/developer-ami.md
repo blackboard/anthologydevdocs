@@ -6,6 +6,7 @@ author: Mark O'Neil
 published: "2018-07-04"
 edited: "2023-09-12"
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 This document outlines usage of the [Learn REST and LTI Developer AMI](https://aws.amazon.com/marketplace/pp/prodview-fdbvv2vvikoq4) made available via the Amazon AWS Marketplace.
@@ -50,13 +51,16 @@ Before you begin, you must have an Amazon AWS account. If you do not have an AWS
 6. select the VPC connected to your EC2 and
 7. select Actions => Edit DNS Hostnames —> Change DNS hostnames: to YES
 8. Startup time: The startup time for your EC2 will vary and may take as long as 15 minutes before you may access the site via your browser. SSH access may be available in 3 minutes or less.
-9. On initial startup the Original UX login screen appears. 
+9. On initial startup the Original UX login screen appears.
 
 > **Note the messaging on the initial startup page**, as it informs you when the license expires. You will need to subscribe to a new AMI release prior to license expiration if you wish to migrate data from the old EC2 to the new. Licenses on AMIs are not extendible.
 
 ### Discovering License Expiration Date
+
 Should you switch to Ultra or have misplaced your license expiration date, you may find it using one of three approaches.
+
 #### 1. using the EC2 Console
+
 In your EC2 console select your EC2 and from the `Actions` dropdown select `Monitor and troubleshoot>Get system log`.
 
 In the displayed system log scroll up until you see something similar to the following:
@@ -78,7 +82,8 @@ In the displayed system log scroll up until you see something similar to the fol
 ```
 
 #### 2. using `tail` in a terminal
-ssh to your instance and 
+
+ssh to your instance and
 
 ```
 $ tail -14 start.log
@@ -97,9 +102,10 @@ $ tail -14 start.log
 ###########################################################################################
 (startup time: 0hrs 3min 53sec)
 ```
+
 #### 3. using `grep` in a terminal
 
-ssh to your instance and 
+ssh to your instance and
 
 ```
 $ grep "CHECK LICENSE:" start.log
@@ -207,4 +213,5 @@ Currently, there is no formal migration/transfer tool to port Learn data between
 #### Notice - AVG on Windows Systems
 
 While using the AVG antivirus product on a Windows system and attempting to create a course using Learn, AVG may manifest what we believe is a false positive dialog regarding CVE-2014-0286-A. This can occur while using any browser, though the error message is specific to now unsupported versions of Microsoft Internet Explorer 6 through 11. Our security team has indicated that this is an issue with the AVG software. See the AVG website for questions about configuring the AVG software, and for their contact information.
+
 <AuthorBox frontMatter={frontMatter}/>

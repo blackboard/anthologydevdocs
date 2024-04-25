@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream sends ViewEvent messages to cover
@@ -118,4 +119,5 @@ Here is some of the key data that is associated with all ViewEvents:
   "extensions": {}
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

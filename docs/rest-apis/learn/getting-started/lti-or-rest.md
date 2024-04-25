@@ -7,6 +7,7 @@ author: Mark Kauffman
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 We are often asked questions like, "When should I use LTI and when should I use REST?" "What is the difference?" "What can I do with REST that I can't with LTI
@@ -69,4 +70,5 @@ sure to check these links regularly.
 - [REST Documentation](https://developer.anthology.com/portal/displayApi)
 - [LTI Documentation](https://www.imsglobal.org/activity/learning-tools-interoperability)
 - [Learn & LTI Documentation](/docs/lti/getting-started-with-lti.md)
+
 <AuthorBox frontMatter={frontMatter}/>

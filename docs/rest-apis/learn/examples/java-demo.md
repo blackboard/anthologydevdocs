@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Scott Hurrey
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 The rest demo script demonstrates authenticating a REST application,
@@ -508,4 +509,5 @@ REST Demo Java Webapp application available on
 [GitHub](https://github.com/blackboard/BBDN-REST-Demo-Java-Webapp). There is a README.html included that talks more specifically about
 building and running the code. Feel free to review the code and run it against
 a test or development Learn instance to see how it works.
+
 <AuthorBox frontMatter={frontMatter}/>

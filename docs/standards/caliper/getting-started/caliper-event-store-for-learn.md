@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn was the first Learning Management System to be certified for
@@ -95,4 +96,5 @@ to process all of the incoming messages and have ample space and processing
 power to store the data and run reports against it. If you want more
 information about what types of data is included, check out the rest of this
 space for documents tagged for caliper.</p>
+
 <AuthorBox frontMatter={frontMatter}/>

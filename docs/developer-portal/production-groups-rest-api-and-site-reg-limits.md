@@ -7,6 +7,7 @@ published: "2023-05-09"
 edited: "2024-03-20"
 author: Davey Herrera, Dan Magers
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 You can create as many groups as you need to manage your application. Additionally, you can create a **production group** to centralize the management of your application.
@@ -17,9 +18,10 @@ Your production group allows you to increase the number of site registrations an
 
 ### Requesting production groups
 
-Use [our best practices](/docs/developer-portal/best-practices) to properly name groups. 
+Use [our best practices](/docs/developer-portal/best-practices) to properly name groups.
 
 - **If you are an Anthology Client or Partner.** Create a Behind the Blackboard ticket requesting an increase of the number of rest API calls and/or site registrations. You need to provide:
+
   - The email used to register your application.
   - The name of the production group. If you haven't created one yet, the limits are applied to any existing production.
 
@@ -47,9 +49,10 @@ have a 100,000 request limit and three applications, each application will use a
 of that limit. _Your application should monitor the number of requests used at an
 application level using the http headers provided in each request response._ Inform your user when your application stops or is about to stop working because of the rate limit.
 
-| HTTP Header            | Description                                                                  |
-| ---------------------- | ---------------------------------------------------------------------------- |
+| HTTP Header            | Description                                                                   |
+| ---------------------- | ----------------------------------------------------------------------------- |
 | X-Rate-Limit-Limit     | The rate limit ceiling for the given development group.                       |
 | X-Rate-Limit-Remaining | The number of requests left for the 24-hour period for the development group. |
 | X-Rate-Limit-Reset     | The remaining time before the rate limit resets, given in UTC epoch seconds.  |
+
 <AuthorBox frontMatter={frontMatter}/>

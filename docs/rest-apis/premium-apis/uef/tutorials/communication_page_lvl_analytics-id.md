@@ -114,4 +114,5 @@ IntegrationPageAnalytics
 ### Const:
 
 1. ANALYTICS_VISIBLE_TYPE = 'analytics:visible';
-   <AuthorBox frontMatter={frontMatter}/>
+
+<AuthorBox frontMatter={frontMatter}/>

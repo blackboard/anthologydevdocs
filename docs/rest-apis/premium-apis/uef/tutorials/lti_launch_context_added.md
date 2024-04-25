@@ -6,6 +6,7 @@ author: Subitha Muniasamy
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ## Introduction
@@ -57,4 +58,5 @@ As expected the LTI launch in a new window will have the new mentioned events an
 ```
 
 ![LTI launch context added](/assets/img/lti_launch_context_added_1.png)
+
 <AuthorBox frontMatter={frontMatter}/>

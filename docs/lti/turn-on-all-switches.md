@@ -7,6 +7,7 @@ edited: ""
 author: Scott Hurrey
 sidebar_position: 6
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
@@ -26,4 +27,5 @@ We often hear about this message "The Tool Provider has been disabled by the Sys
 (3) Administrator Panel -> Integrations section -> LTI Tool Providers -> Manage Global Properties
 
 ![3-LTIConfigManageGlobal.png](/assets/img/turn-on-all-switches-3.png)
+
 <AuthorBox frontMatter={frontMatter}/>

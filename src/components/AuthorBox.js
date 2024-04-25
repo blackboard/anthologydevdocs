@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./AuthorBox.module.css";
 import authors from "./authorInfo.json";
+import { useColorMode } from "@docusaurus/theme-common";
 
 const getAuthorInfo = (authorString) => {
   const authorArray = [];
@@ -17,9 +18,11 @@ const getAuthorInfo = (authorString) => {
 };
 
 const AuthorCard = (user, index) => {
+  const { colorMode } = useColorMode();
+
   const userProfilePic =
     user.img === undefined || user.img === ""
-      ? "/assets/img/ANTHOLOGY-Logo-RGB.png"
+      ? "/img/author-card-default-picture.png"
       : user.img;
 
   const profileStyles =
@@ -30,7 +33,7 @@ const AuthorCard = (user, index) => {
     <div className={styles["author-outer"]} key={index}>
       <img
         className={styles["author-background-pic"]}
-        src='/assets/img/author-card-background.png'
+        src={`/img/author-card-background-${colorMode}.png`}
         alt='Background image of the author card'
       />
       <img

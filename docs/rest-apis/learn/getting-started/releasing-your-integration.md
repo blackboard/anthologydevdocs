@@ -7,6 +7,7 @@ author: Mark O'Neil
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 You have taken the time to build a great integration now there are a few steps that should be followed to ensure a successful product release.
@@ -65,4 +66,5 @@ E.G: You needed to find the entitlements (from the API documentation) and the Pr
 
 - Providing the required Privileges to Learn Admins reduces the risk of a failure in integration installation and operation. Anthology nor you should want to burden clients with figuring out from the API Docs which Entitlements are needed and look up these Privileges on their own so that your application works as expected.
 - Following secure practices around key:secret management create a safer more secure www.
+
 <AuthorBox frontMatter={frontMatter}/>

@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits a ForumEvent to cover five
@@ -286,4 +287,5 @@ Here is some of the key data that is associated with these events:
   ]
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

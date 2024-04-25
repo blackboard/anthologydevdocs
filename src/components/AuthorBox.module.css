@@ -17,9 +17,9 @@
 .author-outer {
   position: relative;
   overflow: hidden;
-  width: 15rem;
+  width: 14rem;
   min-height: 20rem;
-  background-color: light-dark(#f5f5f5, #1b1b1d);
+  background-color: light-dark(#fafafa, #1b1b1d);
   border: solid 1px #414141;
   border-radius: 20px;
 }
@@ -29,7 +29,6 @@
   height: 6rem;
   object-fit: cover;
   border-bottom: solid 1px #000000;
-  box-shadow: 0rem 1rem 2rem light-dark(#00000066, #ffffff66);
 }
 
 .author-profile-pic {
@@ -37,7 +36,7 @@
   height: 7rem;
   position: absolute;
   z-index: 10;
-  transform: translateX(-156%) translateY(35%);
+  transform: translateX(-150%) translateY(35%);
   border-radius: 1rem;
   border: dotted 1px #414141;
   filter: drop-shadow(0px 0px 4px #00000033);
@@ -62,7 +61,7 @@
   font-weight: 700;
   padding: 0;
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .author-title {
@@ -70,7 +69,7 @@
   margin: 0;
   margin-top: -0.2rem;
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .author-area {
@@ -107,4 +106,59 @@
 .github-logo img {
   width: 2.2rem;
   height: 2.2rem;
+}
+
+@media (max-width: 520px) {
+  .author-outer {
+    width: 11rem;
+    min-height: 14rem;
+  }
+
+  .author-background-pic {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .author-profile-pic {
+    transform: translateX(-128.5%) translateY(35%);
+  }
+
+  .author-name {
+    font-size: 1.2rem;
+  }
+
+  .author-title {
+    font-size: 0.9rem;
+  }
+
+  .author-area {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .author-outer {
+    width: 10rem;
+    min-height: 14rem;
+  }
+
+  .author-background-pic {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .author-profile-pic {
+    transform: translateX(-121%) translateY(35%);
+  }
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .author-title {
+    font-size: 0.8rem;
+  }
+
+  .author-area {
+    font-size: 0.75rem;
+  }
 }

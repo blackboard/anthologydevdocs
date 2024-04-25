@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits a CourseGroupEvent whenever
@@ -137,4 +138,5 @@ Here is a sample of what a payload might look like:
   ]
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>
