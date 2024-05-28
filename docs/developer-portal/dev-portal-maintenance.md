@@ -5,7 +5,7 @@ displayed_sidebar: documentationSidebar
 id: devportal-maintenance
 published: '2023-05-09'
 edited: '2024-03-20'
-author: Mark O'Neil, Davey Herrera, Dan Magers
+author: Mark O'Neil, Davey Herrera, Dan Magers, Camilo Dominguez
 ---
 
 <VersioningTracker frontMatter={frontMatter}/>
@@ -26,7 +26,26 @@ Usually, when maintenance is executed or we set a release date/time which usuall
 
 ### Release Notes
 
-~~February 20th 2024 @ 1:30 am EST~~
+---
+
+#### May 28th 2024 - 02:30 AM EST
+
+The Developer Portal will undergo a maintenance update at this time. There is no downtime involved.
+
+- Release Name: DP2024.3
+- Release Date : 05/28
+- Release Time : 02:30 AM EST (6:30 AM UTC) (12:00 PM IST)
+- Downtime : 0 Mins
+
+**Purpose:**
+
+**Rate Limiting**:
+A more effective method for managing rate limits of API usage with enhanced control. Enjoy the flexibility to adjust from a 24-hour cycle to any time interval that better fits developer's requirements.
+
+**Performance issue fix:**
+SQL Query optimization to address the Performance issue
+
+---
 
 #### 25 February 2024 @ 1:30 am EST
 
@@ -35,6 +54,8 @@ We moved this maintenance and feature release due to questions and requests from
 - **Admin to create groups**: Enable Portal Administrators to create/view/edit Portal Account Groups and to manage the created groups.
 
 - **Audit Trail**: Admin to track events and actions done by both the registered developers and admins. This feature also includes downloadable log as a spreadsheet(csv) over a specified timeframe.
+
+---
 
 #### 17 October 2023
 
@@ -52,6 +73,8 @@ Maintenance window : 10 Mins
 
 You may follow status and updates at [https://status.blackboard.com](https://status.blackboard.com).
 
+---
+
 #### 11 July 2023
 
 Release Name: 2023.3
@@ -62,6 +85,8 @@ Features:
 
 - **Redis Upgrade**: For security and performance purposes we are upgrading to the latest version of Redis. This will have no impact on current Developer-facing functionality.
 - **LTI Dynamic Registration**: For performance and forward looking enhancements we are improving the backend which supports the dynamic registration of LTI integrations with Learn. This will have no impact on current Developer-facing functionality.
+
+---
 
 #### 6 June 2023
 
