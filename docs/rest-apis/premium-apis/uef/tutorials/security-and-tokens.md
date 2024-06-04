@@ -6,6 +6,7 @@ id: security-and-tokens
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Using the Ultra Extension Framework (UEF) is a powerful way to enhance the way students learn and teachers teach. The framework itself is pretty easy to use. As with most integration types, the biggest hurdle is figuring out the proper method of authenticating your tool and authorizing its use. The purpose of this document is to shed some light on this process in the hopes that it will help you get building your code faster.
@@ -158,4 +159,5 @@ Assuming the scopes provided allow you access to the events you are subscribing 
 ### Tips and Tricks
 
 The best tip we can give is that all of the communication happens in the browser, so if you are having trouble with the javascript, using console.log() will print messages to the javascript console in the Chrome or Firefox developer tools. In addition, you can click things in the Ultra UI and see interactions in the Network tab of those same developer tools. This helps you identify the routeName for route events or the analyticsId in click events. These are how your application knows where they user is and what they are doing so you can insert your functionality in the right place.
+
 <AuthorBox frontMatter={frontMatter}/>

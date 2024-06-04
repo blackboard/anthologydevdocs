@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Scott Hurrey
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Using template variables you can create URLs to integrate with other systems by including information about the user's context.
@@ -51,4 +52,5 @@ Note that not all of these variables will resolve on all pages. For example, if 
 | Request return URL                                                                                                             | @X@request.return@X@                                                 |
 | System host name                                                                                                               | @X@system.site_id@X@                                                 |
 | Raw course id                                                                                                                  | @X@course.raw_course_id@X@                                           | Returns the course.getCourseId() for the current course ignoring the rule that a student is supposed to see the id of the course they are actually enrolled in. Effectively gives the parent course ID to a student LTI launch from the parent of a cross listed corse, not the child section course ID the are enrolled in. |
+
 <AuthorBox frontMatter={frontMatter}/>

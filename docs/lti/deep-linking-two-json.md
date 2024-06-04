@@ -7,6 +7,7 @@ published: ""
 edited: ""
 sidebar_position: 5
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
@@ -53,4 +54,5 @@ about is doing video embeds in Learn content. That will be our first, and for no
   }
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

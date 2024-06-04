@@ -6,12 +6,15 @@ id: tutorials-course-leftnav
 published: "2023-10-10"
 edited: "2023-10-10"
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
-### Overview 
+### Overview
+
 We've had a lot of requests asking about how to add an LTI launch to an Ultra course's left navigation (Details & Actions). If you have that question, this page is for you.
 
 ### Prerequisites
+
 1. The Group your application is in must be UEF enabled. If it's not, file a Behind the Blackboard Support ticket. Provide the developer email address and the Group your UEF application will be in, NOT the application ID. The application ID is usless informaiton for this. If you are a vendor, you must have a Partnership level that is Bronze or higher. See See [Become a Blackboard Partner](../../../../partners/become-a-partner.md).
 
 2. Complete the [Ultra Extension Framework](/docs/rest-apis/premium-apis/uef/tutorials/tutorials.md) tutorial.
@@ -24,19 +27,23 @@ We've had a lot of requests asking about how to add an LTI launch to an Ultra co
 
 ### Sample Code
 
-You may find the related code used on the video here: [GitHub BBDN-UEF-Python](https://github.com/blackboard/BBDN-UEF-Python/tree/102-UEF-COURSE-LEFTNAV) 
+You may find the related code used on the video here: [GitHub BBDN-UEF-Python](https://github.com/blackboard/BBDN-UEF-Python/tree/102-UEF-COURSE-LEFTNAV)
 
 ### Explanation of the Video and Associated Code
+
 1. We clear the browser cache often when making changes to integration file. Your browser will cache it so when you make changes if you don't clear the browser cache you won't see your work.
 
 2. Registration for a course detail message. In our onAuthorizedWithUltra function we add the following:
- ``` 
- messageChannel.postMessage({
-    type: "course:detail:register",
-    registrationName: 'UEF course:detail Test',
-});  
- ```
-3. Add our link to the course details section. Do this as follows. 
+
+```
+messageChannel.postMessage({
+   type: "course:detail:register",
+   registrationName: 'UEF course:detail Test',
+});
+```
+
+3. Add our link to the course details section. Do this as follows.
+
 ```
 if (message.data.eventType === 'portal:new' && message.data.selector === 'course.outline.details') {
     showCourseDetails(message.data.portalId, 'UEF cod Test', 'Click Here');
@@ -64,8 +71,10 @@ function showCourseDetails (portalId, titleName, linkName) {
 
 ... for brevity. Read the rest of the code. Of interest here is the callbackId: 'course-details-test'
 ```
+
 4. In our onMessageFromUltra function we add code to watch for the user clicking the link, the callback. It will call the openPanelCD function to open the panel that causes the LTI launch and displays its contents.
-```    
+
+```
 // Our link was clicked. We get a callback and tell Ultra to open our course details panel
 if (message.data.type === 'portal:callback') {
     switch(message.data.callbackId) {
@@ -77,6 +86,7 @@ if (message.data.type === 'portal:callback') {
 ```
 
 5. Our openPanelCD fuction posts a message to Ultra to open a new panel. We'll have this panel opening make the LTI launch and display the response.
+
 ```
 // COURSE-LEFTNAV tell Ultra to open our panel. It will send us a message back after
 // it does. Then we render some content there in panel-3
@@ -97,7 +107,9 @@ function openPanelCD(panelSize, data) {
     });
 }
 ```
+
 6. We add code to our renderPanelContents function. renderPanelContents gets called when Ultra responds to any of our requests to open a new panel. Remember that the handle in the code will be unique to your tool's managed placement.
+
 ```
 function renderPanelContents(message) {
     ... for brevity
@@ -106,7 +118,7 @@ function renderPanelContents(message) {
     if (message.data.correlationId === 'panel-3') {
 
         panelId = message.data.portalId;
-        
+
         const contentsToSendLti = {
             tag: 'LtiLaunch',
             props: {
@@ -129,10 +141,11 @@ function renderPanelContents(message) {
             contents: contentsToSendLti
         });
 
-    } 
+    }
 ```
 
 ### Notice
 
 Before releasing a UEF integration, that uses the UEF Premium APIs, to production you will be required to meet a certain level of Blackboard Partnership. See [Become a Blackboard Partner](../../../../partners/become-a-partner.md).
+
 <AuthorBox frontMatter={frontMatter}/>

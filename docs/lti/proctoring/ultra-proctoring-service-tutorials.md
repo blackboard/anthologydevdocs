@@ -5,6 +5,7 @@ published: ""
 edited: ""
 author: Mark Kauffman, Scott Hurrey, Eric Preston
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 # Ultra Proctoring Service Tutorials - IMS Proctoring Spec + UEF
@@ -28,4 +29,5 @@ In the [Part 3 video](https://youtu.be/DciK1YoaE6E) we show how to display your 
 #### Recap and Review
 
 In the [Recap and Review video](https://youtu.be/MRkJ3PHYoJo) we review the fundamentals of the setup and demonstrate it working on the cookieless solution provided with Learn(tm) build 3900.13.rel31. Also shown is that the solution works great with the student preview feature.
+
 <AuthorBox frontMatter={frontMatter}/>

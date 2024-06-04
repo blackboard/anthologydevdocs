@@ -7,6 +7,7 @@ published: ""
 edited: ""
 author: Eric Preston
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
@@ -51,4 +52,5 @@ exports.oidcLogin = function(req, res) {
   res.redirect(url);
 };
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

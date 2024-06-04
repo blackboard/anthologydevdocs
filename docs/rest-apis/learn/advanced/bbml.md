@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Scott Hurrey
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
@@ -195,8 +196,7 @@ within an Ultra course context, such as an Ultra Document:
   C2%25BB3%25C2%25AB/mn%25C2%25BB%25C2%25ABmo%25C2%25BB/%25C2%25AB/mo%25C2
   %25BB%25C2%25ABmn%25C2%25BB4%25C2%25AB/mn%25C2%25BB%25C2%25ABmroot%25C2%25BB
   %25C2%25ABmn%25C2%25BB7%25C2%25AB/mn%25C2%25BB%25C2%25ABmn%25C2%25BB2%25C2%2
-  5AB/mn%25C2%25BB%25C2%25AB/mroot%25C2%25BB%25C2%25AB/math%25C2%25BB)"
-    />
+  5AB/mn%25C2%25BB%25C2%25AB/mroot%25C2%25BB%25C2%25AB/math%25C2%25BB)" />
   </p>
 
   <p>
@@ -254,8 +254,7 @@ The end result of all this would be as follows:
 ```html
 <a
   href="bbupload://<uploadFileId>"
-  data-bbfile='{"render":"inline","linkName":"filename.ext","mimeType":"image/jpeg"}'
->
+  data-bbfile='{"render":"inline","linkName":"filename.ext","mimeType":"image/jpeg"}'>
        filename.ext
 </a>
 ```
@@ -272,8 +271,7 @@ attribute as seen above, the anchor tag should look like this:
 ```html
 <a
   href="bbresource://<resourceFileId>"
-  data-bbfile='{"render":"inline","linkName":"filename.ext","mimeType":"image/jpeg"}'
->
+  data-bbfile='{"render":"inline","linkName":"filename.ext","mimeType":"image/jpeg"}'>
   filename.ext
 </a>
 ```
@@ -296,8 +294,7 @@ For example, for the Attachment plugin, the generated bbml is as follows
 <a
   href="https://ultra-integ.int.bbpd.io/bbcswebdav/pid-486306-dt-content-rid-13383141_1/xid-13383141_1"
   data-bbtype="attachment"
-  data-bbfile='{"extension":"pdf","linkName":"1-23MB","render":"inline","alternativeText":"1-23MB.pdf","mimeType":"application/pdf","isDecorative":false'
->
+  data-bbfile='{"extension":"pdf","linkName":"1-23MB","render":"inline","alternativeText":"1-23MB.pdf","mimeType":"application/pdf","isDecorative":false'>
   1-23MB
 </a>
 ```
@@ -400,4 +397,5 @@ Notes:
 2. `title` is the description of the video.
 3. `alt` is the alt text of the image.
 4. It is beyond the scope of this document to describe the collab service api.
+
 <AuthorBox frontMatter={frontMatter}/>

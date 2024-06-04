@@ -30,4 +30,5 @@ There are several reasons why RESTful APIs are important:
 **Security**: RESTful APIs can be secured using various authentication mechanisms such as OAuth and SSL/TLS. This ensures that the data being transmitted is secure and only accessible to authorized users.
 
 Overall, RESTful APIs provide a simple and effective way to expose data and services over the web, making them an important tool for modern software development.
+
 <AuthorBox frontMatter={frontMatter}/>

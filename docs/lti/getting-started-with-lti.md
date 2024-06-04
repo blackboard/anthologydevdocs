@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Scott Hurrey
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
@@ -167,4 +168,5 @@ Deleting a registered LTI domain and/or the associated managed placements from t
 If you create an LTI 1.3 Tool that uses the same domain as a currently registered LTI 1.1 tool on a Learn system, there is code in Learn that will prompt you to migrate from LTI 1.1 to LTI 1.3. Generally that's a great option.
 
 Finally, only very brave people make changes on a production system without testing first on a test or staging system. We recommend you be more cautious than brave.
+
 <AuthorBox frontMatter={frontMatter}/>

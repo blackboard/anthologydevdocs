@@ -7,6 +7,7 @@ sidebar_position: 4
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 If you are looking forward to map entitlements with privileges when integrating a new application with a Learn instance, you are in the right place! You probably saw this:
@@ -80,4 +81,5 @@ And if you click your bookmark **while still on the privileges page** you should
 ![A screenshot of Learn privileges with entitlements](/assets/img/mapping-entitlements-to-privileges-3.png)
 
 > Make sure that the Show all privileges button was clicked first
+
 <AuthorBox frontMatter={frontMatter}/>

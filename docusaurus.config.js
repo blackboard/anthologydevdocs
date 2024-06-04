@@ -100,7 +100,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'We have updated URLs for better readability, try the Search feature if your bookmarks return 404s.',
+          '🚨 Please remember: The Developer Portal has an optional maintenance window scheduled every month on the Tuesday of the second week',
         backgroundColor: '#262626',
         textColor: '#d5d5d5',
         isCloseable: false,

@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Ryan Haber
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 ### Overview
@@ -58,4 +59,5 @@ To identify the children courses of a course:
 To get a list of all the courses merged with a particular course, regardless
 of which are children and which is the parent, make a GET request to
 /learn/api/public/v1/courses/{courseId}/crossListSet.
+
 <AuthorBox frontMatter={frontMatter}/>

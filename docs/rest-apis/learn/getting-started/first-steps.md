@@ -7,6 +7,7 @@ sidebar_position: 1
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Anthology offers a suite of education technology tools, both software and
@@ -165,4 +166,5 @@ sure to check these links regularly.
 
 - [Developer Portal](https://developer.anthology.com/)
 - [REST Documentation](https://developer.anthology.com/portal/displayApi)
+
 <AuthorBox frontMatter={frontMatter}/>

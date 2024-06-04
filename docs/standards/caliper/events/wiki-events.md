@@ -6,6 +6,7 @@ author: Scott Hurrey
 published: ""
 edited: ""
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's Caliper Analytics stream emits a WikiEvent whenever a
@@ -130,4 +131,5 @@ Here is a sample of what an event payload might look like:
   ]
 }
 ```
+
 <AuthorBox frontMatter={frontMatter}/>

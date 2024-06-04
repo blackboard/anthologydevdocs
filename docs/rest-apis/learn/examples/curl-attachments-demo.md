@@ -497,4 +497,5 @@ Rinse-repeat for additional folder or document content items.
 ## Uploading files to content
 
 You can do so by following this guide: https://docs.anthology.com/docs/rest-apis/learn/advanced/rest_apis-learn-advanced-bbml#uploaded-files ![image](https://user-images.githubusercontent.com/2322778/158894421-3eaf4125-ff17-4bff-8a1f-55d10101e30e.png)
+
 <AuthorBox frontMatter={frontMatter}/>

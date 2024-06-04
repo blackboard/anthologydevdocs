@@ -6,6 +6,7 @@ published: ""
 edited: ""
 author: Ryan Haber
 ---
+
 <VersioningTracker frontMatter={frontMatter}/>
 
 Learn's `/contents` endpoints accommodate different types of content
@@ -112,4 +113,5 @@ Representation of a file uploaded to course content.
 - id (string, read-only) of the object in Learn
 - gradeColumnId (string, read only) ID of the associated grade column
 - groupContent (boolean) specifies whether or not the content is group content.
+
 <AuthorBox frontMatter={frontMatter}/>
