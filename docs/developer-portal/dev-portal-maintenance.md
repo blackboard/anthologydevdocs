@@ -1,6 +1,6 @@
 ---
 title: Developer Portal Maintenance and Releases
-sidebar_position: 7
+sidebar_position: 8
 displayed_sidebar: documentationSidebar
 id: devportal-maintenance
 published: '2023-05-09'

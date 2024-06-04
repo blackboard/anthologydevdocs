@@ -2,7 +2,7 @@
 title: "Best practices"
 id: best-practices
 categories: Developer Portal
-sidebar_position: 5
+sidebar_position: 6
 published: "2023-05-09"
 edited: "2024-03-20"
 author: Davey Herrera, Dan Magers
