@@ -30,7 +30,7 @@ In our ongoing effort to optimize and enhance our system's performance, we are t
 
 - When is this change going to be applied?
 
-  This change is planned to be deployed in the [month] release on [date].
+  This change is planned to be deployed in the June release on 06/04/2024.
 
 - What is the new rate limit algorithm that is going to be implemented?
 
