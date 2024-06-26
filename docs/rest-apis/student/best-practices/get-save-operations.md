@@ -1,10 +1,10 @@
 ---
 title: Tips for using the Get and Save API operations
 id: get-save-bestpractices
-sidebar_position: 1
+sidebar_position: 2
 author: Jim Burns
-published: "2024-04-23"
-edited: "2024-04-23"
+published: '2024-04-23'
+edited: '2024-04-23'
 ---
 
 <VersioningTracker frontMatter={frontMatter}/>
