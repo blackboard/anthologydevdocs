@@ -2,6 +2,7 @@
 title: Tips for using the Create and SaveNew API operations
 id: create-savenew-bestpractices
 categories: Student REST
+sidebar_position: 3
 author: Jim Burns
 published: '2024-03-26'
 edited: '2024-03-26'
