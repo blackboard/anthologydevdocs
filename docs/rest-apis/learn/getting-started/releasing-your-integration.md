@@ -21,7 +21,7 @@ These fall into two categories:
 
 Before releasing your integration, please make sure there are sufficient site and rate limits for a smooth operation, you can review our information on [Groups, Quotas, and Rates](/docs/developer-portal/production-groups-rest-api-and-site-reg-limits.md) to learn more. The first steps are:
 
-1. Create a group named after the Company or the institution, keep in mind this group will receive production level settings, also, please make sure to follow our <a href="https://docs.anthology.com/rest-apis/learn/admin/groups-quotas-rates#production-groups" target="_top">naming convention</a>
+1. Create a group named after the Company or the institution, keep in mind this group will receive production level settings, also, please make sure to follow our [naming convention.](/docs/developer-portal/best-practices#how-to-name-your-groups)
 2. File a Support ticket requestion production settings on your group. (for BbDN-level and above partners and any Bb Client, please file a support ticket to request production settings on your group. If you are a community-level partner, please send us an email to developers@anthology.com)
 3. We will proceed and update a group to a production group
 4. Now you can associate your application with your production group.
