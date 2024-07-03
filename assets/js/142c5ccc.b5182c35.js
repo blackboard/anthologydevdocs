@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[6886],{6304:l=>{l.exports=JSON.parse('{"label":"building-blocks","permalink":"/blog/tags/building-blocks","allTagsPath":"/blog/tags","count":1}')}}]);
