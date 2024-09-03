@@ -1,0 +1,13 @@
+.whatsnew-list {
+  list-style-type: none;
+}
+
+.whatsnew-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.whatsnew-item-link span {
+  align-content: center;
+}

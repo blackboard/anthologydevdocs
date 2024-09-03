@@ -8,8 +8,6 @@ edited: "2024-01-30"
 author: Daniel Nieto
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 ## Background
 
 The [Anthology Developer Portal](https://developer.anthology.com) plays a crucial role in the integrations with the Anthology product portfolio, as such it handles millions of requests each day, making the implementation of a rate limit mechanism essential.
@@ -51,5 +49,3 @@ In our ongoing effort to optimize and enhance our system's performance, we are t
 | X-Rate-Limit-Remaining | The number of requests left for the 24-hour period for the development group                |
 
 > Please note that the current 24 hours refresh period may be shortened in the future.
-
-<AuthorBox frontMatter={frontMatter}/>

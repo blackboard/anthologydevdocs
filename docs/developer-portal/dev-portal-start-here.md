@@ -1,14 +1,12 @@
 ---
-title: 'Start here'
-id: 'start-here'
+title: "Start here"
+id: "start-here"
 categories: Developer Portal
-published: '2023-05-09'
-edited: '2024-03-19'
+published: "2023-05-09"
+edited: "2024-03-19"
 sidebar_position: 1
 author: Davey Herrera, Dan Magers
 ---
-
-<VersioningTracker frontMatter={frontMatter}/>
 
 On this page learn about the Anthology Developer Portal. Learn how to register for and navigate in the Portal. Selecting a navigation link on the side panel of this page takes you to that section.
 
@@ -171,5 +169,3 @@ This applies to our Learn, Ally and Student APIs that user Swagger for documenta
 5. Description of the value of the attribute.
 
 ![Response model](/assets/img/dev-portal-start-here-18.png)
-
-<AuthorBox frontMatter={frontMatter}/>

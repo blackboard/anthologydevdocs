@@ -8,8 +8,6 @@ author: Mark Kauffman
 sidebar_position: 1
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 Our Community partnership level is FREE to developers and provides access to the Learn AMI (Amazon Machine Images) for developers to build REST and LTI applications\*, API limits apply and Behind the Blackboard support is not included. [Community support is available](https://community.blackboard.com).
 
 Consider investing in one of our other partnership levels to receive added benefits that help partners deepen integrations, promote solutions, and connect with Blackboard clients. The Blackboard Developers Network (BbDN) is Blackboard’s standard partnership and is available for $3,000 annually. BbDN Partnerships include the following benefits:
@@ -36,5 +34,3 @@ Purchase your BbDN partnership [here for US Companies](https://shop.blackboard.c
 Blackboard Partnerships Team
 
 \*REST is an acronym for REpresentational State Transfer and an architectural style for distributed hypermedia systems. Learn has a complete suite of APIs based on this standard. See [developer.anthology.com](https://developer.anthology.com). LTI is an industry standard developed by the IMS. Learn supports LTI 1.1 and LTI 1.3 Advantage. See www.imsglobal.org/activity/learning-tools-interoperability
-
-<AuthorBox frontMatter={frontMatter}/>

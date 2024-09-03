@@ -1,0 +1,19 @@
+.card-outer {
+  width: 100%;
+}
+
+.card-wrapper {
+  height: 100%;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-contents {
+    font-size: 0.9rem;
+  }
+}

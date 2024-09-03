@@ -1,0 +1,188 @@
+.docs-custom-footer {
+  margin-top: 3rem;
+}
+
+.docs-footer-theme-dark {
+}
+
+.docs-footer-theme-light {
+}
+
+.docs-custom-footer div:first-child {
+  width: 90rem;
+  height: 16rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+}
+.docs-custom-footer div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  color: #fff;
+  background-color: #021023;
+}
+
+.docs-custom-footer div:last-child p {
+  margin: 0;
+}
+
+.docs-custom-footer div section {
+  padding: 1rem;
+  width: 30%;
+  height: 70%;
+}
+
+.docs-custom-footer div section:nth-child(2) {
+  padding-left: 5rem;
+  width: 30%;
+  height: 70%;
+}
+
+.docs-custom-footer div section:first-child {
+  align-content: center;
+}
+
+.footer-section ul {
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-docs-copy {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.footer-docs-copy a:active,
+.footer-docs-copy a:link,
+.footer-docs-copy a:visited {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-docs-copy a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-link a:active,
+.footer-link a:link,
+.footer-link a:visited,
+.footer-link a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-email {
+  text-decoration: underline !important;
+}
+
+/*/ Responsive styles  */
+/*/ Mobile */
+@media (max-width: 500px) {
+  .docs-custom-footer div:first-child {
+    margin-top: 3rem;
+    width: 18rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .docs-custom-footer div section {
+    font-size: 0.9rem;
+    width: 15rem;
+  }
+  .docs-custom-footer div section:nth-child(2) {
+    padding-left: 1rem;
+    width: 15rem;
+  }
+}
+
+/*/ Tablets */
+@media (min-width: 501px) and (max-width: 768px) {
+  .docs-custom-footer div:first-child {
+    margin-bottom: 2rem;
+    max-width: 44rem;
+    width: auto;
+    display: grid;
+    align-items: center;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .docs-custom-footer div section {
+    min-width: 16rem;
+    height: 10rem;
+    place-self: center;
+  }
+
+  .docs-custom-footer div section:nth-child(2) {
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .docs-custom-footer div:first-child {
+    max-width: 44rem;
+    margin-bottom: 2rem;
+    width: auto;
+    display: grid;
+    align-items: center;
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .docs-custom-footer div section {
+    min-width: 16rem;
+    height: 10rem;
+    place-self: center;
+  }
+
+  .docs-custom-footer div section:nth-child(2) {
+    padding-left: 1rem;
+  }
+}
+
+/*/ Laptopts */
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .docs-custom-footer div:first-child {
+    margin-bottom: 2rem;
+    max-width: 62rem;
+    gap: 0.5rem;
+  }
+
+  .docs-custom-footer div section {
+    padding: 0.5rem;
+    max-width: 15rem;
+    height: 13rem;
+    place-self: center;
+  }
+
+  .docs-custom-footer div section:nth-child(2) {
+    padding-left: 2.3rem;
+    height: 13rem;
+  }
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+  .docs-custom-footer div:first-child {
+    margin-bottom: 2rem;
+    max-width: 80rem;
+  }
+}
+
+/*/ Desktops above 1920px will use the regular CSS created above media queries*/

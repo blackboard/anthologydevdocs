@@ -7,7 +7,6 @@ author: Mark Bykerk Kauffman
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
-<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -83,4 +82,3 @@ newer version of Learn. You now must set the max version of Learn in the v2 B2
 so that it can not be installed in this new version of Learn. You create a new
 version of your B2, v3, and set the min version of Learn in the bb-manifest.
 B2 v3 does not yet need to have a max version of Learn set in the manifest.
-<AuthorBox frontMatter={frontMatter}/>

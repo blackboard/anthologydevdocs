@@ -1,0 +1,26 @@
+.releases-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.releases-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.releases-entry span:first-child {
+  font-size: 1.1rem;
+}
+
+.releases-entry span:last-child {
+  margin: 0.5rem 0;
+}
+
+.releases-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}

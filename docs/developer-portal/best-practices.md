@@ -8,15 +8,13 @@ edited: "2024-03-20"
 author: Davey Herrera, Dan Magers
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 ## How to name your groups
 
 Your group name is displayed in the Blackboard Learn system associated with the
 application ID once the Blackboard Learn Administrator configures the integration. You want the group name to include at minimum:
 
 1. The name of the company/vendor that owns the application.
-2. The name of the application or product (optional). 
+2. The name of the application or product (optional).
 
 Below is an example for one application
 ID group name. Included are the company name, product name, and group associated with it:
@@ -47,5 +45,3 @@ following:
 **Do not add unnecessary information to a production group name. For example, including text indicating that the group name is associated with Blackboard REST APIs is not necessary, nor is an indication of server type such as '-test', '-stage', or '-production'.** It doesn't matter if you have a SOAP Web Service proxy of the same name as that shows up on a different page.
 
 **We will only assign site and rate limits higher than the defaults to Production Groups that meet these naming requirements.**
-
-<AuthorBox frontMatter={frontMatter}/>

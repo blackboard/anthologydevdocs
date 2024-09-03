@@ -1,0 +1,76 @@
+.hero-banner {
+  color: #fff;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.hero-banner p {
+  font-size: 1.4rem;
+}
+
+/*/ Responsive styles  */
+/*/ Mobile */
+@media (max-width: 360px) {
+  .hero-banner {
+    height: 22rem;
+    flex-direction: column;
+  }
+
+  .hero-banner h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-banner p {
+    font-size: 1.2rem;
+  }
+}
+
+/*/ Tablets */
+@media (min-width: 361px) and (max-width: 768px) {
+  .hero-banner {
+    height: 22rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-banner h1 {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+
+  .hero-banner p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-banner h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-banner p {
+    font-size: 1.3rem;
+  }
+}
+
+/*/ Laptopts */
+@media (min-width: 1025px) and (max-width: 1400px) {
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+}
+
+/*/ Desktops above 1920px will use the regular CSS created above media queries*/

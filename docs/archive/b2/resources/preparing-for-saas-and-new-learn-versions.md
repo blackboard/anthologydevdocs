@@ -7,8 +7,6 @@ author: Scott Hurrey
 displayed_sidebar: documentationSidebar
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 :warning: This document is deprecated!
 
 # Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions
@@ -660,5 +658,5 @@ Note the brackets are indicating how the iframes are nested.
 Summary - If your B2 provides a mashup for use in an Original Course's TinyMCE editor you will need to re-architect as described above, or mirgrate users to an LTI-based solution.
 
 ```
-<AuthorBox frontMatter={frontMatter}/>
+
 ```

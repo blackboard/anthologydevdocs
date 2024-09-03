@@ -8,8 +8,6 @@ edited: "2023-05-09"
 sidebar_position: 2
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 Getting involved in the Developer community is easy and with options to suit your goals…
 
 - If you have not already done so, register for an Anthology Developer Community account to interact. Its free, and gives you the ability to participate in all of the Anthology Communities. If you are interested in contributing to the blogs here on the Community site, let us know.
@@ -30,5 +28,3 @@ Getting involved in the Developer community is easy and with options to suit you
 ### Tech office hours call
 
 Join our call, every wednesday at 10:00 AM Central on Microsoft Teams! please follow ->[this link](https://bit.ly/AT-Techies-office-hours-MS-TEAMS)
-
-<AuthorBox frontMatter={frontMatter}/>
