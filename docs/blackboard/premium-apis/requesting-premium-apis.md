@@ -6,7 +6,8 @@ author: Hernan Ortiz
 published: ''
 edited: ''
 sidebar_position: 1
-slug: /rest/premium-apis
+redirect_from:
+  - /rest/premium-apis
 ---
 
 Premium APIs offer several new capabilities for integrations with
