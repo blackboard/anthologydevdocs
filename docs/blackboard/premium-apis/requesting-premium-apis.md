@@ -1,12 +1,12 @@
 ---
-title: "What are Premium APIs"
+title: 'What are Premium APIs'
 id: requesting-premium-apis
 categories: REST UEF
 author: Hernan Ortiz
-published: ""
-edited: ""
+published: ''
+edited: ''
 sidebar_position: 1
-slug: https://docs.anthology.com/rest/premium-apis
+slug: /rest/premium-apis
 ---
 
 Premium APIs offer several new capabilities for integrations with
