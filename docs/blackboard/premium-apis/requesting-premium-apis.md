@@ -6,6 +6,7 @@ author: Hernan Ortiz
 published: ""
 edited: ""
 sidebar_position: 1
+slug: https://docs.anthology.com/rest/premium-apis
 ---
 
 Premium APIs offer several new capabilities for integrations with
