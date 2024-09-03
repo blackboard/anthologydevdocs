@@ -8,8 +8,6 @@ edited: "2024-03-20"
 author: Davey Herrera, Dan Magers
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 You can create as many groups as you need to manage your application. Additionally, you can create a **production group** to centralize the management of your application.
 
 ## Production groups
@@ -54,5 +52,3 @@ application level using the http headers provided in each request response._ Inf
 | X-Rate-Limit-Limit     | The rate limit ceiling for the given development group.                       |
 | X-Rate-Limit-Remaining | The number of requests left for the 24-hour period for the development group. |
 | X-Rate-Limit-Reset     | The remaining time before the rate limit resets, given in UTC epoch seconds.  |
-
-<AuthorBox frontMatter={frontMatter}/>

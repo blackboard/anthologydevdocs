@@ -1,0 +1,72 @@
+.community-outer {
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  gap: 4rem;
+  background-color: var(--custom-anth-accent-secondary-dark);
+}
+
+.community-section {
+  width: 100%;
+}
+
+.community-link:link,
+.community-link:visited,
+.community-link:hover,
+.community-link:active {
+  display: flex;
+  color: #fff;
+  font-weight: 700;
+}
+
+.community-link-icon {
+  width: 1.3rem;
+  filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(248deg)
+    brightness(101%) contrast(102%);
+}
+
+/*/ Responsive styles  */
+/*/ Mobile */
+@media (max-width: 500px) {
+  .community-outer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .community-section-image {
+    width: 18rem;
+  }
+}
+
+/*/ Tablets */
+@media (min-width: 501px) and (max-width: 768px) {
+  .community-outer {
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+
+  .community-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .community-section-image {
+    width: 18rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/*/ Laptopts */
+@media (min-width: 1025px) and (max-width: 1400px) {
+}
+
+@media (min-width: 1401px) and (max-width: 1920px) {
+}
+
+/*/ Desktops above 1920px will use the regular CSS created above media queries*/

@@ -1,0 +1,22 @@
+{
+  "0": {
+    "name": "Tips for using the Create and SaveNew API operations",
+    "url": "/docs/student/best-practices/create-savenew-bestpractices"
+  },
+  "1": {
+    "name": "Tips for using the Get and Save API operations",
+    "url": "/docs/student/best-practices/get-save-bestpractices"
+  },
+  "2": {
+    "name": "Working with groups and the API",
+    "url": "/docs/blackboard/rest-apis/hands-on/groups-in-rest-api"
+  },
+  "3": {
+    "name": "Sanctioned LTI Registration and Deployment with Learn",
+    "url": "/docs/blackboard/lti/lti-registration-deployment"
+  },
+  "4": {
+    "name": "What are Premium APIs",
+    "url": "/docs/blackboard/premium-apis/requesting-premium-apis"
+  }
+}

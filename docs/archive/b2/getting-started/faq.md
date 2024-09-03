@@ -7,7 +7,6 @@ author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
-<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -87,4 +86,3 @@ issue:
 2. If the vendor instructs you to submit a help ticket with Blackboard, please work with your Blackboard Administrator to do so on Behind the Blackboard
 3. Our Support team will attempt to collaborate with the vendor to resolve the issue
 4. Issues that cannot be resolved are escalated as appropriate via our support process
-<AuthorBox frontMatter={frontMatter}/>

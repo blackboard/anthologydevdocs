@@ -7,7 +7,6 @@ author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
-<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -66,4 +65,3 @@ administrator) or contact your sales representative.
 If you are interested in becoming a Blackboard partner visit the [Blackboard Partnerships](https://www.blackboard.com/partnership/index.aspx)™
 program site. Partnering with Blackboard provides access to design guidance
 and support among other benefits.
-<AuthorBox frontMatter={frontMatter}/>

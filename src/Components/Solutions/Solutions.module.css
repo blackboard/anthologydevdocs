@@ -1,0 +1,35 @@
+.solutions-grid {
+  justify-content: center;
+  margin: 4rem auto;
+  display: flex;
+  gap: 2rem;
+}
+
+.solutions-grid h1 {
+  font-weight: 800;
+}
+
+.solutions-card-override > img {
+  width: 14rem !important;
+}
+
+/*/ Responsive styles  */
+/*/ Mobile */
+@media (max-width: 360px) {
+  .solutions-grid {
+    flex-direction: column;
+  }
+}
+
+/*/ Tablets */
+@media (min-width: 361px) and (max-width: 768px) {
+  .solutions-grid {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .solutions-grid {
+    flex-direction: column;
+  }
+}

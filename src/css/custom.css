@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,10 +8,10 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary:  #BA6DD3;
-  --ifm-color-primary-dark: #B46ED4;
-  --ifm-color-primary-darker: #A263D4;
-  --ifm-color-primary-darkest: #924DE7;
+  --ifm-color-primary: #2959a9;
+  --ifm-color-primary-dark: #2959a9;
+  --ifm-color-primary-darker: #2959a9;
+  --ifm-color-primary-darkest: #2959a9;
   --ifm-color-primary-light: #ca9cd8;
   --ifm-color-primary-lighter: #e5b5e6;
   --ifm-color-primary-lightest: #efc4f5;
@@ -18,13 +20,98 @@
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #C56ED4;
-  --ifm-color-primary-dark: #B46ED4;
-  --ifm-color-primary-darker: #A263D4;
-  --ifm-color-primary-darkest: #924DE7;
+[data-theme="dark"] {
+  --ifm-color-primary: #2c9ede;
+  --ifm-color-primary-dark: #2c9ede;
+  --ifm-color-primary-darker: #2c9ede;
+  --ifm-color-primary-darkest: #2c9ede;
   --ifm-color-primary-light: #ca9cd8;
   --ifm-color-primary-lighter: #e5b5e6;
   --ifm-color-primary-lightest: #efc4f5;
   --docusaurus-highlighted-code-line-bg: rgba(217, 171, 220, 0.435);
 }
+
+/* Branding guidelines indicates that Poppins needs to be used for headlines and Inter for the body */
+
+:root {
+  --custom-anth-light-blue: #10224b;
+  --custom-anth-dark-blue: #091834;
+  --custom-anth-accent-blue: #2959a9;
+  --custom-anth-accent-secondary-light: #2959a9;
+  --custom-anth-accent-secondary-dark: #2959a9;
+  --custom-anth-author-dark: #344966;
+  --custom-anth-author-light: #b4cded;
+  --custom-anth-author-dark: #10224bdd;
+  --custom-anth-author-light: #091834dd;
+}
+
+* {
+  font-family: "Inter", sans-serif !important;
+}
+
+.navbar-home-link {
+  color: #ffffff;
+}
+
+.navbar-home-link:hover,
+.navbar-home-link:link,
+.navbar-home-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-gh-img-link {
+  padding: 0;
+  margin: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+.navbar-gh-link {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+.navbar__search-input {
+  width: 20rem;
+}
+
+.docs-custom-link-icon {
+  width: 1.2rem;
+  filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(248deg)
+    brightness(101%) contrast(102%);
+}
+
+/*/ Responsive styles  */
+/*/ Mobile */
+@media (max-width: 360px) {
+  .navbar__search-input {
+    width: 6.5rem;
+  }
+}
+
+/*/ Tablets */
+@media (min-width: 361px) and (max-width: 500px) {
+  .navbar__search-input {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  .navbar__search-input {
+    width: 15rem;
+  }
+}
+
+/*/ Laptopts */
+@media (min-width: 769px) and (max-width: 1400px) {
+  .navbar__search-input {
+    width: 20rem;
+  }
+}
+
+/*/ Desktops above 1920px will use the regular CSS created above media queries*/

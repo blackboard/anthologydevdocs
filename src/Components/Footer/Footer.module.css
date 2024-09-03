@@ -1,0 +1,137 @@
+.custom-footer-bg {
+  background: linear-gradient(
+    300deg,
+    var(--custom-anth-light-blue) 7%,
+    var(--custom-anth-dark-blue) 7%
+  );
+  color: #fff;
+}
+
+.custom-footer-bg > div {
+  max-width: 90rem;
+  margin: 0rem auto 1rem auto;
+}
+
+.custom-footer {
+  padding: 3rem 3rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 9rem;
+}
+
+.custom-footer > img {
+  grid-row: 1/-1;
+  width: 12rem;
+}
+
+.footer-section > div > p {
+  margin-bottom: 0.5rem;
+}
+
+.custom-footer ul {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+.custom-footer ul li {
+  margin-bottom: 0.3rem;
+}
+
+.footer-section {
+  grid-row: 1/-1;
+  display: flex;
+  gap: 6rem;
+}
+
+.footer-section span {
+  grid-column: 1/-1;
+}
+
+.footer-section a:visited,
+.footer-section a:link,
+.footer-section a:active,
+.footer-section a:hover {
+  color: #fff;
+}
+
+.footer-copyright {
+  margin: 1rem 3rem;
+  font-size: 0.8rem;
+  color: #ffffffb2;
+}
+
+.footer-copyright a:visited,
+.footer-copyright a:link,
+.footer-copyright a:active,
+.footer-copyright a:hover {
+  color: #ffffffb2;
+  text-decoration: underline;
+}
+
+/*/ Responsive styles  */
+/*/ Mobile */
+@media (max-width: 360px) {
+  .custom-footer {
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
+  }
+
+  .custom-footer > img {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    grid-column: 1/-1;
+    grid-row: 2;
+    gap: 3rem;
+  }
+}
+
+/*/ Tablets */
+@media (min-width: 361px) and (max-width: 768px) {
+  .custom-footer {
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
+  }
+
+  .custom-footer > img {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .footer-section {
+    flex-direction: column;
+    grid-column: 1/-1;
+    grid-row: 2;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .custom-footer {
+    grid-template-rows: 3fr 3fr;
+    gap: 1rem;
+  }
+
+  .custom-footer > img {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .footer-section {
+    grid-column: 1/-1;
+    grid-row: 2;
+    gap: 3rem;
+  }
+}
+
+/*/ Laptopts */
+@media (min-width: 1025px) and (max-width: 1400px) {
+  .custom-footer {
+    grid-template-rows: 1fr 3fr;
+    gap: 1rem;
+  }
+}

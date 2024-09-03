@@ -7,7 +7,6 @@ author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
-<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -150,4 +149,3 @@ possible with the Snapshot enterprise data integration tool.
 
 Various classes to support functions such as byte->kilobyte conversion and
 localized number representation.
-<AuthorBox frontMatter={frontMatter}/>

@@ -8,8 +8,6 @@ edited: "2023-05-09"
 sidebar_position: 3
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 There are many ways to get in touch with us:
 
 - E-mail the Anthology Developers Network Team: [developers@anthology.com](mailto:developers@anthology.com)
@@ -18,5 +16,3 @@ There are many ways to get in touch with us:
 - Join the [Anthology Techies Slack channel.](https://join.slack.com/t/blackboardtechies/shared_invite/zt-21ayvh4af-FMtP3g~MTHY0aay6CvcZtw)
 - Tell us in person at a conference
 - Provide your feedback through one of our many users groups
-
-<AuthorBox frontMatter={frontMatter}/>

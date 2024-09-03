@@ -8,7 +8,6 @@ edited: "2024-03-20"
 date: 2023-05-09
 author: Davey Herrera, Dan Magers
 ---
-<VersioningTracker frontMatter={frontMatter}/>
 
 ## What are Groups?
 
@@ -35,8 +34,6 @@ You can create groups for individual and team development. You can target a spec
 4. **Add a new developer to the group.** Add a developer to a group using the developer's email address.
 
 5. **Change the administrator status.** You can give administrator privileges to exisiting group members. An administrator is empowered to:
-    - Add new developers to the group
-    - Edit, Delete or manage keys of the application.
-    - Manage placements and see which schools have the application deployed.
-
-<AuthorBox frontMatter={frontMatter}/>
+   - Add new developers to the group
+   - Edit, Delete or manage keys of the application.
+   - Manage placements and see which schools have the application deployed.

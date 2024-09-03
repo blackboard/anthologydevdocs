@@ -6,21 +6,18 @@ With this move to Docusaurus we are adding full site search capability and looki
 
 ## IMPORTANT:
 
-When creating new documentation using MD, please copy and paste the layout within `/docs/templates/example.md` since that includes two additional trackers that will show information or add the following tags to the top and bottom of your page respectively:
+When creating new documentation using MD, please add the following information to the top of the document:
 
-```html
+```md
 ---
-Metadata
+title:
+id:
+categories:
+published: "YYYY-MM-DD"
+edited: "YYYY-MM-DD"
+author:
 ---
-
-<VersioningTracker frontMatter="{frontMatter}" />
-
-Your content goes here
-
-<AuthorBox frontMatter="{frontMatter}" />
 ```
-
-Please also make sure to fill out the metadata at the top of the page with the appropriate information
 
 ## Getting Started
 

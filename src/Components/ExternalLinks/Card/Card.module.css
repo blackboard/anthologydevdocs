@@ -1,0 +1,11 @@
+.card {
+  padding: 2rem;
+}
+
+.card > img:first-child {
+  margin-bottom: 0.4rem;
+}
+
+.card h2 {
+  font-weight: 700;
+}

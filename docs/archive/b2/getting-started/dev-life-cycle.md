@@ -7,7 +7,6 @@ author: Scott Hurrey
 status: deprecated
 displayed_sidebar: documentationSidebar
 ---
-<VersioningTracker frontMatter={frontMatter}/>
 
 :warning: This document is deprecated!
 
@@ -345,4 +344,3 @@ Block which may be lost should you uninstall a previous version to install the
 new version.
 
 Always thoroughly test any changes you make to your Building Blocks.
-<AuthorBox frontMatter={frontMatter}/>

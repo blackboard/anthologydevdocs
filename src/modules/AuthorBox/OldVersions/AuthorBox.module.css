@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.author-container {
+  margin-top: 3rem;
+  border-top: solid 1px #414141;
+  padding-top: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.author-cards {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.author-outer {
+  position: relative;
+  overflow: hidden;
+  width: 14rem;
+  min-height: 20rem;
+  background-color: light-dark(#fafafa, #1b1b1d);
+  border: solid 1px #414141;
+  border-radius: 20px;
+}
+
+.author-background-pic {
+  width: 100%;
+  height: 6rem;
+  object-fit: cover;
+  border-bottom: solid 1px #000000;
+}
+
+.author-profile-pic {
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  z-index: 10;
+  transform: translateX(-150%) translateY(35%);
+  border-radius: 1rem;
+  border: dotted 1px #414141;
+  filter: drop-shadow(0px 0px 4px #00000033);
+}
+
+.author-profile-default {
+  padding: 1rem;
+  background-color: #000000;
+}
+
+.author-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+.author-name {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.author-title {
+  padding: 0;
+  margin: 0;
+  margin-top: -0.2rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.author-area {
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 0.8rem;
+  width: 95%;
+  color: light-dark(#1c1e2177, #e3e3e366);
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.6rem;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.github-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+.github-logo img {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+@media (max-width: 520px) {
+  .author-outer {
+    width: 11rem;
+    min-height: 14rem;
+  }
+
+  .author-background-pic {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .author-profile-pic {
+    transform: translateX(-128.5%) translateY(35%);
+  }
+
+  .author-name {
+    font-size: 1.2rem;
+  }
+
+  .author-title {
+    font-size: 0.9rem;
+  }
+
+  .author-area {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .author-outer {
+    width: 10rem;
+    min-height: 14rem;
+  }
+
+  .author-background-pic {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .author-profile-pic {
+    transform: translateX(-121%) translateY(35%);
+  }
+  .author-name {
+    font-size: 1rem;
+  }
+
+  .author-title {
+    font-size: 0.8rem;
+  }
+
+  .author-area {
+    font-size: 0.75rem;
+  }
+}

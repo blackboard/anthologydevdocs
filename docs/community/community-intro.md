@@ -7,8 +7,6 @@ edited: "2023-05-09"
 author: Scott Hurrey
 ---
 
-<VersioningTracker frontMatter={frontMatter}/>
-
 Welcome you to Anthology's developer community! As a community of developers, we are committed to working together to build innovative and cutting-edge solutions that push the boundaries of what is possible in education.
 
 Anthology is a platform that connects edutech software and content developers with their audiences, allowing them to monetize their content while providing Anthology clients with a seamless experience. We believe that developers like you are critical to our and our clients success in delivering education, and we are excited to collaborate with you to build the future of edutech.
@@ -28,5 +26,3 @@ Thank you for joining us on this journey. We look forward to working with you to
 Live and in person in Music City, Nashville, Tennessee at the Gaylord Opryland Resort
 
 [Information and Registration](https://www2.anthology.com/together)
-
-<AuthorBox frontMatter={frontMatter}/>
