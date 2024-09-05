@@ -1,8 +1,8 @@
 ---
 title: Welcome to the World of Standards!
+id: getting-started
 sidebar_position: 1
 author: Mark O'Neil
-displayed_sidebar: documentationSidebar
 published: ""
 edited: ""
 ---
@@ -38,8 +38,6 @@ Anthology supports many standards across our our product portfolio. Some of the 
 **Common Cartridge**: Common Cartridge is a standard from [1EduTech](https://www.1edtech.org) for packaging and sharing e-learning content across different platforms and systems. Blackboard Learn&trade; supports Common Cartridge 1.0, 1.1, and 1.2, which enables users to import and export content packages that conform to the Common Cartridge standard.
 
 **LIS**: Learning Information Services is a standard from [1EduTech](https://www.1edtech.org). Blackboard Learn's integration with LIS allows institutions to automate the exchange of academic and enrollment data between Blackboard Learn (LMS) and the institution's student information system (SIS). This integration can help to streamline administrative processes, reduce errors, and improve data accuracy and consistency.
-
-**LTI**: Learning Tools Interoperability is a standard from [1EduTech](https://www.1edtech.org) for integrating third-party learning tools and applications into the LMS. Blackboard Learn supports LTI 1.1 and 1.3, which enables users to access and use external learning tools and resources from within the Blackboard Learn environment.
 
 **SCORM**: Sharable Content Object Reference Model is a widely used standard for e-learning content interoperability. SCORM 1.2 and 2004, enable users to create, import, and deliver SCORM-compliant content within the Blackboard Learn LMS. Details are available at [SCORM.com](https://scorm.com) and [Rustici Software](https://rusticisoftware.com)
 

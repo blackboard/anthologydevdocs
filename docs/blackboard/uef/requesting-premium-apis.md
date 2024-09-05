@@ -21,12 +21,12 @@ UEF is a set of Premium APIs that augment the Ultra experience of
 Learn. We designed a robust set of capabilities such as
 telemetry, help provider registration, and UI element rendering to
 enable better integrations and richer user experience.
-Take a look at [First steps with UEF](./uef/uef_getting_started.md) to get started.
+Take a look at [First steps with UEF](./uef_getting_started.md) to get started.
 
 ## How to request a Premium API
 
 If you’re an Anthology client or a partner in Bronze level or above,
-please [submit a Behind the Blackboard ticket](https://blackboard.secure.force.com/)
+please [submit a Behind the Blackboard ticket](https://support.anthology.com/)
 and we’ll get back to you as soon as possible.
 
 If you’re a Blackboard Developer Network Partner (BbDN), a Community

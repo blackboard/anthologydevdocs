@@ -1,7 +1,6 @@
 ---
 title: Blackboard Learn Sandbox environment
 id: developer-ami
-categories: AMI
 author: Mark O'Neil
 published: "2018-07-04"
 edited: "2024-07-26"
@@ -9,7 +8,7 @@ edited: "2024-07-26"
 
 :::danger AMI availability
 
-As of July 26th, 2024, the last available image is Blackboard Learn 3900.95.0 and will be the latest image available while we review and align the publishing process with Amazon Web Services.
+As of July 26th, 2024, the last available image is Blackboard Learn 3900.93.0 and will be the latest image available while we review and align the publishing process with Amazon Web Services.
 
 Once the review is completed, we'll resume publishing with the latest version of Blackboard Learn as an Amazon Marketplace Image
 :::

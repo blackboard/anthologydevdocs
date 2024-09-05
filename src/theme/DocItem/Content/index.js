@@ -5,7 +5,6 @@ import { useDoc } from "@docusaurus/theme-common/internal";
 import Heading from "@theme/Heading";
 import MDXContent from "@theme/MDXContent";
 import VersioningTracker from "../../../modules/VersioningTracker/VersioningTracker";
-import AuthorBox from "../../../modules/AuthorBox/AuthorBox";
 /**
  Title can be declared inside md content or declared through
  front matter and added manually. To make both cases consistent,
@@ -42,11 +41,6 @@ export default function DocItemContent({ children }) {
         </header>
       )}
       <MDXContent>{children}</MDXContent>
-      {frontMatter.id !== "site-intro" ? (
-        <AuthorBox frontMatter={frontMatter} />
-      ) : (
-        ""
-      )}
     </div>
   );
 }

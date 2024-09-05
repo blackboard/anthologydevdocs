@@ -31,4 +31,4 @@ Add a course banner. [See this tutorial/demo video](https://youtu.be/pxddXC-I4UI
 
 ### Notice
 
-Before releasing a UEF integration, that uses the UEF Premium APIs, to production you will be required to meet a certain level of Blackboard Partnership. See [Become a Blackboard Partner](../../../../partners/become-a-partner.md).
+Before releasing a UEF integration, that uses the UEF Premium APIs, to production you will be required to meet a certain level of Blackboard Partnership. See [Become an Anthology Partner](../../../partners/become-a-partner.md).
