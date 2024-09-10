@@ -4,7 +4,7 @@ title: Use One-Time Session Token to Authenticate with UEF
 date: 2021-05-10 16:13
 category: blog
 post_id: 20210511-uefnocookies
-author: Scott Hurrey
+author: Scott Hurrey, Mark Kauffman
 tags: ["uef", "ultra", "lti", "rest"]
 summary: As browsers continue to lock down cookies, particularly with iframes, there is a new way to handle authentication with the Ultra Extension Framework.
 ---
@@ -13,7 +13,8 @@ summary: As browsers continue to lock down cookies, particularly with iframes, t
 
 In testing with the [Google Canary Chrome Browser](https://www.google.com/chrome/canary/), one of our clients discovered an issue that was blocking users from logging in to their Learn instance. After much troubleshooting, we discovered a multi-layer issue that brings us to, you guessed it, [cookies](https://docs.anthology.com/blog/2020/10/15/Cookies-and-Browsers).
 
-> **This affects clients in SaaS with Ultra Base Navigation enabled using Ultra integrations that rely on UEF**
+> **This affects clients in SaaS with Ultra Base Navigation enabled using Ultra integrations that rely on UEF** <br/>
+> **Review UPDATE in LTI 1.3 section. This post previously mentioned a bug that no longer exists.**
 
 Here is a brief description of the contributing factors:
 
@@ -44,21 +45,17 @@ Well, that depends upon who is reading this blog. If you are an administrator tr
 
 If you are a developer that has built a UEF integration, we actually implemented a fix for this in April: a way to bypass the need for a session cookie in this process. In the LTI launch, we now provide what is called a one-time session cookie. This is present in both LTI 1.1 and 1.3 launches.
 
-If you are using LTI 1.3, there's a small bug in this. I will share a workaround that will both get around this bug, but not fail when the bug is fixed.
-
 This one-time session cookie is added to the claims in the LTI 1.3 JWT and the form POST parameters in LTI 1.1. You can grab that value from the LTI launch, return it as a parameter in your 3LO authorization code request, and your problem will be solved.
+
+UPDATE: This section previously mentioned a bug where the userId needed to be appended to the one_time_session token. This bug has been fixed. Your code can now use the one_time_session_token as provided by Blackboard Learn without appending the userId. Blackboard no longer appends a userId, nor expects it in the returned value. If your code does append a comma and userId, that’s OK, you don’t immediatly need to change your code it as Blackboard just ignores the comma and what comes after if those are part of the value you send back. 
 
 ### LTI 1.3
 
-In LTI 1.3, you will see the value in the `https://blackboard.com/lti/claim/one_time_session_token` claim. This token is made up of a specially generated token value. It should also be followed by a comma and the user's UUID. The bug is that the comma is missing. Luckily, the user's UUID is the sub token in the same set of LTI claims. We intend to fix this, but to ensure your code works both now and after the fix, you can simply look for the comma. If it's not there, append it and the sub and you will be off and running. Here's a Python 3 code snippet to illustrate how this might look. We will be updating our UEF sample code, but at the time of this writing, we have not done so.
+In LTI 1.3, you will see the value in the `https://blackboard.com/lti/claim/one_time_session_token` claim. This token is made up of a specially generated token value. Here's a Python 3 code snippet to illustrate how this might look.  
 
 ```
     # Get the value of the one time session token from the LTI claim
     one_time_session_token  = message_launch_data['https://blackboard.com/lti/claim/one_time_session_token']
-
-    # If there is no comma in the value, we've hit the bug. Add it and the user's UUID
-    if "," not in one_time_session_token:
-        one_time_session_token += "," + message_launch_data['sub']
 
     # Add the one_time_session_token to the query parameters to send to the Authorization Code endpoint
     params = {
