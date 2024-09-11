@@ -6,9 +6,9 @@ published: ""
 edited: ""
 ---
 
-LTI proposes a communication between LMS and the system based on JWT payloads sent between the systems, each with a different intention, however, the Core LTI 1.3 launch is the same for any type of interaction. This core launch is the base from where Deep Linking, Assignments and Grades and Names and Roles Provisioning Service are build upon (These services are outlined in later sections)
+LTI proposes a communication between LMS and the system based on HTTP requests and JWT payloads sent between the systems, each with a different intention. The Core LTI 1.3 launch, which we will review in this section, is the same for any type of interaction, being this, the base from where Deep Linking, Assignments and Grades and Names and Roles Provisioning Service are build upon (These services are outlined in later sections).
 
-The UML sequence diagram below shows all the steps, including some optional ones, for implementing the reception of an LTI message launch. We'll break each step down in the next sections.
+The UML sequence diagram below shows all the steps, including some optional ones, for implementing the LTI message launch workflow (Core LTI 1.3 launch).
 
 <!-- + TODO: Update the diagram of this page and the next sections -->
 

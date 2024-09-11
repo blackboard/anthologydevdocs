@@ -6,9 +6,7 @@ published: ""
 edited: ""
 ---
 
-Learning Tools Interoperability (LTI) is a standard from the IMS Global consortium. This standard focuses on contextual launches and grade return, providing a way to send and retrieve this data without having to manually migrate the information from one service into the other.
-
-LTI has two different standards available, LTI 1.1 and LTI 1.3. Both can be used to integrate with an LMS and exchange information.
+Learning Tools Interoperability (LTI) is a standard from the IMS Global consortium. This standard focuses on contextual launches and grade return, providing a way to send and retrieve this data without manually migrating the information from one service into the other. LTI has two different standards available, LTI 1.1 and LTI 1.3. Both can be used to integrate with an LMS and exchange information.
 
 :::danger LTI 1.1 support
 LTI 1.1 has been deprecated by the IMS Global, and it's been around for over 10 years. Learn will continue support of LTI 1.1 tools for the indeterminate future while LTI 1.1 tool developers migrate their tool to LTI 1.3/Advantage.

@@ -15,7 +15,7 @@ We've had a lot of requests asking about how to add an LTI launch to an Ultra co
 
 1. The Group your application is in must be UEF enabled. If it's not, file a Behind the Blackboard Support ticket. Provide the developer email address and the Group your UEF application will be in, NOT the application ID. The application ID is usless informaiton for this. If you are a vendor, you must have a Partnership level that is Bronze or higher. See See [Become a Blackboard Partner](/docs/partners/become-a-partner.md).
 
-2. Complete the [Ultra Extension Framework](/docs/blackboard/premium-apis/uef/tutorials/tutorials.md) tutorial.
+2. Complete the [Ultra Extension Framework](docs/blackboard/uef/uef_getting_started.md) tutorial.
 
 3. You know the handle of the managed placement for your LTI tool that you want the click on the link in the left nav to launch. You can find this by going to the Learn admin page, opening the LTI tools, looking at your tool's managed placements, click edit on the one you want, and copy the handle. You'll see where this is used in the code in number six of the explanation below.
 

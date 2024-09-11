@@ -51,7 +51,7 @@ Two types of LTI placements will need to be created to successfully integrates a
 
 id: rest_apis-premium-apis-uef-getting_started
 id: rest_apis-premium-apis-uef-getting_started
-This placement will be the primary means of communication between your application and Ultra Extension Framework. Ultra Extension Framework will be used to render the settings of each proctoring service inside the assessment settings of Ultra. Once your application is authorized with Ultra Extension Framework, your app will be able to use the API to register as a proctoring service and provide HTML to display. [See for more information](/docs/blackboard/premium-apis/uef/uef_getting_started.md) about UEF including tutorials on how to get started.
+This placement will be the primary means of communication between your application and Ultra Extension Framework. Ultra Extension Framework will be used to render the settings of each proctoring service inside the assessment settings of Ultra. Once your application is authorized with Ultra Extension Framework, your app will be able to use the API to register as a proctoring service and provide HTML to display. [See for more information](/docs/blackboard/uef/uef_getting_started.md) about UEF including tutorials on how to get started.
 
 ##### Create new Ultra Extension placement:
 

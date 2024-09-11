@@ -13,8 +13,7 @@ summary: As browsers continue to lock down cookies, particularly with iframes, t
 
 In testing with the [Google Canary Chrome Browser](https://www.google.com/chrome/canary/), one of our clients discovered an issue that was blocking users from logging in to their Learn instance. After much troubleshooting, we discovered a multi-layer issue that brings us to, you guessed it, [cookies](https://docs.anthology.com/blog/2020/10/15/Cookies-and-Browsers).
 
-> **This affects clients in SaaS with Ultra Base Navigation enabled using Ultra integrations that rely on UEF** <br/>
-> **Review UPDATE in LTI 1.3 section. This post previously mentioned a bug that no longer exists.**
+> **This affects clients in SaaS with Ultra Base Navigation enabled using Ultra integrations that rely on UEF** <br/> > **Review UPDATE in LTI 1.3 section. This post previously mentioned a bug that no longer exists.**
 
 Here is a brief description of the contributing factors:
 
@@ -47,11 +46,11 @@ If you are a developer that has built a UEF integration, we actually implemented
 
 This one-time session cookie is added to the claims in the LTI 1.3 JWT and the form POST parameters in LTI 1.1. You can grab that value from the LTI launch, return it as a parameter in your 3LO authorization code request, and your problem will be solved.
 
-UPDATE: This section previously mentioned a bug where the userId needed to be appended to the one_time_session token. This bug has been fixed. Your code can now use the one_time_session_token as provided by Blackboard Learn without appending the userId. Blackboard no longer appends a userId, nor expects it in the returned value. If your code does append a comma and userId, that’s OK, you don’t immediatly need to change your code it as Blackboard just ignores the comma and what comes after if those are part of the value you send back. 
+UPDATE: This section previously mentioned a bug where the userId needed to be appended to the one_time_session token. This bug has been fixed. Your code can now use the one_time_session_token as provided by Blackboard Learn without appending the userId. Blackboard no longer appends a userId, nor expects it in the returned value. If your code does append a comma and userId, that’s OK, you don’t immediatly need to change your code it as Blackboard just ignores the comma and what comes after if those are part of the value you send back.
 
 ### LTI 1.3
 
-In LTI 1.3, you will see the value in the `https://blackboard.com/lti/claim/one_time_session_token` claim. This token is made up of a specially generated token value. Here's a Python 3 code snippet to illustrate how this might look.  
+In LTI 1.3, you will see the value in the `https://blackboard.com/lti/claim/one_time_session_token` claim. This token is made up of a specially generated token value. Here's a Python 3 code snippet to illustrate how this might look.
 
 ```
     # Get the value of the one time session token from the LTI claim

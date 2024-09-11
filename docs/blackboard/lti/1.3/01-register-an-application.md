@@ -6,7 +6,7 @@ edited: ""
 author: Scott Hurrey
 ---
 
-In this section we cover how you register your application with Anthology and deploy it to a Learn instance. Registration and deployment are not covered in the specification (yet), and each LMS vendor handles it slightly differently.
+In this section we cover how you register your application with Anthology and deploy it to a Learn instance. Registration and deployment are not covered in the specification provided by 1EdTech, and each LMS vendor handles it slightly differently.
 
 ## Anthology Developer Portal
 
@@ -109,7 +109,7 @@ At this point your application is connected to a Learn instance. All that remain
 
 ## Deleting an LTI tool or placement from Blackboard Learn
 
-Deleting a registered LTI domain and/or the associated managed placements from the Administrator Panel -> LTI Tool Providers page will invalidate all of the associated LTI launch links in courses. The data will be gone from the database. There is no way to fix this. **NEVER**    delete a registered domain or managed placements without considering these consequences.
+Deleting a registered LTI domain and/or the associated managed placements from the Administrator Panel -> LTI Tool Providers page will invalidate all of the associated LTI launch links in courses. The data will be gone from the database. There is no way to fix this. **NEVER** delete a registered domain or managed placements without considering these consequences.
 
 If you create an LTI 1.3 Tool that uses the same domain as a currently registered LTI 1.1 tool on a Learn system, there is code in Learn that will prompt you to migrate from LTI 1.1 to LTI 1.3. Generally that's a great option.
 
