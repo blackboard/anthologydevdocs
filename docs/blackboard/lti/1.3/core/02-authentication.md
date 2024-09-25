@@ -6,9 +6,9 @@ published: "2024-09-04"
 edited: "2024-09-04"
 ---
 
-To complete the LTI message flow we need to perform an OIDC authentication step as seen here
+To complete the LTI message flow we need to perform an OIDC authentication. We will talk about the steps outlined here taken from the original flow image
 
-![image of the OIDC authentication part within the LTI workflow](/assets/img/lti-launch-sequence-oidc.png)
+![image of the OIDC authentication part within the LTI workflow](/assets/img/lti_message_flow_auth.png)
 
 ## The flow
 

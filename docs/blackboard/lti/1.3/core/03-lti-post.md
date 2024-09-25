@@ -6,9 +6,9 @@ published: ""
 edited: ""
 ---
 
-From the same workflow used on previous sections, we can now work on the next part of the flow which is handling the POST request which includes the id_token
+From the initial workflow used on previous sections, we can now work on the next part of the flow which is handling the POST request, including the id_token.
 
-![image of the LTI workflow outlining the LTI POST to the tool](/assets/img/lti-launch-sequence-idtoken.png)
+![image of the LTI workflow outlining the LTI POST to the tool](/assets/img/lti_message_flow_idtoken.png)
 
 ## The flow
 

@@ -12,7 +12,7 @@ The UML sequence diagram below shows all the steps, including some optional ones
 
 <!-- + TODO: Update the diagram of this page and the next sections -->
 
-![LTI Launch Sequence](/assets/img/lti-launch-sequence.png)
+![LTI Launch Sequence](/assets/img/lti_message_flow.png)
 
 ### Workflow Steps
 
