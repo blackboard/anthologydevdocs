@@ -37,7 +37,7 @@ Below is a sample of a Deep Linking request sent from Blackboard Learn:
   "https://purl.imsglobal.org/spec/lti/claim/deployment_id": "86e8b331-a6cd-486c-b006-9893c749e242",
   "https://purl.imsglobal.org/spec/lti/claim/version": "1.3.0",
   "https://purl.imsglobal.org/spec/lti-ags/claim/endpoint": {
-    "lineitems": "https://together.coffeebeanslabs.com/learn/api/v1/lti/courses/_4_1/lineItems",
+    "lineitems": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/lineItems",
     "scope": [
       "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem",
       "https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly",
@@ -53,7 +53,7 @@ Below is a sample of a Deep Linking request sent from Blackboard Learn:
     "guid": "83656022865f4f47a898b986399a01a8",
     "product_family_code": "BlackboardLearn",
     "version": "3900.93.0-rel.59+7d3ba1c",
-    "url": "https://together.coffeebeanslabs.com/",
+    "url": "https://learn.blackboard.com/",
     "contact_email": "dev@localhost"
   },
   "https://purl.imsglobal.org/spec/lti/claim/lis": {
@@ -64,7 +64,7 @@ Below is a sample of a Deep Linking request sent from Blackboard Learn:
   "iat": 1727287902,
   "email": "dev@localhost",
   "https://purl.imsglobal.org/spec/lti-nrps/claim/namesroleservice": {
-    "context_memberships_url": "https://together.coffeebeanslabs.com/learn/api/v1/lti/external/namesandroles/_4_1",
+    "context_memberships_url": "https://learn.blackboard.com/learn/api/v1/lti/external/namesandroles/_4_1",
     "scope": [
       "https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly"
     ],
@@ -89,8 +89,8 @@ Below is a sample of a Deep Linking request sent from Blackboard Learn:
     "id": "_14_1"
   },
   "https://purl.imsglobal.org/spec/lti-gs/claim/groupsservice": {
-    "context_groups_url": "https://together.coffeebeanslabs.com/learn/api/v1/lti/courses/_4_1/groups",
-    "context_group_sets_url": "https://together.coffeebeanslabs.com/learn/api/v1/lti/courses/_4_1/groupsets",
+    "context_groups_url": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/groups",
+    "context_group_sets_url": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/groupsets",
     "scope": [
       "https://purl.imsglobal.org/spec/lti-gs/scope/contextgroup.readonly"
     ],
@@ -107,7 +107,7 @@ Below is a sample of a Deep Linking request sent from Blackboard Learn:
     "accept_presentation_document_targets": ["iframe", "window"],
     "accept_media_types": "*/*",
     "auto_create": true,
-    "deep_link_return_url": "https://together.coffeebeanslabs.com/webapps/blackboard/controller/lti/v2/deeplinking"
+    "deep_link_return_url": "https://learn.blackboard.com/webapps/blackboard/controller/lti/v2/deeplinking"
   },
   "family_name": "Administrator",
   "https://blackboard.com/lti/claim/one_time_session_token": "3d1a9e7afc74456eb084f01bf0470bb5",

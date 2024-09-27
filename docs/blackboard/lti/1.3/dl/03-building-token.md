@@ -26,6 +26,10 @@ To properly create an item, the body of the JWT token should have the following 
 | `"https://purl.imsglobal.org/spec/lti-dl/claim/data"`          | Data object used by Learn to validate the creation request | `data` value sent in the `https://purl.imsglobal.org/spec/lti-dl/claim/deep_linking_settings` claim. Must be sent back unaltered | Yes               |
 | `"https://purl.imsglobal.org/spec/lti-dl/claim/content_items"` | Array of Content objects                                   | `[{<ContentTypeItem>},{ContentTypeItem},{}]`                                                                                     | Yes               |
 
+## Sign and send to Blackboard Learn
+
+Once the object is built, you can use your preferred library to create and sign the JWT token
+
 ## Response sample
 
 <details>

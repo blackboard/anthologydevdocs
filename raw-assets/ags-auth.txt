@@ -1,0 +1,7 @@
+participant Learn server
+participant LTI Tool
+
+LTI Tool -> LTI Tool: <align:center><wordwrap:25>Creates authentication token (JWT token)</wordwrap></align>
+LTI Tool -> Learn server: <align:center><wordwrap:45>Authentication request to the LTI API endpoint including the JWT token</wordwrap></align>
+Learn server -> Learn server: <align:center><wordwrap:35>Validates token, tool access to the information and creates the LTI access token</wordwrap></align>
+Learn server -> LTI Tool: <align:center><wordwrap:45>Sends token to tool for further usage</wordwrap></align>

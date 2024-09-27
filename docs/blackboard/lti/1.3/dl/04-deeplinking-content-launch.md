@@ -19,8 +19,8 @@ This is a sample of a Deep Linking item launch:
   "https://purl.imsglobal.org/spec/lti/claim/deployment_id": "86e8b331-a6cd-486c-b006-9893c749e242",
   "https://purl.imsglobal.org/spec/lti/claim/version": "1.3.0",
   "https://purl.imsglobal.org/spec/lti-ags/claim/endpoint": {
-    "lineitems": "https://together.coffeebeanslabs.com/learn/api/v1/lti/courses/_4_1/lineItems",
-    "lineitem": "https://together.coffeebeanslabs.com/learn/api/v1/lti/courses/_4_1/lineItems/_40_1",
+    "lineitems": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/lineItems",
+    "lineitem": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/lineItems/_40_1",
     "scope": [
       "https://purl.imsglobal.org/spec/lti-ags/scope/lineitem",
       "https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly",
@@ -36,7 +36,7 @@ This is a sample of a Deep Linking item launch:
     "guid": "83656022865f4f47a898b986399a01a8",
     "product_family_code": "BlackboardLearn",
     "version": "3900.93.0-rel.59+7d3ba1c",
-    "url": "https://together.coffeebeanslabs.com/",
+    "url": "https://learn.blackboard.com/",
     "contact_email": "dev@localhost"
   },
   "https://purl.imsglobal.org/spec/lti/claim/custom": {
@@ -60,14 +60,14 @@ This is a sample of a Deep Linking item launch:
     "course_section_sourcedid": "course-link"
   },
   "https://purl.imsglobal.org/spec/lti/claim/launch_presentation": {
-    "return_url": "https://together.coffeebeanslabs.com/webapps/blackboard/execute/blti/launchReturn?course_id=_4_1&content_id=_47_1&toGC=false&nonce=948a623330a844b0a00b9cda9d64b132&launch_id=bc55f4e4-1952-4584-b599-dd04599d5278&link_id=_47_1&launch_time=1727291789505",
+    "return_url": "https://learn.blackboard.com/webapps/blackboard/execute/blti/launchReturn?course_id=_4_1&content_id=_47_1&toGC=false&nonce=948a623330a844b0a00b9cda9d64b132&launch_id=bc55f4e4-1952-4584-b599-dd04599d5278&link_id=_47_1&launch_time=1727291789505",
     "locale": "en-US"
   },
   "exp": 1727295389,
   "iat": 1727291789,
   "email": "dev@localhost",
   "https://purl.imsglobal.org/spec/lti-nrps/claim/namesroleservice": {
-    "context_memberships_url": "https://together.coffeebeanslabs.com/learn/api/v1/lti/external/namesandroles/_4_1",
+    "context_memberships_url": "https://learn.blackboard.com/learn/api/v1/lti/external/namesandroles/_4_1",
     "scope": [
       "https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly"
     ],
@@ -94,8 +94,8 @@ This is a sample of a Deep Linking item launch:
     "title": "A title for LTI & 1.3 \" Link"
   },
   "https://purl.imsglobal.org/spec/lti-gs/claim/groupsservice": {
-    "context_groups_url": "https://together.coffeebeanslabs.com/learn/api/v1/lti/courses/_4_1/groups",
-    "context_group_sets_url": "https://together.coffeebeanslabs.com/learn/api/v1/lti/courses/_4_1/groupsets",
+    "context_groups_url": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/groups",
+    "context_group_sets_url": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/groupsets",
     "scope": [
       "https://purl.imsglobal.org/spec/lti-gs/scope/contextgroup.readonly"
     ],
