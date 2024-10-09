@@ -1,19 +1,21 @@
 ---
-title: Authenticating to the Assignments and Grades Service
-id: ags-authentication
-sidebar_position: 2
+title: Authenticating to the LTI Subsystems
+id: lti-sub-authentication
+sidebar_position: 1
 edited: "2024-09-26"
 ---
 
-Now that you know what the system is and what it does, is time to start working on connecting to it and syncing data between systems, to do this, we need to authenticate first.
+Now that you know what is LTI, how it works, that information is sent and how you can create items within courses, we can move to interacting with the additional subsystems available with LTI Advantage which are Assignments and Grades Provsioning Service and Names and Roles Provisioning Service.
+
+But before we start to interact with them, we need to authenticate to the LTI API
 
 ## Identifying the information
 
-Based on the entry point of the user, certain information will be available for you right away. In the case of Deep Linking items that have a lineItem (grading column) associated, the initial Deep Link request will contain the information of the lineItem and the allowed scopes for AGS (for more information about Deep Linking see [Working with Deep Linking](../dl/01-getting-started.md)). For other entry points such as independent management websites from your tool, you will need to build this information based in your needs.
+Based on the entry point of the user, certain information will be available for you right away which are outlined below and will give you the necessary information to integrate your tool. For other entry points such as independent management websites from your tool, you will need to build this information based on your needs.
 
-### Launching from a Deep linking item or gradeable content item
+### For Assignments and Grades Service
 
-If you previously created a Deep Linking with a lineItem attached to it or, the user created an item with a Course Content placement with grading enabled, the data that will be sent to your tool in the launch token will contain a claim called `"https://purl.imsglobal.org/spec/lti-ags/claim/endpoint"` which have all the necessary information for AGS and will look something like this:
+If the item that is performing the request has a grading column attached (regardless if it was created though a Deep Linking request or adding the Course Content placement as a link and enabling grading), the JWT token sent will include a claim with the following information:
 
 ```json
 "https://purl.imsglobal.org/spec/lti-ags/claim/endpoint": {
@@ -28,7 +30,23 @@ If you previously created a Deep Linking with a lineItem attached to it or, the 
 }
 ```
 
-From here we can identify the URL of the lineItem service (AGS service), the specific ID of the lineItem associated to the deep linking item and, the scopes allowed for subsequent calls. For the above example, the scopes are full access to the `lineItem` subservice, read access to the `result` subservice and full access to the `score` subservice.
+### For Names and Roles Provisioning Service
+
+For other items, a Names and Roles claim might be included depending on the tool's configuration and access to the Roles service. If available, the claim should look like this:
+
+```json
+"https://purl.imsglobal.org/spec/lti-nrps/claim/namesroleservice": {
+  context_memberships_url: "https://partner-test3.blackboard.com/learn/api/v1/lti/external/namesandroles/_220_1",
+  scope: [
+    "https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly"
+  ],
+  service_versions: [
+    "2.0"
+  ]
+}
+```
+
+As seen, each of the services (if available in the token) will give the information about the scopes, endpoints and, in the case of the Names and Roles Provisioning Service, the version being used. From here, we can start working on authenticating the request based on that data.
 
 ### Launching from a non gradeable content item
 
@@ -51,6 +69,12 @@ If the entry point of your tool was not a Deep Linking item but rather a Course 
 For other type of entry points such as System Placements, Admin placements or a management UI from your tool directly, the claim for lineItems will not be included and the necessary scopes will have to be gathered from previous interactions and tailored accordingly.
 
 More information about scopes and an explanation of each one here: <https://www.imsglobal.org/spec/lti-ags/v2p0#assignment-and-grade-service-claim>
+
+:::info Service access without LTI launch
+If your system needs access to these services at any point without relying on an LTI launch, you can cache the endpoints received on an initial launch and use them directly to interact with any of the services.
+
+Keep in mind that the cache will have to be updated regularly to have the latest IDs available, this can be done by getting the information through an LTI launch or, requesting the ID from the column or content through REST API
+:::
 
 ## Requesting the authentication token
 
