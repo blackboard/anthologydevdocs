@@ -6,7 +6,7 @@ published: ""
 edited: ""
 ---
 
-Learning Tools Interoperability (LTI) is a standard from the IMS Global consortium. This standard focuses on contextual launches and grade return, providing a way to send and retrieve this data without manually migrating the information from one service into the other. LTI has two different standards available, LTI 1.1 and LTI 1.3. Both can be used to integrate with an LMS and exchange information.
+Learning Tools Interoperability (LTI) is a standard from the 1EdTech group. This standard focuses on contextual launches and grade return, providing a way to send and retrieve this data without manually migrating the information from one service into the other. LTI has two different standards available, LTI 1.1 and LTI 1.3. Both can be used to integrate with an LMS and exchange information.
 
 :::danger LTI 1.1 support
 LTI 1.1 has been deprecated by the IMS Global, and it's been around for over 10 years. Learn will continue support of LTI 1.1 tools for the indeterminate future while LTI 1.1 tool developers migrate their tool to LTI 1.3/Advantage.
@@ -49,7 +49,7 @@ Blackboard Learn currently has full support for the two different integration ve
 
 ## Test code and tools
 
-1EdTech has prepared a test tool that you can use to test an LTI connection with an LMS, you can access it and follow the steps to review the workflow here: <https://lti-ri.imsglobal.org/>. The tool is written in Ruby and is open source, there're other LTI resources available from 1EdTech here: <https://github.com/IMSGlobal/ltibootcamp>
+1EdTech has prepared a test tool that you can use to test an LTI connection with an LMS, you can access it and follow the steps to review the workflow here: <https://lti-ri.imsglobal.org/>. The tool is written in Ruby and is open source, there are other LTI resources available from 1EdTech here: <https://github.com/IMSGlobal/ltibootcamp>
 
 We also have a sample LTI tool written in React and Node.js that can be found here:
 <https://github.com/blackboard/BBDN-LTI-Tool-Provider-Node>

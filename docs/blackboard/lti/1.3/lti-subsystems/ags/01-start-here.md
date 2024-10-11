@@ -29,6 +29,6 @@ Once the authentication process has been completed, you have access to different
 | `/lineItem/{lineItemId}`         | Returns or receives the information about the specific column such as maximum grades, due date, name, tags, etc. | `GET`, `PUT`, `DELETE` |
 | `/lineItem/`                     | Returns the information about all the columns created by your tool                                               | `GET`, `POST`          |
 | `/lineItem/{lineItemId}/results` | Returns the existing grades for the specified column (only if the column was created by your tool)               | `GET`                  |
-| `/lineItem/{lineItemId}/score`   | Receives the grading data based on the AGS container speficiation                                                | `POST`                 |
+| `/lineItem/{lineItemId}/score`   | Receives the grading data based on the AGS container specification                                               | `POST`                 |
 
 More information about each endpoint can be found here: <https://www.imsglobal.org/spec/lti-ags/v2p0/openapi/#/default>

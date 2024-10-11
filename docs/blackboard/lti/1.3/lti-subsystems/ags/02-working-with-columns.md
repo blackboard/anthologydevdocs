@@ -5,7 +5,7 @@ sidebar_position: 2
 edited: "2024-10-09"
 ---
 
-Now that you are authenticated, (if not, follow the document [Authenticating to the LTI Subsystems](../01-authenticating-to-ags.md) to complete the authentication), we can start working with the column itself. The endpoint that will be used will vary depending of whether you want to perform actions on a single column or multiple.
+Now that you are authenticated, (if not, follow the document [Authenticating to the LTI Subsystems](../01-authenticating-to-ags.md) to complete the authentication), we can start working with the column itself. The endpoint that will be used will vary depending on whether you want to perform actions on a single column or multiple.
 
 ## Before we start
 
@@ -16,7 +16,7 @@ The following is a list of property definitions available for column operations,
 | `id`             | Internal identifier for the specific column                                                                                                         | String            | `{learn_domain}/learn/api/v1/lti/courses/_4_1_/lineItems/_13_1_` |
 | `scoreMaximum`   | Maximum grade assigned to the column                                                                                                                | Integer           | 100                                                              |
 | `label`          | Name of the column, visible in the Gradebook                                                                                                        | String            | "Final Exam - 40%"                                               |
-| `resourceLinkId` | Id of the Course content item linked to the column (if any)                                                                                         | String            | `_3712_1`                                                        |
+| `resourceLinkId` | ID of the Course content item linked to the column (if any)                                                                                         | String            | `_3712_1`                                                        |
 | `endDateTime`    | Due date of the gradebook column (if any)                                                                                                           | Date String (ISO) | `2024-10-11T04:59:59.999Z`                                       |
 | `gradesReleased` | Whether the systems should show the grades to the student right away or not                                                                         | boolean           | true                                                             |
 | `tag`            | Identifier provided by you, it could be an identifier of your systems - Not visible to students (only for columns created through a `POST` request) | String            | `0192719f-c182-7ccd-91a3-9a67497253d9`                           |
@@ -24,7 +24,7 @@ The following is a list of property definitions available for column operations,
 
 ## Available endpoints
 
-As seen in previous documents, the endpoints that will be used are included in the LTI launch and can be sourced from there with all the required information, if this is not available or you're trying to perform actions without an LTI launch, the endpoints are the following:
+As seen in previous documents, the endpoints that will be used are included in the LTI launch and can be sourced from there with all the required information. If this is not available, or you're trying to perform actions without an LTI launch, the endpoints are the following:
 
 #### Endpoint for multiple column operations
 
@@ -79,7 +79,7 @@ When performing a `GET` request to the endpoint mentioned above, the system will
 
 The post operation to this endpoint will create a new column on the indicated course, which will be automatically linked to your tool and will show if you query for all the columns. Keep in mind that columns created through this method will not allow you to set a specific `resourceLinkId` since that can only be set when creating a deep linking item.
 
-To create the column, you must sent a JSON payload with the required fields outlined here:
+To create the column, you must send a JSON payload with the required fields outlined here:
 
 | field          | Required | Type              | Description                                                                            | Default value |
 | -------------- | -------- | ----------------- | -------------------------------------------------------------------------------------- | ------------- |

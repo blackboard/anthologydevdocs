@@ -21,4 +21,4 @@ As indicated, Blackboard Learn does provide different frameworks to integrate, h
 
 ## Ready to start?
 
-Under this section you will have access to documentation regarding the most used and popular integrations methods, feel free to pruse around and follow the docs for the one you feel matches your use case.
+Under this section you will have access to documentation regarding the most used and popular integrations methods, feel free to peruse around and follow the docs for the one you feel matches your use case.

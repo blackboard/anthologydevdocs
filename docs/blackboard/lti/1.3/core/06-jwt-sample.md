@@ -9,10 +9,10 @@ edited: "2024-09-04"
 The following is a sample of the expected JWT contents received from the form POST request. A description of each parameter and required/optional parameters can be found in the specifications for Core LTI 1.3 here: [1EdTech Specifications for LTI 1.3](https://www.imsglobal.org/spec/lti/v1p3#resource-link-launch-request-message)
 
 :::info
-Please keep in mind that this information can change, always review the Core LTI 1.3 specification linked above for the latest details about the included information
+Please keep in mind that this information can change. Always review the Core LTI 1.3 specification linked above for the latest details about the included information
 :::
 
-```
+```json
 {
   "kid": "53c4573a-1ac8-4484-b036-a7b22b557e8c",
   "alg": "RS256"

@@ -8,9 +8,9 @@ edited: "2024-07-26"
 
 :::danger AMI availability
 
-As of July 26th, 2024, the last available image is Blackboard Learn 3900.93.0 and will be the latest image available while we review and align the publishing process with Amazon Web Services.
+As of July 26th, 2024, the last available image is Blackboard Learn 3900.93.0 and will be the latest image available in the Marketplace. Moving forward, we will publish the EC2 disk images directly for usage within AWS.
 
-Once the review is completed, we'll resume publishing with the latest version of Blackboard Learn as an Amazon Marketplace Image
+Once the new publishing process is available, we will update this article to reflect the latest steps required.
 :::
 
 This document outlines usage of the [Learn REST and LTI Developer AMI](https://aws.amazon.com/marketplace/pp/prodview-fdbvv2vvikoq4) made available via the Amazon AWS Marketplace.

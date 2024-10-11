@@ -13,7 +13,7 @@ Before you can post a new grade, you need to get the information of the user tha
 
 ### REST API
 
-If your LTI application is also registered in the environment as a REST API integration, you can get the user information (querying by email, username, names, etc) from the endpoint /learn/api/public/v1/users (more information about this endpoint and the query parameters needed here: <https://developer.blackboard.com/portal/displayApi/Learn>).
+If your LTI application is also registered in the environment as a REST API integration, you can get the user information (querying by email, username, names, etc.) from the endpoint /learn/api/public/v1/users (more information about this endpoint and the query parameters needed here: <https://developer.blackboard.com/portal/displayApi/Learn>).
 
 From the response, you need to get the `uuid` field which will be ID required to post grades. An example of an API request for a user looks like this:
 
@@ -132,7 +132,7 @@ the table below outlines and defines the possible properties the JSON body could
 | `timestamp`        | Date where the grade was sent to Blackboard Learn                                 | Yes      | Date String (ISO) | N/A     |
 | `activityProgress` | Completion status of the activity started by the user/learner                     | Yes      | String            | N/A     |
 | `gradingProgress`  | Completion status of the grading by the instructor/teacher                        | Yes      | String            | N/A     |
-| `comment`          | A feedback to the user, visible through the feedback section of Blackboard Learn  | No       | String            | `null`  |
+| `comment`          | Feedback to the user, visible through the feedback section of Blackboard Learn    | No       | String            | `null`  |
 | `submission`       | Object that contains the properties `submissionId`, `startedAt` and `submittedAt` | No       | Object            | N/A     |
 | `submissionId`     | An ID from the LTI tool to cross-Reference                                        | No       | String            | `null`  |
 | `startedAt`        | The timestamp of when the user started the activity                               | No       | Date String (ISO) | `null`  |

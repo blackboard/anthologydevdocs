@@ -5,17 +5,17 @@ sidebar_position: 1
 edited: "2024-09-26"
 ---
 
-Now that you know what is LTI, how it works, that information is sent and how you can create items within courses, we can move to interacting with the additional subsystems available with LTI Advantage which are Assignments and Grades Provsioning Service and Names and Roles Provisioning Service.
+Now that you know what LTI is, how it works, how the information is sent, and how you can create items within courses, we can move on to interacting with the additional subsystems available with LTI Advantage, which are Assignments and Grades Provisioning Service and Names and Roles Provisioning Service.
 
-But before we start to interact with them, we need to authenticate to the LTI API
+But before we start to interact with them, we need to authenticate with the LTI API
 
 ## Identifying the information
 
-Based on the entry point of the user, certain information will be available for you right away which are outlined below and will give you the necessary information to integrate your tool. For other entry points such as independent management websites from your tool, you will need to build this information based on your needs.
+Based on the entry point of the user, certain information will be available for you right away, which is outlined below and will give you the necessary information to integrate your tool. For other entry points, such as independent management websites from your tool, you will need to build this information based on your needs.
 
 ### For Assignments and Grades Service
 
-If the item that is performing the request has a grading column attached (regardless if it was created though a Deep Linking request or adding the Course Content placement as a link and enabling grading), the JWT token sent will include a claim with the following information:
+If the item that is performing the request has a grading column attached (regardless if it was created through a Deep Linking request or adding the Course Content placement as a link and enabling grading), the JWT token sent will include a claim with the following information:
 
 ```json
 "https://purl.imsglobal.org/spec/lti-ags/claim/endpoint": {
@@ -30,9 +30,9 @@ If the item that is performing the request has a grading column attached (regard
 }
 ```
 
-### For Names and Roles Provisioning Service
+### Names and Roles Provisioning Service
 
-For other items, a Names and Roles claim might be included depending on the tool's configuration and access to the Roles service. If available, the claim should look like this:
+For other items, a Names and Roles claim might be included, depending on the tool's configuration and access to the Roles service. If available, the claim should look like this:
 
 ```json
 "https://purl.imsglobal.org/spec/lti-nrps/claim/namesroleservice": {
@@ -46,11 +46,11 @@ For other items, a Names and Roles claim might be included depending on the tool
 }
 ```
 
-As seen, each of the services (if available in the token) will give the information about the scopes, endpoints and, in the case of the Names and Roles Provisioning Service, the version being used. From here, we can start working on authenticating the request based on that data.
+As seen, each of the services (if available in the token) will give information about the scopes, endpoints and, in the case of the Names and Roles Provisioning Service, the version being used. From here, we can start working on authenticating the request based on that data.
 
-### Launching from a non gradeable content item
+### Launching from a non-gradable content item
 
-If the entry point of your tool was not a Deep Linking item but rather a Course Tool placement or Course Content Tool without grading enabled, the claim will still be included in the initial token but it will not have the specific lineItem ID and will look something like this:
+If the entry point of your tool was not a Deep Linking item but rather a Course Tool placement or Course Content Tool without grading enabled, the claim will still be included in the initial token, but it will not have the specific lineItem ID and will look something like this:
 
 ```json
 "https://purl.imsglobal.org/spec/lti-ags/claim/endpoint": {
@@ -66,19 +66,19 @@ If the entry point of your tool was not a Deep Linking item but rather a Course 
 
 ### Other entry points
 
-For other type of entry points such as System Placements, Admin placements or a management UI from your tool directly, the claim for lineItems will not be included and the necessary scopes will have to be gathered from previous interactions and tailored accordingly.
+For other types of entry points, such as System Placements, Admin placements or a management UI from your tool directly, the claim for lineItems will not be included, and the necessary scopes will have to be gathered from previous interactions and tailored accordingly.
 
-More information about scopes and an explanation of each one here: <https://www.imsglobal.org/spec/lti-ags/v2p0#assignment-and-grade-service-claim>
+More information about scopes and an explanation of each one is here: <https://www.imsglobal.org/spec/lti-ags/v2p0#assignment-and-grade-service-claim>
 
 :::info Service access without LTI launch
 If your system needs access to these services at any point without relying on an LTI launch, you can cache the endpoints received on an initial launch and use them directly to interact with any of the services.
 
-Keep in mind that the cache will have to be updated regularly to have the latest IDs available, this can be done by getting the information through an LTI launch or, requesting the ID from the column or content through REST API
+Keep in mind that the cache will have to be updated regularly to have the latest IDs available. This can be done by getting the information through an LTI launch or by requesting the ID from the column or content through REST API
 :::
 
 ## Requesting the authentication token
 
-The authentication process is based on the 2LO authentication flow of oAuth2 with certain changes, mostly in the data being sent. When the authentication process is completed, you will receive a bearer token that you will need to include on any subsequent request (this token will also work to make calls through other LTI Advantage services such as Names and Roles Provisioning Service which will be outlined in later sections).
+The authentication process is based on the 2LO authentication flow of oAuth2, with certain changes, mostly in the data being sent. When the authentication process is completed, you will receive a bearer token that you will need to include on any subsequent request (this token will also work to make calls through other LTI Advantage services such as the Names and Roles Provisioning Service, which will be outlined in later sections).
 
 The steps to complete the flow are:
 
@@ -88,7 +88,7 @@ The steps to complete the flow are:
 
 ### Gathering the data and building the authentication body
 
-Before performing the authentication flow, you will need to gather certain information from your tool and the server where you want to authenticate. Initially, you will need the scopes of the request which can be gathered from the initial launch token as outlined above or can be added manually depending on the requirements of your tool.
+Before performing the authentication flow, you will need to gather certain information from your tool and the server where you want to authenticate. Initially, you will need the scopes of the request, which can be gathered from the initial launch token as outlined above or can be added manually depending on the requirements of your tool.
 
 You will also need to the following information from your tool, some properties will have to be created/provided by your tool and others can be gathered from the registration information provided by the Developer Portal
 
@@ -106,17 +106,6 @@ Please make sure to send all the properties in the payload since they are requir
 :::
 
 After this, you will need to build a JSON object that has the following structure, replacing the properties with the data gathered:
-
-```json
-{
-  "iss": "My-Awesome-Super-Tool",
-  "sub": "dbc53fae-5f58-4b72-9de0-32b811ec417c",
-  "aud": ["https://developer.blackboard.com/api/v1/gateway/oauth2/jwttoken"],
-  "iat": 1727395478,
-  "exp": 1727395778,
-  "jti": "AJRrYeWdYxPwZ2Dz"
-}
-```
 
 Once this object is built, you will need to create a JWT token with it and sign it with your JWKS key. This is important since the Blackboard Learn server will later connect to your system and retrieve your public JWKS key for signature validation.
 

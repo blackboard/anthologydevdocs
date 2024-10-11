@@ -50,4 +50,3 @@ We eagerly anticipate receiving full support and collaborating with your teams t
 
 
 Cheers!
-<AuthorBox frontMatter={frontMatter}/>

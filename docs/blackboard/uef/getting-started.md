@@ -1,3 +1,0 @@
----
-id: uef-getting-started
----

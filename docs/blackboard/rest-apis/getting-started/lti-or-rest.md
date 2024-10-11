@@ -17,7 +17,7 @@ REST, or some combination of both.
 
 LTI stands for Learning Tools Interoperability®. It is a standard developed and published
 by the IMS Global® Learning Consortium. You build your integration following the
-[LTI and LTI Advantage standards](https://www.imsglobal.org/activity/learning-tools-interoperability).
+[LTI and LTI Advantage standards](https://www.1edtech.org/standards/lti).
 In LTI-speak, your integration is a "Tool" that integrates with
 a platform (LMS) like Learn. Learn has been certified to meet the
 LTI standards. If your Tool also follows the standards, you can ensure this by getting
@@ -38,7 +38,7 @@ everything with Learn is done over HTTPS.) Anthology has developed and published
 
 ## LTI DISCUSSION
 
-When talking about LTI, we use terms like launch, platform, and tool. A Learn administrator can set up your tool in Learn, following documentation that you provide. Anthology provides documentation applicable to any LTI tool on help.blackboard.com. Rather than reference a link that may change your best bet for finding such documentation is to use your favorite internet search engine and look for "Learn LTI documentation." I just did and the help page for our LTI documentation for admins was the top result! Once your LTI tool has been configured on a Learn system by the admin for that system, course instructors can then place links to your Tool in their courses. Search this site for LTI and you will find demonstrations and tutorials on LTI in Learn. The most common, and likley the best, way for and instructor to place content from your tool in their course is to use Deep-Linking 2.0. The point of this discussion is that once configured by the administrator, use of your tool and the content it provides looks like it is a part of Learn, including when the instructor is selecting content to be 'placed' in the course, and then when the student views and uses that content. And, using the LTI Advantage Names and Roles Provisioning Service (NPRS) and the Assignment and Grades Service (AGS), your tool can integrate closely with the course roster and the gradebook for the course. In summary, you can do a lot with LTI 1.3 & LTI Advantage, where the users of the LMS can use your web-application seamlessly from within the LMS and then with the aforementioned services even manipulate the course roster and gradebook. Get started with [this documentation](/docs/blackboard/lti/wlecome).
+When talking about LTI, we use terms like launch, platform, and tool. A Learn administrator can set up your tool in Learn, following documentation that you provide. Anthology provides documentation applicable to any LTI tool on help.blackboard.com. Rather than reference a link that may change your best bet for finding such documentation is to use your favorite internet search engine and look for "Learn LTI documentation." I just did and the help page for our LTI documentation for admins was the top result! Once your LTI tool has been configured on a Learn system by the admin for that system, course instructors can then place links to your Tool in their courses. Search this site for LTI and you will find demonstrations and tutorials on LTI in Learn. The most common, and likley the best, way for and instructor to place content from your tool in their course is to use Deep-Linking 2.0. The point of this discussion is that once configured by the administrator, use of your tool and the content it provides looks like it is a part of Learn, including when the instructor is selecting content to be 'placed' in the course, and then when the student views and uses that content. And, using the LTI Advantage Names and Roles Provisioning Service (NPRS) and the Assignment and Grades Service (AGS), your tool can integrate closely with the course roster and the gradebook for the course. In summary, you can do a lot with LTI 1.3 & LTI Advantage, where the users of the LMS can use your web-application seamlessly from within the LMS and then with the aforementioned services even manipulate the course roster and gradebook. Get started with [this documentation](../../lti/welcome.md).
 
 ## REST DISCUSSION
 
@@ -66,5 +66,5 @@ sure to check these links regularly.
 
 - [Developer Portal](https://developer.anthology.com/)
 - [REST Documentation](https://developer.anthology.com/portal/displayApi)
-- [LTI Documentation](https://www.imsglobal.org/activity/learning-tools-interoperability)
-- [Learn & LTI Documentation](/docs/blackboard/lti/welcome)
+- [LTI Documentation](https://www.1edtech.org/standards/lti)
+- [Learn & LTI Documentation](../../lti/welcome.md)

@@ -6,7 +6,7 @@ edited: "2024-09-25"
 sidebar_position: 4
 ---
 
-Once the item is created, the user will be able to launch the item without issue. This item will follow the same process of the LTI Message Launch flow however, instead of pointing to the entry point of your tool, the JWT token will have the specific URL given by your tool when creating the item as a target under the claim `"https://purl.imsglobal.org/spec/lti/claim/target_link_uri"`
+Once the item is created, the user will be able to launch the item without issue. This item will follow the same process as the LTI Message Launch flow; however, instead of pointing to the entry point of your tool, the JWT token will have the specific URL given by your tool when creating the item as a target under the claim `"https://purl.imsglobal.org/spec/lti/claim/target_link_uri"`
 
 This is a sample of a Deep Linking item launch:
 
