@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkanthology_dev_docs=self.webpackChunkanthology_dev_docs||[]).push([[1136],{43701:a=>{a.exports=JSON.parse('{"label":"recap","permalink":"/blog/tags/recap","allTagsPath":"/blog/tags","count":3}')}}]);
