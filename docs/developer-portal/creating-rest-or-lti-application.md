@@ -20,7 +20,7 @@ You can take two actions:
 
 1. **Register a REST or LTI application.** Select to register a new REST or LTI application. If you already have an application registered, the button’s text is replaced by a **+** to add another application.
 
-2. **LTI Dynamic Registration.** Read more about this topic in our documentation: [LTI Dynamic Registration](/docs/blackboard/lti/sanctioned-lti-registration-deployment.md).
+2. **LTI Dynamic Registration.** Read more about this topic in 1EdTech's documentation: <https://www.imsglobal.org/spec/lti-dr/v1p0>.
 
 ## Register a REST or LTI application
 
@@ -45,7 +45,7 @@ In the application form, enter your application information. **Fields with a red
 
 ### Manual registration of an LTI integration
 
-To register an LTI integration, enter your application's information in the form as described in [Manual registration of a REST API integration](#manual-registration-of-a-rest-api-integration). Switch **My integreaton supports LTI 1.3** to ON. This enables a second part of the form. Enter information required for the integration to communicate with your application on your end. These fields are explained in [LTI 1.3 Fields](/docs/blackboard/lti/getting-started-with-lti.md#lti-13-fields).
+To register an LTI integration, enter your application's information in the form as described in [Manual registration of a REST API integration](#manual-registration-of-a-rest-api-integration). Switch **My integreaton supports LTI 1.3** to ON. This enables a second part of the form. Enter information required for the integration to communicate with your application on your end. These fields are explained in [LTI 1.3 Fields](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-provide).
 
 1. **Login Initiation URL**
 2. **Tool Redirect URL(s)**

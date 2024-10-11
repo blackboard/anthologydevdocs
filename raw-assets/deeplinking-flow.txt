@@ -1,0 +1,18 @@
+participant Learn server
+participant Learn window
+participant Learn iFrame
+participant LTI Tool
+
+note over Learn server, LTI Tool: ... LTI Message Launch flow ...
+
+Learn window -> Learn iFrame: Renders tool's UI
+Learn iFrame -> Learn iFrame: User navigates the too\nand selects the content to add
+Learn iFrame -> LTI Tool: Sends information about the selected content
+LTI Tool -> LTI Tool: Verifies the content and builds\nthe JWT token for Learn
+LTI Tool -> Learn iFrame: Redirects to the return URI from the JWT token
+Learn iFrame -> Learn server: Receives the JWT token from the tool
+Learn server -> LTI Tool: GETs the tool's JWKS to verify the signature of the token
+LTI Tool -> Learn server: Returns the keys
+Learn server -> Learn server: Validates the signature
+Learn server -> Learn iFrame: Shows a success messages and sends\na close command for the iFrame
+Learn iFrame -> Learn window: Closes iFrame and shows item created

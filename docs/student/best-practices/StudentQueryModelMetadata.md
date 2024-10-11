@@ -21,7 +21,7 @@ The first page of the metadata endpoint response is below.
 
 ![Query Model Metadata](/assets/img/StudentQueryModelMetadata1.png)
 
-To locate the metadata for a given entity in the model, use the Find operation <Ctrl/> F and then enter "EntityType Name=#####" in the search box replacing ##### with the name of the entity you are searching for.
+To locate the metadata for a given entity in the model, use the Find operation (Ctrl+F) and then enter "EntityType Name=#####" in the search box replacing ##### with the name of the entity you are searching for.
 
 The screen shots below show the metadata for the StudentEnrollmentPeriod entity. This is one of the larger entities in the data model. Notice that there is a section that lists the name and type of every property defined for the entity.
 

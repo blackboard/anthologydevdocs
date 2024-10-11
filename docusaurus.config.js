@@ -48,7 +48,7 @@ const config = {
           // autoCollapseCategories: true,
           //},
 
-          sidebarPath: require.resolve("./src/sidebar.js"),
+          sidebarPath: require.resolve("./sidebar.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:

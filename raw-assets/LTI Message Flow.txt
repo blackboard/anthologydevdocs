@@ -1,0 +1,35 @@
+
+participant Learn server
+participant Learn window
+participant Learn iFrame
+participant LTI Tool
+participant Developer Portal
+
+Learn server -> Learn window : Renders course outline
+Learn window --> Learn window : User clicks on LTI link
+Learn window -> Learn iFrame : Opens new iframe for the launch
+Learn iFrame --> Learn server : GET LTI link URL
+Learn server --> Learn iFrame: Returns URL with a redirect command
+Learn iFrame -> LTI Tool : Redirects to the \nOIDC login endpoint (302)
+LTI Tool -> Developer Portal : Redirects for \nOIDC authentication
+Developer Portal --> Developer Portal :Verifies the tool, \nif it's installed and \nhas access
+Developer Portal -> Learn iFrame: Redirects with a command \nto authenticate the request (302 / 307)
+Learn iFrame --> Learn server: Request the JWT token with the authenticate command
+Learn server --> Learn iFrame: Returns the JWT token
+Learn iFrame -> LTI Tool: POST the JWT token to the redirect URI
+LTI Tool --> LTI Tool: Verifies JWT token and signature
+LTI Tool -> Learn iFrame: Sends HTML/JS/CSS files for render the LTI content
+
+note over Developer Portal, Learn server: Optional steps to authenticate REST API requests (instead of sending files to render the LTI content)
+
+LTI Tool --> LTI Tool: Extracts the\none_time_session_token\nfrom JWT
+LTI Tool -> Learn iFrame: Redirect request to \n/learn/api/public/oauth2/authorizationcode\n(see API docs for payload)
+Learn iFrame --> Learn server: Sends token information and an auth request
+Learn server --> Learn iFrame: Sends user an authorization screen to allow access
+Learn iFrame --> Learn iFrame: User clicks on "Authorize"
+Learn iFrame --> Learn server: Sends the authorization data
+Learn server --> Learn iFrame: Sends the authorization code
+Learn iFrame -> LTI Tool: Redirects with authorization code
+LTI Tool -> Learn iFrame: Sends HTML/JS/CSS files for render the LTI content
+LTI Tool -> Learn server: POST to /learn/api/public/v1/oauth2/token with authorization code and redirect URI (See API docs)
+Learn server -> LTI Tool: Authenticates and sends a Bearer token for API calls

@@ -15,7 +15,7 @@ const Solutions = () => {
         className={styles["solutions-card-override"]}
         imgSrc={`/img/blackboard-learn-${hasHydrated ? colorMode : "dark"}.svg`}
         message="Expand on our LMS' capabilities by using LTI and the API to create users, pull assessments, grade data, manage calendars, and more."
-        href='/docs/blackboard/rest-apis/start-here'
+        href='/docs/blackboard/welcome'
       />
       <Card
         imgSrc={`/img/student-${hasHydrated ? colorMode : "dark"}.svg`}
