@@ -6,18 +6,25 @@ published: "2018-07-04"
 edited: "2024-07-26"
 ---
 
+### AMI Availability
 :::danger AMI availability
 
-As of July 26th, 2024, the last available image is Blackboard Learn 3900.93.0 and will be the latest image available in the Marketplace. Moving forward, we will publish the EC2 disk images directly for usage within AWS.
+Starting October 20th, 2024, access to Blackboard AMIs will be changing due to new AWS requirements. If you have an existing site, the AMI will continue to function until October 20. After that, Blackboard AMIs will not function. 
 
-Once the new publishing process is available, we will update this article to reflect the latest steps required.
+To support you in the meantime, we can offer discounts to our shared or dedicated SaaS Learn instances. Please contact donovan.lytle@anthology.com and he can prioritize getting you set up with a SaaS instance. 
+
+We expect to have AMIs available again in the near future, but have yet to finalize a date and details. See also [Changes to Blackboard AMI Access](https://blackboard.my.site.com/Support/s/article/Changes-to-Blackboard-AMI-Access?language=en_US)
+
+We apologize for this disruption in your day-to-day support of Blackboard customers.  We appreciate your continued partnership and patience as we work through this transition. Please reach out to developers@anthology.com if you have any questions or Donovan (donovan.lytle@anthology.com) for support with a new SaaS instance. 
+
+
 :::
 
 This document outlines usage of the [Learn REST and LTI Developer AMI](https://aws.amazon.com/marketplace/pp/prodview-fdbvv2vvikoq4) made available via the Amazon AWS Marketplace.
 
 Please note that AMI licenses are not upgradable. You must subscribe to a newer release and migrate any content or tools prior to license expiration. Please review the **Migration Cookbook - Recreating Data between AMIs** section below.
 
-## Overview
+#### Overview
 
 The Learn REST and LTI Developer Amazon Machine Image (“AMI”) is an image of a Learn server available in the Amazon Marketplace. The AMI allows a developer to spin up a copy of Learn for building applications that use the REST APIs and/or Learning Tool Interoperability (“LTI”) to integrate with Learn. This image is a standalone copy of the SaaS deployment of Learn that allows development and testing against the Ultra user experience. Once the developer spins up the copy of Learn, it lives in his or her AWS account and the developer has full control over the instance of Learn. All instances are pre-licensed with a developer license. New developer AMIs will be made available in the same cadence as SaaS releases. Please note that there is a potential delay of 1-2 days before the AMI is available due to AMI and AWS processing time.
 
@@ -25,11 +32,11 @@ This program allows a developer to build an integration for Learn without a form
 
 **NOTE:** Building Block installation is NOT supported on the AMIs.
 
-### Get the Blackboard REST and LTI Developer AMI
+#### Get the Blackboard REST and LTI Developer AMI
 
 The easiest way to find the Developer AMI is by using the link above or searching the Amazon Marketplace for Learn. The results show all of the currently available AMIs. Given the cadence or releases, you should locate the Learn instance you want.
 
-### Use the Blackboard REST and LTI Developer AMI
+#### Use the Blackboard REST and LTI Developer AMI
 
 Before you begin, you must have an Amazon AWS account. If you do not have an AWS account you will need to create one. The steps to set up an AMI are typically as follows.
 
@@ -59,7 +66,7 @@ Before you begin, you must have an Amazon AWS account. If you do not have an AWS
 
 > **Note the messaging on the initial startup page**, as it informs you when the license expires. You will need to subscribe to a new AMI release prior to license expiration if you wish to migrate data from the old EC2 to the new. Licenses on AMIs are not extendible.
 
-### Discovering License Expiration Date
+#### Discovering License Expiration Date
 
 Should you switch to Ultra or have misplaced your license expiration date, you may find it using one of three approaches.
 
@@ -118,7 +125,7 @@ Tue Sep 12 08:34:37 EDT 2023: CHECK LICENSE: License is current
 Tue Sep 12 08:34:37 EDT 2023: CHECK LICENSE: License expires on 2024-01-14 17:18:36 GMT
 ```
 
-### Support for Let’s Encrypt SSL Certificates
+#### Support for Let’s Encrypt SSL Certificates
 
 Starting with version 3300.6.0 the Learn for REST and LTI Developers AMI supports free Let’s Encrypt SSL Certificates. At this time we do not support alternative SSL certificate processes. Here's a [video walkthrough](https://youtu.be/eQu7Ii923DU) of setting up with Let's Encrypt.
 
@@ -181,11 +188,11 @@ The first time you go to login, you will see text on the page like the following
 
 Landing page seen the first time you login to the developer AMI
 
-### Configure Your AMI-based Learn Instance
+#### Configure Your AMI-based Learn Instance
 
 When you set up your instance of Learn, you can configure different options. These options are discussed in Enable Learn Tool Interoperability (LTI) Links and Text.
 
-#### Triage Your AMI-based Learn Instance
+##### Triage Your AMI-based Learn Instance
 
 Note that not stopping your EC2 when you encounter an error will continue to incur EC2 charges and we do not issue refunds. Always stop your EC2 if you encounter an error or do not require a 24x7 development instance.
 
@@ -205,7 +212,7 @@ Note that not stopping your EC2 when you encounter an error will continue to inc
 
 The above restarts the instance and will typically correct the 504 error.
 
-### Migration Cookbook - Recreating Data between AMIs
+#### Migration Cookbook - Recreating Data between AMIs
 
 Prior to the expiration of an AMI license (which is not upgradable) if you wish, you may migrate existing Learn data to your new subscription.
 
@@ -214,6 +221,6 @@ Currently, there is no formal migration/transfer tool to port Learn data between
 1. [Bb Learn EC2 Data Transfer.docx](/assets/files/Bb%20Learn%20EC2%20Data%20Transfer.docx): A Word doc outlining a comprehensive step-by-step overview of the migration/transfer process between a source and destination EC2.
 2. [EC2 Migration SQL Scripts and Feed Files.zip](/assets/files/EC2%20Migration%20SQL%20Scripts%20and%20Feed%20Files.zip): A zip file containing all the SQL scripts (PostgreSQL format) and example feed files referenced in the Data Transfer overview document (above).
 
-#### Notice - AVG on Windows Systems
+##### Notice - AVG on Windows Systems
 
 While using the AVG antivirus product on a Windows system and attempting to create a course using Learn, AVG may manifest what we believe is a false positive dialog regarding CVE-2014-0286-A. This can occur while using any browser, though the error message is specific to now unsupported versions of Microsoft Internet Explorer 6 through 11. Our security team has indicated that this is an issue with the AVG software. See the AVG website for questions about configuring the AVG software, and for their contact information.
