@@ -149,9 +149,15 @@ function ContributionsTable({ contributionDataRows = {} }) {
   const apiRef = useGridApiRef();
   const colorMode = useColorMode();
 
-  const filteredRows = contributionDataRows.filter((row) =>
-    row.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredRows = contributionDataRows.filter((row) => {
+    const lowerCaseQuery = searchQuery.toLowerCase();
+    const nameMatches = row.name.toLowerCase().includes(lowerCaseQuery);
+    const descriptionMatches = row.description
+      ? row.description.toLowerCase().includes(lowerCaseQuery)
+      : false;
+    const languageMatches = row.language.toLowerCase().includes(lowerCaseQuery);
+    return nameMatches || descriptionMatches || languageMatches;
+  });
 
   console.log(filteredRows);
 
