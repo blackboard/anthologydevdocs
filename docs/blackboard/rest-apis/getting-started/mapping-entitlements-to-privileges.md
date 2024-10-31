@@ -1,11 +1,11 @@
 ---
-title: "Mapping Entitlements to Privileges"
+title: 'Mapping Entitlements to Privileges'
 id: getting-started-with-entitlements
 categories: Learn REST
 author: Davey Herrera
 sidebar_position: 4
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 If you are looking forward to map entitlements with privileges when integrating a new application with a Learn instance, you are in the right place! You probably saw this:
@@ -16,7 +16,7 @@ When you wanted to see something like this:
 
 - Administrator Panel (Communities) > Institutional Hierarchy > Manage Node Tools
 
-Well look no further because we will explain you how to match them!
+Well look no further because we will explain to you how to match them!
 
 ### A few definitions first
 
@@ -24,14 +24,14 @@ Well look no further because we will explain you how to match them!
 
 - An entitlement looks like this: course.attendance.VIEW
 - You can find them in https://developer.anthology.com/portal/displayApi
-- They are usually displayed when you expand an endpoint, the first thing is mentioned.
+- They are usually displayed when you expand an endpoint
 
 2. **We talk about privileges when we talk about actions an user can perform**
 
 - Privileges look like this: Administrator Panel (Communities) > Institutional Hierarchy
-- You can find them when setting up a new system role and assigning privileges
+- You can find them when setting up a new system role and assigning privileges.
 
-3. We talk about endpoints when we talk about an url path that will return information. If you need to know por about this, please review our presentations about REST API for begginers.
+3. We talk about endpoints when we talk about an url path that will return information. If you need to know more about this, please review our presentations about REST API for beginners.
 
 ## What do you need?
 
@@ -43,7 +43,7 @@ Well look no further because we will explain you how to match them!
 
 When you want to develop an application, you will need to enable permissions for it. Doing so within learn can be challening because we talk in different terms when creating system roles and assigning privileges, we explain about them up in this page, make sure to read that first.
 
-Given that you already have the things that you need [Custom system role, the endpoints and entitlements]
+Given that you already have the things that you need [Custom system role, the endpoints and entitlements].
 
 When you where creating the system role, you may or may not have noticed that as I mentioned before, the Privileges look nothing like the entitlements, so, which privileges do I pick?
 
