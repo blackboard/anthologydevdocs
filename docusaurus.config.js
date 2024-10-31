@@ -90,6 +90,7 @@ const config = {
             label: "Home",
           },
           { to: "/blog", label: "Blog", position: "right" },
+          { to: "/contributions", label: "Contributions", position: "right" },
           {
             type: "html",
             position: "right",
