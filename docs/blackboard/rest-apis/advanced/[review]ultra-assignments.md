@@ -10,8 +10,7 @@ author: Ryan Haber
 ### Overview
 
 Blackboard Ultra experience offers a REST API for managing assignments.
-As of Blackbord 3900.98, in Ultra, an assignment different from a test. 
-In an test, there are questions of various types. For an assignment, which we are disucssing
+As of Blackbord 3900.98, in Ultra, an assignment is different from a test. SEE [Changes to Assignments With Blackboard 3900.98](/blog/changes-to-assignments-blackboard-3900.98) In an test, there are questions of various types. For an assignment, which we are disucssing
 here, there is only a leading set of instructions. For more information about
 assignments how Learn users experience them, see [Ultra:
 Create an Assignment](https://help.blackboard.com/learn/Instructor/Ultra/Assignments/Create_and_Edit_Assignments) in Blackboard Help.
