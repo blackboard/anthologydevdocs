@@ -2,11 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://docs.anthology.com/blog</id>
     <title>Anthology Developer Docs Blog</title>
-    <updated>2024-04-18T00:00:00.000Z</updated>
+    <updated>2024-11-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://docs.anthology.com/blog"/>
     <subtitle>Anthology Developer Docs Blog</subtitle>
     <icon>https://docs.anthology.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Changes to Assignments With Blackboard 3900.98]]></title>
+        <id>https://docs.anthology.com/blog/changes-to-assignments-blackboard-3900.98</id>
+        <link href="https://docs.anthology.com/blog/changes-to-assignments-blackboard-3900.98"/>
+        <updated>2024-11-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We are writing this blog post to document a change to how REST APIs work with Ultra Assignments and Tests. Previously, before Blackboard version 3900.98, you could use the createAssignment REST API and treat the resulting object like a Test. You could add more than one question of differing types, using the user interface. You could use the REST API and add more than one presentation-type question type using POST request to /learn/api/public/v1/courses//assessments/{assessmentId}/questions/{questionId}.]]></summary>
+        <content type="html"><![CDATA[<div class="tracker_container_Gxex"><p class="date_Xr9N">Published:&nbsp;<!-- -->November 01, 2024</p><p class="date_Xr9N">Last Update:<!-- --> <!-- -->November 01, 2024</p><p>&nbsp;</p></div><p>We are writing this blog post to document a change to how REST APIs work with Ultra Assignments and Tests. Previously, before Blackboard version 3900.98, you could use the createAssignment REST API and treat the resulting object like a Test. You could add more than one question of differing types, using the user interface. You could use the REST API and add more than one presentation-type question type using POST request to /learn/api/public/v1/courses/{courseId}/assessments/{assessmentId}/questions/{questionId}.  </p><p><a href="https://help.blackboard.com/Learn/Administrator/SaaS/Release_Notes/Archived_Release_Notes#3900.98.0-6" target="_blank" rel="noopener noreferrer">Blackboard introduced a new Assignment tool with version 3900.98.</a> It is no longer the same as a Test. With the new Assignment tool, when you use createAssignment the assignment body is still created, but you only see the instructions, with no option to add questions, and you cannot add questions using the assessments endpoint. To create a Test you must now use the createContent endpoint. You can find more information here: <a href="/docs/blackboard/rest-apis/hands-on/creating-content-with-rest-apis">Creating and Updating Content with REST APIs</a>.</p>]]></content>
+        <author>
+            <name>Mark Kauffman</name>
+        </author>
+        <category label="Assignments" term="Assignments"/>
+        <category label="Tests" term="Tests"/>
+        <category label="Integrations" term="Integrations"/>
+        <category label="Partners" term="Partners"/>
+        <category label="Developers" term="Developers"/>
+        <category label="Community" term="Community"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Public Rest API and devportal roadmap April 2024]]></title>
         <id>https://docs.anthology.com/blog/public-rest-api-and-dev-portal-roadmap-april-2024</id>
