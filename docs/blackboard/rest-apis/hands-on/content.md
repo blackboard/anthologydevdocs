@@ -330,7 +330,7 @@ Returns when 200:
 
 ## Creating Children content
 
-Please review the types of content you can create based on the contentHandler, please review: https://docs.anthology.com/rest-apis/learn/advanced/contenthandler-datatypes
+Please review the types of content you can create based on the contentHandler, please review: https://docs.anthology.com/docs/blackboard/rest-apis/advanced/content-handler
 
 ### Creating a folder within a folder
 

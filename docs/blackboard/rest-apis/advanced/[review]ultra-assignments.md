@@ -9,25 +9,14 @@ author: Ryan Haber
 
 ### Overview
 
-Learn Ultra experience offers a REST API for managing assessments.
-In Ultra, an assessment is effectively the same thing as an assignment except
-for how they are stored internally. In an assessment, there are questions of
-various types. Each 'question' is a slot for content that may not actually
-contain what you normally think of as a question. For more information about
-assignments and questions and how Learn users experience them, see [Ultra:
+Blackboard Ultra experience offers a REST API for managing assignments.
+As of Blackbord 3900.98, in Ultra, an assignment different from a test. 
+In an test, there are questions of various types. For an assignment, which we are disucssing
+here, there is only a leading set of instructions. For more information about
+assignments how Learn users experience them, see [Ultra:
 Create an Assignment](https://help.blackboard.com/learn/Instructor/Ultra/Assignments/Create_and_Edit_Assignments) in Blackboard Help.
 
-An assignment is made up of one or more questions. The following question
-types are available for use with Ultra via REST API.
-
-- `EitherOr` - questions that allow one of two possible responses, such as "true or false"
-- `Essay` - questions that provide a WYSIWYG editor and allow long text response
-- `MultipleAnswer` - allow students to choose more than one answer
-- `Presentation` - represents a 'question' that only has text and/or attached files referenced from within question.text, but that has no actual answer, points, or evaluation associated with it
-
-As of version 3300.9.0, you can use the public API to read any type of
-question. You can use the public API to create, update, and delete methods
-only with presentation-type questions.
+Prior to 3900.98 you could add questions to an assignment. This is no longer the case.
 
 ### Before You Begin
 
@@ -53,27 +42,10 @@ to Learn.
 1. Make a POST request to /learn/api/public/v1/uploads.
 2. Use the ID number in the response to further access the uploaded file.
 
-### Add Content to an Existing Assignment
-
-As of 3300.9.0 you can add only presentation-type "questions" to assignments
-using the public REST API.
-
-1. Make a POST request to /learn/api/public/v1/courses/{courseId}/assessments/{assessmentId}/questions/{questionId}
-
-2. You can validate the response body against your original response body.
-
 ### Assignment-related Query Parameters
 
-All endpoints accept a query parameter fields that specifies the fields to be
+All endpoints accept a query parameter, fields, that specifies the fields to be
 included in the response object, if any. The fields to be included are given
 as a comma-separated list. Specified fields are ignored if absent from the
 response. If no fields are specified, all fields are returned in the response.
-For example:
 
-POST to /learn/api/public/v1/courses/{courseId}/assessments/{assessmentId}/que
-stions/{questionId}?fields=id,title,status,message
-
-returns the ID and title of questions if the request succeeds because only
-those fields are included in the success response object. The method returns
-status and message if the request fails because only those fields are included
-in the error response object.
