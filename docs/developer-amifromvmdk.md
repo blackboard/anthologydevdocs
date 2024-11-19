@@ -74,3 +74,52 @@ An overview of the process that you will be doing, once you have the .vmdk file,
 8.	Click [Create role] in the upper right of the page.
 9.	Trusted entity type is AWS service.  See screenshot below.
 
+![developer workflow](/assets/img/AWSTrustedEntity.png)
+
+10.	In the Use case section, select the EC2 service. Click [Next].
+11.	Now you are on the “Add permissions” page. Use the Search to find the avmimportpolicy you just created in steps 4 and 5. Check the box next to it. Then click [Next].
+12.	Now you are on the “Name, review, and create” page. 
+13.	At the top, under Role details, YOU MUST NAME THE ROLE vmimport  <- exactly this. Nothing else! Leave everything else as the default and scroll to the bottom of the page.
+14.	Click [Create role] at the bottom right of the page.
+15.	Now use the Search to find the vmimport role you just created. Click on its link.
+16.	Click on the “Trust relationships” tab just to the right of “Permissions”
+17.	Click the [Edit trust policy] button.
+18.	 Replace ALL of the JSON shown with the following JSON:
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "ec2.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "vmie.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "StringEquals": {
+                    "sts:Externalid": "vmimport"
+                }
+            }
+        }
+    ]
+}
+```
+19.	At the bottom right of the page, click the [Update policy] button. You have finished configuring the necessary IAM policies and roles so you can convert a .vmdk file into a snapshot that can be used to create an AMI. Now proceed to do so.
+20.	Create a containers.json file in a directory on your laptop/desktop computer. The file should contain the following JSON for the 3900.100 VMDK. You will replace the export-ami- line with the current AMI for each release.
+```
+{
+    "Description": "Learn3900104VMDK",
+    "Format": "VMDK",
+    "UserBucket": {
+        "S3Bucket": "learnexports",
+        "S3Key": "export-ami-0e0a6b40cd7b773ca.vmdk"
+    }
+}
+```
