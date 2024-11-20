@@ -185,7 +185,7 @@ const sidebars = {
           ],
         },
         "developer-ami",
-        //"developer-amifromvmdk"
+        "developer-amifromvmdk",
       ],
     },
     // Student
