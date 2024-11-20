@@ -9,16 +9,16 @@ edited: "2024-11-19"
 ### VMDK Availability
 :::danger VMDK availability
 
-NOTE: If you are on this page and have not yet downloaded the .vmdk file from support.anthology.com please visit that site. Login if you have an account and look for the button on the page titled [New Way to Access Blackboard AMI]. If you do not find the button, you have reqched this page before the availablity of the .vmdk. The rest of this document explains what the .vmdk file is and how you use it to create a Blackboard AMI in your AWS account.
+NOTE: If you are on this page and have not yet downloaded the .vmdk file from support.anthology.com please visit that site. Login if you have an account and look for the button on the page titled [New Way to Access Blackboard AMI]. If you do not find the button, you have accessed this page before the availablity of the .vmdk. The rest of this document explains what the .vmdk file is and how you use it to create a Blackboard AMI in your AWS account.
 
 :::
 
 #### Introduction and Prerequisites
-We've developed a means to distribute the Blackboard AMI without the use of the marketplace, or managed access to our AWS S3 buckets. To do so we now publish a .vmdk file on our support portal for the Blackboard build that you download for conversion to an AMI in your AWS account.
+We've developed a means to distribute the Blackboard AMI without the use of the Amazon Marketplace, or managed access to our AWS S3 buckets. To do so we now publish a .vmdk file on our support portal for the Blackboard build that you download and then convert to an AMI in your AWS account.
 
-This document explains how you can take the .vmdk file you’ve downloaded and convert it into an AMI in your AWS account. The major prerequisite is that you will need to have your desktop/laptop configured to use the AWS Command Line Interface (CLI).  Several steps only function using the CLI. Refer to https://aws.amazon.com/cli/ If you have any issues with the AWS CLI review the Amazon documentation and/or reach out to Amazon for support. Another prerequisite is a good, stable, internet connection. The file is large, close to 10GB, and can take an hour or so to upload @ 22MBPS. 
+This document explains how you take the .vmdk file you’ve downloaded and convert it into an AMI in your AWS account. The major prerequisite is that you will need to have your desktop/laptop configured to use the AWS Command Line Interface (CLI).  Several steps only function using the CLI. Refer to https://aws.amazon.com/cli/ If you have any issues with the AWS CLI review the Amazon documentation and/or reach out to Amazon for support. Another prerequisite is a good, stable, internet connection. The file is large, close to 10GB, and can take an hour or so to upload @ 22MBPS. 
 
-You will need to download the .vmdk file from support.anthology.com before proceeding with the instructions in this document. If you've a support.anthology.com account login and then find the button on the home page titled [New Way to Access Blackboard AMI]. Click the button, on the page that comes up read and accept the terms, then at the bottom click the accept button. Your download will start. If you don't have a support.anthology.com account you can find the button and accept the terms, and you will have an additional step of filling out a form with your contact information. Once you've filled out the form your download will start. NOTE: THE DOWNLOAD CAN TAKE AN HOUR OR TWO. Have a good internet connection
+You will need to download the .vmdk file from support.anthology.com before proceeding with the instructions in this document. If you've a support.anthology.com account login and then find the button on the home page titled [New Way to Access Blackboard AMI]. Click the button, on the page that comes up read and accept the terms, then at the bottom click the accept button. Your download will start. If you don't have a support.anthology.com account you can find the button and accept the terms, and you will have an additional step of filling out a form with your contact information. Once you've filled out the form your download will start. NOTE: THE DOWNLOAD CAN TAKE BETWEEN AN HOUR OR TWO. Have a good internet connection
 
 #### Overview
 
@@ -74,7 +74,7 @@ An overview of the process that you will be doing, once you have the .vmdk file,
 8.	Click [Create role] in the upper right of the page.
 9.	Trusted entity type is AWS service.  See screenshot below.
 
-![developer workflow](/assets/img/AWSTrustedEntity.png)
+![AWS Trusted Entity](/assets/img/AWSTrustedEntity.png)
 
 10.	In the Use case section, select the EC2 service. Click [Next].
 11.	Now you are on the “Add permissions” page. Use the Search to find the avmimportpolicy you just created in steps 4 and 5. Check the box next to it. Then click [Next].
@@ -112,7 +112,7 @@ An overview of the process that you will be doing, once you have the .vmdk file,
 }
 ```
 19.	At the bottom right of the page, click the [Update policy] button. You have finished configuring the necessary IAM policies and roles so you can convert a .vmdk file into a snapshot that can be used to create an AMI. Now proceed to do so.
-20.	Create a containers.json file in a directory on your laptop/desktop computer. The file should contain the following JSON for the 3900.100 VMDK. You will replace the export-ami- line with the current AMI for each release.
+20.	Create a containers.json file in a directory on your laptop/desktop computer. The file should contain the following JSON for the 3900.104 VMDK. You will replace the Description and the export-ami- lines with the current values for each release.
 ```
 {
     "Description": "Learn3900104VMDK",
@@ -123,3 +123,23 @@ An overview of the process that you will be doing, once you have the .vmdk file,
     }
 }
 ```
+21.	Use the CLI to convert the .vmdk into a Snapshot.
+    1.	aws ec2 import-snapshot --description "Learn3900100VM" --disk-container "file:///Users/mkauffman/work/bbami/3900.100.0/containers.json"
+    1.	See aws ec2 import-snapshot documentation. You need the full path to your containers.json file
+    1.	This will create a snapshot file for you.
+    1.	JSON output will include a line like: "ImportTaskId": "import-snap-084a4afb185bedc98" <- NOTE the taskId. You will use it in the next step.
+22.	Use the CLI to monitor the conversion of the .vmdk to a snapshot.
+    1.	aws ec2 describe-import-snapshot-tasks --import-task-ids import-snap-084a4afb185bedc98
+    1.	Use the task Id you got from the prior step.
+    1.	Eventually,after a few minutes, you will get JSON output with “Status”: “completed” and, for example a “SnapshotId”: "snap-04465254a72c30c82"  
+23.	Look in the EC2 section of your AWS GUI for the Snaphshots link. You will see the snapshot you just created. Check the box next to it, then under the Actions menu select “Create image from snapshot.” See the following screenshot.
+
+![AWS Create Image From Snapshot](/assets/img/AWSCreateImageFromSnapshot.png)
+
+24.	On the “Create image from snapshot” form give the image a meaningful Name, Ex:  “3900.100 Blackboard REST AMI from Snap 04465254a72c30c82”, and a similar Description.  Click the [Create image] button at the bottom of the page.
+25.	You should see a message indicating that the AMI has been created. Under Images in the EC2 dashboard left navigation, click AMIs. You will find the AMI you just created from the snapshot. You can copy the AMI name to the Name field.
+
+![AWS Created AMI Complete](/assets/img/AWSCreatedAMIComplete.png)
+
+26.	You can now Use the Blackboard REST and LTI Developer AMI as per https://docs.anthology.com/docs/developer-ami#use-the-blackboard-rest-and-lti-developer-ami from “Configure the specific instance” on to spin up an EC2 instance of the AMI.
+27.	NOTE: Make certain to have a security policy on your EC2 instance that allows HTTP and HTTPS traffic from anywhere. Let’s Encrypt will not function correctly without HTTP being open.
