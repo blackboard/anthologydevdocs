@@ -71,7 +71,7 @@ programVersionAreaOfStudyConfigList[]
 
 - SchoolStartDateId - if the system setting to require start dates is set to true, then a value must be provided for this property.  To determine the value of this setting, execute this odata query:  ds/odata/CampusNexusStudentSettings?$filter=SettingName eq 'versionStartDateRequired'&$select=SettingValue.  If the value of 1 is returned, then a value for SchoolStartDateId must be provided.  The value can be determined using this odata query:  ds/odata/SchoolStartDates?$select=Id&$filter=ProgramVersionId eq ######## and StartDate eq 99/99/9999 where ####### is the ProgramVersionId value and 99/99/9999 is the StartDate value from the StudentEnrollmentPeriod record you are updating areas of study for.
 
-- FilterTypes - In order for the API execution logic to work as desired, this property must be populated with the Id value of each row in the AreaOfStudyType entity. The property is defined as List<int>.  To see the Id values for the AreaOfStudyType entity,execute ds/odata/AreaOfStudyTypes?$select=Id 
+- FilterTypes - In order for the API execution logic to work as desired, this property must be populated with the Id value of each row in the AreaOfStudyType entity. The property is defined as List of type int.  To see the Id values for the AreaOfStudyType entity,execute ds/odata/AreaOfStudyTypes?$select=Id 
 
 - CatalogYearId - populate this with the CatalogYearId value from the StudentEnrollmentPeriod record you are updating areas of study for
  
