@@ -141,5 +141,5 @@ An overview of the process that you will be doing, once you have the .vmdk file,
 
 ![AWS Created AMI Complete](/assets/img/AWSCreatedAMIComplete.png)
 
-26.	You can now Use the Blackboard REST and LTI Developer AMI as per https://docs.anthology.com/docs/developer-ami#use-the-blackboard-rest-and-lti-developer-ami from “Configure the specific instance” on to spin up an EC2 instance of the AMI.
+26.	You can now Use the Blackboard REST and LTI Developer AMI as per [Use the Blackboard REST and LTI Developer AMI](docs/developer-ami.md#use-the-blackboard-rest-and-lti-developer-ami).
 27.	NOTE: Make certain to have a security policy on your EC2 instance that allows HTTP and HTTPS traffic from anywhere. Let’s Encrypt will not function correctly without HTTP being open.

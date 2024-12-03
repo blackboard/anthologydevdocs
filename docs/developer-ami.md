@@ -6,41 +6,38 @@ published: "2018-07-04"
 edited: "2024-07-26"
 ---
 
-### AMI Availability
-:::danger AMI availability
+### Blackboard Developer AMI
 
-Starting October 20th, 2024, access to Blackboard AMIs will be changing due to new AWS requirements. If you have an existing site, the AMI will continue to function until October 20. After that, Blackboard AMIs will not function. 
+This document outlines the process of setting up and using the Learn REST and LTI Developer AMI. Previously available through the Amazon AWS Marketplace, this AMI is now distributed as a downloadable VMDK file. Developers can upload the VMDK file to their AWS account to create and manage their own AMI instances.
 
-To support you in the meantime, we can offer discounts to our shared or dedicated SaaS Learn instances. Please contact donovan.lytle@anthology.com and he can prioritize getting you set up with a SaaS instance. 
+For detailed instructions on converting the VMDK file to an AMI, refer to the [Blackboard AMI From VMDK guide](/docs/developer-amifromvmdk.md).
 
-We expect to have AMIs available again in the near future, but have yet to finalize a date and details. See also [Changes to Blackboard AMI Access](https://blackboard.my.site.com/Support/s/article/Changes-to-Blackboard-AMI-Access?language=en_US)
+Please note that AMI Blackboard licenses are not upgradable. You must download a newer release and migrate any content or tools prior to license expiration. Please review the Migration Cookbook - Recreating Data between AMIs section below.
 
-We apologize for this disruption in your day-to-day support of Blackboard customers.  We appreciate your continued partnership and patience as we work through this transition. Please reach out to developers@anthology.com if you have any questions or Donovan (donovan.lytle@anthology.com) for support with a new SaaS instance. 
-
-
-:::
-
-This document outlines usage of the [Learn REST and LTI Developer AMI](https://aws.amazon.com/marketplace/pp/prodview-fdbvv2vvikoq4) made available via the Amazon AWS Marketplace.
-
-Please note that AMI licenses are not upgradable. You must subscribe to a newer release and migrate any content or tools prior to license expiration. Please review the **Migration Cookbook - Recreating Data between AMIs** section below.
 
 #### Overview
 
-The Learn REST and LTI Developer Amazon Machine Image (“AMI”) is an image of a Learn server available in the Amazon Marketplace. The AMI allows a developer to spin up a copy of Learn for building applications that use the REST APIs and/or Learning Tool Interoperability (“LTI”) to integrate with Learn. This image is a standalone copy of the SaaS deployment of Learn that allows development and testing against the Ultra user experience. Once the developer spins up the copy of Learn, it lives in his or her AWS account and the developer has full control over the instance of Learn. All instances are pre-licensed with a developer license. New developer AMIs will be made available in the same cadence as SaaS releases. Please note that there is a potential delay of 1-2 days before the AMI is available due to AMI and AWS processing time.
+The Learn REST and LTI Developer Amazon Machine Image (“AMI”) is an image of a Learn server available in the Amazon Marketplace. The AMI allows a developer to spin up a copy of Learn for building applications that use the REST APIs and/or Learning Tool Interoperability (“LTI”) to integrate with Learn. This image is a standalone copy of the SaaS deployment of Learn that allows development and testing against the Ultra user experience. Once the developer spins up the copy of Learn, it lives in his or her AWS account and the developer has full control over the instance of Learn. All instances are pre-licensed with a developer license. New developer AMIs will be made available as a VMDK file within 90 days of the prior release of a VMDK with the then current version of Blackboard. 
 
 This program allows a developer to build an integration for Learn without a formal paid partnership. Anyone who wants to test the Ultra experience can create copy. Note that you cannot deploy a custom building block to this AMI. It is meant only for REST and LTI development.
 
 **NOTE:** Building Block installation is NOT supported on the AMIs.
 
-#### Get the Blackboard REST and LTI Developer AMI
+#### Getting the Blackboard REST and LTI Developer VMDK for an AMI
+Before you begin, you must have an Amazon AWS account. If you do not have an AWS account you will need to create one.
 
-The easiest way to find the Developer AMI is by using the link above or searching the Amazon Marketplace for Learn. The results show all of the currently available AMIs. Given the cadence or releases, you should locate the Learn instance you want.
+1.	Visit Anthology Support. If you have an account login.
+1.	Click the button labeled "New Way to Access Blackboard AMI".
+1.	Read the EULA and click the Accept button to accept.
+1.	If you are logged in your download will begin. 
+1.	If not logged in, you will be asked to submit a form with your contact information, then your download will begin. 
+1.	The download is large and may take an hour or so. Have a good internet connection.
+1.	Follow the [Blackboard AMI From VMDK guide](/docs/developer-amifromvmdk.md) to upload the VMDK file to your AWS account and convert it to an AMI.
 
-#### Use the Blackboard REST and LTI Developer AMI
+### Use the Blackboard REST and LTI Developer AMI
 
-Before you begin, you must have an Amazon AWS account. If you do not have an AWS account you will need to create one. The steps to set up an AMI are typically as follows.
+Once the VMDK file has been uploaded and converted into an AMI in your AWS account, the steps to set up an AMI are typically as follows.
 
-- Subscribe to the AMI
 - Configure the specific instance
 - Spin it up and code!
 - When configuring the instance, it is completely up to you how you set up the server. We do have a few recommendations, however.
@@ -51,10 +48,11 @@ Before you begin, you must have an Amazon AWS account. If you do not have an AWS
 
 - If you see 502 Gateway errors, you may need to increase the size of your AMI.
 
-1. We recommend you adjust the security settings to allow:
+2. We recommend you adjust the security settings to allow:
 
 - SSH from your IP only
 - Enable HTTPS access
+- Enable HTTP access (Let's Encrypt requries this)
 
 3. You must configure VPC for the EC2 to properly function. You do this by going to the VPC Console from the AWS Console:
 4. Under Services open VPC under Networking and Content Delivery
