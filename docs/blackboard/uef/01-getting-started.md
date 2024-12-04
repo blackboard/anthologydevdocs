@@ -47,8 +47,8 @@ You can also find screenshots of this integration here: [PDF Download](/assets/f
 
 ### Qwickly - Attendance
 
-"Keep students enrolled, keep students engaged, and keep students safe with Qwickly Attendance." - _Anthology App catalog description_
+We're thrilled to announce a significant improvement to the Qwickly Attendance launch point within Blackboard, providing a more seamless experience for both students and faculty. A new launch point has been added to the right-hand menu, making it easier than ever for instructors to access and use the tool. - _Qwickly Team_
 
-<ReactPlayer url="https://vimeo.com/432279170/4b30aed978" controls playback={false}/>
+<ReactPlayer url="https://vimeo.com/1017603582/2b74ec298b" controls playback={false}/>
 
 You can also find screenshots of this integration here: [PDF Download](/assets/files/QwicklyUEFscreenshots.pdf)
