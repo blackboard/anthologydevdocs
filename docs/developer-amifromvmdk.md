@@ -9,7 +9,7 @@ edited: "2024-11-19"
 ### VMDK Availability
 :::danger VMDK availability
 
-NOTE: If you are on this page and have not yet downloaded the .vmdk file from support.anthology.com please visit that site. Login if you have an account and look for the button on the page titled [New Way to Access Blackboard AMI]. If you do not find the button, you have accessed this page before the availablity of the .vmdk. The rest of this document explains what the .vmdk file is and how you use it to create a Blackboard AMI in your AWS account.
+NOTE: If you are on this page and have not yet downloaded the .vmdk file from support.anthology.com please visit that site. Login if you have an account and look for the button on the page titled [New Way to Access Blackboard AMI] and click it. You could also use the search tool to find the article "New Way to Access Blackboard AMI."  If you do not have an account, that's OK!! In that case you will be required to fill out a form with contact informaiton prior to your download. The rest of this document explains what the .vmdk file is and how you use it to create a Blackboard AMI in your AWS account.
 
 :::
 
