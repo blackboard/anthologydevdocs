@@ -51,8 +51,7 @@ const config = {
           sidebarPath: require.resolve("./sidebar.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/OneComputerGuy/anthologydevdocs/tree/main",
+          editUrl: "https://github.com/blackboard/anthologydevdocs/tree/main",
         },
         blog: {
           showReadingTime: true,
