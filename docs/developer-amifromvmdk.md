@@ -14,7 +14,7 @@ NOTE: If you are on this page and have not yet downloaded the .vmdk file from su
 :::
 
 #### Introduction and Prerequisites
-We've developed a means to distribute the Blackboard AMI without the use of the Amazon Marketplace, or managed access to our AWS S3 buckets. To do so we now publish a .vmdk file on our support portal for the Blackboard build that you download and then convert to an AMI in your AWS account.
+We've developed a means to distribute the Blackboard AMI without the use of the Amazon Marketplace, or managed access to our AWS S3 buckets. To do so we now publish a .vmdk file on our support portal for the Blackboard build that you download and then convert to an AMI in your AWS account. The curent .vmdk file, export-ami-41d97b8a1a2a1dc6t.vmdk, is for Blackboard Learn 3900.106.
 
 This document explains how you take the .vmdk file you’ve downloaded and convert it into an AMI in your AWS account. The major prerequisite is that you will need to have your desktop/laptop configured to use the AWS Command Line Interface (CLI).  Several steps only function using the CLI. Refer to https://aws.amazon.com/cli/ If you have any issues with the AWS CLI review the Amazon documentation and/or reach out to Amazon for support. Another prerequisite is a good, stable, internet connection. The file is large, close to 10GB, and can take an hour or so to upload @ 22MBPS. 
 
