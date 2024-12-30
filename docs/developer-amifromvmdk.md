@@ -3,7 +3,7 @@ title: Blackboard AMI From VMDK
 id: developer-amifromvmdk
 author: Mark Kauffman
 published: "2014-11-19"
-edited: "2024-11-19"
+edited: "2024-12-30"
 ---
 
 ### VMDK Availability
@@ -24,6 +24,10 @@ You will need to download the .vmdk file from support.anthology.com before proce
 
 An overview of the process that you will be doing, once you have the .vmdk file, is as follows. You will create an S3 bucket in your AWS account to which you will upload the .vmdk file. You will configure your AWS account policies so that you can use the CLI to convert the .vmdk file to a snapshot. You will create a configuration file on your desktop/laptop named containers.json that contains the JSON configuration for converting the .vmdk file in the S3 bucket into a Snapshot. You can then use the graphical dashboard to create an AMI associated with the Snapshot.
 
+:::danger S3 Bucket Name
+NOTE: We use learnexports as our S3 bucket name in the instructions that follow. S3 buckets must have a unique name across all of AWS. You will need to name your S3 bucket something unique and use that name where learnexports is used below. Read Amazon's documentation on naming requirements.
+:::
+
 #### Steps to Convert the .vmdk File to an AMI
 
 1. Configure the AWS CLI for your AWS account. See https://aws.amazon.com/cli/ The CLI MUST be used for some steps. This is not optional.
@@ -31,13 +35,14 @@ An overview of the process that you will be doing, once you have the .vmdk file,
     1. aws s3 ls 
     2. Expected result: you get a list of S3 buckets.
 3.	Use the GUI or CLI to create an S3 bucket, with all of the settings as the default, in your AWS account named learnexports.
+    1. REMEMBER Modify learnexports to your unique name. Example: learnexports-bigsoftinc. 
 4.	Upload the .vmdk file that will be used to create an AMI into the learnexports bucket. This will take some time, between an hour and a couple of hours depending on your network speed. You may continue here to configure your AWS account during the upload process.
-5.	Once you have a learnexports bucket in S3, configure your AWS IAM as follows using the GUI:
+5.	Once you have the equivalent of a learnexports bucket in S3, configure your AWS IAM as follows using the GUI:
     1.	Select the IAM service to get the IAM > Dashboard
     1.	Under Access management in the left nav, select policies
     1.	Click [Create policy]
     1.	On the Specify permissions page, click the [JSON] button.
-    1.	Using the JSON policy editor, input the following JSON:
+    1.	Using the JSON policy editor, input the following JSON. REMEMBER You will need to use the unique S3 bucket name you've chosen in place of learnexports.
 ```
 {
    "Version": "2012-10-17",
@@ -61,6 +66,7 @@ An overview of the process that you will be doing, once you have the .vmdk file,
          "Action": [
             "ec2:ModifySnapshotAttribute",
             "ec2:CopySnapshot",
+            "ec2:ImportSnapshot",
             "ec2:RegisterImage",
             "ec2:Describe*"
          ],
@@ -70,6 +76,7 @@ An overview of the process that you will be doing, once you have the .vmdk file,
 }
 ```  
 6.	Hit [Next] then on the Review and create page set the Policy Name to avmimportpolicy. Click [Create policy] at the bottom of the page.
+    1. Attach the policy to the AWS user you will be using for this work. To do this navigate to the IAM console, select the desired user, go to the "Permissions" tab, blick "Add permissions", then choose "Attach existing policies directly" and select the policy you want to attach to the user. See Amazon's documentation for more detail. 
 7.	In the IAM left nav, under “Access management” click “Roles”.
 8.	Click [Create role] in the upper right of the page.
 9.	Trusted entity type is AWS service.  See screenshot below.
@@ -113,6 +120,7 @@ An overview of the process that you will be doing, once you have the .vmdk file,
 ```
 19.	At the bottom right of the page, click the [Update policy] button. You have finished configuring the necessary IAM policies and roles so you can convert a .vmdk file into a snapshot that can be used to create an AMI. Now proceed to do so.
 20.	Create a containers.json file in a directory on your laptop/desktop computer. The file should contain the following JSON for the 3900.104 VMDK. You will replace the Description and the export-ami- lines with the current values for each release.
+    1. REMEMBER learnexports will need to be the unique S3 bucket name you've chosen.
 ```
 {
     "Description": "Learn3900104VMDK",
