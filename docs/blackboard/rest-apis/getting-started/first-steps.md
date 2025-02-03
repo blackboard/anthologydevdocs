@@ -1,11 +1,11 @@
 ---
-title: "First Steps with Learn REST API"
+title: 'First Steps with Learn REST API'
 id: first-steps
 categories: Learn REST
 author: Scott Hurrey
 sidebar_position: 1
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 Anthology offers a suite of education technology tools, both software and
@@ -154,8 +154,6 @@ Once you have registered with the developer portal and built an integration, dep
 | Application Secret | Each application is assigned a unique secret. This is used to authorize REST<br />API calls against Learn.                                          |
 | Access Token       | A token is a unique string representing an implicit authorization granted by<br />an OAuth 2.0 Service Provider.                                    |
 | CRUD               | Create, Read, Update, Delete                                                                                                                        |
-
-{: .striped}
 
 #### More Information
 
