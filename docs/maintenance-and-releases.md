@@ -23,8 +23,63 @@ Should a critical outage\* take place, we will release a detailed post-mortem on
 Any non-critical outage\*\* will be covered using our in-Portal announcements feature only.
 :::
 
+:::tip Latest release
+
+**Release version:** February / 2025<br/>
+**Intance:** Production (https://developer.anthology.com)<br/>
+**Impact:** Developers<br/>
+
+The Developer Portal continues to evolve to enhance self-service capabilities and give developers greater control over their accounts. We have introduced a developer account deletion request feature in the Account Page of the Developer Portal. This update ensures that account removal is handled securely and efficiently. Also, aligned with data protection best practices
+
 <details>
-<summary>Release Notes</summary>
+<summary>More details about this release</summary>
+
+By implementing a structured deletion process, we help developers manage their accounts responsibly. Preventing accidental data loss or disruptions to registered applications.
+
+This feature allows developers to request account deletion while ensuring that registered applications remain functional, minimizing disruptions, and reducing support requests.
+
+Key highlights of this enhancement
+
+- Developers can now request account deletion directly from the Account Management Page of the Developer Portal.
+- A validation check ensures that all registered applications and groups are reassigned or removed before proceeding with account deletion.
+- 20-day recovery period: Accounts will be deactivated for 20 days before permanent deletion, allowing developers to restore access during this time.
+- Logging in within the 20-day period automatically cancels the deletion request, keeping the account active.
+- Permanent deletion: After the recovery period expires, all account data, including logs, will be permanently removed.
+
+Developers can now request account deletion through a simple process:
+
+Navigate to the Account Management section in the Developer Portal and click on the Request Account Deletion option.
+
+<img src="/assets/img/devportal-releases/step1.png" width="400px" alt="Image 1. Account Management Page"/>
+
+The system will validate account deletion constraints
+
+- The developer is not an owner of another group.
+- The developer has no applications registered in the default group.
+- The default group for the developer doesn't have any additional members.
+
+Note: If constraints are not met, the system will display an alert icon explaining the necessary steps to proceed.
+
+<img src="/assets/img/devportal-releases/step2.png" width="400px" alt="Image 2. Validation Check: Proceed with Account Deletion"/>
+
+You will receive an email containing the information about the deletion process, including a link to validate the deletion request.
+
+<img src="/assets/img/devportal-releases/step2-5.png" width="700px" alt="Image 3. Email notification: Includes the link to verify the deletion process"/>
+
+Clicking the link will take you to the following page where you can confirm the deletion process
+
+<img src="/assets/img/devportal-releases/step3.png" width="700px" alt="Image 4. Request Validation: Accept the account deletion"/>
+
+Once the verification is completed, a confirmation message will appear, detailing the 20-day recovery period and the impact of account deletion.
+
+<img src="/assets/img/devportal-releases/step4.png" width="700px" alt="Image 5. Request submitted."/>
+
+</details>
+
+:::
+
+<details>
+<summary>Old Release Notes</summary>
 
 #### May 28th 2024 - 02:30 AM EST
 
