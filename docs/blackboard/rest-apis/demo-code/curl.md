@@ -45,7 +45,7 @@ make a complete set of CRUD operations to the Learn REST endpoints.
 This help topic assumes the Developer:
 
 - is familiar with cURL.
-- has a REST-enabled [Learn instance](developer-ami.md).
+- has a REST-enabled [Learn instance](/docs/blackboard/sandbox-envs/welcome).
 
 ### Walkthrough
 

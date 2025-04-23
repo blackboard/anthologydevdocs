@@ -15,7 +15,7 @@ agnostic, but it has not been tested on Windows.
 In order to begin this tutorial, there are a few pre-requisites that are
 assumed to be in place:
 
-- User has installed and started the latest [Developer AMI](developer-ami.md).
+- User has installed and started the latest [Developer AMI](/docs/blackboard/sandbox-envs/welcome).
 - User has installed and configured [GIT](https://git-scm.com/downloads).
 - User has cloned the [repository](https://github.com/blackboard/BBDN-DevCon-REST-Workshop) to their local working directory.
 - User has Java 11 installed and configured to JAVA_HOME.

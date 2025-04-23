@@ -9,18 +9,13 @@ sidebar_position: 3
 
 This document outlines the process of setting up and using the Learn REST and LTI Developer AMI. Previously available through the Amazon AWS Marketplace, this AMI is now distributed as a downloadable VMDK file. Developers can upload the VMDK file to their AWS account to create and manage their own AMI instances.
 
-:::warning AMI licenses
-Please note that AMI Blackboard licenses are not upgradable. You must download a newer release and migrate any content or tools prior to license expiration. For more information, please review the Migration Cookbook - Recreating Data between AMIs section below.
-
-:::
-
 For detailed instructions on converting the VMDK file to an AMI, refer to the [Convert and deploy the VMDK file](/docs/blackboard/sandbox-envs/convert-the-vmdk-file) guide.
 
 ## Overview
 
 The AMI allows a developer to spin up a copy of Learn for building applications that use the REST APIs, Proctoring, Ultra Extension Framework (UEF) and/or Learning Tool Interoperability (“LTI”) to integrate with Learn. This image is a standalone copy of the SaaS deployment of Learn that allows development and testing against the Ultra user experience. Once the developer spins up the copy of Learn, it lives in his or her AWS account and the developer has full control over the instance of Learn. All instances are pre-licensed with a developer license. New developer AMIs will be made available as a VMDK file within 90 days of the prior release of a VMDK with the then current version of Blackboard.
 
-:::note Building Block support
+:::info Building Block support
 **Building Block installation is NOT supported on the AMIs.**
 
 :::
@@ -115,6 +110,11 @@ Tue Sep 12 08:34:37 EDT 2023: CHECK LICENSE: License is current
 Tue Sep 12 08:34:37 EDT 2023: CHECK LICENSE: License expires on 2024-01-14 17:18:36 GMT
 ```
 
+:::warning AMI licenses
+Please note that AMI Blackboard licenses are not upgradable. You must download a newer release and migrate any content or tools prior to license expiration. For more information, please review the Migration Cookbook - Recreating Data between AMIs section below.
+
+:::
+
 ## Support for Let’s Encrypt SSL Certificates
 
 :::caution Default SSL certificate
@@ -150,6 +150,11 @@ sslemail: developers@anthology.com
 ```shell
 sudo reboot now
 ```
+
+:::note Disclaimer
+
+\* Anthology Inc does not endorse or recommend specific DNS providers such as NoIp.com for usage. These are mentioned for their free options but any service can be used to map DNS entries
+:::
 
 ### Create the Let's Encrypt certificate
 

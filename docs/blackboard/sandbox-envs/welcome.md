@@ -9,20 +9,20 @@ sidebar_position: 1
 
 We've developed a means to distribute the Blackboard AMI without the use of the Amazon Marketplace, or managed access to our AWS S3 buckets. To do so we now publish a .vmdk file on our support portal for the Blackboard build that you download and then convert to an AMI in your AWS account.
 
-The following section will explain how you take the .vmdk file you’ve downloaded, convert it into an AMI in your AWS account and then, configure for use. The major prerequisite is that you will need to have your desktop/laptop configured to use the AWS Command Line Interface (CLI). Several steps only function using the CLI. The second prerequisite is a good, stable, internet connection. The file is large, close to 10GB, and can take an hour or so to upload @ 22MBPS.
+In this section we will explain how you take the .vmdk file you’ve downloaded, convert it into an AMI in your AWS account and then, configure for use.
 
 ## Overview of the process
 
 An overview of the process that you will be doing throughout the next sections, once you have the .vmdk file, is as follows:
 
-- You will create an S3 bucket in your AWS account to which you will upload the .vmdk file.
-- You will configure your AWS account policies so that you can use the CLI to convert the .vmdk file to a snapshot.
-- You will create a configuration file on your desktop/laptop named containers.json that contains the JSON configuration for converting the .vmdk file in the S3 bucket into a Snapshot.
-- You can then use the graphical dashboard to create an AMI associated with the Snapshot.
+- Create an S3 bucket in your AWS account to which you will upload the .vmdk file.
+- Configure your AWS account policies, roles and users so that you can use the CLI to convert the .vmdk file to a snapshot.
+- Create a configuration file on your desktop/laptop named `containers.json` that contains the JSON configuration for converting the .vmdk file in the S3 bucket into a Snapshot.
+- Use the graphical dashboard to create an AMI associated with the Snapshot.
 
 ## Download the VMDK file
 
-Our server file is currently hosted on our Antholgy Global Support portal, to download please click the download button below which will take you to our portal. Once there, read the EULA and if you agree, scroll to the bottom of the page and click the red **"Accept"** button.
+Our server file is currently hosted on our Anthology Global Support portal, to download it please click the "Download" button below which will take you to the correct location. Once there, read the EULA and if you agree, scroll to the bottom of the page and click the red **"Accept"** button.
 
 :::tip Image is not behind a login screen
 Although the image itself is hosted on our support portal, is not strictly necessary to have an active account to download it. If you have one, login to it and then navigate to the download page, once you click the "Accept" button, the download will start automatically.
