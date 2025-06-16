@@ -28,7 +28,7 @@ To access the Swagger documentation, append 'swagger' to the end of the base URI
 
 Some important points regarding this API:
 
-The only two properties that need to be provided in the request payload are the StudentEnrollmentPeriodId and the StudentAccountStatusList.  The StudentAccountStatusList is defined as a List<Int>.  Provide the AccountStatusId for each account status that will be associated with the student enrollment period.  The other properties defined in the request can be ignored.
+The only two properties that need to be provided in the request payload are the StudentEnrollmentPeriodId and the StudentAccountStatusList.  The StudentAccountStatusList is defined as a List of type int.  Provide the AccountStatusId for each account status that will be associated with the student enrollment period.  The other properties defined in the request can be ignored.
 
 Account statuses are assigned at the StudentEnrollmentPeriod level and not the Student. So if a student has more than 1 enrollment period record, an initial step may need to be done to determine which enrollment period you need to associate the account status(es) to. See additional details below
 
