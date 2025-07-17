@@ -7,7 +7,7 @@ published: "2024-06-26"
 edited: "2024-06-26"
 ---
 
-A common use case for integrators is to persist data for courses completed at other institutions. There is capability in Anthology Student for a student to have course requirements satisfied with course work that has been completed at other institutions. The high level process is for a user to create a student transfer credit record which consists of the course(s) that have been completed at other institutions as well as the internal course(s) that the external course work will be satifying. There are many cases where the process of articulating which external courses satisfy which internal courses is handled outside of the Anthology Student applicatuin boundary. In this case, it is critical to be able to persist this data into Anthology Student so that business processes that have dependencies on transfer credit data will operate as expected. The command API endpoint that is used for persisting this data is api/commands/Admissions/StudentTransferCredit/SaveStudentTransferCredit. This document will document the pertinent details for being able to successfully leverage and execute this API.
+A common use case for integrators is to persist data for courses completed at other institutions. There is capability in Anthology Student for a student to have course requirements satisfied with course work that has been completed at other institutions. The high level process is for a user to create a student transfer credit record which consists of the course(s) that have been completed at other institutions as well as the internal course(s) that the external course work will be satisfying. There are many cases where the process of articulating which external courses satisfy which internal courses is handled outside of the Anthology Student application boundary. In this case, it is critical to be able to persist this data into Anthology Student so that business processes that have dependencies on transfer credit data will operate as expected. The command API endpoint that is used for persisting this data is api/commands/Admissions/StudentTransferCredit/SaveStudentTransferCredit. This document will cover the pertinent details for being able to successfully leverage and execute this API.
 
 ## Swagger documentation
 
@@ -22,7 +22,7 @@ When the list of available operations is displayed, select the SaveStudentTransf
 
 ## Request payload
 
-The high level data model for persisting transfer credit data consists of 3 main entities. The StudentTransferCredit entity is the header record for the transfer credit information. This entity will store the summary of the transfer credit record such as College or High School the external courses were completed at, overall status of the transfer credit record and the transfer credit type. This entity also includes 2 child entities as part of its definition. StudentTransferCreditMultipleExternalCourse is the entity that contains 1 or more rows for each course the student completed at the external institution. The StudentTransferCreditMultipleInternalCourse entity will contain 1 or more rows for the instiitution courses that the external courses are satisfying. You will see that these are defined as collection properties within the request payload. -- StudentTransferCreditExternalCourseList and StudentTransferCreditInternalCourseList.
+The high level data model for persisting transfer credit data consists of 3 main entities. The StudentTransferCredit entity is the header record for the transfer credit information. This entity will store the summary of the transfer credit record such as College or High School the external courses were completed at, overall status of the transfer credit record and the transfer credit type. This entity also includes 2 child entities as part of its definition. StudentTransferCreditMultipleExternalCourse is the entity that contains 1 or more rows for each course the student completed at the external institution. The StudentTransferCreditMultipleInternalCourse entity will contain 1 or more rows for the institution courses that the external courses are satisfying. You will see that these are defined as collection properties within the request payload. -- StudentTransferCreditExternalCourseList and StudentTransferCreditInternalCourseList.
 
 You will see properties on the StudentTransferCredit entity that are deprecated and no longer used. The original implementation of the Student Transfer Credit feature in Anthology Student did not have child tables defined for recording external course work and the internal courses that the external course work was satisfying. Instead a row would exist in the StudentTransferCredit entity for each external course that was taken. For this reason, the following properties on the StudentTransferCredit entity can be ignored as they are no longer used:
 
@@ -49,59 +49,61 @@ IMPORTANT NOTE: When looking at the request payload documentation in Swagger, yo
 
 An example payload for this API is below.
 
-approvedDate: null
-isApproved: false
-rowVersion: null
-studentEnrollmentPeriodId: 961
-studentId: 50873
-studentTransferCreditExternalCourseList:
-0: {
-collegeCourseClockHours: null
-collegeCourseClockHoursAttempted: null
-collegeCourseClockHoursEarned: null
-collegeCourseCreditHoursAttempted: 0
-collegeCourseCreditHoursEarned: 0
-collegeCourseCredits: 0
-collegeCourseGrade: "A"
-collegeCourseGradePoints: 0
-collegeCourseId: 8
-collegeCourseStartDate: "2023/12/01 00:00:00"
-collegeId: 4
-completionDate: "2023/12/31 00:00:00"
-entityState: 0
-highSchoolCourseId: null
-highSchoolId: null
-id: -1}
-1: {
-collegeCourseClockHours: 0
-collegeCourseClockHoursAttempted: 0
-collegeCourseClockHoursEarned: 0
-collegeCourseCreditHoursAttempted: 3
-collegeCourseCreditHoursEarned: 3
-collegeCourseCredits: 3
-collegeCourseGrade: "B"
-collegeCourseGradePoints: 0
-collegeCourseId: 7
-collegeCourseStartDate: "2022/09/01 00:00:00"
-collegeId: 3
-completionDate: "2022/10/31 00:00:00"
-entityState: 0
-highSchoolCourseId: null
-highSchoolId: null
-id: -1}
-studentTransferCreditId: -1
-studentTransferCreditInternalCourseList:
-0: {
-courseId: 10
-credits: 3
-entityState: 0
-hours: 0
-id: -1}
-termId: null
-transferCreditStatusId: "1"
-transferCreditTypeId: "4"
+```json
+{
+  "payload": {
+    "studentTransferCreditId": -1,
+    "studentId": 50090,
+    "studentEnrollmentPeriodId": 264,
+    "transferCreditTypeId": "4",
+    "approvedDate": null,
+    "transferCreditStatusId": "1",
+    "isApproved": false,
+    "termId": null,
+    "grade": "",
+    "note": "Test note for Transfer credit",
+    "studentTransferCreditExternalCourseList": [
+      {
+        "id": -1,
+        "uid": "ffc5e67e-eb1e-4ec0-96e9-363c10595790",
+        "collegeId": 4,
+        "collegeCourseCredits": 0,
+        "collegeCourseClockHours": null,
+        "collegeCourseGrade": "B",
+        "collegeCourseId": 8,
+        "completionDate": "2018/03/01 00:00:00",
+        "collegeCourseStartDate": null,
+        "highSchoolCourseId": null,
+        "highSchoolId": null,
+        "entityState": 0,
+        "collegeCourseClockHoursAttempted": null,
+        "collegeCourseClockHoursEarned": null,
+        "collegeCourseCreditHoursAttempted": 0,
+        "collegeCourseCreditHoursEarned": 0,
+        "collegeCourseGradePoints": 0
+      }
+    ],
+    "studentTransferCreditInternalCourseList": [
+      {
+        "id": -1,
+        "uid": "cd2d4d2b-2a48-49fb-adb8-147a1388ad29",
+        "courseId": 35,
+        "credits": 3,
+        "hours": 0,
+        "entityState": 0
+      }
+    ],
+    "collegeCourseClockHoursAttempted": null,
+    "collegeCourseClockHoursEarned": null,
+    "collegeCourseCreditHoursAttempted": "0.00",
+    "collegeCourseCreditHoursEarned": "0.00",
+    "collegeCourseGradePoints": 0,
+    "rowVersion": null
+  }
+}
+```
 
-In the example, there are 2 external courses taken that are satisfying the requirements for 1 internal course.
+In the example, there is 1 external courses taken that is satisfying the requirements for 1 internal course.
 
 The TransferCreditStatusId property value will determine if the student's degree progress audit and transcript data will be updated when the API executes. The Transfer Credit Status table is reference data that is configured by the instituion. Any number of statuses can be configured that can be used to track the transfer credit process (i.e. Transfer credits are submitted, transfer credits are being reviewed, transfer credit is approved etc.). Each row in the Transfer Credit Status reference data entity has a boolean property called IsApproved. If the IsApproved attribute is true for the TransferCreditStatusId property value specified in the request, then the execution logic will perform the needed updates so that there is a Transfer grade recorded for the internal course Id provided and also update the degree progress audit data so that the requirement of taking the internal course Id shows as Fulfilled when generating the students Degree Progress Audit.
 
