@@ -4,7 +4,7 @@ id: convert-the-vmdk-file
 author: Mark Kauffman
 published: "2014-11-19"
 edited: "2025-04-22"
-sidebar_position: 2
+sidebar_position: 10
 ---
 
 This document will outline the required steps to convert the VMDK file and upload it to AWS, this will be used later on to configure the AMI instance that will have Blackboard Learn preinstalled
