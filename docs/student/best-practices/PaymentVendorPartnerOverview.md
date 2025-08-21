@@ -31,7 +31,7 @@ To see additional details for the APIs within Student, access the Swagger output
 
 ### Post Payment
 
-The most basic use case for an integration between a payment provider and Anthology Student is to be able to process a payment within the payment vendor application and then post that payment to the student's ledger card within Anthology Student. At a high level, there are two different kinds of payments within the Student application. The first is a payment that is not associated with expected funding and the second is a payment that is associated to an expected disbursement. One of the features in Student is the ability to package a student for Financial Aid which results in a list of scheduled disbursements being created. Included in this are Student payment plans. A student payment plan will have 1 or more expected payments/installments created as part of the payment plan data. When posting a payment that is made against a payment plan, the payment will be "associated" with the expected disbursement record. Regardless of whether the payment being posted is for an expected disbursement or is not associated to an expected disbursement, the same API endpoint will be used. There are properies in the request payload that inform the API execution logic as to if the payment being posted is associated to an expected disbursement record or is not associated to an expected disbursement record.
+The most basic use case for an integration between a payment provider and Anthology Student is to be able to process a payment within the payment vendor application and then post that payment to the student's ledger card within Anthology Student. At a high level, there are two different kinds of payments within the Student application. The first is a payment that is not associated with expected funding and the second is a payment that is associated to an expected disbursement. One of the features in Student is the ability to package a student for Financial Aid which results in a list of scheduled disbursements being created. Included in this are Student payment plans. A student payment plan will have 1 or more expected payments/installments created as part of the payment plan data. When posting a payment that is made against a payment plan, the payment will be associated with the expected disbursement record. Regardless of whether the payment being posted is for an expected disbursement or is not associated to an expected disbursement, the same API endpoint will be used. There are properies in the request payload that informs the API if the payment being posted is associated to an expected disbursement record or is not associated to an expected disbursement record.
 
 The API to use for posting payments is POST api/student-accounting/ledger-payment-transactions
 
@@ -39,30 +39,34 @@ The API to use for posting payments is POST api/student-accounting/ledger-paymen
 
 #### Installment on Payment Plan
 
-If a payment is being posted for an expected installment on a payment plan, then the request payload will include this information either by providing the Id of the expected installment record the payment is for (ScheduledDisbursementId property) or setting the UseNextScheduledPayment property to true. If this is not done in the request, then the API execution logic will assume that the payment being posted is NOT for an expected disbursement. If UseNextScheduledPayment property is true, then the payment being posted will be associated to the expected disbursement record for the payment plan that has a status of scheduled and the earliest expected payment date. If the amount of the payment being posted does not match the amount of the expected disbursement it is being associated to, then the expected payment schedule will be auto adjusted accordingly. If the amount of payment is less than the amount of the expected disbursement, then a new expected disbursement record with a status of scheduled will be created with an amount that is the difference between the amount that was expected and the payment amount. If the amount of the payment being posted is greater than the the amount of the expected payment it is being associated to, then the difference will be applied to the next expected payment. See examples below:
+If a payment is being posted for an expected installment on a payment plan, then the request payload will include this information either by providing the Id of the expected installment record the payment is for (ScheduledDisbursementId property) or setting the UseNextScheduledPayment property to true. If this is not done in the request, then the API will assume that the payment being posted is NOT for an expected disbursement. If UseNextScheduledPayment property is true, then the payment being posted will be associated to the expected disbursement record for the payment plan that has a status of scheduled and the earliest expected payment date. If the amount of the payment being posted does not match the amount of the expected disbursement it is being associated to, then the expected payment schedule will be auto adjusted accordingly. If the amount of payment is less than the amount of the expected disbursement, then a new expected disbursement record with a status of scheduled will be created with an amount that is the difference between the amount that was expected and the payment amount. If the amount of the payment being posted is greater than the the amount of the expected payment it is being associated to, then the difference will be applied to the next expected payment. See examples below:
 
-Expected payment schedule:
+**Expected payment schedule:**
 
-Payment # Expected Amount Expected Date Paid Amount Status
-1 $100 04/01/2024 $0 Scheduled
-2 $100 05/01/2024 $0 Scheduled
-3 $100 06/01/2024 $0 Scheduled
+| Payment # | Expected Amount | Expected Date | Paid Amount | Status    |
+|-----------|-----------------|----------------|-------------|-----------|
+| 1         | $100            | 04/01/2024     | $0          | Scheduled |
+| 2         | $100            | 05/01/2024     | $0          | Scheduled |
+| 3         | $100            | 06/01/2024     | $0          | Scheduled |
 
-Payment is posted and is associated to Expected payment # 1 above. Payment amount is $125. Payment schedule after API execution completes is as follows:
 
-Payment # Expected Amount Expected Date Paid Amount Status
-1 $100 04/01/2024 $100 Paid
-2 $25 05/01/2024 $25 Paid
-2 $75 05/01/2024 $0 Scheduled
-3 $100 06/01/2024 $0 Scheduled
+Payment is posted and is associated to Expected payment # 1 above. Payment amount is $125. Payment schedule after API completes is as follows:
 
-Payment is posted and is associated to Expected payment # 1 above. Payment amount is $75. Payment schedule after API execution completes is as follows:
+| Payment # | Expected Amount | Expected Date | Paid Amount | Status    |
+|-----------|-----------------|----------------|-------------|-----------|
+| 1         | $100            | 04/01/2024     | $100        | Paid      |
+| 2         | $25             | 05/01/2024     | $25         | Paid      |
+| 2         | $75             | 05/01/2024     | $0          | Scheduled |
+| 3         | $100            | 06/01/2024     | $0          | Scheduled |
 
-Payment # Expected Amount Expected Date Paid Amount Status
-1 $75 04/01/2024 $75 Paid
-1 $25 04/01/2024 $0 Scheduled
-2 $75 05/01/2024 $0 Scheduled
-3 $100 06/01/2024 $0 Scheduled
+Payment is posted and is associated to Expected payment #1. Payment amount is $75. Payment schedule after API completes is as follows:
+
+| Payment # | Expected Amount | Expected Date | Paid Amount | Status    |
+|-----------|-----------------|----------------|-------------|-----------|
+| 1         | $75             | 04/01/2024     | $75         | Paid      |
+| 1         | $25             | 04/01/2024     | $0          | Scheduled |
+| 2         | $75             | 05/01/2024     | $0          | Scheduled |
+| 3         | $100            | 06/01/2024     | $0          | Scheduled |
 
 The above auto adjust logic will execute as part of the post payment transaction unit of work. If the Payment vendor application creates and manages payment plans for students and is considered the system of record for payment plans, then the Payment Plan APIs will be utilized to push the payment plan data into Student. These APIs are designed to allow for data to be pushed into Student and replace the expected payment plan data that is auto adjusted per logic explained above keeping the payment plan data in Student synchronized with the payment plan data in the Payment provider data store.
 
@@ -86,7 +90,7 @@ The minimum required properties for this payload are StudentId, BillingTransacti
 
 ### Apply Posted Payments
 
-The apply payments endpoint is used when there is a need to explicitly specify which charge/adjustment transactions a given payment transaction will be applied to. Anthology has a feature that allows for payments to be automatically applied to charge and adjustment transactions using the auto apply configuration. If all of the institutions requrements for how payments should be applied to charges are satisfied via the configuration, then this endpoint is not needed. However, if there are cases, where the rules for how to apply payments are not fully covered via the auto payment apply configuration OR the setting to auto apply payments is turned off, then there may be a need to utilize this endpoint. If/how this endpoint is utilized will need to be clarified with the institution being worked with.
+The apply payments endpoint is used when there is a need to explicitly specify which charge/adjustment transactions a given payment transaction will be applied to. Anthology has a feature that allows for payments to be automatically applied to charge and adjustment transactions using the auto apply configuration. If all of the institution's requirements for how payments should be applied to charges are satisfied via the configuration, then this endpoint is not needed. However, if there are cases, where the rules for how to apply payments are not fully covered via the auto payment apply configuration OR the setting to auto apply payments is turned off, then there may be a need to utilize this endpoint. If/how this endpoint is utilized will need to be clarified with the institution being worked with.
 
 The API to use for applying payments is POST api/student-accounting/ledger-transactions-applypayments
 
@@ -107,7 +111,7 @@ Many Payment providers have a capability for processing refunds that are schedul
 
 #### Retrieve scheduled refunds
 
-The first step is to retrieve the scheduled refunds that need to be processed. The best way to do this is to constuct an odata query to retrieve the needed information. The scheduled refunds will reside in the Refunds entity. One of the filters needed in the query will be on the Status property. A value of 'N' in the Status property indicates that the refund is scheduled but has not yet been processed/paid. Other valid values for this property are P= Processed/Paid, V= Was paid but has since been Voided and S= Selected for Processing. The other key filters needed in the OData query will be on the DueDate property which indicates the date that the refund is due. Also, there will likely need to be filtering based on the fund source the refund is for. In many cases, refunds that are being returned to Title IV fund sources are not processed by Payment providers. The StudentAward navigation property on the Refunds entity will need to be utilized to construct the filtering condition needed to filter on the fund source(s) that should be included.
+The first step is to retrieve the scheduled refunds that need to be processed. The best way to do this is to constuct an odata query to retrieve the needed information. The scheduled refunds will reside in the Refunds entity. One of the filters needed in the query will be on the Status property. A value of 'N' in the Status property indicates that the refund is scheduled but has not yet been processed/paid. Other valid values for this property are P= Processed/Paid, V= Processed but has since been Voided and S= Selected for Processing. The other key filters needed in the OData query will be on the DueDate property which indicates the date that the refund is due. Also, there will likely need to be filtering based on the fund source the refund is for. In many cases, refunds that are being returned to Title IV fund sources are not processed by Payment providers. The StudentAward navigation property on the Refunds entity will need to be utilized to construct the filtering condition needed to filter on the fund source(s) that should be included.
 
 #### Flag the selected refund records
 
@@ -169,11 +173,11 @@ There is also a PATCH endpoint that allows for updating a previously posted misc
 
 In order to execute the APIs that have been discussed above, proper authorization needs to be configured. Whether using Basic Auth or OAuth with application key to authenticate, the user context the APIs are executing under will be a user record from the Staff entity. This is the user that authorization needs to be configured for. Access to the security console application is needed in order to set the needed permissions. Unlike the Anthology Student command APIs, the API endpoints discussed above have separate explicit tasks that need to be authorized. The Anthology Student command APIs are coupled with UI tasks. In order to properly authorize an API user to execute a command API, the applicable UI task needs to be identified and added for that user. For the APIs discussed in this document that exercise is not needed. Details are outlined below.
 
-Within the Security console, the API - Student Accounting and API - Student Payment Plan tasks should be added for the user. These 2 tasks will authorize the user to execute every operation contained within the Student Accounting and Student Payment Plan sections within the swagger document. If more refined permissions are needed and you want to authorize the execution of specific operations with Student Accounting or Student Payment Plan, then the applicable individual operations will need to be authorized. Typically, this level of granularity is not needed and authorizing the two tasks mentioned above is all that is needed.
+Within the Security console, the API - Student Accounting and API - Student Payment Plan tasks should be added for the user. These 2 tasks will authorize the user to execute every operation contained within the Student Accounting and Student Payment Plan sections within the swagger document. If more refined permissions are needed and you want to authorize the execution of specific operations with Student Accounting or Student Payment Plan, then the applicable individual operations will need to be authorized. Typically, this level of granularity is not needed and authorizing the two tasks mentioned above is all that should be done.
 
 ![PaymentVendorPartnerOverview](/assets/img/PaymentVendorPartnerOverview12.png)
 
-For any OData queries that will be executed, additional authorization is needed. The authorization model for the odata endpoint is to either grant permission to query all entities contained within the data model or to authorize each individual entity that data will be extracted from. Currently there are no tasks available for authorizing by business area of domain. Best practice is to NOT authorize access to the entire query data model so it will be necessary to create an inventoried list of each entity that data will be retrieved from and add the applicable operation for the user. In order to authorize at the operation level, select the role that the user is a member of. Then select Add Permissions. On the resulting page that is displayed, check the Show Operations checkbox. To make the resulting list easier to navigate, you may want to uncheck the Show Tasks, Show Built In Tasks and Show Roles check boxes. Click Apply.
+For any OData queries that will be executed, additional authorization is needed. The authorization model for the odata endpoint is to either grant permission to query all entities contained within the data model or to authorize each individual entity that data will be extracted from. Currently there are no tasks available for authorizing by business area of domain. Best practice is to NOT authorize access to the entire query data model so it will be necessary to create a list of each entity that data will be retrieved from and add the applicable operation for the user. In order to authorize at the operation level, select the role that the user is a member of. Then select Add Permissions. On the resulting page that is displayed, check the Show Operations checkbox. To make the resulting list easier to navigate, you may want to uncheck the Show Tasks, Show Built In Tasks and Show Roles check boxes. Click Apply.
 
 ![PaymentVendorPartnerOverview](/assets/img/PaymentVendorPartnerOverview13.png)
 

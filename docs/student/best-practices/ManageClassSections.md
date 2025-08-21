@@ -11,13 +11,13 @@ Creating and managing class sections is a fundamental requirement for the Academ
 
 This document will cover the following endpoints:
 
-api/commands/Academics/ClassSection/SaveNew
-api/commands/Academics/ClassSection/Save
-api/commands/Academics/ClassSection/SaveClassSectionPeriods
-api/commands/Academics/ClassSection/SaveInstructorAndPortalOptions
-api/commands/Academics/ClassSectionMeetingDate/SaveNew
-api/commands/Academics/ClassSectionMeetingDate/Save
-api/commands/Academics/CrossListClassSection/SaveCrossListClassSection
+- api/commands/Academics/ClassSection/SaveNew
+- api/commands/Academics/ClassSection/Save
+- api/commands/Academics/ClassSection/SaveClassSectionPeriods
+- api/commands/Academics/ClassSection/SaveInstructorAndPortalOptions
+- api/commands/Academics/ClassSectionMeetingDate/SaveNew
+- api/commands/Academics/ClassSectionMeetingDate/Save
+- api/commands/Academics/CrossListClassSection/SaveCrossListClassSection
 
 ## Data model notes
 
@@ -119,61 +119,27 @@ This endpoint should be used for updating any aspect of the meeting schedule for
 - ClassSection - this property is of type ClassSectionEntity and should be ignored. There are no dependencies within the execution logic of the API on any data in this property
 
 - MeetingPatterns - this property is a collection of type ClassSectionMeetingPatternEntity.
-
-       - Id - populate with 0 if a new instance of ClassSectionMeetingPatternEntity is being created.  Populate with Id of ClassSectionMeetingPatternEntity record if an existing instance
-              is being updated.
-
-       - MeetingPatternId - if the recurring meeting pattern is a pre-configured meeting pattern, then set this to the Id of the MeetingPattern entity instance being used.  If a new
-                            recurring meeting pattern is being created, then set to 0.  If an existing meeting pattern is being updated that was not created from a pre-configured meeting
-                            pattern, then set to the Id value of the ClassSectionCustomMeetingPatternEntity that is being updated
-
-       - Type - If the recurring meeting pattern is a pre-configured meeting pattern, then set to 'L'.  If the recurring meeting pattern is not created from a pre-configured meeting
-                pattern, then set to 'D'.
-
-       - ClassSectionId - populate with Id of class section the meeting schedule data is being updated for
-
-       - DayOfWeekRooms - this is a complex type and is a collection.  One element should be populated in this property for each day of week in the recurring schedule meeting pattern
-
-              - DayOfWeek - This is an Enum with the following values:  1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday
-
-              - BuildingId - populate with Id of Building that the scheduled meeting will occur in
-
-              - RoomId - populate with Id of Room that the scheduled meeting will occur in
-
-              - LocationId - populate with Id of Location that the scheduled meeting will occur in
-
-              - PrimaryInstructorId - populate with Id of primary instructor that will be teaching this class section meeting
-
-              - SecondaryInstructorList - this is collection property and should be populated with one element for each secondary instructor that will be teaching this class section
-                                          meeting.  Only the InstructorId property in the element needs to be populated.
-
-       - MeetingPattern - this is a complex type - ClassSectionCustomMeetingPatternEntity
-
-              - StartTime - populate with the start time of the class section scheduled meeting.  This is a datetime type.  However, only the time portion of the value is relevant.
-                            Populate the date portion of the value with "1899/12/30".
-
-              - EndTime - populate with the end time of the class section scheduled meeting.  This is a datetime type.  However, only the time portion of the value is relevant. Populate
-                          the date portion of the value with "1899/12/30".
-
-              - IsMeetingOn properties - a boolean type property exists for each day of the week.  Set the applicable bool properties to 1 for the days of the week that the class section
-                                         will be meeting on
-
-              - Id - if the recurring meeting pattern is a pre-configured meeting pattern, then set this to the Id of the MeetingPattern entity instance being used.  If a new recurring
-                     meeting pattern is being created, then set to 0.  If an existing meeting pattern is being updated that was not created from a pre-configured meeting pattern, then set
-                     to the Id value of the ClassSectionCustomMeetingPatternEntity that is being updated
-
-              - MeetingLength - set to the duration of the scheduled meeting in minutes
-
-              - PatternType - W= Weekly, M= Monthly
-
-              - Frequency - set to frequency of pattern type.  For example, if pattern type is Weekly and recurring pattern is the same every week, then Frequency would be set to 1. If
-                            recurring pattern is every other week, then Frequeny would be 2.
-
-              - RecurrenceStartWeeks - if recurring meeting pattern will start sometime AFTER the class section begins meeting, then specify the number of weeks after the start of the
-                                       class section when the recurring meeting pattern will begin.  If the meeting pattern begins when the class section starts, then set this value to 0.
-
-              - RecurrenceEndNumber - if recurring meeting pattern will occur only a set number of times and not carry through to the end date of the class section, then set this value
-                                      to the number of times it will occur. Otherwise, set to 0.
+    - Id - populate with 0 if a new instance of ClassSectionMeetingPatternEntity is being created.  Populate with Id of ClassSectionMeetingPatternEntity record if an existing instance is being updated.
+    - MeetingPatternId - if the recurring meeting pattern is a pre-configured meeting pattern, then set this to the Id of the MeetingPattern entity instance being used.  If a new recurring meeting pattern is being created, then set to 0.  If an existing meeting pattern is being updated that was not created from a pre-configured meeting pattern, then set to the Id value of the ClassSectionCustomMeetingPatternEntity that is being updated
+    - Type - If the recurring meeting pattern is a pre-configured meeting pattern, then set to 'L'.  If the recurring meeting pattern is not created from a pre-configured meeting pattern, then set to 'D'.
+    - ClassSectionId - populate with Id of class section the meeting schedule data is being updated for
+    - DayOfWeekRooms - this is a complex type and is a collection.  One element should be populated in this property for each day of week in the recurring schedule meeting pattern
+    - DayOfWeek - This is an Enum with the following values:  1=Sunday, 2=Monday, 3=Tuesday, 4=Wednesday, 5=Thursday, 6=Friday, 7=Saturday
+    - BuildingId - populate with Id of Building that the scheduled meeting will occur in
+    - RoomId - populate with Id of Room that the scheduled meeting will occur in
+    - LocationId - populate with Id of Location that the scheduled meeting will occur in
+    - PrimaryInstructorId - populate with Id of primary instructor that will be teaching this class section meeting
+    - SecondaryInstructorList - this is collection property and should be populated with one element for each secondary instructor that will be teaching this class section meeting.  Only the InstructorId property in the element needs to be populated.
+    - MeetingPattern - this is a complex type - ClassSectionCustomMeetingPatternEntity
+        - StartTime - populate with the start time of the class section scheduled meeting.  This is a datetime type.  However, only the time portion of the value is relevant. Populate the date portion of the value with "1899/12/30".
+        - EndTime - populate with the end time of the class section scheduled meeting.  This is a datetime type.  However, only the time portion of the value is relevant. Populate the date portion of the value with "1899/12/30".
+        - IsMeetingOn properties - a boolean type property exists for each day of the week.  Set the applicable bool properties to 1 for the days of the week that the class section will be meeting on
+        - Id - if the recurring meeting pattern is a pre-configured meeting pattern, then set this to the Id of the MeetingPattern entity instance being used.  If a new recurring meeting pattern is being created, then set to 0.  If an existing meeting pattern is being updated that was not created from a pre-configured meeting pattern, then set to the Id value of the ClassSectionCustomMeetingPatternEntity that is being updated
+        - MeetingLength - set to the duration of the scheduled meeting in minutes
+        - PatternType - W= Weekly, M= Monthly
+        - Frequency - set to frequency of pattern type.  For example, if pattern type is Weekly and recurring pattern is the same every week, then Frequency would be set to 1. If recurring pattern is every other week, then Frequeny would be 2.
+        - RecurrenceStartWeeks - if recurring meeting pattern will start sometime AFTER the class section begins meeting, then specify the number of weeks after the start of the class section when the recurring meeting pattern will begin.  If the meeting pattern begins when the class section starts, then set this value to 0.
+        - RecurrenceEndNumber - if recurring meeting pattern will occur only a set number of times and not carry through to the end date of the class section, then set this value to the number of times it will occur. Otherwise, set to 0.
 
 ### Managing Secondary Instructor Assignments and Instructor attribute data
 
@@ -190,19 +156,12 @@ When calling this endpoint, make sure the request is populated with each seconda
 - HideLocation - ignore. not used in API execution logic
 
 - Instructors - this is a collection property and will hold one element per instructor that is assigned to the class section. The primary instructor for the class section should always be in element 0.
-
-       - Id - set this to the Id of the StaffEntity instance for the Instructor that is assigned to the class section
-
-       - CanPostAttendance - Only applicable if this is a secondary instructor.  If set to 1, the instructor will be able to post attendance for the class section.
-
-       - CanPostFinalGrades - Only applicable if this is a secondary instructor.  If set to 1, the instructor will be able to post final grades for the class section.
-
-       - CanPostLessons - Only applicable if this is a secondary instructor.  If set to 1, the instructor will be able to post lesson scores for the class section.
-
-       - StaffPositionAssignmentId - Only applicable is using the Faculty Workload Management module.  Set to the Id of the StaffPositionAssignmentEntity instance associated to this
-                                     instructor for this class section.
-
-       - Attributes - this is a collection of int.  Specify the Id of each InstructorAttribute (ds/odata/InstructorAttributes) that is associated to the instructor for this class section.
+    - Id - set this to the Id of the StaffEntity instance for the Instructor that is assigned to the class section
+    - CanPostAttendance - Only applicable if this is a secondary instructor.  If set to 1, the instructor will be able to post attendance for the class section.
+    - CanPostFinalGrades - Only applicable if this is a secondary instructor.  If set to 1, the instructor will be able to post final grades for the class section.
+    - CanPostLessons - Only applicable if this is a secondary instructor.  If set to 1, the instructor will be able to post lesson scores for the class section.
+    - StaffPositionAssignmentId - Only applicable is using the Faculty Workload Management module.  Set to the Id of the StaffPositionAssignmentEntity instance associated to this instructor for this class section.
+    - Attributes - this is a collection of int.  Specify the Id of each InstructorAttribute (ds/odata/InstructorAttributes) that is associated to the instructor for this class section.
 
 ### Managing data for individual scheduled class section meetings
 
