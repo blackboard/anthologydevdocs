@@ -9,7 +9,7 @@ edited: ""
 
 The Service Catalog is a collection of Web Services made available to customers who license Anthology&reg; products.
 
-Note: An Anthology MyCampusInsight account is required to access. https://www.mycampusinsight.com/Documentation-Center/Help/Help_Home/Content/helphome.htm
+YOu can access to our Service Catalog through the following link: [Anthology Student Documentation](https://help.anthology.com/CNS/25.2/WebClient/Content/TopNavHome.htm)
 
 The Service Catalog system contains the Application Programming Intertace (API) documentation for SOAP-based web services and Windows Communication Foundation
 (WCF) services. Ihe documentation is intended to be used by programmers familiar with consuming SOAP and WCF services.
