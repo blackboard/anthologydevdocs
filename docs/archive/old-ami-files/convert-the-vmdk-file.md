@@ -7,6 +7,7 @@ edited: "2025-04-22"
 sidebar_position: 10
 ---
 
+<!--
 This document will outline the required steps to convert the VMDK file and upload it to AWS, this will be used later on to configure the AMI instance that will have Blackboard Learn preinstalled
 
 > If you haven't downloaded the server image yet, please download it here: [Blackboard Learn on AWS](/docs/blackboard/sandbox-envs/welcome)
@@ -270,4 +271,4 @@ Once the conversion process is completed, follow these steps to create an EC2 ma
 
 Now that you have your image, you can launch an EC2 machine by clicking the checkbox next to the image name and then, clicking `Launch instance from AMI`
 
-This will take you to the Launch wizard for EC2 that will prompt you for configuration details (such as server size, network information, ssh key pairs, etc.). These configuration details will depend solely on your judgment, however, we have a series of recommendations on our next article [Configure your deployed AMI image](/docs/blackboard/sandbox-envs/configure-the-ami) that you can follow to configure the server
+This will take you to the Launch wizard for EC2 that will prompt you for configuration details (such as server size, network information, ssh key pairs, etc.). These configuration details will depend solely on your judgment, however, we have a series of recommendations on our next article [Configure your deployed AMI image](/docs/blackboard/sandbox-envs/configure-the-ami) that you can follow to configure the server -->

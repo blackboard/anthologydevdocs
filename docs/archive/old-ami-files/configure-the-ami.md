@@ -7,6 +7,7 @@ edited: "2024-07-26"
 sidebar_position: 10
 ---
 
+<!--
 This document outlines the process of setting up and using the Learn REST and LTI Developer AMI. Previously available through the Amazon AWS Marketplace, this AMI is now distributed as a downloadable VMDK file. Developers can upload the VMDK file to their AWS account to create and manage their own AMI instances.
 
 For detailed instructions on converting the VMDK file to an AMI, refer to the [Convert and deploy the VMDK file](/docs/blackboard/sandbox-envs/convert-the-vmdk-file) guide.
@@ -232,4 +233,4 @@ if the issue persists, please create a ticket through our Anthology Support Port
 
 While using the AVG antivirus product on a Windows system (might also affect Linux and MacOS) and attempting to create a course using Learn, AVG may manifest what we believe is a false positive dialog regarding CVE-2014-0286-A. This can occur while using any browser.
 
-The error message is specific to now unsupported versions of Microsoft Internet Explorer 6 through 11. Our security team has indicated that this is an issue with the AVG software. See the AVG website for questions about configuring the AVG software, and for their contact information.
+The error message is specific to now unsupported versions of Microsoft Internet Explorer 6 through 11. Our security team has indicated that this is an issue with the AVG software. See the AVG website for questions about configuring the AVG software, and for their contact information. -->

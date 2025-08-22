@@ -124,6 +124,6 @@ From here on out, you're ready to start developing within Blackboard Learn. You 
 
 You can find additional information about our integration methods here:
 
-- REST API: [About Anthology REST APIs](/docs/blackboard//rest-apis/apis-intro)
+- REST API: [About Anthology REST APIs](/docs/blackboard/rest-apis/apis-intro.md)
 - LTI: [Getting started with LTI](/docs/blackboard/lti/welcome)
-- Ultra Extension Framework (UEF) [What is UEF](/docs/blackboard/uef/01-getting-started)
+- Ultra Extension Framework (UEF) [What is UEF](/docs/blackboard/uef/01-getting-started.md)

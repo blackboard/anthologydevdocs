@@ -43,15 +43,10 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** export-ami-98ffcb2475f78317t.vmdk
-- **Version:** Blackboard Learn 3900.112
-- **License Expiration date:** May 17th 2025.
-- **File size:** 6.9Gb
-- **Checksum (SHA512):**
+- **Name:** export-ami-7cd6acdb3b7ab0b5t.vmdk
+- **Version:** Blackboard Learn 3900.123
 
-a8b899d1e20f7be581238b638a1153843ad5ecf907badcb9ced8950fd7f463c26133d909a1980e9ac74bc4a6adbd14bf00a438d59e0391968bab3e6eee6d82a1
-
-# Insert the Download button here
+<BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
 
 :::
 
