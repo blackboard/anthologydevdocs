@@ -3,7 +3,7 @@ title: Blackboard Learn server
 id: welcome
 author: Sebastian Silva
 published: '2025-04-22'
-edited: '2025-08-20'
+edited: '2025-10-07'
 sidebar_position: 1
 ---
 
