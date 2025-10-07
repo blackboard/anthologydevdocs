@@ -2,8 +2,8 @@
 title: Blackboard Learn server
 id: welcome
 author: Sebastian Silva
-published: "2025-04-22"
-edited: "2025-08-20"
+published: '2025-04-22'
+edited: '2025-10-07'
 sidebar_position: 1
 ---
 
@@ -43,8 +43,10 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** export-ami-7cd6acdb3b7ab0b5t.vmdk
-- **Version:** Blackboard Learn 3900.123
+- **Name:** export-ami-03c677f3e26610c0t.vmdk
+- **Version:** Blackboard Learn 3902.1.0
+- **Publish date:** October 7th 2025
+- **Expiration Date:** December 19th 2025
 
 <BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
 
