@@ -10,7 +10,7 @@ edited: ''
 
 If you are looking forward to map entitlements with privileges when integrating a new application with a Learn instance, you are in the right place! You probably saw this:
 
-- "/learn/api/public/v1/courses/{courseId}/meetings" or this "course.attendance.VIEW"
+- `"/learn/api/public/v1/courses/{courseId}/meetings"` or this `"course.attendance.VIEW"`
 
 When you wanted to see something like this:
 

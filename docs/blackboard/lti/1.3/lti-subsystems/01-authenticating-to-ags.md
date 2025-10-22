@@ -2,7 +2,7 @@
 title: Authenticating to the LTI Subsystems
 id: lti-sub-authentication
 sidebar_position: 1
-edited: "2024-09-26"
+edited: '2024-09-26'
 ---
 
 Now that you know what LTI is, how it works, how the information is sent, and how you can create items within courses, we can move on to interacting with the additional subsystems available with LTI Advantage, which are Assignments and Grades Provisioning Service and Names and Roles Provisioning Service.
@@ -68,7 +68,7 @@ If the entry point of your tool was not a Deep Linking item but rather a Course 
 
 For other types of entry points, such as System Placements, Admin placements or a management UI from your tool directly, the claim for lineItems will not be included, and the necessary scopes will have to be gathered from previous interactions and tailored accordingly.
 
-More information about scopes and an explanation of each one is here: <https://www.imsglobal.org/spec/lti-ags/v2p0#assignment-and-grade-service-claim>
+More information about scopes and an explanation of each one is here: [https://www.imsglobal.org/spec/lti-ags/v2p0#assignment-and-grade-service-claim](https://www.imsglobal.org/spec/lti-ags/v2p0#assignment-and-grade-service-claim)
 
 :::info Service access without LTI launch
 If your system needs access to these services at any point without relying on an LTI launch, you can cache the endpoints received on an initial launch and use them directly to interact with any of the services.
@@ -142,19 +142,19 @@ To submit the request to the authentication endpoint, you need to make sure your
 
 ```js
 await axios({
-  method: "POST",
-  url: "https://developer.blackboard.com/api/v1/gateway/oauth2/jwttoken",
+  method: 'POST',
+  url: 'https://developer.blackboard.com/api/v1/gateway/oauth2/jwttoken',
   headers: {
-    "Content-Type": "application/x-www-form-urlencoded",
+    'Content-Type': 'application/x-www-form-urlencoded',
   },
   data: {
-    grant_type: "client_credentials",
+    grant_type: 'client_credentials',
     client_assertion_type:
-      "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+      'urn:ietf:params:oauth:client-assertion-type:jwt-bearer',
     client_assertion:
-      "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEyMzQ1In0.eyJpc3MiOiJsdGktdG9vbCIsInN1YiI6ImJhYWY3ZGE4LWY5OWEtNDJjYS1hNzJmLTI5MmNmZDBlYjI3ZCIsImF1ZCI6WyJodHRwczovL2RldmVsb3Blci5ibGFja2JvYXJkLmNvbS9hcGkvdjEvZ2F0ZXdheS9vYXV0aDIvand0dG9rZW4iLCJmb28iXSwiaWF0IjoxNzI3Mzk2NDA3LCJleHAiOjE3MjczOTY3MDd9.UfC4Hmt_aZsrjlj2MWxWgZNCJ1trWEhIU0v5jt1yrBPHQm52CfY8Oj3XEsFIjkh6v6AwUdxTbvxqh9DL1xb3Wg4MZsqOIFNDS8BSWIEkv8lLdjO5P3PHYhf_LQZxZsgjWLPtf1bnu2KG5kUOQupSwdKDMBqSskd_ICbluLgFgJh8XWBPA7pE_q-W8TD_4IIrlF4M9voW1Uab9-ctLMQncV-2SOKdPuhAcmmfMyUtcK6UHvCgZwKhScrm-b1QkT1Ow1gnCuCnjcSwY74-cKYf0ik7dxTs9VdZ_7ggO2uhciMPU5xLyxP6Ca3Kl9qs8sqAImcMI1rPDNodta6bN0jOSw",
+      'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEyMzQ1In0.eyJpc3MiOiJsdGktdG9vbCIsInN1YiI6ImJhYWY3ZGE4LWY5OWEtNDJjYS1hNzJmLTI5MmNmZDBlYjI3ZCIsImF1ZCI6WyJodHRwczovL2RldmVsb3Blci5ibGFja2JvYXJkLmNvbS9hcGkvdjEvZ2F0ZXdheS9vYXV0aDIvand0dG9rZW4iLCJmb28iXSwiaWF0IjoxNzI3Mzk2NDA3LCJleHAiOjE3MjczOTY3MDd9.UfC4Hmt_aZsrjlj2MWxWgZNCJ1trWEhIU0v5jt1yrBPHQm52CfY8Oj3XEsFIjkh6v6AwUdxTbvxqh9DL1xb3Wg4MZsqOIFNDS8BSWIEkv8lLdjO5P3PHYhf_LQZxZsgjWLPtf1bnu2KG5kUOQupSwdKDMBqSskd_ICbluLgFgJh8XWBPA7pE_q-W8TD_4IIrlF4M9voW1Uab9-ctLMQncV-2SOKdPuhAcmmfMyUtcK6UHvCgZwKhScrm-b1QkT1Ow1gnCuCnjcSwY74-cKYf0ik7dxTs9VdZ_7ggO2uhciMPU5xLyxP6Ca3Kl9qs8sqAImcMI1rPDNodta6bN0jOSw',
     scope:
-      "https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly https://purl.imsglobal.org/spec/lti-ags/scope/lineitem https://purl.imsglobal.org/spec/lti-ags/scope/lineitem.readonly https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly https://purl.imsglobal.org/spec/lti-ags/scope/score",
+      'https://purl.imsglobal.org/spec/lti-nrps/scope/contextmembership.readonly https://purl.imsglobal.org/spec/lti-ags/scope/lineitem https://purl.imsglobal.org/spec/lti-ags/scope/lineitem.readonly https://purl.imsglobal.org/spec/lti-ags/scope/result.readonly https://purl.imsglobal.org/spec/lti-ags/scope/score',
   },
 });
 ```

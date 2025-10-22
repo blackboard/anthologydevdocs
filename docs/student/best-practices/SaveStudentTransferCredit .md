@@ -1,10 +1,10 @@
 ---
-title: "Using the SaveStudentTransferCredit command API"
+title: 'Using the SaveStudentTransferCredit command API'
 id: studentapi-savestudenttransfercredit-details
 sidebar_position: 1
 author: Jim Burns
-published: "2024-06-26"
-edited: "2024-06-26"
+published: '2024-06-26'
+edited: '2024-06-26'
 ---
 
 A common use case for integrators is to persist data for courses completed at other institutions. There is capability in Anthology Student for a student to have course requirements satisfied with course work that has been completed at other institutions. The high level process is for a user to create a student transfer credit record which consists of the course(s) that have been completed at other institutions as well as the internal course(s) that the external course work will be satifying. There are many cases where the process of articulating which external courses satisfy which internal courses is handled outside of the Anthology Student applicatuin boundary. In this case, it is critical to be able to persist this data into Anthology Student so that business processes that have dependencies on transfer credit data will operate as expected. The command API endpoint that is used for persisting this data is api/commands/Admissions/StudentTransferCredit/SaveStudentTransferCredit. This document will document the pertinent details for being able to successfully leverage and execute this API.
@@ -49,57 +49,66 @@ IMPORTANT NOTE: When looking at the request payload documentation in Swagger, yo
 
 An example payload for this API is below.
 
-approvedDate: null
-isApproved: false
-rowVersion: null
-studentEnrollmentPeriodId: 961
-studentId: 50873
-studentTransferCreditExternalCourseList:
-0: {
-collegeCourseClockHours: null
-collegeCourseClockHoursAttempted: null
-collegeCourseClockHoursEarned: null
-collegeCourseCreditHoursAttempted: 0
-collegeCourseCreditHoursEarned: 0
-collegeCourseCredits: 0
-collegeCourseGrade: "A"
-collegeCourseGradePoints: 0
-collegeCourseId: 8
-collegeCourseStartDate: "2023/12/01 00:00:00"
-collegeId: 4
-completionDate: "2023/12/31 00:00:00"
-entityState: 0
-highSchoolCourseId: null
-highSchoolId: null
-id: -1}
-1: {
-collegeCourseClockHours: 0
-collegeCourseClockHoursAttempted: 0
-collegeCourseClockHoursEarned: 0
-collegeCourseCreditHoursAttempted: 3
-collegeCourseCreditHoursEarned: 3
-collegeCourseCredits: 3
-collegeCourseGrade: "B"
-collegeCourseGradePoints: 0
-collegeCourseId: 7
-collegeCourseStartDate: "2022/09/01 00:00:00"
-collegeId: 3
-completionDate: "2022/10/31 00:00:00"
-entityState: 0
-highSchoolCourseId: null
-highSchoolId: null
-id: -1}
-studentTransferCreditId: -1
-studentTransferCreditInternalCourseList:
-0: {
-courseId: 10
-credits: 3
-entityState: 0
-hours: 0
-id: -1}
-termId: null
-transferCreditStatusId: "1"
-transferCreditTypeId: "4"
+```json
+{
+  "approvedDate": null,
+  "isApproved": false,
+  "rowVersion": null,
+  "studentEnrollmentPeriodId": 961,
+  "studentId": 50873,
+  "studentTransferCreditExternalCourseList": [
+    {
+      "collegeCourseClockHours": null,
+      "collegeCourseClockHoursAttempted": null,
+      "collegeCourseClockHoursEarned": null,
+      "collegeCourseCreditHoursAttempted": 0,
+      "collegeCourseCreditHoursEarned": 0,
+      "collegeCourseCredits": 0,
+      "collegeCourseGrade": "A",
+      "collegeCourseGradePoints": 0,
+      "collegeCourseId": 8,
+      "collegeCourseStartDate": "2023/12/01 00:00:00",
+      "collegeId": 4,
+      "completionDate": "2023/12/31 00:00:00",
+      "entityState": 0,
+      "highSchoolCourseId": null,
+      "highSchoolId": null,
+      "id": -1
+    },
+    {
+      "collegeCourseClockHours": 0,
+      "collegeCourseClockHoursAttempted": 0,
+      "collegeCourseClockHoursEarned": 0,
+      "collegeCourseCreditHoursAttempted": 3,
+      "collegeCourseCreditHoursEarned": 3,
+      "collegeCourseCredits": 3,
+      "collegeCourseGrade": "B",
+      "collegeCourseGradePoints": 0,
+      "collegeCourseId": 7,
+      "collegeCourseStartDate": "2022/09/01 00:00:00",
+      "collegeId": 3,
+      "completionDate": "2022/10/31 00:00:00",
+      "entityState": 0,
+      "highSchoolCourseId": null,
+      "highSchoolId": null,
+      "id": -1
+    }
+  ],
+  "studentTransferCreditId": -1,
+  "studentTransferCreditInternalCourseList": [
+    {
+      "courseId": 10,
+      "credits": 3,
+      "entityState": 0,
+      "hours": 0,
+      "id": -1
+    }
+  ],
+  "termId": null,
+  "transferCreditStatusId": "1",
+  "transferCreditTypeId": "4"
+}
+```
 
 In the example, there are 2 external courses taken that are satisfying the requirements for 1 internal course.
 

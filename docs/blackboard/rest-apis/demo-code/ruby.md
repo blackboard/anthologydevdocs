@@ -2,8 +2,8 @@
 title: Demo using Ruby
 id: ruby-demo
 categories: Learn Rest
-published: ""
-edited: ""
+published: ''
+edited: ''
 author: Scott Hurrey
 ---
 
@@ -117,9 +117,10 @@ should include the objectId being deleted.
 
 **Create**
 
+```ruby
 # Ruby Demo
 
-    RestClient.post($DSK_PATH, payload, :content_type => :json, :accept => :json, :Authorization => $auth){ |response, request, result, &block|
+RestClient.post($DSK_PATH, payload, :content_type => :json, :accept => :json, :Authorization => $auth){ |response, request, result, &block|
            case response.code
                   when 201
                     p "It worked !"
@@ -132,7 +133,7 @@ should include the objectId being deleted.
              end
     }
 
-````
+```
 
 **Read**
 
@@ -146,7 +147,7 @@ should include the objectId being deleted.
                    response.return!(request, result, &block)
                  end
                }
-````
+```
 
 **Update**
 

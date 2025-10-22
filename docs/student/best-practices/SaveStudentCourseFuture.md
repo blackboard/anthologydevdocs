@@ -1,10 +1,10 @@
 ---
-title: "Add a Future Course for a Student"
+title: 'Add a Future Course for a Student'
 id: studentapi-savestudentcoursefuture-details
 sidebar_position: 1
 author: Jim Burns
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 The StudentCourse entity in the Student data model will hold a record for all courses that a student has completed, is currently taking, is registered for and plans to take in the future. There are instances where there is a need to add a record to this entity for a course that the student plans to take in the future. Other actions that are taken on records in this entity are to register the student for a course, post a final grade for a course, drop a student from a course and unregister a student from a course. The scope of this article will be to provide the details needed for using the API to add a course that the student will take in the future. These other actions that can be performed using this API endpoint will be covered in other articles. Once a future status course is inserted/added to the StudentCourse entity, the action of registering the student for the course can then be taken at the applicable time in the future. NOTE: If the integration use case is to register a student for a course that does not yet exist in the StudentCourse entity for the student, then two API calls will be required. The first will be to add the course in a future status (scope of this document) and the second will be to register the student into the course which will be covered in another document.
@@ -47,20 +47,22 @@ TermId: OPTIONAL: populate with Id of Term that the student plans to take this c
 
 ### Sample JSON payload
 
+```json
 {
-"payload" : {
-"academicyearid": 0,
-"action": 1,
-"campusId": 5,
-"classsectionid": 0,
-"comments": "test comment/note",
-"courseid": 46,
-"status": "F",
-"studentcoursefeescheduleid": 0,
-"studentenrollmentdpacoursecategoryid": 889,
-"studentenrollmentperiodid": 257
+  "payload": {
+    "academicyearid": 0,
+    "action": 1,
+    "campusId": 5,
+    "classsectionid": 0,
+    "comments": "test comment/note",
+    "courseid": 46,
+    "status": "F",
+    "studentcoursefeescheduleid": 0,
+    "studentenrollmentdpacoursecategoryid": 889,
+    "studentenrollmentperiodid": 257
+  }
 }
-}
+```
 
 ## Authorization
 

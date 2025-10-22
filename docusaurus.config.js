@@ -1,44 +1,45 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const { themes } = require('prism-react-renderer');
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Anthology Developer Docs",
-  tagline: "Developer Documentation",
-  favicon: "img/favicon.ico",
+  title: 'Anthology Developer Docs',
+  tagline: 'Developer Documentation',
+  favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   // url: 'https://blackboard.github.io',
   // url: 'https://anthologydevdocs.github.io',
-  url: "https://docs.anthology.com",
+  url: 'https://docs.anthology.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
-  baseUrl: "/",
-  projectName: "anthologydevdocs",
-  organizationName: "Anthology",
+  baseUrl: '/',
+  projectName: 'anthologydevdocs',
+  organizationName: 'Anthology',
   trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   // organizationName: 'blackboard', // Usually your GitHub org/user name.
   //projectName: 'docusaurus', // Usually your repo name.
 
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
@@ -48,14 +49,14 @@ const config = {
           // autoCollapseCategories: true,
           //},
 
-          sidebarPath: require.resolve("./sidebar.js"),
+          sidebarPath: require.resolve('./sidebar.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/blackboard/anthologydevdocs/tree/main",
+          editUrl: 'https://github.com/blackboard/anthologydevdocs/tree/main',
         },
         blog: {
           showReadingTime: true,
-          postsPerPage: "ALL",
+          postsPerPage: 'ALL',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -63,8 +64,8 @@ const config = {
         },
         theme: {
           customCss: [
-            require.resolve("./src/css/custom.css"),
-            require.resolve("./src/css/footer.css"),
+            require.resolve('./src/css/custom.css'),
+            require.resolve('./src/css/footer.css'),
           ],
         },
       }),
@@ -75,30 +76,30 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/social-card.png",
+      image: 'img/social-card.png',
       navbar: {
         logo: {
-          alt: "Anthology Logo",
-          src: "/img/anthology-logo-light.svg",
-          srcDark: "/img/anthology-logo-dark.svg",
+          alt: 'Anthology Logo',
+          src: '/img/anthology-logo-light.svg',
+          srcDark: '/img/anthology-logo-dark.svg',
         },
         items: [
           {
-            to: "/",
-            position: "right",
-            label: "Home",
+            to: '/',
+            position: 'right',
+            label: 'Home',
           },
-          { to: "/blog", label: "Blog", position: "right" },
-          { to: "/contributions", label: "Contributions", position: "right" },
+          { to: '/blog', label: 'Blog', position: 'right' },
+          { to: '/contributions', label: 'Contributions', position: 'right' },
           {
-            type: "html",
-            position: "right",
+            type: 'html',
+            position: 'right',
             value:
               '<a class="navbar-gh-link" href="https://github.com/blackboard/anthologydevdocs" target="_blank"><img class="navbar-gh-img-link" src="/img/github-logo.png"/></a>',
           },
           {
-            type: "search",
-            position: "left",
+            type: 'search',
+            position: 'left',
           },
         ],
       },
@@ -111,13 +112,27 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: [
+          'bash',
+          'diff',
+          'json',
+          'java',
+          'javascript',
+          'jsx',
+          'typescript',
+          'tsx',
+          'python',
+          'php',
+          'sql',
+          'yaml',
+        ],
       },
     }),
   plugins: [
     [
-      require.resolve("docusaurus-lunr-search"),
+      require.resolve('docusaurus-lunr-search'),
       {
-        languages: ["en"],
+        languages: ['en'],
         disableVersioning: true,
       },
     ],

@@ -1,9 +1,9 @@
 ---
-title: "Getting started with LTI"
+title: 'Getting started with LTI'
 sidebar_position: 1
 id: welcome
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 Learning Tools Interoperability (LTI) is a standard from the 1EdTech group. This standard focuses on contextual launches and grade return, providing a way to send and retrieve this data without manually migrating the information from one service into the other. LTI has two different standards available, LTI 1.1 and LTI 1.3. Both can be used to integrate with an LMS and exchange information.
@@ -49,13 +49,13 @@ Blackboard Learn currently has full support for the two different integration ve
 
 ## Test code and tools
 
-1EdTech has prepared a test tool that you can use to test an LTI connection with an LMS, you can access it and follow the steps to review the workflow here: <https://lti-ri.imsglobal.org/>. The tool is written in Ruby and is open source, there are other LTI resources available from 1EdTech here: <https://github.com/IMSGlobal/ltibootcamp>
+1EdTech has prepared a test tool that you can use to test an LTI connection with an LMS, you can access it and follow the steps to review the workflow here: [https://lti-ri.imsglobal.org/](https://lti-ri.imsglobal.org/). The tool is written in Ruby and is open source, there are other LTI resources available from 1EdTech here: [https://github.com/IMSGlobal/ltibootcamp](https://github.com/IMSGlobal/ltibootcamp)
 
 We also have a sample LTI tool written in React and Node.js that can be found here:
-<https://github.com/blackboard/BBDN-LTI-Tool-Provider-Node>
+[https://github.com/blackboard/BBDN-LTI-Tool-Provider-Node](https://github.com/blackboard/BBDN-LTI-Tool-Provider-Node)
 
 ## Useful links
 
-- IMS Security Framework: <https://www.1edtech.org/standards/security-framework>
-- LTI Advantage specifications: <https://www.1edtech.org/standards/lti>
-- The implementation guide is very helpful as well <https://www.imsglobal.org/spec/lti/v1p3/impl/>
+- IMS Security Framework: [https://www.1edtech.org/standards/security-framework](https://www.1edtech.org/standards/security-framework)
+- LTI Advantage specifications: [https://www.1edtech.org/standards/lti](https://www.1edtech.org/standards/lti)
+- The implementation guide is very helpful as well [https://www.imsglobal.org/spec/lti/v1p3/impl/](https://www.imsglobal.org/spec/lti/v1p3/impl/)

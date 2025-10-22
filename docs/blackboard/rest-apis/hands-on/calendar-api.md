@@ -1,9 +1,9 @@
 ---
-title: "Working with Calendar APIs"
+title: 'Working with Calendar APIs'
 id: calendar-apis
 categories: Learn REST Working-with APIs Calendar
-published: "2022-10-03"
-edited: "2023-10-20"
+published: '2022-10-03'
+edited: '2023-10-20'
 author: Davey Herrera, Mark O'Neil
 ---
 
@@ -90,7 +90,7 @@ If using 3LO and using calendarItems of type OfficeHours, those will be assigned
 
 1. **Read**:
    a. Call the read endpoint specifying the Course Calendar Item Type and the courseId of the course for which you want the calendarItems (returns a collection of calendarItems).
-   b. Call the read {calendarItemId} endpoint specifying the Course Calendar Item Type and the courseId of the course for which you want the calendarItem (returns a single of calendarItem).
+   b. Call the read `{calendarItemId}` endpoint specifying the Course Calendar Item Type and the courseId of the course for which you want the calendarItem (returns a single of calendarItem).
 2. **Update**: Call the patch endpoint specifying the Course Calendar Item Type and the calendar item Id you wish to update.
 3. **Delete**: Call the delete endpoint specifying the Course Calendar Item Type and the calendar item Id you wish to delete.
 
@@ -651,7 +651,7 @@ The ISO 8601 standard provides the following format for a date-time:
 
 Following the above formatting these are all the same date and time (October 10, 2023, 1:15:30 pm):
 
-- 2023-10-15T13:15:30Z << this is the format returned in REST API results
+- 2023-10-15T13:15:30Z ← this is the format returned in REST API results
 - 20231015T15T13:15:30Z
 - 20231015T15T131530Z
 - 2023-10-15T13:15:30

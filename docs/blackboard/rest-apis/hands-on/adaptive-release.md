@@ -1,10 +1,10 @@
 ---
-title: "Working with Adaptive Release"
+title: 'Working with Adaptive Release'
 id: adaptive-release
 categories: Learn REST groups
 author: Davey Herrera
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 > Using Bb Learn 3900.34.0-rel.24+41a9160
@@ -51,7 +51,7 @@ You can create 1 rule per content_id!
 
 To create a rule on a specific content id:
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules`
 
 And in the body:
 
@@ -65,13 +65,13 @@ And in the body:
 
 To obtain the rule that exist on a specific content id:
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules`
 
 ### Updating a Rule
 
 To update a rule you can use (you need to know the rule id first):
 
-- PATCH {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId
+- `PATCH {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId`
 
 and in the body:
 
@@ -105,7 +105,7 @@ Means the rule already exists, as I mentioned, one contentID can only have one r
 
 You can also delete a rule easlily:
 
-- DELETE /learn/api/public/v1/courses/{courseId}/contents/{contentId}/adaptiveRelease/rules/{ruleId}
+- `DELETE /learn/api/public/v1/courses/{courseId}/contents/{contentId}/adaptiveRelease/rules/{ruleId}`
 
 ## Criteria (C.R.U.D)
 
@@ -113,7 +113,7 @@ You can get all the criteria associated to a content_id using:
 
 ### Returning criteria
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria`
 
 You should get a result like this (may vary depending on the criteria that has already been setup):
 
@@ -142,7 +142,7 @@ This criteria specifies a gradable item, a maximun and a minimum score. When the
 
 You can get the gradeColumn id using (you need the course_id):
 
-- GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/gradebook/columns
+- `GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/gradebook/columns`
 
 It returns the following when 200:
 
@@ -200,7 +200,7 @@ Now, lets create the criteria:
 
 You can create it using (You need course_id, contentId and ruleId):
 
-- POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria
+- `POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria`
 
 And on the body:
 
@@ -280,7 +280,7 @@ Explaining the parameters a little bit further:
 
 You can create this using:
 
-- POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria
+- `POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria`
 
 And the body looks like this:
 
@@ -330,7 +330,7 @@ This means that content will be shown starting that date with no end date.
 
 By default, all members are selected to be affected by the criteria, however, it is possible to select specific Members or groups of the course to apply these rules on, Before we start talking about the membership criteria, if you've already applied membership criteria to the content and you call:
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria`
 
 Returns:
 
@@ -361,7 +361,7 @@ The "Memberships" part of the returned values from this endpoint, indicates that
 
 We can query the membership id only if required using:
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId`
 
 Returns:
 
@@ -385,7 +385,7 @@ To get the users you need to now:
 
 You can query using:
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId/users
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId/users`
 
 Returns:
 
@@ -412,7 +412,7 @@ To POST a list of users, you need to know the user_id which can be retrieved usi
 
 > Please keep in mind the user needs to be enrolled first in the course in order for all of this to work!
 
-- GET {{baseUrl}}/learn/api/public/v1/users
+- `GET {{baseUrl}}/learn/api/public/v1/users`
 
 Returns:
 
@@ -452,7 +452,7 @@ Now to post it, we use PUT.
 
 You need to pass the same information:
 
-- PUT {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId/groups
+- `PUT {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId/groups`
 
 1. Course_id
 2. Content_id
@@ -518,7 +518,7 @@ Basically, you can create groups and associate them to adaptive release content,
 
 ### Put Groups as criteria:
 
-- PUT {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId/groups
+- `PUT {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/adaptiveRelease/rules/:ruleId/criteria/:criterionId/groups`
 
 And the body:
 
