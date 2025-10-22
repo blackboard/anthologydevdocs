@@ -2,8 +2,8 @@
 title: Tutorial - Build a Java Command Line REST Application
 id: java-command-line
 categories: Learn Rest
-published: ""
-edited: ""
+published: ''
+edited: ''
 author: Scott Hurrey
 ---
 
@@ -522,7 +522,7 @@ Let's get started:
     TermHandler termHandler = new TermHandler(_hostname);
 ```
 
-3.  Between the closing curly bracket for the first _if( OPER_ALL || OPER_DATASOURCE) {_ and the start of the second, add:
+3.  Between the closing curly bracket for the first `if( OPER_ALL || OPER_DATASOURCE) {` and the start of the second, add:
 
 ```java
     // Term object

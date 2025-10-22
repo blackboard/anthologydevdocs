@@ -1,11 +1,11 @@
 ---
-title: "3LO"
+title: '3LO'
 id: 3lo
 categories: Learn REST
 sidebar_position: 8
 author: Scott Hurrey
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 # Three-Legged OAuth
@@ -38,8 +38,6 @@ first time Marlee opens the app, the app will send a GET request to
 | client_id     | The application's OAuth **key**, from the **key**/secret pair as registered in the developer portal.<br />**NOTE: This is NOT the Application ID!!**                                                                                                                                                                                                                | client_id=8DBBA050-B830-414F-B7F1-0B448A6320C9 |
 | scope         | The application's permissions: read, write, delete, and/or offline.<br />Offline is required to use Refresh Tokens<br />_**CAUTION**_: If you do not **set the scope appropriately** you will still be able to get an access_token, but when using the access_token you will not be able to GET, POST, or UPDATE as expected. Instead you will get error responses. | scope=read                                     |
 | state         | Opaque value used to prevent Cross Site Request Forgery                                                                                                                                                                                                                                                                                                             | state=DC1067EE-63B9-40FE-A0AD-B9AC069BF4B0     |
-
-{: .striped}
 
 So in this example, my request would look like:
 

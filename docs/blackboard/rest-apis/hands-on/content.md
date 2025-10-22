@@ -3,8 +3,8 @@ title: Managing content with REST API in ULTRA (C.R.U.D)
 id: creating-content-with-rest-apis
 categories: Learn REST API Content
 Author: Davey Herrera
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 > This guide was created using Learn Release 3900.37.0-rel.2+bf4004cd
@@ -19,7 +19,7 @@ Let's first get the available content available in the root of the course, this 
 
 The ROOT is where content such "This is a folder", "This is a test" and "This is another folder" lives.
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents`
 
 Returns when 200:
 
@@ -133,7 +133,7 @@ Returns when 200:
 We can also get content of one specific content_id:
 ![Returning content with the api](/assets/img/manage-content-2.png)
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId`
 
 Returns:
 
@@ -174,8 +174,8 @@ Returns:
 
 We can create new content or update existing content in the ROOT of the course using:
 
-- POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents
-- PATCH {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId
+- `POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents`
+- `PATCH {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId`
 
 And in the body:
 
@@ -271,7 +271,7 @@ Looks like this:
 
 ### Deleting content
 
-- DELETE {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId
+- `DELETE {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId`
 
 Returns
 
@@ -287,7 +287,7 @@ Let's say I want to check the content within my folder:
 
 ![Creating content with the api](/assets/img/manage-content-5.png)
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/children
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/children`
 
 Returns when 200:
 
@@ -334,7 +334,7 @@ Please review the types of content you can create based on the contentHandler, p
 
 ### Creating a folder within a folder
 
-- POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/children
+- `POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/children`
 
 And in the body (Please notice the parentId attribute AND contentHandler):
 
@@ -399,7 +399,7 @@ And looks:
 
 ### Creating content within a folder
 
-- POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/children
+- `POST {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId/children`
 
 And in the body (Please notice the parentId attribute AND contentHandler):
 
@@ -468,7 +468,7 @@ And it looks:
 
 This is the same as:
 
-- PATCH {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId
+- `PATCH {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId`
 
 Which was reviewed (and is the same) in the previous segment.
 
@@ -476,7 +476,7 @@ Which was reviewed (and is the same) in the previous segment.
 
 This is the same as:
 
-- DELETE {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId
+- `DELETE {{baseUrl}}/learn/api/public/v1/courses/:courseId/contents/:contentId`
 
 Returns
 

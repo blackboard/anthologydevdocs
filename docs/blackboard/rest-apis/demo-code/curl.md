@@ -1,9 +1,9 @@
 ---
-title: "cURL Demo"
+title: 'cURL Demo'
 id: curl-demo
 categories: Learn Rest
-published: ""
-edited: ""
+published: ''
+edited: ''
 author: Mark Kauffman
 ---
 
@@ -525,7 +525,7 @@ externalId:restdemouser", "extraInfo":"e709f6982af744dfae18d42f68e73fb1"}_
 **Create Grade Column**
 
 ```bash
-curl -k -X POST -H "Authorization: Bearer <Authorization Token>" -H "Content-Type: application/json" --data '<JSON to create a Grade Column>' [https://saashost.blackboard.com/learn/api/public/v1/courses/{courseId}/gradebook/columns
+curl -k -X POST -H "Authorization: Bearer <Authorization Token>" -H "Content-Type: application/json" --data '<JSON to create a Grade Column>' https://saashost.blackboard.com/learn/api/public/v1/courses/{courseId}/gradebook/columns
 ```
 
 Example:
@@ -716,7 +716,7 @@ using the appropriate GET. Read the documentation at developer.anthology.com.
 **Currently Only Available For Ultra Courses (Remember to check the Learn version for availably of the APIs @ [https://developer.anthology.com](https://developer.anthology.com))**
 
 1. Get a course's content root. root will only work with the \_abc_xyz ID
-   format. It will not work for courseId:<course_id> format.
+   format. It will not work for `courseId:<course_id>` format.
 
 ```bash
 curl -k -X GET -H "Authorization: Bearer <Access Token> " https://<LearnHost>/learn/api/public/v1/courses/<ID>/contents/root
@@ -766,7 +766,7 @@ temporary location and goes away sometime after being uploaded. Also, there is
 a bug in the following where if attempts allowed is too large it will fail.
 I've not experimented to find the limit.)
 
-Reference: [POST /learn/api/public/v1/courses/{courseId}/contents/createAssignment](https://developer.anthology.com/portal/displayApi)
+Reference: [POST /learn/api/public/v1/courses/\{courseId\}/contents/createAssignment](https://developer.anthology.com/portal/displayApi)
 
 Example:
 
@@ -898,10 +898,15 @@ course/gradebook/columns/_3297_1/attempts_528_1
 ```
 
 ```json
-{"id":"528_1", "userId":"_649_1", "status":"NeedsGrading", "studentSubmission":"<!-- {\"bbMLEditorVersion\":1} -->\n<a href=\"[https://bd-partner-a-ultra.blackboard.com/bbcswebdav/xid-23611_1" data-bbfile=\"{ & quot;render & quot;: & quot;inline & quot;, & quot;linkName & quot;: & quot;2016.03.BlackboardPartnerUpdate.pdf & quot;, & quot;mimeType & quot;: & quot;application/pdf & quot;}\">2016.03.BlackboardPartnerUpdate.pdf</a>", "exempt":false, "created":"2018-05-18T02:48:18.329Z"}
+{
+  "id": "528_1",
+  "userId": "_649_1",
+  "status": "NeedsGrading",
+  "studentSubmission": "<!-- {\"bbMLEditorVersion\":1} -->\n<a href=\"https://bd-partner-a-ultra.blackboard.com/bbcswebdav/xid-23611_1\" data-bbfile=\"{&quot;render&quot;:&quot;inline&quot;,&quot;linkName&quot;:&quot;2016.03.BlackboardPartnerUpdate.pdf&quot;,&quot;mimeType&quot;:&quot;application/pdf&quot;}\">2016.03.BlackboardPartnerUpdate.pdf</a>",
+  "exempt": false,
+  "created": "2018-05-18T02:48:18.329Z"
+}
 ```
-
-{: .code-text-to-normal}
 
 Now, logged in as the instructor, we can see that there has been 1 submission.
 And we see the student's submission with the attachment.

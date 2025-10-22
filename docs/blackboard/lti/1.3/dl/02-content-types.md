@@ -1,14 +1,14 @@
 ---
 title: Course Content Types for Deep Linking 2.0
 id: dl-types
-published: ""
-edited: "2024-09-25"
+published: ''
+edited: '2024-09-25'
 sidebar_position: 2
 ---
 
 Based on the requirements of your tool (and its features), you can create and submit JWT with different content types, even more than one at the same time if you need to add several links at the same time.
 
-The following is a brief overview of the types of content that can be created through Deep Linking (for full details, please refer to the specifications here: <https://www.imsglobal.org/spec/lti-dl/v2p0#deep-linking-response-example>):
+The following is a brief overview of the types of content that can be created through Deep Linking (for full details, please refer to the specifications here: [https://www.imsglobal.org/spec/lti-dl/v2p0#deep-linking-response-example](https://www.imsglobal.org/spec/lti-dl/v2p0#deep-linking-response-example)):
 
 | Type             | Has grading | Can be embedded into other course contents |
 | ---------------- | ----------- | ------------------------------------------ |

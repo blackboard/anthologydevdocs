@@ -1,10 +1,10 @@
 ---
-title: "Registering and Managing a REST or LTI Application"
-id: "creating-new-rest-or-lti-application"
+title: 'Registering and Managing a REST or LTI Application'
+id: 'creating-new-rest-or-lti-application'
 categories: Developer Portal
 sidebar_position: 2
-published: "2023-05-09"
-edited: "2024-03-20"
+published: '2023-05-09'
+edited: '2024-03-20'
 author: Davey Herrera, Dan Magers
 ---
 
@@ -20,7 +20,7 @@ You can take two actions:
 
 1. **Register a REST or LTI application.** Select to register a new REST or LTI application. If you already have an application registered, the button’s text is replaced by a **+** to add another application.
 
-2. **LTI Dynamic Registration.** Read more about this topic in 1EdTech's documentation: <https://www.imsglobal.org/spec/lti-dr/v1p0>.
+2. **LTI Dynamic Registration.** Read more about this topic in 1EdTech's documentation: [https://www.imsglobal.org/spec/lti-dr/v1p0](https://www.imsglobal.org/spec/lti-dr/v1p0).
 
 ## Register a REST or LTI application
 

@@ -1,18 +1,18 @@
 ---
-title: "Before you start developing for UEF"
+title: 'Before you start developing for UEF'
 id: uef-requirements
 sidebar_position: 3
-edited: "2024-10-11"
+edited: '2024-10-11'
 ---
 
 Before you can start working and developing for UEF, you will need to make sure a few things are in order.
 
 ## Premium APIs Access (including UEF)
 
-If you are a developer and interested in pursuing use of the UEF Premium APIs in your integration with the Learn Ultra Experience, what are your next steps? Email our Partnerships team at <partners@anthology.com> with the subject "Interested in Partnership That Includes Premium API Access." Ask for time to discuss such with a member of our partnership team.
+If you are a developer and interested in pursuing use of the UEF Premium APIs in your integration with the Learn Ultra Experience, what are your next steps? Email our Partnerships team at [partners@anthology.com](mailto:partners@anthology.com) with the subject "Interested in Partnership That Includes Premium API Access." Ask for time to discuss such with a member of our partnership team.
 
 :::info existing partners and/or clients
-If you are a partner with a partnership-level of Bronze or higher, or you are a client, then you can simply file a Support ticket through our Global Support portal (<https://support.anthology.com>) requesting UEF access.
+If you are a partner with a partnership-level of Bronze or higher, or you are a client, then you can simply file a Support ticket through our Global Support portal ([https://support.anthology.com](https://support.anthology.com)) requesting UEF access.
 
 In the ticket, include the email used to register the application in the Developer Portal, and the name of the group where you will place applications that you want UEF enabled.
 :::
