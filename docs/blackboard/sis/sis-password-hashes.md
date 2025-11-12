@@ -93,7 +93,7 @@ Here are some code examples.
 
 :::caution
 A particular source of confusion, and many examples on the Internet stumble on this confusion, is that the SHA-1 output
-must be bytes, not a hex string. If the programming language or library you choose returns a hex string for SHA1, then
+must be bytes, not a hex string. If the programming language or library you choose returns a hex string for SHA-1, then
 it must be recast as a byte array. That is to say: `EF` must be a single byte: `239` (unsigned), not a pair of bytes
 equal to unsigned `69` (the '`E`') and `70` (the '`F`'.)
 :::

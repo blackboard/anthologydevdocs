@@ -26,9 +26,11 @@ These are usually used in an event-driven workflow.
 
 ## Security
 
-SIS is effectively infinitely powerful. It can create, remove, or delete anything. SIS data files also contain highly 
-sensitive data and access to them should be strictly controlled. (Note: Support may require the feed file for problem
-investigation.) 
+SIS activity occurs at a high level of privilege. It can create, remove, or delete anything. A user that gains access to
+an SIS username and password could send arbitrary data files that cause arbitrary changes. 
+
+SIS data files also contain potentially sensitive data and access to them should be strictly controlled. (Note: Support
+may require the feed file for problem investigation.) 
 
 One particular case is setting passwords by SIS. They can be supplied in cleartext, but this is not recommended and they
 should be provided in [hashed form.](sis-password-hashes.md)
