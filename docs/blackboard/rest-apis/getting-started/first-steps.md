@@ -106,7 +106,7 @@ Anthology makes available instances of Anthology applications that you can
 use to build projects that integrate with Anthology applications. Among
 others, we offer these popular developer instances.
 
-- [AWS instance of Learn](developer-ami.md)  
+- [AWS instance of Learn](/docs/blackboard/sandbox-envs/welcome)  
   While Blackboard does not charge for entry-level use, AWS may charge various
   fees for their services.
 
@@ -154,8 +154,6 @@ Once you have registered with the developer portal and built an integration, dep
 | Application Secret | Each application is assigned a unique secret. This is used to authorize REST<br />API calls against Learn.                                          |
 | Access Token       | A token is a unique string representing an implicit authorization granted by<br />an OAuth 2.0 Service Provider.                                    |
 | CRUD               | Create, Read, Update, Delete                                                                                                                        |
-
-{: .striped}
 
 #### More Information
 

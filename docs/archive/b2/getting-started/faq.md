@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "B2-FAQs"
+title: 'B2-FAQs'
 categories: Learn b2
 id: archive-b2-gs-faqs
 author: Scott Hurrey
@@ -45,7 +45,7 @@ and contribute to the content on the wiki and forum areas of this site as well
 as access certain developer content that requires a login to access.
 
 Commercial entities are invited to join the program and purchase developer
-licenses at [this link](https://www.blackboard.com/Platforms/learn/Extensions/Partnerships-Program.aspx){: target='\_blank'}. If you have lost your license file or require a change in
+licenses at [this link](https://www.blackboard.com/Platforms/learn/Extensions/Partnerships-Program.aspx)[: target='\_blank']. If you have lost your license file or require a change in
 your license, please contact your sales representative or the partnership
 program.
 
@@ -58,15 +58,15 @@ with the installation of the Learning System product. For assistance, please
 call our Client Support Team at (888) 788-5264. Have your six-digit company ID
 ready when you call.
 
-All others should read up on the available [DVBA](#)or request help on the [Developer forums](https://community.blackboard.com/developers){: target='\_blank'}
+All others should read up on the available [DVBA](#) or request help on the <a href="https://community.blackboard.com/developers" target="_blank">Developer forums</a>
 
 ## API/known issues
 
 If you believe you've found an issue with our APIs, please follow this process
 to receive support:
 
-1. Post your issue to our discussion forums on the [community site](https://community.blackboard.com/developers){: target='\_blank'}
-2. Search the [Blackboard Techies Slack Space](https://blackboardtechies.s;ack.com){: target='\_blank'} archives and optionally e-mail the listserv regarding your issue.
+1. Post your issue to our discussion forums on the <a href="https://community.blackboard.com/developers" target="_blank">community site</a>
+2. Search the <a href="https://blackboardtechies.slack.com" target="_blank">Blackboard Techies Slack Space</a> archives and optionally e-mail the listserv regarding your issue.
 3. Open a new case to Behind the Blackboard (or have your Blackboard administrator do this on your behalf)
 
 ## Product improvements/recommendations

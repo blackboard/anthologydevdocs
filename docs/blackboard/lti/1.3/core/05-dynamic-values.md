@@ -2,8 +2,8 @@
 title: Custom properties and parameter substitution
 id: lti-parameters
 sidebar_position: 5
-published: ""
-edited: "2024-09-25"
+published: ''
+edited: '2024-09-25'
 ---
 
 As defined in the Core LTI 1.3 specifications, Learn supports the addition of custom parameters to both the global tool configuration and a per-placement configuration. These can be defined as key-value pairs separated by equal signs (=). Additionally, Learn supports dynamic variables (also called parameter substitution in the specifications), where the value added in the launch will depend on the status of the environment at launch time.
@@ -26,9 +26,9 @@ The resulting value in the JWT token sent to your tool is the following:
 
 ## Parameter substitution
 
-To enhance this functionality, you can also use the custom dynamic variables defined in [Dynamic Rendering with template Variables](docs/blackboard/rest-apis/advanced/dynamic-rendering) to get user, course or environment information at launch time.
+To enhance this functionality, you can also use the custom dynamic variables defined in [Dynamic Rendering with template Variables](/docs/blackboard/rest-apis/advanced/dynamic-rendering) to get user, course or environment information at launch time.
 
-Learn also supports the substitution variables defined in the LTI specification file here: <https://www.imsglobal.org/spec/lti/v1p3#customproperty>. The syntax is the same as a custom parameter (a key-value pair separated by an equal sign), but the variable from the specification must be preceded with a dollar sign, as seen here:
+Learn also supports the substitution variables defined in the LTI specification file here: [https://www.imsglobal.org/spec/lti/v1p3#customproperty](https://www.imsglobal.org/spec/lti/v1p3#customproperty). The syntax is the same as a custom parameter (a key-value pair separated by an equal sign), but the variable from the specification must be preceded with a dollar sign, as seen here:
 
 ```
 firstAvailable=$ResourceLink.available.startDateTime

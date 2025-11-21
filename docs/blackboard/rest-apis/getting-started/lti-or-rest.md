@@ -1,11 +1,11 @@
 ---
-title: "LTI or REST?"
+title: 'LTI or REST?'
 id: lti-or-rest
 categories: Learn REST
 sidebar_position: 5
 author: Mark Kauffman
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 We are often asked questions like, "When should I use LTI and when should I use REST?" "What is the difference?" "What can I do with REST that I can't with LTI
@@ -56,8 +56,6 @@ Now things can get interesting. You might build a pure REST Application, but oft
 | ---- | ------------------------------------------------------------------------------------------------------------------ |
 | LTI  | Learning Tools Interoperability®, a standard developed and published by the IMS Global® Learning Consortium.       |
 | REST | Representational State Transfer. A lightwweight, flexible web service architecture. (Vs older tech like SOAP,etc.) |
-
-{: .striped}
 
 #### More Information
 

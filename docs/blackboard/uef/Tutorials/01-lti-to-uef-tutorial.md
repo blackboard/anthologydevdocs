@@ -1,8 +1,8 @@
 ---
-title: "Migrate a Python LTI Tool to Ultra Extension"
+title: 'Migrate a Python LTI Tool to Ultra Extension'
 sidebar_position: 1
 id: tutorial-lti
-edited: "2024-10-11"
+edited: '2024-10-11'
 ---
 
 import ReactPlayer from 'react-player'
@@ -85,7 +85,7 @@ The next step is to clone the repository. You do not need a GitHub account for t
 3. At the command-line, type: `git clone https://github.com/blackboard/BBDN-UEF-Python.git`
 4. Open this project in your favorite IDE
 5. In the app directory, there is a file called `ConfigTemplate.py`. Copy this file and paste it into the app directory. Rename it to `Config.py`. This **IS** case-sensitive.
-6. Replace learnURL with the URL to your Learn instance, without the `https://` **<-Common Gotcha**
+6. Replace learnURL with the URL to your Learn instance, without the `https://` **← Common Gotcha**
 7. Replace restKey with your REST application key.
 8. Replace restSecret with your REST application secret.
 9. Replace myUrl with the https ngrok link created in step 1. Include the `https://` **←Common Gotcha**

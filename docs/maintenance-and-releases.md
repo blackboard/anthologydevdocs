@@ -3,8 +3,8 @@ title: Service Maintenances and Releases
 id: maintenance-page
 sidebar_position: 1
 hide_table_of_contents: true
-published: "2024-07-26"
-edited: "2024-07-26"
+published: '2024-07-26'
+edited: '2025-03-11'
 author: Mark O'Neil, Davey Herrera, Dan Magers, Camilo Dominguez, Sebastian Silva
 ---
 
@@ -23,8 +23,121 @@ Should a critical outage\* take place, we will release a detailed post-mortem on
 Any non-critical outage\*\* will be covered using our in-Portal announcements feature only.
 :::
 
+:::tip Latest release
+
+**API Usage Dashboard**<br/>
+
+**Release version:** March / 2025<br/>
+**Instance:** Production (https://developer.anthology.com)<br/>
+**Impact:** Developers<br/>
+
+The Developer Portal serves as a centralized hub for third-party developers to register, manage, and deploy their integrations with Blackboard LMS. To provide better visibility and control over API usage, the Developer Portal now features a dedicated API Usage Dashboard. This dashboard allows developers to monitor and analyze API consumption in real time, ensuring efficient integration management and performance tracking.
+
 <details>
-<summary>Release Notes</summary>
+<summary>More details about this release</summary>
+
+Developers can now monitor API consumption at the following levels:
+
+- **Application level:** Track API usage for individual integrations.
+- **Group level:** Aggregates API usage data across all applications owned by a group.
+
+Developers can filter API usage for the following timeframes:
+
+- Last 24 hours (data refreshed every 15 minutes).
+- Last 30 days (data refreshed daily).
+- Last year (data refreshed monthly).
+
+To help developers manage the information displayed on the dashboard, the following API status breakdowns are available as filters in the graphical reports:
+
+| **Filter Name **           | **Description **                                                                                       | **HTTP Status Code  **                        |
+| -------------------------- | ------------------------------------------------------------------------------------------------------ | --------------------------------------------- |
+| Okay                       | API requests processed successfully\.                                                                  | 200 \- OK                                     |
+| Invalid Token              | API requests failed due to an invalid, expired, or revoked authentication token\.                      | 401 \- Unauthorized                           |
+| Missing Header             | Requests failed because a required HTTP header \(e\.g\., Authorization, Content\-Type\) was missing\.  | 401 \- Unauthorized \(AuthHeaderMissing\)     |
+| Rate Limit Exceeded        | The application exceeded the allowed number of API requests within a given timeframe\.                 | 429 \- Too Many Requests                      |
+| Permission Denied          | The user does not have the required privileges to access the requested resource\.                      | 403 \- Forbidden                              |
+| Site Application Missing   | API calls were sent to a Blackboard instance where the application is not installed\.                  | 404 \- Not Found                              |
+| Site Application Disabled  | The API request failed because the application was disabled on a Blackboard instance\.                 | 403 \- Forbidden \(SiteApplicationDisabled\)  |
+
+By providing developers with real-time API consumption data, the dashboard helps:
+
+- Optimize performance by providing precise visibility into how each integration interacts with Blackboard LMS.
+- Enhance monitoring by identifying authentication failures and request errors for faster troubleshooting.
+- Improve scalability by ensuring applications stay within API rate limits and optimize resource usage.
+- Strengthen security by detecting unusual or excessive API usage patterns to prevent potential risks.
+
+By implementing these monitoring capabilities, the Developer Portal empowers developers with better insights, greater control, and improved integration reliability for Blackboard LMS.
+
+To consult API usage metrics, developers can access the dashboard directly through the Developer Portal:
+
+In the main panel, navigate to the **"My Applications"** section and click on the **three-dot menu** next to your application. From there, you can access the **API Usage Dashboard** to view application-level metrics.
+
+<img src="/assets/img/rn-march112025-1.png" width="600px"/>
+
+<img src="/assets/img/rn-march112025-2.png" width="600px"/>
+
+<img src="/assets/img/rn-march112025-3.png" width="600px"/>
+
+<img src="/assets/img/rn-march112025-4.png" width="600px"/>
+
+To access API usage at the group level, go to the **"My Groups"** section and click on the **Dashboard** link.
+
+<img src="/assets/img/rn-march112025-5.png" width="600px"/>
+
+<img src="/assets/img/rn-march112025-6.png" width="600px"/>
+
+</details>
+
+:::
+
+<details>
+<summary>Old Release Notes</summary>
+
+**Release version:** February / 2025<br/>
+**Instance:** Production (https://developer.anthology.com)<br/>
+**Impact:** Developers<br/>
+
+The Developer Portal continues to evolve to enhance self-service capabilities and give developers greater control over their accounts. We have introduced a developer account deletion request feature in the Account Page of the Developer Portal. This update ensures that account removal is handled securely and efficiently. Also, aligned with data protection best practices
+
+By implementing a structured deletion process, we help developers manage their accounts responsibly. Preventing accidental data loss or disruptions to registered applications.
+
+This feature allows developers to request account deletion while ensuring that registered applications remain functional, minimizing disruptions, and reducing support requests.
+
+Key highlights of this enhancement
+
+- Developers can now request account deletion directly from the Account Management Page of the Developer Portal.
+- A validation check ensures that all registered applications and groups are reassigned or removed before proceeding with account deletion.
+- 20-day recovery period: Accounts will be deactivated for 20 days before permanent deletion, allowing developers to restore access during this time.
+- Logging in within the 20-day period automatically cancels the deletion request, keeping the account active.
+- Permanent deletion: After the recovery period expires, all account data, including logs, will be permanently removed.
+
+Developers can now request account deletion through a simple process:
+
+Navigate to the Account Management section in the Developer Portal and click on the Request Account Deletion option.
+
+<img src="/assets/img/devportal-releases/step1.png" width="400px" alt="Image 1. Account Management Page"/>
+
+The system will validate account deletion constraints
+
+- The developer is not an owner of another group.
+- The developer has no applications registered in the default group.
+- The default group for the developer doesn't have any additional members.
+
+Note: If constraints are not met, the system will display an alert icon explaining the necessary steps to proceed.
+
+<img src="/assets/img/devportal-releases/step2.png" width="400px" alt="Image 2. Validation Check: Proceed with Account Deletion"/>
+
+You will receive an email containing the information about the deletion process, including a link to validate the deletion request.
+
+<img src="/assets/img/devportal-releases/step2-5.png" width="700px" alt="Image 3. Email notification: Includes the link to verify the deletion process"/>
+
+Clicking the link will take you to the following page where you can confirm the deletion process
+
+<img src="/assets/img/devportal-releases/step3.png" width="700px" alt="Image 4. Request Validation: Accept the account deletion"/>
+
+Once the verification is completed, a confirmation message will appear, detailing the 20-day recovery period and the impact of account deletion.
+
+<img src="/assets/img/devportal-releases/step4.png" width="700px" alt="Image 5. Request submitted."/>
 
 #### May 28th 2024 - 02:30 AM EST
 

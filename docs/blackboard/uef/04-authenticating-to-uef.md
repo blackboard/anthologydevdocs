@@ -1,8 +1,8 @@
 ---
-title: "Authenticating to UEF"
+title: 'Authenticating to UEF'
 id: uef-authentication
 sidebar_position: 4
-edited: "2024-10-11"
+edited: '2024-10-11'
 ---
 
 Now that you have the knowledge of how UEF works, the first thing you need to do is authenticate to it. When you respond to the authentication request (after finishing the REST API block from the previous section) with an HTML file that contains the JS file, you will have to do the steps outlined below to authenticate and create the communication channel between Ultra and your file.
@@ -22,7 +22,7 @@ To let Ultra know about your integration, you can post a browser-wide message (u
 ```javascript
 window.parent.postMessage(
   {
-    type: "integration-hello",
+    type: 'integration-hello',
   },
   `{learn-domain}/*`
 );
@@ -31,7 +31,7 @@ window.parent.postMessage(
 You also need to register an Event Listener for messages, which will allow you to listen for the initial syncronization message from Ultra. The listener can be defined like this:
 
 ```javascript
-addEventListener("message", (incomingMessage) => {
+addEventListener('message', (incomingMessage) => {
   // Your code here
 });
 ```
@@ -56,24 +56,24 @@ Now that we have a dedicated message channel to communicate with Ultra, we can a
 
 ```javascript
 incomingMessage.ports[0].postMessage({
-  type: "authorization:authorize",
-  token: "token_received_from_3LO",
+  type: 'authorization:authorize',
+  token: 'token_received_from_3LO',
 });
 ```
 
 _(Building on top of the previous event listener added for messages)_
 
 ```javascript
-addEventListener("message", (incomingMNessage) => {
+addEventListener('message', (incomingMNessage) => {
   // Validates if the origin of the message is indeed the learn server you're expecting
-  if (incomingMessage.origin !== "{learn_domain}") return;
+  if (incomingMessage.origin !== '{learn_domain}') return;
 
   // Registers the integration
-  if (incomingMessage.data.type === "integration:hello") {
+  if (incomingMessage.data.type === 'integration:hello') {
     // Sends the user oAuth token to be able to properly work with UEF and render information based on the user's roles
     incomingMessage.ports[0].postMessage({
-      type: "authorization:authorize",
-      token: "token_received_from_3LO",
+      type: 'authorization:authorize',
+      token: 'token_received_from_3LO',
     });
   }
 });
@@ -110,14 +110,14 @@ from here you can review what events you need and then, subscribe to them sendin
 
 ```javascript
 incomingMessage.ports[0].postMessage({
-  type: "event:subscribe",
+  type: 'event:subscribe',
   subscriptions: [
-    "click",
-    "hover",
-    "route",
-    "portal:new",
-    "portal:remove",
-    "lti:launch",
+    'click',
+    'hover',
+    'route',
+    'portal:new',
+    'portal:remove',
+    'lti:launch',
   ],
 });
 ```
@@ -218,6 +218,6 @@ Now that you're subscribed and know that events will arrive through the same Mes
 Please be aware that fetch requests to backend services where heavy computational tasks or queries are executed are not recommended since it will severely impact the loading time of your integration and, by extent, the communication with Ultra.
 :::
 
-You can also review the entire specifications and documentation for UEF here <https://docs.anthology.com/uef-documentation/start.html> to know how to render information on the Ultra UI, register your help providers or create new panels/modals for your data.
+You can also review the entire specifications and documentation for UEF here [https://docs.anthology.com/uef-documentation/start.html](https://docs.anthology.com/uef-documentation/start.html) to know how to render information on the Ultra UI, register your help providers or create new panels/modals for your data.
 
 We also have available some tutorials in the next section to help you understand and build your own UEF integration.

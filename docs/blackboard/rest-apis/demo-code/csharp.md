@@ -43,7 +43,7 @@ This help topic assumes the Developer:
 - is familiar with C#
 - has installed Microsoft Visual Studio
 - has obtained a copy of the [source code](https://github.com/blackboard/BBDN-REST-Demo-CSharp) and built it in conjunction with the project [README.md](https://github.com/blackboard/BBDN-REST-Demo-CSharp/blob/master/README.md) file.
-- has a REST-enabled Learn instance, like the [Developer AMI](developer-ami.md).
+- has a REST-enabled Learn instance, like the [Developer AMI](/docs/blackboard/sandbox-envs/welcome.md).
 
 ### Code Walkthrough
 

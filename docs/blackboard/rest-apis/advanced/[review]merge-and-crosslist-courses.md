@@ -2,8 +2,8 @@
 title: Use APIs to Merge and Cross-list Courses
 id: crosslist-courses
 categories: Learn Rest
-published: ""
-edited: ""
+published: ''
+edited: ''
 author: Ryan Haber
 ---
 
@@ -43,17 +43,17 @@ To merge one course as a child of another:
 
 1. Find the courseId of the course that you want to be the parent.
 2. Find the courseId of the course you want to be the child.
-3. Make a PUT request to /learn/api/public/v1/courses/{courseId}/children/{childCourseId}.
+3. Make a PUT request to `/learn/api/public/v1/courses/{courseId}/children/{childCourseId}`.
 
 ### Get the children of a course
 
 To identify the children courses of a course:
 
 1. Find the courseId of the parent course.
-2. Make a GET request to /learn/api/public/v1/courses/{courseId}/children.
+2. Make a GET request to `/learn/api/public/v1/courses/{courseId}/children`.
 
 ### Get the course set that a course belongs to
 
 To get a list of all the courses merged with a particular course, regardless
 of which are children and which is the parent, make a GET request to
-/learn/api/public/v1/courses/{courseId}/crossListSet.
+`/learn/api/public/v1/courses/{courseId}/crossListSet`.

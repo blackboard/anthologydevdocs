@@ -3,8 +3,8 @@ title: Using Attendance APIs
 id: attendance
 categories: Learn REST APIS Attendance
 author: Davey Herrera
-published: "2022-10-21"
-edited: ""
+published: '2022-10-21'
+edited: ''
 ---
 
 > Tested Using Blackboard Learn Release 3900.50.0-rel.21+840a19d
@@ -87,17 +87,17 @@ When you create a new column, it automatically takes in today's date as the colu
 
 ```json
 ["Present", "Absent", "Late", "Excused"]
-```
+`
 
 you can learn even more about attendance here: https://help.blackboard.com/Learn/Administrator/SaaS/Tools_Management/Attendance
 
 Now, when creating one using REST API is quite simple use:
 
-- **POST** /learn/api/public/v1/courses/{courseId}/meetings
+- **POST** `/learn/api/public/v1/courses/{courseId}/meetings
 
 And in the body:
 
-```json
+`````json
 {
   "courseId": "_912_1",
   "title": "Meeting title",
@@ -110,7 +110,7 @@ And in the body:
 
 When the api is successful, it returns 200:
 
-```json
+`````json
 {
   "id": 465,
   "courseId": "_912_1",
@@ -120,7 +120,7 @@ When the api is successful, it returns 200:
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "https//google.com"
 }
-```
+`
 
 And this is how a meeting created using our API looks like and its parts:
 
@@ -130,7 +130,7 @@ And this is how a meeting created using our API looks like and its parts:
 
 We already know how to create a meeting, and in the same process we are seeing all the meetings, it is possible to get the same data on the api using
 
-- **GET** /learn/api/public/v1/courses/:courseId/meetings/:meetingId
+- **GET** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`
 
 When 200:
 
@@ -144,7 +144,7 @@ When 200:
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "https//google.com"
 }
-```
+`
 
 #### Mapping the results
 
@@ -154,7 +154,7 @@ Here is a mapping of the results returned by the API and what we have in the GUI
 
 #### Updating a meeting
 
-- **PATCH** /learn/api/public/v1/courses/:courseId/meetings/:meetingId
+- **PATCH** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`
 
 Using the same body as POST
 
@@ -167,13 +167,13 @@ Using the same body as POST
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "This optional field can be an url"
 }
-```
+`
 
 #### Deleting a meeting
 
 This endpoint deletes a meeting
 
-- **DELETE** /learn/api/public/v1/courses/:courseId/meetings/:meetingId
+- **DELETE** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`
 
 #### Batch operations with Meetings
 
@@ -181,7 +181,7 @@ You can perform batch operations with meetings as well, however those are limite
 
 #### Return all meetings in a course
 
-- **GET** /learn/api/public/v1/courses/{courseId}/meetings
+- **GET** `/learn/api/public/v1/courses/{courseId}/meetings`
 
 Returns 200
 
@@ -241,11 +241,11 @@ Returns 200
     }
   ]
 }
-```
+`
 
 #### Remove all meetings from the course
 
-- **DELETE** /learn/api/public/v1/courses/{courseId}/meetings
+- **DELETE** `/learn/api/public/v1/courses/{courseId}/meetings
 
 When it is successful returns 204
 
@@ -259,7 +259,7 @@ We have this meeting that we need to add attendance records to:
 
 ![A meeting in Ultra course view with no attendance records](../../../../static/assets/img/docs-site_attendance-9.png)
 
-- **POST** {{baseUrl}}/learn/api/public/v1/courses/:courseId/meetings/:meetingId/users
+- **POST** `{{baseUrl}}/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users`
 
 Body
 
@@ -269,7 +269,7 @@ Body
   "status": "Present",
   "userId": "_15104_1"
 }
-```
+`
 
 when it is successful, it returns 201, it looks like this in the GUI:
 
@@ -277,7 +277,7 @@ when it is successful, it returns 201, it looks like this in the GUI:
 
 #### Returning an Attendance record for one user in one meeting
 
-- **GET** /learn/api/public/v1/courses/:courseId/meetings/:meetingId/users/:userId
+- **GET** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users/:userId`
 
 ```json
 {
@@ -286,13 +286,13 @@ when it is successful, it returns 201, it looks like this in the GUI:
   "userId": "_15104_1",
   "status": "Present"
 }
-```
+`
 
 This basically returns the same information found in the previous image.
 
 #### Updating an attendance record for one user in one meeting
 
-- **PATCH** /learn/api/public/v1/courses/:courseId/meetings/:meetingId/users/:userId
+- **PATCH** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users/:userId`
 
 Body
 
@@ -302,7 +302,7 @@ Body
   "userId": "_15104_1",
   "status": "Excused"
 }
-```
+`
 
 Returns when 200:
 
@@ -313,13 +313,13 @@ Returns when 200:
   "userId": "_15104_1",
   "status": "Excused"
 }
-```
+`
 
 ![A meeting in Ultra course view with an attendance record updated](../../../../static/assets/img/docs-site_attendance-11.png)
 
 #### Deleting an attendance record for one user in one meeting
 
-- **DELETE** /learn/api/public/v1/courses/:courseId/meetings/:meetingId/users/:userId
+- **DELETE** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users/:userId`
 
 When successful, returns 204 NO CONTENT
 
@@ -335,7 +335,7 @@ Even though the endpoint documentation marks user_id and meeting_id as mandatory
 {
   "status": "Excused"
 }
-```
+`
 
 This basically updates all students' attendance status to the same for **ALL OF THEM.**
 ![A meeting in Ultra course view all users with the same attendance status](../../../../static/assets/img/docs-site_attendance-13.png)
@@ -344,7 +344,7 @@ This basically updates all students' attendance status to the same for **ALL OF 
 
 ![A meeting in Ultra course view with all students attendance marked](../../../../static/assets/img/docs-site_attendance-14.png)
 
-- **GET** /learn/api/public/v1/courses/:courseId/meetings/:meetingId/users
+- **GET** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users
 
 When 200 returns:
 
@@ -365,13 +365,13 @@ When 200 returns:
     }
   ]
 }
-```
+`
 
 #### Return ALL attendance status of one user to all meetings in one course
 
 Now, let's say you want to have all the attendance records of one user, with this endpoint, you will get all the attendance status if all the available meetings for one specific user
 
-- **GET** /learn/api/public/v1/courses/:courseId/meetings/users/:userId
+- **GET** `/learn/api/public/v1/courses/:courseId/meetings/users/:userId`
 
 ![A meeting in Ultra course view all the meetings and attendance for one user marked with their status](../../../../static/assets/img/docs-site_attendance-15.png)
 
@@ -436,11 +436,11 @@ When 200, returns:
     }
   ]
 }
-```
+`
 
 #### Removing all attendance records in a meeting
 
-- **DELETE** /learn/api/public/v1/courses/:courseId/meetings/:meetingId/users
+- **DELETE** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users
 
 ![A meeting in Ultra course view all the meetings and attendance for one user marked with their status](../../../../static/assets/img/docs-site_attendance-16.png)
 
@@ -452,7 +452,7 @@ When completed, returns 204 NO CONTENT:
 
 This endpoint is very powerful, be careful when using it since it will remove ALL attendance records of a specific user in a course.
 
-- **DELETE** / learn/api/public/v1/courses/{courseId}/meetings/users/{userId}
+- **DELETE** /learn/api/public/v1/courses/{courseId}/meetings/users/{userId}`
 
 When successful, returns 204 NO CONTENT.
 
@@ -460,8 +460,9 @@ When successful, returns 204 NO CONTENT.
 
 This endpoint is very powerful, be careful when using it since it will remove ALL attendance records of a specific user in ALL courses
 
-- **DELETE** / learn/api/public/v1/courses/{courseId}/meetings/users/{userId}
+- **DELETE** /learn/api/public/v1/courses/{courseId}/meetings/users/{userId}`
 
 #### CSV Export endpoint
 
 Unfortunately at the moment of writing, this endpoint is not working properly so, I am unable to tell you how it works, however, once this is fixed I will update this, for now, the GUI is the best place to get the information.
+```
