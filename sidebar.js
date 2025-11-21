@@ -215,7 +215,6 @@ const sidebars = {
                 "blackboard/sis/sis-password-hashes"
                ]
         },
-        "developer-ami",
       ],
     },
     // Student
