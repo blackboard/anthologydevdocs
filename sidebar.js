@@ -209,6 +209,12 @@ const sidebars = {
             },
           ],
         },
+        {
+            SIS: [
+                "blackboard/sis/getting-started",
+                "blackboard/sis/sis-password-hashes"
+               ]
+        },
       ],
     },
     // Student
