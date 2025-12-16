@@ -1,0 +1,7 @@
+node_modules
+.docusaurus
+.build
+build
+/dist
+/.cache
+/.parcel-cache
