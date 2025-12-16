@@ -2,8 +2,8 @@
 title: REST Integrations 3-Legged OAuth and Learn Custom Login Pages For System Administrators
 id: rest-3lo-and-learn-sso
 categories: Learn REST
-published: ""
-edited: ""
+published: ''
+edited: ''
 author: Mark Kauffman
 ---
 
@@ -24,7 +24,7 @@ The problem is caused by the login link or button that the user clicks on in the
 
 #### How to Fix
 
-As mentioned in the video, when the custom login .jsp uses the \<loginUI:loginForm/\> tag to create the link/button that the user clicks on to login to the system, that link will be dynamically generated and preserve all of the information that was sent to the Learn system with the /authorizationcode request from the 3rd-party App. You cannot merely have the tag on the page. You must use the <loginUI:loginForm> tag to create the link because that tag uses the necessary Learn internal Java code to correctly build the sign-in link.
+As mentioned in the video, when the custom login .jsp uses the `<loginUI:loginForm/>` tag to create the link/button that the user clicks on to login to the system, that link will be dynamically generated and preserve all of the information that was sent to the Learn system with the /authorizationcode request from the 3rd-party App. You cannot merely have the tag on the page. You must use the `<loginUI:loginForm/>` tag to create the link because that tag uses the necessary Learn internal Java code to correctly build the sign-in link.
 
 [Here is a download of a sample custom login page that works for 3LO and SSO](/assets/files/UARKexampleCustomLogin.jsp)\*. You can study how the CSS modifies the content shown by the \<loginUI:loginForm/\> tag so that it shows up as a "button" with a link that is dynamically generated and maintains the 3LO /authorizationcode request parameters.
 

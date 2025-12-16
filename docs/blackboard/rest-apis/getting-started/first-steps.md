@@ -1,11 +1,11 @@
 ---
-title: 'First Steps with Learn REST API'
+title: "First Steps with Learn REST API"
 id: first-steps
 categories: Learn REST
 author: Scott Hurrey
 sidebar_position: 1
-published: ''
-edited: ''
+published: ""
+edited: ""
 ---
 
 Anthology offers a suite of education technology tools, both software and
@@ -106,7 +106,7 @@ Anthology makes available instances of Anthology applications that you can
 use to build projects that integrate with Anthology applications. Among
 others, we offer these popular developer instances.
 
-- [AWS instance of Learn](developer-ami.md)  
+- [AWS instance of Learn](/docs/blackboard/sandbox-envs/welcome)  
   While Blackboard does not charge for entry-level use, AWS may charge various
   fees for their services.
 

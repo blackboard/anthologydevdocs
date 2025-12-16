@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "First Project: Gradle, Git and b2-starter-template"
+title: 'First Project: Gradle, Git and b2-starter-template'
 categories: Learn b2
 id: archive-b2-resources-first_project_gradle
 author: Scott Hurrey
@@ -144,11 +144,11 @@ Set this section to reflect your remote development settings:
        }
 ```
 
-| Term           | Definition                                                                                            |
-| -------------- | ----------------------------------------------------------------------------------------------------- |
-| learnVersion   | used in pulling the appropriate library jars for target version                                       |
-| deployServer   | the IP or server name for the target development server (add ":<port&rt;" if not served from port 80) |
-| deployInstance | the DB instance for the target development server                                                     |
+| Term           | Definition                                                                                           |
+| -------------- | ---------------------------------------------------------------------------------------------------- |
+| learnVersion   | used in pulling the appropriate library jars for target version                                      |
+| deployServer   | the IP or server name for the target development server (add `":<port>"` if not served from port 80) |
+| deployInstance | the DB instance for the target development server                                                    |
 
 #### Repository
 

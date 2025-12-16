@@ -8,7 +8,7 @@ author: Mark Kauffman
 sidebar_position: 1
 ---
 
-Our Community partnership level is FREE to developers and provides access to the Learn AMI (Amazon Machine Images) for developers to build REST and LTI applications\*, API limits apply and Behind the Blackboard support is not included. [Community support is available](https://community.blackboard.com).
+Our Community partnership level is FREE to developers and provides access to the Learn AMI (Amazon Machine Images) for developers to build REST and LTI applications\*, API limits apply and Behind the Blackboard support is not included. [Community support is available](https://community.anthology.com).
 
 Consider investing in one of our other partnership levels to receive added benefits that help partners deepen integrations, promote solutions, and connect with Blackboard clients. The Blackboard Developers Network (BbDN) is Blackboard’s standard partnership and is available for $3,000 annually. BbDN Partnerships include the following benefits:
 

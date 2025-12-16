@@ -3,8 +3,8 @@ title: Using Table of Contents in Original course view
 id: course-toc
 categories: Learn REST toc
 Author: Davey Herrera
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 This guide is only intended to be used in courses that use the original course view.
@@ -13,7 +13,7 @@ This guide is only intended to be used in courses that use the original course v
 
 For now, it is possible to **GET** and **PATCH** the Table of contents (TOC) **ONLY** in Courses that use the original course view, if you try to make API calls on Ultra course view, you will receive the following message:
 
-- GET /learn/api/public/v1/courses/:courseId/tocItems
+- `GET /learn/api/public/v1/courses/:courseId/tocItems`
 
 ```json
 {
@@ -30,7 +30,7 @@ TOC or Table of contents is the menu that everyone sees on the top left of the p
 
 Now if you do the same call, you will receive this:
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/tocItems
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/tocItems`
 
 ```json
 {
@@ -142,8 +142,8 @@ Basically, when using this endpoint it "Returns a list of Course TOC entries ass
 
 In order to use:
 
-- GET /learn/api/public/v1/courses/:courseId/tocItems
-- PATCH /learn/api/public/v1/courses/{courseId}/tocItems/{tocId}
+- `GET /learn/api/public/v1/courses/:courseId/tocItems`
+- `PATCH /learn/api/public/v1/courses/{courseId}/tocItems/{tocId}`
 
 You will need:
 

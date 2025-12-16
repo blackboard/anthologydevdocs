@@ -2,8 +2,8 @@
 title: Tutorial - Build a Java Command Line REST Application
 id: java-command-line
 categories: Learn Rest
-published: ""
-edited: ""
+published: ''
+edited: ''
 author: Scott Hurrey
 ---
 
@@ -15,7 +15,7 @@ agnostic, but it has not been tested on Windows.
 In order to begin this tutorial, there are a few pre-requisites that are
 assumed to be in place:
 
-- User has installed and started the latest [Developer AMI](developer-ami.md).
+- User has installed and started the latest [Developer AMI](/docs/blackboard/sandbox-envs/welcome).
 - User has installed and configured [GIT](https://git-scm.com/downloads).
 - User has cloned the [repository](https://github.com/blackboard/BBDN-DevCon-REST-Workshop) to their local working directory.
 - User has Java 11 installed and configured to JAVA_HOME.
@@ -522,7 +522,7 @@ Let's get started:
     TermHandler termHandler = new TermHandler(_hostname);
 ```
 
-3.  Between the closing curly bracket for the first _if( OPER_ALL || OPER_DATASOURCE) {_ and the start of the second, add:
+3.  Between the closing curly bracket for the first `if( OPER_ALL || OPER_DATASOURCE) {` and the start of the second, add:
 
 ```java
     // Term object

@@ -1,10 +1,10 @@
 ---
-title: "Using the SaveStudentTransferCredit command API"
+title: 'Using the SaveStudentTransferCredit command API'
 id: studentapi-savestudenttransfercredit-details
 sidebar_position: 1
 author: Jim Burns
-published: "2024-06-26"
-edited: "2024-06-26"
+published: '2024-06-26'
+edited: '2024-06-26'
 ---
 
 A common use case for integrators is to persist data for courses completed at other institutions. There is capability in Anthology Student for a student to have course requirements satisfied with course work that has been completed at other institutions. The high level process is for a user to create a student transfer credit record which consists of the course(s) that have been completed at other institutions as well as the internal course(s) that the external course work will be satisfying. There are many cases where the process of articulating which external courses satisfy which internal courses is handled outside of the Anthology Student application boundary. In this case, it is critical to be able to persist this data into Anthology Student so that business processes that have dependencies on transfer credit data will operate as expected. The command API endpoint that is used for persisting this data is api/commands/Admissions/StudentTransferCredit/SaveStudentTransferCredit. This document will cover the pertinent details for being able to successfully leverage and execute this API.

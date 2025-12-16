@@ -3,6 +3,7 @@ import React from "react";
 import MDXComponents from "@theme-original/MDXComponents";
 import VersioningTracker from "../modules/VersioningTracker/VersioningTracker";
 import PasswordChecker from "../modules/PasswordChecker/PasswordChecker";
+import BBButton from "../Components/BBButton/BBButton";
 // import Card from "../pages/Components/Card/Card";
 // import LandingHeader from "../pages/Components/LandingHeader/LandingHeader";
 // import WhatsNew from "../pages/Components/WhatsNew/WhatsNew";
@@ -15,6 +16,7 @@ export default {
   // `Highlight` will receive all props that were passed to `<Highlight>` in MDX
   VersioningTracker,
   PasswordChecker,
+  BBButton,
   // Card,
   // LandingHeader,
   // WhatsNew,

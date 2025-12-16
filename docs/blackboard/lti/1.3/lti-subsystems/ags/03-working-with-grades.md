@@ -2,7 +2,7 @@
 title: Interacting with Grades
 id: ags-grades
 sidebar_position: 3
-edited: "2024-10-09"
+edited: '2024-10-09'
 ---
 
 Now that you have a way to get the column information from the course and/or create new columns in a course, we can start working with grades, specially posting grades and creating attempts on LTI columns. This part of the service only accepts a `POST` request to either create a new grade or update/delete an existing grade (this will depend on the properties and values included on the request body).
@@ -13,7 +13,7 @@ Before you can post a new grade, you need to get the information of the user tha
 
 ### REST API
 
-If your LTI application is also registered in the environment as a REST API integration, you can get the user information (querying by email, username, names, etc.) from the endpoint /learn/api/public/v1/users (more information about this endpoint and the query parameters needed here: <https://developer.blackboard.com/portal/displayApi/Learn>).
+If your LTI application is also registered in the environment as a REST API integration, you can get the user information (querying by email, username, names, etc.) from the endpoint /learn/api/public/v1/users (more information about this endpoint and the query parameters needed here: [https://developer.blackboard.com/portal/displayApi/Learn](https://developer.blackboard.com/portal/displayApi/Learn)).
 
 From the response, you need to get the `uuid` field which will be ID required to post grades. An example of an API request for a user looks like this:
 
@@ -139,5 +139,5 @@ the table below outlines and defines the possible properties the JSON body could
 | `submittedAt`      | The timestamp of when the activity was submitted                                  | No       | Date String (ISO) | `null`  |
 
 :::info
-Information about the activityProgress and gradingProgress values can be found here: <https://www.imsglobal.org/spec/lti-ags/v2p0#activityprogress>
+Information about the activityProgress and gradingProgress values can be found here: [https://www.imsglobal.org/spec/lti-ags/v2p0#activityprogress](https://www.imsglobal.org/spec/lti-ags/v2p0#activityprogress)
 :::

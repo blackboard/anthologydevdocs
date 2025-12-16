@@ -1,10 +1,10 @@
 ---
-title: "Content Events"
+title: 'Content Events'
 categories: Standards
 id: content-events
 author: Scott Hurrey
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 Learn's Caliper Analytics stream emits a ContentEvent to cover a
@@ -46,8 +46,6 @@ The columns contain attributes of the Content Item.
 | Test                | <i   class="material-icons">done</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">done</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">close</i>  | <i   class="material-icons">close</i>  | <i   class="material-icons">done</i> | <i   class="material-icons">done</i> | <i   class="material-icons">radio_button_unchecked</i> | <i   class="material-icons">close</i>  | <i   class="material-icons">close</i>  | <i   class="material-icons">close</i>  |
 | Document            | <i   class="material-icons">done</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">done</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">done</i> | <i   class="material-icons">done</i> | <i   class="material-icons">close</i>                  | <i   class="material-icons">remove</i> | <i   class="material-icons">done</i>   | <i   class="material-icons">remove</i> |
 | File Upload         | <i   class="material-icons">done</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">done</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">remove</i> | <i   class="material-icons">done</i> | <i   class="material-icons">done</i> | <i   class="material-icons">close</i>                  | <i   class="material-icons">remove</i> | <i   class="material-icons">done</i>   | <i   class="material-icons">remove</i> |
-
-{: .striped}
 
 ### Content Item Deleted
 

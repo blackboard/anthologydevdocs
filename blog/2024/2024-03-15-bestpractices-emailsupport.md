@@ -1,10 +1,10 @@
 ---
 slug: email-support-best-practices
 title: Best Practices - Requesting Support via email
-published: "2024-03-15"
-edited: "2024-03-15"
+published: '2024-03-15'
+edited: '2024-03-15'
 author: Vikas Gupta
-tags: ["bestpractices", "Integrations", "Partners", "Developers", "Community"]
+tags: ['bestpractices', 'Integrations', 'Partners', 'Developers', 'Community']
 hide_table_of_contents: false
 ---
 
@@ -22,7 +22,7 @@ Below are the recommended best practices to ensure you receive the quickest, mos
 - Ensure a Clear Subject Line:
 
   - Opt for a descriptive subject line summarizing the issue concisely. We recommend using the following format:
-    - {Your Company Name}-{Domain Name}: {Brief Issue Description}
+    - [Your Company Name] - [Domain Name]: [Brief Issue Description]
     - Example: YourCompanyName-AnthologyLearn: Issue with Launching Textbook Tool
 
 - Provide Relevant Information:

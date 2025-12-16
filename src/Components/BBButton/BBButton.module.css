@@ -1,0 +1,35 @@
+.bbButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.bbButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--ifm-color-primary);
+}
+
+.bbButton img {
+  width: 1.4rem;
+}
+
+.bbButtonLink {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.bbButtonLink:hover,
+.bbButtonLink:focus,
+.bbButtonLink:active,
+.bbButtonLink:link {
+  text-decoration: none;
+  color: #ffffff;
+}

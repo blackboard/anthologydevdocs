@@ -1,10 +1,10 @@
 ---
-title: "Working with groups and the API"
+title: 'Working with groups and the API'
 id: groups-in-rest-api
 categories: Learn REST groups
 Author: Davey Herrera
-published: ""
-edited: ""
+published: ''
+edited: ''
 ---
 
 Using Learn ULTRA on Ultra Course view on Release 3900.34.0-rel.24+41a9160
@@ -36,13 +36,13 @@ And this is how groups look on the GUI within the "New group set 2/18/222":
 
 It is possible to create a new set sending:
 
-- POST {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets
+- `POST {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets`
 
 And using body (You can use BBML, more about it [here](../advanced/bbml.md):
 
 Returns when 200:
 
-```json
+````json
 {
   "name": "GroupSetFromAPI",
   "externalId": "enim Duis ea non exercitation",
@@ -60,7 +60,7 @@ Returns when 200:
     }
   }
 }
-```
+``
 
 Returns when 201 - Created:
 
@@ -81,13 +81,13 @@ Returns when 201 - Created:
   "created": "2022-03-01T19:31:27.840Z",
   "modified": "2022-03-01T19:31:27.840Z"
 }
-```
+``
 
 ## Reading group sets
 
 You can read them by sending:
 
-- GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets
+- `GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets`
 
 And, since we already have 3 sets it returns when 200:
 
@@ -142,11 +142,11 @@ And, since we already have 3 sets it returns when 200:
     }
   ]
 }
-```
+``
 
 It is also possible to get all the groups, including sets using (check the parents to know which one is a set and which one is a child of that parent, if parentId is null, is because the group is a set.):
 
-- GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/groups
+- `GET {{baseUrl}}/learn/api/public/v1/courses/:courseId/groups`
 
 Returns when 200:
 
@@ -276,7 +276,7 @@ Returns when 200:
     }
   ]
 }
-```
+``
 
 In the GUI it looks like this:
 
@@ -284,7 +284,7 @@ In the GUI it looks like this:
 
 To add groups to a set:
 
-- POST {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId/groups
+- `POST {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId/groups`
 
 And in the body:
 
@@ -306,7 +306,7 @@ And in the body:
     }
   }
 }
-```
+``
 
 Returns when 201:
 
@@ -328,11 +328,11 @@ Returns when 201:
   "created": "2022-03-02T20:34:46.308Z",
   "modified": "2022-03-02T20:34:46.500Z"
 }
-```
+``
 
 To get the group set children of a specific parent:
 
-- GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId/groups
+- `GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId/groups`
 
 Returns when 200:
 
@@ -358,7 +358,7 @@ Returns when 200:
     }
   ]
 }
-```
+``
 
 ## Update groups and group sets
 
@@ -366,7 +366,7 @@ Returns when 200:
 
 You can update the group set using:
 
-- PATCH {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId
+- `PATCH {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId`
 
 And in the body:
 
@@ -388,7 +388,7 @@ And in the body:
     }
   }
 }
-```
+``
 
 Returns when 200
 
@@ -408,13 +408,13 @@ Returns when 200
   "created": "2022-03-01T19:31:27.840Z",
   "modified": "2022-03-02T21:24:14.198Z"
 }
-```
+``
 
 ### Update Groups
 
 You can update a group by using:
 
-- PATCH {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId
+- `PATCH {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId`
 
 Body:
 
@@ -435,7 +435,7 @@ Body:
     }
   }
 }
-```
+``
 
 Returns when 200:
 
@@ -457,7 +457,7 @@ Returns when 200:
   "created": "2022-02-28T20:51:07.710Z",
   "modified": "2022-03-02T22:01:01.813Z"
 }
-```
+``
 
 ## Deleting groups and group sets
 
@@ -465,25 +465,25 @@ Returns when 200:
 
 You can remove group sets by using:
 
-- DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId
+- `DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/sets/:groupId`
 
 Returns 204
 
-```
+``
 No content
-```
+``
 
 ### Deleting groups
 
 You can remove groups by using:
 
-- DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId
+- `DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId`
 
 Returns 204
 
-```
+``
 No content
-```
+``
 
 ## Group Memberships (C.R.U.D)
 
@@ -495,21 +495,21 @@ To Create a group membership you can use:
 
 (The group id needs to be the group within a set, not the set itself)
 
-- PUT {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId/users/:userId
+- `PUT {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId/users/:userId`
 
 Returns (it just returns the uer id) when 201:
 
-```
+``
 {
     "userId": "_43755_1"
 }
-```
+``
 
 ### Reading Memberships
 
 This endooint returns only the userId, is useful if you only need to know if the user is part of the group:
 
-- GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId/users/:userId
+- `GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId/users/:userId`
 
 Returns when 200:
 
@@ -517,19 +517,19 @@ Returns when 200:
 {
   "userId": "_43755_1"
 }
-```
+``
 
 ### Deleting Membership
 
 You can Use:
 
-- DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId/users/:userId
+- `DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId/users/:userId`
 
 Returns
 
-```
+``
 204 No Content
-```
+``
 
 # Groups in Original Experience (C.R.U.D)
 
@@ -541,7 +541,7 @@ Now, you cannot create stand alone groups in Ultra, meaning, groups cannot be cr
 
 You can create a group using:
 
-- POST {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups
+- `POST {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups`
 
 And the body:
 
@@ -562,7 +562,7 @@ And the body:
     }
   }
 }
-```
+``
 
 Returns when 200:
 
@@ -584,13 +584,13 @@ Returns when 200:
   "created": "2022-03-03T15:32:04.410Z",
   "modified": "2022-03-03T15:32:04.487Z"
 }
-```
+``
 
 Reading Groups
 
 You can either get all groups within a course:
 
-- GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups
+- `GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups`
 
 Returns when 200:
 
@@ -616,11 +616,11 @@ Returns when 200:
     }
   ]
 }
-```
+``
 
 Or get data about only one group:
 
-- GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId
+- `GET {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId`
 
 Returns when 200:
 
@@ -642,7 +642,7 @@ Returns when 200:
   "created": "2022-03-03T15:32:04.410Z",
   "modified": "2022-03-03T15:32:04.487Z"
 }
-```
+``
 
 This is basically the same but more specific and one less level.
 
@@ -650,7 +650,7 @@ This is basically the same but more specific and one less level.
 
 To update a group, you can use:
 
-- PATCH {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId
+- `PATCH {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId`
 
 And on the body:
 
@@ -671,7 +671,7 @@ And on the body:
     }
   }
 }
-```
+``
 
 Returns when 200:
 
@@ -693,16 +693,17 @@ Returns when 200:
   "created": "2022-03-03T15:32:04.410Z",
   "modified": "2022-03-03T16:59:25.107Z"
 }
-```
+``
 
 ### Delete groups
 
 You can delete groups using:
 
-- DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId
+- `DELETE {{baseUrl}}/learn/api/public/v2/courses/:courseId/groups/:groupId`
 
 It returns 204:
 
-```
+``
 No content
-```
+``
+````
