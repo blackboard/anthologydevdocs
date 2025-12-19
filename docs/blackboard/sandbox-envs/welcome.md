@@ -43,10 +43,10 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** export-ami-03c677f3e26610c0t.vmdk
-- **Version:** Blackboard Learn 3902.1.0
-- **Publish date:** October 7th 2025
-- **Expiration Date:** December 19th 2025
+- **Name:** export-ami-3d95601b38492dd2t.vmdk
+- **Version:** Blackboard Learn 4000.4.0
+- **Publish date:** December 19th 2025
+- **Expiration Date:** April 26th 2026
 
 <BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
 
