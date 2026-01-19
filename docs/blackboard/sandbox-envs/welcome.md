@@ -3,7 +3,7 @@ title: Blackboard Learn server
 id: welcome
 author: Sebastian Silva
 published: '2025-04-22'
-edited: '2025-10-07'
+edited: '2026-01-19'
 sidebar_position: 1
 ---
 
@@ -43,12 +43,12 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** export-ami-3d95601b38492dd2t.vmdk
+- **Name:** export-ami-77e9d56ef2a6a533t.vmdk
 - **Version:** Blackboard Learn 4000.4.0
-- **Publish date:** December 19th 2025
+- **Publish date:** January 19th 2025
 - **Expiration Date:** April 26th 2026
-
-<BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
+- **What changed?:** We noticed there is a problem related to the database and sometimes it started and sometimes it didn't. Now, it doesn't start completely the first time, it deploys configuration and then, if you want, once SSL has been setup (OPTIONAL), you need to reboot. This first start and then reboot is mandatory.
+  <BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
 
 :::
 
