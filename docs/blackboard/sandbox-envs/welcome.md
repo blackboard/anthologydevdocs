@@ -43,11 +43,11 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** export-ami-77e9d56ef2a6a533t.vmdk
-- **Version:** Blackboard Learn 4000.4.0
-- **Publish date:** January 19th 2025
+- **Name:** vmdk-for-4000.6.0.vmdk
+- **Version:** Blackboard Learn 4000.6.0
+- **Publish date:** February 2nd 2025
 - **Expiration Date:** April 26th 2026
-- **What changed?:** We noticed there is a problem related to the database and sometimes it started and sometimes it didn't. Now, it doesn't start completely the first time, it deploys configuration and then, if you want, once SSL has been setup (OPTIONAL), you need to reboot. This first start and then reboot is mandatory.
+- **What changed?:** No reboot needed. Should take about 15 to 30 minutes to start up. please make sure to use t2.large or bigger size. We currently only support AWS for VMDK deployment.
   <BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
 
 :::
