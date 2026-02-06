@@ -43,11 +43,12 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** vmdk-for-4000.6.0.vmdk
+- **Name:** vmdk-for-4000.6.0-v2.vmdk
 - **Version:** Blackboard Learn 4000.6.0
-- **Publish date:** February 2nd 2025
+- **Publish date:** February 5nd 2025
 - **Expiration Date:** April 26th 2026
 - **What changed?:** No reboot needed. Should take about 15 to 30 minutes to start up. please make sure to use t2.large or bigger size. We currently only support AWS for VMDK deployment.
+Fixed a problem related to the db.
   <BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
 
 :::
