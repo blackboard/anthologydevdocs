@@ -23,7 +23,7 @@ To access the Swagger documentation, append 'swagger' to the end of the base URI
 
 This PostAccountTransactionPayment operation allows for posting a scheduled payment, adhoc payment and an unscheduled payment. The details for how to populate the request will be provided for posting an unscheduled payment. If the need is to post a scheduled payment or an adhoc payment, then it is recommended to use a different API endpoint. That endpoint is api/student-accounting/ledger-payment-transactions. Details for how to use this API can be found in the Payment Partner Overview article.
 
-[Payment Partner Overview](https://docs.blackboard.com/docs/student/best-practices/studentapi-paymentpartner-overview)
+[Payment Partner Overview](https://docs.anthology.com/docs/student/best-practices/studentapi-paymentpartner-overview)
 
 ### API request details
 

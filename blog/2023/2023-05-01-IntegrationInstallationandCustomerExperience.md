@@ -68,13 +68,13 @@ There are really two _types_ of Developer Portal accounts:
 2. Production Accounts: these are your accounts used for production release of your integration. Given this account's information is what customers see when they install your integration it is considered a best practice to use a mailinglist such as business&#64;, integration_name&#64;, or support&#64;domain.tld. This email must be publicly reachable.
 3. Production Group: This is a very specific group within your Production Account which contains your integrations. This group receives production level settings.
 
-See <a href="https://docs.blackboard.com/docs/developer-portal/community-dev_portal" target="_top">Getting Started with the Developer Portal</a> for more information.
+See <a href="https://docs.anthology.com/docs/developer-portal/community-dev_portal" target="_top">Getting Started with the Developer Portal</a> for more information.
 
 #### Production Integration Release
 
-See our <a href="https://docs.blackboard.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-releasing_integration" target="_top">Releasing your Integration</a> guide for production release details.
+See our <a href="https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-releasing_integration" target="_top">Releasing your Integration</a> guide for production release details.
 
-Also see <a href="https://docs.blackboard.com/docs/lti/lti-registration-deployment" target="_top">LTI Registration and Deployment with Learn</a> guide which describes Blackboard's approach behind releasing LTI 1.3 integrations.
+Also see <a href="https://docs.anthology.com/docs/lti/lti-registration-deployment" target="_top">LTI Registration and Deployment with Learn</a> guide which describes Blackboard's approach behind releasing LTI 1.3 integrations.
 
 #### Customer Facing Documentation
 
@@ -90,7 +90,7 @@ Instead, develop your integration following the Register once model, and hand of
 
 Well almost... the current exception (see The Future is Bright(er) below) is if your integration uses our REST APIs. Then your integration documentation must provide Blackboard administrators with a list of privileges that need to be added to the user which is associated with your integration. The APIs list entitlements, not privileges, and therein lay a problem for Customers.
 
-As the integration provider you want a great customer experience so you use the <a href="https://docs.blackboard.com/docs/rest-apis/learn/admin/rest_apis-learn-admin-rest_and_learn#converting-entitlements-to-gui-privileges" target="_top"> bookmarklet tool</a> to determine the privileges you include in your documentation to provide guidance to admins installing your integration.
+As the integration provider you want a great customer experience so you use the <a href="https://docs.anthology.com/docs/rest-apis/learn/admin/rest_apis-learn-admin-rest_and_learn#converting-entitlements-to-gui-privileges" target="_top"> bookmarklet tool</a> to determine the privileges you include in your documentation to provide guidance to admins installing your integration.
 
 ## Integration Support
 
@@ -100,7 +100,7 @@ It probably goes without saying, but the integration vendor is responsible. Not 
 
 When the vendor registers in the Developer Portal they provide email information which is seen by customers when they install the integration. That is why this email and contact information must be publicly reachable. That is also why it makes sense to have a specific account from which all your integrations are delivered.
 
-See <a href="https://docs.blackboard.com/docs/developer-portal/community-dev_portal" target="_top">Getting Started with the Dev Portal</a> for information.
+See <a href="https://docs.anthology.com/docs/developer-portal/community-dev_portal" target="_top">Getting Started with the Dev Portal</a> for information.
 
 ## The Future is Bright(er)
 

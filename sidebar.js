@@ -180,7 +180,7 @@ const sidebars = {
             {
               type: "link",
               label: "UEF specifications",
-              href: "https://docs.blackboard.com/uef-documentation/start.html",
+              href: "https://docs.anthology.com/uef-documentation/start.html",
             },
           ],
         },

@@ -17,9 +17,9 @@ The original implementation of custom fields in Student (Ellucian) is referred t
 
 There is no API that has a single responsibility of managing data for School Defined Fields. The endpoints you will need to use for updating data for School Defined Fields are api/commands/Common/Student/SaveNew and api/commands/Common/Student/Save. The SaveNew operation is used when creating a new student record and the Save operation is used when updating an existing Student record. For additioal details on using the Save and SaveNew operations please refer to:
 
-[Tips for using Get and Save API Operations](https://docs.blackboard.com/docs/student/best-practices/get-save-bestpractices)
+[Tips for using Get and Save API Operations](https://docs.anthology.com/docs/student/best-practices/get-save-bestpractices)
 
-[Tips for using Create and SaveNew API Operations](https://docs.blackboard.com/docs/student/best-practices/create-savenew-bestpractices)
+[Tips for using Create and SaveNew API Operations](https://docs.anthology.com/docs/student/best-practices/create-savenew-bestpractices)
 
 The vast majority of use cases will be to update school defined fields data for an existing student. The remainder of this section will use the Save operation as an example. The first step will be to retrieve the instance of the Student record that school defined fields data is being updated for. Execute the api/commands/Common/Student/Get operation. Existing data for the school defined fields for the student will be in the CustomProperties and/or MultiValueCustomProperties properties in the response. If a school defined field has been configured to allow multiple values to be specified, then the values for this school defined field will be contained in the MultiValueCustomProperties property. For single value custom properties (majority of school defined fields), the data will reside in the CustomProperties property. These properties are defined as a collection of key/value pairs. The only difference is that the value for the MultiValueCustomProperties is of type ICollection`<string>` whereas the value type for the CustomProperties collection is string. The key contains the Code value for the configured school defined field. This value must match exactly to the Code value for the school defined field in order to be correctly updated (see screenshot below).
 

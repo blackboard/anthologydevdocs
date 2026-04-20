@@ -218,6 +218,6 @@ Now that you're subscribed and know that events will arrive through the same Mes
 Please be aware that fetch requests to backend services where heavy computational tasks or queries are executed are not recommended since it will severely impact the loading time of your integration and, by extent, the communication with Ultra.
 :::
 
-You can also review the entire specifications and documentation for UEF here [https://docs.blackboard.com/uef-documentation/start.html](https://docs.blackboard.com/uef-documentation/start.html) to know how to render information on the Ultra UI, register your help providers or create new panels/modals for your data.
+You can also review the entire specifications and documentation for UEF here [https://docs.anthology.com/uef-documentation/start.html](https://docs.anthology.com/uef-documentation/start.html) to know how to render information on the Ultra UI, register your help providers or create new panels/modals for your data.
 
 We also have available some tutorials in the next section to help you understand and build your own UEF integration.

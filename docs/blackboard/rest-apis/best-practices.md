@@ -17,7 +17,7 @@ Pay attention to the following to avoid failure points as a developer working wi
 
 - Always monitor your API usage using the x-header information returned on non-oauth requests
 
-  - Details on rate_limits and x-headers are available [here](https://docs.blackboard.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit).
+  - Details on rate_limits and x-headers are available [here](https://docs.anthology.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit).
 
 - Not all data operations are best done Just-In-Time (JIT).
   Some operations, such as backfilling data warehouses or refreshing caches are best done during off-peak Learn hours.

@@ -11,7 +11,7 @@ summary: New!! Visit the REST Tutorials and UEF Tutorials pages for our tutorial
 
 # New!! REST and UEF Tutorials
 
-New!! Visit the [REST Tutorials](https://docs.blackboard.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-tutorials) and [UEF Tutorials](https://docs.blackboard.com/docs/rest-apis/premium-apis/uef/Tutorials) pages for our tutorials on these topics!!
+New!! Visit the [REST Tutorials](https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-tutorials) and [UEF Tutorials](https://docs.anthology.com/docs/rest-apis/premium-apis/uef/Tutorials) pages for our tutorials on these topics!!
 
 Cheers!
 -markk

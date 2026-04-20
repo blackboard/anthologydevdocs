@@ -22,7 +22,7 @@ Create an account to register an application. Registration is a required step fo
 
 When you enter our developer portal, you will find several links starting from the top left. Select an item in this list for more details and instructions.
 
-1.  **Developer Documentation.** Directs you to docs.blackboard.com.
+1.  **Developer Documentation.** Directs you to docs.anthology.com.
 2.  **Explore APIs.** Directs you to our Learn, Ally, or student Swagger for up-to-date lists of APIs.
 3.  **Sign up.** Create a brand-new Developer Portal account.
 4.  **Log in.** Log in to your existing Developer Portal account.
@@ -33,7 +33,7 @@ When you enter our developer portal, you will find several links starting from t
 
 ### Developer Documentation
 
-Blackboard’s Developer Documentation (which includes this page) helps you explore Blackboard’s product resources. It includes tutorials, sample code, articles, and API references. For an overview, visit https://docs.blackboard.com/docs/site-intro.
+Blackboard’s Developer Documentation (which includes this page) helps you explore Blackboard’s product resources. It includes tutorials, sample code, articles, and API references. For an overview, visit https://docs.anthology.com/docs/site-intro.
 
 ### Explore APIs
 
@@ -85,7 +85,7 @@ If you are encountering issues when you select **Create Account**, make sure you
 
 ![Developer portal sign up form](/assets/img/dev-portal-start-here-4.png)
 
-Once you have successfully created your account, you will receive an email that gives information about our Documentation, Community, Partnerships, GitHub, and about our Amazon Machine Images [AMIs](https://docs.blackboard.com/docs/rest-apis/learn/sandbox/developer-ami).
+Once you have successfully created your account, you will receive an email that gives information about our Documentation, Community, Partnerships, GitHub, and about our Amazon Machine Images [AMIs](https://docs.anthology.com/docs/rest-apis/learn/sandbox/developer-ami).
 
 Once you have created your account, you will be presented with a page that looks like this:
 
