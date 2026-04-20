@@ -8,7 +8,7 @@ author: Mark Kauffman
 sidebar_position: 1
 ---
 
-Our Community partnership level is FREE to developers and provides access to the Learn AMI (Amazon Machine Images) for developers to build REST and LTI applications\*, API limits apply and Behind the Blackboard support is not included. [Community support is available](https://community.anthology.com).
+Our Community partnership level is FREE to developers and provides access to the Learn AMI (Amazon Machine Images) for developers to build REST and LTI applications\*, API limits apply and Behind the Blackboard support is not included. [Community support is available](https://community.blackboard.com).
 
 Consider investing in one of our other partnership levels to receive added benefits that help partners deepen integrations, promote solutions, and connect with Blackboard clients. The Blackboard Developers Network (BbDN) is Blackboard’s standard partnership and is available for $3,000 annually. BbDN Partnerships include the following benefits:
 
@@ -18,7 +18,7 @@ Consider investing in one of our other partnership levels to receive added benef
 - Custom listing in our [Partner Directory](https://www.blackboard.com/partnerships/partners/directory)
 - Listing in our [Blackboard App Catalog](https://appcatalog.blackboard.com/)
 - Use of Blackboard Licensed Marks in marketing materials (subject to approval)
-- Eligible to sponsor exhibit at [Anthology Together](https://www.anthology.com/together?utm_campaign=Global_2022_Cross_Event_UserConference_SaveTheDate_PMB_Unopened&utm_medium=email&utm_source=Eloqua&utm_content=Global_2022_Cross_Event_UserConference_SaveTheDate_PMB_Unopened) and other Blackboard events.
+- Eligible to sponsor exhibit our events.
 
 BbDN Partners also have the option to add-on of a “Learn SaaS Starter site” for $2,000 annually.
 Through a BbDN Learn SaaS Starter Site, you receive:
@@ -33,4 +33,4 @@ Purchase your BbDN partnership [here for US Companies](https://shop.blackboard.c
 
 Blackboard Partnerships Team
 
-\*REST is an acronym for REpresentational State Transfer and an architectural style for distributed hypermedia systems. Learn has a complete suite of APIs based on this standard. See [developer.anthology.com](https://developer.anthology.com). LTI is an industry standard developed by the IMS. Learn supports LTI 1.1 and LTI 1.3 Advantage. See www.imsglobal.org/activity/learning-tools-interoperability
+\*REST is an acronym for REpresentational State Transfer and an architectural style for distributed hypermedia systems. Learn has a complete suite of APIs based on this standard. See [developer.blackboard.com](https://developer.blackboard.com). LTI is an industry standard developed by the IMS. Learn supports LTI 1.1 and LTI 1.3 Advantage. See www.imsglobal.org/activity/learning-tools-interoperability

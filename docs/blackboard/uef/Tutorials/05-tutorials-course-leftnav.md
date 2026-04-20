@@ -23,7 +23,7 @@ We've had a lot of requests asking about how to add an LTI launch to an Ultra co
 
 This video demonstrates creating a link in the Ultra course Details & Actions section that does an LTI launch.
 
-<ReactPlayer playback={false} controls url="https://www.youtube.com/watch?v=1SNQXsaPLKg&ab_channel=AnthologyDevelopers" />
+<ReactPlayer playback={false} controls url="https://www.youtube.com/watch?v=1SNQXsaPLKg&ab_channel=BlackboardDevelopers" />
 
 ### Sample Code
 

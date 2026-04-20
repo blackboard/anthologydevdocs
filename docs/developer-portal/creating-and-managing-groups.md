@@ -19,7 +19,7 @@ You can create groups for individual and team development. You can target a spec
 - **A Group can have one or more applications associated with it.** This association allows for granular management of applications and teams' access to application information.
 - **Groups enable you to manage the developers** associated with your projects and the release level of your applications.
 - **Groups allow for a higher contracted rate_limit and site quota** over those set for default developer accounts. These settings are based on your Blackboard Learn license or Business Development contract. If you do not have a Blackboard Learn product license or do not have a Business Development contract, your groups will all have default developer account settings.
-- **Groups cannot be deleted or removed by you or Anthology.**
+- **Groups cannot be deleted or removed by you or Blackboard.**
 
 ## Creating a group
 

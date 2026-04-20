@@ -40,7 +40,7 @@ Learn supports the following defined metric profiles:
 - Grade
 
 The specification defines a number of tool-specific profiles as well. An
-example of this is the MediaEvent, which Anthology worked closely with
+example of this is the MediaEvent, which Blackboard worked closely with
 Kaltura to implement in the context of the Kaltura LTI integration.
 
 ## JSON Syntax

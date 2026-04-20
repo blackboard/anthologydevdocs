@@ -13,7 +13,7 @@ Blackboard Learn integrations are similar to plugins or add-ons in other softwar
 
 Overall, Blackboard Learn has a long history of supporting integrations with external tools and content providers, and continues to invest in this area to ensure that its users have access to a wide range of educational resources and tools within the Blackboard environment.
 
-Anthology considers RESTful APIs to be the future of integration development and Blackboard Learn is following this thinking as well, having End of Lifed SOAP Web Services in 2020 and announcing EOL for their Java Building Blocks on January 1st, 2024.
+Blackboard considers RESTful APIs to be the future of integration development and Blackboard Learn is following this thinking as well, having End of Lifed SOAP Web Services in 2020 and announcing EOL for their Java Building Blocks on January 1st, 2024.
 
 ## RESTful APIs
 
@@ -33,6 +33,6 @@ Blackboard Learn REST APIs support a wide range of functionality for integrating
 
 ## API Documentation and Examples
 
-Anthology provides comprehensive [REST API documentation](https://developer.anthology.com/portal/displayApi/Learn) that describes the various endpoints, request and response formats, and authentication methods that are available. The documentation on this site includes examples and code snippets to help you get started with using the REST APIs in your integrations.
+Blackboard provides comprehensive [REST API documentation](https://developer.blackboard.com/portal/displayApi/Learn) that describes the various endpoints, request and response formats, and authentication methods that are available. The documentation on this site includes examples and code snippets to help you get started with using the REST APIs in your integrations.
 
 Also provided is a [github repo](https://github.com/search?q=org%3Ablackboard+blackboard%2FBBDN-) containing useful application code for getting started.

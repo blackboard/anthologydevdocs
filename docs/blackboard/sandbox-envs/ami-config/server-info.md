@@ -29,7 +29,7 @@ When you stop and start an existing EC2 instance, AWS resets the public domain n
 
 ```yaml title=my_ssl_config
 ssldomain: devmen.hopto.org
-sslemail: developers@anthology.com
+sslemail: developers@blackboard.com
 ```
 
 4. Once the file is created, reboot the instance by executing the following command through the SSH session:
@@ -38,7 +38,7 @@ sslemail: developers@anthology.com
 sudo reboot now
 ```
 
-> \* Anthology Inc does not endorse or recommend specific DNS providers such as NoIp.com for usage. These are mentioned for their free options but any service can be used to map DNS entries
+> \* Blackboard LLC does not endorse or recommend specific DNS providers such as NoIp.com for usage. These are mentioned for their free options but any service can be used to map DNS entries
 
 ## Create the Let's Encrypt certificate
 

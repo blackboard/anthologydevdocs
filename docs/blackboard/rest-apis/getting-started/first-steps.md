@@ -8,32 +8,32 @@ published: ""
 edited: ""
 ---
 
-Anthology offers a suite of education technology tools, both software and
+Blackboard offers a suite of education technology tools, both software and
 hardware. REST stands for **Re**presentational **S**tate **T**ransfer. It is a
 lightweight, flexible web service architecture that allows HTTP commands to be
 sent to Web Applications without unnecessary overhead. We provide specific
-examples and tutorials about using Anthology REST APIs, particularly when a
+examples and tutorials about using blackboard REST APIs, particularly when a
 workflow is more complicated. For more general questions about REST and using
 REST APIs, see any of the numerous tutorials available online. Most commonly
 used resources include:
 
-- Anthology's [developer portal](/docs/developer-portal/dev-portal-start-here.md)
-- Anthology's [Github repos](https://github.com/search?utf8=%E2%9C%93&q=BBDN-REST)
+- blackboard's [developer portal](/docs/developer-portal/dev-portal-start-here.md)
+- blackboard's [Github repos](https://github.com/search?utf8=%E2%9C%93&q=BBDN-REST)
 
 ## Before You Get Started
 
-Anthology offers lots of tools to help you develop an application, plugin, or
-other integration for use with Anthology products like Learn and
+blackboard offers lots of tools to help you develop an application, plugin, or
+other integration for use with blackboard products like Learn and
 Student. The most important ones are your accounts with these
 sites:
 
-- **Anthology Developer Portal** is where you register applications so they can work with Anthology products. It's also where you get your own key and secret that you need to authenticate your application with Anthology products.
-- **Anthology Developer Community** is where you learn to develop with Anthology products, get the latest news, and discuss with other Anthology integrators.
+- **blackboard Developer Portal** is where you register applications so they can work with blackboard products. It's also where you get your own key and secret that you need to authenticate your application with blackboard products.
+- **blackboard Developer Community** is where you learn to develop with blackboard products, get the latest news, and discuss with other blackboard integrators.
 
 Note that the Developer Portal and Developer Community require separate
 accounts.
 
-### Register as a Anthology Developer
+### Register as a blackboard Developer
 
 LTI and REST integrations begin at the Developer Portal. This is
 where you register LTI and REST Applications and get the ID, key, and secrets for client deployment. In the
@@ -41,31 +41,31 @@ portal, you can see which client systems are using the integrations. Signing
 up is free, and you can develop your integration at no cost. There may be cost
 involved in deploying your integration, but before that happens, you'll have
 to speak with us. To discuss deploying your application, please contact us at
-[developers@anthology.com](mailto:developers@anthology.com). Before you can
-authenticate your project with Anthology applications, you need to be a
-registered Anthology developer. To register as a Anthology developer:
+[developers@blackboard.com](mailto:developers@blackboard.com). Before you can
+authenticate your project with blackboard applications, you need to be a
+registered blackboard developer. To register as a blackboard developer:
 
-1. Go to [https://developer.anthology.com/](https://developer.anthology.com/) and select **Sign Up**. Read and agree to the terms and conditions.
+1. Go to [https://developer.blackboard.com/](https://developer.blackboard.com/) and select **Sign Up**. Read and agree to the terms and conditions.
 2. Provide your email address, a password, your first name and last, and select the checkbox to prove you are human.
 3. Select **Create Account** and you're on your way.
 
 For more information about the Developer Portal please see [this document](/docs/developer-portal/dev-portal-start-here.md)
 
-**Note:** If you are an Anthology client, an Anthology Partner / Vendor / Developer of a REST Application should NEVER tell you to go to the developer portal and create an App ID with the associated key/secret to install their application. They should never tell you to apply for a Rate/Site increase for their application. Anthology DOES NOT support that model. Every REST Application developer should give you an App ID to install their REST App and tell you how to configure a system role for its use. Period. The REST Application developer needs to request the increases they need to run their application themselves. If they ask you to go to developer.anthology.com and get an App ID/Key/Secret, please tell them that is wrong. They should have exactly one App ID for their production REST application that they are asking you to install.
+**Note:** If you are an blackboard client, an blackboard Partner / Vendor / Developer of a REST Application should NEVER tell you to go to the developer portal and create an App ID with the associated key/secret to install their application. They should never tell you to apply for a Rate/Site increase for their application. blackboard DOES NOT support that model. Every REST Application developer should give you an App ID to install their REST App and tell you how to configure a system role for its use. Period. The REST Application developer needs to request the increases they need to run their application themselves. If they ask you to go to developer.blackboard.com and get an App ID/Key/Secret, please tell them that is wrong. They should have exactly one App ID for their production REST application that they are asking you to install.
 
 Contractors are an exception to this policy as they are producing an
-integration on your, the Anthology client, behalf. Questions regarding the
+integration on your, the blackboard client, behalf. Questions regarding the
 policy and whether you are impacted may be asked here, or posted to
-[developers@anthology.com](mailto:developers@anthology.com)
+[developers@blackboard.com](mailto:developers@blackboard.com)
 
 ### Join the Community
 
-The Anthology developer community is the best place to find more information
-about integrating your project with Anthology products. You will benefit from
-the community most by joining in.To register in the Anthology developer
+The blackboard developer community is the best place to find more information
+about integrating your project with blackboard products. You will benefit from
+the community most by joining in.To register in the blackboard developer
 community:
 
-1. Go to [Anthology Developer Community](/docs/developer-portal/dev-portal-start-here.md) and select **Register**.
+1. Go to [blackboard Developer Community](/docs/developer-portal/dev-portal-start-here.md) and select **Register**.
 2. If your organization is a Blackboard client or partner organization and you have a Behind the Blackboard login, select **Behind the Blackboard Login**. Otherwise, select **Community Site Login**.
 3. Enter your email address to receive a link via email.
 4. In your email's inbox, find the email sent by Blackboard. You might have to check your spam or junk folder. The email's subject is something like _Blackboard Community: Email Validation_. Select the link in your email. You will be taken to a registration page.
@@ -73,8 +73,8 @@ community:
 
 #### What Blackboard Application Do I Need?
 
-Your Anthology-compatible application can work with one or more of
-Anthology's tools. How you build an integration with Anthology software and
+Your blackboard-compatible application can work with one or more of
+blackboard's tools. How you build an integration with blackboard software and
 hardware depends on which tools you want to integrate with. The tools you'll
 want to use depend on what you want to do.
 
@@ -83,7 +83,7 @@ _I want to programmatically..._ _You'll need to..._
 **Add files, text, and the like to Learn**
 
 1. [Authenticate with Learn](basic-authentication.md) via REST API
-2. Check out our [Learn REST API reference](https://developer.anthology.com/portal/displayApi)
+2. Check out our [Learn REST API reference](https://developer.blackboard.com/portal/displayApi)
 
 <!-- **Set up video conference sessions**
 
@@ -100,10 +100,10 @@ _I want to programmatically..._ _You'll need to..._
 1. [Authenticate with Blackboard Collaborate](/rest-apis/collaborate/security-and-tokens) via REST API
 2. heck out our [Collaborate REST API reference](/rest-apis/collaborate/api) -->
 
-#### Get Development Instances of Anthology Applications
+#### Get Development Instances of blackboard Applications
 
-Anthology makes available instances of Anthology applications that you can
-use to build projects that integrate with Anthology applications. Among
+blackboard makes available instances of blackboard applications that you can
+use to build projects that integrate with blackboard applications. Among
 others, we offer these popular developer instances.
 
 - [AWS instance of Learn](/docs/blackboard/sandbox-envs/welcome)  
@@ -112,11 +112,11 @@ others, we offer these popular developer instances.
 
 <!-- - [Developer access to Blackboard Collaborate](/rest-apis/collaborate/getting-started) -->
 
-<!-- For more information about developer versions of Anthology applications, see [Developer Versions of Anthology Applications](/rest-apis/learn/sandbox/what-is-dvba). -->
+<!-- For more information about developer versions of blackboard applications, see [Developer Versions of blackboard Applications](/rest-apis/learn/sandbox/what-is-dvba). -->
 
 <!-- ### Developing with Blackboard Collaborate
 
-Things are a little different for developing with Blackboard Collaborate. For more information, see the [Collaborate REST API Reference](/rest-apis/collaborate/api) and then email us at at [developers@anthology.com](mailto:developers@anthology.com). We'll set you up with a key and secret for Blackboard Collaborate. Then read about how to use your key and secret to
+Things are a little different for developing with Blackboard Collaborate. For more information, see the [Collaborate REST API Reference](/rest-apis/collaborate/api) and then email us at at [developers@blackboard.com](mailto:developers@blackboard.com). We'll set you up with a key and secret for Blackboard Collaborate. Then read about how to use your key and secret to
 [authenticate with Collaborate](/rest-apis/collaborate/security-and-tokens). The rest of the present topic pertains only to developing with Learn. -->
 
 ### Developing with Learn
@@ -129,7 +129,7 @@ with Learn](basic-authentication.md).
 
 ### Look at the Learn REST Reference
 
-Check out the [Learn REST API Reference](https://developer.anthology.com/portal/displayApi/Learn). In particular,look at the range of endpoints available. Check the **Since** version for endpoint that interest you. This version number indicates the version since which the endpoint has been available. This way, you can make sure that your Learn server is is able to use it.
+Check out the [Learn REST API Reference](https://developer.blackboard.com/portal/displayApi/Learn). In particular,look at the range of endpoints available. Check the **Since** version for endpoint that interest you. This version number indicates the version since which the endpoint has been available. This way, you can make sure that your Learn server is is able to use it.
 
 ### Authentication/Authorization
 
@@ -139,7 +139,7 @@ OAuth](3lo.md).
 
 ### Calling Services
 
-Once your application acquires an access token, it only needs to pass that token as a Bearer token in the Authorization header of your API calls. Review the authentication documentation in the above section for an overview, or find more specific details on the available API endpoints and APIs on the Developer Portal's [Swagger API document](https://developer.anthology.com/portal/displayApi).In its current implementation, Learn REST APIs does not support Cross-Origin Resource Sharing (CORS). To learn about this and see an example to workaround this with Angular2, see the blog entitled [Cross-Origin Resource Sharing; or Why I Can't Use AJAX with Learn APIs](https://community.blackboard.com/blogs/4/17).
+Once your application acquires an access token, it only needs to pass that token as a Bearer token in the Authorization header of your API calls. Review the authentication documentation in the above section for an overview, or find more specific details on the available API endpoints and APIs on the Developer Portal's [Swagger API document](https://developer.blackboard.com/portal/displayApi).In its current implementation, Learn REST APIs does not support Cross-Origin Resource Sharing (CORS). To learn about this and see an example to workaround this with Angular2, see the blog entitled [Cross-Origin Resource Sharing; or Why I Can't Use AJAX with Learn APIs](https://community.blackboard.com/blogs/4/17).
 
 ### Configure an Instance of Learn to Work with Your Application
 
@@ -160,5 +160,5 @@ Once you have registered with the developer portal and built an integration, dep
 We will continue to add new examples, tutorials, and code samples, so make
 sure to check these links regularly.
 
-- [Developer Portal](https://developer.anthology.com/)
-- [REST Documentation](https://developer.anthology.com/portal/displayApi)
+- [Developer Portal](https://developer.blackboard.com/)
+- [REST Documentation](https://developer.blackboard.com/portal/displayApi)

@@ -10,7 +10,7 @@ edited: ""
 
 ### Overview
 
-Authentication for REST Integrations follows the [OAuth 2.0 RFC Standard](https://tools.ietf.org/html/rfc6749). Each developer has a unique key and secret associated with each application they create. The developer makes an HTTP Post directly to the REST-enabled Learn server requesting an OAuth access token. The Learn instance forwards the request to Anthology's Developer Portal, adding its own siteId to the request so that the portal can determine whether the application is registered with the server. The Portal returns an authorization token that grants the application access to the Learn REST API for one hour. The developer uses this token in subsequent REST calls until the token expires. This workflow is illustrated in the following diagram:
+Authentication for REST Integrations follows the [OAuth 2.0 RFC Standard](https://tools.ietf.org/html/rfc6749). Each developer has a unique key and secret associated with each application they create. The developer makes an HTTP Post directly to the REST-enabled Learn server requesting an OAuth access token. The Learn instance forwards the request to Blackboard's Developer Portal, adding its own siteId to the request so that the portal can determine whether the application is registered with the server. The Portal returns an authorization token that grants the application access to the Learn REST API for one hour. The developer uses this token in subsequent REST calls until the token expires. This workflow is illustrated in the following diagram:
 
 ![OAuth Workflow Diagram](/assets/img/basic-auth-learn.png)
 
@@ -21,15 +21,15 @@ REST calls are subject to quotas and limits. For more information, see
 
 ### Before You Start
 
-- You must have a developer account at [developer.anthology.com](https://developer.anthology.com/).
-- Your application must be registered at [developer.anthology.com](https://developer.anthology.com/).
-- The application ID you receive when registering at developer.anthology.com must then be used to install your integgration on your Learn instance. Installing your application on a Learn instance provides the application key:secret pair access to the Learn instance.
+- You must have a developer account at [developer.blackboard.com](https://developer.blackboard.com/).
+- Your application must be registered at [developer.blackboard.com](https://developer.blackboard.com/).
+- The application ID you receive when registering at developer.blackboard.com must then be used to install your integgration on your Learn instance. Installing your application on a Learn instance provides the application key:secret pair access to the Learn instance.
 
 ### To Get a Token Using Basic OAuth 2.0
 
 Use the following high-level steps to fetch a token from your Learn instance.
 Remember that your Learn instance must be registered at
-developer.anthology.com and that your application must be registered on your
+developer.blackboard.com and that your application must be registered on your
 Learn instance. Registering your application with your Learn instance provides
 you with an application key and secret.
 
@@ -79,7 +79,7 @@ authorize other REST calls.
 
 Use cURL or an appropriate HTTP library to make a REST call to the appropriate
 endpoint. For a list of endpoints and the methods supported for each, see the
-Learn REST reference docs at https://developer.anthology.com/portal/displayApi/Learn.
+Learn REST reference docs at https://developer.blackboard.com/portal/displayApi/Learn.
 
 **Headers must include:**
 
@@ -140,4 +140,4 @@ you.
 - Tokens expire after 1 hour, as per the OAuth RFC examples.
 - Tokens are associated with a specific Learn site.
 - Any application may have only one token per Learn site. Asking for a token returns the existing one with an updated expiry time if it has not expired yet.
-- Check the [Learn REST API Documentation](https://developer.anthology.com/portal/displayApi/Learn) for error codes.
+- Check the [Blackboard LMS REST API Documentation](https://developer.blackboard.com/portal/displayApi/Learn) for error codes.

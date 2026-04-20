@@ -23,7 +23,7 @@ Well look no further because we will explain to you how to match them!
 1. **We talk about entitlements when we talk about actions an application can perform**
 
 - An entitlement looks like this: course.attendance.VIEW
-- You can find them in https://developer.anthology.com/portal/displayApi
+- You can find them in https://developer.blackboard.com/portal/displayApi
 - They are usually displayed when you expand an endpoint
 
 2. **We talk about privileges when we talk about actions an user can perform**
@@ -36,7 +36,7 @@ Well look no further because we will explain to you how to match them!
 ## What do you need?
 
 1. You need to know how to create a _custom_ System Role: [How to create a System role](https://help.blackboard.com/Learn/Administrator/SaaS/User_Management/Roles_and_Privileges/System_Roles)
-2. You need to know which api endpoints you will be using: [Learn API endpoints](https://developer.anthology.com/portal/displayApi)
+2. You need to know which api endpoints you will be using: [Learn API endpoints](https://developer.blackboard.com/portal/displayApi)
 3. You need to review, based on the endpoints you will be using, the entilements that you need. Remember that each entitlement is described when opening an endpoint at the beggining.
 
 ## Context

@@ -31,7 +31,7 @@ Blackboard](https:///blackboard.secure.force.com/) on the Download
 Files page for each release.
 
 If an API is not shown in the publicly available documentation, it is not a
-public API. Anthology does not support its use and we do not guarantee any
+public API. Blackboard does not support its use and we do not guarantee any
 kind of ongoing maintenance or compatibility. Use unsupported APIs at your own
 risk.
 

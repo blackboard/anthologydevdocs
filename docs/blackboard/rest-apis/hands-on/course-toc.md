@@ -153,7 +153,7 @@ You will need:
 
 ![Image of the mapping between course toc and get payload](/assets/img/course_toc-second-image.png)
 
-Please remember you can always check in our documentation the model to understand the meaning of each attribute in the payload in our [Developer Portal](https://developer.anthology.com/portal/displayApi)
+Please remember you can always check in our documentation the model to understand the meaning of each attribute in the payload in our [Developer Portal](https://developer.blackboard.com/portal/displayApi)
 
 ![Image of the model](/assets/img/course_toc-third_image.png)
 

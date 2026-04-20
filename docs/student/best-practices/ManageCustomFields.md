@@ -7,19 +7,19 @@ published: ""
 edited: ""
 ---
 
-Creating custom fields for additional data capture is a key capability within the Anthology Student application. This capability was introduced many years ago and has evolved over time. The result is that there are three different implementations for configuring and managing data for custom fields in the application currently. The details for how to manage data for custom fields via APIs will depend on the specific entity that the custom fields are for. This document will outline each of the three implementations and identify which entities belong to each. Additionally, details on how to retrieve data as well as update data for custom fields will be covered.
+Creating custom fields for additional data capture is a key capability within the Student (Ellucian) application. This capability was introduced many years ago and has evolved over time. The result is that there are three different implementations for configuring and managing data for custom fields in the application currently. The details for how to manage data for custom fields via APIs will depend on the specific entity that the custom fields are for. This document will outline each of the three implementations and identify which entities belong to each. Additionally, details on how to retrieve data as well as update data for custom fields will be covered.
 
 ## School Defined Fields
 
-The original implementation of custom fields in Anthology Student is referred to as "School Defined Fields" or "School Fields". This implementation allows for any number of custom fields to be configured for the Student entity. Although not explicitly called out in configuration of School Defined Fields, the association of data for these fields will be on the Id property in the Student entity. The configuration includes the ability to specify which modules/domains a given field is visible in. To see additional details regarding this feature including how to configure, refer to Help which is accessible via the question mark icon on the top right portion of the toolbar in the web client UI.
+The original implementation of custom fields in Student (Ellucian) is referred to as "School Defined Fields" or "School Fields". This implementation allows for any number of custom fields to be configured for the Student entity. Although not explicitly called out in configuration of School Defined Fields, the association of data for these fields will be on the Id property in the Student entity. The configuration includes the ability to specify which modules/domains a given field is visible in. To see additional details regarding this feature including how to configure, refer to Help which is accessible via the question mark icon on the top right portion of the toolbar in the web client UI.
 
 ![ManageCustomFields](/assets/img/ManageCustomFields1.png)
 
 There is no API that has a single responsibility of managing data for School Defined Fields. The endpoints you will need to use for updating data for School Defined Fields are api/commands/Common/Student/SaveNew and api/commands/Common/Student/Save. The SaveNew operation is used when creating a new student record and the Save operation is used when updating an existing Student record. For additioal details on using the Save and SaveNew operations please refer to:
 
-[Tips for using Get and Save API Operations](https://docs.anthology.com/docs/student/best-practices/get-save-bestpractices)
+[Tips for using Get and Save API Operations](https://docs.blackboard.com/docs/student/best-practices/get-save-bestpractices)
 
-[Tips for using Create and SaveNew API Operations](https://docs.anthology.com/docs/student/best-practices/create-savenew-bestpractices)
+[Tips for using Create and SaveNew API Operations](https://docs.blackboard.com/docs/student/best-practices/create-savenew-bestpractices)
 
 The vast majority of use cases will be to update school defined fields data for an existing student. The remainder of this section will use the Save operation as an example. The first step will be to retrieve the instance of the Student record that school defined fields data is being updated for. Execute the api/commands/Common/Student/Get operation. Existing data for the school defined fields for the student will be in the CustomProperties and/or MultiValueCustomProperties properties in the response. If a school defined field has been configured to allow multiple values to be specified, then the values for this school defined field will be contained in the MultiValueCustomProperties property. For single value custom properties (majority of school defined fields), the data will reside in the CustomProperties property. These properties are defined as a collection of key/value pairs. The only difference is that the value for the MultiValueCustomProperties is of type ICollection`<string>` whereas the value type for the CustomProperties collection is string. The key contains the Code value for the configured school defined field. This value must match exactly to the Code value for the school defined field in order to be correctly updated (see screenshot below).
 
@@ -118,4 +118,4 @@ There is capability for securing configured extended properties on an individual
 
 As can be the case, there may be additional nuances for how to properly manage extended property data to address a client's specific use cases that are not covered within this document.
 
-If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@anthology.com.
+If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@blackboard.com.

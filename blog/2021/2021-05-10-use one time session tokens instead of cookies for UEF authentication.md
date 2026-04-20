@@ -11,7 +11,7 @@ summary: As browsers continue to lock down cookies, particularly with iframes, t
 
 # Use One-Time Session Token to Authenticate with UEF
 
-In testing with the [Google Canary Chrome Browser](https://www.google.com/chrome/canary/), one of our clients discovered an issue that was blocking users from logging in to their Learn instance. After much troubleshooting, we discovered a multi-layer issue that brings us to, you guessed it, [cookies](https://docs.anthology.com/blog/2020/10/15/Cookies-and-Browsers).
+In testing with the [Google Canary Chrome Browser](https://www.google.com/chrome/canary/), one of our clients discovered an issue that was blocking users from logging in to their Learn instance. After much troubleshooting, we discovered a multi-layer issue that brings us to, you guessed it, [cookies](https://docs.blackboard.com/blog/2020/10/15/Cookies-and-Browsers).
 
 > **This affects clients in SaaS with Ultra Base Navigation enabled using Ultra integrations that rely on UEF** <br/> > **Review UPDATE in LTI 1.3 section. This post previously mentioned a bug that no longer exists.**
 
@@ -26,11 +26,11 @@ if ( top != self )
 }
 ```
 
-In and of itself there's nothing wrong with it. We, at Anthology, have removed it from the default Ultra login page, but many clients use it in Original login pages, and so it's moved with them into Ultra.
+In and of itself there's nothing wrong with it. We, at Blackboard, have removed it from the default Ultra login page, but many clients use it in Original login pages, and so it's moved with them into Ultra.
 
 > If you are unsure whether you have a custom login page, visit [help.blackboard.com](https://help.blackboard.com/learn/Administrator/SaaS/User_Interface_Options/Ultra_Experience/Institution_Branding/Customize_the_Login_Page) for more information.
 
-Secondly, when a user logged in, Ultra Extensions automatically fired off an LTI launch to UEF-enabled tools. The way UEF works is: after the LTI launch is validated, the tool redirects to the Learn REST endpoint to initiate a UserAuth flow. In our documentation, we call this a Three-Legged OAuth or [3LO](https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-3lo). In most cases, it's a process that relies on a session cookie to hold everything together. This impending release of Chrome (and other browsers) will block this cookie because everything is happening across domains and involves the use of iframes.
+Secondly, when a user logged in, Ultra Extensions automatically fired off an LTI launch to UEF-enabled tools. The way UEF works is: after the LTI launch is validated, the tool redirects to the Learn REST endpoint to initiate a UserAuth flow. In our documentation, we call this a Three-Legged OAuth or [3LO](https://docs.blackboard.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-3lo). In most cases, it's a process that relies on a session cookie to hold everything together. This impending release of Chrome (and other browsers) will block this cookie because everything is happening across domains and involves the use of iframes.
 
 So what happens is that, even though the integration is configured in Learn to not force the end-user to authorize the integration, the lack of the session cookie means that Learn has no idea that this user is logged in, so it pops open the login page.
 
@@ -81,6 +81,6 @@ By now, I hope you are using LTI 1.3, but I know many are not. As a result, we a
 
 We have validated this fix with one of the partners that was affected. If you are a developer, please fix the issue immediately! If you are an administrator of a Learn SaaS instance using Ultra, and you have UEF integrations, make sure you do not have that JavaScript snippet on your login page. And if you do, please remove it. Then let your UEF integration partners and developers know that this fix must be made as soon as possible.
 
-Regardless of whether you are an administrator or a developer, please feel free to reach out to us at developers@anthology.com with any questions.
+Regardless of whether you are an administrator or a developer, please feel free to reach out to us at developers@blackboard.com with any questions.
 
 Happy coding!

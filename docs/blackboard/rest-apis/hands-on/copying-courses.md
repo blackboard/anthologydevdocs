@@ -12,7 +12,7 @@ author: Mark Kauffman, Mark O'Neil
 > Notes:
 >
 > - The Learn Course Copy APIs work the same for either Original or Ultra course experiences.
-> - Learn Public REST APIs are documented at https;//developer.anthology.com/portal/displayAPI/Learn
+> - Learn Public REST APIs are documented at https;//developer.blackboard.com/portal/displayAPI/Learn
 > - Information on System Administrators is not generally available via Public REST APIs, thus it is a Best Practice for Learn Administrators who are teaching or taking courses be enrolled using a non-Admininistrator Role privileged user.
 
 ## Topic
@@ -128,7 +128,7 @@ Body:
 
 - Always monitor your API usage using the x-header information returned on non-oauth requests
 
-  - Details on rate_limits and x-headers are available [here](https://docs.anthology.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit).
+  - Details on rate_limits and x-headers are available [here](https://docs.blackboard.com/docs/developer-portal/production-groups-rest-api-and-site-registration-limits#rest-api-calls-limit).
 
 - Not all data operations are best done JIT.
   Some operations, such as backfilling data warehouses or refreshing caches are best done during off-peak Learn hours.

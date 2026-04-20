@@ -10,8 +10,8 @@ const LandingHeader = () => {
   return (
     <header>
       <div className={styles["hero-banner"]}>
-        <h1>Anthology Developer Documentation</h1>
-        <p>Discover everything you need to build for Anthology Solutions.</p>
+        <h1>Blackboard Developer Documentation</h1>
+        <p>Discover everything you need to build for Blackboard Solutions.</p>
       </div>
     </header>
   );

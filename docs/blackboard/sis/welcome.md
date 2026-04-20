@@ -8,7 +8,7 @@ edited: ""
 ---
 
 The SIS (Student Information Systems) API is a classic API oriented around bulk or event-driven data loading from a SIS
-or ERP program like Anthology Student, Banner or Colleague. Most aspects of SIS are [documented on our main help site](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System),
+or ERP program like Student (Ellucian), Banner or Colleague. Most aspects of SIS are [documented on our main help site](https://help.blackboard.com/Learn/Administrator/SaaS/Integrations/Student_Information_System),
 but some developer documentation is provided here.
 
 ## SIS Types

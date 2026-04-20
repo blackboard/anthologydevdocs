@@ -28,7 +28,7 @@ Not stopping your EC2 when you encounter an error or completed your development 
 
 :::
 
-If you have any questions, feel free to ask in this space or email us at developers@anthology.com.
+If you have any questions, feel free to ask in this space or email us at developers@blackboard.com.
 
 ### How can I migrate the information from one EC2/AMI to another? -- Migration Cookbook - Recreating Data between AMIs
 
@@ -57,7 +57,7 @@ When receiving this error there are two root causes:
 1. The server hasn't properly started and the router is still spooling up. Give it 5 to 10 minutes and try again, if the issue persists follow to the next step
 2. Incorrect configuration for the VPC. Please verify that the third step of the configuration under [Use the Blackboard REST and LTI Developer AM](/docs/blackboard/sandbox-envs/ami-config/overview.md) was followed and DNS hostnames is set to **Yes**
 
-if the issue persists, please create a ticket through our Anthology Support Portal or send an email to [developers@anthology.com](mailto:developers@anthology.com)
+if the issue persists, please create a ticket through our Blackboard Support Portal or send an email to [developers@blackboard.com](mailto:developers@blackboard.com)
 
 ### CVE from AVG Antivirus
 

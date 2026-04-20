@@ -10,7 +10,7 @@ author: Daniel Nieto
 
 ## Background
 
-The [Anthology Developer Portal](https://developer.anthology.com) plays a crucial role in the integrations with the Anthology product portfolio, as such it handles millions of requests each day, making the implementation of a rate limit mechanism essential.
+The [blackboard Developer Portal](https://developer.blackboard.com) plays a crucial role in the integrations with the blackboard product portfolio, as such it handles millions of requests each day, making the implementation of a rate limit mechanism essential.
 
 Rate limiting is a mechanism used in the web applications to control the traffic flow and the resources utilization. The limit is set by a default value, which is the number of API requests that can be made each day from applications that are registered to your developer group **by default, this is set to 10,000 calls every 24 hours**.
 

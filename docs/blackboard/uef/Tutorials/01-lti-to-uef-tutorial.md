@@ -57,7 +57,7 @@ The next step is to register our application. Notice that we don't have any code
 
 <ReactPlayer playback={false} controls url="https://www.youtube.com/embed/E4PDgQxE5Tg" />
 
-1. Browse to [the developer portal](https://developer.anthology.com)
+1. Browse to [the developer portal](https://developer.blackboard.com)
 2. If you do not have an account, register for one. The password restrictions are crazy, so be sure to read them before creating your password to save yourself some time and frustration.
 3. Login to your account
 4. Under My Apps, click the + icon to create a new application.
@@ -215,6 +215,6 @@ Cool, right? But let's put the finishing touches on this thing. We might need da
 
 ## Summary
 
-I hope you found that fun and enlightening. As always, if you have questions, comments, or concerns, reach out to us at [developers@anthology.com](mailto:developers@anthology.com) and let us know!
+I hope you found that fun and enlightening. As always, if you have questions, comments, or concerns, reach out to us at [developers@blackboard.com](mailto:developers@blackboard.com) and let us know!
 
 -Happy Coding

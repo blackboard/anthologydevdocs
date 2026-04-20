@@ -18,12 +18,12 @@ Your production group allows you to increase the number of site registrations an
 
 Use [our best practices](/docs/developer-portal/best-practices) to properly name groups.
 
-- **If you are an Anthology Client or Partner.** Create a Behind the Blackboard ticket requesting an increase of the number of rest API calls and/or site registrations. You need to provide:
+- **If you are an Blackboard Client or Partner.** Create a Behind the Blackboard ticket requesting an increase of the number of rest API calls and/or site registrations. You need to provide:
 
   - The email used to register your application.
   - The name of the production group. If you haven't created one yet, the limits are applied to any existing production.
 
-- **If you are a third party with no partnership level.** Send an [email](mailto:bbpartnerteam@anthology.com) about your application, company, integration, and whether you are interested in a partnership. You can review our documentation to [become a partner](/docs/partners/become-a-partner.md).
+- **If you are a third party with no partnership level.** Send an [email](mailto:bbpartnerteam@blackboard.com) about your application, company, integration, and whether you are interested in a partnership. You can review our documentation to [become a partner](/docs/partners/become-a-partner.md).
 
 ## Site Registration Limits
 

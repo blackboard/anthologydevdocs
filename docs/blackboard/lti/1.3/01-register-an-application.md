@@ -6,14 +6,14 @@ edited: ''
 author: Scott Hurrey
 ---
 
-In this section, we cover how you register your application with Anthology and deploy it to a Learn instance. Registration and deployment are not covered in the specification provided by 1EdTech, and each LMS vendor handles it slightly differently.
+In this section, we cover how you register your application with Blackboard and deploy it to a Learn instance. Registration and deployment are not covered in the specification provided by 1EdTech, and each LMS vendor handles it slightly differently.
 
-## Anthology Developer Portal
+## Blackboard Developer Portal
 
-The first thing to understand about registering your application is that Anthology has you register your tool **ONCE** with our developer portal here [https://developer.anthology.com](https://developer.anthology.com). This is a central, self-service application, running in AWS where you enter information about your application, and are given the values you need for your application to work with LTI Advantage and Learn. It is also the same place you get the ID, key, and secret if you are going to use our public REST API.
+The first thing to understand about registering your application is that Blackboard has you register your tool **ONCE** with our developer portal here [https://developer.blackboard.com](https://developer.blackboard.com). This is a central, self-service application, running in AWS where you enter information about your application, and are given the values you need for your application to work with LTI Advantage and Learn. It is also the same place you get the ID, key, and secret if you are going to use our public REST API.
 
 :::caution
-Do not ask institutions to register your tool with the Anthology Developer Portal. You register it **ONCE** with Anthology, and institutions can deploy it with the Client ID you give them. They will receive a Deployment ID, which they will exchange with you to set up the account. It is the deployment ID, in conjunction with the client ID and issuer, that uniquely identifies the business agreement between the tool vendor and the institution.
+Do not ask institutions to register your tool with the Blackboard Developer Portal. You register it **ONCE** with Blackboard, and institutions can deploy it with the Client ID you give them. They will receive a Deployment ID, which they will exchange with you to set up the account. It is the deployment ID, in conjunction with the client ID and issuer, that uniquely identifies the business agreement between the tool vendor and the institution.
 :::
 
 ### Information you Provide
@@ -33,7 +33,7 @@ The LTI 1.3 spec defines the information you must provide to a Platform (LMS) su
 3. **Tool JWKS URL**
    - This is the URL for your public key with which Learn validates that the messages it receives (such as Deep Linking, Names & Roles, Assignment & Grades) are from your application. It must adhere to the JWKS specification.
 4. **Signing Algorithm**
-   - Anthology currently supports RS256 and RS512. We can support more as we are requested to do so.
+   - Blackboard currently supports RS256 and RS512. We can support more as we are requested to do so.
 
 #### Custom Parameters
 

@@ -33,12 +33,12 @@ requests to the LMS.
 REST stands for **Re**presentational **S**tate **T**ransfer. It is a
 lightweight, flexible web service architecture that allows HTTP commands to be
 sent to Web Applications without unnecessary overhead. (REST documentation references HTTP, but to be secure
-everything with Learn is done over HTTPS.) Anthology has developed and published
-[REST APIs for Learn](https://developer.anthology.com/portal/displayApi).
+everything with Learn is done over HTTPS.) Blackboard has developed and published
+[REST APIs for Learn](https://developer.blackboard.com/portal/displayApi).
 
 ## LTI DISCUSSION
 
-When talking about LTI, we use terms like launch, platform, and tool. A Learn administrator can set up your tool in Learn, following documentation that you provide. Anthology provides documentation applicable to any LTI tool on help.blackboard.com. Rather than reference a link that may change your best bet for finding such documentation is to use your favorite internet search engine and look for "Learn LTI documentation." I just did and the help page for our LTI documentation for admins was the top result! Once your LTI tool has been configured on a Learn system by the admin for that system, course instructors can then place links to your Tool in their courses. Search this site for LTI and you will find demonstrations and tutorials on LTI in Learn. The most common, and likley the best, way for and instructor to place content from your tool in their course is to use Deep-Linking 2.0. The point of this discussion is that once configured by the administrator, use of your tool and the content it provides looks like it is a part of Learn, including when the instructor is selecting content to be 'placed' in the course, and then when the student views and uses that content. And, using the LTI Advantage Names and Roles Provisioning Service (NPRS) and the Assignment and Grades Service (AGS), your tool can integrate closely with the course roster and the gradebook for the course. In summary, you can do a lot with LTI 1.3 & LTI Advantage, where the users of the LMS can use your web-application seamlessly from within the LMS and then with the aforementioned services even manipulate the course roster and gradebook. Get started with [this documentation](../../lti/welcome.md).
+When talking about LTI, we use terms like launch, platform, and tool. A Learn administrator can set up your tool in Learn, following documentation that you provide. Blackboard provides documentation applicable to any LTI tool on help.blackboard.com. Rather than reference a link that may change your best bet for finding such documentation is to use your favorite internet search engine and look for "Learn LTI documentation." I just did and the help page for our LTI documentation for admins was the top result! Once your LTI tool has been configured on a Learn system by the admin for that system, course instructors can then place links to your Tool in their courses. Search this site for LTI and you will find demonstrations and tutorials on LTI in Learn. The most common, and likley the best, way for and instructor to place content from your tool in their course is to use Deep-Linking 2.0. The point of this discussion is that once configured by the administrator, use of your tool and the content it provides looks like it is a part of Learn, including when the instructor is selecting content to be 'placed' in the course, and then when the student views and uses that content. And, using the LTI Advantage Names and Roles Provisioning Service (NPRS) and the Assignment and Grades Service (AGS), your tool can integrate closely with the course roster and the gradebook for the course. In summary, you can do a lot with LTI 1.3 & LTI Advantage, where the users of the LMS can use your web-application seamlessly from within the LMS and then with the aforementioned services even manipulate the course roster and gradebook. Get started with [this documentation](../../lti/welcome.md).
 
 ## REST DISCUSSION
 
@@ -62,7 +62,7 @@ Now things can get interesting. You might build a pure REST Application, but oft
 We will continue to add new examples, tutorials, and code samples, so make
 sure to check these links regularly.
 
-- [Developer Portal](https://developer.anthology.com/)
-- [REST Documentation](https://developer.anthology.com/portal/displayApi)
+- [Developer Portal](https://developer.blackboard.com/)
+- [REST Documentation](https://developer.blackboard.com/portal/displayApi)
 - [LTI Documentation](https://www.1edtech.org/standards/lti)
 - [Learn & LTI Documentation](../../lti/welcome.md)

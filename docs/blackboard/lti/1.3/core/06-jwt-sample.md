@@ -80,7 +80,7 @@ Please keep in mind that this information can change. Always review the Core LTI
   },
   "https://purl.imsglobal.org/spec/lti/claim/resource_link": {
     "id": "_44_1",
-    "title": "Anthology Tool - Course Content Tool"
+    "title": "Blackboard Tool - Course Content Tool"
   },
   "https://purl.imsglobal.org/spec/lti-gs/claim/groupsservice": {
     "context_groups_url": "https://learn.blackboard.com/learn/api/v1/lti/courses/_4_1/groups",

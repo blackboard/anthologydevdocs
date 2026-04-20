@@ -51,7 +51,7 @@ When performing a `GET` request to the endpoint mentioned above, the system will
   {
     "id": "https://partner-test3.blackboard.com/learn/api/v1/lti/courses/_220_1/lineItems/_1397_1",
     "scoreMaximum": 100,
-    "label": "Anthology Tool - Course Content Tool",
+    "label": "Blackboard Tool - Course Content Tool",
     "resourceLinkId": "_3712_1",
     "endDateTime": "2024-10-11T04:59:59.999Z",
     "gradesReleased": true
@@ -59,7 +59,7 @@ When performing a `GET` request to the endpoint mentioned above, the system will
   {
     "id": "https://partner-test3.blackboard.com/learn/api/v1/lti/courses/_220_1/lineItems/_1398_1",
     "scoreMaximum": 100,
-    "label": "Anthology Tool - Course Content Tool",
+    "label": "Blackboard Tool - Course Content Tool",
     "resourceLinkId": "_3713_1",
     "endDateTime": "2024-10-11T04:59:59.999Z",
     "gradesReleased": true
@@ -114,7 +114,7 @@ The response will look like this:
 {
   "id": "https://{learn_domain}/learn/api/v1/lti/courses/_220_1/lineItems/_1398_1",
   "scoreMaximum": 100,
-  "label": "Anthology Tool - Course Content Tool",
+  "label": "Blackboard Tool - Course Content Tool",
   "resourceLinkId": "_3713_1",
   "endDateTime": "2024-10-11T04:59:59.999Z",
   "gradesReleased": true

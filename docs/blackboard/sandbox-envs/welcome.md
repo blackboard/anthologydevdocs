@@ -48,7 +48,7 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 - **Publish date:** February 19th 2026
 - **Expiration Date:** June 21st 2026.
 - **What changed?:** No reboot needed. Should take about 15 to 30 minutes to start up. please make sure to use t2.large or bigger size. We currently only support AWS for VMDK deployment. Fixed a problem related to cloud connection that prevented certain functionalities to work.
-  <BBButton downloadUrl="https://support.anthology.com/s/blackboard-integration-ami"/>
+  <BBButton downloadUrl="https://support.blackboard.com/s/blackboard-integration-ami"/>
 
 :::
 

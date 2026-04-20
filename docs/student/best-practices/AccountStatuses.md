@@ -7,7 +7,7 @@ published: ""
 edited: ""
 ---
 
-There is capability within Anthology Student to associate one or more account statuses with a student enrollment period record.  This makes it possible for an institution to perform various actions on groups of students based on the account status values associated.  Many times, the assignment of an account status will be triggered by an action that occurs or a specific data point.  For example, an account status of "Delinquent" may be associated with a student who has one or more expected installments for a payment plan that have not been received but have a due date in the past.  In many cases, managing the account statuses for students is a key use case that needs to be accomplished within an overall integration project.  This document will cover the details for how to effectively manage account statuses for students utilizing the available API endpoints.  
+There is capability within Student (Ellucian) to associate one or more account statuses with a student enrollment period record.  This makes it possible for an institution to perform various actions on groups of students based on the account status values associated.  Many times, the assignment of an account status will be triggered by an action that occurs or a specific data point.  For example, an account status of "Delinquent" may be associated with a student who has one or more expected installments for a payment plan that have not been received but have a due date in the past.  In many cases, managing the account statuses for students is a key use case that needs to be accomplished within an overall integration project.  This document will cover the details for how to effectively manage account statuses for students utilizing the available API endpoints.  
 
 ## Data model notes
 
@@ -21,7 +21,7 @@ The IsActive property specifies if the record is active.  If this value is 0, th
 
 The API to use for managing account statuses associated to an enrollment is api/commands/StudentAccounts/StudentAccountTransaction/updateStudentAccountStatus .  
 
-To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Anthology Student web client application.  Once the Swagger landing page is loaded, use the Domain and Functional Area dropdown filters at the top of the swagger page to access the documentation.  To access this API endpoint, select 'Student Accounts' for Domain and 'Ledger Card' for Functional Area and then select Refresh.  Find the StudentAccountTransaction entity in the displayed list of entities and then click the lightning bolt icon.  The list of APIs for this entity will be displayed.  The api/commands/StudentAccountTransaction/updateStudentAccountStatus will be one of the endpoints in the displayed list.
+To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Student (Ellucian) web client application.  Once the Swagger landing page is loaded, use the Domain and Functional Area dropdown filters at the top of the swagger page to access the documentation.  To access this API endpoint, select 'Student Accounts' for Domain and 'Ledger Card' for Functional Area and then select Refresh.  Find the StudentAccountTransaction entity in the displayed list of entities and then click the lightning bolt icon.  The list of APIs for this entity will be displayed.  The api/commands/StudentAccountTransaction/updateStudentAccountStatus will be one of the endpoints in the displayed list.
 
 ![AccountStatuses](/assets/img/AccountStatuses1.png) 
 
@@ -36,7 +36,7 @@ An enrollment period can have multiple account statuses associated.  The logic w
 
 ### Determining the StudentEnrollmentPeriodId
 
-If you do not have the correct value for the StudentEnrollmentPeriodId property, then this can be determined using one of two approaches.  The prerequisite to using either of these approaches is that you must have the StudentId of the student that the account statuses are being updated for.  The first approach is to use an available API endpoint that will take the StudentId as an input parameter and return the StudentEnrollmentPeriodId of the "current" enrollment.  Anthology Student has built in logic that uses the school status and enrollment date for enrollment period records for a student to determine the "current" enrollment.  This option works well if it is uncommon for a student to have more than one enrollment record that has an Active school status at any given point in time.  The endpoint that returns the current enrollment is ds/campusnexus/Students/CampusNexus.GetCurrentEnrollmentByStudentId. To find this in Swagger, select 'Common' as the Domain and 'Students' as the Functional Area and then click Refresh.
+If you do not have the correct value for the StudentEnrollmentPeriodId property, then this can be determined using one of two approaches.  The prerequisite to using either of these approaches is that you must have the StudentId of the student that the account statuses are being updated for.  The first approach is to use an available API endpoint that will take the StudentId as an input parameter and return the StudentEnrollmentPeriodId of the "current" enrollment.  Student (Ellucian) has built in logic that uses the school status and enrollment date for enrollment period records for a student to determine the "current" enrollment.  This option works well if it is uncommon for a student to have more than one enrollment record that has an Active school status at any given point in time.  The endpoint that returns the current enrollment is ds/campusnexus/Students/CampusNexus.GetCurrentEnrollmentByStudentId. To find this in Swagger, select 'Common' as the Domain and 'Students' as the Functional Area and then click Refresh.
 
 ![AccountStatuses](/assets/img/AccountStatuses2.png) 
 
@@ -50,4 +50,4 @@ In order to execute the APIs that have been discussed above, proper authorizatio
 
 ## Conclusion
 
-There can likely be additional nuances/details around utilizing this API that are not covered within this document. If there are any questions after reviewing this document, you can submit them by sending an email to developers@anthology.com.
+There can likely be additional nuances/details around utilizing this API that are not covered within this document. If there are any questions after reviewing this document, you can submit them by sending an email to developers@blackboard.com.

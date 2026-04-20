@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles["custom-footer-bg"]}>
       <div>
         <div className={clsx(styles["custom-footer"])}>
-          <img src='/img/anthology-logo-dark.svg' alt='Anthologt Inc logo' />
+          <img src='/img/Blackboard-Full-Color-White.svg' alt='Blackboard LLC logo' />
           <div className={styles["footer-section"]}>
             <div>
               <p>
@@ -17,12 +17,12 @@ const Footer = () => {
               </p>
               <ul>
                 <li>
-                  <a href='mailto:developers@anthology.com'>
-                    developers@anthology.com
+                  <a href='mailto:developers@blackboard.com'>
+                    developers@blackboard.com
                   </a>
                 </li>
                 <li>
-                  <a href='https://support.anthology.com' target='_blank'>
+                  <a href='https://support.blackboard.com' target='_blank'>
                     Global Support Portal
                   </a>
                 </li>
@@ -35,7 +35,7 @@ const Footer = () => {
               <ul>
                 <li>
                   <a href='/docs/community/community-intro'>
-                    Anthology Community
+                    Blackboard Community
                   </a>
                 </li>
                 <li>
@@ -50,10 +50,10 @@ const Footer = () => {
           </div>
         </div>
         <p className={styles["footer-copyright"]}>
-          &copy;{new Date(Date.now()).getFullYear()} Anthology Inc. and its
+          &copy;{new Date(Date.now()).getFullYear()} Blackboard LLC. and its
           affiliates. All rights reserved.&nbsp;
           <a
-            href='https://www.anthology.com/trademarks-and-patents'
+            href='4'
             target='_blank'>
             Trademarks and Patents
           </a>

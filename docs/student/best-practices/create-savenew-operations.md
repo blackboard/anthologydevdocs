@@ -8,7 +8,7 @@ published: "2024-03-26"
 edited: "2024-03-26"
 ---
 
-A large subset of the available APIs in Anthology Student have a scope of inserting and updating single instances of an entity. Every entity in the Student data model inherits from a base entity service. The available operations in the base entity service are Get, Create, SaveNew, Save and Delete. There are some entities in the model that have additional APIs implemented for inserting and updating data. These will be reflected with additional endpoints that are documented in Swagger. The focus of this document will outline best practices for how to insert a new instance into an entity utilizing the Create and SaveNew endpoints.
+A large subset of the available APIs in Student (Ellucian) have a scope of inserting and updating single instances of an entity. Every entity in the Student data model inherits from a base entity service. The available operations in the base entity service are Get, Create, SaveNew, Save and Delete. There are some entities in the model that have additional APIs implemented for inserting and updating data. These will be reflected with additional endpoints that are documented in Swagger. The focus of this document will outline best practices for how to insert a new instance into an entity utilizing the Create and SaveNew endpoints.
 
 ## Swagger documentation
 
@@ -514,7 +514,7 @@ The response received when executing the SaveNew operation for the Student entit
 
 ### Implementation of SaveNew operation
 
-Not every entity has the SaveNew operation implemented. As a general rule you can use to determine if the SaveNew operation is implemented is to look at the other operations for that entity in the Swagger documentation. If there is another operation listed that has a summary description related to adding new records then the SaveNew operation should not be utilized. If you have any doubts, please send an email to Developers@anthology.com requesting clarification on which endpoint to use for inserting a new record into an entity.
+Not every entity has the SaveNew operation implemented. As a general rule you can use to determine if the SaveNew operation is implemented is to look at the other operations for that entity in the Swagger documentation. If there is another operation listed that has a summary description related to adding new records then the SaveNew operation should not be utilized. If you have any doubts, please send an email to developers@blackboard.com requesting clarification on which endpoint to use for inserting a new record into an entity.
 
 ### EntityState property
 
