@@ -1,0 +1,1 @@
+(globalThis.webpackChunkblackboard_dev_docs=globalThis.webpackChunkblackboard_dev_docs||[]).push([[8577],{20549:(a,b,c)=>{"use strict";c.d(b,{A:()=>d});var s=c(58291);const d=s},45741:()=>{}}]);
