@@ -18,7 +18,7 @@ the last few remaining gaps in functionality are closed.
 New REST APIs are rolled out in new versions of Learn, but never
 back-ported to previous releases. To be sure the endpoint you require is
 available, be sure to visit the [Developer
-Portal](https://developer.anthology.com/portal/displayApi)
+Portal](https://developer.blackboard.com/portal/displayApi)
 and check the individual endpoints you need.
 
 ## Announcements

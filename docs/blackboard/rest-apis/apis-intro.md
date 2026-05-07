@@ -1,5 +1,5 @@
 ---
-title: "About Anthology REST APIs"
+title: "About Blackboard REST APIs"
 id: start-here
 sidebar_position: 1
 author: Mark O'Neil, Dan Magers
@@ -7,17 +7,17 @@ published: ""
 edited: ""
 ---
 
-Welcome to Anthology's REST API documentation. Many Anthology products offer integration capabilities through REST APIs. REST APIs provide a simple and effective way to deliver data and services over the web, making them an important fool for modern software development.
+Welcome to Blackboard's REST API documentation. Many Blackboard products offer integration capabilities through REST APIs. REST APIs provide a simple and effective way to deliver data and services over the web, making them an important fool for modern software development.
 
-Anthology provides comprehensive REST API documentation describing the various endpoints, request and response formats, and authentication methods available. The documentation on this site includes examples and code snippets to help you get started with using the REST APIs in your integrations. Anthology also offers a sandbox for users without a Blackboard Learn instance and a GitHub repository containing useful application code.
+Blackboard provides comprehensive REST API documentation describing the various endpoints, request and response formats, and authentication methods available. The documentation on this site includes examples and code snippets to help you get started with using the REST APIs in your integrations. Blackboard also offers a sandbox for users without a Blackboard Learn instance and a GitHub repository containing useful application code.
 
 ## REST APIs
 
 REST APIs (REpresentational State Transfer Application Programming Interface) are a type of web service API that follow a set of architectural principles, known as the REST architecture. These APIs use HTTP verbs - GET, POST, PUT, DELETE - to access and manipulate resources, such as data or files, on a server.
 
-Anthology has a long history of integration development support, going back the Blackboard Learn LMS's (Learning Management System) released in 1997. Integrations started with Java™ Building Blocks and continued with SOAP Web Services and Learning Tools Interoperability (LTI). Blackboard added REST APIs to our integrations in 2016.
+Blackboard has a long history of integration development support, going back the Blackboard Learn LMS's (Learning Management System) released in 1997. Integrations started with Java™ Building Blocks and continued with SOAP Web Services and Learning Tools Interoperability (LTI). Blackboard added REST APIs to our integrations in 2016.
 
-REST APIs have become the most common type of web service API, used by many companies and applications to enable communication between different systems or applications. Anthology considers REST APIs to be the future of integration development.
+REST APIs have become the most common type of web service API, used by many companies and applications to enable communication between different systems or applications. Blackboard considers REST APIs to be the future of integration development.
 
 ## The importance of REST APIs
 
@@ -35,9 +35,9 @@ Overall, REST APIs provide a simple and effective way to expose data and service
 
 ## A note about third-party application support
 
-If you are an Anthology client, an Anthology Partner / Vendor / Developer of a REST Application should NEVER tell you to go to the developer portal and create an App ID with the associated key/secret to install their application. They should never tell you to apply for a Rate/Site increase for their application. Anthology DOES NOT support that model. Every REST Application developer should give you an App ID to install their REST App and tell you how to configure a system role for its use. The REST Application developer needs to request the increases they need to run their application themselves. If they ask you to go to developer.anthology.com and get an App ID/Key/Secret, please tell them that is wrong. They should have one App ID for their production REST application that they are asking you to install.
+If you are an Blackboard client, an Blackboard Partner / Vendor / Developer of a REST Application should NEVER tell you to go to the developer portal and create an App ID with the associated key/secret to install their application. They should never tell you to apply for a Rate/Site increase for their application. Blackboard DOES NOT support that model. Every REST Application developer should give you an App ID to install their REST App and tell you how to configure a system role for its use. The REST Application developer needs to request the increases they need to run their application themselves. If they ask you to go to developer.blackboard.com and get an App ID/Key/Secret, please tell them that is wrong. They should have one App ID for their production REST application that they are asking you to install.
 
-Contractors are an exception to this policy as they are producing an integration on your, the Anthology client, behalf. Questions regarding the policy and whether you are impacted may be asked here, or posted to developers@anthology.com
+Contractors are an exception to this policy as they are producing an integration on your, the Blackboard client, behalf. Questions regarding the policy and whether you are impacted may be asked here, or posted to developers@blackboard.com
 
 ## Glossary
 

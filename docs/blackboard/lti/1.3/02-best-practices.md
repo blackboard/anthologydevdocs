@@ -10,11 +10,11 @@ author: Mark Kauffman, Scott Hurrey
 
 ### tl;dr
 
-For LTI 1.3 only integrations, the best client experience is given by a vendor when the vendor registers on the Anthology central registration portal and shares the client_id with the client. There are other processes that involve the vendor asking the client to register the LTI-1.3-only integration. While not ideal, that’s OK, as long as the integration is not using the associated REST API key/secret.
+For LTI 1.3 only integrations, the best client experience is given by a vendor when the vendor registers on the Blackboard central registration portal and shares the client_id with the client. There are other processes that involve the vendor asking the client to register the LTI-1.3-only integration. While not ideal, that’s OK, as long as the integration is not using the associated REST API key/secret.
 
 ### Motivation
 
-At Anthology, we want our clients to have the best possible experience with Learn and the products that are integrated with it. To that end, we developed a central registration service on our developer portal for use by 3rd-party vendors that are LTI 1.3 Tool providers. Using the central registration service, the Tool provider can go through the complexities of Tool registration and get a Client ID. That Client ID is all our mutual clients need to deploy a Tool. When the Tool is deployed, a Deployment ID is generated that the client then provides to the Tool vendor. The Client ID and Deployment ID are included in all LTI 1.3 communication, giving the Tool everything needed to identify the client's LMS.
+At Blackboard, we want our clients to have the best possible experience with Learn and the products that are integrated with it. To that end, we developed a central registration service on our developer portal for use by 3rd-party vendors that are LTI 1.3 Tool providers. Using the central registration service, the Tool provider can go through the complexities of Tool registration and get a Client ID. That Client ID is all our mutual clients need to deploy a Tool. When the Tool is deployed, a Deployment ID is generated that the client then provides to the Tool vendor. The Client ID and Deployment ID are included in all LTI 1.3 communication, giving the Tool everything needed to identify the client's LMS.
 
 ### Why Vendor Tool-registration Is Best
 

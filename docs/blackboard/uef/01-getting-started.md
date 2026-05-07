@@ -23,7 +23,7 @@ The UEF offers the following capabilities to integrate with the Learn Ultra Expe
 
 We gave several partners early access to the UEF during the beta phase, the following videos are examples of how these partners used the UEF to better deliver their integration in Ultra.
 
-### Anthology
+### Blackboard
 
 Use the telemetry service to get information about user routes, and hover to display information based on user actions:
 
@@ -39,7 +39,7 @@ You can also find screenshots of this integration here: [PDF Download](/assets/f
 
 ### eXplorance - Blue
 
-"Blue is an adaptive course evaluation solution that offers you flexibility, personalization, and control when gathering student feedback." - _Anthology App catalog description_
+"Blue is an adaptive course evaluation solution that offers you flexibility, personalization, and control when gathering student feedback." - _Blackboard App catalog description_
 
 <ReactPlayer url="https://www.youtube-nocookie.com/embed/WuH-QpkFyqA?si=IXMNY5_HUVq6Mh-b" controls playback={false}/>
 

@@ -7,7 +7,7 @@ const darkCodeTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Anthology Developer Docs',
+  title: 'Blackboard Developer Docs',
   tagline: 'Developer Documentation',
   favicon: 'img/favicon.ico',
 
@@ -19,8 +19,8 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
   baseUrl: '/',
-  projectName: 'anthologydevdocs',
-  organizationName: 'Anthology',
+  projectName: 'BlackboardDevDocs',
+  organizationName: 'Blackboard',
   trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -79,9 +79,9 @@ const config = {
       image: 'img/social-card.png',
       navbar: {
         logo: {
-          alt: 'Anthology Logo',
-          src: '/img/anthology-logo-light.svg',
-          srcDark: '/img/anthology-logo-dark.svg',
+          alt: 'Blackboard Logo',
+          src: '/img/Blackboard-Full-Color-Black.svg',
+          srcDark: '/img/Blackboard-Full-Color-White.svg',
         },
         items: [
           {

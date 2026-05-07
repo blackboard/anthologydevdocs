@@ -35,7 +35,7 @@ Users with administrative entitlements can merge courses.
 You need an authentication token from a user with administrative entitlements
 to merge courses. For a complete list of specific requirements for any
 particular method, see the [Learn API
-reference](https://developer.anthology.com/portal/displayApi/Learn).
+reference](https://developer.blackboard.com/portal/displayApi/Learn).
 
 ### Merge a course
 

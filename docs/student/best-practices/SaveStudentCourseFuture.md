@@ -13,7 +13,7 @@ The API endpoint that is used to add a future course for a student is api/comman
 
 ## Swagger documentation
 
-To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Anthology Student web client application. Once the Swagger landing page is loaded, use the Domain and Functional Area drop down filters at the top of the swagger page to access the documentation. To access this API endpoint, select 'Academics' for Domain and 'Course Registration' for Functional Area and then select Refresh. Find the StudentCourse entity in the displayed list of entities and then click the lightning bolt icon. The list of APIs for this entity will be listed. Find the SaveStudentCourse operation.
+To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Student (Ellucian) web client application. Once the Swagger landing page is loaded, use the Domain and Functional Area drop down filters at the top of the swagger page to access the documentation. To access this API endpoint, select 'Academics' for Domain and 'Course Registration' for Functional Area and then select Refresh. Find the StudentCourse entity in the displayed list of entities and then click the lightning bolt icon. The list of APIs for this entity will be listed. Find the SaveStudentCourse operation.
 
 ![SaveStudentCourseFuture](/assets/img/SaveStudentCourseFuture1.png)
 
@@ -74,4 +74,4 @@ In order to execute this API, the authenticated user must be authorized to the A
 
 As can be the case, there may be additional nuances for how to properly leverage this API to address a client's specific use cases that are not covered within this document.
 
-If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@anthology.com.
+If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@blackboard.com.

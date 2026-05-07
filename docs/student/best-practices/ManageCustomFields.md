@@ -7,11 +7,11 @@ published: ""
 edited: ""
 ---
 
-Creating custom fields for additional data capture is a key capability within the Anthology Student application. This capability was introduced many years ago and has evolved over time. The result is that there are three different implementations for configuring and managing data for custom fields in the application currently. The details for how to manage data for custom fields via APIs will depend on the specific entity that the custom fields are for. This document will outline each of the three implementations and identify which entities belong to each. Additionally, details on how to retrieve data as well as update data for custom fields will be covered.
+Creating custom fields for additional data capture is a key capability within the Student (Ellucian) application. This capability was introduced many years ago and has evolved over time. The result is that there are three different implementations for configuring and managing data for custom fields in the application currently. The details for how to manage data for custom fields via APIs will depend on the specific entity that the custom fields are for. This document will outline each of the three implementations and identify which entities belong to each. Additionally, details on how to retrieve data as well as update data for custom fields will be covered.
 
 ## School Defined Fields
 
-The original implementation of custom fields in Anthology Student is referred to as "School Defined Fields" or "School Fields". This implementation allows for any number of custom fields to be configured for the Student entity. Although not explicitly called out in configuration of School Defined Fields, the association of data for these fields will be on the Id property in the Student entity. The configuration includes the ability to specify which modules/domains a given field is visible in. To see additional details regarding this feature including how to configure, refer to Help which is accessible via the question mark icon on the top right portion of the toolbar in the web client UI.
+The original implementation of custom fields in Student (Ellucian) is referred to as "School Defined Fields" or "School Fields". This implementation allows for any number of custom fields to be configured for the Student entity. Although not explicitly called out in configuration of School Defined Fields, the association of data for these fields will be on the Id property in the Student entity. The configuration includes the ability to specify which modules/domains a given field is visible in. To see additional details regarding this feature including how to configure, refer to Help which is accessible via the question mark icon on the top right portion of the toolbar in the web client UI.
 
 ![ManageCustomFields](/assets/img/ManageCustomFields1.png)
 
@@ -118,4 +118,4 @@ There is capability for securing configured extended properties on an individual
 
 As can be the case, there may be additional nuances for how to properly manage extended property data to address a client's specific use cases that are not covered within this document.
 
-If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@anthology.com.
+If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@blackboard.com.

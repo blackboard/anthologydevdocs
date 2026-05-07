@@ -1,11 +1,11 @@
 ---
-title: Integrating with Blackboard Learn
+title: Integrating with Blackboard LMS
 id: welcome
 ---
 
 ## Welcome to the world of integrations!
 
-Blackboard Learn has different means of interacting with grading, users, courses and enrollments, each one will provide different levels of access to information. Blackboard Learn incorporates most of the standards for education, mostly the ones provided by 1EdTech
+Blackboard LMS has different means of interacting with grading, users, courses and enrollments, each one will provide different levels of access to information. Blackboard LMS incorporates most of the standards for education, mostly the ones provided by 1EdTech
 
 ## The available options
 
@@ -16,7 +16,7 @@ As indicated, Blackboard Learn does provide different frameworks to integrate, h
 | REST API                         | Access needed for course content area, items, grades, enrollments, course configuration, etc.                                    |
 | LTI Advantage                    | Provides access to external tools and allows creation of course items, graded columns and grades                                 |
 | Student Information System (SIS) | Provides a framework to create users, courses and enrollments in bulk                                                            |
-| Ultra Extension Framework        | Framework created by Anthology to allow third-party tools to interact with the Ultra Course Navigation to render additional data |
+| Ultra Extension Framework        | Framework created by Blackboard to allow third-party tools to interact with the Ultra Course Navigation to render additional data |
 | Proctoring                       | Leverages the Ultra Extension Framework to interconnect external Proctoring services to Blackboard Learn tests                   |
 
 ## Ready to start?

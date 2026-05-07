@@ -28,7 +28,7 @@ Any non-critical outage\*\* will be covered using our in-Portal announcements fe
 **API Usage Dashboard**<br/>
 
 **Release version:** March / 2025<br/>
-**Instance:** Production (https://developer.anthology.com)<br/>
+**Instance:** Production (https://developer.blackboard.com)<br/>
 **Impact:** Developers<br/>
 
 The Developer Portal serves as a centralized hub for third-party developers to register, manage, and deploy their integrations with Blackboard LMS. To provide better visibility and control over API usage, the Developer Portal now features a dedicated API Usage Dashboard. This dashboard allows developers to monitor and analyze API consumption in real time, ensuring efficient integration management and performance tracking.
@@ -94,7 +94,7 @@ To access API usage at the group level, go to the **"My Groups"** section and cl
 <summary>Old Release Notes</summary>
 
 **Release version:** February / 2025<br/>
-**Instance:** Production (https://developer.anthology.com)<br/>
+**Instance:** Production (https://developer.blackboard.com)<br/>
 **Impact:** Developers<br/>
 
 The Developer Portal continues to evolve to enhance self-service capabilities and give developers greater control over their accounts. We have introduced a developer account deletion request feature in the Account Page of the Developer Portal. This update ensures that account removal is handled securely and efficiently. Also, aligned with data protection best practices
@@ -211,24 +211,12 @@ Features:
 
 ---
 
-## Blackboard Learn
+## Blackboard LMS
 
-Learn release dates and release notes can be found through [Behind the Blackboard](https://behind.blackboard.com) or through our Help Documentation:
+Learn release dates and release notes can be found through [Support portal](https://support.blackboard.com) or through our Help Documentation:
 
 - Release schedules for Blackboard Learn: [Release Schedule](https://help.blackboard.com/Learn/Administrator/SaaS/Release_Notes/Learn_SaaS_Release_Schedule)
 - Release Notes: [Release Notes](https://help.blackboard.com/Learn/Administrator/SaaS/Release_Notes)
-
----
-
-## Student
-
-Anthology Student releases and docs are published through the Student Suite here: [Anthology Student Suite](https://help.anthology.com/Content/DocSets/CNSDocSet.htm)
-
----
-
-## Reach
-
-Anthology Release releases and docs are published through the Reach Suite here: [Anthology Reach Suite](https://help.campusmanagement.com/Content/DocSets/ENGDocSet.htm)
 
 ---
 

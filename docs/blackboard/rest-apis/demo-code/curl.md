@@ -333,7 +333,7 @@ https://localhost:9877/learn/api/public/v1/users
 ```
 
 Remember, you can always find the JSON specification for these calls at
-[Explore APIs](https://developer.anthology.com/portal/displayApi)
+[Explore APIs](https://developer.blackboard.com/portal/displayApi)
 
 Example:
 
@@ -368,7 +368,7 @@ curl -k -X POST -H "Authorization: Bearer ti3EVMVQO4RqdAgcpmODZdvjvHuuBHDz" -H
 By sheer coincidence this user's ID, '\_7_1', came out to be the same as the DSK
 ID, '\_7_1'.
 
-Note the availability of query parameters in the [REST Documentation](https://developer.anthology.com/portal/displayApi)
+Note the availability of query parameters in the [REST Documentation](https://developer.blackboard.com/portal/displayApi)
 
 Examples:
 
@@ -709,11 +709,11 @@ courseId:mbk-rest-contents/contents/_12907_1/children
 ```
 
 You can, of course, use the id returned in the above to fetch the content item
-using the appropriate GET. Read the documentation at developer.anthology.com.
+using the appropriate GET. Read the documentation at developer.blackboard.com.
 
 ### CREATE ASSIGNMENT WITH ATTACHMENT
 
-**Currently Only Available For Ultra Courses (Remember to check the Learn version for availably of the APIs @ [https://developer.anthology.com](https://developer.anthology.com))**
+**Currently Only Available For Ultra Courses (Remember to check the Learn version for availably of the APIs @ [https://developer.blackboard.com](https://developer.blackboard.com))**
 
 1. Get a course's content root. root will only work with the \_abc_xyz ID
    format. It will not work for `courseId:<course_id>` format.
@@ -766,7 +766,7 @@ temporary location and goes away sometime after being uploaded. Also, there is
 a bug in the following where if attempts allowed is too large it will fail.
 I've not experimented to find the limit.)
 
-Reference: [POST /learn/api/public/v1/courses/\{courseId\}/contents/createAssignment](https://developer.anthology.com/portal/displayApi)
+Reference: [POST /learn/api/public/v1/courses/\{courseId\}/contents/createAssignment](https://developer.blackboard.com/portal/displayApi)
 
 Example:
 
@@ -791,7 +791,7 @@ assignment.
 
 Currently Only Available For Presentation-Only Assignments
 
-**(Reference for all APIs used and the Learn version they are available in is @ [https://developer.anthology.com](https://developer.anthology.com))**
+**(Reference for all APIs used and the Learn version they are available in is @ [https://developer.blackboard.com](https://developer.blackboard.com))**
 
 1. Use 3LO to get an access code for the student account that will submit
    the attempt to the assignment. 3LO MUST be used for this process.
@@ -923,6 +923,6 @@ And we see the student's submission with the attachment.
 We hope that the above demonstration gives you a helpful peek under the hood
 as to what is going on when you make REST calls to a Learn system. You can
 take these cURL commands and use them to make all of the REST calls documented
-here: [Explore APIs](https://developer.anthology.com/portal/displayApi).
+here: [Explore APIs](https://developer.blackboard.com/portal/displayApi).
 
 - You must [register a developer account and application](/docs/developer-portal/dev-portal-start-here.md) in the Developer Portal

@@ -7,7 +7,7 @@ published: ""
 edited: ""
 ---
 
-Creating and managing class sections is a fundamental requirement for the Academics domain within Anthology Student. Several different use scenarios exist whereby external applications have a need to create and update data for a class section. This data can be the class section data itself or peripheral data such as class section meeting schedules, instructor assignments to a class section, meeting location data, cross referenced class sections etc. This document will outline the various APIs available within Anthology Student that can be utilized to manage class section data.
+Creating and managing class sections is a fundamental requirement for the Academics domain within Student (Ellucian). Several different use scenarios exist whereby external applications have a need to create and update data for a class section. This data can be the class section data itself or peripheral data such as class section meeting schedules, instructor assignments to a class section, meeting location data, cross referenced class sections etc. This document will outline the various APIs available within Student (Ellucian) that can be utilized to manage class section data.
 
 This document will cover the following endpoints:
 
@@ -45,7 +45,7 @@ ClassSectionMeetingDate - this entity stores 1 row for each meeting instance for
 
 ## Swagger documentation
 
-To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Anthology Student web client application. Once the Swagger landing page is loaded, use the Domain and Functional Area drop down filters at the top of the swagger page to access the documentation. To access the API endpoints mentioned above, select 'Academics' for Domain and 'Class Section Scheduling' for Functional Area and then select Refresh. Find the ClassSection, ClassSectionMeetingDate and CrossListClassSection entities in the displayed list of entities and then click the lightning bolt icon. The list of APIs for each of these entities will be listed. Find the applicable API operation in the displayed list.
+To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Student (Ellucian) web client application. Once the Swagger landing page is loaded, use the Domain and Functional Area drop down filters at the top of the swagger page to access the documentation. To access the API endpoints mentioned above, select 'Academics' for Domain and 'Class Section Scheduling' for Functional Area and then select Refresh. Find the ClassSection, ClassSectionMeetingDate and CrossListClassSection entities in the displayed list of entities and then click the lightning bolt icon. The list of APIs for each of these entities will be listed. Find the applicable API operation in the displayed list.
 
 ![ManageClassSections](/assets/img/ManageClassSections1.png)
 
@@ -108,7 +108,7 @@ api/commands/Academics/ClassSection/SaveClassSectionPeriods
 
 This endpoint should be used for updating any aspect of the meeting schedule for the class section. The request payload includes some complex type properties. Details of how this payload should be populated are below.
 
-- IsContactHoursConfirmed - set this property to 1 if you want to override validation done on total contact hours scheduled for the class section. There is capability in Anthology Student to require the total daily meeting schedule for a class section to equal the expected contact hours total for the course the class section is for. If set to 0 and there is a conflict found, then a validation message will be returned.
+- IsContactHoursConfirmed - set this property to 1 if you want to override validation done on total contact hours scheduled for the class section. There is capability in Student (Ellucian) to require the total daily meeting schedule for a class section to equal the expected contact hours total for the course the class section is for. If set to 0 and there is a conflict found, then a validation message will be returned.
 
 - IsRequireLDAConfirmed - this property does not impact execution logic within the API. However, if set to 0 and you are updating a meeting schedule for a class section AND at least 1 day of attendance has been posted for a scheduled meeting date, a validation message of type Warning will be returned in the response. It is recommended that you populate this with 1 so that the warning message will not be included in the response so as to not cause any unnecessary confusion.
 
@@ -251,4 +251,4 @@ In order to be able to execute the API endpoints covered in this document, the u
 
 As is usually the case, there may be additional nuances for how to properly formulate the request for these APIs in order for them to produce the desired result that are not covered within this document.
 
-If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@anthology.com.
+If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@blackboard.com.

@@ -7,7 +7,7 @@ published: "2024-04-23"
 edited: "2024-04-23"
 ---
 
-A large subset of the available APIs in Anthology Student have a scope of inserting and updating single instances of an entity. Every entity in the Student data model inherits from a base entity service. The available operations in the base entity service are Get, Create, SaveNew, Save and Delete. There are some entities in the model that have additional APIs implemented for inserting and updating data. These will be reflected with additional endpoints that are documented in Swagger. The focus of this document will outline best practices for how to update an existing instance of an entity utilizing the Get and Save endpoints.
+A large subset of the available APIs in Student (Ellucian) have a scope of inserting and updating single instances of an entity. Every entity in the Student data model inherits from a base entity service. The available operations in the base entity service are Get, Create, SaveNew, Save and Delete. There are some entities in the model that have additional APIs implemented for inserting and updating data. These will be reflected with additional endpoints that are documented in Swagger. The focus of this document will outline best practices for how to update an existing instance of an entity utilizing the Get and Save endpoints.
 
 ## Swagger documentation
 
@@ -358,7 +358,7 @@ This is the operation that is used to update an instance of the entity. Using th
 
 ### Implementation of Save operation
 
-Not every entity has the Save operation implemented. As a general rule you can use to determine if the Save operation is implemented is to look at the other operations for that entity in the Swagger documentation. If there is another operation listed that has a summary description related to updating existing records then the Save operation should not be utilized. If you have any doubts, please send an email to Developers@anthology.com requesting clarification on which endpoint to use for updating an existing record for an entity.
+Not every entity has the Save operation implemented. As a general rule you can use to determine if the Save operation is implemented is to look at the other operations for that entity in the Swagger documentation. If there is another operation listed that has a summary description related to updating existing records then the Save operation should not be utilized. If you have any doubts, please send an email to developers@blackboard.com requesting clarification on which endpoint to use for updating an existing record for an entity.
 
 ### EntityState property
 

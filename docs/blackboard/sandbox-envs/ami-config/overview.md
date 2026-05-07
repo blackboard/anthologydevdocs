@@ -31,7 +31,7 @@ This will take you to the Launch wizard for EC2 that will prompt you for configu
 :::important 502 Gateway error
 If you see 502 Gateway errors, this might indicate that your server is running out of memory to process the requests. You may need to increase the size of your AMI.
 
-If you already have a `t2.large` server, refer to our Frequently Asked Questions (FAQ) and troubleshooting section [here](/docs/blackboard/sandbox-envs/ami-config/faq). If the issue persist, please contact Anthology Support for assistance (If you have a support portal account, create a ticket for this issue, if you don't have an account, email developers@anthology.com)
+If you already have a `t2.large` server, refer to our Frequently Asked Questions (FAQ) and troubleshooting section [here](/docs/blackboard/sandbox-envs/ami-config/faq). If the issue persist, please contact Blackboard Support for assistance (If you have a support portal account, create a ticket for this issue, if you don't have an account, email developers@blackboard.com)
 :::
 
 2. We recommend you adjust the security settings to allow:

@@ -1,5 +1,5 @@
 ---
-slug: Anthology Integrations and Customer Experience
+slug: Blackboard Integrations and Customer Experience
 title: Integration Installation and Customer Experience
 authors:
   - name: Mark O'Neil
@@ -10,11 +10,11 @@ hide_table_of_contents: false
 
 # Integration Installation and Customer Experience
 
-Anthology has designed it's model for integrations in a manner which, when executed following our best practices, improves the Customer Integration Experience. Our goals in this area are multi-fold, yet all drive toward the best experience possible when Customers license, purchase, or develop integrations for enhancing their Anthology Products as campus differentiators and enablers in achieving their Teaching and Learning objectives for their Staff, Faculty, and Students.
+Blackboard has designed it's model for integrations in a manner which, when executed following our best practices, improves the Customer Integration Experience. Our goals in this area are multi-fold, yet all drive toward the best experience possible when Customers license, purchase, or develop integrations for enhancing their Blackboard Products as campus differentiators and enablers in achieving their Teaching and Learning objectives for their Staff, Faculty, and Students.
 
 ## Why is Customer Experience Important?
 
-Customer experience is important for Partners and Anthology Customers for many reasons. Most notably:
+Customer experience is important for Partners and Blackboard Customers for many reasons. Most notably:
 
 **Customer Retention**: Providing a positive customer experience can help improve customer retention rates. Customers are more likely to remain loyal to a brand if they have had a positive experience with the company.
 
@@ -22,7 +22,7 @@ Customer experience is important for Partners and Anthology Customers for many r
 
 **Competitive Advantage**: Providing a superior customer experience can set a business apart from its competitors and give it a competitive advantage.
 
-Overall, a positive customer experience is essential for building strong customer relationships, increasing customer loyalty, and improving the overall success of a business. This applies to our developer community as well as Anthology.
+Overall, a positive customer experience is essential for building strong customer relationships, increasing customer loyalty, and improving the overall success of a business. This applies to our developer community as well as Blackboard.
 
 In addition to the general integration functionality, for which the integration development team is ultimately responsible, the most significant impact on the Customer Experience is installation and support of your integration.
 
@@ -30,17 +30,17 @@ Installation of your integration is often the first experience customers will ha
 
 How clients discover and know whom to contact for Support is also a significant influencer of impressions of your business.
 
-Anthology has built our integration experience and best practices, with these latter two concepts in mind.
+Blackboard has built our integration experience and best practices, with these latter two concepts in mind.
 
 ## Integration Installation
 
-Anthology has thought long about how to simplify the integration experience for customers in the world of SaaS. In doing so we arrived at a "Register once, deploy everywhere" model for Integration developers to deliver theirr solutions. This applies to LTI 1.3 and RESTful integrations alike, and greatly simplifies installation for our mutual customers.
+Blackboard has thought long about how to simplify the integration experience for customers in the world of SaaS. In doing so we arrived at a "Register once, deploy everywhere" model for Integration developers to deliver theirr solutions. This applies to LTI 1.3 and RESTful integrations alike, and greatly simplifies installation for our mutual customers.
 
 ### SaaS changed everything...
 
-In prior years you may have built integrations which ran on-prem or in-process alongside the Anthology product. This required customers to manage the software themselves. Under the more modern SaaS model, which is used by Anthology, the customer is no responsible for updating and maintaining the integration, as SaaS product consumers receive updates automatically.
+In prior years you may have built integrations which ran on-prem or in-process alongside the Blackboard product. This required customers to manage the software themselves. Under the more modern SaaS model, which is used by Blackboard, the customer is no responsible for updating and maintaining the integration, as SaaS product consumers receive updates automatically.
 
-To facilitate the SaaS model, the Anthology Developer Portal provides the means for you the Developer to register your integration once and deploy to multiple customers. Once your integration is registered in the Developer Portal an identifier is issued - this identifier is used by _all customers_ to install your integration.
+To facilitate the SaaS model, the Blackboard Developer Portal provides the means for you the Developer to register your integration once and deploy to multiple customers. Once your integration is registered in the Developer Portal an identifier is issued - this identifier is used by _all customers_ to install your integration.
 
 This means you have one instance of your integration and all customers use that instance. This of course imply some design concepts for your integration.
 
@@ -52,7 +52,7 @@ Register once and Deploy anywhere means there are some differences in how you de
 
 > Note: The following pertains to development of integrations which are marketed to multiple customers. Only point 1 is pertinent to those who are developing campus-only solutions.
 
-1. **Logs and data**: Integrations should maintain archives of customer logs and any integration specific data as those are not provided by Anthology products.
+1. **Logs and data**: Integrations should maintain archives of customer logs and any integration specific data as those are not provided by Blackboard products.
 2. **Multi-tenancy**: Integrations should follow a multi-tenant model vs single tenant. Multi-tenant means one integration service delivering your integration to all your customers vs requiring a new intetegration service per customer. This means you have to design into your integration the ability for enabling individual customer accounts, likely only administrator, for any customer specific configuration.
 3. **Separation of Customer data**: Multi-tenancy means that in addition to running a single service for your customers you are likely using a single database. This dictates a secure separation of customer data using a unique customer identifier prefix on customer-centric data keys.
 
@@ -74,7 +74,7 @@ See <a href="https://docs.anthology.com/docs/developer-portal/community-dev_port
 
 See our <a href="https://docs.anthology.com/docs/rest-apis/learn/getting-started/rest_apis-learn-getting-started-releasing_integration" target="_top">Releasing your Integration</a> guide for production release details.
 
-Also see <a href="https://docs.anthology.com/docs/lti/lti-registration-deployment" target="_top">LTI Registration and Deployment with Learn</a> guide which describes Anthology's approach behind releasing LTI 1.3 integrations.
+Also see <a href="https://docs.anthology.com/docs/lti/lti-registration-deployment" target="_top">LTI Registration and Deployment with Learn</a> guide which describes Blackboard's approach behind releasing LTI 1.3 integrations.
 
 #### Customer Facing Documentation
 
@@ -88,7 +88,7 @@ Aside from it **_not_** being a best practice to ask your customer to register y
 
 Instead, develop your integration following the Register once model, and hand off your integration Identifier to your customer. If you are an LTI 1.3 provider - you are done. Your customer adds your LTI integration and sets availability to their users and they are done. No passing around of Keys and Secrets or error prone multiple copy pasting of multiple configuration strings... you hand off one integration Id which you get when you register your integration on the portal and done.
 
-Well almost... the current exception (see The Future is Bright(er) below) is if your integration uses our REST APIs. Then your integration documentation must provide Anthology administrators with a list of privileges that need to be added to the user which is associated with your integration. The APIs list entitlements, not privileges, and therein lay a problem for Customers.
+Well almost... the current exception (see The Future is Bright(er) below) is if your integration uses our REST APIs. Then your integration documentation must provide Blackboard administrators with a list of privileges that need to be added to the user which is associated with your integration. The APIs list entitlements, not privileges, and therein lay a problem for Customers.
 
 As the integration provider you want a great customer experience so you use the <a href="https://docs.anthology.com/docs/rest-apis/learn/admin/rest_apis-learn-admin-rest_and_learn#converting-entitlements-to-gui-privileges" target="_top"> bookmarklet tool</a> to determine the privileges you include in your documentation to provide guidance to admins installing your integration.
 
@@ -96,7 +96,7 @@ As the integration provider you want a great customer experience so you use the 
 
 ### Who is responsible for your integration's support?
 
-It probably goes without saying, but the integration vendor is responsible. Not Anthology.
+It probably goes without saying, but the integration vendor is responsible. Not Blackboard.
 
 When the vendor registers in the Developer Portal they provide email information which is seen by customers when they install the integration. That is why this email and contact information must be publicly reachable. That is also why it makes sense to have a specific account from which all your integrations are delivered.
 

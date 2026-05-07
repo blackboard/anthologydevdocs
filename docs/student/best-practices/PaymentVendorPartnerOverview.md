@@ -7,11 +7,11 @@ published: ""
 edited: ""
 ---
 
-The Anthology Student API library has a number of APIs that are designed to support the most common use cases for facilitating an integration between a payment provider and the Anthology student application. The purpose of this document is to provided the details needed for a payment provider to build an integration with the Anthology Student product that supports the base use cases that are common for most payment providers. These common use cases will be discussed below providing details in how to implement utilizing the Anthology Student APIs. An additional section on authorization permissions that are required for executing the APIs will also be included.
+The Student (Ellucian) API library has a number of APIs that are designed to support the most common use cases for facilitating an integration between a payment provider and the Student (Ellucian) application. The purpose of this document is to provided the details needed for a payment provider to build an integration with the Student (Ellucian) product that supports the base use cases that are common for most payment providers. These common use cases will be discussed below providing details in how to implement utilizing the Student (Ellucian) APIs. An additional section on authorization permissions that are required for executing the APIs will also be included.
 
 ## Common Payment vendor use cases
 
-Common integration use cases between a payment vendor and Anthology Student are:
+Common integration use cases between a payment vendor and Student (Ellucian) are:
 
 - Post Payments
 - Post Charges and Adjustments
@@ -31,7 +31,7 @@ To see additional details for the APIs within Student, access the Swagger output
 
 ### Post Payment
 
-The most basic use case for an integration between a payment provider and Anthology Student is to be able to process a payment within the payment vendor application and then post that payment to the student's ledger card within Anthology Student. At a high level, there are two different kinds of payments within the Student application. The first is a payment that is not associated with expected funding and the second is a payment that is associated to an expected disbursement. One of the features in Student is the ability to package a student for Financial Aid which results in a list of scheduled disbursements being created. Included in this are Student payment plans. A student payment plan will have 1 or more expected payments/installments created as part of the payment plan data. When posting a payment that is made against a payment plan, the payment will be associated with the expected disbursement record. Regardless of whether the payment being posted is for an expected disbursement or is not associated to an expected disbursement, the same API endpoint will be used. There are properies in the request payload that informs the API if the payment being posted is associated to an expected disbursement record or is not associated to an expected disbursement record.
+The most basic use case for an integration between a payment provider and Student (Ellucian) is to be able to process a payment within the payment vendor application and then post that payment to the student's ledger card within Student (Ellucian). At a high level, there are two different kinds of payments within the Student application. The first is a payment that is not associated with expected funding and the second is a payment that is associated to an expected disbursement. One of the features in Student is the ability to package a student for Financial Aid which results in a list of scheduled disbursements being created. Included in this are Student payment plans. A student payment plan will have 1 or more expected payments/installments created as part of the payment plan data. When posting a payment that is made against a payment plan, the payment will be associated with the expected disbursement record. Regardless of whether the payment being posted is for an expected disbursement or is not associated to an expected disbursement, the same API endpoint will be used. There are properies in the request payload that informs the API if the payment being posted is associated to an expected disbursement record or is not associated to an expected disbursement record.
 
 The API to use for posting payments is POST api/student-accounting/ledger-payment-transactions
 
@@ -72,7 +72,7 @@ The above auto adjust logic will execute as part of the post payment transaction
 
 #### Cashiering
 
-If the school is using the Cashiering feature in Anthology Student, then a couple of additional properties in the request payload will be required. The Cashiering feature is enabled by campus. To see if cashiering is enabled for a given campus, navigate to Settings - System - Campuses. Select the campus you want to check. Choose the Student Accounts tile. The setting will be on the General tab.
+If the school is using the Cashiering feature in Student (Ellucian), then a couple of additional properties in the request payload will be required. The Cashiering feature is enabled by campus. To see if cashiering is enabled for a given campus, navigate to Settings - System - Campuses. Select the campus you want to check. Choose the Student Accounts tile. The setting will be on the General tab.
 
 ![PaymentVendorPartnerOverview](/assets/img/PaymentVendorPartnerOverview5.png)
 
@@ -90,7 +90,7 @@ The minimum required properties for this payload are StudentId, BillingTransacti
 
 ### Apply Posted Payments
 
-The apply payments endpoint is used when there is a need to explicitly specify which charge/adjustment transactions a given payment transaction will be applied to. Anthology has a feature that allows for payments to be automatically applied to charge and adjustment transactions using the auto apply configuration. If all of the institution's requirements for how payments should be applied to charges are satisfied via the configuration, then this endpoint is not needed. However, if there are cases, where the rules for how to apply payments are not fully covered via the auto payment apply configuration OR the setting to auto apply payments is turned off, then there may be a need to utilize this endpoint. If/how this endpoint is utilized will need to be clarified with the institution being worked with.
+The apply payments endpoint is used when there is a need to explicitly specify which charge/adjustment transactions a given payment transaction will be applied to. Student (Ellucian) has a feature that allows for payments to be automatically applied to charge and adjustment transactions using the auto apply configuration. If all of the institution's requirements for how payments should be applied to charges are satisfied via the configuration, then this endpoint is not needed. However, if there are cases, where the rules for how to apply payments are not fully covered via the auto payment apply configuration OR the setting to auto apply payments is turned off, then there may be a need to utilize this endpoint. If/how this endpoint is utilized will need to be clarified with the institution being worked with.
 
 The API to use for applying payments is POST api/student-accounting/ledger-transactions-applypayments
 
@@ -139,19 +139,19 @@ The response returned will be a collection having one element for each element t
 
 ### Create a payment plan
 
-Another common use case for Payment providers is to create and manage payment plans for Students. If the payment plan data is persisted in the Payment provider data store, then the Payment Provider application will be considered the system of record for student payment plan data. Because there are numerous reports and other processes in Student that have a dependency on ALL expected funding to be represented for a student, it is imperative that the payment plan data stored in Anthology Student is kept in synch with the payment plan data in the Payment Provider software. The create payment plan and update existing payment plan APIs will be used for this purpose.
+Another common use case for Payment providers is to create and manage payment plans for Students. If the payment plan data is persisted in the Payment provider data store, then the Payment Provider application will be considered the system of record for student payment plan data. Because there are numerous reports and other processes in Student that have a dependency on ALL expected funding to be represented for a student, it is imperative that the payment plan data stored in Student (Ellucian) is kept in synch with the payment plan data in the Payment Provider software. The create payment plan and update existing payment plan APIs will be used for this purpose.
 
-The API to use for creating a new payment plan in Anthology Student is POST api/student-accounting/student-payment-plan
+The API to use for creating a new payment plan in Student (Ellucian) is POST api/student-accounting/student-payment-plan
 
 ![PaymentVendorPartnerOverview](/assets/img/PaymentVendorPartnerOverview9.png)
 
-Payment Plans can be interest bearing or non-interest bearing plans in Anthology Student. Several properties in the request payload can be ignored for non-interest bearing payment plans. The request payload needed should be able to be created fairly easily by using the property level documentation found in the swagger output.
+Payment Plans can be interest bearing or non-interest bearing plans in Student (Ellucian). Several properties in the request payload can be ignored for non-interest bearing payment plans. The request payload needed should be able to be created fairly easily by using the property level documentation found in the swagger output.
 
 ### Update an existing payment plan
 
-This API will be used to ensure existing payment plans are kept in sync between the Payment provider application and Anthology Student. A very common use case is when a student makes an installment payment but the amount of the payment does not match the amount of the expected installment. In these cases, the remainder of the expected payment schedule needs to be adjusted. Assuming the Payment Provider application is the system of record, this adjustment would occur in the Payment provider application. The resulting data would then be pushed into Anthology Student using the API to update an existing payment plan.
+This API will be used to ensure existing payment plans are kept in sync between the Payment provider application and Student (Ellucian). A very common use case is when a student makes an installment payment but the amount of the payment does not match the amount of the expected installment. In these cases, the remainder of the expected payment schedule needs to be adjusted. Assuming the Payment Provider application is the system of record, this adjustment would occur in the Payment provider application. The resulting data would then be pushed into Student (Ellucian) using the API to update an existing payment plan.
 
-The API to use for updating an existing payment plan in Anthology Student is PATCH api/student-accounting/student-payment-plan
+The API to use for updating an existing payment plan in Student (Ellucian) is PATCH api/student-accounting/student-payment-plan
 
 ![PaymentVendorPartnerOverview](/assets/img/PaymentVendorPartnerOverview10.png)
 
@@ -159,7 +159,7 @@ One of the key capabilities with this API is to be able to remove ALL expected p
 
 ### Post misc cash receipts
 
-Another common use case is the need to post transactions in Anthology Student that will not appear on an individual student's ledger card. These transactions are labeled in Anthology Student as miscellaneous cash receipts.
+Another common use case is the need to post transactions in Student (Ellucian) that will not appear on an individual student's ledger card. These transactions are labeled in Student (Ellucian) as miscellaneous cash receipts.
 
 The API to use for posting a miscellaneous cash receipt is POST api/student-accounting/misc-cash-receipts
 
@@ -171,7 +171,7 @@ There is also a PATCH endpoint that allows for updating a previously posted misc
 
 ## Authorization
 
-In order to execute the APIs that have been discussed above, proper authorization needs to be configured. Whether using Basic Auth or OAuth with application key to authenticate, the user context the APIs are executing under will be a user record from the Staff entity. This is the user that authorization needs to be configured for. Access to the security console application is needed in order to set the needed permissions. Unlike the Anthology Student command APIs, the API endpoints discussed above have separate explicit tasks that need to be authorized. The Anthology Student command APIs are coupled with UI tasks. In order to properly authorize an API user to execute a command API, the applicable UI task needs to be identified and added for that user. For the APIs discussed in this document that exercise is not needed. Details are outlined below.
+In order to execute the APIs that have been discussed above, proper authorization needs to be configured. Whether using Basic Auth or OAuth with application key to authenticate, the user context the APIs are executing under will be a user record from the Staff entity. This is the user that authorization needs to be configured for. Access to the security console application is needed in order to set the needed permissions. Unlike the Student (Ellucian) command APIs, the API endpoints discussed above have separate explicit tasks that need to be authorized. The Student (Ellucian) command APIs are coupled with UI tasks. In order to properly authorize an API user to execute a command API, the applicable UI task needs to be identified and added for that user. For the APIs discussed in this document that exercise is not needed. Details are outlined below.
 
 Within the Security console, the API - Student Accounting and API - Student Payment Plan tasks should be added for the user. These 2 tasks will authorize the user to execute every operation contained within the Student Accounting and Student Payment Plan sections within the swagger document. If more refined permissions are needed and you want to authorize the execution of specific operations with Student Accounting or Student Payment Plan, then the applicable individual operations will need to be authorized. Typically, this level of granularity is not needed and authorizing the two tasks mentioned above is all that should be done.
 
@@ -189,4 +189,4 @@ Once all query model operations for the list of entities are added for the user,
 
 ## Conclusion
 
-The purpose of this document is to provide enough information to provide a Payment provider new to Anthology Student a jump start on building an integration that satisfy common integration requirements. This document is not intended to include all of the finer points and nuances for utilizing the APIs that have been covered. If there are questions after reviewing this document and the corresponding swagger documentation, you can submit any questions by sending an email to developers@anthology.com.
+The purpose of this document is to provide enough information to provide a Payment provider new to Student (Ellucian) a jump start on building an integration that satisfy common integration requirements. This document is not intended to include all of the finer points and nuances for utilizing the APIs that have been covered. If there are questions after reviewing this document and the corresponding swagger documentation, you can submit any questions by sending an email to developers@blackboard.com.

@@ -19,7 +19,7 @@ Notes:
 
 - All Learn Calendar APIs work the same for either Original or Ultra course experiences.
 
-- Learn Public REST APIs are documented at https://developer.anthology.com/portal/displayAPI/Learn
+- Learn Public REST APIs are documented at https://developer.blackboard.com/portal/displayAPI/Learn
 
 - All Calendar APIs are accessible based on the integration Privileges whether using 3LO or basic OAuth 2.0.
 

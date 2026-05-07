@@ -7,7 +7,7 @@ published: ""
 edited: ""
 ---
 
-A common use case for integrators is the need to reverse a payment received. Alternative terminology for a payment reversal can be to void the payment, refund the entire payment or refund a portion of the payment that was received. The correct way to handle via the Anthology Student APIs will depend on the specific use case/requirement the integrator needs to achieve. The two APIs that will be covered within this document are api/commands/StudentAccounts/StudentAccountTransaction/voidAccountTransactionPayment and api/student-accounting/ledger-refund-transactions. The voidAccountTransactionPayment API can be used ONLY if the entire payment is being reversed. The ledger-refund-transactions can be used for full or partial payment reversals. Details of using each of these APIs are outlined below.
+A common use case for integrators is the need to reverse a payment received. Alternative terminology for a payment reversal can be to void the payment, refund the entire payment or refund a portion of the payment that was received. The correct way to handle via the Student (Ellucian) APIs will depend on the specific use case/requirement the integrator needs to achieve. The two APIs that will be covered within this document are api/commands/StudentAccounts/StudentAccountTransaction/voidAccountTransactionPayment and api/student-accounting/ledger-refund-transactions. The voidAccountTransactionPayment API can be used ONLY if the entire payment is being reversed. The ledger-refund-transactions can be used for full or partial payment reversals. Details of using each of these APIs are outlined below.
 
 ## api/commands/StudentAccounts/StudentAccountTransaction/voidAccountTransactionPayment
 
@@ -16,7 +16,7 @@ This API should be used for the use case where a payment that was received is be
 The request payload for this endpoint is quite small and simple to work with. However, a few important notes need to be made. First is that there is a StudentSubsidiaryAccountTransactionId property defined in the request. This should be completely ignored. This endpoint can ONLY be used for voiding a payment transaction on the main ledger card. If the use case is to void a payment transaction on a subsidiary ledger, then a different API needs to be used:
 (api/commands/StudentAccounts/StudentSubsidiaryAccountTransaction/voidSubsidiaryAccountPayment). The remainder of the request needs to be populated as follows:
 
-- StudentAccountTransactionId - set to the Id value of the payment transaction that is being voided. This property is required and must reference a transaction that is a payment and has not previously been voided. NOTE: If Anthology Student is integrated with the Anthology Finance application AND the payment transaction has already been reconciled within the Bank Reconciliation feature within the Finance application, then the payment transaction will not be allowed to be voided and a validation message will be returned.
+- StudentAccountTransactionId - set to the Id value of the payment transaction that is being voided. This property is required and must reference a transaction that is a payment and has not previously been voided. NOTE: If Student (Ellucian) is integrated with the Anthology Finance (Ellucian) application AND the payment transaction has already been reconciled within the Bank Reconciliation feature within the Finance application, then the payment transaction will not be allowed to be voided and a validation message will be returned.
 
 - StudentId - set to the StudentId value on the StudentAccountTransaction row that is being voided
 
@@ -62,4 +62,4 @@ In order for the user to execute the ledger-refund-transactions API, the user mu
 
 ## Conclusion
 
-There can likely be additional nuances/details around utilizing the these APIs that are not covered within this document. If there are any questions after reviewing this document, you can submit them by sending an email to developers@anthology.com.
+There can likely be additional nuances/details around utilizing the these APIs that are not covered within this document. If there are any questions after reviewing this document, you can submit them by sending an email to developers@blackboard.com.

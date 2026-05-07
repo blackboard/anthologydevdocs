@@ -10,9 +10,9 @@ sidebar_position: 3
 
 There are many ways to get in touch with us:
 
-- E-mail the Anthology Developers Network Team: [developers@anthology.com](mailto:developers@anthology.com)
-- E-mail the Anthology Partner Team: [bbpartnerteam@blackboard.com](mailto:bbpartnerteam@blackboard.com)
+- E-mail the Blackboard Developers Network Team: [developers@blackboard.com](mailto:developers@blackboard.com)
+- E-mail the Blackboard Partner Team: [partners@blackboard.com](mailto:partners@blackboard.com)
 - Post to our [discussion space](https://community.blackboard.com/developers)
-- Join the [Anthology Techies Slack channel.](https://join.slack.com/t/blackboardtechies/shared_invite/zt-21ayvh4af-FMtP3g~MTHY0aay6CvcZtw)
+- Join the [Blackboard Techies Slack channel.](https://join.slack.com/t/blackboardtechies/shared_invite/zt-21ayvh4af-FMtP3g~MTHY0aay6CvcZtw)
 - Tell us in person at a conference
 - Provide your feedback through one of our many users groups

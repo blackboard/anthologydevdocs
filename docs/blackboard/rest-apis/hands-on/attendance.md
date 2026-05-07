@@ -69,7 +69,7 @@ Given this idea of objects and groups I have broken down the endpoints to make t
 
 ![Image showing A break down per object and method of attendance rest api endpoints](../../../../static/assets/img/docs-site_attendance-5.png)
 
-Hopefully this last image is helpful, if you have any questions, please contact us at developers@anthology.com
+Hopefully this last image is helpful, if you have any questions, please contact us at developers@blackboard.com
 
 > A very important note to keep in mind: As of the date of creation of this document, If you create an attendance meeting using the REST API, the attendance status CANNOT be modified using the GUI, it can ONLY be modified using REST API. This does not apply to meetings created in the GUI, you can modify those using either the GUI or the REST API.
 

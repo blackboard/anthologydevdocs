@@ -7,7 +7,7 @@ published: ""
 edited: ""
 ---
 
-One of the key data points for a student enrollment period record in Anthology Student are the area of studies that are associated to the enrollment record. Every student enrollment period record must be enrolled in a program version. However, in many instances additional areas of study are added which bring additional requirements for the student in order to fully complete and graduate from their enrollment. It is common for students to modify associated areas of study during initial enrollment creation as well as after the enrollment record has been created. This document will cover the details of how to manage associated areas of study to an enrollment record using the available command APIs. Two API endpoints will be referenced in this document. The first is the API that is used to create a new student enrollment period record - api/commands/Academics/StudentEnrollmentPeriod/enrollStudent. The second is an API that can be used to modify the list of associated Areas of Study to an existing student enrollment period record - api/commands/Academics/updateStudentEnrollmentAreaOfStudy.
+One of the key data points for a student enrollment period record in Student (Ellucian) are the area of studies that are associated to the enrollment record. Every student enrollment period record must be enrolled in a program version. However, in many instances additional areas of study are added which bring additional requirements for the student in order to fully complete and graduate from their enrollment. It is common for students to modify associated areas of study during initial enrollment creation as well as after the enrollment record has been created. This document will cover the details of how to manage associated areas of study to an enrollment record using the available command APIs. Two API endpoints will be referenced in this document. The first is the API that is used to create a new student enrollment period record - api/commands/Academics/StudentEnrollmentPeriod/enrollStudent. The second is an API that can be used to modify the list of associated Areas of Study to an existing student enrollment period record - api/commands/Academics/updateStudentEnrollmentAreaOfStudy.
 
 ## Data model notes
 
@@ -19,7 +19,7 @@ ProgramVersionAreaOfStudy - this entity stores the list of Areas of Study that a
 
 ## Swagger documentation
 
-To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Anthology Student web client application. Once the Swagger landing page is loaded, use the Domain and Functional Area drop down filters at the top of the swagger page to access the documentation. To access the API endpoints mentioned above, select 'Academics' for Domain and 'Student Enrollment' for Functional Area and then select Refresh. Find the StudentEnrollmentPeriod entity in the displayed list of entities and then click the lightning bolt icon. The list of APIs for this entity will be listed. You will see enrollStudent and updateStudentEnrollmentAreaOfStudy in the displayed list of operations.
+To access the Swagger documentation, append 'swagger' to the end of the base URI that is used to launch the Student (Ellucian) web client application. Once the Swagger landing page is loaded, use the Domain and Functional Area drop down filters at the top of the swagger page to access the documentation. To access the API endpoints mentioned above, select 'Academics' for Domain and 'Student Enrollment' for Functional Area and then select Refresh. Find the StudentEnrollmentPeriod entity in the displayed list of entities and then click the lightning bolt icon. The list of APIs for this entity will be listed. You will see enrollStudent and updateStudentEnrollmentAreaOfStudy in the displayed list of operations.
 
 ![ManageEnrollmentAreasOfStudy](/assets/img/ManageEnrollmentAreasOfStudy1.png)
 
@@ -85,4 +85,4 @@ In order to be able to execute these API endpoints, the user that the API call i
 
 As is usually the case, there may be additional nuances for how to properly formulate the request for these APIs in order for them to produce the desired result that are not covered within this document.
 
-If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@anthology.com.
+If there are questions after reviewing this document and the corresponding swagger documentation, you can submit them by sending an email to developers@blackboard.com.

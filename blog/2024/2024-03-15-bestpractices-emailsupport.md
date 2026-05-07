@@ -23,7 +23,7 @@ Below are the recommended best practices to ensure you receive the quickest, mos
 
   - Opt for a descriptive subject line summarizing the issue concisely. We recommend using the following format:
     - [Your Company Name] - [Domain Name]: [Brief Issue Description]
-    - Example: YourCompanyName-AnthologyLearn: Issue with Launching Textbook Tool
+    - Example: YourCompanyName-BlackboardLMS: Issue with Launching Textbook Tool
 
 - Provide Relevant Information:
 

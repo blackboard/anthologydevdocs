@@ -54,17 +54,17 @@ allow the REST Application to function. The vendor or developer of the REST
 application should provide a list of required entitlements.
 
 NEVER configure a REST application to act as a System Admin user. Doing so
-gives the REST application full access to all data and operations of your Learn environment possibly resulting in IRREPARABLE harm. If a vendor requests a System Admin user for their application, do not allow it. In such a case, please provide the vendor's contact and application information to <a href="mailto:developers@anthology.com?subject=Vendor requesting System Admin Privileges">developers&#64;anthology.com</a> so that we can
+gives the REST application full access to all data and operations of your Learn environment possibly resulting in IRREPARABLE harm. If a vendor requests a System Admin user for their application, do not allow it. In such a case, please provide the vendor's contact and application information to <a href="mailto:developers@blackboard.com?subject=Vendor requesting System Admin Privileges">developers&#64;blackboard.com</a> so that we can
 help the vendor correct the situation.
 
 ![Create REST integration](/assets/img/rest-and-learn-3.png)
 
-**Note:** If you are an Anthology client, an Anthology Partner / Vendor / Developer of an LTI or REST Application should NEVER tell you to go to the developer portal and create an App ID with the associated key/secret to install their application. They should never tell you to apply for a Rate/Site increase for their application. Anthology DOES NOT support that model. Every REST Application developer should give you an App ID to install their REST App and tell you how to configure a system role for its use. Period. The REST Application developer needs to request the increases they need to run their application themselves. If they ask you to go to developer.anthology.com and get an App ID/Key/Secret, please tell them that is wrong. They should have exactly one App ID for their production REST application that they are asking you to install.
+**Note:** If you are an blackboard client, an blackboard Partner / Vendor / Developer of an LTI or REST Application should NEVER tell you to go to the developer portal and create an App ID with the associated key/secret to install their application. They should never tell you to apply for a Rate/Site increase for their application. blackboard DOES NOT support that model. Every REST Application developer should give you an App ID to install their REST App and tell you how to configure a system role for its use. Period. The REST Application developer needs to request the increases they need to run their application themselves. If they ask you to go to developer.blackboard.com and get an App ID/Key/Secret, please tell them that is wrong. They should have exactly one App ID for their production REST application that they are asking you to install.
 
 Contractors are an exception to this policy as they are producing an
-integration on your, the Anthology client, behalf. Questions regarding the
+integration on your, the blackboard client, behalf. Questions regarding the
 policy and whether you are impacted may be asked here, or posted to
-[developers@anthology.com](mailto:developers@anthology.com).
+[developers@blackboard.com](mailto:developers@blackboard.com).
 
 ### Managing your REST Integration
 
@@ -133,4 +133,4 @@ For a more detailed process please see [Releasing your REST Integration](/docs/b
 
 **Step 7:** Include information from Step 6 in your client facing documentation.
 
-_**Key takeaway:**_ Providing the required Privileges to Learn Admins reduces the risk of a failure in integration installation and operation. Anthology nor you should want to burden clients with figuring out from the API Docs which Entitlements are needed and look up these Privileges on their own so that your application works as expected.
+_**Key takeaway:**_ Providing the required Privileges to Learn Admins reduces the risk of a failure in integration installation and operation. blackboard nor you should want to burden clients with figuring out from the API Docs which Entitlements are needed and look up these Privileges on their own so that your application works as expected.

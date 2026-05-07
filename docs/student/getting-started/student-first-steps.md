@@ -7,17 +7,17 @@ published: ""
 edited: ""
 ---
 
-Anthology offers a suite of education technology tools, both software and hardware. REST stands for Representational State Transfer. It is a lightweight, flexible web service architecture that allows HTTP commands to be sent to Web Applications without unnecessary overhead.
+Student (Ellucian) offers a suite of education technology tools, both software and hardware. REST stands for Representational State Transfer. It is a lightweight, flexible web service architecture that allows HTTP commands to be sent to Web Applications without unnecessary overhead.
 
 ## Before You Get Started
 
 #### Availability
 
-Student APIs are made available exclusively to licensed Anthology member campuses. Third-party or public use of Student APIs is prohibited without the consent of Anthology.
+Student APIs are made available exclusively to licensed Student (Ellucian)  member campuses. Third-party or public use of Student APIs is prohibited without the consent of Student (Ellucian) .
 
 ## API Access
 
-In order to authenticate to the Anthology Student APIs, you must have a user account created in the applicable Anthology Student environment that has been given the appropriate authorization permissions to access and execute the desired API endpoints.  For authentication, it is recommended that you authenticate using an application key. Details on these steps  are below.
+In order to authenticate to the Student (Ellucian) APIs, you must have a user account created in the applicable Student (Ellucian) environment that has been given the appropriate authorization permissions to access and execute the desired API endpoints.  For authentication, it is recommended that you authenticate using an application key. Details on these steps  are below.
 
 #### Step 1: Request Creation of a User Account within Azure Active Directory (AAD)
 
@@ -40,9 +40,9 @@ In most cases, users will **not have direct permissions** to create accounts wit
 > **Note:** Credentials should be stored securely, as they will be required during API authentication and setup steps.
 
 
-#### Step 2: Create a Staff Record within the Anthology Student web client UI
+#### Step 2: Create a Staff Record within the Student (Ellucian) web client UI
 
-After the Azure Active Directory (AAD) account has been created, a corresponding **staff record** must be created within Anthology Student.
+After the Azure Active Directory (AAD) account has been created, a corresponding **staff record** must be created within Student (Ellucian).
 
 This ensures that the AAD account is properly linked to a recognized internal user profile for authentication and authorization purposes.
 
@@ -84,7 +84,7 @@ Similar to Steps 1-3 above, it will be common for most users to not have access 
 
 **NOTE:**  It is likely that the same resource will have permissions to all of the areas mentioned above.  If this is the case, then a single request can be submitted requesting all four steps listed above be completed.  
 
-Once the above steps have been completed, you should be able to begin to work with the Anthology Student API suite.
+Once the above steps have been completed, you should be able to begin to work with the Student (Ellucian) API suite.
 
 
 

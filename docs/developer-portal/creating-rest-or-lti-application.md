@@ -35,11 +35,11 @@ In the application form, enter your application information. **Fields with a red
 
 2. **Description.** Describe your application. Address who your application is intended for and what its main goal is. For example, "Grade Sync allows students and instructors to sync grades with our system and centralize them in the institution's system." Limit 450 characters.
 
-3. **Domain(s).** Enter the domain address(es) you want to use without the http or //. You can enter several domains separated by commas (for example, **devcon.blackboard.com**, **trial.anthology.com**).
+3. **Domain(s).** Enter the domain address(es) you want to use without the http or //. You can enter several domains separated by commas (for example, **devcon.blackboard.com**, **trial.blackboard.com**).
 
 4. **Group.** Add the group that this application is to be part of. A default group is added when you create an application. If you want to add your own group, read more about [Groups](/docs/developer-portal/creating-and-managing-groups).
 
-5. **My integration Supports LTI 1.3.** By default, this option is switched off. Turn on if you need your application to support LTI 1.3. Anthology only supports LTI 1.3.
+5. **My integration Supports LTI 1.3.** By default, this option is switched off. Turn on if you need your application to support LTI 1.3. Blackboard only supports LTI 1.3.
 
 6. **Register Application.** Once all information has been entered, select **Register Application**.
 
@@ -61,7 +61,7 @@ Once you have filled out and submitted the form, add the following information d
 
 #### Register REST API application
 
-When you register a REST API application, you see three values that the developer portal returns. **These are shown only once, and Anthology cannot retrieve them. Make sure to document them for your records**:
+When you register a REST API application, you see three values that the developer portal returns. **These are shown only once, and Blackboard cannot retrieve them. Make sure to document them for your records**:
 
 1. Application Key
 2. Secret
@@ -73,7 +73,7 @@ Once you record and verify this information, select **Done** to be redirected to
 
 #### Register an LTI application
 
-When you register a LTI application, you will see seven values that the developer portal returns, **These are shown only once, and Anthology cannot retrieve them. Make sure to document them for your records**:
+When you register a LTI application, you will see seven values that the developer portal returns, **These are shown only once, and Blackboard cannot retrieve them. Make sure to document them for your records**:
 
 1. Application Key
 2. Secret
@@ -119,7 +119,7 @@ Here you will be able to:
 
 4. **Delete your application.** This removes your application. This is a one-way operation and cannot be undone.
 
-5. **Manage your keys.** You can create new keys (keys and secrets), but the application keeps the same application ID. This can be used when you want to rotate your keys or make an old key and secret unusuable. You may never need to create additional keys. When you select **+**, it will generate new values that will be shown only once. Document and store them in a safe place because Anthology is unable to retrieve this data.
+5. **Manage your keys.** You can create new keys (keys and secrets), but the application keeps the same application ID. This can be used when you want to rotate your keys or make an old key and secret unusuable. You may never need to create additional keys. When you select **+**, it will generate new values that will be shown only once. Document and store them in a safe place because Blackboard is unable to retrieve this data.
 
    ![Manage keys](/assets/img/create-rest-or-lti-app-8.png)
 

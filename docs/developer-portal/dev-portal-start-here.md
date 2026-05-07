@@ -8,17 +8,17 @@ sidebar_position: 1
 author: Davey Herrera, Dan Magers
 ---
 
-On this page learn about the Anthology Developer Portal. Learn how to register for and navigate in the Portal. Selecting a navigation link on the side panel of this page takes you to that section.
+On this page learn about the Blackboard Developer Portal. Learn how to register for and navigate in the Portal. Selecting a navigation link on the side panel of this page takes you to that section.
 
-## What is the Anthology Developer Portal?
+## What is the Blackboard Developer Portal?
 
-The [Anthology Developer Portal](https://developer.anthology.com) is for anyone interested in developing integrations with the Anthology product portfolio. Find information about our REST APIs, our developer-facing documentation, and Portal-related announcements.
+The [Blackboard Developer Portal](https://developer.blackboard.com) is for anyone interested in developing integrations with the Blackboard product portfolio. Find information about our REST APIs, our developer-facing documentation, and Portal-related announcements.
 
 Create an account to register an application. Registration is a required step for testing and releasing your integration.
 
-> Contact us at developers@anthology.com for any issues related to integrations.
+> Contact us at developers@blackboard.com for any issues related to integrations.
 
-## Navigating the Anthology Developer Portal
+## Navigating the blackboard Developer Portal
 
 When you enter our developer portal, you will find several links starting from the top left. Select an item in this list for more details and instructions.
 
@@ -33,15 +33,15 @@ When you enter our developer portal, you will find several links starting from t
 
 ### Developer Documentation
 
-Anthology’s Developer Documentation (which includes this page) helps you explore Anthology’s product resources. It includes tutorials, sample code, articles, and API references. For an overview, visit https://docs.anthology.com/docs/site-intro.
+Blackboard’s Developer Documentation (which includes this page) helps you explore Blackboard’s product resources. It includes tutorials, sample code, articles, and API references. For an overview, visit https://docs.anthology.com/docs/site-intro.
 
 ### Explore APIs
 
 Explore Public APIs for:
 
-- [Ally](https://developer.anthology.com/portal/displayApi/Ally)
-- [Learn](https://developer.anthology.com/portal/displayApi/Learn)
-- [Student](https://developer.anthology.com/portal/displayApi/Student)
+- [Ally](https://developer.blackboard.com/portal/displayApi/Ally)
+- [Learn](https://developer.blackboard.com/portal/displayApi/Learn)
+- [Student](https://developer.blackboard.com/portal/displayApi/Student)
 
 Each link directs you to a Swagger that displays all available APIs and their endpoints. Swagger is a suite of open-source tools for API developers from SmartBear Software. To learn more about how Swaggers work, visit [Swagger’s documentation](https://swagger.io/docs).
 
@@ -74,7 +74,7 @@ For your password, use the following rules:
 
 What you enter into the **First Name** and **Last name** fields is what is displayed on Blackboard Learn to identify your integration. Entering a company name in the name fields can be done in this way:
 
-- **First name:** Anthology
+- **First name:** blackboard
 - **Last name:** Inc.
 
 Confirm your identity in the CAPTCHA box. Then select **Create Account**.
@@ -106,13 +106,13 @@ When your account is created and you have logged in, you will notice that the to
 1. **My Applications.** Manage your registered applications here.
 2. **My Groups.** Manage your groups here.
 3. **Bell Icon (🔔).** View Notifications in the Developer Portal. Select 🔔 to see your notifications.
-4. **My Account.** Select **My Account** to review or edit your information. You are not able to edit your email (Anthology also cannot change this email). Your password can be reset by selecting **Change password**.
+4. **My Account.** Select **My Account** to review or edit your information. You are not able to edit your email (Blackboard also cannot change this email). Your password can be reset by selecting **Change password**.
 
    ![Developer portal menu when logged in](/assets/img/dev-portal-start-here-12.png)
 
 ### Browse APIs
 
-When you click the Browse APIs you will be redirected to our Swagger for APIs: [https://developer.anthology.com/portal/displayApi](https://developer.anthology.com/portal/displayApi)
+When you click the Browse APIs you will be redirected to our Swagger for APIs: [https://developer.blackboard.com/portal/displayApi](https://developer.blackboard.com/portal/displayApi)
 
 #### Overall Swagger API structure
 
