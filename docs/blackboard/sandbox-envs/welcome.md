@@ -43,11 +43,11 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** vmdk-4000-10-0-v1.vmdk
-- **Version:** Blackboard LMS 4000.10.0
-- **Publish date:** March 13th 2026
-- **Expiration Date:** July 21st 2026.
-- **What changed?:** No reboot needed. Should take about 15 to 30 minutes to start up. please make sure to use t2.large or bigger size. We currently only support AWS for VMDK deployment. Fixed a problem related to cloud connection that prevented certain functionalities to work.
+- **Name:** vmdk-4000-15-0-v1.vmdk
+- **Version:** Blackboard LMS 4000.15.0
+- **Publish date:** May 8th 2026
+- **Expiration Date:** August 17th 2026.
+- **What changed?:** Please use t2.xlarge - We only support AWS.
   <BBButton downloadUrl="https://support.blackboard.com/s/blackboard-integration-ami"/>
 
 :::
