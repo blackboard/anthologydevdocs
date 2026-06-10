@@ -7,7 +7,7 @@ edited: "2023-10-20"
 author: Mark O'Neil
 ---
 
-> Tested with Blackboard Learn version 3900.69.0
+> Tested with Blackboard LMS version 3900.69.0
 
 ## Topic
 

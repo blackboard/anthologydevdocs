@@ -13,7 +13,7 @@ This section outlines the process of setting up and using the Learn REST and LTI
 
 To be able to follow this document and configure your AMI instances, you must have an Amazon AWS account. If you do not have an AWS account you will need to create one.
 
-In addition to this, you also need the VMDK server file provided in our support portal, if you don't have this, please follow this guide to download and convert the file: [Blackboard Learn Server](/docs/blackboard/sandbox-envs/welcome)
+In addition to this, you also need the VMDK server file provided in our support portal, if you don't have this, please follow this guide to download and convert the file: [Blackboard LMS Server](/docs/blackboard/sandbox-envs/welcome)
 
 ## Deploy and configure your EC2 Machine
 
@@ -46,4 +46,4 @@ If you already have a `t2.large` server, refer to our Frequently Asked Questions
    - select the VPC connected to your EC2 and
    - select Actions => Edit DNS Hostnames —> Change DNS hostnames: to YES
 
-Once the server is configured to your liking, click Launch to provision the server. To access the Blackboard Learn server and/or get general information about the server, go to the next section.
+Once the server is configured to your liking, click Launch to provision the server. To access the Blackboard LMS server and/or get general information about the server, go to the next section.

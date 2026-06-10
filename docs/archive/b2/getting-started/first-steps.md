@@ -12,7 +12,7 @@ displayed_sidebar: documentationSidebar
 
 # First Steps Using Building Blocks
 
-> NOTE: For new development, Blackboard recommends building REST and LTI integrations and NOT Building Blocks(B2s). B2s do not work within the Ultra Course UI; REST and LTI works for all Learn deployment and UI options. Use the Developer AMI listed under DVBA for your Blackboard Learn server.
+> NOTE: For new development, Blackboard recommends building REST and LTI integrations and NOT Building Blocks(B2s). B2s do not work within the Ultra Course UI; REST and LTI works for all Learn deployment and UI options. Use the Developer AMI listed under DVBA for your Blackboard LMS server.
 
 Developing extensions for Learn requires a development environment. Your
 development environment refers to (1) the development workstation on which you
@@ -37,12 +37,12 @@ use of Netbeans).
 
 #### Development Server
 
-Your development server will host an instance of Blackboard Learn, Developer
-Edition - a version of the Blackboard learning platform that we make available
+Your development server will host an instance of Blackboard LMS, Developer
+Edition - a version of the Blackboard LMSing platform that we make available
 for development purposes that has the Content System, Community System, and
 Learning System all enabled to support up to 150 test users, 100 test courses,
 and 1000 test enrollment records. In many cases, developers choose to run
-Blackboard Learn, Developer Edition on their development workstation rather
+Blackboard LMS, Developer Edition on their development workstation rather
 than on separate server hardware. Others choose to share a dedicated
 development server among multiple developers, each connecting to it from their
 individual development workstations. Still others have created their own
@@ -53,9 +53,9 @@ easily restore to a vanilla installation of their development server.
 
 Blackboard ships Learn with various proprietary or open-source .jar files as
 resources. Blackboard includes or excludes these resources depending only on
-the needs of Blackboard Learn. We do not know which ones independent
+the needs of Blackboard LMS. We do not know which ones independent
 developers might want to use. When you build a Building Block, do not rely on
-the presence of any particular resource in the Blackboard Learn installation.
+the presence of any particular resource in the Blackboard LMS installation.
 Instead, include a copy of any necessary resources locally with your
 development project.
 

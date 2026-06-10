@@ -18,7 +18,7 @@ those built into Eclipse and NetBeans.
 
 ### Enabling debugging using bb-config.properties
 
-Newer versions of Blackboard Learn have a built-in flag to enable Tomcat
+Newer versions of Blackboard LMS have a built-in flag to enable Tomcat
 debugging. Follow these steps to turn it on:
 
 1. Open the file /blackboard/config/bb-config.properties in a text editor

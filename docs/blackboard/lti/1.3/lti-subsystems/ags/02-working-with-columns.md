@@ -90,7 +90,7 @@ To create the column, you must send a JSON payload with the required fields outl
 | endDateTime    | No       | Date String (ISO) | Due date of the column                                                                 | `null`        |
 | gradesreleased | No       | boolean           | Flag to indicate whether the grades are available to students after adding them or not | `true`        |
 
-The response of this request will return a 201 code with the object of the column created and its corresponding IDs in Blackboard Learn.
+The response of this request will return a 201 code with the object of the column created and its corresponding IDs in Blackboard LMS.
 
 ## For single column operations
 
@@ -149,5 +149,5 @@ As a response, the system will send the updated object with a 200 response code.
 This method is quite simple since it will just delete the existing gradebook column from the system
 
 :::caution Destructive action
-Please be wary when performing this action, this will remove the column completely from the system, including any attempt and/or grades already saved or posted. Blackboard Learn support doesn't have a way to restore these columns.
+Please be wary when performing this action, this will remove the column completely from the system, including any attempt and/or grades already saved or posted. Blackboard LMS support doesn't have a way to restore these columns.
 :::

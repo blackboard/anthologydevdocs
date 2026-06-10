@@ -29,7 +29,7 @@ Use [our best practices](/docs/developer-portal/best-practices) to properly name
 
 We provide a default of six sites to be registered in total.
 
-Each developer group has a quota of the maximum number of Blackboard Learn
+Each developer group has a quota of the maximum number of Blackboard LMS
 sites that can access the group's applications, regardless of number of
 applications. You are responsible for keeping track of the sites where your
 Learn REST Application is installed. The client receives an error message if they install your REST application, and the site quota is exceeded for the developer group that manages it. The error message typically reads something like:

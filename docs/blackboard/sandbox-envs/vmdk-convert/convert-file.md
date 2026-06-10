@@ -34,7 +34,7 @@ The following is an example of the `containers.json` file:
 
 ```json
 {
-  "Description": "Blackboard Learn 3900.112",
+  "Description": "Blackboard LMS 3900.112",
   "Format": "VMDK",
   "UserBucket": {
     "S3Bucket": "MyLearnImages",
@@ -52,7 +52,7 @@ aws ec2 import-snapshot --description "[[A short description of this job]]" --di
 Example:
 
 ```shell
-aws ec2 import-snapshot --description "Blackboard Learn 3900.112" --disk-container "file:///Users/developer/Desktop/containers.json"
+aws ec2 import-snapshot --description "Blackboard LMS 3900.112" --disk-container "file:///Users/developer/Desktop/containers.json"
 ```
 
 :::tip File Path
@@ -82,4 +82,4 @@ Once the conversion process is completed, follow these steps to create an EC2 ma
 7. In the left navigation menu, select `AMIs` under "Images"
 8. In there you should see the image you just created, ready to be used in an EC2 machine
 
-Now that the file was converted and an AMI image is available for use, you can continue to the next section where you can configure the server and deploy Blackboard Learn.
+Now that the file was converted and an AMI image is available for use, you can continue to the next section where you can configure the server and deploy Blackboard LMS.

@@ -107,7 +107,7 @@ Please make sure to send all the properties in the payload since they are requir
 
 After this, you will need to build a JSON object that has the following structure, replacing the properties with the data gathered:
 
-Once this object is built, you will need to create a JWT token with it and sign it with your JWKS key. This is important since the Blackboard Learn server will later connect to your system and retrieve your public JWKS key for signature validation.
+Once this object is built, you will need to create a JWT token with it and sign it with your JWKS key. This is important since the Blackboard LMS server will later connect to your system and retrieve your public JWKS key for signature validation.
 
 Now that you have the JWT token (which from now on we will call `client_assertion`), you can submit the request and retrieve your Bearer token.
 
@@ -185,4 +185,4 @@ The sample below represents the data payload you will receive when authenticatin
 
 ## Next steps
 
-Now that you're authenticated, you can start creating graded columns, requesting column information and/or posting user grades to Blackboard Learn. Each one of these scenarios will be covered next.
+Now that you're authenticated, you can start creating graded columns, requesting column information and/or posting user grades to Blackboard LMS. Each one of these scenarios will be covered next.

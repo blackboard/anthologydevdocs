@@ -42,7 +42,7 @@ for Learn 9.1 in an HTML package in Javadoc format.
 
 Blackboard also provides a "diff file" to detail the changes to the Building
 Blocks API and Web Services Specifications since the previous release of
-Blackboard Learn. This navigable list of added, removed, and changed public
+Blackboard LMS. This navigable list of added, removed, and changed public
 APIs is an HTML package in Javadoc format.
 
 ## Tag Libraries
@@ -58,18 +58,18 @@ for your Building Block users.
 
 ## OpenDB
 
-The Open Database Schema provides information about the Blackboard Learn
+The Open Database Schema provides information about the Blackboard LMS
 database structure, including layout and table inter-dependencies. This
 information is intended for intermediate to expert database administrators, as
 an aid to troubleshooting, capacity planning and analytics.
 
 The schemas include a description of the data characteristics of the tables
-and columns in the Blackboard Learn database, which includes datatypes and
+and columns in the Blackboard LMS database, which includes datatypes and
 sizes, nullability, index, sequence, key and constraint information.
 Additional commentary is also provided for key tables and columns.
 
 The Open Database Schema does not include a complete description of every
-database object inBlackboard Learn. The following information is not included:
+database object inBlackboard LMS. The following information is not included:
 
 - Detailed commentary for some tables and columns.
 - No table or column information for the Xythos engine file storage schema.

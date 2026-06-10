@@ -21,7 +21,7 @@ By definition, the UEF integration triggers and performs the LTI call when the u
 
 ### LTI block
 
-This block follow the same process for an LTI Message Flow described by the Core LTI 1.3 specifications, this will verify that the integration is allowed to perform operations within the Blackboard Learn server and will review if the user is allowed to launch the integration. Below is a brief overview of the LTI flow, for more information about this, flow please refer to [LTI Message Launch Flow](../lti/1.3/core/01-core-launch.md):
+This block follow the same process for an LTI Message Flow described by the Core LTI 1.3 specifications, this will verify that the integration is allowed to perform operations within the Blackboard LMS server and will review if the user is allowed to launch the integration. Below is a brief overview of the LTI flow, for more information about this, flow please refer to [LTI Message Launch Flow](../lti/1.3/core/01-core-launch.md):
 
 ![Diagram of the flow used by Core LTI 1.3](/assets/img/uef-lti-flow.png)
 

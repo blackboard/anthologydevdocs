@@ -12,9 +12,9 @@ displayed_sidebar: documentationSidebar
 
 # Introduction to Building Blocks
 
-> NOTE: For new development, Blackboard recommends building REST and LTI integrations and NOT Building Blocks(B2s). B2s do not work within the Ultra Course UI; REST and LTI works for all Learn deployment and UI options. Use the Developer AMI listed under DVBA for your Blackboard Learn server.
+> NOTE: For new development, Blackboard recommends building REST and LTI integrations and NOT Building Blocks(B2s). B2s do not work within the Ultra Course UI; REST and LTI works for all Learn deployment and UI options. Use the Developer AMI listed under DVBA for your Blackboard LMS server.
 
-Blackboard Building Blocks, one of several components of Blackboard Learn's open
+Blackboard Building Blocks, one of several components of Blackboard LMS's open
 architecture, allow you to enhance the online education experience for your
 students and faculty. You may assemble a solution of homegrown, commercial and
 open source software and tools using Blackboard Building Blocks that best
@@ -23,10 +23,10 @@ homegrown application or other enterprise application, or seamless integration
 to a subscription database at your library.
 
 Through Blackboard Building Blocks, developers can create sharable, re-usable
-web applications that can be deployed on Blackboard Learn. This open
+web applications that can be deployed on Blackboard LMS. This open
 architecture ensures that you can:
 
-- extend Blackboard Learn and incorporate new functionality
+- extend Blackboard LMS and incorporate new functionality
 - provide customizations to meet discipline-specific or pedagogical needs
 - leverage this technology to enhance and aid administration of their systems on campus
 - automate procedures or repetitive tasks
@@ -46,14 +46,14 @@ architecture ensures that you can:
 
 To learn more about creating Building Blocks, start
 [here](./first-steps.md). To see examples of Building Blocks that have already been created,
-take a look at released building blocks on the Blackboard Learn [extensions site](https://www.blackboardextensions.com/) which highlights
+take a look at released building blocks on the Blackboard LMS [extensions site](https://www.blackboardextensions.com/) which highlights
 Building Blocks produced by Blackboard Partners, or take a look at open source
 projects contributed by the Learn developer community at OSCELOT's
 [projects](https://github.com/oscelot) site.
 
 ### Request a Developers License
 
-All Blackboard Learn clients receive a Blackboard developers license at no
+All Blackboard LMS clients receive a Blackboard developers license at no
 cost. A developers license is a "small footprint" version of Blackboard with
 the Community and Content Management modules turned on. It can be run on a
 development server or even a virtual machine image for development purposes.

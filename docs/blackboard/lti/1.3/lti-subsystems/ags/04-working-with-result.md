@@ -5,7 +5,7 @@ sidebar_position: 4
 edited: "2024-10-09"
 ---
 
-This endpoint is mostly used to retrieve the grades from all the students in bulk, useful when the LTI tool requires a sync of the existing information in Blackboard Learn. The endpoint to call is the following and will only receive a `GET` request:
+This endpoint is mostly used to retrieve the grades from all the students in bulk, useful when the LTI tool requires a sync of the existing information in Blackboard LMS. The endpoint to call is the following and will only receive a `GET` request:
 
 ```
 https://{learn_domain}/learn/api/v1/lti/courses/{courseId}/lineItems/{lineItemId}/results

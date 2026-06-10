@@ -14,7 +14,7 @@ We've seen questions from tool developers about the fact that Learn does not app
 
 ### Details
 
-In the evolving landscape of Learning Tools Interoperability (LTI) and online learning platforms, LTI 1.3 has emerged as a crucial standard for integrating learning applications with Learning Management Systems (Platforms) like Blackboard Learn and others. The core of LTI 1.3 facilitates seamless single sign-on (SSO) from an LMS into a learning application, but it's faced challenges with the move to block third-party cookies in web browsers for privacy reasons.
+In the evolving landscape of Learning Tools Interoperability (LTI) and online learning platforms, LTI 1.3 has emerged as a crucial standard for integrating learning applications with Learning Management Systems (Platforms) like Blackboard LMS and others. The core of LTI 1.3 facilitates seamless single sign-on (SSO) from an LMS into a learning application, but it's faced challenges with the move to block third-party cookies in web browsers for privacy reasons.
 
 Third-party cookies, used in the original LTI 1.3 Core and LTI Advantage Deep Linking specifications, are crucial for completing the security handshake required for users to SSO into a learning tool's user interface within an iframe in the LMS. However, as browsers increasingly block these cookies to protect user privacy, this poses a significant hurdle for LTI integrations.
 

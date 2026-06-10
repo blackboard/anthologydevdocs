@@ -9,13 +9,13 @@ edited: ""
 
 Welcome to Blackboard's REST API documentation. Many Blackboard products offer integration capabilities through REST APIs. REST APIs provide a simple and effective way to deliver data and services over the web, making them an important fool for modern software development.
 
-Blackboard provides comprehensive REST API documentation describing the various endpoints, request and response formats, and authentication methods available. The documentation on this site includes examples and code snippets to help you get started with using the REST APIs in your integrations. Blackboard also offers a sandbox for users without a Blackboard Learn instance and a GitHub repository containing useful application code.
+Blackboard provides comprehensive REST API documentation describing the various endpoints, request and response formats, and authentication methods available. The documentation on this site includes examples and code snippets to help you get started with using the REST APIs in your integrations. Blackboard also offers a sandbox for users without a Blackboard LMS instance and a GitHub repository containing useful application code.
 
 ## REST APIs
 
 REST APIs (REpresentational State Transfer Application Programming Interface) are a type of web service API that follow a set of architectural principles, known as the REST architecture. These APIs use HTTP verbs - GET, POST, PUT, DELETE - to access and manipulate resources, such as data or files, on a server.
 
-Blackboard has a long history of integration development support, going back the Blackboard Learn LMS's (Learning Management System) released in 1997. Integrations started with Java™ Building Blocks and continued with SOAP Web Services and Learning Tools Interoperability (LTI). Blackboard added REST APIs to our integrations in 2016.
+Blackboard has a long history of integration development support, going back the Blackboard LMS LMS's (Learning Management System) released in 1997. Integrations started with Java™ Building Blocks and continued with SOAP Web Services and Learning Tools Interoperability (LTI). Blackboard added REST APIs to our integrations in 2016.
 
 REST APIs have become the most common type of web service API, used by many companies and applications to enable communication between different systems or applications. Blackboard considers REST APIs to be the future of integration development.
 

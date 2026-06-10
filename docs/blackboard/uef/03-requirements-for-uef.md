@@ -23,7 +23,7 @@ To use our framework, you need to create or use an existing application, created
 
 ## UEF placement
 
-The entry point of your integration is a UEF placement that needs to be created for your application, you can do this by either defining the placement within the Developer Portal, which will ensure that the placement is created when the administrator of the Blackboard Learn server installs the application, or, you can manually create the placement within Blackboard Learn once the application is installed.
+The entry point of your integration is a UEF placement that needs to be created for your application, you can do this by either defining the placement within the Developer Portal, which will ensure that the placement is created when the administrator of the Blackboard LMS server installs the application, or, you can manually create the placement within Blackboard LMS once the application is installed.
 
 ### Creating the placement in the Developer Portal
 
@@ -42,11 +42,11 @@ In the new window, click "Register" (if there are no other placements) or the pl
 
 ### Creating the placement through the Learn UI
 
-Once you or the administrator have installed the application in the Blackboard Learn server, navigate to Admin, then LTI Tool Providers (under the "Integrations" section).
+Once you or the administrator have installed the application in the Blackboard LMS server, navigate to Admin, then LTI Tool Providers (under the "Integrations" section).
 
 In there, locate the installed application and click the chevron next to its name, then click on "Manage Placements"
 
-![Blackboard Learn UI](/assets/img/uef-placement-learn.png)
+![Blackboard LMS UI](/assets/img/uef-placement-learn.png)
 
 From there, click the "Create placement" button at the top left of the page and fill the same information as if you were creating the placement in the Developer Portal.
 
@@ -58,7 +58,7 @@ In the registration page, paste the Application ID and select any user for the i
 
 Last but not least, select "Yes" next to "Authorized To Act As User" this is critical since without this, the UEF integration will not pass the REST API authentication step.
 
-![Blackboard Learn UI](/assets/img/uef-rest-api-registration.png)
+![Blackboard LMS UI](/assets/img/uef-rest-api-registration.png)
 
 ## Ready to start?
 

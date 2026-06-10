@@ -11,7 +11,7 @@ displayed_sidebar: documentationSidebar
 
 # Java 11 for Learn: FAQ
 
-To address recent changes in Oracle’s Java support model, Blackboard Learn is transitioning to adopt a more recent version of Java, Java 11 Corretto JDK. To find details regarding the targeted versions and release dates please review the [latest announcement details](./prepare-for-java11.md)
+To address recent changes in Oracle’s Java support model, Blackboard LMS is transitioning to adopt a more recent version of Java, Java 11 Corretto JDK. To find details regarding the targeted versions and release dates please review the [latest announcement details](./prepare-for-java11.md)
 
 As with prior Java version changes, it is generally expected that Building Blocks will continue to work as-is. However, Java 9 onwards has significant changes to library management and class reflection which has required numerous changes to the Learn application. To assist developers in updates to existing Building Blocks we are provided guidance through these frequently asked questions:
 
@@ -26,15 +26,15 @@ As with prior Java version changes, it is generally expected that Building Block
 
 3. **Will I have to upgrade any of the jars or libraries bundled with my B2 for Java 11?**
 
-   - All jars and libraries will require an upgrade. If the B2 libraries and jars are not compatible with the Java 11 runtime used by Blackboard Learn, an upgrade is required. For example, some parts of Spring 4.5 are not compatible with Java 11. If the B2 is dependent on Spring 4.5, an update will be required to ensure compatibility with Java 11 (Spring 5.1.x).
+   - All jars and libraries will require an upgrade. If the B2 libraries and jars are not compatible with the Java 11 runtime used by Blackboard LMS, an upgrade is required. For example, some parts of Spring 4.5 are not compatible with Java 11. If the B2 is dependent on Spring 4.5, an update will be required to ensure compatibility with Java 11 (Spring 5.1.x).
 
-4. **Can I reference the 3rd party libraries or jars that are bundled with the Blackboard Learn for my B2?**
+4. **Can I reference the 3rd party libraries or jars that are bundled with the Blackboard LMS for my B2?**
 
    - Blackboard strongly recommends NOT referencing 3rd party libraries and jars, because Blackboard may be required to upgrade libraries or jars bundled within Learn for various reasons including security updates. These upgrades may deprecate or eliminate certain methods or classes breaking B2 dependencies. To prevent this, Blackboard recommends that a B2 includes its own copies of dependent jars.
 
 5. **Does installer detect JDK version (i.e. did Blackboard update to detect/require Java 11)?**
 
-   - Yes, the Blackboard installer is updated with logic to detect the minimum version of the JDK11 runtime supported by the Blackboard Learn build place.
+   - Yes, the Blackboard installer is updated with logic to detect the minimum version of the JDK11 runtime supported by the Blackboard LMS build place.
 
 6. **Will B2 developers or Self Hosted system administrators need to make environment changes?**
 

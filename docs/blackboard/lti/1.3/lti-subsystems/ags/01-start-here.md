@@ -5,7 +5,7 @@ sidebar_position: 1
 edited: '2024-09-26'
 ---
 
-The Assignments and Grades Service (AGS for short) is the gateway created by 1EdTech for LTI Advantage to interact with grades and grade column information. This service has additional functions within it that allows your tool to create columns, create attempts, grade user data or pull the existing grades from Blackboard Learn.
+The Assignments and Grades Service (AGS for short) is the gateway created by 1EdTech for LTI Advantage to interact with grades and grade column information. This service has additional functions within it that allows your tool to create columns, create attempts, grade user data or pull the existing grades from Blackboard LMS.
 
 :::caution CAVEAT
 This service will not give you the information of all the grades and columns created in the course but rather, it will give you the access and data of the columns created by the LTI tool itself (through direct calls to the Assignments and Grades Service or created through Deep Linking 2.0)

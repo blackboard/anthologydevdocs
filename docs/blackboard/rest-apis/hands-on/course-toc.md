@@ -9,7 +9,7 @@ edited: ''
 
 This guide is only intended to be used in courses that use the original course view.
 
-> Tested with Blackboard Learn Release 3900.48.0-rel.18+c7edfda
+> Tested with Blackboard LMS Release 3900.48.0-rel.18+c7edfda
 
 For now, it is possible to **GET** and **PATCH** the Table of contents (TOC) **ONLY** in Courses that use the original course view, if you try to make API calls on Ultra course view, you will receive the following message:
 

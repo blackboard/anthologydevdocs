@@ -10,8 +10,8 @@ author: Davey Herrera, Dan Magers
 
 ## How to name your groups
 
-Your group name is displayed in the Blackboard Learn system associated with the
-application ID once the Blackboard Learn Administrator configures the integration. You want the group name to include at minimum:
+Your group name is displayed in the Blackboard LMS system associated with the
+application ID once the Blackboard LMS Administrator configures the integration. You want the group name to include at minimum:
 
 1. The name of the company/vendor that owns the application.
 2. The name of the application or product (optional).

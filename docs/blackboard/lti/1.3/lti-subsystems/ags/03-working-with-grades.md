@@ -9,7 +9,7 @@ Now that you have a way to get the column information from the course and/or cre
 
 ## Gather the user ID
 
-Before you can post a new grade, you need to get the information of the user that will receive the grade on Blackboard Learn, this can be gathered through the different methods outlined next.
+Before you can post a new grade, you need to get the information of the user that will receive the grade on Blackboard LMS, this can be gathered through the different methods outlined next.
 
 ### REST API
 
@@ -49,11 +49,11 @@ From the response, you need to get the `uuid` field which will be ID required to
 
 ### LTI launch
 
-If the user that will receive the grade on Blackboard Learn is the one performing the LTI launch, the claim `sub` included in the JWT token sent to your tool can be used to get the ID of the user
+If the user that will receive the grade on Blackboard LMS is the one performing the LTI launch, the claim `sub` included in the JWT token sent to your tool can be used to get the ID of the user
 
 ### Names and Roles Provisioning Service
 
-The last option to get the user ID from Blackboard Learn is to use the Names and Roles Provisioning Service (NRPS) to get the roster from the course and extract the ID of the user. This service will be outlined in detail in later sections but from the response objects of the service you can obtain the ID from the `user_id` property. The example below is a response object from NRPS with the information:
+The last option to get the user ID from Blackboard LMS is to use the Names and Roles Provisioning Service (NRPS) to get the roster from the course and extract the ID of the user. This service will be outlined in detail in later sections but from the response objects of the service you can obtain the ID from the `user_id` property. The example below is a response object from NRPS with the information:
 
 ```json
 {
@@ -85,7 +85,7 @@ The last option to get the user ID from Blackboard Learn is to use the Names and
 
 ## Posting the user grade
 
-Now that you have the ID of the user, you can perform a POST request to send the grade details to Blackboard Learn. The request sent to blackboard should contain the following information:
+Now that you have the ID of the user, you can perform a POST request to send the grade details to Blackboard LMS. The request sent to blackboard should contain the following information:
 
 ### Headers
 
@@ -129,10 +129,10 @@ the table below outlines and defines the possible properties the JSON body could
 | ------------------ | --------------------------------------------------------------------------------- | -------- | ----------------- | ------- |
 | `userId`           | The ID of the user gathered from any of the methods above                         | Yes      | String            | N/A     |
 | `scoreGiven`       | The grade of the user                                                             | No       | double            | `null`  |
-| `timestamp`        | Date where the grade was sent to Blackboard Learn                                 | Yes      | Date String (ISO) | N/A     |
+| `timestamp`        | Date where the grade was sent to Blackboard LMS                                 | Yes      | Date String (ISO) | N/A     |
 | `activityProgress` | Completion status of the activity started by the user/learner                     | Yes      | String            | N/A     |
 | `gradingProgress`  | Completion status of the grading by the instructor/teacher                        | Yes      | String            | N/A     |
-| `comment`          | Feedback to the user, visible through the feedback section of Blackboard Learn    | No       | String            | `null`  |
+| `comment`          | Feedback to the user, visible through the feedback section of Blackboard LMS    | No       | String            | `null`  |
 | `submission`       | Object that contains the properties `submissionId`, `startedAt` and `submittedAt` | No       | Object            | N/A     |
 | `submissionId`     | An ID from the LTI tool to cross-Reference                                        | No       | String            | `null`  |
 | `startedAt`        | The timestamp of when the user started the activity                               | No       | Date String (ISO) | `null`  |

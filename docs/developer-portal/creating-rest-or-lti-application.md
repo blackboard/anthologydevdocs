@@ -123,7 +123,7 @@ Here you will be able to:
 
    ![Manage keys](/assets/img/create-rest-or-lti-app-8.png)
 
-6. **Manage your application's placements.** Register a placement (LTI) that is applied whenever a new client adds this placement to their own Blackboard Learn instance and switches it ON. Enter the following data:
+6. **Manage your application's placements.** Register a placement (LTI) that is applied whenever a new client adds this placement to their own Blackboard LMS instance and switches it ON. Enter the following data:
    - Placement name
    - Description
    - Type (Course Tool, Course content tool, deep linking content tool, System tool, administrator, ultra extension)

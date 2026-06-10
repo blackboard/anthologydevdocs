@@ -7,29 +7,29 @@ published: ""
 edited: ""
 ---
 
-Blackboard Learn has a long history of integration development support. Over the years since the Learn LMS (Learning Management System) was released in 1997, Blackboard has continued to enhance its integration capabilities. Starting with Java&trade; Building Blocks, SOAP Web Services, Learning Tools Interoperability (LTI), and adding RESTful APIs in 2016.
+Blackboard LMS has a long history of integration development support. Over the years since the Learn LMS (Learning Management System) was released in 1997, Blackboard has continued to enhance its integration capabilities. Starting with Java&trade; Building Blocks, SOAP Web Services, Learning Tools Interoperability (LTI), and adding RESTful APIs in 2016.
 
-Blackboard Learn integrations are similar to plugins or add-ons in other software platforms, and are designed to extend the core functionality of the Blackboard Learn platform to meet the specific needs of individual institutions.
+Blackboard LMS integrations are similar to plugins or add-ons in other software platforms, and are designed to extend the core functionality of the Blackboard LMS platform to meet the specific needs of individual institutions.
 
-Overall, Blackboard Learn has a long history of supporting integrations with external tools and content providers, and continues to invest in this area to ensure that its users have access to a wide range of educational resources and tools within the Blackboard environment.
+Overall, Blackboard LMS has a long history of supporting integrations with external tools and content providers, and continues to invest in this area to ensure that its users have access to a wide range of educational resources and tools within the Blackboard environment.
 
-Blackboard considers RESTful APIs to be the future of integration development and Blackboard Learn is following this thinking as well, having End of Lifed SOAP Web Services in 2020 and announcing EOL for their Java Building Blocks on January 1st, 2024.
+Blackboard considers RESTful APIs to be the future of integration development and Blackboard LMS is following this thinking as well, having End of Lifed SOAP Web Services in 2020 and announcing EOL for their Java Building Blocks on January 1st, 2024.
 
 ## RESTful APIs
 
-Blackboard Learn's support of RESTful web services, provides institutions and developers with a broad choice of integration development and architecural options, allowing them to choose the approach that best fits their needs and technical expertise.
+Blackboard LMS's support of RESTful web services, provides institutions and developers with a broad choice of integration development and architecural options, allowing them to choose the approach that best fits their needs and technical expertise.
 
 ## What can be Built with Learn's RESTful APIs?
 
-Blackboard Learn REST APIs support a wide range of functionality for integrating with the Blackboard Learn environment. REST (Representational State Transfer) is an architectural style that defines a set of constraints for creating web services, and RESTful APIs provide a flexible and lightweight approach to integration that has become increasingly popular in recent years.
+Blackboard LMS REST APIs support a wide range of functionality for integrating with the Blackboard LMS environment. REST (Representational State Transfer) is an architectural style that defines a set of constraints for creating web services, and RESTful APIs provide a flexible and lightweight approach to integration that has become increasingly popular in recent years.
 
-**User and course management**: REST APIs can be used to create, read, update, and delete information about users, courses, and enrollments in the Blackboard Learn environment.
+**User and course management**: REST APIs can be used to create, read, update, and delete information about users, courses, and enrollments in the Blackboard LMS environment.
 
-**Content management**: REST APIs can be used to manage content in Blackboard Learn, including uploading, updating, and deleting files and other course resources.
+**Content management**: REST APIs can be used to manage content in Blackboard LMS, including uploading, updating, and deleting files and other course resources.
 
-**Gradebook management**: REST APIs can be used to manage the Blackboard Learn Gradebook, including creating and editing grade columns, submitting and retrieving grades, and exporting grade data.
+**Gradebook management**: REST APIs can be used to manage the Blackboard LMS Gradebook, including creating and editing grade columns, submitting and retrieving grades, and exporting grade data.
 
-**Course tools and extensions**: REST APIs can be used to integrate with external tools and extensions that have been added to Blackboard Learn through RESTful or LTI integrations.
+**Course tools and extensions**: REST APIs can be used to integrate with external tools and extensions that have been added to Blackboard LMS through RESTful or LTI integrations.
 
 ## API Documentation and Examples
 

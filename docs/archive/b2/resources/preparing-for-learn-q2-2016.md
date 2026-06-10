@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Preparing Your B2 for Blackboard Learn 9.1 Q2 2016"
+title: "Preparing Your B2 for Blackboard LMS 9.1 Q2 2016"
 categories: Learn b2
 id: archive-b2-resources-prep_learn_q2
 author: Mark Bykerk Kauffman
@@ -10,10 +10,10 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# Preparing Your B2 for Blackboard Learn 9.1 Q2 2016
+# Preparing Your B2 for Blackboard LMS 9.1 Q2 2016
 
 Attached is the PowerPoint deck for the 3/16/2016 Webinar recording:
-[Preparing Your Building Block for Blackboard Learn 9.1.Q2 2016](https://sas.elluminate.com/collab/ui/scheduler/resource/recording/279AEBB7C60BDE9E0B7CC9B07120BB17). In this Webinar we reviewed the changes in the
+[Preparing Your Building Block for Blackboard LMS 9.1.Q2 2016](https://sas.elluminate.com/collab/ui/scheduler/resource/recording/279AEBB7C60BDE9E0B7CC9B07120BB17). In this Webinar we reviewed the changes in the
 upcoming Learn 9.1 Q2 2016 release and how to prepare your Building Block for
 the release. Topics covered include - Java 8, Learn Versioning, B2 Versioning,
 New Installer, and Development Resources. **Another must-read is** [Preparing

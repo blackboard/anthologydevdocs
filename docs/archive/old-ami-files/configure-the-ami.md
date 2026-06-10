@@ -65,7 +65,7 @@ In the displayed system log scroll up until you see something similar to the fol
 ```
 [  152.707540] cloud-init[1070]: ###########################################################################################
 [  152.729516] cloud-init[1070]: #
-[  152.748988] cloud-init[1070]: #     Blackboard Learn administrator login is:
+[  152.748988] cloud-init[1070]: #     Blackboard LMS administrator login is:
 [  152.760195] cloud-init[1070]: #         Username: administrator
 [  152.780283] cloud-init[1070]: #         Password: i-0c0b00e8b5232274f
 [  152.789873] cloud-init[1070]: #     https://ec2-100-27-14-64.compute-1.amazonaws.com,
@@ -86,7 +86,7 @@ ssh to your instance and
 $ tail -14 start.log
 ###########################################################################################
 #
-#     Blackboard Learn administrator login is:
+#     Blackboard LMS administrator login is:
 #         Username: administrator
 #         Password: i-0c0b00e8b5232274f
 #     for https://ec2-100-27-14-64.compute-1.amazonaws.com,

@@ -13,7 +13,7 @@ displayed_sidebar: documentationSidebar
 
 (Updated March 2020 to remove SaaS release references since that is in the past. Updated 23 January 2020: clarification of Building Block updates at time of Learn upgrade; timeline and availability updates.)
 
-Throughout 2019 we communicated that we planned to update your Blackboard Learn environment to Java 11. This important update can impact custom and third-party add-on tools leveraging the Building Blocks (B2) integration framework. This update was deployed into SaaS production environments in February 2020. For Self- and Managed Hosting clients, 9.1 Q4 2019 which includes Java 11 support was released December 2019.
+Throughout 2019 we communicated that we planned to update your Blackboard LMS environment to Java 11. This important update can impact custom and third-party add-on tools leveraging the Building Blocks (B2) integration framework. This update was deployed into SaaS production environments in February 2020. For Self- and Managed Hosting clients, 9.1 Q4 2019 which includes Java 11 support was released December 2019.
 
 As you know, Java are the libraries on which the Learn application runs and also the libraries that power Building Blocks, the add-on tools and features you may use in your environment. This update to Java 11 improves security and performance. Staying on recently updated libraries is crucial to staying ahead of those who may try to compromise your learning environment.
 
@@ -29,7 +29,7 @@ Deployed in February 2020.
 
 ### What you should do to prepare for this change:
 
-1. **Clean up**. You should inactivate or remove Building Blocks (B2s) from your environments you no longer use or support. If the tool contains data you may need to retain for data retention purposes, you should make it inactive; if you know you no longer have any need for the B2 it can be removed. Depending on how long you’ve been using Blackboard Learn, you may have B2s from older versions of Learn that are no longer used nor supported. We encourage removing these B2s.
+1. **Clean up**. You should inactivate or remove Building Blocks (B2s) from your environments you no longer use or support. If the tool contains data you may need to retain for data retention purposes, you should make it inactive; if you know you no longer have any need for the B2 it can be removed. Depending on how long you’ve been using Blackboard LMS, you may have B2s from older versions of Learn that are no longer used nor supported. We encourage removing these B2s.
 
 2. **Take inventory and collect updated Building Block installers**. Review the non-Blackboard B2s in your environment and take note of version numbers. Plan to collect the latest B2s for third-party extensions.
 
@@ -49,7 +49,7 @@ Deployed in February 2020.
 6. **Prepare for the production upgrade**. Have your collected B2 installers ready to install after your production upgrade. To prevent disruption to users, you might also choose to make affected Building Blocks temporarily inactive so users don’t see error messages until the updated Building Blocks are installed. Please note that updated B2s should only be applied to production environments before the production upgrade if the provider explicitly says that version is compatible with both Java 8 and Java 11. A number of B2s aren’t compatible with both, so an update in production early could disrupt the use of that tool.
 7. **Conduct post-upgrade testing**. Review B2s after upgrade to validate their functionality. Report issues to the provider of the Building Block.
 
-8. **Plan for the future**. Once this change is over, we encourage you to review your B2 inventory and plan for the future. Transitioning away from library-dependent integration frameworks like Building Blocks toward more change-resilient integration frameworks like LTI and REST can help prevent this type of change management activity. If your institution develops tools and integrations for your Blackboard Learn instance, learn more about LTI and REST in our [developer community](https://community.blackboard.com/developers). Encourage your solution providers to consider integrations based on REST APIs and the latest in standards such as LTI Advantage.
+8. **Plan for the future**. Once this change is over, we encourage you to review your B2 inventory and plan for the future. Transitioning away from library-dependent integration frameworks like Building Blocks toward more change-resilient integration frameworks like LTI and REST can help prevent this type of change management activity. If your institution develops tools and integrations for your Blackboard LMS instance, learn more about LTI and REST in our [developer community](https://community.blackboard.com/developers). Encourage your solution providers to consider integrations based on REST APIs and the latest in standards such as LTI Advantage.
 
 ### Resources:
 

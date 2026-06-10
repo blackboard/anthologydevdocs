@@ -58,7 +58,7 @@ In the displayed system log scroll up until you see something similar to the fol
 ```
 [  152.707540] cloud-init[1070]: ###########################################################################################
 [  152.729516] cloud-init[1070]: #
-[  152.748988] cloud-init[1070]: #     Blackboard Learn administrator login is:
+[  152.748988] cloud-init[1070]: #     Blackboard LMS administrator login is:
 [  152.760195] cloud-init[1070]: #         Username: administrator
 [  152.780283] cloud-init[1070]: #         Password: i-0c0b00e8b5232274f
 [  152.789873] cloud-init[1070]: #     https://ec2-100-27-14-64.compute-1.amazonaws.com,
@@ -84,7 +84,7 @@ The output should look something similar to this
 ```shell
 ###########################################################################################
 #
-#     Blackboard Learn administrator login is:
+#     Blackboard LMS administrator login is:
 #         Username: administrator
 #         Password: i-0c0b00e8b5232274f
 #     for https://ec2-100-27-14-64.compute-1.amazonaws.com,
@@ -120,7 +120,7 @@ Please note that AMI Blackboard licenses are not upgradable. You must download a
 
 ## What now?
 
-From here on out, you're ready to start developing within Blackboard Learn. You will have full administrator access to the server through the web interface, which will allow you to configure the system to your liking and allow you to install new applications for REST API, LTI and/or Ultra Extension Framework (UEF)
+From here on out, you're ready to start developing within Blackboard LMS. You will have full administrator access to the server through the web interface, which will allow you to configure the system to your liking and allow you to install new applications for REST API, LTI and/or Ultra Extension Framework (UEF)
 
 You can find additional information about our integration methods here:
 

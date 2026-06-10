@@ -97,7 +97,7 @@ for Developers.
 
 ## Make Your LTI Tool Available to Learn Servers
 
-Once you have developed or are developing an application and want to test it with Blackboard Learn, you can register the application on the Developer Portal and make it available to Learn Administrators so that they can configure their Learn servers to work with it.
+Once you have developed or are developing an application and want to test it with Blackboard LMS, you can register the application on the Developer Portal and make it available to Learn Administrators so that they can configure their Learn servers to work with it.
 
 To deploy your application to a Learn instance, share the Application ID with the administrator of that Learn server. The administrator can access within the Learn instance to `Admin > LTI Tool Providers` and click on `Register a new LTI 1.3/Advantage tool`. In the field that shows up, paste the Application ID and then click Submit.
 
@@ -107,7 +107,7 @@ It is likely that you'll need to use that deployment ID to map which Learn insta
 
 At this point, your application is connected to a Learn instance. All that remains is for an instructor or other user to create links in a course or use some of the automatically deployed links, such as a course tool placement.
 
-## Deleting an LTI tool or placement from Blackboard Learn
+## Deleting an LTI tool or placement from Blackboard LMS
 
 Deleting a registered LTI domain and/or the associated managed placements from the Administrator Panel -> LTI Tool Providers page will invalidate all the associated LTI launch links in courses. The data will be gone from the database. There is no way to fix this. **NEVER** delete a registered domain or managed placements without considering these consequences.
 

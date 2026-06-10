@@ -11,12 +11,12 @@ displayed_sidebar: documentationSidebar
 
 # Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions
 
-Blackboard Building Blocks have long been a staple in the Blackboard Learn
+Blackboard Building Blocks have long been a staple in the Blackboard LMS
 platform. These Java Web Apps allow you to customize the workflow and
 experience that you and your faculty use to interact with the system.
 
 We realize that this is an important part of the Learn ecosystem, and so
-Blackboard Learn SaaS with the Original Experience will continue to support
+Blackboard LMS SaaS with the Original Experience will continue to support
 your Building Blocks going forward**\***. That said, the architecture of the
 SaaS-delivered platform is dramatically different than that of the self- and
 managed-hosted servers you are used to. As a result, your Building Block will
@@ -24,7 +24,7 @@ likely need to be modified to run in the new Blackboard.
 
 **The following sections list requirements that must be met for a B2 to function in a SaaS environment**. For example, your B2 must be compiled with Java 8, the database may be Postgres so the best practice is to use Schema.xml, the shared content must be accessed as described below, etc. Many of these are also requirements for a B2 to function on Learn Q2 2016 (3000.x.x) and Q4 2016 (3100.x.x). The best practice is to code to meet all of these requirements, then your B2 will function on SaaS, Managed Hosted, and Self Hosted systems.
 
-**\*Note:** Building Blocks cannot surface content in an Ultra course, **ever**. B2s meant designed to work with Original Experience courses can continue to work in SaaS, provided they meet the requirements documented here. Ultra Courses surface content from the Content Market - which are built on Partner Cloud, or the LTI standard & Blackboard Learn REST APIs.
+**\*Note:** Building Blocks cannot surface content in an Ultra course, **ever**. B2s meant designed to work with Original Experience courses can continue to work in SaaS, provided they meet the requirements documented here. Ultra Courses surface content from the Content Market - which are built on Partner Cloud, or the LTI standard & Blackboard LMS REST APIs.
 
 ## APIs
 
@@ -94,7 +94,7 @@ entitlement-to-role mappings, etc.).
 
 ## Shared Content Folder
 
-In the Enterprise Blackboard Learn you are accustomed to developing for, the
+In the Enterprise Blackboard LMS you are accustomed to developing for, the
 Building Block home lives in the shared content directory. For instance, if I
 wrote a building block and set my vendor ID to ‘bbdn’ and my plugin handle to
 ‘my-b2’, my building block and all of its related files would live in
@@ -236,7 +236,7 @@ refactor to avoid if at all possible.
 
 ## Java 11
 
-Blackboard Learn SaaS runs on Java 11, as of Learn 3800. As a result, Building Block that are to
+Blackboard LMS SaaS runs on Java 11, as of Learn 3800. As a result, Building Block that are to
 be installed in the cloud, or on 9.1 Q2 2020 or later, need to be built with
 Java 11. For more information see [8 steps to prepare for Java 11](./prepare-for-java11.md).
 
@@ -528,7 +528,7 @@ must url-encode these characters. For example, an URL like `http://myuniversity.
 
 ## Permissions
 
-As Blackboard continues to modernize the Blackboard Learn platform and move
+As Blackboard continues to modernize the Blackboard LMS platform and move
 services out of the Learn code line and into microservices, the need to secure
 the application from both accidental and malicious actions, the properties
 granted to Building Block integrations is necessarily tightening. This is
@@ -633,7 +633,7 @@ if ( parent && parent.tinymce &&
 
 As of mid/late April 2021 Google Chrome 90 does not consider a GET request "safe" and blocks different site cookies even for a GET request. If an external server used GET with parameters to send data to a Learn server, that will no longer work because the session cookies are blocked. Hence, if your B2 provides a mashup that can be used in an Original course, you must implement a solution similar to the following. You can no longer use a GET as a workaround for SameSite issues. Or, you can migrate users to an LTI solution. The next paragraph gives more background.
 
-Historically a Building Block can launch from content created by a Blackboard Learn B2 to a remote server where some content is selected to push back to Blackboard Learn. With the advent of browsers now enforcing a SameSite cookie policy the remote server cannot then make a request back to Learn with the cookies necessary for that Learn session due to stringent browser SameSite enforcement. For this discussion we’ll describe how that impacts a B2 mashup and describe a solution that uses JavaScript to get around the browser’s enforcement of the SameSite policy. You will need to examine the rest of your B2 functionality to determine if you need to make similar changes in other areas that get content from your server.
+Historically a Building Block can launch from content created by a Blackboard LMS B2 to a remote server where some content is selected to push back to Blackboard LMS. With the advent of browsers now enforcing a SameSite cookie policy the remote server cannot then make a request back to Learn with the cookies necessary for that Learn session due to stringent browser SameSite enforcement. For this discussion we’ll describe how that impacts a B2 mashup and describe a solution that uses JavaScript to get around the browser’s enforcement of the SameSite policy. You will need to examine the rest of your B2 functionality to determine if you need to make similar changes in other areas that get content from your server.
 
 #### Overview of the Changes
 
@@ -641,7 +641,7 @@ As an example, we will discuss a B2 that provides a mashup that does a launch to
 
 Hence you need a way update Learn Server content without a cross-site HTTP request from mashupsource.com to the Learn Server. The following describes how you can do this.
 
-Instead of redirecting the browser to a page on mashupsource.com, that page needs to load an iframe, provided by your B2, with the source being mashupsource.com. The user will interact with mashupsource.com within that iframe and when done, that page will use JavaScript to postMessage to the parent window with whatever the result of the user’s interaction with mashupsource.com is. JavaScript in the parent (authored by mashupsource developers, rendered by your B2 as part of your mashup) will accept that message (after validating it is coming from mashupsource.com) and then from within this window (the one launched from LearnServerFQDN/B2…) it will then POST (or GET) back to the Learn B2 endpoint. Since this is a POST (or GET) from a page coming from the same origin it will work. These changes are compatible with the current and future releases of Blackboard Learn.
+Instead of redirecting the browser to a page on mashupsource.com, that page needs to load an iframe, provided by your B2, with the source being mashupsource.com. The user will interact with mashupsource.com within that iframe and when done, that page will use JavaScript to postMessage to the parent window with whatever the result of the user’s interaction with mashupsource.com is. JavaScript in the parent (authored by mashupsource developers, rendered by your B2 as part of your mashup) will accept that message (after validating it is coming from mashupsource.com) and then from within this window (the one launched from LearnServerFQDN/B2…) it will then POST (or GET) back to the Learn B2 endpoint. Since this is a POST (or GET) from a page coming from the same origin it will work. These changes are compatible with the current and future releases of Blackboard LMS.
 
 Here's a diagram showing the message chain from a mashupsource.com to the B2 on the Learn server:
 

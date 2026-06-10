@@ -11,7 +11,7 @@ The following section contains the Frequently asked questions along with trouble
 
 ## FAQ
 
-### What does the Blackboard Learn server file or AMI cost?
+### What does the Blackboard LMS server file or AMI cost?
 
 The Open Innovation Initiative was created to lower the cost of entry for developing software solutions on the Learn platform. This is accomplished by removing the previous Partner program costs and replacing those partner program costs with low hourly AMI usage costs. This enables you the developer to control your costs for prototyping your applications and entering the education software market.
 

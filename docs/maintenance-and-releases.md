@@ -215,7 +215,7 @@ Features:
 
 Learn release dates and release notes can be found through [Support portal](https://support.blackboard.com) or through our Help Documentation:
 
-- Release schedules for Blackboard Learn: [Release Schedule](https://help.blackboard.com/Learn/Administrator/SaaS/Release_Notes/Learn_SaaS_Release_Schedule)
+- Release schedules for Blackboard LMS: [Release Schedule](https://help.blackboard.com/Learn/Administrator/SaaS/Release_Notes/Learn_SaaS_Release_Schedule)
 - Release Notes: [Release Notes](https://help.blackboard.com/Learn/Administrator/SaaS/Release_Notes)
 
 ---

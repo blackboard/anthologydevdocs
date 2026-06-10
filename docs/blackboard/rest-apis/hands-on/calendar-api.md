@@ -7,9 +7,9 @@ edited: '2023-10-20'
 author: Davey Herrera, Mark O'Neil
 ---
 
-> Tested with Blackboard Learn version 3900.48.0
+> Tested with Blackboard LMS version 3900.48.0
 >
-> Note: non-3LO capabilities available in Blackboard Learn version 3900.78.0
+> Note: non-3LO capabilities available in Blackboard LMS version 3900.78.0
 
 ## Topic
 

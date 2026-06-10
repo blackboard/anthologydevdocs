@@ -9,7 +9,7 @@ Blackboard LMS has different means of interacting with grading, users, courses a
 
 ## The available options
 
-As indicated, Blackboard Learn does provide different frameworks to integrate, here are the list of options available:
+As indicated, Blackboard LMS does provide different frameworks to integrate, here are the list of options available:
 
 | Type                             | Use case                                                                                                                         |
 | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,7 +17,7 @@ As indicated, Blackboard Learn does provide different frameworks to integrate, h
 | LTI Advantage                    | Provides access to external tools and allows creation of course items, graded columns and grades                                 |
 | Student Information System (SIS) | Provides a framework to create users, courses and enrollments in bulk                                                            |
 | Ultra Extension Framework        | Framework created by Blackboard to allow third-party tools to interact with the Ultra Course Navigation to render additional data |
-| Proctoring                       | Leverages the Ultra Extension Framework to interconnect external Proctoring services to Blackboard Learn tests                   |
+| Proctoring                       | Leverages the Ultra Extension Framework to interconnect external Proctoring services to Blackboard LMS tests                   |
 
 ## Ready to start?
 

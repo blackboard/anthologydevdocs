@@ -26,7 +26,7 @@ Deep Linking leverages the initial Core LTI 1.3 launch to provide an authenticat
 
 This launch follows, as mentioned, the Core LTI 1.3 launch that is covered in the [LTI Message Launch Flow](/docs/blackboard/lti/1.3/core/01-core-launch.md) section, however, the body of the JWT token is slightly different from the Message Launch Flow.
 
-Below is a sample of a Deep Linking request sent from Blackboard Learn:
+Below is a sample of a Deep Linking request sent from Blackboard LMS:
 
 <details>
 <summary>Deep linking request sample</summary>

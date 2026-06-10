@@ -33,7 +33,7 @@ user would see represented in the user interface.
 
 Accessing and manipulating data involves using a series of loaders and
 persisters that provide the logic and functionality required to save data into
-and read data from the Blackboard Learning System.
+and read data from the Blackboard LMSing System.
 
 ## Functional Overview
 

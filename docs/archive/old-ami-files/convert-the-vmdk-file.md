@@ -8,9 +8,9 @@ sidebar_position: 10
 ---
 
 <!--
-This document will outline the required steps to convert the VMDK file and upload it to AWS, this will be used later on to configure the AMI instance that will have Blackboard Learn preinstalled
+This document will outline the required steps to convert the VMDK file and upload it to AWS, this will be used later on to configure the AMI instance that will have Blackboard LMS preinstalled
 
-> If you haven't downloaded the server image yet, please download it here: [Blackboard Learn on AWS](/docs/blackboard/sandbox-envs/welcome)
+> If you haven't downloaded the server image yet, please download it here: [Blackboard LMS on AWS](/docs/blackboard/sandbox-envs/welcome)
 
 ## Prerequisites
 
@@ -219,7 +219,7 @@ The following is an example of the `containers.json` file:
 
 ```json
 {
-  "Description": "Blackboard Learn 3900.112",
+  "Description": "Blackboard LMS 3900.112",
   "Format": "VMDK",
   "UserBucket": {
     "S3Bucket": "MyLearnImages",
@@ -237,7 +237,7 @@ aws ec2 import-snapshot --description "[[A short description of this job]]" --di
 Example:
 
 ```shell
-aws ec2 import-snapshot --description "Blackboard Learn 3900.112" --disk-container "file:///Users/developer/Desktop/containers.json"
+aws ec2 import-snapshot --description "Blackboard LMS 3900.112" --disk-container "file:///Users/developer/Desktop/containers.json"
 ```
 
 :::tip File Path

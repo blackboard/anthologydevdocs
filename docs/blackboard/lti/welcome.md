@@ -43,9 +43,9 @@ In addition to LTI 1.3, 1EdTech also has additional specifications for different
     3. Names and Roles
     4. Assignments and Grades
 
-### Blackboard Learn support for LTI Advantage
+### Blackboard LMS support for LTI Advantage
 
-Blackboard Learn currently has full support for the two different integration versions over LTI, **LTI 1.1** and **LTI 1.3/Advantage** however, as mentioned above, we recommend migrating/creating new applications using LTI 1.3. LTI 1.1 is still supported but is not recommended.
+Blackboard LMS currently has full support for the two different integration versions over LTI, **LTI 1.1** and **LTI 1.3/Advantage** however, as mentioned above, we recommend migrating/creating new applications using LTI 1.3. LTI 1.1 is still supported but is not recommended.
 
 ## Test code and tools
 

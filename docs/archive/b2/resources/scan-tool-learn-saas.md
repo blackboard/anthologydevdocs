@@ -10,9 +10,9 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# Building Block Scan Tool for Blackboard Learn
+# Building Block Scan Tool for Blackboard LMS
 
-As of Blackboard Learn SaaS version 3700.11.0, including 9.1 Q4 2019 and higher, you now have the ability to
+As of Blackboard LMS SaaS version 3700.11.0, including 9.1 Q4 2019 and higher, you now have the ability to
 scan any installed Building Block for API changes and readiness for Java 11!
 
 You should ONLY run this on your staging environment. It can be resource-

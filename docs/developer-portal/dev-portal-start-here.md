@@ -72,7 +72,7 @@ For your password, use the following rules:
 
 <PasswordChecker />
 
-What you enter into the **First Name** and **Last name** fields is what is displayed on Blackboard Learn to identify your integration. Entering a company name in the name fields can be done in this way:
+What you enter into the **First Name** and **Last name** fields is what is displayed on Blackboard LMS to identify your integration. Entering a company name in the name fields can be done in this way:
 
 - **First name:** blackboard
 - **Last name:** Inc.
@@ -146,7 +146,7 @@ This applies to our Learn, Ally and Student APIs that user Swagger for documenta
    3. Type of parameter (either query parameter or path parameter).
 
 3. Beneath **Description** is a description of the parameter.
-4. The label next to **Since** lists the version of Blackboard Learn when the parameter was made available.
+4. The label next to **Since** lists the version of Blackboard LMS when the parameter was made available.
 5. Beneath the version indicator is a field that lists **Available values** when the parameter allows specific values.
 
 ![Endpoit parameter values](/assets/img/dev-portal-start-here-16.png)

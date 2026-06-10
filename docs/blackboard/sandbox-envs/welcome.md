@@ -1,5 +1,5 @@
 ---
-title: Blackboard Learn server
+title: Blackboard LMS server
 id: welcome
 author: Sebastian Silva
 published: '2025-04-22'
@@ -7,9 +7,9 @@ edited: '2026-01-19'
 sidebar_position: 1
 ---
 
-We've developed a way to distribute an image of Blackboard Learn without the use of the Amazon Marketplace, or managed access to our AWS S3 buckets. We now publish a `.vmdk` file on our Global Support Portal of the latest Blackboard Learn version that you download and then convert to an Amazon Machine Image (AMI) in your own AWS account and infrastructure.
+We've developed a way to distribute an image of Blackboard LMS without the use of the Amazon Marketplace, or managed access to our AWS S3 buckets. We now publish a `.vmdk` file on our Global Support Portal of the latest Blackboard LMS version that you download and then convert to an Amazon Machine Image (AMI) in your own AWS account and infrastructure.
 
-The AMI allows a developer to spin up a copy of Learn for building applications that use the REST APIs, Proctoring, Ultra Extension Framework (UEF) and/or Learning Tool Interoperability (“LTI”) to integrate with Learn. This image is a standalone copy of the SaaS deployment of Learn that allows development and testing against the Ultra user experience. New developer AMIs will be made available as a VMDK file within 90 days of the prior release of a VMDK with the then current version of Blackboard.
+The AMI allows a developer to spin up a copy of Blackboard LMS for building applications that use the REST APIs, Proctoring, Ultra Extension Framework (UEF) and/or Learning Tool Interoperability (“LTI”) to integrate with Blackboard LMS. This image is a standalone copy of the SaaS deployment of Blackboard LMS that allows development and testing against the Ultra user experience. New developer AMIs will be made available as a VMDK file within 90 days of the prior release of a VMDK with the then current version of Blackboard.
 
 In later sections we will explain how you take the `.vmdk` file you’ve downloaded, upload it to AWS, convert it and then, configure an EC2 machine for use.
 
@@ -20,7 +20,7 @@ An overview of the process that you will be doing throughout the next sections, 
 - Create an S3 bucket in your AWS account to which you will upload the `.vmdk` file.
 - Configure your AWS account policies, roles and users so that you can use the CLI to convert the file to a snapshot.
 - Create a configuration file on your desktop/laptop named `containers.json` that contains the JSON configuration for converting the `.vmdk` file in the S3 bucket into an server Snapshot.
-- Use the graphical dashboard to create an AMI associated with the Snapshot and then deploy an EC2 server to run Blackboard Learn
+- Use the graphical dashboard to create an AMI associated with the Snapshot and then deploy an EC2 server to run Blackboard LMS
 
 ## Prerequisites
 
@@ -43,11 +43,12 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** vmdk-4000-15-0-v1.vmdk
-- **Version:** Blackboard LMS 4000.15.0
-- **Publish date:** May 8th 2026
-- **Expiration Date:** August 17th 2026.
-- **What changed?:** Please use t2.xlarge - We only support AWS.
+- **Name:** vmdk-4000-17-0-v1.vmdk
+- **Version:** Blackboard LMS 4000.17.0
+- **Publish date:** June 9th 2026
+- **Expiration Date:** September 15th 2026
+- **Which Cloud service provider:** We only support AWS.
+- **What is the best size for the LMS?:** Please use t2.xlarge or bigger
   <BBButton downloadUrl="https://support.blackboard.com/s/blackboard-integration-ami"/>
 
 :::

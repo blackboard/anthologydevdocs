@@ -7,7 +7,7 @@ edited: "2025-08-20"
 sidebar_position: 2
 ---
 
-Now that your server is running, we need to configure Blackboard Learn to accept connections through an encrypted connection. This version of Blackboard Learn uses Let's Encrypt certificates to provide SSL connections, the following are the steps required to configure your system
+Now that your server is running, we need to configure Blackboard LMS to accept connections through an encrypted connection. This version of Blackboard LMS uses Let's Encrypt certificates to provide SSL connections, the following are the steps required to configure your system
 
 :::caution Default SSL certificate
 The default SSL cert generated on first startup is _**not**_ a trusted certificate. Please follow the instructions below for full SSL support.

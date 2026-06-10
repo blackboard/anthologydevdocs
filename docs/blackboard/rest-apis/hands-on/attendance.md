@@ -7,7 +7,7 @@ published: '2022-10-21'
 edited: ''
 ---
 
-> Tested Using Blackboard Learn Release 3900.50.0-rel.21+840a19d
+> Tested Using Blackboard LMS Release 3900.50.0-rel.21+840a19d
 
 ## Introduction
 
