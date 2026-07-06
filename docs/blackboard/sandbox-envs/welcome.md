@@ -43,11 +43,11 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** vmdk-4000-17-0-v1.vmdk
-- **Version:** Blackboard LMS 4000.17.0
-- **Publish date:** June 9th 2026
-- **Expiration Date:** September 15th 2026
-- **Which Cloud service provider:** We only support AWS.
+- **Name:** vmdk-4000-19-0-v1.vmdk
+- **Version:** Blackboard LMS 4000.19.0
+- **Publish date:** July 6th 2026
+- **Expiration Date:** November 13th 2026
+- **Which Cloud service provider:** We only support AWS. No plans to support any other Cloud Service Provider.
 - **What is the best size for the LMS?:** Please use t2.xlarge or bigger
   <BBButton downloadUrl="https://support.blackboard.com/s/blackboard-integration-ami"/>
 
