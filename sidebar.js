@@ -168,6 +168,7 @@ const sidebars = {
               //   },
               // ],
             },
+            "blackboard/lti/migrate-lti",
           ],
         },
         /// UEF
@@ -210,10 +211,10 @@ const sidebars = {
           ],
         },
         {
-            SIS: [
-                "blackboard/sis/getting-started",
-                "blackboard/sis/sis-password-hashes"
-               ]
+          SIS: [
+            "blackboard/sis/getting-started",
+            "blackboard/sis/sis-password-hashes",
+          ],
         },
       ],
     },
@@ -265,10 +266,10 @@ const sidebars = {
       //
       items: [
         {
-              type: "link",
-              label: "Read more about Ellucian's Acquisition",
-              href: "https://www.ellucian.com/newsroom/ellucian-completes-acquisition-anthologys-sis-and-erp-business",
-            },
+          type: "link",
+          label: "Read more about Ellucian's Acquisition",
+          href: "https://www.ellucian.com/newsroom/ellucian-completes-acquisition-anthologys-sis-and-erp-business",
+        },
         {
           type: "category",
           label: "Getting Started",
