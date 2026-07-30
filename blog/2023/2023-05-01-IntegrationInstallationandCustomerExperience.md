@@ -1,16 +1,16 @@
 ---
 slug: Blackboard Integrations and Customer Experience
 title: Integration Installation and Customer Experience
-authors:
-  - name: Mark O'Neil
-    title: Product Manager
-tags: ['Best Practices', 'Integrations', 'Partners', 'Developers']
+authors: moneil
+tags: ["Best Practices", "Integrations", "Partners", "Developers"]
 hide_table_of_contents: false
 ---
 
 # Integration Installation and Customer Experience
 
 Blackboard has designed it's model for integrations in a manner which, when executed following our best practices, improves the Customer Integration Experience. Our goals in this area are multi-fold, yet all drive toward the best experience possible when Customers license, purchase, or develop integrations for enhancing their Blackboard Products as campus differentiators and enablers in achieving their Teaching and Learning objectives for their Staff, Faculty, and Students.
+
+<!-- truncate -->
 
 ## Why is Customer Experience Important?
 
