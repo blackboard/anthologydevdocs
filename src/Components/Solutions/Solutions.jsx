@@ -13,8 +13,8 @@ const Solutions = () => {
     <section className={styles["solutions-grid"]}>
       <Card
         className={styles["solutions-card-override"]}
-        imgSrc={`/img/blackboard-learn-${hasHydrated ? colorMode : "dark"}.svg`}
-        message="Expand on Blackboard LMS capabilities by using LTI and the API to create users, pull assessments, grade data, manage calendars, and more."
+        cardTitle='Blackboard LMS'
+        message='Expand on Blackboard LMS capabilities by using LTI and the API to create users, pull assessments, grade data, manage calendars, and more.'
         href='/docs/blackboard/welcome'
       />
       <Card
@@ -23,9 +23,9 @@ const Solutions = () => {
         href='/docs/ally/getting-started'
       />
       <Card
-        imgSrc={`/img/student-${hasHydrated ? colorMode : "dark"}.svg`}
-        message='Use Student (Ellucian) APIs to increase institution efficiency through automation and optimization.'
-        href='/docs/student/getting-started/first-steps'
+        cardTitle='Developer Portal'
+        message="Easily create and deploy integrations using Blackboard's gateway for integrations"
+        href='/docs/developer-portal/start-here'
       />
     </section>
   );

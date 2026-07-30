@@ -2,12 +2,6 @@
   margin-top: 3rem;
 }
 
-.docs-footer-theme-dark {
-}
-
-.docs-footer-theme-light {
-}
-
 .docs-custom-footer div:first-child {
   width: 90rem;
   height: 16rem;
@@ -157,7 +151,7 @@
   }
 }
 
-/*/ Laptopts */
+/*/ Laptops */
 @media (min-width: 1025px) and (max-width: 1400px) {
   .docs-custom-footer div:first-child {
     margin-bottom: 2rem;

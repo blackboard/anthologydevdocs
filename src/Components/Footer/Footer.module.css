@@ -1,10 +1,6 @@
 .custom-footer-bg {
-  background: linear-gradient(
-    300deg,
-    var(--custom-anth-light-blue) 7%,
-    var(--custom-anth-dark-blue) 7%
-  );
-  color: #fff;
+  background-color: #172622;
+  color: #f9f7f6;
 }
 
 .custom-footer-bg > div {
@@ -22,7 +18,7 @@
 
 .custom-footer > img {
   grid-row: 1/-1;
-  width: 12rem;
+  width: 5rem;
 }
 
 .footer-section > div > p {

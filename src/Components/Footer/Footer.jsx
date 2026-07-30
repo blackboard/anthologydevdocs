@@ -9,7 +9,10 @@ const Footer = () => {
     <footer className={styles["custom-footer-bg"]}>
       <div>
         <div className={clsx(styles["custom-footer"])}>
-          <img src='/img/Blackboard-Full-Color-White.svg' alt='Blackboard LLC logo' />
+          <img
+            src='/img/Blackboard_stacked_light.png'
+            alt='Blackboard LLC logo'
+          />
           <div className={styles["footer-section"]}>
             <div>
               <p>
@@ -50,10 +53,10 @@ const Footer = () => {
           </div>
         </div>
         <p className={styles["footer-copyright"]}>
-          &copy;{new Date(Date.now()).getFullYear()} Blackboard LLC. and its
+          &copy;{new Date(Date.now()).getFullYear()} Blackboard T&L, LLC and its
           affiliates. All rights reserved.&nbsp;
           <a
-            href='4'
+            href='https://www.blackboard.com/trademarks-and-patents'
             target='_blank'>
             Trademarks and Patents
           </a>

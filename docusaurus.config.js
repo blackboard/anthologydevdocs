@@ -86,15 +86,10 @@ const config = {
       navbar: {
         logo: {
           alt: "Blackboard Logo",
-          src: "/img/Blackboard-Full-Color-Black.svg",
-          srcDark: "/img/Blackboard-Full-Color-White.svg",
+          src: "/img/Blackboard_horizontal_dark.png",
+          srcDark: "/img/Blackboard_horizontal_light.png",
         },
         items: [
-          {
-            to: "/",
-            position: "right",
-            label: "Home",
-          },
           { to: "/blog", label: "Blog", position: "right" },
           { to: "/contributions", label: "Contributions", position: "right" },
           {
@@ -102,6 +97,12 @@ const config = {
             position: "right",
             value:
               '<a class="navbar-gh-link" href="https://github.com/blackboard/anthologydevdocs" target="_blank"><img class="navbar-gh-img-link" src="/img/github-logo.png"/></a>',
+          },
+          {
+            type: "html",
+            position: "left",
+            value:
+              '<a class="navbar-home-link" href="/"><img class="navbar-home-img-link" src="/img/home.svg"/></a>',
           },
           {
             type: "search",
