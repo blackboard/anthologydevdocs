@@ -1,0 +1,36 @@
+.redirect-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  /* Blackboard brand green (#0dac14), darkened for AA contrast with white text */
+  background-color: #0a8a10;
+  border-bottom: 3px solid #0dac14;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Dark mode gets the lighter/true brand green, matching this repo's existing
+   convention of brighter accent colors in dark mode (see custom.css) */
+:global(html[data-theme="dark"]) .redirect-banner {
+  background-color: #0dac14;
+  border-bottom-color: #7ee383;
+}
+
+.dismiss-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0;
+}
+
+.dismiss-button:hover {
+  opacity: 0.8;
+}
