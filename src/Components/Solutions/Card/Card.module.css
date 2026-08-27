@@ -20,6 +20,13 @@
   margin: 1rem 0 0.6rem 0;
 }
 
+.card a {
+  display: flex;
+  gap: 0.3rem;
+  font-weight: 600;
+  align-items: center;
+}
+
 /*/ Responsive styles  */
 /*/ Mobile */
 @media (max-width: 360px) {
