@@ -1,17 +1,32 @@
-endi:
-  name: Endilie Yacop Sucipto
-  title: Maintainer of Docusaurus
-  url: https://github.com/endiliey
-  image_url: https://github.com/endiliey.png
+shurrey:
+  name: Scott Hurrey
+  title: Director - Blackboard Illuminate
+  image_url: https://github.com/shurrey.png
 
-yangshun:
-  name: Yangshun Tay
-  title: Front End Engineer @ Facebook
-  url: https://github.com/yangshun
-  image_url: https://github.com/yangshun.png
+mkauffman:
+  name: Mark Kauffman
+  title: Former Senior Software Engineer - Developer Relations and Standards
+  image_url: https://github.com/mark-b-kauffman.png
 
-slorber:
-  name: Sébastien Lorber
-  title: Docusaurus maintainer
-  url: https://sebastienlorber.com
-  image_url: https://github.com/slorber.png
+epreston:
+  name: Eric Preston
+  title: Principal Application Architect
+  image_url: https://github.com/ewpreston.png
+
+dherrera:
+  name: Davey Herrera
+  title: Software Engineer in Support
+  image_url: https://github.com/daveyherrera.png
+
+moneil:
+  name: Mark O'Neil
+  title: Former Director Integrations
+  image_url: https://github.com/markoneil.png
+
+vgupta:
+  name: Vikas Gupta
+  title: Former Manager - Developer Relations and Standards
+
+cdominguez:
+  name: Camilo Dominguez
+  title: Product Manager - Blackboard LMS

@@ -13,20 +13,12 @@ const Card = (props) => {
       className={clsx(
         styles["card"],
         styles[`card-${hasHydrated ? colorMode : "dark"}`],
-        props.className
+        props.className,
       )}>
-      {props.imgSrc ? (
-        <img
-          src={props.imgSrc}
-          alt={props.altText}
-          className={styles["card-image"]}
-        />
-      ) : (
-        <h1 className={styles["card-title"]}>{props.cardTitle}</h1>
-      )}
+      <h1 className={styles["card-title"]}>{props.cardTitle}</h1>
       <p>{props.message}</p>
       <a href={props.href}>
-        Documentation{" "}
+        Get Started!{" "}
         <img
           src={`/img/right-arrow-${hasHydrated ? colorMode : "dark"}.svg`}
           alt='icon of an arrow pointing to the right'

@@ -1,7 +1,7 @@
 ---
 title: In Orbit at DevCon 2020
 date: 2020/07/10
-author: Scott Hurrey
+authors: shurrey
 slug: 20200710-inorbitatdevcon2020
 category: blog
 tags: ["devcon", "community", "recap"]
@@ -13,6 +13,8 @@ DevCon 2020 kicked off in full force this week with clients, partners and Blackb
 We’ve had a record number of people at DevCon with 2,273 attendees logging in from 973 institutions and 43 countries throughout the week. We also had some amazing content, delivered all over the world.
 
 Our most-attended session was 'Collaborate Best Practices' presented by Amy Eyre from the University of York and Helga Gunnarsdottir from the University of the West of England (UWE), co-chairs of the EMEA Mobile and Collaborate User Group, affectionately known as [MoCo](https://community.blackboard.com/groups/home/57).
+
+<!-- truncate -->
 
 Other highlights include the 'May the Data be with you' series. I definitly miss seeing everyone in person, so the lively interaction in these sessions led by a talented group of System Administrators was definitely the next best thing. Big thanks to Casey Eubank from WSU Tech, Chris Bray from Arkansas, Heather Crites from Columbia State Community College, Dan Gioia from St. Louis Community College, Bradley Lawton from Louisville, and Mark Reynolds from University of Illinois at Urbana-Champaign.
 

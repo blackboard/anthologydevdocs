@@ -4,7 +4,7 @@ title: Cookies and Browsers
 date: 2020-10-15 12:00
 category: blog
 post_id: 20201015-cookiesandbrowsers
-author: Eric Preston
+authors: epreston
 tags: ["lti", "learn", "api"]
 toc: false
 summary: Most people like cookies. Internet browsers used to like cookies, but a lot has changed in the last few years.
@@ -15,6 +15,8 @@ summary: Most people like cookies. Internet browsers used to like cookies, but a
 Most people like cookies. Internet browsers used to like cookies, but a lot has changed in the last few years.
 
 We are seeing a lot of applications stop working in some browsers because cookies are not being shared, and this post hopes to help explain why that is happening and what can be done about it.
+
+<!-- truncate -->
 
 A web application may set a cookie to track a user’s session. This is very common, however if your web application is going to be hosted in an iframe, then there’s a good chance your cookie won’t be sent back to you. This is because browsers are clamping down on sending “3rd-party” cookies back to applications hosted in an iframe. Note that a 3rd party is a site that is hosted on a domain different than the 1st party, or your web application. The reason is because these cookies can be used for tracking your internet and browsing activity. Safari has disallowed this for years as a user privacy measure.
 

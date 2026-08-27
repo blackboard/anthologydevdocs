@@ -9,3 +9,10 @@
 .card h2 {
   font-weight: 700;
 }
+
+.card a {
+  display: flex;
+  gap: 0.3rem;
+  font-weight: 600;
+  align-items: center;
+}

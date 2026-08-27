@@ -3,6 +3,7 @@
   padding: 3rem;
   border-radius: 4px;
 }
+
 .card > img {
   width: 10.5rem;
 }
@@ -17,6 +18,13 @@
 
 .card p {
   margin: 1rem 0 0.6rem 0;
+}
+
+.card a {
+  display: flex;
+  gap: 0.3rem;
+  font-weight: 600;
+  align-items: center;
 }
 
 /*/ Responsive styles  */

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wittgenstein:ital,wght@0,400..900;1,400..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 
 /**
  * Any CSS included here will be global. The classic template
@@ -8,10 +8,14 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2959a9;
-  --ifm-color-primary-dark: #2959a9;
-  --ifm-color-primary-darker: #2959a9;
-  --ifm-color-primary-darkest: #2959a9;
+  --ifm-font-color-base: #1c1e21;
+  --ifm-background-color: #f9f7f6;
+
+  --ifm-navbar-background-color: #f9f7f6;
+  --ifm-color-primary: #1d5245;
+  --ifm-color-primary-dark: #1d5245;
+  --ifm-color-primary-darker: #1d5245;
+  --ifm-color-primary-darkest: #1d5245;
   --ifm-color-primary-light: #ca9cd8;
   --ifm-color-primary-lighter: #e5b5e6;
   --ifm-color-primary-lightest: #efc4f5;
@@ -21,10 +25,13 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #2c9ede;
-  --ifm-color-primary-dark: #2c9ede;
-  --ifm-color-primary-darker: #2c9ede;
-  --ifm-color-primary-darkest: #2c9ede;
+  --ifm-font-color-base: #e4e6eb;
+  --ifm-heading-color: ##f9f7f6;
+  --ifm-navbar-background-color: #172622; /* Background color */
+  --ifm-color-primary: #f9f7f6;
+  --ifm-color-primary-dark: #f1dbcf;
+  --ifm-color-primary-darker: #f1dbcf;
+  --ifm-color-primary-darkest: #f1dbcf;
   --ifm-color-primary-light: #ca9cd8;
   --ifm-color-primary-lighter: #e5b5e6;
   --ifm-color-primary-lightest: #efc4f5;
@@ -45,19 +52,43 @@
   --custom-anth-author-light: #091834dd;
 }
 
+/* Light Mode Navbar */
+.navbar {
+  box-shadow: 1px 1px 1px #0003;
+}
+
+/* Dark Mode Navbar */
+[data-theme="dark"] .navbar {
+  box-shadow: 1px 3px 3px #fff1;
+}
+
 * {
-  font-family: "Inter", sans-serif !important;
+  font-family: "IBM Plex Sans", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Wittgenstein", sans-serif !important;
+}
+
+.navbar-home-img-link {
+  padding: 0;
+  margin: 0;
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .navbar-home-link {
-  color: #ffffff;
+  display: flex;
+  align-self: center;
+  align-items: center;
 }
 
-.navbar-home-link:hover,
-.navbar-home-link:link,
-.navbar-home-link:visited {
-  color: #ffffff;
-  text-decoration: none;
+[data-theme="dark"] .navbar-home-img-link {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4012%)
+    hue-rotate(308deg) brightness(94%) contrast(108%);
 }
 
 .navbar-gh-img-link {

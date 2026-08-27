@@ -4,7 +4,7 @@ title: Use One-Time Session Token to Authenticate with UEF
 date: 2021-05-10 16:13
 category: blog
 post_id: 20210511-uefnocookies
-author: Scott Hurrey, Mark Kauffman
+authors: [shurrey, mkauffman]
 tags: ["uef", "ultra", "lti", "rest"]
 summary: As browsers continue to lock down cookies, particularly with iframes, there is a new way to handle authentication with the Ultra Extension Framework.
 ---
@@ -12,6 +12,8 @@ summary: As browsers continue to lock down cookies, particularly with iframes, t
 # Use One-Time Session Token to Authenticate with UEF
 
 In testing with the [Google Canary Chrome Browser](https://www.google.com/chrome/canary/), one of our clients discovered an issue that was blocking users from logging in to their Learn instance. After much troubleshooting, we discovered a multi-layer issue that brings us to, you guessed it, [cookies](https://docs.anthology.com/blog/2020/10/15/Cookies-and-Browsers).
+
+<!-- truncate -->
 
 > **This affects clients in SaaS with Ultra Base Navigation enabled using Ultra integrations that rely on UEF** <br/> > **Review UPDATE in LTI 1.3 section. This post previously mentioned a bug that no longer exists.**
 

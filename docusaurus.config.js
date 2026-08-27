@@ -14,7 +14,6 @@ const config = {
   // Set the production url of your site here
   // url: 'https://blackboard.github.io',
   // url: 'https://anthologydevdocs.github.io',
-  // url: "https://docs.anthology.com",
   url: "https://docs.blackboard.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -28,8 +27,14 @@ const config = {
   // organizationName: 'blackboard', // Usually your GitHub org/user name.
   //projectName: 'docusaurus', // Usually your repo name.
 
+  // This replaces the "onBrokenMarkdownLinks: throw" flag which will be deprecated on Docusaurus v4
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "throw",
+    },
+  },
+
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "throw",
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -81,15 +86,10 @@ const config = {
       navbar: {
         logo: {
           alt: "Blackboard Logo",
-          src: "/img/Blackboard-Full-Color-Black.svg",
-          srcDark: "/img/Blackboard-Full-Color-White.svg",
+          src: "/img/Blackboard_horizontal_dark.png",
+          srcDark: "/img/Blackboard_horizontal_light.png",
         },
         items: [
-          {
-            to: "/",
-            position: "right",
-            label: "Home",
-          },
           { to: "/blog", label: "Blog", position: "right" },
           { to: "/contributions", label: "Contributions", position: "right" },
           {
@@ -97,6 +97,12 @@ const config = {
             position: "right",
             value:
               '<a class="navbar-gh-link" href="https://github.com/blackboard/anthologydevdocs" target="_blank"><img class="navbar-gh-img-link" src="/img/github-logo.png"/></a>',
+          },
+          {
+            type: "html",
+            position: "left",
+            value:
+              '<a class="navbar-home-link" href="/"><img class="navbar-home-img-link" src="/img/home.svg"/></a>',
           },
           {
             type: "search",

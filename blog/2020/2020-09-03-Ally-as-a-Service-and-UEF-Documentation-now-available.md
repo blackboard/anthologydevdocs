@@ -4,7 +4,7 @@ title: Ally as a Service and UEF Documentation now available
 date: 2020-09-03 12:40
 category: blog
 post_id: 20200903-allyasaserviceanduefdocs
-author: Scott Hurrey
+authors: shurrey
 tags: ["rest", "ally", "learn", "ultra", "uef"]
 summary: Today we launched two new sections of developer documentation - Ally as a Service (AaaS) and the Ultra Extension Framework (UEF).
 ---
@@ -12,6 +12,8 @@ summary: Today we launched two new sections of developer documentation - Ally as
 # Ally as a Service and UEF Documentation now available
 
 Today we launched two new sections of developer documentation - [Ally as a Service](https://docs.anthology.com/docs/Rest%20APIs/ally/getting-started) (AaaS) and the [Learn Ultra Extension Framework]([/rest-apis/learn](https://docs.anthology.com/docs/Rest%20APIs/premium-apis/uef/uef-getting-started) (UEF). These new APIs give you access to integration points and functionality that allows you to bring the power of Blackboard into your applications, and ultimately, your user's experience.
+
+<!-- truncate -->
 
 Ally as a Service is a standalone, separately licensed API to apply specific components of Ally's approach to content within your application. In its initial form, you are able to upload files, process them through Ally's accessibility checklist, and retrieve data that tells you what can be improved. This is only the tip of the iceberg, so make sure you continue to monitor this amazing capability for enhancements moving forward. For more information, including a conversation about pricing, reach out to your Account Executive.
 

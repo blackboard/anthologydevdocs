@@ -6,10 +6,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("/img/hero.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #172622;
   text-align: center;
+}
+
+[data-theme="dark"] .hero-banner {
+  background-color: #172622;
 }
 
 .hero-banner h1 {
