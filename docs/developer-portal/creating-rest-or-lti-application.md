@@ -45,7 +45,7 @@ In the application form, enter your application information. **Fields with a red
 
 ### Manual registration of an LTI integration
 
-To register an LTI integration, enter your application's information in the form as described in [Manual registration of a REST API integration](#manual-registration-of-a-rest-api-integration). Switch **My integreaton supports LTI 1.3** to ON. This enables a second part of the form. Enter information required for the integration to communicate with your application on your end. These fields are explained in [LTI 1.3 Fields](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-provide).
+To register an LTI integration, enter your application's information in the form as described in [Manual registration of a REST API integration](#manual-registration-of-a-rest-api-integration). Switch **My integration supports LTI 1.3** to ON. This enables a second part of the form. Enter information required for the integration to communicate with your application on your end. These fields are explained in [LTI 1.3 Fields](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-provide).
 
 1. **Login Initiation URL**
 2. **Tool Redirect URL(s)**
@@ -119,7 +119,7 @@ Here you will be able to:
 
 4. **Delete your application.** This removes your application. This is a one-way operation and cannot be undone.
 
-5. **Manage your keys.** You can create new keys (keys and secrets), but the application keeps the same application ID. This can be used when you want to rotate your keys or make an old key and secret unusuable. You may never need to create additional keys. When you select **+**, it will generate new values that will be shown only once. Document and store them in a safe place because Blackboard is unable to retrieve this data.
+5. **Manage your keys.** You can create new keys (keys and secrets), but the application keeps the same application ID. This can be used when you want to rotate your keys or make an old key and secret unusable. You may never need to create additional keys. When you select **+**, it will generate new values that will be shown only once. Document and store them in a safe place because Blackboard is unable to retrieve this data.
 
    ![Manage keys](/assets/img/create-rest-or-lti-app-8.png)
 
@@ -131,10 +131,10 @@ Here you will be able to:
    - Icon URL
    - Custom parameters
      ![registering a new placement](/assets/img/create-rest-or-lti-app-9.png)
-7. **Review the schools that have integrated your application.** At the top right of the page, view a list of sites that are registered and using your application. this is how it looks by default:
+7. **Review the schools that have integrated your application.** At the top right of the page, view a list of sites that are registered and using your application. This is how it looks by default:
    ![What schools](/assets/img/create-rest-or-lti-app-10.png)
 
-- This is how it looks like when you have already registered an application:
+- This is what it looks like when you have already registered an application:
   ![What schools with a registered school](/assets/img/create-rest-or-lti-app-11.png)
 
 ## My Site Registrations

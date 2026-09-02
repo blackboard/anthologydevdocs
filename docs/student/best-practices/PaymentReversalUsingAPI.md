@@ -34,11 +34,11 @@ If the Fund Source Security feature is being used and the payment transaction be
 
 ![PaymentReversal](/assets/img/PaymentReversalUsingAPI1.png)
 
-If the payment transaction being voided is associated to a payment plan, then the payment plan will beadjusted to reflect the voided payment transaction as part of the unit of work. Total amount received towards the payment plan will be reduced. Additionally, the payment installment schedule will also be updated to show the expected payment(s) the payment being voided was associated to as being expected and not received.
+If the payment transaction being voided is associated to a payment plan, then the payment plan will be adjusted to reflect the voided payment transaction as part of the unit of work. Total amount received towards the payment plan will be reduced. Additionally, the payment installment schedule will also be updated to show the expected payment(s) the payment being voided was associated to as being expected and not received.
 
 ## api/student-accounting/ledger-refund-transactions
 
-This API can be used to partially or fully reverse a payment. If fully reversing a payment, it is important to understand the different behavior when using this API verses the void payment transaction endpoint discussed above. The key difference is that if reversing a payment received for a payment plan, there will be no logic executed within this API that will auto adjust the installment payment plan schedule. Although the total amount refunded for the payment plan header record (StudentAward entity) will be updated, the detailed payment schedule will not. Therefore, if a full payment that was made against a payment plan is being reversed, then it is recommended to use the VoidAccountTransactionPayment API discussed above.
+This API can be used to partially or fully reverse a payment. If fully reversing a payment, it is important to understand the different behavior when using this API versus the void payment transaction endpoint discussed above. The key difference is that if reversing a payment received for a payment plan, there will be no logic executed within this API that will auto adjust the installment payment plan schedule. Although the total amount refunded for the payment plan header record (StudentAward entity) will be updated, the detailed payment schedule will not. Therefore, if a full payment that was made against a payment plan is being reversed, then it is recommended to use the VoidAccountTransactionPayment API discussed above.
 
 This API endpoint is well documented in the Swagger file. Thus, details on how to populate the request payload will not be provided here. To access this API in Swagger, select 'Integration' in the Type dropdown and then click Refresh.
 
@@ -62,4 +62,4 @@ In order for the user to execute the ledger-refund-transactions API, the user mu
 
 ## Conclusion
 
-There can likely be additional nuances/details around utilizing the these APIs that are not covered within this document. If there are any questions after reviewing this document, you can submit them by sending an email to developers@blackboard.com.
+There can likely be additional nuances/details around utilizing these APIs that are not covered within this document. If there are any questions after reviewing this document, you can submit them by sending an email to developers@blackboard.com.
