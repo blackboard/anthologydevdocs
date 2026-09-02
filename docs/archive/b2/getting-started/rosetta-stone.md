@@ -32,7 +32,7 @@ You want to know this because this page is infrequently updated. Just log in to 
   - [9.1 Q2 2019 Cumulative Update 3](https://blackboard.secure.force.com/btbb_articleview?id=kA01O000000xUbF) (Build: 3700.0.3-rel.35+ec64a31)
   - [9.1 Q2 2019 Cumulative Update 2](https://blackboard.secure.force.com/btbb_articleview?id=kA01O000000xUMU) (Build: 3700.0.2-rel.36+fbf2221)
   - [9.1 Q2 2019 Cumulative Update 1](https://blackboard.secure.force.com/btbb_articleview?id=kA01O000000Pf2S) (Build:3700.0.1-rel.29+a963bd8)
-  - [9.1 Q2 2019](https://blackboard.secure.force.com/btbb_articleview?id=kA41O000000Cgap) (Build:3700.0.0) LTI 1.3/Advantage Release to Self/Managed-Hosted (Was first availalbe in SaaS 3500.11)
+  - [9.1 Q2 2019](https://blackboard.secure.force.com/btbb_articleview?id=kA41O000000Cgap) (Build:3700.0.0) LTI 1.3/Advantage Release to Self/Managed-Hosted (Was first available in SaaS 3500.11)
 - Blackboard LMS 9.1 Q4 2018 ** EOL December 2020 **
   - [9.1 Q4 2018 Cumulative Update 10](https://blackboard.secure.force.com/btbb_articleview?id=kA01O000000xVtZ) (Build: 3500.0.10-rel.27+b7718ce)
   - [9.1 Q4 2018 Cumulative Update 9](http://blackboard.secure.force.com/btbb_articleview?id=kA01O000000xVJg) (Build:3500.0.9-rel.12+78adef1)
@@ -40,7 +40,7 @@ You want to know this because this page is infrequently updated. Just log in to 
   - [9.1 Q4 2018 Cumulative Update 7](https://blackboard.secure.force.com/btbb_articleview?id=kA01O000000xUbK) (Build: 3500.0.7-rel.34+6f3e777)
   - [9.1 Q4 2018 Cumulative Update 6](https://blackboard.secure.force.com/publickbarticleview?id=kA01O000000Pero) (Build: 3500.0.6-rel.16+7744aa6)
   - [9.1 Q4 2018 Cumulative Update 5](https://blackboard.secure.force.com/btbb_articleview?id=kA01O000000PeZk) (Build: 3500.0.5-rel.48+1fc210f)
-  - [9.1 Q4 2108 Cumulative Update 4](https://blackboard.secure.force.com/btbb_articleview?id=kA0390000005GL3) (Build:3500.0.4-rel.19+9180e36)
+  - [9.1 Q4 2018 Cumulative Update 4](https://blackboard.secure.force.com/btbb_articleview?id=kA0390000005GL3) (Build:3500.0.4-rel.19+9180e36)
   - [9.1 Q4 2018 Cumulative Update 3](https://blackboard.secure.force.com/apex/btbb_articleview?id=kA039000000PvnE) (Build:3500.0.3-rel.26+06aa766)
   - [9.1 Q4 2018 Cumulative Update 2](https://blackboard.secure.force.com/btbb_articleview?id=kA039000000Tm09) (Build:3500.0.2-rel.32+19c67cc)
   - [9.1 Q4 2018 Cumulative Update 1](https://blackboard.secure.force.com/btbb_articleview?id=kA039000000Tlvx)(Build:3500.0.1-rel.59+219b76) : Admin->LTI, Content Type \[\]Deep Linking
@@ -56,7 +56,7 @@ You want to know this because this page is infrequently updated. Just log in to 
   - [9.1 Q2 2017 Cumulative Update 1](http://blackboard.secure.force.com/btbb_articleview?id=kA039000000H1tF) (Build: 3200.0.1-rel.56+af64d14)
   - [9.1 Q2 2017](https://blackboard.secure.force.com/btbb_articleview?id=kA439000000Cidz) (Build: 3200.0.0-rel.52+647f084) : LTI still under B2s, No Deep Linking
 - Blackboard LMS 9.1 Q4 2016 ** EOL Dec 2018 **
-  - [9.1 Q4 2016 Cumlative Update 3](https://blackboard.secure.force.com/btbb_articleview?id=kA03900000093Cw) (Build: 3100.0.3-rel.51+917ccd3)
+  - [9.1 Q4 2016 Cumulative Update 3](https://blackboard.secure.force.com/btbb_articleview?id=kA03900000093Cw) (Build: 3100.0.3-rel.51+917ccd3)
   - Build: 3100.0.2 released to SaaS FDO only - Article # [43586](https://blackboard.secure.force.com/btbb_articleview?id=kAA390000004CeL)
   - [9.1 Q4 2016 Cumulative Update 1](https://blackboard.secure.force.com/btbb_articleview?id=kA03900000092tp) (Build: 3100.0.1-rel.117+6ef1843)
   - [9.1 Q4 2016](https://blackboard.secure.force.com/btbb_articleview?id=kA439000000CgaJ) (Build: 3100.0.0-rel.107+401e) FIRST USE OF Tomcat 8
