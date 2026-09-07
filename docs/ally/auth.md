@@ -131,7 +131,7 @@ Ally as a Service identifies the following actions:
 
 A policy statement identifies which action(s) can be invoked on which(s) resources.
 
-For example, the following statement would allow for retrieving the procesing status of an uploaded piece of content:
+For example, the following statement would allow for retrieving the processing status of an uploaded piece of content:
 
 ```json
 {
@@ -140,7 +140,7 @@ For example, the following statement would allow for retrieving the procesing st
 }
 ```
 
-Note that a colon indicates the start of a new part in the namespace. It is possible to use a wildcard asterisk _\*_ to widen the resource or action. For example, the following statement would allow for retrieving the procesing status of all content items:
+Note that a colon indicates the start of a new part in the namespace. It is possible to use a wildcard asterisk _\*_ to widen the resource or action. For example, the following statement would allow for retrieving the processing status of all content items:
 
 ```json
 {

@@ -23,7 +23,7 @@ Partner integrations continue to play a critical and vital role within the Learn
 
 ## What does "ULTRA READY" mean?
 
-Any integration listed as "Ultra Ready" is labeled as such to indicate it was built leveraging only Blackboard integration frameworks specifically supported in Ultra (i.e. Partner Cloud, LTI 1.1+ and/or Learn REST APIs). The term "Ultra Ready" is not equivalent to a Blackboard certification status for the Ultra experience.[††](#ultraready)
+Any integration listed as "Ultra Ready" is labeled as such to indicate it was built leveraging only Blackboard integration frameworks specifically supported in Ultra (i.e. Partner Cloud, LTI 1.1+ and/or Learn REST APIs). The term "Ultra Ready" is not equivalent to a Blackboard certification status for the Ultra experience.
 
 ![Ultra Ready Badges](/assets/img/ultraready.png "Ultra Ready Badges")
 

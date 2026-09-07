@@ -31,7 +31,7 @@ If there is a value being specified for a school defined field for the first tim
 
 School Defined fields data is stored in the StudentSchoolDefinedFieldValues entity. To retrieve all school defined field values for a given student, a filter on the StudentId property would be used: ds/odata/StudentSchoolDefinedFieldValues?$filter=StudentId eq ####### where ####### is the Id of the Student to retrieve data for.
 
-If data for specific school defined fields is needed, then additional filtering would be done. There is a navigation property called SchoolDefinedField on the StudentSchoolDefinedFieldValues entity that expands to the school defined fields configuration entity (SchoolDefinedFields) which can be leveraged to include any additional filtering neded for retrieving the school defined field values.
+If data for specific school defined fields is needed, then additional filtering would be done. There is a navigation property called SchoolDefinedField on the StudentSchoolDefinedFieldValues entity that expands to the school defined fields configuration entity (SchoolDefinedFields) which can be leveraged to include any additional filtering needed for retrieving the school defined field values.
 
 Lastly, there is a navigation property on the Student entity called SchoolDefinedFieldValues. You can include this in an expand statement to retrieve school defined field values data. i.e. ds/odata/Students?$expand=SchoolDefinedFieldValues
 

@@ -160,7 +160,7 @@ from that tool will be broken and can't be recovered. Manual re-creation of the 
 - Migrate during a low-usage window, not mid-semester or during an active grading period.
 - Rehearse the migration on a test/staging Blackboard instance first if one is available.
 - Confirm readiness before they click through the final confirmation or test on a Stage/Test environment
-  before commiting to the migration. **Rollbacks are not possible when migrating**, if the migration was not
+  before committing to the migration. **Rollbacks are not possible when migrating**, if the migration was not
   properly completed, the associated links will break and will have to be manually re-created.
 
 ### Known caveats to flag proactively

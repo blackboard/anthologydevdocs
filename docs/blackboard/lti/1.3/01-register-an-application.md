@@ -1,8 +1,8 @@
 ---
 title: Registering a new LTI application
 id: register-an-application
-published: ''
-edited: ''
+published: ""
+edited: ""
 author: Scott Hurrey
 ---
 
@@ -60,14 +60,14 @@ You will also receive an application key and secret. These are your credentials 
 
 In Learn the way an LTI tool is surfaced in the user interface (UI) is through the definition of one or more `Placements`. An application developer can define these placements so a Learn admin doesn't have to. There are currently six types of placements you can create:
 
-| Type           | Description                                                                                                 | Options              |
-| -------------- | ----------------------------------------------------------------------------------------------------------- | -------------------- |
-| Deep Linking   | Supports [LTI Deep Linking](https://www.imsglobal.org/spec/lti-dl/v2p0) to get content in outline or editor | Allow student access |
-| Course Content | Can be placed in the course outline or editor                                                               | Can be graded        |
-| Course         | Appears in Ultra Books & Tools, Original Tools                                                              | Allow student access |
-| System         | Appears in Ultra Base Nav Tools, Original Institution module                                                |                      |
-| Admin          | Appears in Admin Tools module                                                                               |                      |
-| UEF            | Special type for extending the Ultra UI; see [UEF docs](../../uef/01-getting-started.md)                    |                      |
+| Type           | Description                                                                                                             | Options              |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| Deep Linking   | Supports [LTI Deep Linking](https://www.imsglobal.org/spec/lti-dl/v2p0) to get content in outline or editor             | Allow student access |
+| Course Content | Can be placed in the course outline or editor                                                                           | Can be graded        |
+| Course         | Appears in Ultra Books & Tools, Original Tools                                                                          | Allow student access |
+| System         | Appears in Ultra Base Nav Tools, Original Institution module                                                            |                      |
+| Admin          | Appears in Admin Tools module                                                                                           |                      |
+| UEF            | Special type for extending the Ultra UI; see [UEF docs](../../uef/Start%20Developing%20for%20UEF/01-getting-started.md) |                      |
 
 ### Placement properties
 

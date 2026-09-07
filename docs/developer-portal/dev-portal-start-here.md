@@ -33,7 +33,7 @@ When you enter our developer portal, you will find several links starting from t
 
 ### Developer Documentation
 
-Blackboard’s Developer Documentation (which includes this page) helps you explore Blackboard’s product resources. It includes tutorials, sample code, articles, and API references. For an overview, visit https://docs.anthology.com/docs/site-intro.
+Blackboard’s Developer Documentation (which includes this page) helps you explore Blackboard’s product resources. It includes tutorials, sample code, articles, and API references. For an overview, visit [Blackboard Integrations](/docs/blackboard/welcome)
 
 ### Explore APIs
 
@@ -85,7 +85,7 @@ If you are encountering issues when you select **Create Account**, make sure you
 
 ![Developer portal sign up form](/assets/img/dev-portal-start-here-4.png)
 
-Once you have successfully created your account, you will receive an email that gives information about our Documentation, Community, Partnerships, GitHub, and about our Amazon Machine Images [AMIs](https://docs.anthology.com/docs/rest-apis/learn/sandbox/developer-ami).
+Once you have successfully created your account, you will receive an email that gives information about our Documentation, Community, Partnerships, GitHub, and about our Amazon Machine Images [AMIs](/docs/blackboard/sandbox-envs/welcome).
 
 Once you have created your account, you will be presented with a page that looks like this:
 
@@ -140,7 +140,6 @@ This applies to our Learn, Ally and Student APIs that user Swagger for documenta
 
 1. Beneath the **Name** is the name of the query parameter. The query parameter must be used in the same way it is written here.
 2. Beneath the query parameter describes three things:
-
    1. Type of value
    2. Character limit
    3. Type of parameter (either query parameter or path parameter).

@@ -866,11 +866,11 @@ We get back an ID that we use to attach the file to the attempt.
 4. Submit the attempt. We're using the gradeColumnId":"\_3297_1" that
    we got when we created the assignment.
 
-The "studentSubmision" is in bbML format. Reference: [Blackboard Markup
+The "studentSubmission" is in bbML format. Reference: [Blackboard Markup
 Language - BbML](../advanced/bbml.md)
 
 ```bash
-curl -k -X POST -H "Authorization: Bearer 4mgoFlQoi4Jq4biKpU4R264wugsKF9R1" -H "Content-Type: application/json" --data '{"studentComments":"this is the student commment", "studentSubmission": "<!-- {\"bbMLEditorVersion\":1} --> <a href=\"bbupload://BD-BD9C08679892561211D99DB4C817FE68-67545ce854b54d3fb062e38aefeee47c\" data-bbfile=\"{ & quot;render & quot;: & quot;inline & quot;, & quot;linkName & quot;: & quot;2016.03.BlackboardPartnerUpdate.pdf & quot;, & quot;mimeType & quot;: & quot;application/pdf & quot;}\">2016.03.BlackboardPartnerUpdate.pdf<_/a>"}:_' https://bd-partner-a-ultra.blackboard.com/learn/api/public/v2/courses/courseId:mbk-ultra-
+curl -k -X POST -H "Authorization: Bearer 4mgoFlQoi4Jq4biKpU4R264wugsKF9R1" -H "Content-Type: application/json" --data '{"studentComments":"this is the student comment", "studentSubmission": "<!-- {\"bbMLEditorVersion\":1} --> <a href=\"bbupload://BD-BD9C08679892561211D99DB4C817FE68-67545ce854b54d3fb062e38aefeee47c\" data-bbfile=\"{ & quot;render & quot;: & quot;inline & quot;, & quot;linkName & quot;: & quot;2016.03.BlackboardPartnerUpdate.pdf & quot;, & quot;mimeType & quot;: & quot;application/pdf & quot;}\">2016.03.BlackboardPartnerUpdate.pdf<_/a>"}:_' https://bd-partner-a-ultra.blackboard.com/learn/api/public/v2/courses/courseId:mbk-ultra-
 course/gradebook/columns/_3297_1/attempts
 ```
 

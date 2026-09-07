@@ -3,8 +3,8 @@ title: Using Attendance APIs
 id: attendance
 categories: Learn REST APIS Attendance
 author: Davey Herrera
-published: '2022-10-21'
-edited: ''
+published: "2022-10-21"
+edited: ""
 ---
 
 > Tested Using Blackboard LMS Release 3900.50.0-rel.21+840a19d
@@ -73,11 +73,9 @@ Hopefully this last image is helpful, if you have any questions, please contact 
 
 > A very important note to keep in mind: As of the date of creation of this document, If you create an attendance meeting using the REST API, the attendance status CANNOT be modified using the GUI, it can ONLY be modified using REST API. This does not apply to meetings created in the GUI, you can modify those using either the GUI or the REST API.
 
-### Meeting related endpoints
+## Meeting related endpoints
 
-#### One by one operations with meetings
-
-#### Creating a meeting
+### Creating a meeting
 
 When you use the GUI, you can click on the "Overall" button and click then on the "Plus (+) button next to the current meeting (or overall score).
 
@@ -85,7 +83,7 @@ When you use the GUI, you can click on the "Overall" button and click then on th
 
 When you create a new column, it automatically takes in today's date as the column name. Then you will be able to mark the student's attendance status:
 
-```json
+``````json
 ["Present", "Absent", "Late", "Excused"]
 `
 
@@ -93,7 +91,7 @@ you can learn even more about attendance here: https://help.blackboard.com/Learn
 
 Now, when creating one using REST API is quite simple use:
 
-- **POST** `/learn/api/public/v1/courses/{courseId}/meetings
+- **POST** `/learn/api/public/v1/courses/\{courseId\}/meetings
 
 And in the body:
 
@@ -106,11 +104,11 @@ And in the body:
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "This optional field can be an url"
 }
-```
+``````
 
 When the api is successful, it returns 200:
 
-`````json
+```json
 {
   "id": 465,
   "courseId": "_912_1",
@@ -120,13 +118,13 @@ When the api is successful, it returns 200:
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "https//google.com"
 }
-`
+```
 
 And this is how a meeting created using our API looks like and its parts:
 
 ![A new meeting created using REST API](../../../../static/assets/img/docs-site_attendance-7.png)
 
-#### Returning a meeting
+### Returning a meeting
 
 We already know how to create a meeting, and in the same process we are seeing all the meetings, it is possible to get the same data on the api using
 
@@ -144,15 +142,15 @@ When 200:
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "https//google.com"
 }
-`
+```
 
-#### Mapping the results
+### Mapping the results
 
 Here is a mapping of the results returned by the API and what we have in the GUI.
 
 ![Values returned by the API mapped to the GUI](../../../../static/assets/img/docs-site_attendance-8.png)
 
-#### Updating a meeting
+### Updating a meeting
 
 - **PATCH** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`
 
@@ -167,21 +165,21 @@ Using the same body as POST
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "This optional field can be an url"
 }
-`
+```
 
-#### Deleting a meeting
+### Deleting a meeting
 
 This endpoint deletes a meeting
 
 - **DELETE** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`
 
-#### Batch operations with Meetings
+### Batch operations with Meetings
 
 You can perform batch operations with meetings as well, however those are limited to Read and delete, meaning you can either read ALL the meetings in a course or you can remove ALL the meetings in a course. The delete all meetings in a course is a VERY powerful endpoint, use it carefully!
 
-#### Return all meetings in a course
+### Return all meetings in a course
 
-- **GET** `/learn/api/public/v1/courses/{courseId}/meetings`
+- **GET** `/learn/api/public/v1/courses/\{courseId\}/meetings`
 
 Returns 200
 
@@ -241,19 +239,17 @@ Returns 200
     }
   ]
 }
-`
+```
 
-#### Remove all meetings from the course
+### Remove all meetings from the course
 
-- **DELETE** `/learn/api/public/v1/courses/{courseId}/meetings
+- **DELETE** `/learn/api/public/v1/courses/\{courseId\}/meetings
 
 When it is successful returns 204
 
-### User related endpoints
+## User related endpoints
 
-#### one by one operations
-
-#### Creating an attendance record for one user in one meeting
+### Creating an attendance record for one user in one meeting
 
 We have this meeting that we need to add attendance records to:
 
@@ -269,13 +265,13 @@ Body
   "status": "Present",
   "userId": "_15104_1"
 }
-`
+```
 
 when it is successful, it returns 201, it looks like this in the GUI:
 
 ![A meeting in Ultra course view with an attendance record](../../../../static/assets/img/docs-site_attendance-10.png)
 
-#### Returning an Attendance record for one user in one meeting
+### Returning an Attendance record for one user in one meeting
 
 - **GET** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users/:userId`
 
@@ -286,11 +282,11 @@ when it is successful, it returns 201, it looks like this in the GUI:
   "userId": "_15104_1",
   "status": "Present"
 }
-`
+```
 
 This basically returns the same information found in the previous image.
 
-#### Updating an attendance record for one user in one meeting
+### Updating an attendance record for one user in one meeting
 
 - **PATCH** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users/:userId`
 
@@ -302,11 +298,11 @@ Body
   "userId": "_15104_1",
   "status": "Excused"
 }
-`
+```
 
 Returns when 200:
 
-```json
+````json
 {
   "id": 760,
   "meetingId": "465",
@@ -317,7 +313,7 @@ Returns when 200:
 
 ![A meeting in Ultra course view with an attendance record updated](../../../../static/assets/img/docs-site_attendance-11.png)
 
-#### Deleting an attendance record for one user in one meeting
+### Deleting an attendance record for one user in one meeting
 
 - **DELETE** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users/:userId`
 
@@ -325,9 +321,9 @@ When successful, returns 204 NO CONTENT
 
 ![A meeting in Ultra course view with an attendance record removed](../../../../static/assets/img/docs-site_attendance-12.png)
 
-#### Batch operations
+### Batch operations
 
-#### Creating attendance status for all users in one meeting
+### Creating attendance status for all users in one meeting
 
 Even though the endpoint documentation marks user_id and meeting_id as mandatory fields (in the body), you only need to send in the body the status like this:
 
@@ -335,12 +331,12 @@ Even though the endpoint documentation marks user_id and meeting_id as mandatory
 {
   "status": "Excused"
 }
-`
+````
 
 This basically updates all students' attendance status to the same for **ALL OF THEM.**
 ![A meeting in Ultra course view all users with the same attendance status](../../../../static/assets/img/docs-site_attendance-13.png)
 
-#### Return ALL users and their attendance status to one meeting
+### Return ALL users and their attendance status to one meeting
 
 ![A meeting in Ultra course view with all students attendance marked](../../../../static/assets/img/docs-site_attendance-14.png)
 
@@ -365,9 +361,9 @@ When 200 returns:
     }
   ]
 }
-`
+```
 
-#### Return ALL attendance status of one user to all meetings in one course
+### Return ALL attendance status of one user to all meetings in one course
 
 Now, let's say you want to have all the attendance records of one user, with this endpoint, you will get all the attendance status if all the available meetings for one specific user
 
@@ -436,9 +432,9 @@ When 200, returns:
     }
   ]
 }
-`
+```
 
-#### Removing all attendance records in a meeting
+### Removing all attendance records in a meeting
 
 - **DELETE** `/learn/api/public/v1/courses/:courseId/meetings/:meetingId`/users
 
@@ -448,21 +444,20 @@ When completed, returns 204 NO CONTENT:
 
 ![A meeting in Ultra course view all the meetings and attendance for one user marked with their status](../../../../static/assets/img/docs-site_attendance-17.png)
 
-#### Removing all attendance records in one course for one user
+### Removing all attendance records in one course for one user
 
 This endpoint is very powerful, be careful when using it since it will remove ALL attendance records of a specific user in a course.
 
-- **DELETE** /learn/api/public/v1/courses/{courseId}/meetings/users/{userId}`
+- **DELETE** /learn/api/public/v1/courses/\{courseId\}/meetings/users/\{userId\}`
 
 When successful, returns 204 NO CONTENT.
 
-#### Remove all attendance records in ALL COURSES for one user
+### Remove all attendance records in ALL COURSES for one user
 
 This endpoint is very powerful, be careful when using it since it will remove ALL attendance records of a specific user in ALL courses
 
-- **DELETE** /learn/api/public/v1/courses/{courseId}/meetings/users/{userId}`
+- **DELETE** /learn/api/public/v1/courses/\{courseId\}/meetings/users/\{userId\}`
 
-#### CSV Export endpoint
+### CSV Export endpoint
 
 Unfortunately at the moment of writing, this endpoint is not working properly so, I am unable to tell you how it works, however, once this is fixed I will update this, for now, the GUI is the best place to get the information.
-```

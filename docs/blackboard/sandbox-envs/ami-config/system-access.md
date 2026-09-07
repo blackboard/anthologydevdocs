@@ -126,4 +126,4 @@ You can find additional information about our integration methods here:
 
 - REST API: [About Blackboard REST APIs](/docs/blackboard/rest-apis/apis-intro.md)
 - LTI: [Getting started with LTI](/docs/blackboard/lti/welcome)
-- Ultra Extension Framework (UEF) [What is UEF](/docs/blackboard/uef/01-getting-started.md)
+- Ultra Extension Framework (UEF) [What is UEF](/docs/blackboard/uef/Start%20Developing%20for%20UEF/01-getting-started.md)
