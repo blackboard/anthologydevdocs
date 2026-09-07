@@ -37,9 +37,9 @@ Each carries the following payload:
 The `routeName` value delivered by the Route event can change in any release. It is a description of Ultra's internal navigation state, not a versioned identifier. State names encode real structure — parent/child relationships that determine what Ultra renders — so when that structure changes, the names change with it. This is a property of the routing system, not a naming convention we can hold fixed.
 
 Integrations that key behavior off routeName should expect to revisit that logic at navigation milestones.
-Where a supported alternative exists, prefer it: see !!INTERNAL DOC LINK TO SECTION 8.1!!
+Where a supported alternative exists, prefer it: see [Recommended Integration Practices](./02-recommended-changes.md#do-not-build-or-hardcode-learn-urls)
 
-1. `routeName` reflects the whole parent state chain. A change anywhere in that chain changes the value, even when the specific page you care about is untouched. Both parent segments and leaf names changed in this release — see !!INTERNAL DOC LINK TO SECTION 8.1!! for what that means for string matching.
+1. `routeName` reflects the whole parent state chain. A change anywhere in that chain changes the value, even when the specific page you care about is untouched. Both parent segments and leaf names changed in this release — see [Recommended Integration Practices](./02-recommended-changes.md#do-not-build-or-hardcode-learn-urls) for what that means for string matching.
 2. `routeData` carries the route parameters. If you need the course or content id, read it from routeData rather than parsing routeName or the URL. `routeData` was not affected by these changes. It should be used instead of parsing of URLs.
 
 ### A worked example
