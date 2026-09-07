@@ -16,10 +16,10 @@ Getting involved in the Developer community is easy and with options to suit you
 - Host a webinar
   - Please consider hosting a Webinar on any topic that you feel would benefit the developer community. We are able to provide a conference line and Collaborate software to support your webinar. Contact us if you are interested.
   - The Developer Office Hours is interested in hosting your presentation. Contact us if you have a topic on which you would like to present.
-- [Contribute an idea](https://community.blackboard.com/developers) for a REST or LTI Tool
-- [Link to your blog](https://community.blackboard.com/developers)
+- [Contribute an idea](https://community.blackboard.com) for a REST or LTI Tool
+- [Link to your blog](https://community.blackboard.com)
 - Present at a conference or user group event
-  - Check the [Calendar of Events](https://community.blackboard.com/developers) for upcoming deadlines or regularly meeting groups which may benefit from your experience
+  - Check the [Calendar of Events](https://community.blackboard.com) for upcoming deadlines or regularly meeting groups which may benefit from your experience
 - [Host an event](mailto:bbpartnerteam@blackboard.com)
 - E-mail [BbDN](mailto:bbpartnerteam@blackboard.com) with your event details so that we can add it to our events calendar.
 - [Give us feedback](mailto:developers@blackboard.com)

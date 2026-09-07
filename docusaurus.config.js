@@ -67,6 +67,14 @@ const config = {
           // Remove this to remove the "edit this page" links.
           //editUrl:
           //  'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          feedOptions: {
+            type: "all",
+            title: "Latest from Blackboard Devs",
+            description:
+              "Get the latest blogs and news from the Blackboard Developer Docs!",
+            language: "en_US",
+            copyright: `Copyright © ${new Date().getFullYear()} Blackboard T&L Inc.`,
+          },
         },
         theme: {
           customCss: [
@@ -91,7 +99,12 @@ const config = {
         },
         items: [
           { to: "/blog", label: "Blog", position: "right" },
-          { to: "/contributions", label: "Contributions", position: "right" },
+          {
+            type: "html",
+            position: "right",
+            value:
+              '<a class="navbar-rss-link" href="/blog/rss.xml"><img class="navbar-rss-img-link" src="/img/rss.svg"/></a>',
+          },
           {
             type: "html",
             position: "right",

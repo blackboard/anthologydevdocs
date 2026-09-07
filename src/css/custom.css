@@ -29,6 +29,7 @@
   --ifm-heading-color: ##f9f7f6;
   --ifm-navbar-background-color: #172622; /* Background color */
   --ifm-color-primary: #f9f7f6;
+  --ifm-link-color: #f1dbcf;
   --ifm-color-primary-dark: #f1dbcf;
   --ifm-color-primary-darker: #f1dbcf;
   --ifm-color-primary-darkest: #f1dbcf;
@@ -73,6 +74,30 @@ h4 {
   font-family: "Wittgenstein", sans-serif !important;
 }
 
+a {
+  font-weight: 600;
+}
+
+/* Navbar RSS Styles */
+.navbar-rss-img-link {
+  padding: 0;
+  margin: 0;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.navbar-rss-link {
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+[data-theme="dark"] .navbar-rss-img-link {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(4012%)
+    hue-rotate(308deg) brightness(94%) contrast(108%);
+}
+
+/* Navbar Home icon styles */
 .navbar-home-img-link {
   padding: 0;
   margin: 0;

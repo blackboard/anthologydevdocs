@@ -1,11 +1,7 @@
 {
-  "0": {
-    "name": "Tips for using the Create and SaveNew API operations",
-    "url": "/docs/student/best-practices/create-savenew-bestpractices"
-  },
   "1": {
-    "name": "Tips for using the Get and Save API operations",
-    "url": "/docs/student/best-practices/get-save-bestpractices"
+    "name": "Changes to UEF on version 4000.21.0 and newer",
+    "url": "/docs/blackboard/uef/Integration Change Notice on 4000.21.0 and newer/01-uef-changes.md"
   },
   "2": {
     "name": "Working with groups and the API",
@@ -13,10 +9,10 @@
   },
   "3": {
     "name": "Sanctioned LTI Registration and Deployment with Learn",
-    "url": "/docs/blackboard/lti/lti-registration-deployment"
+    "url": "/docs/blackboard/lti/1.3/register-an-application"
   },
   "4": {
     "name": "What are Premium APIs",
-    "url": "/docs/blackboard/premium-apis/requesting-premium-apis"
+    "url": "/docs/blackboard/uef/Start%20Developing%20for%20UEF/uef-requirements"
   }
 }
