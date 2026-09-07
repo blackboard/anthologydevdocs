@@ -149,7 +149,7 @@ if (msg.data.type === "event:event") {
     // ID of portal in view
     console.log(msg.data.portalId);
 
-    // Any specific data relavant to this portal
+    // Any specific data relevant to this portal
     console.log(msg.data.selectorData);
   }
 }
@@ -174,7 +174,7 @@ if (msg.data.type === "event:event") {
       // ID of this portal. This must be sent back to UEF in the portal:render message
       const portalId = msg.data.portalId;
 
-      // contentId is included for convience in the selectorData
+      // contentId is included for convenience in the selectorData
       console.log(msg.data.selectorData.contentId);
 
       const contentsToSend = {

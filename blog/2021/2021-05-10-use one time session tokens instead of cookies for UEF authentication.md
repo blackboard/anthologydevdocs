@@ -48,7 +48,7 @@ If you are a developer that has built a UEF integration, we actually implemented
 
 This one-time session cookie is added to the claims in the LTI 1.3 JWT and the form POST parameters in LTI 1.1. You can grab that value from the LTI launch, return it as a parameter in your 3LO authorization code request, and your problem will be solved.
 
-UPDATE: This section previously mentioned a bug where the userId needed to be appended to the one_time_session token. This bug has been fixed. Your code can now use the one_time_session_token as provided by Blackboard LMS without appending the userId. Blackboard no longer appends a userId, nor expects it in the returned value. If your code does append a comma and userId, that’s OK, you don’t immediatly need to change your code it as Blackboard just ignores the comma and what comes after if those are part of the value you send back.
+UPDATE: This section previously mentioned a bug where the userId needed to be appended to the one_time_session token. This bug has been fixed. Your code can now use the one_time_session_token as provided by Blackboard LMS without appending the userId. Blackboard no longer appends a userId, nor expects it in the returned value. If your code does append a comma and userId, that’s OK, you don’t immediately need to change your code it as Blackboard just ignores the comma and what comes after if those are part of the value you send back.
 
 ### LTI 1.3
 

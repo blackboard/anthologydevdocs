@@ -15,7 +15,7 @@ To do this, you will need your client ID and your secret. See the [Getting Start
 
 At the bottom of the documentation for the `Upload a File to Ally` endpoint, there is a **Try it now** section, where you can select a file and click submit to upload that file to be processed.
 
-Upon upload, you will see the results appear on the screen, which will include the content hash value. This content hash value is unique to a specific piece of content, and specifically, the piece of content you just uploaded. In your application, you will use this for all subsequent calls. In the API documentation, it will automatically capture that value and paste it into the subsequest endpoints.
+Upon upload, you will see the results appear on the screen, which will include the content hash value. This content hash value is unique to a specific piece of content, and specifically, the piece of content you just uploaded. In your application, you will use this for all subsequent calls. In the API documentation, it will automatically capture that value and paste it into the subsequent endpoints.
 
 The next section is the `Check the processing status of a file` endpoint. In the **Try it now** section, you will see a field for the Content hash already filled in and a Submit button. Click submit to see the result of this call.
 

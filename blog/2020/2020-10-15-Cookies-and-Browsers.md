@@ -22,7 +22,7 @@ A web application may set a cookie to track a user’s session. This is very com
 
 Another case where cookies aren’t being sent back is during a form POST back to your application. If you set a cookie, then launch to a 3rd party application, if that application does a form POST back to you, the browser will likely not send your cookie back because it is trying to help prevent cross-site request forgery attacks.
 
-Rather than detail all the scenarios and work arounds here I link to two web pages that are immensely helpful in explaining the situation and some possible workarounds.
+Rather than detail all the scenarios and workarounds here I link to two web pages that are immensely helpful in explaining the situation and some possible workarounds.
 
 The TL;DR is if you must set a cookie in your web application, be careful how you configure that cookie’s properties, and understand that at least in Safari, your cookies may not get passed back to you. The other browser makers are going to get as restrictive as Safari soon.
 

@@ -46,7 +46,7 @@ Click `Done` to take you back to the applications page.
 
 We have one more step to go. Next to the name of your game, click the ellipsis `...` icon to launch the context menu and select `Manage Placements`. Click the `Register` button.
 In the `Name` field, give the placement a name that you want to display to the instructor.
-In the `Desciption` field, type anything you like. Under `Type`, select `Deep Linking content tool`.
+In the `Description` field, type anything you like. Under `Type`, select `Deep Linking content tool`.
 Under `Target link URI`, enter the launch URL to your tool. In our case it is `https://pylti1p3-game.herokuapp.com/launch/`.
 Now click `Register placement`, and we are ready to deploy the tool in Learn.
 

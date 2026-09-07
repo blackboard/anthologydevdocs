@@ -85,7 +85,7 @@ if (message.data.type === "portal:callback") {
 }
 ```
 
-5. Our openPanelCD fuction posts a message to Ultra to open a new panel. We'll have this panel opening make the LTI launch and display the response.
+5. Our openPanelCD function posts a message to Ultra to open a new panel. We'll have this panel opening make the LTI launch and display the response.
 
 ```js
 // COURSE-LEFTNAV tell Ultra to open our panel. It will send us a message back after
@@ -113,7 +113,7 @@ function openPanelCD(panelSize, data) {
 ```js
 function renderPanelContents(message) {
 	... for brevity
-	// You MUST change the handle: value to match that of your LTI managed placment handle.
+	// You MUST change the handle: value to match that of your LTI managed placement handle.
 	// In summary the panel got opened so we put the contents of an LTI launch within.
 	if (message.data.correlationId === 'panel-3') {
 

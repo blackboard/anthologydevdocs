@@ -54,7 +54,7 @@ Please keep in mind that:
 - The course calendar must be enabled for the course GradebookColumn associate with OfficeHours.
 - If OfficeHours are created for a course calendar (calendarId == a course_id).
 - The course calendar must be enabled for course calendar items associated with GradebookColumn.
-- CalendarItems of type GradebookColumn are a representation of a specific gradable item and there read-only. Modifications to GradebookColumn items performed via the GradebokColumn endpoints will be reflected in the CalentarItems endoints.
+- CalendarItems of type GradebookColumn are a representation of a specific gradable item and there read-only. Modifications to GradebookColumn items performed via the GradebokColumn endpoints will be reflected in the CalentarItems endpoints.
 - If you want to use the `columnIds` from Gradebook Column as a calendar Item id, you can get those from `/learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}`
 - _You cannot read/create calendar items when there is no calendar._
 

@@ -86,7 +86,7 @@ directly to your event store.
 
 ![fill-out-the-event-store-registration-form.png](/assets/img/caliper-event-store-for-learn-6.png)
 
-<p>As soon as you enable your event store, it will start to recieve events. Your
+<p>As soon as you enable your event store, it will start to receive events. Your
 event store should be a fully-hardened data warehouse. There is a ton of data
 and no way to filter the data you receive on the Learn server. You
 can certainly filter out the data that you want, but you will have to be able

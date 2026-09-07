@@ -33,7 +33,7 @@ You can create groups for individual and team development. You can target a spec
 
 4. **Add a new developer to the group.** Add a developer to a group using the developer's email address.
 
-5. **Change the administrator status.** You can give administrator privileges to exisiting group members. An administrator is empowered to:
+5. **Change the administrator status.** You can give administrator privileges to existing group members. An administrator is empowered to:
    - Add new developers to the group
    - Edit, Delete or manage keys of the application.
    - Manage placements and see which schools have the application deployed.

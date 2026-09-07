@@ -13,7 +13,7 @@ author: Mark Kauffman, Mark O'Neil
 >
 > - The Learn Course Copy APIs work the same for either Original or Ultra course experiences.
 > - Learn Public REST APIs are documented at https;//developer.blackboard.com/portal/displayAPI/Learn
-> - Information on System Administrators is not generally available via Public REST APIs, thus it is a Best Practice for Learn Administrators who are teaching or taking courses be enrolled using a non-Admininistrator Role privileged user.
+> - Information on System Administrators is not generally available via Public REST APIs, thus it is a Best Practice for Learn Administrators who are teaching or taking courses be enrolled using a non-Administrator Role privileged user.
 
 ## Topic
 
@@ -26,7 +26,7 @@ We strongly recommended you follow the Best Practices outlined below.
 Details follow below but in general, the workflow for copying a course consists of:
 
 1. POST to the course copy endpoint.
-2. Poll via GET to the Location task endpiont that was returned in the header of the course copy response. Wait for a response other than 200. This is so that when you attempt to update the copied course with step #3 that the copy has completed.
+2. Poll via GET to the Location task endpoint that was returned in the header of the course copy response. Wait for a response other than 200. This is so that when you attempt to update the copied course with step #3 that the copy has completed.
 3. PATCH to update the copied course's externaId, name, description, dates, and any other values that are to be different for the copied course. Any of these values are optional to update, but the copied course won't look any different to the instructor as the copied course is an EXACT copy of the source course except for the courseId.
 
 DO NOT POST to UPDATE THE COPIED COURSE UNTIL CERTAIN THE COPY IS COMPLETE VIA STEP #2 ABOVE.

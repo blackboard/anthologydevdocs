@@ -119,7 +119,7 @@ Here you will be able to:
 
 4. **Delete your application.** This removes your application. This is a one-way operation and cannot be undone.
 
-5. **Manage your keys.** You can create new keys (keys and secrets), but the application keeps the same application ID. This can be used when you want to rotate your keys or make an old key and secret unusuable. You may never need to create additional keys. When you select **+**, it will generate new values that will be shown only once. Document and store them in a safe place because Blackboard is unable to retrieve this data.
+5. **Manage your keys.** You can create new keys (keys and secrets), but the application keeps the same application ID. This can be used when you want to rotate your keys or make an old key and secret unusable. You may never need to create additional keys. When you select **+**, it will generate new values that will be shown only once. Document and store them in a safe place because Blackboard is unable to retrieve this data.
 
    ![Manage keys](/assets/img/create-rest-or-lti-app-8.png)
 

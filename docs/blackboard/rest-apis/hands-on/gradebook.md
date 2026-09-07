@@ -13,7 +13,7 @@ author: Mark O'Neil
 >
 > - All Learn Gradebook APIs work the same for either Original or Ultra course experiences.
 > - Learn Public REST APIs are documented at https;//developer.blackboard.com/portal/displayAPI/Learn
-> - Information on System Administrators is not generally available via Public REST APIs, thus it is a Best Practice for Learn Administrators who are teaching or taking courses be enrolled using a non-Admininistrator Role privileged user.
+> - Information on System Administrators is not generally available via Public REST APIs, thus it is a Best Practice for Learn Administrators who are teaching or taking courses be enrolled using a non-Administrator Role privileged user.
 
 ## Topic
 
@@ -246,7 +246,7 @@ If membership has `childCourseId` then that user is a member of a child course, 
 
 You now may handle the remaining processing workflow for this user’s assignment grade.
 
-## Calulating API Use
+## Calculating API Use
 
 Using the above we can calculate API usage. Let’s keep the math simple by assuming we have
 10 courses, 10 columns per course, 10 students per course and every time we check there are grades to pull for every column\*:

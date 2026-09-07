@@ -232,7 +232,7 @@ following notation:
 ```
 
 For proper formatting and rendering within the ULTRA environment, it is
-recommened to also include a data-bbfile attribute. An example value of this
+recommended to also include a data-bbfile attribute. An example value of this
 can be seen above in the BbML specification section. However, to describe it a
 bit more, the data-bbfile attribute's value is an HTML encoded json string:
 
@@ -286,7 +286,7 @@ fields of `data-bbfile` which are expected. (`data-bbfile` is a JSON-encoded
 object.)
 
 For example, for the Attachment plugin, the generated bbml is as follows
-(minus unneccessary whitespace I've added for easy viewing):
+(minus unnecessary whitespace I've added for easy viewing):
 
 ```html
 <a

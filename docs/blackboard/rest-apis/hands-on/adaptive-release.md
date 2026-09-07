@@ -25,7 +25,7 @@ For all members, you can use additional conditions such as Date/Time and Perform
 
 It is also possible to release the content to specific members of the course or groups.
 
-Note: We are aware that there is a known issue where, if you just enrolled a user (and haven't reloaded the page) the roster is not updated on adaptive release -> Specific memebers or groups -> Individual members and search for the user that has just been enrolled, the user does not show up, groups are correctly updated. To solve this, you can just reload the page and roster will be updated.
+Note: We are aware that there is a known issue where, if you just enrolled a user (and haven't reloaded the page) the roster is not updated on adaptive release -> Specific members or groups -> Individual members and search for the user that has just been enrolled, the user does not show up, groups are correctly updated. To solve this, you can just reload the page and roster will be updated.
 
 Now let's move on to the REST API part
 
@@ -138,7 +138,7 @@ You should get a result like this (may vary depending on the criteria that has a
 
 ### Using GradeRange
 
-This criteria specifies a gradable item, a maximun and a minimum score. When the item has been graded and the score is within the range, the content becomes available. A GradeRange criterion can be converted to a GradePercentage criterion by setting the Type to GradePercentage and
+This criteria specifies a gradable item, a maximum and a minimum score. When the item has been graded and the score is within the range, the content becomes available. A GradeRange criterion can be converted to a GradePercentage criterion by setting the Type to GradePercentage and
 
 You can get the gradeColumn id using (you need the course_id):
 
@@ -268,7 +268,7 @@ Specifies a start and end dates. The content becomes available during the given 
 
 This endpoint needs the following data:
 
-1. Type -> ["DateRange"], inmutable
+1. Type -> ["DateRange"], immutable
 2. startDate -> ISODate, Nullable
 3. endDate -> ISODate, Nullable & endDate > startDate
 

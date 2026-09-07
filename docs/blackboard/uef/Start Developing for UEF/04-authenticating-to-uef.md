@@ -28,7 +28,7 @@ window.parent.postMessage(
 );
 ```
 
-You also need to register an Event Listener for messages, which will allow you to listen for the initial syncronization message from Ultra. The listener can be defined like this:
+You also need to register an Event Listener for messages, which will allow you to listen for the initial synchronization message from Ultra. The listener can be defined like this:
 
 ```javascript
 addEventListener("message", (incomingMessage) => {
