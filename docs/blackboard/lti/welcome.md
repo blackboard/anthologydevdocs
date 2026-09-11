@@ -6,14 +6,17 @@ published: ''
 edited: ''
 ---
 
-Learning Tools Interoperability (LTI) is a standard from the 1EdTech group. This standard focuses on contextual launches and grade return, providing a way to send and retrieve this data without manually migrating the information from one service into the other. LTI has two different standards available, LTI 1.1 and LTI 1.3. Both can be used to integrate with an LMS and exchange information.
+Learning Tools Interoperability (LTI) is a standard from the 1EdTech group. This standard focuses on contextual launches and grade return, providing a way to send and retrieve this data without manually migrating the information from one service into the other. LTI has two different standards, LTI 1.1 and LTI 1.3. However, LTI 1.1 has been deprecated for over 10 years by 1EdTech and Blackboard LMS will no longer support it, hence, Blackboard LMS will only support LTI 1.3 Applications.
 
-:::danger LTI 1.1 support
-LTI 1.1 has been deprecated by the IMS Global, and it's been around for over 10 years. Learn will continue support of LTI 1.1 tools for the indeterminate future while LTI 1.1 tool developers migrate their tool to LTI 1.3/Advantage.
-:::
+:::danger LTI 1.1 Retirement
+Blackboard has officially announced the "Retirement of LTI 1.1 Support in Blackboard LMS" [Please read the announcement](https://community.blackboard.com/public/blogs/retirement-of-lti-11-support-in-blackboard-lms-2026-08-27). 
+
+   - As of **January 1st 2027** Registration of new LTI 1.0 and LTI 1.1 tools in Blackboard LMS is no longer permitted. The registration button will be removed for these older versions.
+
+   - As of **September 30th 2027** All LTI 1.0 and LTI 1.1 tools are turned off in Blackboard LMS and can’t be made active.
 
 :::caution
-This documentation is focused on LTI 1.3/Advantage. If you are building a new tool, it is **_strongly recommended_** you use LTI 1.3/Advantage.
+This documentation is focused on LTI 1.3/Advantage. If you are building a new tool **Please only use LTI 1.3/Advantage.**
 :::
 
 ### What Specifically is LTI 1.3?
@@ -45,7 +48,7 @@ In addition to LTI 1.3, 1EdTech also has additional specifications for different
 
 ### Blackboard LMS support for LTI Advantage
 
-Blackboard LMS currently has full support for the two different integration versions over LTI, **LTI 1.1** and **LTI 1.3/Advantage** however, as mentioned above, we recommend migrating/creating new applications using LTI 1.3. LTI 1.1 is still supported but is not recommended.
+Blackboard LMS currently has full support for the two different integration versions over LTI, **LTI 1.3/Advantage** however, as mentioned above, we recommend migrating/creating new applications using LTI 1.3. LTI 1.1 will no longer be supported as of January 1st 2027.
 
 ## Test code and tools
 

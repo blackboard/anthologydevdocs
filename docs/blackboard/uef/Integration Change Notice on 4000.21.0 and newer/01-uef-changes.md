@@ -115,6 +115,10 @@ Constructed or hardcoded Learn URLs are not a supported integration mechanism an
 
 For returning the user to Learn after your tool finishes, use the `return_url` Learn provides in the LTI launch. It is supplied in the `launch_presentation` claim for LTI 1.3, or as `launch_presentation_return_url` for LTI 1.1. Redirect the user there when your tool is done; Learn recognizes it and routes the user to the right place. You never need to know or construct an Ultra URL.
 
+:::danger LTI 1.1 Retirement
+Blackboard has officially announced the "Retirement of LTI 1.1 Support in Blackboard LMS" [Please read the announcement](https://community.blackboard.com/public/blogs/retirement-of-lti-11-support-in-blackboard-lms-2026-08-27). 
+:::
+
 This return URL is provided on all launch types, proctoring launches included. It takes the form:
 
 ```
