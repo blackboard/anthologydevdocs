@@ -216,6 +216,7 @@ const sidebars = {
             "blackboard/sis/sis-password-hashes",
           ],
         },
+        "blackboard/b2-security",
       ],
     },
     // Ally
