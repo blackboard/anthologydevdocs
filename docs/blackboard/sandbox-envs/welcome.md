@@ -3,7 +3,7 @@ title: Blackboard LMS server
 id: welcome
 author: Sebastian Silva
 published: '2025-04-22'
-edited: '2026-01-19'
+edited: '2026-10-05'
 sidebar_position: 1
 ---
 
@@ -43,10 +43,10 @@ If, on the other hand, you don't have an account, click the "Accept" button and 
 
 :::info Current version of the VMDK file
 
-- **Name:** vmdk-4000-19-0-v1.vmdk
-- **Version:** Blackboard LMS 4000.19.0
-- **Publish date:** July 6th 2026
-- **Expiration Date:** November 13th 2026
+- **Name:** vmdk-4001-0-0-v1.vmdk
+- **Version:** Blackboard LMS 4001.0.0
+- **Publish date:** October 5th 2026
+- **Expiration Date:** December 4th 2026
 - **Which Cloud service provider:** We only support AWS. No plans to support any other Cloud Service Provider.
 - **What is the best size for the LMS?:** Please use t2.xlarge or bigger
   <BBButton downloadUrl="https://support.blackboard.com/s/blackboard-integration-ami"/>
