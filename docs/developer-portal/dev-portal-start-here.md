@@ -85,7 +85,7 @@ If you are encountering issues when you select **Create Account**, make sure you
 
 ![Developer portal sign up form](/assets/img/dev-portal-start-here-4.png)
 
-Once you have successfully created your account, you will receive an email that gives information about our Documentation, Community, Partnerships, GitHub, and about our Amazon Machine Images [AMIs](/docs/blackboard/sandbox-envs/welcome).
+Once you have successfully created your account, you will receive an email that gives information about our Documentation, Community, Partnerships, GitHub, and about our Amazon Machine Images (AMIs).
 
 Once you have created your account, you will be presented with a page that looks like this:
 

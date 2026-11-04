@@ -6,7 +6,7 @@ edited: ""
 author: Scott Hurrey
 ---
 
-In this section, we cover how you register your application with Blackboard and deploy it to a Learn instance. Registration and deployment are not covered in the specification provided by 1EdTech, and each LMS vendor handles it slightly differently.
+In this section, we cover how you register your application with Blackboard and deploy it to a Blackboard LMS instance. Registration and deployment are not covered in the specification provided by 1EdTech, and each LMS vendor handles it slightly differently.
 
 ## Blackboard Developer Portal
 
