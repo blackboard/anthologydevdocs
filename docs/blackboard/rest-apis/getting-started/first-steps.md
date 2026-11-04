@@ -100,16 +100,6 @@ _I want to programmatically..._ _You'll need to..._
 1. [Authenticate with Blackboard Collaborate](/rest-apis/collaborate/security-and-tokens) via REST API
 2. heck out our [Collaborate REST API reference](/rest-apis/collaborate/api) -->
 
-#### Get Development Instances of blackboard Applications
-
-blackboard makes available instances of blackboard applications that you can
-use to build projects that integrate with blackboard applications. Among
-others, we offer these popular developer instances.
-
-- [AWS instance of Learn](/docs/blackboard/sandbox-envs/welcome)  
-  While Blackboard does not charge for entry-level use, AWS may charge various
-  fees for their services.
-
 <!-- - [Developer access to Blackboard Collaborate](/rest-apis/collaborate/getting-started) -->
 
 <!-- For more information about developer versions of blackboard applications, see [Developer Versions of blackboard Applications](/rest-apis/learn/sandbox/what-is-dvba). -->
