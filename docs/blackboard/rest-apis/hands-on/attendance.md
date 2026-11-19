@@ -83,9 +83,9 @@ When you use the GUI, you can click on the "Overall" button and click then on th
 
 When you create a new column, it automatically takes in today's date as the column name. Then you will be able to mark the student's attendance status:
 
-``````json
+```json
 ["Present", "Absent", "Late", "Excused"]
-`
+```
 
 you can learn even more about attendance here: https://help.blackboard.com/Learn/Administrator/SaaS/Tools_Management/Attendance
 
@@ -95,7 +95,7 @@ Now, when creating one using REST API is quite simple use:
 
 And in the body:
 
-`````json
+```json
 {
   "courseId": "_912_1",
   "title": "Meeting title",
@@ -104,7 +104,7 @@ And in the body:
   "end": "2022-10-18T18:25:47.416Z",
   "externalLink": "This optional field can be an url"
 }
-``````
+```
 
 When the api is successful, it returns 200:
 
@@ -302,14 +302,14 @@ Body
 
 Returns when 200:
 
-````json
+```json
 {
   "id": 760,
   "meetingId": "465",
   "userId": "_15104_1",
   "status": "Excused"
 }
-`
+```
 
 ![A meeting in Ultra course view with an attendance record updated](../../../../static/assets/img/docs-site_attendance-11.png)
 
@@ -331,7 +331,7 @@ Even though the endpoint documentation marks user_id and meeting_id as mandatory
 {
   "status": "Excused"
 }
-````
+```
 
 This basically updates all students' attendance status to the same for **ALL OF THEM.**
 ![A meeting in Ultra course view all users with the same attendance status](../../../../static/assets/img/docs-site_attendance-13.png)

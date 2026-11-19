@@ -20,7 +20,7 @@ In case you were wondering, C.R.U.D means:
 
 > Please remember to always use https://developer.blackboard.com/portal/displayApi as your first source
 
-# Groups in Ultra Experience (C.R.U.D)
+## Groups in Ultra Experience (C.R.U.D)
 
 This is how the group manager looks like in ultra. The groups displayed here are group sets:
 
@@ -30,9 +30,9 @@ And this is how groups look on the GUI within the "New group set 2/18/222":
 
 ![How groups look withing a group set](/assets/img/rest-api-groups-2.png)
 
-## Group sets
+### Group sets
 
-### Creating Group sets
+#### Creating Group sets
 
 It is possible to create a new set sending:
 
@@ -42,7 +42,7 @@ And using body (You can use BBML, more about it [here](../advanced/bbml.md):
 
 Returns when 200:
 
-````json
+```json
 {
   "name": "GroupSetFromAPI",
   "externalId": "enim Duis ea non exercitation",
@@ -60,7 +60,7 @@ Returns when 200:
     }
   }
 }
-``
+```
 
 Returns when 201 - Created:
 
@@ -81,9 +81,9 @@ Returns when 201 - Created:
   "created": "2022-03-01T19:31:27.840Z",
   "modified": "2022-03-01T19:31:27.840Z"
 }
-``
+```
 
-## Reading group sets
+### Reading group sets
 
 You can read them by sending:
 
@@ -142,7 +142,7 @@ And, since we already have 3 sets it returns when 200:
     }
   ]
 }
-``
+```
 
 It is also possible to get all the groups, including sets using (check the parents to know which one is a set and which one is a child of that parent, if parentId is null, is because the group is a set.):
 
@@ -276,7 +276,7 @@ Returns when 200:
     }
   ]
 }
-``
+```
 
 In the GUI it looks like this:
 
@@ -306,7 +306,7 @@ And in the body:
     }
   }
 }
-``
+```
 
 Returns when 201:
 
@@ -328,7 +328,7 @@ Returns when 201:
   "created": "2022-03-02T20:34:46.308Z",
   "modified": "2022-03-02T20:34:46.500Z"
 }
-``
+```
 
 To get the group set children of a specific parent:
 
@@ -358,11 +358,11 @@ Returns when 200:
     }
   ]
 }
-``
+```
 
-## Update groups and group sets
+### Update groups and group sets
 
-### Group Sets
+#### Group Sets
 
 You can update the group set using:
 
@@ -388,7 +388,7 @@ And in the body:
     }
   }
 }
-``
+```
 
 Returns when 200
 
@@ -408,9 +408,9 @@ Returns when 200
   "created": "2022-03-01T19:31:27.840Z",
   "modified": "2022-03-02T21:24:14.198Z"
 }
-``
+```
 
-### Update Groups
+#### Update Groups
 
 You can update a group by using:
 
@@ -435,7 +435,7 @@ Body:
     }
   }
 }
-``
+```
 
 Returns when 200:
 
@@ -457,11 +457,11 @@ Returns when 200:
   "created": "2022-02-28T20:51:07.710Z",
   "modified": "2022-03-02T22:01:01.813Z"
 }
-``
+```
 
-## Deleting groups and group sets
+### Deleting groups and group sets
 
-### Deleting group sets
+#### Deleting group sets
 
 You can remove group sets by using:
 
@@ -469,11 +469,11 @@ You can remove group sets by using:
 
 Returns 204
 
-``
+```
 No content
-``
+```
 
-### Deleting groups
+#### Deleting groups
 
 You can remove groups by using:
 
@@ -481,15 +481,15 @@ You can remove groups by using:
 
 Returns 204
 
-``
+```
 No content
-``
+```
 
-## Group Memberships (C.R.U.D)
+### Group Memberships (C.R.U.D)
 
 Fortunately this is pretty simple to use, there is no post method, but there is PUT:
 
-### Creating Memberships
+#### Creating Memberships
 
 To Create a group membership you can use:
 
@@ -499,13 +499,13 @@ To Create a group membership you can use:
 
 Returns (it just returns the uer id) when 201:
 
-``
+```
 {
     "userId": "_43755_1"
 }
-``
+```
 
-### Reading Memberships
+#### Reading Memberships
 
 This endooint returns only the userId, is useful if you only need to know if the user is part of the group:
 
@@ -517,9 +517,9 @@ Returns when 200:
 {
   "userId": "_43755_1"
 }
-``
+```
 
-### Deleting Membership
+#### Deleting Membership
 
 You can Use:
 
@@ -527,17 +527,17 @@ You can Use:
 
 Returns
 
-``
+```
 204 No Content
-``
+```
 
-# Groups in Original Experience (C.R.U.D)
+## Groups in Original Experience (C.R.U.D)
 
 Groups in original experience work in a very similar way as in Ultra, You can also use Group sets in original experience, the endpoints should be the same and should work in the same way as well, the main difference would be in the way they are displayed.
 
 Now, you cannot create stand alone groups in Ultra, meaning, groups cannot be created if there is no group set created first, but in original, you can.
 
-### Creating Groups
+#### Creating Groups
 
 You can create a group using:
 
@@ -562,7 +562,7 @@ And the body:
     }
   }
 }
-``
+```
 
 Returns when 200:
 
@@ -584,7 +584,7 @@ Returns when 200:
   "created": "2022-03-03T15:32:04.410Z",
   "modified": "2022-03-03T15:32:04.487Z"
 }
-``
+```
 
 Reading Groups
 
@@ -616,7 +616,7 @@ Returns when 200:
     }
   ]
 }
-``
+```
 
 Or get data about only one group:
 
@@ -642,11 +642,11 @@ Returns when 200:
   "created": "2022-03-03T15:32:04.410Z",
   "modified": "2022-03-03T15:32:04.487Z"
 }
-``
+```
 
 This is basically the same but more specific and one less level.
 
-### Updating Groups
+#### Updating Groups
 
 To update a group, you can use:
 
@@ -671,7 +671,7 @@ And on the body:
     }
   }
 }
-``
+```
 
 Returns when 200:
 
@@ -693,9 +693,9 @@ Returns when 200:
   "created": "2022-03-03T15:32:04.410Z",
   "modified": "2022-03-03T16:59:25.107Z"
 }
-``
+```
 
-### Delete groups
+#### Delete groups
 
 You can delete groups using:
 
@@ -703,7 +703,6 @@ You can delete groups using:
 
 It returns 204:
 
-``
+```
 No content
-``
-````
+```
