@@ -1,5 +1,6 @@
 ---
-title: '3LO'
+title: 'Three-Legged OAuth'
+sidebar_label: '3LO'
 id: 3lo
 categories: Learn REST
 sidebar_position: 8
@@ -7,8 +8,6 @@ author: Scott Hurrey
 published: ''
 edited: ''
 ---
-
-# Three-Legged OAuth
 
 One of the drawbacks associated with [Basic Authentication](basic-authentication.md) is that the application requires broad access, as the tool
 is acting as a system-level user and enacting for the user. Three-legged OAuth

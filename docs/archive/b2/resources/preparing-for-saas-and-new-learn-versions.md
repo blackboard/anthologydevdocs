@@ -9,8 +9,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# Preparing Your Building Blocks For Learn SaaS and Newer Learn Versions
-
 Blackboard Building Blocks have long been a staple in the Blackboard LMS
 platform. These Java Web Apps allow you to customize the workflow and
 experience that you and your faculty use to interact with the system.

@@ -9,8 +9,6 @@ published: ""
 edited: ""
 ---
 
-# REST Tutorials
-
 You will find these tutorials very helpful as you start development.
 
 ### The Python and the Postman - DevCon 2020

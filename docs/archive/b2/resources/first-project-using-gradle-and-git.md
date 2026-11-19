@@ -9,8 +9,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# First Project: Gradle, Git and b2-starter-template
-
 After setting up the development workstation as described in the Development
 Workstation topic you may now build your first project based on the Blackboard
 basic-b2-template and gradle build environment.

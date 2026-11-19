@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'B2-FAQs'
+title: 'FAQs'
+sidebar_label: 'B2-FAQs'
 categories: Learn b2
 id: archive-b2-gs-faqs
 author: Scott Hurrey
@@ -9,8 +10,6 @@ displayed_sidebar: documentationSidebar
 ---
 
 :warning: This document is deprecated!
-
-# FAQs
 
 ## Account questions
 

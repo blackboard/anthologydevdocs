@@ -1,5 +1,6 @@
 ---
-title: "Migrate from LTI 1.1 to LTI 1.3"
+title: 'Migrating from LTI 1.1 to LTI 1.3'
+sidebar_label: 'Migrate from LTI 1.1 to LTI 1.3'
 sidebar_position: 3
 id: migrate-lti
 published: "2026-07-11"
@@ -7,8 +8,6 @@ edited: "2026-07-11"
 ---
 
 import ReactPlayer from 'react-player'
-
-# Migrating from LTI 1.1 to LTI 1.3
 
 ## Overview
 
