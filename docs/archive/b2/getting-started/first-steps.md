@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "First Steps with learn B2s"
+title: 'First Steps Using Building Blocks'
+sidebar_label: 'First Steps with learn B2s'
 categories: Learn b2
 id: archive-b2-gs-first_steps
 author: Scott Hurrey
@@ -9,8 +10,6 @@ displayed_sidebar: documentationSidebar
 ---
 
 :warning: This document is deprecated!
-
-# First Steps Using Building Blocks
 
 > NOTE: For new development, Blackboard recommends building REST and LTI integrations and NOT Building Blocks(B2s). B2s do not work within the Ultra Course UI; REST and LTI works for all Learn deployment and UI options. Use the Developer AMI listed under DVBA for your Blackboard LMS server.
 

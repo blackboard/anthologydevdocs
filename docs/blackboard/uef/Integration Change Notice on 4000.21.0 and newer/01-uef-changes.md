@@ -1,11 +1,10 @@
 ---
-title: "Navigation, Route, and URL Changes"
+title: 'Navigation, Route, and URL Changes Affecting UEF and LTI Integrations'
+sidebar_label: 'Navigation, Route, and URL Changes'
 id: uef-changes-new-version
 sidebar_position: 1
 edited: "2026-09-01"
 ---
-
-# Navigation, Route, and URL Changes Affecting UEF and LTI Integrations
 
 Following changes to Blackboard LMS' system navigation, work deployed on the releases currently available in Test servers converted a number of course-level peek panels into full pages. This has changed internal route/state names, some URL paths, and some query parameters. In this document we will go over the changes that will be introduced and how to adjust your integration code.
 

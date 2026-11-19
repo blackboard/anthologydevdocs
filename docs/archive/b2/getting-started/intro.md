@@ -10,8 +10,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# Introduction to Building Blocks
-
 > NOTE: For new development, Blackboard recommends building REST and LTI integrations and NOT Building Blocks(B2s). B2s do not work within the Ultra Course UI; REST and LTI works for all Learn deployment and UI options. Use the Developer AMI listed under DVBA for your Blackboard LMS server.
 
 Blackboard Building Blocks, one of several components of Blackboard LMS's open

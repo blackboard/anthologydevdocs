@@ -10,8 +10,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# B2s and Java Permissions
-
 Building Blocks are capable of fulfilling predominantly, but not exclusively
 two scenarios:
 

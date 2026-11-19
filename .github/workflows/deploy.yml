@@ -13,6 +13,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          # The doc-dates plugin reads the full commit history to work out
+          # when each page was published and last revised. The default depth-1
+          # clone has no history, and on CI the plugin treats that as an error
+          # rather than publishing a site that claims every page is new.
+          # Do not add `filter: blob:none`: the plugin reads ~1,300 historical
+          # versions of the markdown, and on a partial clone each one becomes
+          # a separate request to GitHub.
+          fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
           node-version: 24.x

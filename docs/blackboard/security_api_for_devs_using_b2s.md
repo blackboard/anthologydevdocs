@@ -1,13 +1,12 @@
 ---
-title: Security API for B2 devs
+title: 'Security API for Extended-Support B2 developers'
+sidebar_label: 'Security API for B2 devs'
 id: b2-security
 sidebar_position: 9
 author: Dan Magers
 published: '2026-09-24'
 edited: '2026-09-24'
 ---
-# Security API for Extended-Support B2 developers
-
 :::danger
 Blackboard no longer supports Building Blocks (B2s), this documentation is directed to those B2s that have been classified as extended-support. If you are planning on creating a new integration, make sure to use LTI 1.3, REST APIs, UEF or Caliper. 
 :::

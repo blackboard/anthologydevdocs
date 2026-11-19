@@ -149,6 +149,7 @@ const config = {
       },
     }),
   plugins: [
+    require.resolve("./plugins/doc-dates"),
     [
       require.resolve("docusaurus-lunr-search"),
       {

@@ -10,8 +10,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# Development Life Cycle
-
 There are many things to consider when developing a Blackboard Building Block.
 Here we describe the issues involved and provide an overview of the
 development process. This is meant to serve as a general guide of how most

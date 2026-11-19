@@ -1,0 +1,12 @@
+# Commits whose net effect on page content is nothing.
+#
+# stamp-doc-dates.mjs decides what counts as an edit by comparing page bodies
+# with the front matter stripped, so metadata rewrites and moves are already
+# discounted and do not belong here. This file is only for the case that rule
+# cannot see: a change and its revert, where every version differs from the one
+# before it but the content ends up where it started.
+#
+# There is no such commit in this repository today. The file is here so that
+# when one lands, the fix is one line rather than a change to the script.
+#
+# One SHA per line. Comments and blank lines are ignored.

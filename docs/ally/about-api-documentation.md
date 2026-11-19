@@ -1,13 +1,12 @@
 ---
-title: "About the API Documentation"
+title: 'How to use the Ally as a Service API Document to Test API'
+sidebar_label: 'About the API Documentation'
 id: about-api-doc
 categories: Ally
 published: ""
 edited: ""
 author: Scott Hurrey
 ---
-
-# How to use the Ally as a Service API Document to Test API
 
 The API documentation for Ally as a Service allows a developer to test the API real-time inline on the page. It is a quick and easy way to not only get high-level information about the API itself, but also see how it works. You can upload a file, check the status of processing, and retrieve the report when finished. Doing so and then testing your application with the same file is a quick, easy, and powerful way to validate your work.
 

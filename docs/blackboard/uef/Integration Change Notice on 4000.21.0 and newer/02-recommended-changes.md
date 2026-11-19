@@ -5,8 +5,6 @@ sidebar_position: 2
 edited: "2026-09-01"
 ---
 
-# Recommended integration practices
-
 Following these recommendations means future navigation changes should not break your integration.
 
 ## Matching routeName safely

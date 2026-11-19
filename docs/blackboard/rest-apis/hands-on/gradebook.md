@@ -1,13 +1,12 @@
 ---
-title: "Pulling Gradebook Data and Assessment Grades"
+title: 'Using Learn Public REST APIs to Pull Gradebook Data and Assessment Grades'
+sidebar_label: 'Pulling Gradebook Data and Assessment Grades'
 id: pulling-gradebook-data-and-assessment-grades
 categories: Learn Rest
 published: "2023-09-11"
 edited: "2023-10-13"
 author: Mark O'Neil
 ---
-
-# Using Learn Public REST APIs to Pull Gradebook Data and Assessment Grades
 
 > Notes:
 >
@@ -21,7 +20,7 @@ This document covers General API Use and Best Practices to meet use cases for us
 
 In both cases it is strongly recommended to follow the Best Practices outlined below.
 
-# General API Use
+## General API Use
 
 Details follow below but in general, the workflow for accessing and processing course grades consists of:
 
@@ -37,11 +36,11 @@ Details follow below but in general, the workflow for accessing and processing c
 
 The below sections further elaborate on each of the above steps.
 
-## 1. Get Target Courses
+### 1. Get Target Courses
 
 `GET /learn/api/public/v3/courses`
 
-### Example
+#### Example
 
 `GET /learn/api/public/v3/courses?availability.available=Yes&fields=”id, created, availability.available, hasChildren”` will return all ‘active courses’ and the results will have only the `id`, `created date`, `availability.available` (which will always be yes in this case due to the availability search), and whether the course `hasChildren`.
 
@@ -60,12 +59,12 @@ In all cases the `hasChildren` element may be significant for correctly aligning
 
 NOTE: Cache this data because in the queries below you will iterate over the results from your courses request and use each course item’s id in place of `{courseId}` (with one exception which will be called out).
 
-## 2. Get Target Course Memberships
+### 2. Get Target Course Memberships
 
 `GET /learn/api/public/v1/courses/{courseId}/users 
 `
 
-### Example
+#### Example
 
 To optimize the number of requests used we will pull the course memberships along with a limited user data set using the `expand` and `fields` parameters:
 
@@ -75,7 +74,7 @@ We use `fields` here because we want some specific information from our membersh
 
 NOTE: Cache this data because it will be used in processing the retrieved grades.
 
-## 3. Get Gradebook Columns
+### 3. Get Gradebook Columns
 
 `GET /learn/api/public/v2/courses/{courseId}/gradebook/columns `
 
@@ -121,7 +120,7 @@ E.g. using the above request:
 
 You may further reduce whether a column should be included in the target set based on its availability, due date, or whether there are any lastChanged results (see Best Practices).
 
-## 4. (optional) Get Course Gradebook Categories
+### 4. (optional) Get Course Gradebook Categories
 
 To work with gradebook categories, you must get the list of categories used in the course and then map the gradebookCategoryId on gradebook column results back to that list as shown below.
 
@@ -169,7 +168,7 @@ Finally, for the category details, you must map `gradebookCategoryId` back to an
 
 Now you know to which gradebook category a column is associated and may add this detail to your integration logic.
 
-## 5. Get Column (Assessment) Grades
+### 5. Get Column (Assessment) Grades
 
 PLEASE: Read the Best Practices section below, noting specifically identifying whether a column requires posting of grades or not.
 
@@ -213,13 +212,13 @@ Note: By default, membership results _do not include disabled memberships_. If t
 
 Once you have acquired the grades for the column your application may then, based on the results, take appropriate action.
 
-### Parent/Child Courses and Grades
+#### Parent/Child Courses and Grades
 
 Details on Parent Child course relationships and how they work may be found here: [Merge and Separate Courses](https://help.blackboard.com/Learn/Administrator/SaaS/Courses/Manage_Courses/Merge_and_Separate_Courses)
 
 All grades are presented at the parent course view but are collected on the child course in which the student is enrolled, thus when pulling grades if the course has childred, you likely (based on your use case) must disambiguate the grade from the Parent `courseId` to the Child `courseId` when processing to store it against the correct child course identifier. _Failure to do so may push the grade to the wrong course in your records system._
 
-## 6. Process Grades
+### 6. Process Grades
 
 Process grade information considering whether the user is a child course member.
 
@@ -246,7 +245,7 @@ If membership has `childCourseId` then that user is a member of a child course, 
 
 You now may handle the remaining processing workflow for this user’s assignment grade.
 
-## Calculating API Use
+### Calculating API Use
 
 Using the above we can calculate API usage. Let’s keep the math simple by assuming we have
 10 courses, 10 columns per course, 10 students per course and every time we check there are grades to pull for every column\*:
@@ -261,9 +260,9 @@ Total Requests = 1+(nCourses*3)+(nColumns) or 1=(10*3)+(100) for a total of 231 
 
 \*This would be the largest requests needed, but pulling all the grades all the time is rarely the case – as in many cases columns may not have any grades posted, it may be past due and grades already collected, or it may not have been released or graded at all. In each of these cases the number of requests has dropped. Always try to logically bound your requests – don’t make requests “just because you can”.
 
-## Gradebook API Best Practices
+### Gradebook API Best Practices
 
-### General Best Practices
+#### General Best Practices
 
 1. Limit the number of courses in your list of target courses via our search parameters.  
    E.g.: `?created=2023-09-07T21:17:40.626Z&createdCompare=greaterOrEqual` or  
@@ -278,7 +277,7 @@ Total Requests = 1+(nCourses*3)+(nColumns) or 1=(10*3)+(100) for a total of 231 
 - don’t pull data on columns that are well past the due or graded window, as it is unlikely those grades will have changed.
 - don’t pull data on columns that are not yet due – pull data only on columns that are within a due/gradable window based on your understanding of your use case.
 
-### Use changeIndex and lastChanged as Grade change indicators
+#### Use changeIndex and lastChanged as Grade change indicators
 
 The `changeIndex` element for user grades is contained in the result set from:
 
@@ -305,7 +304,7 @@ Supplies the highest index indicator of whether the grades in a column have chan
 
 If you cache your first `changeIndex` value when requesting column grades, then on future grading cycles, you call `lastChanged` and only pull grades if your cached value is less than the most recent `lastChanged` value you will find you save a substantial number of requests and also reduce system load.
 
-### Example
+#### Example
 
 When a course grade book column is created it will have no change index – calling the lastChanged endpoint on that new column will return an empty result.
 

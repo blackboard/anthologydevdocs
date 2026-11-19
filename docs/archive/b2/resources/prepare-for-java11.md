@@ -9,8 +9,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# 8 Steps to prepare for Java 11
-
 (Updated March 2020 to remove SaaS release references since that is in the past. Updated 23 January 2020: clarification of Building Block updates at time of Learn upgrade; timeline and availability updates.)
 
 Throughout 2019 we communicated that we planned to update your Blackboard LMS environment to Java 11. This important update can impact custom and third-party add-on tools leveraging the Building Blocks (B2) integration framework. This update was deployed into SaaS production environments in February 2020. For Self- and Managed Hosting clients, 9.1 Q4 2019 which includes Java 11 support was released December 2019.
