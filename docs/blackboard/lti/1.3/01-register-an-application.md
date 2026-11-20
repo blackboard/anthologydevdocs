@@ -47,7 +47,7 @@ The LTI spec supports the notion of custom parameters with a launch. These are a
 Once you have registered your application with the Blackboard Developer Portal, you will receive [almost] all the information you need to configuration your application to receive LTI 1.3 launches from a Learn instance.
 
 1. Application ID - this is the same as the Client ID in the OIDC spec. Because we already had the concept of registering an application for using our public REST API, and we use the same UI to register for both, we call it Application ID in some places, and Client ID in others. We apologize in advance for the confusion this causes.
-2. Issuer - is always `https://blackboard.com` because Blackboard is issuing the credentials
+2. Issuer - the identifier Learn sends as the `iss` claim in every LTI message from this registration, and as the `iss` parameter on the OIDC login initiation request. New registrations receive `https://developer.blackboard.com`. Registrations created before Blackboard began storing the issuer per registration received `https://blackboard.com` and keep that value. Use the issuer shown for your application rather than a fixed value — it belongs to the registration, like the Application ID.
 3. Public keyset URL - Blackboard's public JWKS URL so you can validate the signature of messages a Learn instance sends you
 4. Auth token endpoint - the endpoint you use to get an OAuth 2 Bearer Token if you wish to make service calls, such as Assignment & Grades, or Names & Roles back to Learn
 5. OIDC auth request endpoint - the endpoint you respond to after you receive an OIDC login initiation request from Learn.

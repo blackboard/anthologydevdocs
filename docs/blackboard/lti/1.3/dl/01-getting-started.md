@@ -28,6 +28,10 @@ This launch follows, as mentioned, the Core LTI 1.3 launch that is covered in th
 
 Below is a sample of a Deep Linking request sent from Blackboard LMS:
 
+:::note Issuer
+The `iss` value below comes from a registration created before Blackboard began storing the issuer per registration. Your registration may have a different issuer, so do not hardcode this value. For more information about the issuer, please review our [LTI documentation](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-receive).
+:::
+
 <details>
 <summary>Deep linking request sample</summary>
 

@@ -78,7 +78,7 @@ When you register a LTI application, you will see seven values that the develope
 1. Application Key
 2. Secret
 3. Application ID
-4. Issuer
+4. Issuer - for more information about the issuer, please review our [LTI documentation](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-receive).
 5. Public Keyset URL
 6. Auth token endpoint
 7. OIDC auth request endpoint

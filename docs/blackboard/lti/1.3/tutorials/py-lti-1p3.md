@@ -70,7 +70,7 @@ There are four files we need to modify in our tool in order to run it. In the re
 In `game.json`, you will already see a section for Blackboard. It will look like this:
 
 ```json
-"https://blackboard.com": {
+"<your issuer>": {
     "client_id": "your client id",
     "auth_login_url": "https://developer.blackboard.com/api/v1/gateway/oidcauth",
     "auth_token_url": "https://developer.blackboard.com/api/v1/gateway/oauth2/jwttoken",
@@ -81,7 +81,7 @@ In `game.json`, you will already see a section for Blackboard. It will look like
 }
 ```
 
-The Blackboard URL is the _Issuer_ sent in the LTI launch JWT. This is always the value in Learn. The value for `client_id` should be set to your client ID (application ID from the Developer Portal).
+The top-level key is the _Issuer_ sent in the LTI launch JWT. Replace `<your issuer>` with the issuer shown for your application in the Developer Portal. For more information about the issuer, please review our [LTI documentation](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-receive). The value for `client_id` should be set to your client ID (application ID from the Developer Portal).
 The `auth_login_url` and `auth_token_url` settings are always the same, and do not need to be changed. The `key_set_url` is always the same, as well,
 though it contains your client ID, so you will need to replace `<your client id>` with, you guessed it, your client ID. The _deployment ID_ that you received when you registered your tool in learn
 goes in the `deployment_ids` setting. Save this file.
