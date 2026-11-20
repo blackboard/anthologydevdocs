@@ -15,7 +15,7 @@ To properly create an item, the body of the JWT token should have the following 
 | Property name                                                  | Description                                                | Value                                                                                                                            | Required by Learn |
 | -------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
 | `iss`                                                          | Issuer of the JWT token                                    | Your Application ID                                                                                                              | Yes               |
-| `aud`                                                          | Target server or service where the JWT must have been sent | `https://blackboard.com`                                                                                                         | Yes               |
+| `aud` | Target server or service where the JWT must have been sent | The `iss` value of the Deep Linking launch request that sent you here, which is the issuer of that registration. For more information about the issuer, please review our [LTI documentation](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-receive). | Yes |
 | `sub`                                                          | ID of the user that is performing the changes or           | Your Application ID                                                                                                              | Yes               |
 | `iat`                                                          | Date and time when the token was created                   | Numeric date time in Unix time                                                                                                   | Yes               |
 | `exp`                                                          | Date and time when the token will expire                   | Numeric date time in Unix time                                                                                                   | Yes               |
@@ -38,7 +38,7 @@ Once the object is built, you can use your preferred library to create and sign 
 ```json
 {
   "iss": "baaf7da8-f99a-42ca-a72f-292cfd0eb27d",
-  "aud": "https://blackboard.com",
+  "aud": "<the iss value of the Deep Linking launch request>",
   "sub": "baaf7da8-f99a-42ca-a72f-292cfd0eb27d",
   "iat": 1727287883,
   "exp": 1727288183,

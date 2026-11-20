@@ -47,10 +47,16 @@ The LTI spec supports the notion of custom parameters with a launch. These are a
 Once you have registered your application with the Blackboard Developer Portal, you will receive [almost] all the information you need to configuration your application to receive LTI 1.3 launches from a Learn instance.
 
 1. Application ID - this is the same as the Client ID in the OIDC spec. Because we already had the concept of registering an application for using our public REST API, and we use the same UI to register for both, we call it Application ID in some places, and Client ID in others. We apologize in advance for the confusion this causes.
-2. Issuer - is always `https://blackboard.com` because Blackboard is issuing the credentials
+2. Issuer - the identifier Learn sends as the `iss` claim in every LTI message from this registration, and as the `iss` parameter on the OIDC login initiation request. New registrations receive `https://developer.blackboard.com`. Registrations created before Blackboard began storing the issuer per registration received `https://blackboard.com` and keep that value. Use the issuer shown for your application rather than a fixed value — it belongs to the registration, like the Application ID.
 3. Public keyset URL - Blackboard's public JWKS URL so you can validate the signature of messages a Learn instance sends you
 4. Auth token endpoint - the endpoint you use to get an OAuth 2 Bearer Token if you wish to make service calls, such as Assignment & Grades, or Names & Roles back to Learn
 5. OIDC auth request endpoint - the endpoint you respond to after you receive an OIDC login initiation request from Learn.
+
+:::info More than one registration or environment
+Treat the issuer as part of the registration, not a constant. Select your registration on the `iss` and `client_id` pair from the login initiation request, and validate against the issuer stored for that registration. A tool that validates against one hardcoded issuer will reject launches from registrations created under a different value. The issuer is also the value your Deep Linking response must carry as `aud`.
+
+A Learn instance is tied to a single Developer Portal, so a production Learn instance only ever sends an issuer assigned by the production portal: `https://developer.blackboard.com`, or `https://blackboard.com` for a registration created before the change. If you have been given a non-production Learn environment for testing, it may be tied to a different Developer Portal and will send that portal's issuer instead. Your Learn administrator can confirm which: on the **Register LTI 1.3/Advantage Tool** screen, a non-production instance displays its Developer Portal URL, and a production instance displays nothing.
+:::
 
 :::info
 You will also receive an application key and secret. These are your credentials for using our public REST API. Be sure to save these off as you won't be able to get back at them later. We do not store the secret on our side.
