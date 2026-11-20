@@ -52,6 +52,12 @@ Once you have registered your application with the Blackboard Developer Portal, 
 4. Auth token endpoint - the endpoint you use to get an OAuth 2 Bearer Token if you wish to make service calls, such as Assignment & Grades, or Names & Roles back to Learn
 5. OIDC auth request endpoint - the endpoint you respond to after you receive an OIDC login initiation request from Learn.
 
+:::info More than one registration or environment
+Treat the issuer as part of the registration, not a constant. Select your registration on the `iss` and `client_id` pair from the login initiation request, and validate against the issuer stored for that registration. A tool that validates against one hardcoded issuer will reject launches from registrations created under a different value. The issuer is also the value your Deep Linking response must carry as `aud`.
+
+A Learn instance is tied to a single Developer Portal, so a production Learn instance only ever sends an issuer assigned by the production portal: `https://developer.blackboard.com`, or `https://blackboard.com` for a registration created before the change. If you have been given a non-production Learn environment for testing, it may be tied to a different Developer Portal and will send that portal's issuer instead. Your Learn administrator can confirm which: on the **Register LTI 1.3/Advantage Tool** screen, a non-production instance displays its Developer Portal URL, and a production instance displays nothing.
+:::
+
 :::info
 You will also receive an application key and secret. These are your credentials for using our public REST API. Be sure to save these off as you won't be able to get back at them later. We do not store the secret on our side.
 :::
