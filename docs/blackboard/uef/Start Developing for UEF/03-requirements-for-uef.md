@@ -1,8 +1,8 @@
 ---
-title: 'Before you start developing for UEF'
+title: "Before you start developing for UEF"
 id: uef-requirements
 sidebar_position: 3
-edited: '2024-10-11'
+edited: "2024-10-11"
 ---
 
 Before you can start working and developing for UEF, you will need to make sure a few things are in order.
@@ -19,7 +19,7 @@ In the ticket, include the email used to register the application in the Develop
 
 ## Register a new application or use an existing one
 
-To use our framework, you need to create or use an existing application, created through the Developer Portal, including all the information for an LTI 1.3 application. If you need information about the registration process, you can follow our document [Registering and Managing a REST or LTI Application](../../developer-portal/creating-rest-or-lti-application.md)
+To use our framework, you need to create or use an existing application, created through the Developer Portal, including all the information for an LTI 1.3 application. If you need information about the registration process, you can follow our document [Registering and Managing a REST or LTI Application](../../../developer-portal/creating-rest-or-lti-application.md)
 
 ## UEF placement
 

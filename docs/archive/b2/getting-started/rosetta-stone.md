@@ -1,6 +1,7 @@
 ---
 layout: post
-title: 'Rosetta Stone'
+title: 'Learn release names, Versions & Build numbers'
+sidebar_label: 'Rosetta Stone'
 categories: Learn
 id: archive-b2-gs-rosetta_stone
 authors: Mark Kauffman
@@ -9,8 +10,6 @@ displayed_sidebar: documentationSidebar
 ---
 
 :warning: This document is deprecated!
-
-# Learn release names, Versions & Build numbers
 
 ### Overview
 

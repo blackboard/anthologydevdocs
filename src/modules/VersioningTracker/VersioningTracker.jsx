@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDoc } from '@docusaurus/plugin-content-docs/client';
+import { usePluginData } from '@docusaurus/useGlobalData';
 import styles from './VersioningTracker.module.css';
 
 const createPublishedDate = (published) => {
@@ -20,19 +22,23 @@ const createEditedDate = (edited) => {
 };
 
 const VersioningTracker = (props) => {
+  // The doc-dates plugin derives both dates from git at build time. Front
+  // matter still wins where an author set a date deliberately; an empty
+  // string is not a date, which is why this is `||` and not `??`.
+  const { metadata } = useDoc();
+  const fromGit = usePluginData('doc-dates')?.[metadata.source] ?? {};
+  const published = props.frontMatter.published || fromGit.published;
+  const edited = props.frontMatter.edited || fromGit.edited;
+
   return (
     <div className={styles.tracker_container}>
       <p className={styles.date}>
         Published:&nbsp;
-        {props.frontMatter.published
-          ? createPublishedDate(props.frontMatter.published)
-          : 'Not Available'}
+        {published ? createPublishedDate(published) : 'Not Available'}
       </p>
       <p className={styles.date}>
         Last Update:{' '}
-        {props.frontMatter.edited
-          ? createEditedDate(props.frontMatter.edited)
-          : 'Not Available'}
+        {edited ? createEditedDate(edited) : 'Not Available'}
       </p>
       <p>&nbsp;</p>
     </div>

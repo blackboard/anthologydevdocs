@@ -9,7 +9,7 @@ author: Scott Hurrey
 
 ### Overview
 
-This document documents gives updates on Names and Roles as new features become available. For the definitive specifications, always refer to the published IMS documenation.
+This document documents gives updates on Names and Roles as new features become available. For the definitive specifications, always refer to the published IMS documentation.
 
 ### Student Preview User Now Indicated By TestUser Role via Names and Roles Service
 

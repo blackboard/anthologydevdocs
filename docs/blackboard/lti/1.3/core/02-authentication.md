@@ -19,7 +19,7 @@ When a user clicks on an LTI link within Learn, the Learn server receives a GET 
 
 The data sent by Learn to the OIDC login endpoint of your tool as query parameters is the following:
 
-- issuer
+- issuer - the identifier of the registration this launch belongs to. For more information about the issuer, please review our [LTI documentation](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-receive).
 - login_hint - an opaque value for the tool that must be returned **unaltered** on the following redirect
 - target_link_uri - the URI configured by the tool for this LTI link
 - lti_message_hint - an opaque value for the tool that must be returned **unaltered** on the following redirect

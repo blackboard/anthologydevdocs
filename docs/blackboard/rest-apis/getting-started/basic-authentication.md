@@ -93,7 +93,7 @@ you made.
 
 ### Example: Using cURL to Get a Token and Make a REST Call
 
-The easist way to test is using cURL. We will assume you have already
+The easiest way to test is using cURL. We will assume you have already
 registered through the [Developer Portal](/rest-apis/learn/Getting Started/registry) and
 retrieved your application ID, key, and secret, as well as [added your application ID](/rest-apis/learn/Getting Started/registry) to
 the Learn server you wish to integrate with:

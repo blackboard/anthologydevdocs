@@ -63,7 +63,7 @@ The authorization model for the odata endpoint is to either grant permission to 
 
 ![AccountBalances](/assets/img/AccountBalances3.png)
 
-All of the odata query model operations are named as follows: domain + entity name (singluar) + query. So to authorize the permission to retrieve data from the BillingCodeTransaction entity, the StudentAccounts.BillingTransactionCode.Query operation would need to be added for the user.
+All of the odata query model operations are named as follows: domain + entity name (singular) + query. So to authorize the permission to retrieve data from the BillingCodeTransaction entity, the StudentAccounts.BillingTransactionCode.Query operation would need to be added for the user.
 
 ![AccountBalances](/assets/img/AccountBalances4.png)
 

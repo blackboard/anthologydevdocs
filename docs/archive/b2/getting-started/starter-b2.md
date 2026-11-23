@@ -10,8 +10,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# Starter Building Block Readme
-
 This is the readme for the Starting Building Block. The Starter Building block
 is available in the [Blackboard maven repository](https://bbprepo.blackboard.com/content/repositories/public/blackboard/bbdn/starting-block).
 

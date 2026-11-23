@@ -483,9 +483,3 @@ Returns
 ```json
 204 - No content
 ```
-
-## Some notes on Original
-
-The main difference about managing content in original is that you will always find two specific items created by default on toc:
-Information and content, those become the parents of content and you may create children content under those, you may create new parents and those should be reflected under the TOC, however those items cannot display information but contain it:
-![Creating content with the api](/assets/img/manage-content-8.png)

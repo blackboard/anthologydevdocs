@@ -29,6 +29,11 @@ const Footer = () => {
                     Global Support Portal
                   </a>
                 </li>
+                <li>
+                  <a href = '/docs/community/contact-us#security-vulnerability-disclosures'>
+                    Security &amp; Vulnerability Disclosures
+                  </a>
+                </li>
               </ul>
             </div>
             <div>

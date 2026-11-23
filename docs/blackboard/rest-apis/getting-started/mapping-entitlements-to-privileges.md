@@ -37,11 +37,11 @@ Well look no further because we will explain to you how to match them!
 
 1. You need to know how to create a _custom_ System Role: [How to create a System role](https://help.blackboard.com/Learn/Administrator/SaaS/User_Management/Roles_and_Privileges/System_Roles)
 2. You need to know which api endpoints you will be using: [Learn API endpoints](https://developer.blackboard.com/portal/displayApi)
-3. You need to review, based on the endpoints you will be using, the entilements that you need. Remember that each entitlement is described when opening an endpoint at the beggining.
+3. You need to review, based on the endpoints you will be using, the entilements that you need. Remember that each entitlement is described when opening an endpoint at the beginning.
 
 ## Context
 
-When you want to develop an application, you will need to enable permissions for it. Doing so within learn can be challening because we talk in different terms when creating system roles and assigning privileges, we explain about them up in this page, make sure to read that first.
+When you want to develop an application, you will need to enable permissions for it. Doing so within learn can be challenging because we talk in different terms when creating system roles and assigning privileges, we explain about them up in this page, make sure to read that first.
 
 Given that you already have the things that you need [Custom system role, the endpoints and entitlements].
 

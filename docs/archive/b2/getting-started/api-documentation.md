@@ -10,8 +10,6 @@ displayed_sidebar: documentationSidebar
 
 :warning: This document is deprecated!
 
-# B2 API Documentation
-
 As of 3700.9.0, we will be uploading these files as part of the build process
 with each release of Learn SaaS to test, to facilitate better
 readiness for SaaS releases to go to production. In order to accomplish this,

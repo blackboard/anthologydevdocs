@@ -12,6 +12,10 @@ The following is a sample of the expected JWT contents received from the form PO
 Please keep in mind that this information can change. Always review the Core LTI 1.3 specification linked above for the latest details about the included information
 :::
 
+:::note Issuer
+The `iss` value below comes from a registration created before Blackboard began storing the issuer per registration. Your registration may have a different issuer, so do not hardcode this value. For more information about the issuer, please review our [LTI documentation](/docs/blackboard/lti/1.3/01-register-an-application.md#information-you-receive).
+:::
+
 ```json
 {
   "kid": "53c4573a-1ac8-4484-b036-a7b22b557e8c",

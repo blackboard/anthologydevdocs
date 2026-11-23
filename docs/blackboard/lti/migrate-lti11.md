@@ -1,5 +1,6 @@
 ---
-title: "Migrate from LTI 1.1 to LTI 1.3"
+title: 'Migrating from LTI 1.1 to LTI 1.3'
+sidebar_label: 'Migrate from LTI 1.1 to LTI 1.3'
 sidebar_position: 3
 id: migrate-lti
 published: "2026-07-11"
@@ -7,8 +8,6 @@ edited: "2026-07-11"
 ---
 
 import ReactPlayer from 'react-player'
-
-# Migrating from LTI 1.1 to LTI 1.3
 
 ## Overview
 
@@ -160,7 +159,7 @@ from that tool will be broken and can't be recovered. Manual re-creation of the 
 - Migrate during a low-usage window, not mid-semester or during an active grading period.
 - Rehearse the migration on a test/staging Blackboard instance first if one is available.
 - Confirm readiness before they click through the final confirmation or test on a Stage/Test environment
-  before commiting to the migration. **Rollbacks are not possible when migrating**, if the migration was not
+  before committing to the migration. **Rollbacks are not possible when migrating**, if the migration was not
   properly completed, the associated links will break and will have to be manually re-created.
 
 ### Known caveats to flag proactively

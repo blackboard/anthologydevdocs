@@ -1,15 +1,18 @@
 ---
-title: 'Working with Calendar APIs'
+title: "Working with Calendar APIs"
 id: calendar-apis
 categories: Learn REST Working-with APIs Calendar
-published: '2022-10-03'
-edited: '2023-10-20'
+published: "2022-10-03"
+edited: "2023-10-20"
 author: Davey Herrera, Mark O'Neil
 ---
 
-> Tested with Blackboard LMS version 3900.48.0
->
+:::info
+Tested with Blackboard LMS version 3900.48.0
+
 > Note: non-3LO capabilities available in Blackboard LMS version 3900.78.0
+
+:::
 
 ## Topic
 
@@ -51,7 +54,7 @@ Please keep in mind that:
 - The course calendar must be enabled for the course GradebookColumn associate with OfficeHours.
 - If OfficeHours are created for a course calendar (calendarId == a course_id).
 - The course calendar must be enabled for course calendar items associated with GradebookColumn.
-- CalendarItems of type GradebookColumn are a representation of a specific gradable item and there read-only. Modifications to GradebookColumn items performed via the GradebokColumn endpoints will be reflected in the CalentarItems endoints.
+- CalendarItems of type GradebookColumn are a representation of a specific gradable item and there read-only. Modifications to GradebookColumn items performed via the GradebokColumn endpoints will be reflected in the CalentarItems endpoints.
 - If you want to use the `columnIds` from Gradebook Column as a calendar Item id, you can get those from `/learn/api/public/v2/courses/{courseId}/gradebook/columns/{columnId}`
 - _You cannot read/create calendar items when there is no calendar._
 
@@ -622,11 +625,11 @@ As with Update you must know the calendarItem Id of the calendarItem you wish to
 **Success**
 204 No content
 
-## A Sidebar on ISO-8601, UTC, and REST APIs
+### A Sidebar on ISO-8601, UTC, and REST APIs
 
 Public REST APIs always return ISO 8601 UTC Zulu time zone formatted date/time data. To properly manage conversion to your time zone to display and use dates in your requests it is important to understand the relationship between UTC and the ISO 8601 date-time format and how the REST APIs handle date/times.
 
-### In brief:
+### In brief
 
 - All Learn instances store date-times in the database as localized server time – which may or may not be the consumers time zone – this is why…
 - All REST APIs return date-times in UTC Zulu format and as such developers need to adjust to the appropriate time zone for their UI.
@@ -712,26 +715,30 @@ Calendar entitlements required per endpoint are listed in the calendar API docum
 
 Note: Please review our General REST API Best Practices which are outlined in our [REST API Best Practices](/docs/blackboard/rest-apis/best-practices.md) guide.
 
-1. Never, use GET /learn/api/public/v1/calendars/items in a non-3LO capacity!
+### Never, use GET /learn/api/public/v1/calendars/items in a non-3LO capacity!
 
-> 3LO always limits calendar data to what a specific user may view. Non-3LO use of the calendar endpoints is more data inclusive. While safe to use as a 3LO authenticated user, using the /calendars/items endpoint as a non-3LO user will attempt to dump the entire calendar db for the the specified timebox (maximum of 14 week’s worth for every course). THIS WILL POTENTIALLY IMPAIR SYSTEM PERFORMANCE. DO NOT DO THIS!
+3LO always limits calendar data to what a specific user may view. Non-3LO use of the calendar endpoints is more data inclusive. While safe to use as a 3LO authenticated user, using the /calendars/items endpoint as a non-3LO user will attempt to dump the entire calendar db for the the specified timebox (maximum of 14 week’s worth for every course). THIS WILL POTENTIALLY IMPAIR SYSTEM PERFORMANCE. DO NOT DO THIS!
 
-2. Target your requests based on calendarType and Ids
+### Target your requests based on calendarType and Ids
 
-> Always target your requests based on the Id of the target course and use calendarTypes to limit the scope of the request. Failure to do so may have negative performance impact.
+Always target your requests based on the Id of the target course and use calendarTypes to limit the scope of the request. Failure to do so may have negative performance impact.
 
-> Use calendarType, calendarItem, or courseId as required to manage the impacted data set.
+Use calendarType, calendarItem, or courseId as required to manage the impacted data set.
 
-3. Timebox your requests
+### Timebox your requests
 
-> Always timebox your requests. Failure to do so may have negative performance impact. By default all requests are timeboxed to 14 weeks ahead of the date/time of the request.
+Always timebox your requests. Failure to do so may have negative performance impact. By default all requests are timeboxed to 14 weeks ahead of the date/time of the request.
 
-> Use the since and until parameters to timebox your requests:
+Use the since and until parameters to timebox your requests:
 
-| **since**                             |                                                                                                                                                                                                       |
-| ------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------- | ------------ |
-| Query parameter: `string($date-time)` | Specifies only calendar items after the 'since' date (inclusive) are to be returned. Maximum of 16 weeks after the 'since' date will be returned. ISO-8601 date-time format is expected: `[yyyy-MM-dd | yyyyMMdd][T(hh:mm[:ss[.sss]] | hhmm[ss[.sss]])]?[Z | [+-]hh:mm]]` |
+**Since**
 
-| **until**                             |                                                                                                                                                                                                           |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | ------------------- | ------------ |
-| Query parameter: `string($date-time)` | Specifies only calendar items before the 'until' date (inclusive) are to be returned. Maximum of 16 weeks prior to the 'until' date will be returned. ISO-8601 date-time format is expected: `[yyyy-MM-dd | yyyyMMdd][T(hh:mm[:ss[.sss]] | hhmm[ss[.sss]])]?[Z | [+-]hh:mm]]` |
+Query parameter: `string($date-time)`: Specifies only calendar items after the 'since' date (inclusive) are to be returned. Maximum of 16 weeks after the 'since' date will be returned. ISO-8601 date-time format is expected:
+
+`[yyyy-MM-dd | yyyyMMdd][T(hh:mm[:ss[.sss]] | hhmm[ss[.sss]])]?[Z | [+-]hh:mm]]`
+
+**Until**
+
+Query parameter: `string($date-time)` | Specifies only calendar items before the 'until' date (inclusive) are to be returned. Maximum of 16 weeks prior to the 'until' date will be returned. ISO-8601 date-time format is expected:
+
+`[yyyy-MM-dd | yyyyMMdd][T(hh:mm[:ss[.sss]] | hhmm[ss[.sss]])]?[Z | [+-]hh:mm]]`

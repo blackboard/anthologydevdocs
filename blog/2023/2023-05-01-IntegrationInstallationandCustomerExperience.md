@@ -34,7 +34,7 @@ Blackboard has built our integration experience and best practices, with these l
 
 ## Integration Installation
 
-Blackboard has thought long about how to simplify the integration experience for customers in the world of SaaS. In doing so we arrived at a "Register once, deploy everywhere" model for Integration developers to deliver theirr solutions. This applies to LTI 1.3 and RESTful integrations alike, and greatly simplifies installation for our mutual customers.
+Blackboard has thought long about how to simplify the integration experience for customers in the world of SaaS. In doing so we arrived at a "Register once, deploy everywhere" model for Integration developers to deliver their solutions. This applies to LTI 1.3 and RESTful integrations alike, and greatly simplifies installation for our mutual customers.
 
 ### SaaS changed everything...
 
@@ -53,10 +53,10 @@ Register once and Deploy anywhere means there are some differences in how you de
 > Note: The following pertains to development of integrations which are marketed to multiple customers. Only point 1 is pertinent to those who are developing campus-only solutions.
 
 1. **Logs and data**: Integrations should maintain archives of customer logs and any integration specific data as those are not provided by Blackboard products.
-2. **Multi-tenancy**: Integrations should follow a multi-tenant model vs single tenant. Multi-tenant means one integration service delivering your integration to all your customers vs requiring a new intetegration service per customer. This means you have to design into your integration the ability for enabling individual customer accounts, likely only administrator, for any customer specific configuration.
+2. **Multi-tenancy**: Integrations should follow a multi-tenant model vs single tenant. Multi-tenant means one integration service delivering your integration to all your customers vs requiring a new integration service per customer. This means you have to design into your integration the ability for enabling individual customer accounts, likely only administrator, for any customer specific configuration.
 3. **Separation of Customer data**: Multi-tenancy means that in addition to running a single service for your customers you are likely using a single database. This dictates a secure separation of customer data using a unique customer identifier prefix on customer-centric data keys.
 
-Each of the above enable you to deliver a secure, efficient, and postive experience to customers at a cost savings of single instance vs multiple instance service delivery.
+Each of the above enable you to deliver a secure, efficient, and positive experience to customers at a cost savings of single instance vs multiple instance service delivery.
 
 ### Best Practices
 

@@ -16,7 +16,7 @@ Our most-attended session was 'Collaborate Best Practices' presented by Amy Eyre
 
 <!-- truncate -->
 
-Other highlights include the 'May the Data be with you' series. I definitly miss seeing everyone in person, so the lively interaction in these sessions led by a talented group of System Administrators was definitely the next best thing. Big thanks to Casey Eubank from WSU Tech, Chris Bray from Arkansas, Heather Crites from Columbia State Community College, Dan Gioia from St. Louis Community College, Bradley Lawton from Louisville, and Mark Reynolds from University of Illinois at Urbana-Champaign.
+Other highlights include the 'May the Data be with you' series. I definitely miss seeing everyone in person, so the lively interaction in these sessions led by a talented group of System Administrators was definitely the next best thing. Big thanks to Casey Eubank from WSU Tech, Chris Bray from Arkansas, Heather Crites from Columbia State Community College, Dan Gioia from St. Louis Community College, Bradley Lawton from Louisville, and Mark Reynolds from University of Illinois at Urbana-Champaign.
 
 There were also a number of other sessions that were well-attended and extremely interesting, including:
 
@@ -38,7 +38,7 @@ And don’t forget about Hackboard: Data. This weeklong event will allow attende
 
 As I write this, it looks like Mark Reynolds is atop the leaderboard, with Bradley Lawton and Eric Silva fast on his heels. And I would be remiss if I didn't mention our badging with Badgr. So far (not including Friday), we have awarded 480 badges, including:
 
-- Arokia Raj, INTI Internation University and Colleges in Malaysia, who earned the 'Daily Champions Champion' badge by earning all of the Daily Champion badges.
+- Arokia Raj, INTI International University and Colleges in Malaysia, who earned the 'Daily Champions Champion' badge by earning all of the Daily Champion badges.
 - Mark Carroll, Mark Reynolds, and Kevin Lowey who earned the 'Let's take it data day' badge, by attending 4 of the 8 data-based (see what I did there?) sessions.
 - Mark Carroll, Alicia Dunlap, Irene Rojas, and Elizabeth Barcena, who have attended more than half of the LTI sessions, earning them the 'LTI Advantageous' badge.
 
