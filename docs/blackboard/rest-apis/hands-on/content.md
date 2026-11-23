@@ -13,7 +13,7 @@ We do talk about original at the end, however, the main process is the same, we 
 
 ## Returning content
 
-Let's first get the available content available in the root of the course, this is how it looks like in the GUI:
+Let's first get the available content available in the root of the course, this is what it looks like in the GUI:
 
 ![Returning content with the api](/assets/img/manage-content-1.png)
 

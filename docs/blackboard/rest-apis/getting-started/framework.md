@@ -20,7 +20,7 @@ and the Developer Portal continue to mature.
 
 There are three actors in the REST API use case:
 
-1. **Developer:**: This is the person who writes an application that uses the new REST APIs. Through the application the developer manages authorization using the registered application’s OAuth Key and Secret, any data sent to or received from Learn, and tracks application entitlements required for operation. _Developers are limited to non-production testing pursuant to the applicable REST Developer Agreements._
+1. **Developer:** This is the person who writes an application that uses the new REST APIs. Through the application the developer manages authorization using the registered application’s OAuth Key and Secret, any data sent to or received from Learn, and tracks application entitlements required for operation. _Developers are limited to non-production testing pursuant to the applicable REST Developer Agreements._
 
 2. **Learn Administrator**: By default, no Applications can access the REST APIs. A Learn Administrator must enable each app from the Learn Admin Panel before access is granted. This is done by creating an integration using the Learn Admin REST API Integrations tool using the developer provided application Id\* and a User with the required entitlements as specified by the developer.
 
@@ -31,7 +31,7 @@ There are three actors in the REST API use case:
 The REST API Framework Actors, interactions, and data paths
 ![RESTDiagram.png](/assets/img/framework-1.png)
 
-- **NOTE**: We do NOT support a model where the developer of the REST Application requires the Learn Administrator to get the Application ID, key, and secret for installing the developer’s application on the Learn system. The developer will get one APP ID, key and secret for the one application. The developer is responsible for configuring the key and secret on their server. For security reasons, the key and secret should never be shared with the client or any other another party. The REST Application can determine which institution requests are coming from by examining the FQDN in the requests. There is no need for installing a separate Application ID for a given vendors application on each Learn instance.
+- **NOTE**: We do NOT support a model where the developer of the REST Application requires the Learn Administrator to get the Application ID, key, and secret for installing the developer’s application on the Learn system. The developer will get one APP ID, key and secret for the one application. The developer is responsible for configuring the key and secret on their server. For security reasons, the key and secret should never be shared with the client or any other party. The REST Application can determine which institution requests are coming from by examining the FQDN in the requests. There is no need for installing a separate Application ID for a given vendor’s application on each Learn instance.
 
 #### How These Three Actors Work Together to Enable Learn REST Integrations
 
